@@ -1,0 +1,27 @@
+site_name: Jakub Zalewski - WSB Merito
+site_url: https://kubzal.github.io/wsb-merito
+repo_url: https://github.com/kubzal/wsb-merito
+repo_name: kubzal/wsb-merito
+theme:
+  name: material
+  language: pl
+  palette:
+    scheme: slate
+    primary: blue
+    accent: purple
+  features:
+    - navigation.tabs
+  favicon: images/favicon.ico
+  logo: images/favicon.ico
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
