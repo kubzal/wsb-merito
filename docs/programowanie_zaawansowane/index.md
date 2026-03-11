@@ -1,10 +1,96 @@
-# Zajęcia 1
-Drodzy Państwo! Nasza przygoda z C# właśnie się rozpoczyna! Jeżeli Państwo nie mają nic przeciwko, ze względów czysto praktycznych (i redukujących ilość zbędnego tekstu) w dalszej części naszych materiałów będę sobie pozwalał na bardziej bezpośrednią formę oraz zwracanie się w liczbie pojedynczej. 
-Zakładam, że się Państwo zgodzili 😉
+# Wprowadzenie
 
-Przed wyruszeniem w dalszą drogę upewnij się, że masz przygotowane środowisko programistyczne (szczegóły we [wprowadzeniu](README.md)).
+## Plan zajęć
 
-Jeżeli wszystko gotowe, to możemy ruszać!
+- **Zajęcia 1 (_2026-03-19_):** Delegaty (Action, Func, Predicate), wyrażenia lambda, LINQ (składnia zapytań i metod, projekcje, joiny)
+- **Zajęcia 2 (_2026-04-02_):** Zdarzenia niestandardowe (EventArgs), programowanie asynchroniczne (async/await), TPL, wielowątkowość, bezpieczeństwo wątków
+- **Zajęcia 3 (_2026-04-16_):** Serializacja i deserializacja (JSON, XML), LINQ to XML, operacje na plikach i strumieniach (System.IO), FileSystemWatcher
+- **Zajęcia 4 (_2026-04-30_):** Entity Framework Core: ORM, relacje, migracje, transakcje, seeding
+- **Zajęcia 5 (_2026-05-14_):** Testowanie jednostkowe (xUnit), TDD, integracja z REST API (HttpClient)
+
+## Zasady zaliczenia
+
+- Ćwiczenia zaliczamy **projektem** realizowanym na laboratoriach — łącznie **100 punktów** (5 laboratoriów × max 20 pkt).
+- Zadania wysyłamy na **GitHub** — na Moodle wrzucamy jedynie **link do pull requesta**.
+- Za pracę na zajęciach (min. 1 commit w trakcie laboratorium) przysługuje **5 pkt z puli 20**. Bez commita z zajęć maksimum za dane zadanie to **15 pkt**.
+- Zadanie można dokończyć w domu po zajęciach.
+- Mogę zapytać o dowolny fragment kodu i jego znaczenie — na bieżących zajęciach (jeśli zadanie ukończone na miejscu) lub na kolejnych (jeśli dokończone w domu). **Nieumiejętność wyjaśnienia własnego kodu może skutkować obniżeniem punktacji.**
+
+**Skala ocen:**
+
+| Punkty | Ocena |
+|---|---|
+| 91–100% | 5,0 |
+| 81–90% | 4,5 |
+| 71–80% | 4,0 |
+| 61–70% | 3,5 |
+| 51–60% | 3,0 |
+| ≤ 50% | 2,0 |
+
+## Wymagania wstępne
+
+- **Git** — init, commit, push, pull, repozytoria zdalne, praca na branchach, pull request.
+- **Aplikacje konsolowe** — umiejętność tworzenia w dowolnym języku programowania.
+- **Programowanie strukturalne** — zmienne, pętle, warunki, funkcje.
+- **Programowanie obiektowe** — klasy, obiekty, dziedziczenie, hermetyzacja.
+
+## Środowisko programistyczne
+Zajęcia z Programowania zaawansowanego będą realizowane w języku C#. 
+Jest mi obojętne, w jakim środowisku będą Państwo pisać swój kod — byle działało 😉. Poniżej kilka polecanych przeze mnie opcji.
+
+1. VS Code + C# Dev Kit
+2. JetBrains Rider
+3. Visual Studio
+
+W zależności od tego, czy bliższe jest Państwu środowisko JetBrains 
+(bo np. programowaliście wcześniej w IntelliJ albo PyCharm), czy VS Code — sugerowałbym jedną z tych opcji. 
+Dawno nie miałem natomiast do czynienia z Visual Studio, więc ciężko mi jest wypowiadać się o tym środowisku.
+
+Jeżeli nie programowaliście Państwo zbyt wiele w swoim życiu i nie czujecie się zbyt pewnie, to polecam Ridera, 
+który większość rzeczy robi za nas i jest darmowy do zastosowań niekomercyjnych. Innymi słowy — idealna niania na start.
+
+Ja na zajęciach będę korzystał z VS Code. 
+
+Należy pobrać wybrany przez siebie program oraz .NET 10 właściwy dla swojego systemu operacyjnego.
+
+## Jak utworzyć nowy projekt w JetBrains Rider?
+Proszę znaleźć i pobrać program JetBrains Rider oraz .NET 10. Po pobraniu i instalacji proszę postępować według poniższej instrukcji.
+
+1. Włącz program _JetBrains Rider_.
+2. Wybierz `New solution`.
+3. W _Solution name_ wpisz nazwę projektu, np. `Zajecia1`.
+4. Upewnij się, że wybrany język programowania w _Language_ to `C#` oraz _Target framework_ to `net10.0`.
+
+## Jak utworzyć nowy projekt w VS Code?
+Proszę pobrać i zainstalować program VS Code oraz .NET 10. Następnie w Extensions należy wyszukać `C# Dev Kit` i zainstalować.
+
+Opcjonalnie polecam również wcisnąć kombinację klawiszy `Ctrl/Cmd + Shift + P`, wpisać `code` i wybrać `Shell command: Install 'code' command in PATH`. Ta komenda pozwoli uruchamiać VS Code z terminala — raz, a dobrze.
+
+Po tej operacji można na razie zamknąć VS Code i postępować według poniższej instrukcji.
+
+1. Włącz terminal i sprawdź, czy masz zainstalowany dotnet w wersji 10.
+```bash
+dotnet --version
+```
+2. Stwórz nowy katalog w miejscu, gdzie będziesz chciał mieć swój projekt, i wejdź do niego.
+```bash
+mkdir zajecia1
+cd zajecia1
+```
+3. Następnie polecam otworzyć stworzony katalog w VS Code i uruchomić zintegrowany terminal, np. poniższą komendą.
+```bash
+code .
+```
+4. Żeby stworzyć nowy projekt w bieżącym katalogu, wpisz poniższą komendę.
+```bash
+dotnet new console
+```
+5. Poprzednia komenda powinna stworzyć kilka plików, m.in. plik `Program.cs` z przykładowym kodem `Hello world`. Uruchom go poniższą komendą. Jeśli zobaczyłeś `Hello, World!` — gratulacje, Twoja przygoda z C# właśnie się zaczęła! 🎉
+```bash
+dotnet run
+```
+
+---
 
 ## _Hello world!_
 
@@ -141,7 +227,6 @@ checked
 }
 ```
 
-
 ### Stałe
 
 Jeśli masz wartość, która nigdy się nie zmieni — użyj `const`. Próba przypisania nowej wartości zakończy się błędem kompilacji:
@@ -152,7 +237,6 @@ const string Uczelnia = "WSB Merito";
 
 // Pi = 3.14; // błąd kompilacji!
 ```
-
 
 ### `if`, `else`, `else if`
 
@@ -175,7 +259,6 @@ else
 }
 ```
 
-
 ### Pętla `while`
 
 Wykonuje się dopóki warunek jest prawdziwy. Uwaga na pętle nieskończone — to nie feature, to bug.
@@ -189,7 +272,6 @@ while (i < 5)
     i++;
 }
 ```
-
 
 ### Pętla `do while`
 
@@ -207,7 +289,6 @@ do
 Console.WriteLine($"Podałeś: {liczba}");
 ```
 
-
 ### Pętla `for`
 
 Klasyk. Idealna, gdy wiesz z góry ile razy chcesz coś powtórzyć:
@@ -218,7 +299,6 @@ for (int i = 0; i < 5; i++)
     Console.WriteLine($"Krok {i}");
 }
 ```
-
 
 ### Pętla `foreach`
 
@@ -232,7 +312,6 @@ foreach (string owoc in owoce)
     Console.WriteLine(owoc);
 }
 ```
-
 
 ### Listy i tablice
 
@@ -274,6 +353,83 @@ List<double> temperatury = new List<double> { 36.6, 37.2, 38.1 };
 | Wydajność | Szybsza (bezpośredni dostęp do pamięci) | Minimalnie wolniejsza |
 | Elastyczność | Niska | Wysoka (`Add`, `Remove`, `Insert`...) |
 | Kiedy używać? | Znasz rozmiar z góry | Rozmiar może się zmieniać |
+
+Here's a dictionary section in the same style:
+
+### Słowniki
+
+Słownik (`Dictionary<TKey, TValue>`) — kolekcja par klucz-wartość. Jeśli znasz Pythona, to jest dokładnie to samo co `dict`. Szukasz po kluczu, dostajesz wartość — szybko i bez zbędnego przeszukiwania:
+
+```csharp
+Dictionary<string, int> wiek = new Dictionary<string, int>();
+wiek["Ala"] = 25;
+wiek["Bob"] = 30;
+wiek["Celina"] = 22;
+
+Console.WriteLine(wiek["Bob"]); // 30
+Console.WriteLine(wiek.Count);  // 3
+```
+
+Można też zainicjalizować od razu — składnia wygląda jak JSON po trzech kawach:
+
+```csharp
+Dictionary<string, string> stolice = new Dictionary<string, string>
+{
+    { "Polska", "Warszawa" },
+    { "Niemcy", "Berlin" },
+    { "Francja", "Paryż" }
+};
+
+// lub nowsza składnia (C# 6+), bliższa temu co znasz z Pythona:
+Dictionary<string, string> stolice2 = new()
+{
+    ["Polska"] = "Warszawa",
+    ["Niemcy"] = "Berlin",
+    ["Francja"] = "Paryż"
+};
+```
+
+Uwaga na pułapkę — odwołanie się do nieistniejącego klucza rzuci `KeyNotFoundException` (w Pythonie byłby `KeyError`). Bezpieczniej użyć `TryGetValue`:
+
+```csharp
+if (stolice.TryGetValue("Japonia", out string? wynik))
+{
+    Console.WriteLine(wynik);
+}
+else
+{
+    Console.WriteLine("Nie ma takiego klucza!");
+}
+```
+
+Przydatne operacje:
+
+```csharp
+stolice.ContainsKey("Polska");        // true
+stolice.ContainsValue("Berlin");      // true
+stolice.Remove("Francja");            // usuwa parę
+
+// iteracja — jak w Pythonie dict.items()
+foreach (KeyValuePair<string, string> para in stolice)
+{
+    Console.WriteLine($"{para.Key} → {para.Value}");
+}
+
+// lub krócej z var:
+foreach (var (kraj, miasto) in stolice)
+{
+    Console.WriteLine($"{kraj} → {miasto}");
+}
+```
+
+| Cecha | `Dictionary<TKey, TValue>` | `List<T>` |
+|---|---|---|
+| Dostęp po | Kluczu (dowolny typ) | Indeksie (int) |
+| Szukanie elementu | Bardzo szybkie (O(1)) | Wolne (O(n)) |
+| Kolejność | Nie gwarantowana* | Zachowana |
+| Kiedy używać? | Mapowanie klucz → wartość | Uporządkowana kolekcja |
+
+\* W praktyce `Dictionary` w C# zachowuje kolejność wstawiania (jak Python 3.7+), ale oficjalnie tego nie gwarantuje. Jeśli kolejność jest kluczowa — jest `SortedDictionary<TKey, TValue>`.
 
 
 ### Funkcje
@@ -504,6 +660,158 @@ foreach (Zwierze z in zwierzeta)
 
 Innymi słowy — `virtual` mówi: „mam swoje zachowanie, ale możesz je zmienić". `abstract` mówi: „sam nie wiem co robić, Ty mi powiedz".
 
+### Interfejsy
+
+Klasa abstrakcyjna mówi: „jestem niedokończonym szablonem, dokończ mnie". Interfejs idzie o krok dalej — to **czysty kontrakt**. Nie mówi czym obiekt *jest*, tylko co *potrafi*. Różnica jak między „jestem ptakiem" a „umiem latać" — bo latać może też samolot, Superman i rzucony laptop.
+
+Interfejs definiujemy słowem kluczowym `interface`. Konwencja w C# nakazuje zaczynać nazwę od wielkiej litery **I** (tak, to nie błąd — to tradycja):
+
+```cs
+interface ILatajacy
+{
+    void Lec();
+}
+
+interface IPlywajacy
+{
+    void Plyn();
+}
+```
+
+Interfejs nie ma konstruktora, nie ma pól, nie przechowuje stanu — to lista obietnic. Klasa, która implementuje interfejs, **musi** dostarczyć wszystkie zadeklarowane metody:
+
+```cs
+class Kaczka : Zwierze, ILatajacy, IPlywajacy
+{
+    public Kaczka(string imie) : base(imie) { }
+
+    public override void DajGlos()
+    {
+        Console.WriteLine($"{Imie}: Kwa kwa!");
+    }
+
+    public void Lec()
+    {
+        Console.WriteLine($"{Imie} leci!");
+    }
+
+    public void Plyn()
+    {
+        Console.WriteLine($"{Imie} płynie!");
+    }
+}
+
+// Użycie:
+Kaczka k = new Kaczka("Donald");
+k.DajGlos(); // Donald: Kwa kwa!
+k.Lec();     // Donald leci!
+k.Plyn();    // Donald płynie!
+```
+
+Zwróć uwagę — `Kaczka` dziedziczy po klasie `Zwierze` **i jednocześnie** implementuje dwa interfejsy. To kluczowa różnica: dziedziczyć możesz po jednej klasie, ale implementować interfejsów — ile chcesz.
+
+
+#### Po co interfejsy, skoro jest dziedziczenie?
+
+Wyobraź sobie, że do systemu dochodzi klasa `Samolot`. Samolot lata, ale raczej nie jest zwierzęciem. Bez interfejsów masz problem — nie wpakujesz `Samolot` do hierarchii `Zwierze` tylko dlatego, że lata. Z interfejsem — nie musisz:
+
+```cs
+class Samolot : ILatajacy
+{
+    public string Model { get; private set; }
+
+    public Samolot(string model)
+    {
+        Model = model;
+    }
+
+    public void Lec()
+    {
+        Console.WriteLine($"{Model} startuje z pasa!");
+    }
+}
+
+// Teraz możesz traktować wszystko co lata jednakowo:
+List<ILatajacy> latajace = new List<ILatajacy>
+{
+    new Kaczka("Donald"),
+    new Samolot("Boeing 737")
+};
+
+foreach (ILatajacy obiekt in latajace)
+{
+    obiekt.Lec();
+}
+// Donald leci!
+// Boeing 737 startuje z pasa!
+```
+
+To jest właśnie polimorfizm przez interfejsy — obchodzi nas **co obiekt potrafi**, a nie czym jest. Kaczka i Boeing nie mają ze sobą nic wspólnego poza tym, że oba implementują `ILatajacy`.
+
+W Pythonie osiągnąłbyś to samo przez duck typing (jeśli coś chodzi jak kaczka i kwacze jak kaczka...). Tyle że Python sprawdzi to dopiero w czasie działania programu, a C# — już przy kompilacji.
+
+
+#### Interfejsy jako typy parametrów
+
+Interfejsy naprawdę błyszczą, gdy używasz ich jako typów w parametrach metod. Dzięki temu metoda akceptuje **cokolwiek, co spełnia kontrakt** — niezależnie od konkretnej klasy:
+
+```cs
+void WykonajLot(ILatajacy obiekt)
+{
+    Console.WriteLine("Przygotowanie do lotu...");
+    obiekt.Lec();
+    Console.WriteLine("Lądowanie.");
+}
+
+WykonajLot(new Kaczka("Donald"));   // działa
+WykonajLot(new Samolot("Cessna"));  // też działa
+```
+
+To samo podejście znajdziesz w bibliotece standardowej .NET. Np. metoda `Sort()` działa na wszystkim, co implementuje `IComparable<T>` — nie obchodzi jej, czy sortujesz studentów, liczby czy pizze.
+
+
+#### Domyślna implementacja (C# 8+)
+
+Od C# 8 interfejsy mogą zawierać domyślne implementacje metod. To trochę rozmywa granicę między interfejsem a klasą abstrakcyjną, ale bywa przydatne, gdy chcesz dodać nową metodę do istniejącego interfejsu bez psucia wszystkich klas, które go implementują:
+
+```cs
+interface ILatajacy
+{
+    void Lec();
+
+    void Laduj()  // domyślna implementacja
+    {
+        Console.WriteLine("Lądowanie standardowe.");
+    }
+}
+
+// Kaczka nie musi implementować Laduj() — dostaje wersję domyślną
+// Ale Samolot może ją nadpisać:
+class Samolot : ILatajacy
+{
+    public string Model { get; private set; }
+
+    public Samolot(string model) { Model = model; }
+
+    public void Lec() => Console.WriteLine($"{Model} startuje!");
+
+    public void Laduj() => Console.WriteLine($"{Model} ląduje na pasie 3.");
+}
+```
+
+Używaj tego z umiarem — jeśli interfejs zaczyna mieć więcej kodu niż kontraktu, prawdopodobnie powinien być klasą abstrakcyjną.
+
+| Cecha | Klasa abstrakcyjna | Interfejs |
+|---|---|---|
+| Ile można dziedziczyć/implementować? | Jedną | Wiele |
+| Może mieć pola (stan)? | Tak | Nie |
+| Może mieć konstruktor? | Tak | Nie |
+| Może mieć gotowy kod? | Tak | Od C# 8 (domyślne metody) |
+| Modyfikatory dostępu metod? | Dowolne | Domyślnie `public` |
+| Kiedy używać? | Wspólny przodek ze wspólną logiką | Wspólna umiejętność niezwiązanych klas |
+
+Zasada kciuka: **klasa abstrakcyjna = „jest czymś"** (Kaczka *jest* Zwierzęciem), **interfejs = „potrafi coś"** (Kaczka *potrafi* latać i pływać). Jeśli nie wiesz co wybrać — zacznij od interfejsu. Zawsze możesz go później wzbogacić o klasę abstrakcyjną, w drugą stronę jest trudniej.
+
 ### Pobieranie wartości od użytkownika w konsoli
 
 Już wiesz jak wypisać coś na ekranie — a jak pobrać coś od użytkownika? Do tego służy `Console.ReadLine()`, które zwraca zawsze `string`:
@@ -521,3 +829,12 @@ Console.WriteLine($"Za 10 lat będziesz mieć {wiek + 10} lat.");
 A po co to ten `!` po `ReadLine()`? `Console.ReadLine()` technicznie może zwrócić `null`, więc kompilator ostrzega nas o tym. 
 Operator `!` (null-forgiving operator) mówi kompilatorowi: "spokojnie, wiem co robię, tu nie będzie nulla". W kontekście prostych programów konsolowych jest to bezpieczne założenie.
 
+## Powtórka z Git
+
+Na zajęciach pracujemy z Gitem w następującym schemacie: tworzymy repozytorium (`git init`), dodajemy pliki do śledzenia (`git add`), zapisujemy zmiany (`git commit`), wypychamy je na zdalne repozytorium (`git push`). 
+
+Dla każdego laboratorium tworzymy osobny **branch** (`git checkout -b lab1`), na którym commitujemy postępy. Po zakończeniu zadania otwieramy **pull request** do głównej gałęzi — to właśnie link do niego wrzucamy na Moodle. 
+
+Jeśli pracujecie na kilku urządzeniach, pamiętajcie o `git pull` przed rozpoczęciem pracy, żeby pobrać najnowsze zmiany. 
+
+Warto commitować często i z sensownymi opisami — nie tylko ze względu na punkty za pracę na zajęciach, ale też dlatego, że historia commitów pomaga wrócić do działającej wersji, gdy coś się zepsuje.

@@ -11,9 +11,13 @@ theme:
     accent: purple
   features:
     - navigation.tabs
+    - navigation.sections
+    - toc.integrate
   favicon: images/favicon.ico
   logo: images/favicon.ico
 markdown_extensions:
+  - toc:
+      permalink: "#"
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
