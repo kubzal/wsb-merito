@@ -37,7 +37,7 @@ Projekt bootstrapujesz przez **Vite** – narzędzie budujące projekt (odpowied
 
 ## Plan projektu
 
-Krótki dokument (MD lub PDF) zawierający. 
+Krótki dokument PDF zawierający. 
 
 Plan należy przygotować na następne zajęcia (2026-05-09).
 
