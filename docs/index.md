@@ -5,9 +5,9 @@ hide:
 ---
 # Hello world!
 
-Nazywam się **Jakub Zalewski** i od 2014 roku zajmuję się szeroko pojętym IT i programowaniem.
+Nazywam się **Jakub Zalewski** i od 2011 roku zajmuję się zawodowo szeroko pojętym IT i programowaniem. Hobbystycznie zacząłem programować już w 2006 roku.
 
-Na co dzień specjalizuję się w przetwarzaniu danych, data science i uczeniu maszynowym. Prowadziłem również działaność tworzenia stron internetowych.
+Na co dzień specjalizuję się w przetwarzaniu danych, data science i uczeniu maszynowym. Prowadziłem również działaność projektowania stron internetowych.
 
 Prowadzę różne przedmioty na kierunkach **Informatyka** oraz **Sztuczna Inteligencja w Biznesie** na Uniwersytecie WSB Merito w Warszawie.
 
