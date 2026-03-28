@@ -682,10 +682,6 @@ const koszyk = useKoszykStore()
 6. **Vite** – dogłębne poznanie bundlera
 
 
----
-
-> 📚 Notatka opracowana dla poziomu: **Początkujący → Średniozaawansowany**
-> Vue 3 + Composition API + `<script setup>` | Vite | Pinia | Vue Router
 
 ## Zadanie 2
 
@@ -703,7 +699,7 @@ Vue.js: Aplikacje Reaktywne
 
 ---
 
-## Część 1 – Kalkulator BMI (4 pkt)
+## Część 1 – Kalkulator BMI (10 pkt)
 
 ### Opis zadania
 
@@ -742,7 +738,16 @@ Aplikacja musi:
 | Obliczenie BMI przez `computed()`          | 1 pkt  |
 | Warunkowe wyświetlanie kategorii (`v-if`)  | 1 pkt  |
 | Kolorowanie kategorii + obsługa błędnych danych | 1 pkt |
-| **Razem**                                  | **4 pkt** |
+| **Razem (merytoryczne)**                   | **4 pkt** |
+
+### Pozostałe 6 punktów
+
+| Wymaganie                                                                                                                                              | Punkty |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| Realizacja na zajęciach (dopuszczalny work in progress, byle nie blank page)                                                                           | 2 pkt  |
+| Kod na GitHubie                                                                                                                                        | 2 pkt  |
+| Działające demo online (dowolny serwer, np. GitHub Pages, Render, GCP/AWS/Azure free tier, MIKR.US od 35 zł/rok, lub prezentacja lokalna na zajęciach) | 2 pkt  |
+| **Razem (organizacyjne)**                                                                                                                              | **6 pkt** |
 
 ### Wskazówki
 
@@ -753,7 +758,7 @@ Aplikacja musi:
 
 ---
 
-## Część 2 – Aplikacja Quizowa (8 pkt)
+## Część 2 – Aplikacja Quizowa (14 pkt)
 
 ### Opis zadania
 
@@ -826,7 +831,16 @@ const pytania = [
 | Podświetlanie odpowiedzi (zielony/czerwony) + blokada po wyborze  | 2 pkt  |
 | Ekran wyników z oceną słowną + reset quizu                        | 1 pkt  |
 | Pasek postępu + licznik pytań                                     | 1 pkt  |
-| **Razem**                                                         | **8 pkt** |
+| **Razem (merytoryczne)**                                          | **8 pkt** |
+
+### Pozostałe 6 punktów
+
+| Wymaganie                                                                                                                                              | Punkty |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| Realizacja na zajęciach (dopuszczalny work in progress, byle nie blank page)                                                                           | 2 pkt  |
+| Kod na GitHubie                                                                                                                                        | 2 pkt  |
+| Działające demo online (dowolny serwer, np. GitHub Pages, Render, GCP/AWS/Azure free tier, MIKR.US od 35 zł/rok, lub prezentacja lokalna na zajęciach) | 2 pkt  |
+| **Razem (organizacyjne)**                                                                                                                              | **6 pkt** |
 
 ### Wskazówki
 
@@ -840,11 +854,11 @@ const pytania = [
 
 ## Punktacja końcowa
 
-| Część                  | Max. punktów |
-|------------------------|--------------|
-| Część 1 – Kalkulator BMI | 4 pkt      |
-| Część 2 – Quiz           | 8 pkt      |
-| **Łącznie**            | **12 pkt**   |
+| Część                     | Merytoryczne | Organizacyjne | Max. punktów |
+|---------------------------|:------------:|:-------------:|:------------:|
+| Część 1 – Kalkulator BMI  | 4 pkt        | 6 pkt         | **10 pkt**   |
+| Część 2 – Quiz            | 8 pkt        | 6 pkt         | **14 pkt**   |
+| **Łącznie**               | **12 pkt**   | **12 pkt**    | **24 pkt**   |
 
 
 
