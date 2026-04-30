@@ -1,4 +1,4 @@
-.PHONY: serve
+.PHONY: preview
 
-serve:
+preview:
 	mkdocs serve
