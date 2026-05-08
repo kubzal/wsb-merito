@@ -6,7 +6,7 @@ Strona przedmiotu Programowanie stron internetowych 2
 
 - **Zajęcia 1 (_2026-02-28_ godz. 14:15 - 16:40 - 3h):** Powtórka + SEO + Bootstrap
 - **Zajęcia 2 (_2026-03-28_ godz. 14:15 - 16:40 - 3h):** Frameworki i biblioteki JavaScript
-- **Zajęcia 3 (_2026-05-09_ godz. 13:25 - 16:40 - 4h):** 
+- **Zajęcia 3 (_2026-05-09_ godz. 13:25 - 16:40 - 4h):** Testowanie aplikacji Vue.js
 
 ## Zasady zaliczenia
 
@@ -28,7 +28,7 @@ Pula: 100 punktów
 
 ### Projekt końcowy
 
-52 pkt (szczegóły przy planowaniu, prezentacja na ostatnich zajęciach)
+52 pkt (szczegóły przy planowaniu)
 
 ### Skala ocen
 - 91–100 → 5,0
