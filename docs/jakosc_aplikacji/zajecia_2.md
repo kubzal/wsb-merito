@@ -1,4 +1,4 @@
-# Zajęcia 2
+# Zajęcia 2 — Jakość kodu i automatyzacja
 
 ## Powtórka z zajęć 1
 
@@ -70,26 +70,26 @@ Found 3 errors.
 [*] 1 fixable with the `--fix` option.
 ```
 
-### Formatter — `black`
+### Formatter — `ruff format`
 
 **Formatter** to narzędzie, które **automatycznie przepisuje** kod do spójnego stylu. W przeciwieństwie do lintera nie tylko wskazuje błędy — sam je naprawia.
 
-`black` to tzw. *opinionated formatter* — nie ma prawie żadnych opcji konfiguracji. Filozofia: „nie kłóćmy się o styl, niech narzędzie zdecyduje".
+Dobra wiadomość: `ruff` to nie tylko linter — zawiera też wbudowany formatter, który jest zaprojektowany jako **drop-in replacement dla `black`** (ponad 99.9% kompatybilności na kodzie formatowanym wcześniej Blackiem). Dzięki temu nie potrzebujemy dwóch oddzielnych narzędzi — jedno `ruff` załatwia i lintowanie, i formatowanie.
+
+> **Kontekst historyczny:** Przez lata standardem był `black` — tzw. *opinionated formatter* z filozofią „nie kłóćmy się o styl, niech narzędzie zdecyduje". `ruff format` przejął jego styl i dodał ogromne zwiększenie wydajności (Rust zamiast Pythona). W nowych projektach nie ma już powodu, żeby instalować Blacka osobno.
 
 ```bash
-pip install black
-
 # Sformatuj wszystkie pliki .py w bieżącym katalogu
-black .
+ruff format .
 
 # Tylko sprawdź, nie zmieniaj (przydatne w CI)
-black --check .
+ruff format --check .
 
 # Pokaż, co by zostało zmienione
-black --diff .
+ruff format --diff .
 ```
 
-#### Przykład działania `black`
+#### Przykład działania `ruff format`
 
 **Przed:**
 
@@ -100,7 +100,7 @@ def add(a,b):
 result=add( 1,2 )
 ```
 
-**Po `black .`:**
+**Po `ruff format .`:**
 
 ```python
 def add(a, b):
@@ -109,6 +109,18 @@ def add(a, b):
 
 result = add(1, 2)
 ```
+
+#### Typowy workflow z ruff
+
+```bash
+# 1. Naprawa błędów stylu i prostych bugów
+ruff check . --fix
+
+# 2. Sformatowanie kodu
+ruff format .
+```
+
+To dwa polecenia zamiast trzech (kiedyś: `flake8` + `isort` + `black`).
 
 ### Type hinting i `mypy`
 
@@ -166,14 +178,11 @@ repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.7.0
     hooks:
+      # Linter — wyłapuje błędy i naprawia co się da
       - id: ruff
         args: [--fix]
+      # Formatter — zastępuje blacka
       - id: ruff-format
-
-  - repo: https://github.com/psf/black
-    rev: 24.10.0
-    hooks:
-      - id: black
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
@@ -238,13 +247,13 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install pytest ruff black mypy
+          pip install pytest ruff mypy
 
       - name: Run linter
         run: ruff check .
 
       - name: Check formatting
-        run: black --check .
+        run: ruff format --check .
 
       - name: Run type checker
         run: mypy app/
@@ -301,8 +310,8 @@ TOTAL                    12      2    83%
 
 | Narzędzie | Co robi | Kiedy uruchomić |
 |-----------|---------|-----------------|
-| `ruff` | Wyłapuje błędy stylu i potencjalne bugi | Pre-commit, CI |
-| `black` | Formatuje kod do jednolitego stylu | Pre-commit, lokalnie przed commitem |
+| `ruff check` | Wyłapuje błędy stylu i potencjalne bugi | Pre-commit, CI |
+| `ruff format` | Formatuje kod do jednolitego stylu (zastępuje `black`) | Pre-commit, lokalnie przed commitem |
 | `mypy` | Sprawdza zgodność typów | Pre-commit, CI |
 | `pytest` | Uruchamia testy jednostkowe | Lokalnie + CI |
 | `pytest-cov` | Mierzy pokrycie kodu testami | CI (z progiem minimum) |
@@ -413,11 +422,12 @@ Spakowany folder `zadanie_2.zip` zawierający:
 
 Do projektu z Części 1 dodaj **automatyzację jakości kodu**.
 
-#### Krok 1 — Skonfiguruj `ruff` i `black`
+#### Krok 1 — Skonfiguruj `ruff` (linter + formatter)
 
-1. Zainstaluj oba narzędzia: `pip install ruff black`.
-2. Uruchom `ruff check . --fix` oraz `black .` na swoim kodzie.
-3. Upewnij się, że oba narzędzia kończą się bez błędów.
+1. Zainstaluj: `pip install ruff`.
+2. Uruchom `ruff check . --fix` — naprawi błędy stylu i wyłapie potencjalne bugi.
+3. Uruchom `ruff format .` — sformatuje kod do spójnego stylu.
+4. Upewnij się, że `ruff check .` oraz `ruff format --check .` kończą się bez błędów.
 
 #### Krok 2 — Dodaj type hints i sprawdź `mypy`
 
@@ -438,15 +448,15 @@ Do projektu z Części 1 dodaj **automatyzację jakości kodu**.
 2. Dodaj plik `.github/workflows/ci.yml` (możesz oprzeć się na przykładzie z notatki).
 3. Workflow musi uruchamiać przynajmniej:
    - `ruff check .`
-   - `black --check .`
+   - `ruff format --check .`
    - `pytest -v`
 4. Wykonaj `git push` i sprawdź, że workflow się uruchomił i zakończył sukcesem (zielony ✅).
 
 #### Co oddajesz?
 
 - **Link do publicznego repozytorium GitHub** (lub prywatnego z dodanym dostępem dla prowadzącego),
-- screenshot 1 z zakładki *Actions* w GitHubie pokazujący zielony build,
-- screenshot 2 z lokalnego uruchomienia `pre-commit run --all-files` zakończonego sukcesem.
+- screenshot z zakładki *Actions* w GitHubie pokazujący zielony build,
+- screenshot z lokalnego uruchomienia `pre-commit run --all-files` zakończonego sukcesem.
 
 ---
 
@@ -455,8 +465,8 @@ Do projektu z Części 1 dodaj **automatyzację jakości kodu**.
 | Temat | Kluczowy wniosek |
 |-------|-------------------|
 | PEP 8 | Spójna konwencja stylu — fundament czytelności |
-| Linter (`ruff`) | Wyłapuje błędy zanim uruchomisz kod |
-| Formatter (`black`) | Niech narzędzie decyduje o stylu, nie ludzie |
+| Linter (`ruff check`) | Wyłapuje błędy zanim uruchomisz kod |
+| Formatter (`ruff format`) | Niech narzędzie decyduje o stylu, nie ludzie — zastępuje Blacka |
 | Type hints + `mypy` | Statyczne typowanie wyłapuje całe klasy bugów |
 | Pre-commit | Brudny kod nie ma prawa trafić do repo |
 | CI/CD | Każda zmiana automatycznie testowana i sprawdzana |
