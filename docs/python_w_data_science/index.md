@@ -7,9 +7,9 @@
 - **Zajęcia 1 (_2026-02-28_ godz. 16:50 - 18:30 - 2h):** Powtórka podstaw Pythona i wstęp do klas
 - **Zajęcia 2 (_2026-03-28_ godz. 16:50 - 20:10 - 4h):** Programowanie obiektowe — część 2
 - **Zajęcia 3 (_2026-05-09_ godz. 16:50 - 20:10 - 4h):** Podstawy NLP i biblioteka spaCy
-- **Zajęcia 3 (_2026-05-23_ godz. 16:50 - 20:10 - 4h):** 
-- **Zajęcia 3 (_2026-06-06_ godz. 16:50 - 20:10 - 4h):** 
-- **Zajęcia 1 (_2026-06-20_ godz. 16:50 - 18:30 - 2h):** 
+- **Zajęcia 4 (_2026-05-23_ godz. 16:50 - 20:10 - 4h):** 
+- **Zajęcia 5 (_2026-06-06_ godz. 16:50 - 20:10 - 4h):** 
+- **Zajęcia 6 (_2026-06-20_ godz. 16:50 - 18:30 - 2h):** 
 
 ## Zasady zaliczenia
 
