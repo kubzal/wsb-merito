@@ -1,4 +1,4 @@
-# Zajęcia 2 — Jakość kodu i automatyzacja
+# Zajęcia 2
 
 ## Powtórka z zajęć 1
 
