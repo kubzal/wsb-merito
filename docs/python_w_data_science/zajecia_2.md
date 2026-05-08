@@ -144,7 +144,7 @@ print(Motorcycle("Yamaha").describe())      # Motocykl marki Yamaha
 print(Truck("MAN", 18.0).describe())        # Pojazd marki MAN, ładowność: 18.0t
 ```
 
-### 🏋️ Zadanie 1 — Dziedziczenie (4 pkt)
+### 🏋️ Zadanie 2.1 — Dziedziczenie (4 pkt)
 
 Stwórz system opisujący produkty w sklepie internetowym:
 
@@ -326,7 +326,7 @@ print(sq.describe())   # Kwadrat o boku 4
 
 Jeśli zapomnimy zaimplementować `area()` lub `describe()` w klasie potomnej, Python wyrzuci błąd. To świetny sposób na pilnowanie, żeby każda klasa "trzymała się kontraktu".
 
-### 🏋️ Zadanie 2 — Polimorfizm (4 pkt)
+### 🏋️ Zadanie 2.2 — Polimorfizm (4 pkt)
 
 Stwórz system powiadomień:
 
@@ -470,7 +470,7 @@ print(student.is_passing)   # True (getter bez settera — read-only)
 # student.is_passing = False # AttributeError! Nie ma settera!
 ```
 
-### 🏋️ Zadanie 3 — Hermetyzacja (4 pkt)
+### 🏋️ Zadanie 2.3 — Hermetyzacja (4 pkt)
 
 Stwórz klasę `Playlist` do zarządzania playlistą muzyczną:
 
@@ -631,7 +631,7 @@ print(red)          # Color(r=255, g=0, b=0)
 # red.r = 100       # FrozenInstanceError! Nie można zmieniać!
 ```
 
-### 🏋️ Zadanie 4 — Dataclasses (4 pkt)
+### 🏋️ Zadanie 2.4 — Dataclasses (4 pkt)
 
 1. **(2 pkt)** Stwórz `@dataclass` o nazwie `Movie` z polami:
    - `title: str`
@@ -822,7 +822,7 @@ print(person.model_dump_json(indent=2)) # → ładny JSON string
 | **Instalacja** | Wbudowany | `pip install pydantic` |
 | **Kiedy używać?** | Proste struktury wewnętrzne | Dane z zewnątrz, formularze, API |
 
-### 🏋️ Zadanie 5 — Pydantic (4 pkt)
+### 🏋️ Zadanie 2.5 — Pydantic (4 pkt)
 
 Stwórz system rejestracji na wydarzenie:
 
