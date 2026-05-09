@@ -220,7 +220,7 @@ W praktyce te biblioteki **się nie wykluczają**. Jest pakiet `spacy-transforme
 
 ## Łączymy wszystko — mini analiza nagłówków
 
-Pokażmy spaCy w działaniu na tych samych nagłówkach, na których na wykładzie pracował zero-shot classifier:
+Pokażmy spaCy w działaniu na realnych nagłówkach prasowych:
 
 ```python
 import spacy
@@ -229,11 +229,13 @@ from collections import Counter
 nlp = spacy.load("en_core_web_sm")
 
 NAGLOWKI = [
-    "Government announces new austerity measures amid rising debt.",
-    "Scientists discover potential cure for Alzheimer's disease.",
-    "Stock markets plunge following central bank interest rate decision.",
+    "Apple unveils new iPhone in Cupertino on Tuesday.",
+    "President Biden met with Xi Jinping in San Francisco last November.",
+    "Tesla announced a $5 billion investment in its Berlin factory.",
+    "Microsoft acquired Activision for $69 billion in 2023.",
+    "NASA launched the Artemis mission from Florida last week.",
+    "The European Central Bank raised interest rates by 0.25% on Thursday.",
     "Climate summit ends without binding agreement on emissions.",
-    "Apple unveils new iPhone in Cupertino.",
 ]
 
 # Przetwarzamy wszystko jednym przebiegiem (nlp.pipe jest szybsze niż pętla po nlp())
@@ -260,6 +262,11 @@ for naglowek, doc in zip(NAGLOWKI, docs):
 ```
 
 W kilkudziesięciu linijkach mamy **ekstrakcję encji**, **agregację tematów** i **prostą metrykę gęstości informacyjnej** — bez ani jednego wywołania API i bez GPU.
+
+Zauważ dwie rzeczy w wyniku:
+
+1. **Ostatni nagłówek ("Climate summit...") nie zwraca żadnych encji.** To jest poprawne — NER szuka **nazw własnych** (Apple, Biden, Berlin, NASA), a nie rzeczowników pospolitych ("government", "summit", "stock markets"). Jeśli widzisz pustą listę, to nie znaczy, że spaCy nie działa — znaczy, że w tekście naprawdę nie ma named entities.
+2. **`iPhone` jest często tagowany jako `GPE` zamiast `PRODUCT`** w modelu `en_core_web_sm`. Małe modele mają takie wpadki — to dobra okazja, żeby pamiętać, że NER to **predykcja**, a nie reguła. Dla produkcji warto przetestować większy model (`_md`, `_lg`, `_trf`) lub dotrenować własny.
 
 > **`nlp.pipe(teksty)`** — kiedy przetwarzasz wiele dokumentów, zawsze używaj `nlp.pipe()` zamiast pętli po `nlp(tekst)`. Pod spodem batchuje i potrafi być nawet 5–10× szybsze.
 
