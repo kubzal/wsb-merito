@@ -26,6 +26,46 @@ Wyobraź sobie, że masz dane o mieszkaniach: metraż i cenę. Patrzysz na wykre
 
 Regresja liniowa to nic innego jak **znalezienie tej najlepszej prostej** — takiej, która przechodzi "jak najbliżej" wszystkich punktów. Mając taką prostą, możemy przewidzieć cenę mieszkania, którego nie ma w danych: podajemy metraż, odczytujemy cenę z linii.
 
+Zobaczmy to na obrazku — szare pionowe odcinki to **reszty** (różnice między punktem a prostą); model dobiera prostą tak, żeby suma ich kwadratów (MSE) była najmniejsza:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# dane przykładowe (metraż -> cena w tys. zł), z lekkim szumem
+rng = np.random.default_rng(42)
+metraz = np.array([32, 38, 45, 50, 55, 60, 64, 70, 75, 82, 88, 95])
+cena = (9500 * metraz + 50000 + rng.normal(0, 45000, size=metraz.shape)) / 1000
+
+# dopasowanie prostej
+X = metraz.reshape(-1, 1)
+model = LinearRegression().fit(X, cena)
+x_line = np.linspace(metraz.min() - 3, metraz.max() + 3, 100)
+y_line = model.predict(x_line.reshape(-1, 1))
+y_pred = model.predict(X)
+
+fig, ax = plt.subplots(figsize=(9, 6))
+
+# reszty: pionowe odcinki od punktu do prostej
+for xi, yi, ypi in zip(metraz, cena, y_pred):
+    ax.plot([xi, xi], [yi, ypi], color="#bdbdbd", lw=1.2, zorder=1)
+
+ax.plot(x_line, y_line, color="#d62728", lw=2.5,
+        label="model (dopasowana prosta)", zorder=2)
+ax.scatter(metraz, cena, s=90, color="#1f77b4", edgecolor="white",
+           linewidth=1.5, zorder=3, label="dane (mieszkania)")
+
+ax.set_xlabel("metraż [m²]")
+ax.set_ylabel("cena [tys. zł]")
+ax.set_title("Regresja liniowa — prosta przechodząca przez „środek” punktów")
+ax.legend(loc="upper left")
+ax.grid(True, linestyle="--", alpha=0.35)
+ax.spines[["top", "right"]].set_visible(False)
+fig.tight_layout()
+plt.show()
+```
+
 ![Regresja liniowa](obrazki/regresja_liniowa.png)
 
 ### Matematyka — mniej straszna niż wygląda
@@ -178,17 +218,29 @@ plt.show()
 
 Widać tu wyraźny trend rosnący (im wyższy dochód, tym droższe domy) oraz tę poziomą "ścianę" na górze przy 5.0 — obcięcie ceny, które zauważyliśmy w histogramie.
 
-### 🏋️ Zadanie 4.2 — Analiza zbioru (5 pkt)
+> **Uwaga:** przykłady powyżej liczyliśmy na zbiorze California Housing. **Zadania robisz na innym zbiorze — Auto MPG** (dane o autach z lat 1970–1982, gdzie celem jest `mpg`, czyli spalanie w milach na galon — im więcej, tym oszczędniejsze auto). Te same kroki, inne dane — chodzi o to, żebyś samodzielnie przeszedł cały proces, a nie przepisał gotowca.
 
-Pracujesz na zbiorze California Housing (wczytaj jak wyżej).
+### 🏋️ Zadanie 4.2 — Analiza i czyszczenie zbioru (5 pkt)
 
-1. **(1 pkt)** Wczytaj dane do DataFrame i wyświetl `shape`, `head()` oraz `info()`. W komentarzu napisz: ile jest wierszy, ile cech i czy są braki danych.
+Wczytaj zbiór Auto MPG (jest wbudowany w `seaborn`):
 
-2. **(1 pkt)** Wywołaj `describe()` i znajdź **co najmniej jedną cechę z podejrzaną wartością odstającą** (porównaj `max` z kwartylem 75%). Napisz w komentarzu, która to cecha i dlaczego ją podejrzewasz.
+```python
+import seaborn as sns
+df = sns.load_dataset("mpg")
+df.head()
+```
 
-3. **(1.5 pkt)** Narysuj histogramy wszystkich cech (`df.hist(...)`). Wskaż w komentarzu jedną cechę, której rozkład wygląda na "obcięty" lub mocno skośny.
+1. **(1 pkt)** Wyświetl `shape`, `head()` oraz `info()`. W komentarzu napisz: ile jest wierszy, ile kolumn i **czy są braki danych** (podpowiedź: `df.isna().sum()` pokaże braki per kolumna — jedna z cech ma ich kilka).
 
-4. **(1.5 pkt)** Policz korelacje cech z `MedHouseVal` i wyświetl je posortowane malejąco. Następnie narysuj wykres rozrzutu (`scatter`) dla cechy o **najwyższej** korelacji względem celu. Napisz w komentarzu, czy widać zależność liniową.
+2. **(1.5 pkt)** Ten zbiór nie jest gotowy do regresji — trzeba go **wyczyścić**:
+   - usuń kolumny nienumeryczne (regresja liniowa przyjmuje tylko liczby — sprawdź, które kolumny to tekst),
+   - usuń wiersze z brakami danych (`dropna()`).
+
+   Po czyszczeniu wyświetl nowy `shape`. W komentarzu napisz, ile wierszy i kolumn zostało i które kolumny usunąłeś.
+
+3. **(1 pkt)** Na wyczyszczonych danych wywołaj `describe()` oraz narysuj histogramy wszystkich cech (`df.hist(...)`). Wskaż w komentarzu jedną cechę, której rozkład jest wyraźnie skośny lub "skokowy".
+
+4. **(1.5 pkt)** Policz korelacje cech z `mpg`, posortuj i wyświetl. **Zwróć uwagę na znak** — część cech będzie skorelowana **ujemnie**. Narysuj wykres rozrzutu (`scatter`) dla cechy o najsilniejszej korelacji (co do wartości bezwzględnej). W komentarzu napisz, czy zależność jest rosnąca, czy malejąca, i dlaczego to ma sens (pomyśl: cięższe auto = ?).
 
 ---
 
@@ -235,7 +287,9 @@ print(X_train.shape, X_test.shape)   # np. (16512, 8) (4128, 8)
 
 ### 🏋️ Zadanie 4.3 — Podział danych (3 pkt)
 
-1. **(1 pkt)** Rozdziel zbiór na cechy `X` (wszystkie kolumny oprócz celu) i wektor celu `y` (`MedHouseVal`).
+Pracujesz na **wyczyszczonym** zbiorze MPG z zadania 4.2.
+
+1. **(1 pkt)** Rozdziel zbiór na cechy `X` (wszystkie kolumny oprócz celu) i wektor celu `y` (`mpg`).
 
 2. **(1.5 pkt)** Podziel dane na treningowe i testowe w proporcji **75/25** (`test_size=0.25`), ustawiając `random_state=42`. Wyświetl kształty (`shape`) wszystkich czterech wynikowych zbiorów.
 
@@ -279,7 +333,7 @@ for real, pred in zip(y_test[:5], y_pred[:5]):
 
 1. **(1 pkt)** Wytrenuj `LinearRegression` na zbiorze treningowym z poprzedniego zadania.
 
-2. **(1.5 pkt)** Wyświetl wyraz wolny oraz wagi dla wszystkich cech (ładnie sformatowane, z nazwami kolumn). Wskaż w komentarzu cechę o **największej dodatniej** i **największej ujemnej** wadze i napisz jednym zdaniem, jak je interpretujesz.
+2. **(1.5 pkt)** Wyświetl wyraz wolny oraz wagi dla wszystkich cech (ładnie sformatowane, z nazwami kolumn). Wskaż w komentarzu cechę o **największej dodatniej** i **największej ujemnej** wadze i napisz jednym zdaniem, jak je interpretujesz (np. „ujemna waga przy `weight` znaczy, że cięższe auto pali więcej, więc `mpg` spada").
 
 3. **(1.5 pkt)** Zrób predykcję na zbiorze testowym (`predict`) i wyświetl porównanie 5 pierwszych predykcji z wartościami rzeczywistymi. Czy model "trafia w okolice"?
 
@@ -344,7 +398,7 @@ To jest moment, w którym wracasz do etapu 2 (EDA) i kombinujesz dalej. Modelowa
 
 3. **(1.5 pkt)** Narysuj wykres reszt (`y_test - y_pred` względem `y_pred`) z poziomą linią na zerze. Opisz w komentarzu: czy reszty są losowo rozrzucone, czy widać jakiś wzór?
 
-4. **(0.5 pkt)** Wytrenuj **drugi** model regresji używając **tylko jednej cechy** `MedInc` (przekaż `X_train[["MedInc"]]`). Porównaj jego R² z modelem na wszystkich cechach. Czy więcej cech pomogło?
+4. **(0.5 pkt)** Wytrenuj **drugi** model regresji używając **tylko jednej cechy** `weight` — najsilniej skorelowanej z celem (przekaż `X_train[["weight"]]`). Porównaj jego R² z modelem na wszystkich cechach. Czy więcej cech pomogło?
 
 ---
 
@@ -392,8 +446,11 @@ class RegressionPipeline:
                 f"train={len(self.X_train)}, test={len(self.X_test)})")
 
 
-# Użycie:
-pipe = RegressionPipeline(df, target="MedHouseVal").train()
+# Użycie (przykład wciąż na California Housing):
+from sklearn.datasets import fetch_california_housing
+
+dane = fetch_california_housing(as_frame=True)
+pipe = RegressionPipeline(dane.frame, target="MedHouseVal").train()
 print(pipe)
 print(pipe.evaluate())
 ```
