@@ -1,0 +1,2688 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/programowanie_zaawansowane/zajecia_1/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../zajecia_2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zajęcia 1 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-1" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../jakosc_aplikacji/" class="md-tabs__link">
+          
+  
+  
+  Jakosc aplikacji
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_stron_internetowych_2/" class="md-tabs__link">
+          
+  
+  
+  Programowanie stron internetowych 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_wysokopoziomowe/" class="md-tabs__link">
+          
+  
+  
+  Programowanie wysokopoziomowe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Programowanie zaawansowane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python_w_data_science/" class="md-tabs__link">
+          
+  
+  
+  Python w data science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../zarzadzanie_big_data/" class="md-tabs__link">
+          
+  
+  
+  Zarzadzanie big data
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakosc aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakosc aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#delegaty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delegaty
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Delegaty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czym-jest-delegat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czym jest delegat?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wasny-delegat-sowo-kluczowe-delegate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Własny delegat — słowo kluczowe delegate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-func-predicate-wbudowane-delegaty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Action, Func, Predicate — wbudowane delegaty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#przykad-action-func-predicate-w-praktyce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przykład — Action, Func, Predicate w praktyce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyrazenia-lambda-skrocony-zapis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wyrażenia lambda — skrócony zapis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wyrazenia-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wyrażenia Lambda
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wyrażenia Lambda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czym-jest-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czym jest lambda?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lambda-wyrazeniowa-vs-lambda-blokowa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lambda wyrażeniowa vs. lambda blokowa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domkniecie-closure-lambda-przechwytuje-zmienne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Domknięcie (closure) — lambda "przechwytuje" zmienne
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gdzie-lambdy-pojawiaja-sie-w-praktyce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gdzie lambdy pojawiają się w praktyce?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linq-language-integrated-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LINQ — Language Integrated Query
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LINQ — Language Integrated Query">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czym-jest-linq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czym jest LINQ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dwie-skadnie-ten-sam-silnik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dwie składnie — ten sam silnik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#najwazniejsze-operatory-filtrowanie-projekcja-sortowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Najważniejsze operatory — filtrowanie, projekcja, sortowanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupowanie-groupby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grupowanie — GroupBy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joiny-aczenie-kolekcji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Joiny — łączenie kolekcji
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spaszczanie-selectmany" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spłaszczanie — SelectMany
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agregacje-i-operatory-elementow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregacje i operatory elementów
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leniwa-ewaluacja-linq-nie-robi-nic-dopoki-nie-musi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leniwa ewaluacja — LINQ nie robi nic, dopóki nie musi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sowo-kluczowe-let-w-query-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Słowo kluczowe let w query syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zip-i-aggregate-rzadziej-uzywane-ale-warto-znac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zip i Aggregate — rzadziej używane, ale warto znać
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-syntax-vs-query-syntax-kiedy-co" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method syntax vs. query syntax — kiedy co?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#laboratorium-1-model-domenowy-i-operacje-na-kolekcjach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorium 1 — Model domenowy i operacje na kolekcjach
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Laboratorium 1 — Model domenowy i operacje na kolekcjach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kontekst-projektu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kontekst projektu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-1-model-domenowy-i-dane-testowe-3-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1 — Model domenowy i dane testowe (3 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-2-delegaty-i-walidacja-zamowien-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2 — Delegaty i walidacja zamówień (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-3-action-func-predicate-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 3 — Action, Func, Predicate (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-4-linq-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 4 — LINQ (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python w data science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python w data science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarzadzanie big data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarzadzanie big data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-1">Zajęcia 1<a class="headerlink" href="#zajecia-1" title="Permanent link">#</a></h1>
+<h2 id="delegaty">Delegaty<a class="headerlink" href="#delegaty" title="Permanent link">#</a></h2>
+<h3 id="czym-jest-delegat">Czym jest delegat?<a class="headerlink" href="#czym-jest-delegat" title="Permanent link">#</a></h3>
+<p>Delegat to typ przechowujący referencję do metody. Tak jak <code>int</code> trzyma liczbę, delegat trzyma wskaźnik na funkcję o określonej sygnaturze (typy parametrów + typ zwracany). Można go przekazać jako argument, zapisać w zmiennej i wywołać później.</p>
+<p>Delegaty to fundament trzech mechanizmów C#:</p>
+<ul>
+<li><strong>Eventy</strong> (<code>event</code>) — delegaty z ograniczonym dostępem (z zewnątrz tylko <code>+=</code> i <code>-=</code>)</li>
+<li><strong>LINQ</strong> — metody jak <code>.Where()</code>, <code>.Select()</code>, <code>.ForEach()</code> przyjmują <code>Func</code> / <code>Predicate</code> / <code>Action</code></li>
+<li><strong>Programowanie asynchroniczne</strong> — callbacki i <code>Task</code>-based patterns</li>
+</ul>
+<h3 id="wasny-delegat-sowo-kluczowe-delegate">Własny delegat — słowo kluczowe <code>delegate</code><a class="headerlink" href="#wasny-delegat-sowo-kluczowe-delegate" title="Permanent link">#</a></h3>
+<p>Definiujemy typ, a potem przypisujemy do niego metody, które pasują sygnaturą:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Metody lokalne</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">void</span><span class="w"> </span><span class="nf">WyslijEmail</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">zamowienie</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Email: Twoje zamówienie &#39;{zamowienie}&#39; przyjęte!&quot;</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">void</span><span class="w"> </span><span class="nf">WyslijSMS</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">zamowienie</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;SMS: Zamówienie &#39;{zamowienie}&#39; w realizacji.&quot;</span><span class="p">);</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">void</span><span class="w"> </span><span class="nf">ZapiszDoLoga</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">zamowienie</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">{</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Log: [{DateTime.Now:HH:mm:ss}] Nowe zamówienie: {zamowienie}&quot;</span><span class="p">);</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="kt">var</span><span class="w"> </span><span class="n">sklep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SklepInternetowy</span><span class="p">();</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="n">sklep</span><span class="p">.</span><span class="n">Powiadom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WyslijEmail</span><span class="p">;</span><span class="w">       </span><span class="c1">// przypisanie</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="n">sklep</span><span class="p">.</span><span class="n">Powiadom</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">WyslijSMS</span><span class="p">;</span><span class="w">        </span><span class="c1">// += dodaje kolejną metodę (multicast)</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="n">sklep</span><span class="p">.</span><span class="n">Powiadom</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">ZapiszDoLoga</span><span class="p">;</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="n">sklep</span><span class="p">.</span><span class="n">ZlozZamowienie</span><span class="p">(</span><span class="s">&quot;Shure SM7B&quot;</span><span class="p">);</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="n">sklep</span><span class="p">.</span><span class="n">Powiadom</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">WyslijSMS</span><span class="p">;</span><span class="w">        </span><span class="c1">// -= odpina metodę</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="n">sklep</span><span class="p">.</span><span class="n">ZlozZamowienie</span><span class="p">(</span><span class="s">&quot;Kabel XLR&quot;</span><span class="p">);</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="c1">// --- Deklaracje typów muszą być pod top-level statements ---</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="k">delegate</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">PowiadomOZamowieniu</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">zamowienie</span><span class="p">);</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="k">class</span><span class="w"> </span><span class="nc">SklepInternetowy</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="p">{</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">PowiadomOZamowieniu</span><span class="o">?</span><span class="w"> </span><span class="n">Powiadom</span><span class="p">;</span><span class="w">   </span><span class="c1">// ? — pole może być null</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ZlozZamowienie</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">produkt</span><span class="p">)</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Zamówienie złożone: {produkt}&quot;</span><span class="p">);</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">        </span><span class="n">Powiadom</span><span class="o">?.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">produkt</span><span class="p">);</span><span class="w">          </span><span class="c1">// ?. — wywołaj tylko jeśli nie-null</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Kluczowe elementy:</strong></p>
+<ul>
+<li><code>delegate void PowiadomOZamowieniu(string)</code> — definiuje typ (sygnatura: <code>string</code> → <code>void</code>)</li>
+<li><code>+=</code> / <code>-=</code> — delegaty mogą trzymać wiele metod naraz (multicast)</li>
+<li><code>?.Invoke()</code> — bezpieczne wywołanie z zabezpieczeniem przed <code>null</code></li>
+<li><code>?</code> przy typie — nullable reference type, jawna zgoda na <code>null</code></li>
+</ul>
+<h3 id="action-func-predicate-wbudowane-delegaty">Action, Func, Predicate — wbudowane delegaty<a class="headerlink" href="#action-func-predicate-wbudowane-delegaty" title="Permanent link">#</a></h3>
+<p>Zamiast definiować własne typy delegatów, w 99% przypadków wystarczą gotowce:</p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Sygnatura</th>
+<th>Zastosowanie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Action&lt;T&gt;</code></td>
+<td>parametry → <code>void</code></td>
+<td>"zrób coś" — loguj, wyświetl, wyślij</td>
+</tr>
+<tr>
+<td><code>Func&lt;T, TResult&gt;</code></td>
+<td>parametry → wartość (ostatni typ = zwracany)</td>
+<td>"oblicz/przekształć" — mapowanie, formatowanie</td>
+</tr>
+<tr>
+<td><code>Predicate&lt;T&gt;</code></td>
+<td>parametr → <code>bool</code> (= <code>Func&lt;T, bool&gt;</code>)</td>
+<td>"czy spełnia warunek?" — filtrowanie, walidacja</td>
+</tr>
+</tbody>
+</table>
+<p>Warianty <code>Action</code> i <code>Func</code> obsługują od 0 do 16 parametrów:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Action</span><span class="w">                        </span><span class="c1">// () =&gt; void</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Action</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w">                </span><span class="c1">// (string) =&gt; void</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Action</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w">           </span><span class="c1">// (string, int) =&gt; void</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w">                     </span><span class="c1">// () =&gt; int</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w">             </span><span class="c1">// (string) =&gt; int</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="o">&gt;</span><span class="w">    </span><span class="c1">// (string, string) =&gt; bool</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">Predicate</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w">             </span><span class="c1">// (string) =&gt; bool  ≡  Func&lt;string, bool&gt;</span>
+</span></code></pre></div>
+<h3 id="przykad-action-func-predicate-w-praktyce">Przykład — Action, Func, Predicate w praktyce<a class="headerlink" href="#przykad-action-func-predicate-w-praktyce" title="Permanent link">#</a></h3>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">sklep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SklepInternetowy</span><span class="p">();</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">sklep</span><span class="p">.</span><span class="n">DodajProdukt</span><span class="p">(</span><span class="s">&quot;Shure SM7B&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1899.00m</span><span class="p">);</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">sklep</span><span class="p">.</span><span class="n">DodajProdukt</span><span class="p">(</span><span class="s">&quot;Kabel XLR&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">49.99m</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">sklep</span><span class="p">.</span><span class="n">DodajProdukt</span><span class="p">(</span><span class="s">&quot;Interface Focusrite&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">899.00m</span><span class="p">);</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">sklep</span><span class="p">.</span><span class="n">DodajProdukt</span><span class="p">(</span><span class="s">&quot;Pop filtr&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">29.99m</span><span class="p">);</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">sklep</span><span class="p">.</span><span class="n">DodajProdukt</span><span class="p">(</span><span class="s">&quot;Statyw mikrofonowy&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">149.99m</span><span class="p">);</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">// ACTION — wykonaj operację na każdym produkcie (void)</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">sklep</span><span class="p">.</span><span class="n">DlaKazdegoProduktu</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;  📦 {p.Nazwa} — {p.Cena:C}&quot;</span><span class="p">));</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1">// PREDICATE — filtruj według warunku (bool)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="kt">var</span><span class="w"> </span><span class="n">drogie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sklep</span><span class="p">.</span><span class="n">Filtruj</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">drogie</span><span class="p">)</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;  💰 {p.Nazwa}&quot;</span><span class="p">);</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="c1">// FUNC — przekształć produkt w string (zwraca wartość)</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="kt">var</span><span class="w"> </span><span class="n">etykiety</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sklep</span><span class="p">.</span><span class="n">Transformuj</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">$&quot;{p.Nazwa.ToUpper()} [{p.Cena:F2} PLN]&quot;</span><span class="p">);</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">etykiety</span><span class="p">)</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;  🏷️ {e}&quot;</span><span class="p">);</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="c1">// --- Typy ---</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="k">record</span><span class="w"> </span><span class="nf">Produkt</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">Nazwa</span><span class="p">,</span><span class="w"> </span><span class="kt">decimal</span><span class="w"> </span><span class="n">Cena</span><span class="p">);</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="k">class</span><span class="w"> </span><span class="nc">SklepInternetowy</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="p">{</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Produkt</span><span class="o">&gt;</span><span class="w"> </span><span class="n">_produkty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DodajProdukt</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">nazwa</span><span class="p">,</span><span class="w"> </span><span class="kt">decimal</span><span class="w"> </span><span class="n">cena</span><span class="p">)</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">        </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">_produkty</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Produkt</span><span class="p">(</span><span class="n">nazwa</span><span class="p">,</span><span class="w"> </span><span class="n">cena</span><span class="p">));</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DlaKazdegoProduktu</span><span class="p">(</span><span class="n">Action</span><span class="o">&lt;</span><span class="n">Produkt</span><span class="o">&gt;</span><span class="w"> </span><span class="n">akcja</span><span class="p">)</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="w">        </span><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">_produkty</span><span class="p">)</span>
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a><span class="w">            </span><span class="n">akcja</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Produkt</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Filtruj</span><span class="p">(</span><span class="n">Predicate</span><span class="o">&lt;</span><span class="n">Produkt</span><span class="o">&gt;</span><span class="w"> </span><span class="n">warunek</span><span class="p">)</span>
+</span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a><span class="w">        </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Produkt</span><span class="o">&gt;</span><span class="w"> </span><span class="n">wynik</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a><span class="w">        </span><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">_produkty</span><span class="p">)</span>
+</span><span id="__span-2-45"><a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">warunek</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+</span><span id="__span-2-46"><a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a><span class="w">                </span><span class="n">wynik</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+</span><span id="__span-2-47"><a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">wynik</span><span class="p">;</span>
+</span><span id="__span-2-48"><a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-49"><a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>
+</span><span id="__span-2-50"><a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Transformuj</span><span class="p">(</span><span class="n">Func</span><span class="o">&lt;</span><span class="n">Produkt</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">transformacja</span><span class="p">)</span>
+</span><span id="__span-2-51"><a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-52"><a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a><span class="w">        </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">wynik</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span><span id="__span-2-53"><a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a><span class="w">        </span><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">_produkty</span><span class="p">)</span>
+</span><span id="__span-2-54"><a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a><span class="w">            </span><span class="n">wynik</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">transformacja</span><span class="p">(</span><span class="n">p</span><span class="p">));</span>
+</span><span id="__span-2-55"><a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">wynik</span><span class="p">;</span>
+</span><span id="__span-2-56"><a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-57"><a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="wyrazenia-lambda-skrocony-zapis">Wyrażenia lambda — skrócony zapis<a class="headerlink" href="#wyrazenia-lambda-skrocony-zapis" title="Permanent link">#</a></h3>
+<p>Lambdy to anonimowe metody przypisywane do delegatów:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">Action</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">powitanie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">imie</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Cześć {imie}!&quot;</span><span class="p">);</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dodaj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">Predicate</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">czyParzysta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="wyrazenia-lambda">Wyrażenia Lambda<a class="headerlink" href="#wyrazenia-lambda" title="Permanent link">#</a></h2>
+<h3 id="czym-jest-lambda">Czym jest lambda?<a class="headerlink" href="#czym-jest-lambda" title="Permanent link">#</a></h3>
+<p>Lambda to anonimowa funkcja — metoda bez nazwy, którą zapisujecie w jednej linii i przypisujecie do delegata. Zamiast definiować osobną metodę i przekazywać jej nazwę, piszecie ciało funkcji w miejscu użycia. Składnia to <code>(parametry) =&gt; wyrażenie</code> — operator <code>=&gt;</code> czytamy jako "goes to" lub po prostu "strzałka".</p>
+<p>Lambdy nie istnieją same z siebie — zawsze "lądują" w jakimś delegacie (<code>Action</code>, <code>Func</code>, <code>Predicate</code> lub własnym). Kompilator sam dopasowuje typy parametrów na podstawie kontekstu, dlatego zwykle nie trzeba ich podawać jawnie:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// Pełna forma — typy podane jawnie</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dodaj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">// Skrócona — kompilator wywnioskuje typy z Func&lt;int, int, int&gt;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dodaj2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">// Jeden parametr — można pominąć nawiasy</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">Predicate</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">niepuste</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">Length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1">// Brak parametrów — puste nawiasy obowiązkowe</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">Action</span><span class="w"> </span><span class="n">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Gotowe!&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="lambda-wyrazeniowa-vs-lambda-blokowa">Lambda wyrażeniowa vs. lambda blokowa<a class="headerlink" href="#lambda-wyrazeniowa-vs-lambda-blokowa" title="Permanent link">#</a></h3>
+<p>Gdy ciało funkcji to jedno wyrażenie, wystarczy prawa strona strzałki — wartość jest automatycznie zwracana (nie piszemy <code>return</code>):</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">kwadrat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Gdy potrzebujecie kilku instrukcji, dodajecie klamry <code>{}</code> i wtedy musicie użyć jawnego <code>return</code> (jeśli delegat zwraca wartość):</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">formatuj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nazwa</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">trimmed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nazwa</span><span class="p">.</span><span class="n">Trim</span><span class="p">();</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">upper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">trimmed</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">();</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">$&quot;[{upper}]&quot;</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>Zasada kciuka — jeśli lambda blokowa rozrasta się powyżej 3–4 linii, lepiej wyciągnąć ją do nazwanej metody. Lambda ma służyć zwięzłości, a nie zaciemnianiu kodu.</p>
+<h3 id="domkniecie-closure-lambda-przechwytuje-zmienne">Domknięcie (closure) — lambda "przechwytuje" zmienne<a class="headerlink" href="#domkniecie-closure-lambda-przechwytuje-zmienne" title="Permanent link">#</a></h3>
+<p>Lambda ma dostęp do zmiennych z otaczającego zakresu (scope). To nazywamy domknięciem — lambda "zamyka" nad zmienną i korzysta z niej w momencie wywołania, nie w momencie definicji:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">decimal</span><span class="w"> </span><span class="n">minKwota</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">Predicate</span><span class="o">&lt;</span><span class="n">Order</span><span class="o">&gt;</span><span class="w"> </span><span class="n">drogie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">TotalAmount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">minKwota</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">minKwota</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">500</span><span class="p">;</span><span class="w"> </span><span class="c1">// zmiana PRZED wywołaniem lambdy</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1">// drogie teraz filtruje &gt; 500, nie &gt; 100!</span>
+</span></code></pre></div>
+<p>To potężny mechanizm, ale wymaga świadomości — lambda nie kopiuje wartości zmiennej, tylko trzyma referencję do niej. Klasyczna pułapka to domknięcie nad zmienną pętli:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">akcje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Action</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="n">akcje</span><span class="p">.</span><span class="n">Add</span><span class="p">(()</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">akcje</span><span class="p">)</span><span class="w"> </span><span class="n">a</span><span class="p">();</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1">// Wypisze: 3, 3, 3 — bo wszystkie lambdy widzą TĘ SAMĄ zmienną i,</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1">// która po pętli ma wartość 3</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="c1">// Fix — lokalna kopia:</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="p">{</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">kopia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">    </span><span class="n">akcje</span><span class="p">.</span><span class="n">Add</span><span class="p">(()</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">kopia</span><span class="p">));</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="gdzie-lambdy-pojawiaja-sie-w-praktyce">Gdzie lambdy pojawiają się w praktyce?<a class="headerlink" href="#gdzie-lambdy-pojawiaja-sie-w-praktyce" title="Permanent link">#</a></h3>
+<p>Lambdy to "klej" między waszym kodem a bibliotekami. Prawie wszystkie metody kolekcji i LINQ przyjmują delegaty, a wygodnie jest je przekazywać właśnie jako lambdy:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">produkty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Shure SM7B&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Kabel XLR&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Pop filtr&quot;</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1">// List&lt;T&gt;.Find — przyjmuje Predicate&lt;T&gt;</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="kt">var</span><span class="w"> </span><span class="n">wynik</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&quot;XLR&quot;</span><span class="p">));</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1">// List&lt;T&gt;.ForEach — przyjmuje Action&lt;T&gt;</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">produkty</span><span class="p">.</span><span class="n">ForEach</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">()));</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c1">// List&lt;T&gt;.ConvertAll — przyjmuje Func&lt;T, TResult&gt; (pod spodem Converter&lt;T,TResult&gt;)</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="kt">var</span><span class="w"> </span><span class="n">dlugosci</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span><span class="p">.</span><span class="n">ConvertAll</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Length</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Lambdy to pomost między delegatami (które poznaliście na początku zajęć) a LINQ (który zaraz przed wami). Delegat definiuje <em>kontrakt</em> — jaką funkcję można przekazać. Lambda to <em>najwygodniejszy sposób</em> na spełnienie tego kontraktu w miejscu wywołania.</p>
+<hr />
+<h2 id="linq-language-integrated-query">LINQ — Language Integrated Query<a class="headerlink" href="#linq-language-integrated-query" title="Permanent link">#</a></h2>
+<h3 id="czym-jest-linq">Czym jest LINQ?<a class="headerlink" href="#czym-jest-linq" title="Permanent link">#</a></h3>
+<p>LINQ (Language Integrated Query) to zestaw metod rozszerzających i składnia zapytań wbudowana w C#, która pozwala odpytywać kolekcje (listy, tablice, słowniki, a później też bazy danych i XML) w jednolity, deklaratywny sposób. Zamiast pisać pętle <code>for</code>/<code>foreach</code> z warunkami, mówicie <em>co</em> chcecie dostać, a nie <em>jak</em> to iterować.</p>
+<p>LINQ działa na wszystkim, co implementuje <code>IEnumerable&lt;T&gt;</code> — czyli praktycznie na każdej kolekcji w .NET. Metody LINQ zwracają nowe sekwencje (nie modyfikują oryginału) i są leniwie ewaluowane — wykonują się dopiero, gdy ktoś poprosi o wyniki (np. <code>foreach</code>, <code>ToList()</code>, <code>Count()</code>).</p>
+<h3 id="dwie-skadnie-ten-sam-silnik">Dwie składnie — ten sam silnik<a class="headerlink" href="#dwie-skadnie-ten-sam-silnik" title="Permanent link">#</a></h3>
+<p>C# oferuje dwa sposoby pisania zapytań LINQ:</p>
+<p><strong>Składnia metod (method syntax)</strong> — łańcuch wywołań metod rozszerzających z lambda jako argumentami:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">drogie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="p">.</span><span class="n">OrderByDescending</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="p">)</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Nazwa</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="p">});</span>
+</span></code></pre></div>
+<p><strong>Składnia zapytań (query syntax)</strong> — SQL-podobna składnia z <code>from</code>, <code>where</code>, <code>select</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">drogie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">produkty</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">             </span><span class="k">where</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">             </span><span class="k">orderby</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="k">descending</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">             </span><span class="k">select</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Nazwa</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="p">};</span>
+</span></code></pre></div>
+<p>Obie formy kompilują się do tego samego kodu — kompilator zamienia query syntax na wywołania metod. Składnia metod jest bardziej elastyczna (ma więcej operatorów), a składnia zapytań bywa czytelniejsza przy joinach i grupowaniach. W praktyce często mieszacie obie — to jest jak najbardziej idiomatyczne.</p>
+<h3 id="najwazniejsze-operatory-filtrowanie-projekcja-sortowanie">Najważniejsze operatory — filtrowanie, projekcja, sortowanie<a class="headerlink" href="#najwazniejsze-operatory-filtrowanie-projekcja-sortowanie" title="Permanent link">#</a></h3>
+<p><strong>Where</strong> — filtruje elementy po warunku. Przyjmuje <code>Func&lt;T, bool&gt;</code> (w praktyce to ten sam kontrakt co <code>Predicate&lt;T&gt;</code>, ale LINQ używa <code>Func</code>):</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">elektronika</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Category</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Electronics&quot;</span><span class="p">);</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1">// query syntax:</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="kt">var</span><span class="w"> </span><span class="n">elektronika2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">produkty</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">                   </span><span class="k">where</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Category</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Electronics&quot;</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">                   </span><span class="k">select</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
+</span></code></pre></div>
+<p><strong>Select</strong> — projekcja, czyli transformacja każdego elementu na nowy kształt. Przyjmuje <code>Func&lt;T, TResult&gt;</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">nazwy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Nazwa</span><span class="p">);</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kt">var</span><span class="w"> </span><span class="n">summary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Nazwa</span><span class="p">,</span><span class="w"> </span><span class="n">CenaBrutto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1.23m</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1">// query syntax:</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="kt">var</span><span class="w"> </span><span class="n">summary2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">produkty</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">               </span><span class="k">select</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Nazwa</span><span class="p">,</span><span class="w"> </span><span class="n">CenaBrutto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1.23m</span><span class="w"> </span><span class="p">};</span>
+</span></code></pre></div>
+<p><strong>OrderBy / OrderByDescending / ThenBy</strong> — sortowanie. <code>ThenBy</code> dodaje drugorzędne kryterium:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">posortowane</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="p">.</span><span class="n">OrderBy</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Category</span><span class="p">)</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="p">.</span><span class="n">ThenByDescending</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="p">);</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1">// query syntax:</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="kt">var</span><span class="w"> </span><span class="n">posortowane2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">produkty</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">                   </span><span class="k">orderby</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Category</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="k">descending</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">                   </span><span class="k">select</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="grupowanie-groupby">Grupowanie — GroupBy<a class="headerlink" href="#grupowanie-groupby" title="Permanent link">#</a></h3>
+<p><code>GroupBy</code> dzieli kolekcję na grupy po kluczu. Wynikiem jest kolekcja <code>IGrouping&lt;TKey, TElement&gt;</code> — każda grupa ma <code>.Key</code> i jest sama w sobie <code>IEnumerable&lt;T&gt;</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">grupyKategorie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="p">.</span><span class="n">GroupBy</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Category</span><span class="p">);</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">grupa</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">grupyKategorie</span><span class="p">)</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="p">{</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Kategoria: {grupa.Key}&quot;</span><span class="p">);</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">grupa</span><span class="p">)</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;  - {p.Nazwa}: {p.Cena:C}&quot;</span><span class="p">);</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="p">}</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="c1">// query syntax:</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="kt">var</span><span class="w"> </span><span class="n">grupy2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">produkty</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">             </span><span class="k">group</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Category</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">g</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">             </span><span class="k">select</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Kategoria</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g</span><span class="p">.</span><span class="n">Key</span><span class="p">,</span><span class="w"> </span><span class="n">Ile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g</span><span class="p">.</span><span class="n">Count</span><span class="p">(),</span><span class="w"> </span><span class="n">Suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g</span><span class="p">.</span><span class="n">Sum</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="p">)</span><span class="w"> </span><span class="p">};</span>
+</span></code></pre></div>
+<p>Zwróćcie uwagę na <code>into g</code> w query syntax — po <code>group by</code> tworzy się nowa zmienna zakresowa (<code>g</code>), na której możecie dalej operować. W method syntax tę rolę pełni po prostu kolejne <code>.Select()</code>.</p>
+<h3 id="joiny-aczenie-kolekcji">Joiny — łączenie kolekcji<a class="headerlink" href="#joiny-aczenie-kolekcji" title="Permanent link">#</a></h3>
+<p>Gdy macie dane w osobnych kolekcjach (np. zamówienia i klienci z osobnych list), potrzebujecie joina — łączenia po wspólnym kluczu.</p>
+<p><strong>Join (inner join)</strong> — zwraca tylko pary, które mają dopasowanie w obu kolekcjach:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">zamowieniaZKlientami</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="p">.</span><span class="n">Join</span><span class="p">(</span><span class="n">klienci</span><span class="p">,</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">        </span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">CustomerId</span><span class="p">,</span><span class="w">       </span><span class="c1">// klucz z lewej</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">        </span><span class="n">k</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span><span class="w">               </span><span class="c1">// klucz z prawej</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">        </span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">new</span><span class="w">            </span><span class="c1">// co zrobić z parą</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">            </span><span class="n">z</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">            </span><span class="n">Klient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">FullName</span><span class="p">,</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">            </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="c1">// query syntax — tu join jest znacznie czytelniejszy:</span>
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="kt">var</span><span class="w"> </span><span class="n">zamowienia2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">zamowienia</span>
+</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">                  </span><span class="k">join</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">klienci</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">CustomerId</span><span class="w"> </span><span class="k">equals</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">                  </span><span class="k">select</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span><span class="w"> </span><span class="n">Klient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">FullName</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span><span class="w"> </span><span class="p">};</span>
+</span></code></pre></div>
+<p><strong>GroupJoin (left join pattern)</strong> — każdemu elementowi z lewej przypisuje kolekcję dopasowań z prawej (może być pusta — stąd "left join"):</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">klienciZZamowieniami</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">klienci</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span><span class="p">.</span><span class="n">GroupJoin</span><span class="p">(</span><span class="n">zamowienia</span><span class="p">,</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">        </span><span class="n">k</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">        </span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">CustomerId</span><span class="p">,</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">        </span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">ordery</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">new</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">            </span><span class="n">Klient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">FullName</span><span class="p">,</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">            </span><span class="n">LiczbaZamowien</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ordery</span><span class="p">.</span><span class="n">Count</span><span class="p">(),</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">            </span><span class="n">Suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ordery</span><span class="p">.</span><span class="n">Sum</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span><span class="p">)</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="c1">// query syntax:</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="kt">var</span><span class="w"> </span><span class="n">klienci2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">klienci</span>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">               </span><span class="k">join</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">zamowienia</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">Id</span><span class="w"> </span><span class="k">equals</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">CustomerId</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">ordery</span>
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="w">               </span><span class="k">select</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Klient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">FullName</span><span class="p">,</span><span class="w"> </span><span class="n">Ile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ordery</span><span class="p">.</span><span class="n">Count</span><span class="p">()</span><span class="w"> </span><span class="p">};</span>
+</span></code></pre></div>
+<p>To właśnie <code>into</code> po <code>join</code> tworzy <code>GroupJoin</code> — kluczowy pattern, który w query syntax jest dużo bardziej naturalny niż w method syntax.</p>
+<h3 id="spaszczanie-selectmany">Spłaszczanie — SelectMany<a class="headerlink" href="#spaszczanie-selectmany" title="Permanent link">#</a></h3>
+<p>Gdy każdy element kolekcji sam zawiera kolekcję (np. zamówienie ma listę pozycji), <code>SelectMany</code> "spłaszcza" zagnieżdżoną strukturę do jednej płaskiej sekwencji:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1">// Chcemy listę WSZYSTKICH pozycji ze WSZYSTKICH zamówień</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="kt">var</span><span class="w"> </span><span class="n">wszystkiePozycje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="p">.</span><span class="n">SelectMany</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Items</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">        </span><span class="p">(</span><span class="n">zamowienie</span><span class="p">,</span><span class="w"> </span><span class="n">pozycja</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">            </span><span class="n">zamowienie</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">            </span><span class="n">pozycja</span><span class="p">.</span><span class="n">ProductId</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">            </span><span class="n">pozycja</span><span class="p">.</span><span class="n">TotalPrice</span><span class="w"> </span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="c1">// query syntax — tu SelectMany pojawia się niejawnie przez podwójne &quot;from&quot;:</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="kt">var</span><span class="w"> </span><span class="n">pozycje2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">zamowienia</span>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">               </span><span class="k">from</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Items</span>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w">               </span><span class="k">select</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span><span class="w"> </span><span class="n">item</span><span class="p">.</span><span class="n">ProductId</span><span class="p">,</span><span class="w"> </span><span class="n">item</span><span class="p">.</span><span class="n">TotalPrice</span><span class="w"> </span><span class="p">};</span>
+</span></code></pre></div>
+<p>Podwójne <code>from</code> w query syntax to jeden z najczęstszych powodów, dla których ludzie sięgają po tę składnię — jest po prostu czytelniejsze od jawnego <code>SelectMany</code>.</p>
+<h3 id="agregacje-i-operatory-elementow">Agregacje i operatory elementów<a class="headerlink" href="#agregacje-i-operatory-elementow" title="Permanent link">#</a></h3>
+<p>LINQ oferuje zestaw metod kończących łańcuch — te metody <strong>wymuszają natychmiastowe wykonanie</strong> (nie są leniwe):</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">Sum</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span><span class="p">);</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="kt">var</span><span class="w"> </span><span class="n">srednia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">Average</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span><span class="p">);</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="kt">var</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">Max</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span><span class="p">);</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="kt">var</span><span class="w"> </span><span class="n">ile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">Count</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Status</span><span class="p">.</span><span class="n">Completed</span><span class="p">);</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="kt">var</span><span class="w"> </span><span class="n">jest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10000</span><span class="p">);</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="kt">var</span><span class="w"> </span><span class="n">wszystkie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">All</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Items</span><span class="p">.</span><span class="n">Count</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Operatory elementów pobierają pojedynczy obiekt:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">pierwszy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Status</span><span class="p">.</span><span class="n">New</span><span class="p">);</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="kt">var</span><span class="w"> </span><span class="n">alboNull</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">FirstOrDefault</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Status</span><span class="p">.</span><span class="n">New</span><span class="p">);</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="kt">var</span><span class="w"> </span><span class="n">najdrozsze</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zamowienia</span><span class="p">.</span><span class="n">MaxBy</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span><span class="p">);</span><span class="w">  </span><span class="c1">// .NET 6+</span>
+</span></code></pre></div>
+<p>Różnica między <code>First</code> a <code>FirstOrDefault</code> — <code>First</code> rzuca wyjątek, gdy nie ma wyniku, <code>FirstOrDefault</code> zwraca <code>null</code> (dla typów referencyjnych) lub wartość domyślną.</p>
+<h3 id="leniwa-ewaluacja-linq-nie-robi-nic-dopoki-nie-musi">Leniwa ewaluacja — LINQ nie robi nic, dopóki nie musi<a class="headerlink" href="#leniwa-ewaluacja-linq-nie-robi-nic-dopoki-nie-musi" title="Permanent link">#</a></h3>
+<p>To kluczowa koncepcja. Większość operatorów LINQ (<code>Where</code>, <code>Select</code>, <code>OrderBy</code>, <code>GroupBy</code>) tworzy tylko <strong>opis zapytania</strong> — nie iteruje jeszcze po kolekcji. Wykonanie następuje dopiero przy materializacji:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">zapytanie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">produkty</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">Cena</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span><span class="w"> </span><span class="c1">// ← jeszcze NIC się nie wykonało</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="kt">var</span><span class="w"> </span><span class="n">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zapytanie</span><span class="p">.</span><span class="n">ToList</span><span class="p">();</span><span class="w">     </span><span class="c1">// ← TUTAJ iteruje i filtruje</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">zapytanie</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w">    </span><span class="c1">// ← albo TUTAJ</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="kt">var</span><span class="w"> </span><span class="n">ile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zapytanie</span><span class="p">.</span><span class="n">Count</span><span class="p">();</span><span class="w">        </span><span class="c1">// ← albo TUTAJ</span>
+</span></code></pre></div>
+<p>Ma to dwie konsekwencje. Po pierwsze, jeśli potrzebujecie wyniku wielokrotnie, zmaterializujcie go raz przez <code>ToList()</code> — inaczej zapytanie wykona się od nowa za każdym razem. Po drugie, możecie budować zapytanie krok po kroku i dołączać kolejne warunki dynamicznie (to właśnie wykorzystuje <code>WhereIf</code> z zadania bonusowego).</p>
+<h3 id="sowo-kluczowe-let-w-query-syntax">Słowo kluczowe <code>let</code> w query syntax<a class="headerlink" href="#sowo-kluczowe-let-w-query-syntax" title="Permanent link">#</a></h3>
+<p><code>let</code> pozwala zdefiniować zmienną pomocniczą wewnątrz zapytania — przydatne, gdy obliczona wartość jest używana w kilku miejscach:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">raport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">zamowienia</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">             </span><span class="k">let</span><span class="w"> </span><span class="n">kwota</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Items</span><span class="p">.</span><span class="n">Sum</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">TotalPrice</span><span class="p">)</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">             </span><span class="k">let</span><span class="w"> </span><span class="n">czyDuze</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kwota</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1000</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">             </span><span class="k">where</span><span class="w"> </span><span class="n">czyDuze</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">             </span><span class="k">orderby</span><span class="w"> </span><span class="n">kwota</span><span class="w"> </span><span class="k">descending</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">             </span><span class="k">select</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span><span class="w"> </span><span class="n">kwota</span><span class="p">,</span><span class="w"> </span><span class="n">Rozmiar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">czyDuze</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;Duże&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Małe&quot;</span><span class="w"> </span><span class="p">};</span>
+</span></code></pre></div>
+<p>W method syntax nie ma bezpośredniego odpowiednika <code>let</code> — trzeba użyć dodatkowego <code>Select</code>, który dorzuca obliczoną wartość jako pole anonimowego typu, a potem kontynuować łańcuch. To jeden z przypadków, gdzie query syntax jest czytelniejsza.</p>
+<h3 id="zip-i-aggregate-rzadziej-uzywane-ale-warto-znac">Zip i Aggregate — rzadziej używane, ale warto znać<a class="headerlink" href="#zip-i-aggregate-rzadziej-uzywane-ale-warto-znac" title="Permanent link">#</a></h3>
+<p><strong>Zip</strong> — łączy dwie kolekcje element po elemencie (jak zamek błyskawiczny):</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">nazwy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Shure SM7B&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Kabel XLR&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Pop filtr&quot;</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="kt">var</span><span class="w"> </span><span class="n">ceny</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">1899.00m</span><span class="p">,</span><span class="w"> </span><span class="mf">49.99m</span><span class="p">,</span><span class="w"> </span><span class="mf">29.99m</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="kt">var</span><span class="w"> </span><span class="n">produkty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nazwy</span><span class="p">.</span><span class="n">Zip</span><span class="p">(</span><span class="n">ceny</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Nazwa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">Cena</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="c1">// Wynik: { Shure SM7B, 1899 }, { Kabel XLR, 49.99 }, { Pop filtr, 29.99 }</span>
+</span></code></pre></div>
+<p><strong>Aggregate</strong> — najbardziej ogólna redukcja kolekcji do pojedynczej wartości (jak <code>reduce</code> w JavaScript/Pythonie):</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">koszyk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">100m</span><span class="p">,</span><span class="w"> </span><span class="mf">200m</span><span class="p">,</span><span class="w"> </span><span class="mf">300m</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c1">// Suma z 5% rabatem kumulowanym na każdą kolejną pozycję</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="kt">var</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">koszyk</span><span class="p">.</span><span class="n">Aggregate</span><span class="p">(</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">    </span><span class="p">(</span><span class="n">dotychczas</span><span class="p">,</span><span class="w"> </span><span class="n">kolejna</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">dotychczas</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">kolejna</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.95m</span><span class="p">);</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="c1">// 100 + 200*0.95 + 300*0.95 = 100 + 190 + 285 = 575</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="c1">// Z wartością początkową (seed):</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="kt">var</span><span class="w"> </span><span class="n">zSeedem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">koszyk</span><span class="p">.</span><span class="n">Aggregate</span><span class="p">(</span><span class="mf">0m</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="w">    </span><span class="p">(</span><span class="n">akumulator</span><span class="p">,</span><span class="w"> </span><span class="n">pozycja</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">akumulator</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pozycja</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1.23m</span><span class="p">);</span>
+</span></code></pre></div>
+<p><code>Aggregate</code> to "nóż szwajcarski" — <code>Sum</code>, <code>Min</code>, <code>Max</code>, <code>Count</code> to tak naprawdę jego specjalizowane wersje. W codziennym kodzie używacie tych specjalizacji, ale <code>Aggregate</code> przydaje się, gdy potrzebujecie niestandardowej logiki redukcji.</p>
+<h3 id="method-syntax-vs-query-syntax-kiedy-co">Method syntax vs. query syntax — kiedy co?<a class="headerlink" href="#method-syntax-vs-query-syntax-kiedy-co" title="Permanent link">#</a></h3>
+<p>Nie ma jednej "poprawnej" składni. Ogólne wytyczne:</p>
+<p>Składnia metod sprawdza się lepiej, gdy łańcuch jest prosty (filtr → sortuj → weź), gdy używacie operatorów bez odpowiednika w query syntax (<code>Distinct</code>, <code>Take</code>, <code>Skip</code>, <code>Zip</code>, <code>Aggregate</code>, <code>Any</code>, <code>All</code>) i gdy korzystacie z metod zwracających pojedyncze wartości (<code>First</code>, <code>Count</code>, <code>Sum</code>).</p>
+<p>Składnia zapytań jest czytelniejsza przy joinach (jedno <code>join ... on ... equals</code> vs. rozbudowany <code>Join()</code> z czterema lambdami), przy grupowaniach z dalszym przetwarzaniem (dzięki <code>into</code>), przy wielu zmiennych zakresowych (podwójne <code>from</code> zamiast <code>SelectMany</code>) i przy obliczeniach pośrednich (<code>let</code>).</p>
+<p>Mieszanie obu składni w jednym zapytaniu jest normalne — otaczacie fragment query syntax nawiasem i dokładacie <code>.Count()</code> czy <code>.ToList()</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">wynik</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">from</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">zamowienia</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">             </span><span class="k">join</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">klienci</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">CustomerId</span><span class="w"> </span><span class="k">equals</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">             </span><span class="k">where</span><span class="w"> </span><span class="n">k</span><span class="p">.</span><span class="n">IsVip</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">             </span><span class="k">select</span><span class="w"> </span><span class="n">z</span><span class="p">.</span><span class="n">TotalAmount</span><span class="p">).</span><span class="n">Average</span><span class="p">();</span>
+</span></code></pre></div>
+<hr />
+<h2 id="laboratorium-1-model-domenowy-i-operacje-na-kolekcjach">Laboratorium 1 — Model domenowy i operacje na kolekcjach<a class="headerlink" href="#laboratorium-1-model-domenowy-i-operacje-na-kolekcjach" title="Permanent link">#</a></h2>
+<p><strong>Projekt:</strong> OrderFlow — System przetwarzania zamówień</p>
+<p><strong>Tematy:</strong> Delegaty, wyrażenia lambda, Action/Func/Predicate, LINQ (składnia zapytań i metod)</p>
+<h3 id="kontekst-projektu">Kontekst projektu<a class="headerlink" href="#kontekst-projektu" title="Permanent link">#</a></h3>
+<p>Przez 5 zajęć budujecie system <strong>OrderFlow</strong> — aplikację przetwarzającą zamówienia klientów. Zaczynamy od modelu domenowego i operacji na kolekcjach in-memory, które w kolejnych tygodniach rozbudujecie o zdarzenia, asynchroniczność, pliki, bazę danych i testy.</p>
+<p>Pracujcie w solucji konsolowej .NET 8+. Zalecana struktura:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>OrderFlow/
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>├── OrderFlow.sln
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>└── OrderFlow.Console/
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    ├── Models/
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>    ├── Services/
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>    ├── Data/
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>    └── Program.cs
+</span></code></pre></div>
+<hr />
+<h3 id="zadanie-1-model-domenowy-i-dane-testowe-3-pkt">Zadanie 1 — Model domenowy i dane testowe (3 pkt)<a class="headerlink" href="#zadanie-1-model-domenowy-i-dane-testowe-3-pkt" title="Permanent link">#</a></h3>
+<p>Utwórzcie klasy: <strong>Product</strong>, <strong>Customer</strong>, <strong>Order</strong>, <strong>OrderItem</strong> z sensownymi właściwościami (cena, ilość, kategoria, status itp.). Order powinien mieć właściwość obliczaną <code>TotalAmount</code>, a OrderItem — <code>TotalPrice</code>.</p>
+<p>Status zamówienia zróbcie jako enum (<code>New</code>, <code>Validated</code>, <code>Processing</code>, <code>Completed</code>, <code>Cancelled</code>).</p>
+<p>W klasie <strong>SampleData</strong> przygotujcie statyczne listy z przykładowymi danymi — minimum 5 produktów (różne kategorie), 4 klientów (w tym min. 1 VIP) i 6 zamówień. Dane powinny być na tyle zróżnicowane, żeby zapytania z dalszych zadań dawały ciekawe wyniki.</p>
+<hr />
+<h3 id="zadanie-2-delegaty-i-walidacja-zamowien-4-pkt">Zadanie 2 — Delegaty i walidacja zamówień (4 pkt)<a class="headerlink" href="#zadanie-2-delegaty-i-walidacja-zamowien-4-pkt" title="Permanent link">#</a></h3>
+<p>Zbudujcie klasę <code>OrderValidator</code> z pipeline'em reguł walidacyjnych.</p>
+<p>Wymagania:</p>
+<ul>
+<li>Zdefiniujcie <strong>własny delegat</strong> <code>ValidationRule</code> (z parametrem <code>out string errorMessage</code>).</li>
+<li>Zaimplementujcie minimum <strong>3 reguły jako named methods</strong> (np. zamówienie musi mieć pozycje, kwota nie przekracza limitu, ilości &gt; 0).</li>
+<li>Dodajcie drugi mechanizm walidacji oparty na <strong><code>Func&lt;Order, bool&gt;</code></strong> z minimum <strong>2 regułami jako lambdy</strong> (np. data nie z przyszłości, status nie jest <code>Cancelled</code>).</li>
+<li>Metoda <code>ValidateAll</code> powinna łączyć wyniki obu mechanizmów.</li>
+</ul>
+<p>Pokażcie w konsoli walidację zamówienia poprawnego i jednego łamiącego kilka reguł.</p>
+<hr />
+<h3 id="zadanie-3-action-func-predicate-4-pkt">Zadanie 3 — Action, Func, Predicate (4 pkt)<a class="headerlink" href="#zadanie-3-action-func-predicate-4-pkt" title="Permanent link">#</a></h3>
+<p>Zbudujcie klasę <code>OrderProcessor</code> operującą na liście zamówień. Zaimplementujcie metody wykorzystujące generyczne delegaty:</p>
+<ul>
+<li><strong><code>Predicate&lt;Order&gt;</code></strong> — filtrowanie zamówień (min. 3 różne predykaty jako lambdy).</li>
+<li><strong><code>Action&lt;Order&gt;</code></strong> — wykonanie akcji na zamówieniach (min. 2 zastosowania, np. wypisanie, zmiana statusu).</li>
+<li><strong><code>Func&lt;Order, T&gt;</code></strong> — generyczna projekcja zamówień na dowolny typ (pokażcie użycie z typem anonimowym).</li>
+<li><strong>Agregacja</strong> — metoda przyjmująca <code>Func&lt;IEnumerable&lt;Order&gt;, decimal&gt;</code> wywołana z min. 3 agregatorami (suma, średnia, max).</li>
+</ul>
+<p>Na koniec zbudujcie <strong>łańcuch</strong>: filtruj → sortuj → weź top N → wypisz, używając <code>Predicate</code>, <code>Func</code> i <code>Action</code> w jednym flow.</p>
+<hr />
+<h3 id="zadanie-4-linq-4-pkt">Zadanie 4 — LINQ (4 pkt)<a class="headerlink" href="#zadanie-4-linq-4-pkt" title="Permanent link">#</a></h3>
+<p>Zaimplementujcie zapytania LINQ w <strong>obu składniach</strong> (method syntax i query syntax). Minimum 6 zapytań, w tym obowiązkowo:</p>
+<ul>
+<li>Join zamówień z klientami (np. grupowanie zamówień po mieście klienta).</li>
+<li>Spłaszczenie z <code>SelectMany</code> (np. Order → OrderItems → Product).</li>
+<li><code>GroupBy</code> z agregacją (np. top klientów wg kwoty, średnia wartość per kategoria).</li>
+<li>Jedno zapytanie z <code>GroupJoin</code> (left join pattern).</li>
+<li>Jedno zapytanie łączące obie składnie (mixed syntax), np. raport per klient z ulubioną kategorią.</li>
+</ul>
+<p>Nad każdym zapytaniem dodajcie <strong>krótki komentarz</strong> opisujący co robi i dlaczego wybraliście daną składnię. Wyniki wypisujcie do konsoli.</p>
+<hr />
+<h3 id="punktacja">Punktacja<a class="headerlink" href="#punktacja" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Zadanie</th>
+<th>Punkty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wysłanie zadania na GitHub z commitem z zajęć</td>
+<td><strong>5 pkt</strong></td>
+</tr>
+<tr>
+<td>1. Model domenowy + dane testowe</td>
+<td>3 pkt</td>
+</tr>
+<tr>
+<td>2. Delegaty i walidacja</td>
+<td>4 pkt</td>
+</tr>
+<tr>
+<td>3. Action, Func, Predicate</td>
+<td>4 pkt</td>
+</tr>
+<tr>
+<td>4. LINQ (method + query syntax)</td>
+<td>4 pkt</td>
+</tr>
+<tr>
+<td><strong>Razem</strong></td>
+<td><strong>20 pkt</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Uwaga o GitHub:</strong> Aby otrzymać 5 pkt za wysłanie, musicie mieć <strong>co najmniej 1 commit z czasów zajęć</strong> (nie musi być ukończony kod — liczy się systematyczna praca). Zadanie można dokończyć po zajęciach, ale finalna wersja też musi być na repozytorium.</p>
+</blockquote>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Zacznijcie od zadania 1 i dobrych danych testowych — reszta zadań z nich korzysta.</li>
+<li>Zwróćcie uwagę na różnicę między <code>delegate</code> a <code>Func</code> — oba działają, ale mają inne zastosowania.</li>
+<li>W LINQ pamiętajcie, że <code>join</code> w query syntax to odpowiednik <code>Join</code>/<code>GroupJoin</code> w method syntax, a <code>let</code> nie ma bezpośredniego odpowiednika.</li>
+<li>Kod z dzisiejszych zajęć będzie <strong>rozbudowywany</strong> na kolejnych — zadbajcie o czytelną strukturę.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

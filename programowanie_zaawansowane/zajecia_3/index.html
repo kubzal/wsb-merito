@@ -1,0 +1,3101 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/programowanie_zaawansowane/zajecia_3/">
+      
+      
+        <link rel="prev" href="../zajecia_2/">
+      
+      
+        <link rel="next" href="../zajecia_4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zajęcia 3 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-3" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../jakosc_aplikacji/" class="md-tabs__link">
+          
+  
+  
+  Jakosc aplikacji
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_stron_internetowych_2/" class="md-tabs__link">
+          
+  
+  
+  Programowanie stron internetowych 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_wysokopoziomowe/" class="md-tabs__link">
+          
+  
+  
+  Programowanie wysokopoziomowe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Programowanie zaawansowane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python_w_data_science/" class="md-tabs__link">
+          
+  
+  
+  Python w data science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../zarzadzanie_big_data/" class="md-tabs__link">
+          
+  
+  
+  Zarzadzanie big data
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakosc aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakosc aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pliki-serializacja-linq-to-xml-filesystemwatcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pliki, serializacja, LINQ to XML, FileSystemWatcher
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pliki, serializacja, LINQ to XML, FileSystemWatcher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-operacje-na-plikach-i-strumieniach-systemio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1: Operacje na plikach i strumieniach (System.IO)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 1: Operacje na plikach i strumieniach (System.IO)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#od-czego-zaczynamy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Od czego zaczynamy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#najprostszy-zapis-i-odczyt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Najprostszy zapis i odczyt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sciezki-pathcombine-zamiast-hardkodowania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ścieżki — Path.Combine zamiast hardkodowania
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#katalogi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Katalogi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strumienie-gdy-plik-jest-duzy-albo-binarny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strumienie — gdy plik jest duży albo binarny
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-czemu-to-jest-wazne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        using — czemu to jest ważne
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wersje-asynchroniczne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wersje asynchroniczne
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyjatki-ktore-warto-znac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wyjątki, które warto znać
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-serializacja-i-deserializacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2: Serializacja i deserializacja
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 2: Serializacja i deserializacja">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-jak-wysac-obiekt-przez-siec-albo-zapisac-do-pliku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem: jak wysłać obiekt przez sieć albo zapisać do pliku
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-systemtextjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON — System.Text.Json
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcje-serializacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opcje serializacji
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atrybuty-kontrola-per-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atrybuty — kontrola per-property
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zapis-i-odczyt-plikow-json-strumieniowo-async" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zapis i odczyt plików JSON (strumieniowo, async)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xml-xmlserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML — XmlSerializer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atrybuty-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atrybuty XML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-vs-xml-kiedy-co" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON vs XML — kiedy co?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-3-linq-to-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 3: LINQ to XML
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 3: LINQ to XML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dlaczego-jeszcze-jedno-api-do-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dlaczego jeszcze jedno API do XML?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gowne-klasy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Główne klasy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budowanie-xml-programatycznie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Budowanie XML programatycznie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wczytywanie-i-przeszukiwanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wczytywanie i przeszukiwanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modyfikacja-drzewa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modyfikacja drzewa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xmlserializer-vs-linq-to-xml-kiedy-co" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XmlSerializer vs LINQ to XML — kiedy co?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-4-filesystemwatcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 4: FileSystemWatcher
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 4: FileSystemWatcher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-reagowanie-na-zmiany-w-katalogu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem: reagowanie na zmiany w katalogu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#podstawowe-uzycie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podstawowe użycie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notifyfilter-na-co-konkretnie-reagujecie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NotifyFilter — na co konkretnie reagujecie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dwie-puapki-o-ktorych-musicie-wiedziec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dwie pułapki, o których musicie wiedzieć
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#includesubdirectories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IncludeSubdirectories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internalbuffersize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InternalBufferSize
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#podsumowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podsumowanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#laboratorium-3-persystencja-i-monitoring-plikow-w-orderflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorium 3 — Persystencja i monitoring plików w OrderFlow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Laboratorium 3 — Persystencja i monitoring plików w OrderFlow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-1-repozytorium-zapis-i-odczyt-zamowien-w-json-i-xml-5-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1 — Repozytorium: zapis i odczyt zamówień w JSON i XML (5 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-2-raport-xml-budowany-przez-linq-to-xml-5-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2 — Raport XML budowany przez LINQ to XML (5 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-3-automatyczny-import-z-folderu-inbox-5-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 3 — Automatyczny import z folderu inbox (5 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python w data science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python w data science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarzadzanie big data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarzadzanie big data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-3">Zajęcia 3<a class="headerlink" href="#zajecia-3" title="Permanent link">#</a></h1>
+<h2 id="pliki-serializacja-linq-to-xml-filesystemwatcher">Pliki, serializacja, LINQ to XML, FileSystemWatcher<a class="headerlink" href="#pliki-serializacja-linq-to-xml-filesystemwatcher" title="Permanent link">#</a></h2>
+<p>Do tej pory OrderFlow trzymał wszystko w pamięci — po zamknięciu programu dane znikały. Dziś naprawiamy tę fundamentalną wadę: uczymy program zapisywać i wczytywać stan. Po drodze poznajemy strumienie (<code>System.IO</code>), dwa najpopularniejsze formaty wymiany danych (JSON i XML), wygodne API do budowania XML-a programatycznie (LINQ to XML) oraz mechanizm reagujący na zmiany w systemie plików (<code>FileSystemWatcher</code>).</p>
+<h3 id="czesc-1-operacje-na-plikach-i-strumieniach-systemio">Część 1: Operacje na plikach i strumieniach (System.IO)<a class="headerlink" href="#czesc-1-operacje-na-plikach-i-strumieniach-systemio" title="Permanent link">#</a></h3>
+<h4 id="od-czego-zaczynamy">Od czego zaczynamy<a class="headerlink" href="#od-czego-zaczynamy" title="Permanent link">#</a></h4>
+<p>Przestrzeń nazw <code>System.IO</code> to fundament — wszystko co dotyczy plików, katalogów i strumieni żyje właśnie tam. Na najwyższym poziomie mamy trzy statyczne klasy-pomocniki:</p>
+<ul>
+<li><strong><code>File</code></strong> — pojedyncze pliki (<code>ReadAllText</code>, <code>WriteAllText</code>, <code>Exists</code>, <code>Delete</code>, <code>Copy</code>…).</li>
+<li><strong><code>Directory</code></strong> — katalogi (<code>CreateDirectory</code>, <code>GetFiles</code>, <code>Exists</code>, <code>Delete</code>…).</li>
+<li><strong><code>Path</code></strong> — składanie i analiza ścieżek (<code>Combine</code>, <code>GetFileName</code>, <code>GetExtension</code>…).</li>
+</ul>
+<h4 id="najprostszy-zapis-i-odczyt">Najprostszy zapis i odczyt<a class="headerlink" href="#najprostszy-zapis-i-odczyt" title="Permanent link">#</a></h4>
+<p>Dla małych plików tekstowych wystarczy jedna linijka:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Zapis — nadpisuje plik, jeśli istnieje</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">File</span><span class="p">.</span><span class="n">WriteAllText</span><span class="p">(</span><span class="s">&quot;notatka.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cześć z C#!&quot;</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// Odczyt — cały plik do stringa</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kt">string</span><span class="w"> </span><span class="n">tresc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">File</span><span class="p">.</span><span class="n">ReadAllText</span><span class="p">(</span><span class="s">&quot;notatka.txt&quot;</span><span class="p">);</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">tresc</span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">// Linia po linii</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">linie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">File</span><span class="p">.</span><span class="n">ReadAllLines</span><span class="p">(</span><span class="s">&quot;notatka.txt&quot;</span><span class="p">);</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">linie</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1">// Dopisanie (append) — nie nadpisuje, dokleja</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">File</span><span class="p">.</span><span class="n">AppendAllText</span><span class="p">(</span><span class="s">&quot;log.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">$&quot;[{DateTime.Now:HH:mm:ss}] start\n&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<p>W Pythonie napisalibyście <code>open("notatka.txt").read()</code> — w C# <code>File.ReadAllText</code> jest bliskim odpowiednikiem, tylko że od razu zamyka plik po odczycie (nie musicie pamiętać o <code>close</code>).</p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a0.svg" title=":warning:" /> <strong>Uwaga!</strong> <code>ReadAllText</code> wczytuje <strong>cały plik do pamięci</strong>. Dla pliku 10 KB — super. Dla loga o rozmiarze 5 GB — zapłaczecie. Od tego są strumienie, o których za chwilę.</p>
+</blockquote>
+<h4 id="sciezki-pathcombine-zamiast-hardkodowania">Ścieżki — <code>Path.Combine</code> zamiast hardkodowania<a class="headerlink" href="#sciezki-pathcombine-zamiast-hardkodowania" title="Permanent link">#</a></h4>
+<p>Sklejanie ścieżek stringami (<code>"folder" + "/" + "plik.txt"</code>) to pułapka: na Windowsie separatorem jest <code>\</code>, na Linuksie/macOS <code>/</code>. Do tego dochodzą podwójne ukośniki, spacje i inne atrakcje. <code>Path.Combine</code> robi to dobrze — używając separatora właściwego dla bieżącego OS:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">string</span><span class="w"> </span><span class="n">sciezka</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="s">&quot;dane&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;zamowienia&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2026.json&quot;</span><span class="p">);</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1">// Windows: &quot;dane\zamowienia\2026.json&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1">// Linux:   &quot;dane/zamowienia/2026.json&quot;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">// Przydatne przy katalogu bieżącym aplikacji</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kt">string</span><span class="w"> </span><span class="n">appDir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AppContext</span><span class="p">.</span><span class="n">BaseDirectory</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kt">string</span><span class="w"> </span><span class="n">plik</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">appDir</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;config.json&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Kilka innych metod z <code>Path</code>, które warto znać:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Path</span><span class="p">.</span><span class="n">GetFileName</span><span class="p">(</span><span class="s">&quot;C:/dane/raport.pdf&quot;</span><span class="p">);</span><span class="w">        </span><span class="c1">// &quot;raport.pdf&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Path</span><span class="p">.</span><span class="n">GetFileNameWithoutExtension</span><span class="p">(</span><span class="s">&quot;raport.pdf&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;raport&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">Path</span><span class="p">.</span><span class="n">GetExtension</span><span class="p">(</span><span class="s">&quot;raport.pdf&quot;</span><span class="p">);</span><span class="w">                </span><span class="c1">// &quot;.pdf&quot;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">Path</span><span class="p">.</span><span class="n">GetDirectoryName</span><span class="p">(</span><span class="s">&quot;C:/dane/raport.pdf&quot;</span><span class="p">);</span><span class="w">    </span><span class="c1">// &quot;C:/dane&quot;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">Path</span><span class="p">.</span><span class="n">ChangeExtension</span><span class="p">(</span><span class="s">&quot;raport.pdf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;.txt&quot;</span><span class="p">);</span><span class="w">     </span><span class="c1">// &quot;raport.txt&quot;</span>
+</span></code></pre></div>
+<h4 id="katalogi">Katalogi<a class="headerlink" href="#katalogi" title="Permanent link">#</a></h4>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Utwórz katalog (rekurencyjnie — tworzy też brakujące nadrzędne)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">Directory</span><span class="p">.</span><span class="n">CreateDirectory</span><span class="p">(</span><span class="s">&quot;dane/zamowienia&quot;</span><span class="p">);</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">// Sprawdź istnienie</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Directory</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="s">&quot;dane&quot;</span><span class="p">))</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Katalog istnieje&quot;</span><span class="p">);</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1">// Listowanie</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">pliki</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Directory</span><span class="p">.</span><span class="n">GetFiles</span><span class="p">(</span><span class="s">&quot;dane&quot;</span><span class="p">);</span><span class="w">                    </span><span class="c1">// tylko tu</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">wszystkie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Directory</span><span class="p">.</span><span class="n">GetFiles</span><span class="p">(</span><span class="s">&quot;dane&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;*.json&quot;</span><span class="p">,</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="n">SearchOption</span><span class="p">.</span><span class="n">AllDirectories</span><span class="p">);</span><span class="w">                               </span><span class="c1">// rekurencyjnie</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">podkatalogi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Directory</span><span class="p">.</span><span class="n">GetDirectories</span><span class="p">(</span><span class="s">&quot;dane&quot;</span><span class="p">);</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="c1">// Usuwanie</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">Directory</span><span class="p">.</span><span class="n">Delete</span><span class="p">(</span><span class="s">&quot;dane/temp&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">recursive</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Wzorzec <code>*.json</code> to glob pattern — identycznie jak w terminalu.</p>
+<h4 id="strumienie-gdy-plik-jest-duzy-albo-binarny">Strumienie — gdy plik jest duży albo binarny<a class="headerlink" href="#strumienie-gdy-plik-jest-duzy-albo-binarny" title="Permanent link">#</a></h4>
+<p><code>File.ReadAllText</code> jest wygodny, ale ładuje wszystko naraz. <strong>Strumień (stream)</strong> to abstrakcja pozwalająca czytać/zapisywać dane <strong>porcjami</strong>. Nie musicie trzymać całej zawartości w pamięci — pracujecie z przepływem bajtów.</p>
+<p>W .NET hierarchia wygląda tak:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Stream                    ← klasa bazowa, czyste bajty
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  ├── FileStream          ← bajty z/do pliku
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  ├── MemoryStream        ← bajty w pamięci (przydatne w testach)
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  ├── NetworkStream       ← bajty przez sieć
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  └── ...
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>Na to nakładamy &quot;tekstowe&quot; opakowania:
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  StreamReader            ← czyta tekst ze strumienia (dekoduje bajty na znaki)
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>  StreamWriter            ← zapisuje tekst do strumienia
+</span></code></pre></div>
+<p>Typowy zapis linia po linii przez <code>StreamWriter</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">writer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">&quot;log.txt&quot;</span><span class="p">))</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="n">writer</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Start aplikacji&quot;</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="n">writer</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Czas: {DateTime.Now}&quot;</span><span class="p">);</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="n">writer</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Koniec&quot;</span><span class="p">);</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span><span class="w">  </span><span class="c1">// ← tu automatycznie zamyka plik</span>
+</span></code></pre></div>
+<p>Odczyt linia po linii:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">reader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">&quot;log.txt&quot;</span><span class="p">))</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="kt">string?</span><span class="w"> </span><span class="n">linia</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">((</span><span class="n">linia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">reader</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">())</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">linia</span><span class="p">);</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="using-czemu-to-jest-wazne"><code>using</code> — czemu to jest ważne<a class="headerlink" href="#using-czemu-to-jest-wazne" title="Permanent link">#</a></h4>
+<p>Pliki to <strong>zasób zewnętrzny</strong> (system operacyjny trzyma dla was uchwyt). Jeśli go nie zwolnicie, zaczynają się problemy: nie możecie pliku usunąć, inne procesy nie mogą go otworzyć, aplikacja przecieka uchwytami.</p>
+<p>Słowo kluczowe <code>using</code> gwarantuje, że metoda <code>Dispose()</code> zostanie wywołana — <strong>nawet jeśli w środku poleci wyjątek</strong>. To odpowiednik <code>with</code> z Pythona:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Python:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;log.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># plik automatycznie zamknięty</span>
+</span></code></pre></div>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// C# — klasyczna forma z blokiem</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">writer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">&quot;log.txt&quot;</span><span class="p">))</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">{</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">writer</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">}</span><span class="w">  </span><span class="c1">// Dispose() wywołane tutaj</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1">// C# 8+ — using declaration (krócej)</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="k">using</span><span class="w"> </span><span class="nn">var</span><span class="w"> </span><span class="n">writer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">&quot;log.txt&quot;</span><span class="p">);</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">writer</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1">// Dispose() wywołane na końcu BIEŻĄCEGO BLOKU (np. metody)</span>
+</span></code></pre></div>
+<p><strong>Zasada:</strong> wszystko co implementuje <code>IDisposable</code> (pliki, połączenia do bazy, <code>HttpClient</code>) zawsze przez <code>using</code>. Bez wyjątków.</p>
+<h4 id="wersje-asynchroniczne">Wersje asynchroniczne<a class="headerlink" href="#wersje-asynchroniczne" title="Permanent link">#</a></h4>
+<p>Operacje na plikach to klasyczne I/O-bound — czekacie na dysk. Przypomnijcie sobie z zajęć 2: <strong>wątek nie powinien stać i patrzeć w ścianę</strong>. Dlatego prawie wszystkie metody mają warianty <code>...Async</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// Synchroniczne — blokuje wątek</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kt">string</span><span class="w"> </span><span class="n">tresc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">File</span><span class="p">.</span><span class="n">ReadAllText</span><span class="p">(</span><span class="s">&quot;plik.txt&quot;</span><span class="p">);</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1">// Asynchroniczne — wątek jest wolny podczas czytania z dysku</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="kt">string</span><span class="w"> </span><span class="n">tresc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">File</span><span class="p">.</span><span class="n">ReadAllTextAsync</span><span class="p">(</span><span class="s">&quot;plik.txt&quot;</span><span class="p">);</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1">// Strumieniowo + async</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="k">using</span><span class="w"> </span><span class="nn">var</span><span class="w"> </span><span class="n">writer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">&quot;log.txt&quot;</span><span class="p">);</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="k">await</span><span class="w"> </span><span class="n">writer</span><span class="p">.</span><span class="n">WriteLineAsync</span><span class="p">(</span><span class="s">&quot;async wpis&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<p>W aplikacjach konsolowych różnica jest kosmetyczna. W UI i serwerach — kluczowa. Na labie używamy wariantów <code>Async</code>, żeby wejść w dobre nawyki.</p>
+<h4 id="wyjatki-ktore-warto-znac">Wyjątki, które warto znać<a class="headerlink" href="#wyjatki-ktore-warto-znac" title="Permanent link">#</a></h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>IOException                  ← bazowy — coś poszło nie tak z I/O
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>├── FileNotFoundException    ← plik nie istnieje
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>├── DirectoryNotFoundException
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>└── PathTooLongException
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>UnauthorizedAccessException  ← brak uprawnień
+</span></code></pre></div>
+<p>Dobrą praktyką jest <strong>sprawdzić istnienie przed odczytem</strong> i opakować operacje w try/catch:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">string</span><span class="w"> </span><span class="n">sciezka</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;dane/orders.json&quot;</span><span class="p">;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">sciezka</span><span class="p">))</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">{</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Brak pliku — używam pustej listy.&quot;</span><span class="p">);</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Order</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="p">}</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="k">try</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="p">{</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="kt">string</span><span class="w"> </span><span class="n">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">File</span><span class="p">.</span><span class="n">ReadAllTextAsync</span><span class="p">(</span><span class="n">sciezka</span><span class="p">);</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="p">.</span><span class="n">Deserialize</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Order</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">json</span><span class="p">)</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="k">new</span><span class="p">();</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="p">}</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">ex</span><span class="p">)</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="p">{</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Nie udało się odczytać pliku: {ex.Message}&quot;</span><span class="p">);</span>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">    </span><span class="k">throw</span><span class="p">;</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="czesc-2-serializacja-i-deserializacja">Część 2: Serializacja i deserializacja<a class="headerlink" href="#czesc-2-serializacja-i-deserializacja" title="Permanent link">#</a></h3>
+<h4 id="problem-jak-wysac-obiekt-przez-siec-albo-zapisac-do-pliku">Problem: jak wysłać obiekt przez sieć albo zapisać do pliku<a class="headerlink" href="#problem-jak-wysac-obiekt-przez-siec-albo-zapisac-do-pliku" title="Permanent link">#</a></h4>
+<p>Macie w pamięci obiekt <code>Order</code>. Chcecie go:</p>
+<ul>
+<li>zapisać do pliku, żeby jutro wczytać,</li>
+<li>wysłać przez HTTP do innego serwisu,</li>
+<li>zapisać w kolejce komunikatów,</li>
+<li>zapamiętać w cache (np. Redis).</li>
+</ul>
+<p>Każdy z tych kanałów akceptuje <strong>tekst</strong> (albo bajty) — a nie obiekty C#. Potrzebujecie mechanizmu, który przetłumaczy obiekt na tekst i z powrotem.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Obiekt w pamięci  ──serializacja──▶  Tekst / bajty
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>Obiekt w pamięci  ◀──deserializacja── Tekst / bajty
+</span></code></pre></div>
+<p>Dwa najpopularniejsze formaty to <strong>JSON</strong> (webowy standard, krótki i czytelny) i <strong>XML</strong> (starszy, bardziej rozbudowany, wciąż powszechny w enterprise i dokumentach konfiguracyjnych).</p>
+<h4 id="json-systemtextjson">JSON — <code>System.Text.Json</code><a class="headerlink" href="#json-systemtextjson" title="Permanent link">#</a></h4>
+<p>W .NET historycznie królował <code>Newtonsoft.Json</code> (aka <code>Json.NET</code>). Od .NET Core 3.0 Microsoft dostarcza wbudowany <code>System.Text.Json</code> — szybszy, oparty na <code>Span&lt;T&gt;</code>, od razu dostępny bez dodawania paczek. To on jest dziś rekomendowany.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System.Text.Json</span><span class="p">;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1">// Nasz obiekt</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="kt">var</span><span class="w"> </span><span class="n">order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Order</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="p">{</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="n">Id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">    </span><span class="n">Customer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Jan Kowalski&quot;</span><span class="p">,</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">    </span><span class="n">Items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Mleko&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Chleb&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Kawa&quot;</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="n">Total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">29.99m</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="p">};</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="c1">// SERIALIZACJA — obiekt → JSON</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="kt">string</span><span class="w"> </span><span class="n">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="p">.</span><span class="n">Serialize</span><span class="p">(</span><span class="n">order</span><span class="p">);</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="c1">// {&quot;Id&quot;:42,&quot;Customer&quot;:&quot;Jan Kowalski&quot;,&quot;Items&quot;:[&quot;Mleko&quot;,&quot;Chleb&quot;,&quot;Kawa&quot;],&quot;Total&quot;:29.99}</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="c1">// DESERIALIZACJA — JSON → obiekt</span>
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="n">Order</span><span class="o">?</span><span class="w"> </span><span class="n">wczytany</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="p">.</span><span class="n">Deserialize</span><span class="o">&lt;</span><span class="n">Order</span><span class="o">&gt;</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">wczytany</span><span class="o">?.</span><span class="n">Customer</span><span class="p">);</span><span class="w">  </span><span class="c1">// Jan Kowalski</span>
+</span></code></pre></div>
+<p>Zwróćcie uwagę na <code>?</code> przy zwracanym typie — <code>Deserialize</code> może zwrócić <code>null</code> (np. gdy JSON brzmi <code>"null"</code>). Kompilator wymusza na Was jawną obsługę tego przypadku.</p>
+<h4 id="opcje-serializacji">Opcje serializacji<a class="headerlink" href="#opcje-serializacji" title="Permanent link">#</a></h4>
+<p>Surowy JSON jest zwarty, ale nieczytelny. Do kontroli formatowania służy <code>JsonSerializerOptions</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">opcje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonSerializerOptions</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="p">{</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="n">WriteIndented</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">,</span><span class="w">                           </span><span class="c1">// wcięcia dla czytelności</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="n">PropertyNamingPolicy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JsonNamingPolicy</span><span class="p">.</span><span class="n">CamelCase</span><span class="p">,</span><span class="w"> </span><span class="c1">// PascalCase → camelCase</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="n">DefaultIgnoreCondition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JsonIgnoreCondition</span><span class="p">.</span><span class="n">WhenWritingNull</span><span class="p">,</span><span class="w"> </span><span class="c1">// pomiń nulle</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">    </span><span class="n">Encoder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encodings</span><span class="p">.</span><span class="n">Web</span><span class="p">.</span><span class="n">JavaScriptEncoder</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">        </span><span class="p">.</span><span class="n">UnsafeRelaxedJsonEscaping</span><span class="w">                  </span><span class="c1">// nie escape&#39;uj polskich znaków</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="p">};</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="kt">string</span><span class="w"> </span><span class="n">ladny</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="p">.</span><span class="n">Serialize</span><span class="p">(</span><span class="n">order</span><span class="p">,</span><span class="w"> </span><span class="n">opcje</span><span class="p">);</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">ladny</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Wynik:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">&quot;customer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jan Kowalski&quot;</span><span class="p">,</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="s2">&quot;Mleko&quot;</span><span class="p">,</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="s2">&quot;Chleb&quot;</span><span class="p">,</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="s2">&quot;Kawa&quot;</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span><span class="nt">&quot;total&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">29.99</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="atrybuty-kontrola-per-property">Atrybuty — kontrola per-property<a class="headerlink" href="#atrybuty-kontrola-per-property" title="Permanent link">#</a></h4>
+<p>Czasem nazwa właściwości w C# nie pasuje do tego, co ma być w JSON-ie. Albo chcecie jakieś pole pominąć. Do tego służą atrybuty:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System.Text.Json.Serialization</span><span class="p">;</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Order</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="p">{</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Id</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">    </span><span class="na">[JsonPropertyName(&quot;customer_name&quot;)]</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Customer</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">    </span><span class="na">[JsonIgnore]</span>
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">HaszWewnetrzny</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w">  </span><span class="c1">// nie trafi do JSON-a</span>
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">    </span><span class="na">[JsonPropertyName(&quot;total_amount&quot;)]</span>
+</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">decimal</span><span class="w"> </span><span class="n">Total</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Po takiej dekoracji JSON wygląda tak:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">  </span><span class="nt">&quot;customer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jan Kowalski&quot;</span><span class="p">,</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">  </span><span class="nt">&quot;total_amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">29.99</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="zapis-i-odczyt-plikow-json-strumieniowo-async">Zapis i odczyt plików JSON (strumieniowo, async)<a class="headerlink" href="#zapis-i-odczyt-plikow-json-strumieniowo-async" title="Permanent link">#</a></h4>
+<p>Dla dużych kolekcji lepiej nie budować wielkiego stringa w pamięci — lepiej pisać od razu do strumienia:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1">// Zapis</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">await</span><span class="w"> </span><span class="nf">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">File</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="s">&quot;orders.json&quot;</span><span class="p">))</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="p">{</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="p">.</span><span class="n">SerializeAsync</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="n">orders</span><span class="p">,</span><span class="w"> </span><span class="n">opcje</span><span class="p">);</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="p">}</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="c1">// Odczyt</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="k">await</span><span class="w"> </span><span class="nf">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">File</span><span class="p">.</span><span class="n">OpenRead</span><span class="p">(</span><span class="s">&quot;orders.json&quot;</span><span class="p">))</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="p">{</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="p">.</span><span class="n">DeserializeAsync</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Order</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">stream</span><span class="p">);</span>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><code>await using</code> to połączenie <code>using</code> z <code>IAsyncDisposable</code> — zasób jest zwalniany asynchronicznie (przydaje się przy strumieniach sieciowych, flushowaniu buforów itp.).</p>
+<h4 id="xml-xmlserializer">XML — <code>XmlSerializer</code><a class="headerlink" href="#xml-xmlserializer" title="Permanent link">#</a></h4>
+<p>XML jest starszy, bardziej gadatliwy, ale wciąż masz z nim do czynienia w konfiguracjach (SOAP, Office, wiele systemów enterprise). W .NET klasyczne API to <code>XmlSerializer</code> z przestrzeni nazw <code>System.Xml.Serialization</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System.Xml.Serialization</span><span class="p">;</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="c1">// XmlSerializer wymaga bezparametrowego konstruktora w klasie!</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Order</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="p">{</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Id</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Customer</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">decimal</span><span class="w"> </span><span class="n">Total</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="p">}</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="c1">// SERIALIZACJA</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="kt">var</span><span class="w"> </span><span class="n">order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Order</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="n">Customer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Jan Kowalski&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">29.99m</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="kt">var</span><span class="w"> </span><span class="n">serializer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">XmlSerializer</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">Order</span><span class="p">));</span>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">writer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">&quot;order.xml&quot;</span><span class="p">))</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="p">{</span>
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a><span class="w">    </span><span class="n">serializer</span><span class="p">.</span><span class="n">Serialize</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span><span class="w"> </span><span class="n">order</span><span class="p">);</span>
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Wynik (<code>order.xml</code>):</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nt">&lt;Order</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">       </span><span class="na">xmlns:xsd=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">  </span><span class="nt">&lt;Id&gt;</span>42<span class="nt">&lt;/Id&gt;</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">  </span><span class="nt">&lt;Customer&gt;</span>Jan<span class="w"> </span>Kowalski<span class="nt">&lt;/Customer&gt;</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">  </span><span class="nt">&lt;Total&gt;</span>29.99<span class="nt">&lt;/Total&gt;</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="nt">&lt;/Order&gt;</span>
+</span></code></pre></div>
+<p>Deserializacja:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">reader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">&quot;order.xml&quot;</span><span class="p">))</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="p">{</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">wczytany</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Order</span><span class="o">?</span><span class="p">)</span><span class="n">serializer</span><span class="p">.</span><span class="n">Deserialize</span><span class="p">(</span><span class="n">reader</span><span class="p">);</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">wczytany</span><span class="o">?.</span><span class="n">Customer</span><span class="p">);</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a0.svg" title=":warning:" /> <strong>Dwa typowe błędy na start:</strong></p>
+<ol>
+<li>Brak <strong>bezparametrowego konstruktora</strong> — <code>XmlSerializer</code> rzuci wyjątek na etapie tworzenia. JSON jest tolerancyjniejszy.</li>
+<li>Próba serializacji <strong>typu anonimowego</strong> albo <code>Dictionary&lt;TKey, TValue&gt;</code> — nie działa out-of-the-box w XML. JSON radzi sobie bez problemu.</li>
+</ol>
+</blockquote>
+<h4 id="atrybuty-xml">Atrybuty XML<a class="headerlink" href="#atrybuty-xml" title="Permanent link">#</a></h4>
+<p>Analogicznie do JSON-a, możecie kontrolować wygląd XML-a atrybutami:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System.Xml.Serialization</span><span class="p">;</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="na">[XmlRoot(&quot;order&quot;)]</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Order</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="p">{</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">    </span><span class="na">[XmlAttribute(&quot;id&quot;)]</span><span class="w">           </span><span class="c1">// &lt;order id=&quot;42&quot;&gt;</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Id</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">    </span><span class="na">[XmlElement(&quot;customer&quot;)]</span><span class="w">       </span><span class="c1">// &lt;customer&gt;...&lt;/customer&gt;</span>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Customer</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>
+</span><span id="__span-22-12"><a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="w">    </span><span class="na">[XmlIgnore]</span>
+</span><span id="__span-22-13"><a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">HaszWewnetrzny</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span id="__span-22-14"><a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>
+</span><span id="__span-22-15"><a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="w">    </span><span class="na">[XmlArray(&quot;items&quot;)]</span><span class="w">            </span><span class="c1">// &lt;items&gt;</span>
+</span><span id="__span-22-16"><a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="w">    </span><span class="na">[XmlArrayItem(&quot;item&quot;)]</span><span class="w">         </span><span class="c1">//   &lt;item&gt;...&lt;/item&gt;</span>
+</span><span id="__span-22-17"><a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Items</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">();</span>
+</span><span id="__span-22-18"><a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Daje to bardziej „ludzki" XML:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nt">&lt;order</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;42&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="nt">&lt;customer&gt;</span>Jan<span class="w"> </span>Kowalski<span class="nt">&lt;/customer&gt;</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="nt">&lt;items&gt;</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">    </span><span class="nt">&lt;item&gt;</span>Mleko<span class="nt">&lt;/item&gt;</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">    </span><span class="nt">&lt;item&gt;</span>Chleb<span class="nt">&lt;/item&gt;</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">  </span><span class="nt">&lt;/items&gt;</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="nt">&lt;/order&gt;</span>
+</span></code></pre></div>
+<p>Zwróćcie uwagę na różnicę <strong>element vs atrybut</strong>:</p>
+<ul>
+<li><strong>Element</strong> — <code>&lt;customer&gt;Jan&lt;/customer&gt;</code> — może mieć dzieci, długą zawartość, strukturę.</li>
+<li><strong>Atrybut</strong> — <code>&lt;order id="42"&gt;</code> — prosta wartość, klucz-wartość, bez struktury.</li>
+</ul>
+<p>Konwencja: dane "identyfikujące" i metadane zwykle jako atrybuty, treść jako elementy.</p>
+<h4 id="json-vs-xml-kiedy-co">JSON vs XML — kiedy co?<a class="headerlink" href="#json-vs-xml-kiedy-co" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cecha</th>
+<th>JSON</th>
+<th>XML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zwięzłość</td>
+<td>Zwarty</td>
+<td>Gadatliwy</td>
+</tr>
+<tr>
+<td>Czytelność</td>
+<td>Bardzo dobra</td>
+<td>Dobra (przy dobrym formatowaniu)</td>
+</tr>
+<tr>
+<td>Wsparcie w webie</td>
+<td>Standard (REST, JS)</td>
+<td>Rzadziej (SOAP, starsze API)</td>
+</tr>
+<tr>
+<td>Schema/walidacja</td>
+<td>JSON Schema (osobny standard)</td>
+<td>XSD (wbudowane w ekosystem)</td>
+</tr>
+<tr>
+<td>Atrybuty + zagnieżdżenia</td>
+<td>Tylko zagnieżdżenia</td>
+<td>Atrybuty + elementy</td>
+</tr>
+<tr>
+<td>Komentarze</td>
+<td>❌ (standard nie pozwala)</td>
+<td>✅ (<code>&lt;!-- komentarz --&gt;</code>)</td>
+</tr>
+<tr>
+<td>Typ danych</td>
+<td>Prymitywy + string + null + tablica + obiekt</td>
+<td>Wszystko to string (typy opcjonalnie przez XSD)</td>
+</tr>
+<tr>
+<td>Typowe użycie</td>
+<td>Web API, konfiguracja nowoczesnych aplikacji, NoSQL</td>
+<td>Konfiguracja Windows/.NET, SOAP, Office, kontrakty legacy</td>
+</tr>
+</tbody>
+</table>
+<p>W 2026 roku w nowych projektach webowych wybieracie JSON. Z XML-em spotykacie się, gdy: (a) integrujecie się z czymś starszym, (b) pracujecie z dokumentami Office/OpenDocument, (c) obsługujecie konfigurację typu <code>app.config</code>, (d) czytacie pliki MusicXML, SVG, RSS itd.</p>
+<h3 id="czesc-3-linq-to-xml">Część 3: LINQ to XML<a class="headerlink" href="#czesc-3-linq-to-xml" title="Permanent link">#</a></h3>
+<h4 id="dlaczego-jeszcze-jedno-api-do-xml">Dlaczego jeszcze jedno API do XML?<a class="headerlink" href="#dlaczego-jeszcze-jedno-api-do-xml" title="Permanent link">#</a></h4>
+<p><code>XmlSerializer</code> jest wygodny, gdy <strong>macie klasę i chcecie ją wymapować 1:1</strong> na XML. Ale czasem:</p>
+<ul>
+<li>XML nie pasuje dokładnie do Waszej klasy (np. chcecie tylko kilka pól z cudzego schematu),</li>
+<li>budujecie XML <strong>dynamicznie</strong>, nie z istniejącego obiektu,</li>
+<li>chcecie <strong>przeszukiwać</strong> XML jak kolekcję — <code>zamówienia powyżej 1000 zł</code>, <code>unikalne miasta klientów</code>.</li>
+</ul>
+<p>Wtedy wygodniejsze jest <code>System.Xml.Linq</code> — czyli LINQ to XML. To model obiektowy reprezentujący XML jako drzewo obiektów, po którym można chodzić LINQ-iem.</p>
+<h4 id="gowne-klasy">Główne klasy<a class="headerlink" href="#gowne-klasy" title="Permanent link">#</a></h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>XDocument    ← cały dokument XML (może mieć deklarację &lt;?xml ... ?&gt;)
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>XElement     ← pojedynczy element &lt;tag&gt;...&lt;/tag&gt;  ← używacie najczęściej
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>XAttribute   ← atrybut wewnątrz elementu, np. id=&quot;42&quot;
+</span></code></pre></div>
+<p>Każdy <code>XElement</code> ma <code>Name</code>, <code>Value</code>, dzieci (<code>Elements()</code>), atrybuty (<code>Attributes()</code>) — pełne drzewo dostępne z każdego miejsca.</p>
+<h4 id="budowanie-xml-programatycznie">Budowanie XML programatycznie<a class="headerlink" href="#budowanie-xml-programatycznie" title="Permanent link">#</a></h4>
+<p>Oto typowy "wow moment" LINQ to XML. Zagnieżdżając konstruktory <code>XElement</code>, tworzycie drzewo w jednym wyrażeniu:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System.Xml.Linq</span><span class="p">;</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="kt">var</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">XDocument</span><span class="p">(</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nf">XDeclaration</span><span class="p">(</span><span class="s">&quot;1.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;utf-8&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;yes&quot;</span><span class="p">),</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;orders&quot;</span><span class="p">,</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;order&quot;</span><span class="p">,</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XAttribute</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;customer&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jan Kowalski&quot;</span><span class="p">),</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">29.99</span><span class="p">)</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="w">        </span><span class="p">),</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="w">        </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;order&quot;</span><span class="p">,</span>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XAttribute</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;customer&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Anna Nowak&quot;</span><span class="p">),</span>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">150.00</span><span class="p">)</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="w">        </span><span class="p">)</span>
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="w">    </span><span class="p">)</span>
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="p">);</span>
+</span><span id="__span-25-18"><a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>
+</span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a><span class="n">doc</span><span class="p">.</span><span class="n">Save</span><span class="p">(</span><span class="s">&quot;orders.xml&quot;</span><span class="p">);</span>
+</span><span id="__span-25-20"><a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">doc</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Wynik:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot;?&gt;</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="nt">&lt;orders&gt;</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">  </span><span class="nt">&lt;order</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="w">    </span><span class="nt">&lt;customer&gt;</span>Jan<span class="w"> </span>Kowalski<span class="nt">&lt;/customer&gt;</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="w">    </span><span class="nt">&lt;total&gt;</span>29.99<span class="nt">&lt;/total&gt;</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="w">  </span><span class="nt">&lt;/order&gt;</span>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="w">  </span><span class="nt">&lt;order</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="w">    </span><span class="nt">&lt;customer&gt;</span>Anna<span class="w"> </span>Nowak<span class="nt">&lt;/customer&gt;</span>
+</span><span id="__span-26-9"><a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="w">    </span><span class="nt">&lt;total&gt;</span>150<span class="nt">&lt;/total&gt;</span>
+</span><span id="__span-26-10"><a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="w">  </span><span class="nt">&lt;/order&gt;</span>
+</span><span id="__span-26-11"><a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="nt">&lt;/orders&gt;</span>
+</span></code></pre></div>
+<p>Z istniejącej kolekcji możecie wygenerować XML przez <code>Select</code>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">Id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Customer</span><span class="p">,</span><span class="w"> </span><span class="kt">decimal</span><span class="w"> </span><span class="n">Total</span><span class="p">)</span><span class="o">&gt;</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="p">{</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">    </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jan Kowalski&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">29.99m</span><span class="p">),</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">    </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Anna Nowak&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">150.00m</span><span class="p">),</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">    </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Piotr Wiśniewski&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">499.50m</span><span class="p">)</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="p">};</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="kt">var</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">XDocument</span><span class="p">(</span>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;orders&quot;</span><span class="p">,</span>
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="w">        </span><span class="k">from</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">orders</span>
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;order&quot;</span><span class="p">,</span>
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XAttribute</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">Id</span><span class="p">),</span>
+</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;customer&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">Customer</span><span class="p">),</span>
+</span><span id="__span-27-14"><a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">Total</span><span class="p">))</span>
+</span><span id="__span-27-15"><a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a><span class="w">    </span><span class="p">)</span>
+</span><span id="__span-27-16"><a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a><span class="p">);</span>
+</span></code></pre></div>
+<p>Zauważcie, że to jest ta sama składnia zapytań LINQ, którą znacie z zajęć 1 — tylko efektem jest drzewo XML, a nie lista.</p>
+<h4 id="wczytywanie-i-przeszukiwanie">Wczytywanie i przeszukiwanie<a class="headerlink" href="#wczytywanie-i-przeszukiwanie" title="Permanent link">#</a></h4>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1">// Wczytanie pliku</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="n">XDocument</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">XDocument</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="s">&quot;orders.xml&quot;</span><span class="p">);</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1">// Wszystkie zamówienia (Descendants szuka rekurencyjnie)</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="n">IEnumerable</span><span class="o">&lt;</span><span class="n">XElement</span><span class="o">&gt;</span><span class="w"> </span><span class="n">wszystkie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">doc</span><span class="p">.</span><span class="n">Descendants</span><span class="p">(</span><span class="s">&quot;order&quot;</span><span class="p">);</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="c1">// Zapytanie LINQ</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="kt">var</span><span class="w"> </span><span class="n">drogie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">doc</span><span class="p">.</span><span class="n">Descendants</span><span class="p">(</span><span class="s">&quot;order&quot;</span><span class="p">)</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">             </span><span class="k">where</span><span class="w"> </span><span class="p">(</span><span class="kt">decimal</span><span class="p">)</span><span class="n">o</span><span class="p">.</span><span class="n">Element</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">)</span><span class="o">!</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="w">             </span><span class="k">select</span><span class="w"> </span><span class="k">new</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="w">             </span><span class="p">{</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="w">                 </span><span class="n">Id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">o</span><span class="p">.</span><span class="n">Attribute</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">)</span><span class="o">!</span><span class="p">,</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="w">                 </span><span class="n">Klient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">Element</span><span class="p">(</span><span class="s">&quot;customer&quot;</span><span class="p">)</span><span class="o">?.</span><span class="n">Value</span><span class="p">,</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="w">                 </span><span class="n">Kwota</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">decimal</span><span class="p">)</span><span class="n">o</span><span class="p">.</span><span class="n">Element</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">)</span><span class="o">!</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="w">             </span><span class="p">};</span>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">drogie</span><span class="p">)</span>
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;#{o.Id} — {o.Klient} — {o.Kwota:C}&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Zwróćcie uwagę na <strong>rzutowanie</strong> — <code>(decimal)o.Element("total")</code>. <code>XElement</code> ma zdefiniowane <strong>jawne konwersje</strong> do typów prymitywnych. Wykonuje za Was parsowanie, uwzględnia <code>null</code>, i jest idiomatyczne. Alternatywnie:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kt">decimal</span><span class="w"> </span><span class="n">kwota</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">o</span><span class="p">.</span><span class="n">Element</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">)</span><span class="o">!</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span><span class="w">  </span><span class="c1">// ręcznie</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="kt">decimal</span><span class="w"> </span><span class="n">kwota2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">decimal</span><span class="p">)</span><span class="n">o</span><span class="p">.</span><span class="n">Element</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">)</span><span class="o">!</span><span class="p">;</span><span class="w">             </span><span class="c1">// LINQ to XML way</span>
+</span></code></pre></div>
+<h4 id="modyfikacja-drzewa">Modyfikacja drzewa<a class="headerlink" href="#modyfikacja-drzewa" title="Permanent link">#</a></h4>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">XDocument</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">XDocument</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="s">&quot;orders.xml&quot;</span><span class="p">);</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="c1">// Dodanie nowego zamówienia</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="n">doc</span><span class="p">.</span><span class="n">Root</span><span class="o">!</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">XElement</span><span class="p">(</span><span class="s">&quot;order&quot;</span><span class="p">,</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nf">XAttribute</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">),</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;customer&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Nowy Klient&quot;</span><span class="p">),</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nf">XElement</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">99.99</span><span class="p">)));</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="c1">// Zmiana wartości</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">doc</span><span class="p">.</span><span class="n">Descendants</span><span class="p">(</span><span class="s">&quot;order&quot;</span><span class="p">))</span>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="p">{</span>
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">Element</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
+</span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a><span class="w">    </span><span class="kt">decimal</span><span class="w"> </span><span class="n">kwota</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">decimal</span><span class="p">)</span><span class="n">total</span><span class="p">;</span>
+</span><span id="__span-30-14"><a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a><span class="w">    </span><span class="n">total</span><span class="p">.</span><span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">kwota</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1.23m</span><span class="p">).</span><span class="n">ToString</span><span class="p">();</span><span class="w">  </span><span class="c1">// +VAT</span>
+</span><span id="__span-30-15"><a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a><span class="p">}</span>
+</span><span id="__span-30-16"><a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>
+</span><span id="__span-30-17"><a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a><span class="c1">// Usunięcie elementu</span>
+</span><span id="__span-30-18"><a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a><span class="n">doc</span><span class="p">.</span><span class="n">Descendants</span><span class="p">(</span><span class="s">&quot;order&quot;</span><span class="p">)</span>
+</span><span id="__span-30-19"><a id="__codelineno-30-19" name="__codelineno-30-19" href="#__codelineno-30-19"></a><span class="w">   </span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">o</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="kt">decimal</span><span class="p">)</span><span class="n">o</span><span class="p">.</span><span class="n">Element</span><span class="p">(</span><span class="s">&quot;total&quot;</span><span class="p">)</span><span class="o">!</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">50</span><span class="p">)</span>
+</span><span id="__span-30-20"><a id="__codelineno-30-20" name="__codelineno-30-20" href="#__codelineno-30-20"></a><span class="w">   </span><span class="p">.</span><span class="n">Remove</span><span class="p">();</span>
+</span><span id="__span-30-21"><a id="__codelineno-30-21" name="__codelineno-30-21" href="#__codelineno-30-21"></a>
+</span><span id="__span-30-22"><a id="__codelineno-30-22" name="__codelineno-30-22" href="#__codelineno-30-22"></a><span class="n">doc</span><span class="p">.</span><span class="n">Save</span><span class="p">(</span><span class="s">&quot;orders_updated.xml&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<h4 id="xmlserializer-vs-linq-to-xml-kiedy-co">XmlSerializer vs LINQ to XML — kiedy co?<a class="headerlink" href="#xmlserializer-vs-linq-to-xml-kiedy-co" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th>Scenariusz</th>
+<th>Wybór</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mam klasę i chcę ją zapisać/wczytać 1:1</td>
+<td><code>XmlSerializer</code></td>
+</tr>
+<tr>
+<td>Buduję XML dynamicznie (różne struktury)</td>
+<td>LINQ to XML</td>
+</tr>
+<tr>
+<td>Czytam cudzy XML i biorę tylko niektóre pola</td>
+<td>LINQ to XML</td>
+</tr>
+<tr>
+<td>Przeszukuję, filtruję, agreguję XML</td>
+<td>LINQ to XML</td>
+</tr>
+<tr>
+<td>Muszę mieć dokładną kontrolę nad strukturą</td>
+<td>LINQ to XML</td>
+</tr>
+<tr>
+<td>Szybkie prototypowanie DTO</td>
+<td><code>XmlSerializer</code></td>
+</tr>
+</tbody>
+</table>
+<p>Zasada kciuka: <strong><code>XmlSerializer</code> dla obiektów, LINQ to XML dla drzew</strong>.</p>
+<h3 id="czesc-4-filesystemwatcher">Część 4: FileSystemWatcher<a class="headerlink" href="#czesc-4-filesystemwatcher" title="Permanent link">#</a></h3>
+<h4 id="problem-reagowanie-na-zmiany-w-katalogu">Problem: reagowanie na zmiany w katalogu<a class="headerlink" href="#problem-reagowanie-na-zmiany-w-katalogu" title="Permanent link">#</a></h4>
+<p>Wyobraźcie sobie: klient wrzuca nowy plik CSV do folderu <code>inbox</code>. Chcecie go automatycznie wczytać i zaimportować do systemu. Tradycyjnie musielibyście co sekundę odpytywać katalog (polling) — mało eleganckie i obciąża dysk.</p>
+<p>System operacyjny (Windows, Linux, macOS) ma <strong>wbudowany mechanizm powiadomień</strong> o zmianach w systemie plików. <code>FileSystemWatcher</code> to opakowanie tego API w .NET.</p>
+<h4 id="podstawowe-uzycie">Podstawowe użycie<a class="headerlink" href="#podstawowe-uzycie" title="Permanent link">#</a></h4>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System.IO</span><span class="p">;</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="kt">var</span><span class="w"> </span><span class="n">watcher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileSystemWatcher</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="p">{</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="w">    </span><span class="n">Path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;inbox&quot;</span><span class="p">,</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">    </span><span class="n">Filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*.json&quot;</span><span class="p">,</span><span class="w">                        </span><span class="c1">// reaguj tylko na pliki JSON</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">    </span><span class="n">NotifyFilter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NotifyFilters</span><span class="p">.</span><span class="n">FileName</span>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="w">                 </span><span class="o">|</span><span class="w"> </span><span class="n">NotifyFilters</span><span class="p">.</span><span class="n">LastWrite</span><span class="w">    </span><span class="c1">// na jakie zmiany reagujemy</span>
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="p">};</span>
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>
+</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="c1">// Podłączenie zdarzeń — pamiętacie z zajęć 2?</span>
+</span><span id="__span-31-12"><a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="n">watcher</span><span class="p">.</span><span class="n">Created</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">sender</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-31-13"><a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Nowy plik: {e.FullPath}&quot;</span><span class="p">);</span>
+</span><span id="__span-31-14"><a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a>
+</span><span id="__span-31-15"><a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a><span class="n">watcher</span><span class="p">.</span><span class="n">Changed</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">sender</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-31-16"><a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Zmiana: {e.FullPath}&quot;</span><span class="p">);</span>
+</span><span id="__span-31-17"><a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a>
+</span><span id="__span-31-18"><a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a><span class="n">watcher</span><span class="p">.</span><span class="n">Deleted</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">sender</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-31-19"><a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Usunięto: {e.FullPath}&quot;</span><span class="p">);</span>
+</span><span id="__span-31-20"><a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a>
+</span><span id="__span-31-21"><a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a><span class="n">watcher</span><span class="p">.</span><span class="n">Renamed</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">sender</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-31-22"><a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Zmieniono nazwę: {e.OldFullPath} → {e.FullPath}&quot;</span><span class="p">);</span>
+</span><span id="__span-31-23"><a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a>
+</span><span id="__span-31-24"><a id="__codelineno-31-24" name="__codelineno-31-24" href="#__codelineno-31-24"></a><span class="n">watcher</span><span class="p">.</span><span class="n">EnableRaisingEvents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span><span class="w">           </span><span class="c1">// ← to włącza obserwację</span>
+</span><span id="__span-31-25"><a id="__codelineno-31-25" name="__codelineno-31-25" href="#__codelineno-31-25"></a>
+</span><span id="__span-31-26"><a id="__codelineno-31-26" name="__codelineno-31-26" href="#__codelineno-31-26"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Obserwuję folder &#39;inbox&#39;. Wciśnij Enter, aby zakończyć.&quot;</span><span class="p">);</span>
+</span><span id="__span-31-27"><a id="__codelineno-31-27" name="__codelineno-31-27" href="#__codelineno-31-27"></a><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span></code></pre></div>
+<p>Zwróćcie uwagę — to <strong>dokładnie ten sam wzorzec</strong>, co zdarzenia z zajęć 2. <code>Created</code>, <code>Changed</code>, <code>Deleted</code>, <code>Renamed</code> to eventy, a Wy podpinacie się przez <code>+=</code>. Różnica: zamiast Wy sami emitujecie zdarzenie, tu to system operacyjny dostarcza informację.</p>
+<h4 id="notifyfilter-na-co-konkretnie-reagujecie"><code>NotifyFilter</code> — na co konkretnie reagujecie<a class="headerlink" href="#notifyfilter-na-co-konkretnie-reagujecie" title="Permanent link">#</a></h4>
+<p>Bez wskazania <code>NotifyFilter</code> <code>Changed</code> odpali się tylko przy zmianach rozmiaru lub atrybutu. Lista filtrów do wyboru (można łączyć <code>|</code>):</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>NotifyFilters.FileName        ← utworzenie/usunięcie/zmiana nazwy pliku
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>NotifyFilters.DirectoryName   ← jak wyżej, ale dla katalogów
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>NotifyFilters.Attributes      ← np. readonly, hidden
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>NotifyFilters.Size            ← zmiana rozmiaru
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>NotifyFilters.LastWrite       ← zmiana treści (edycja pliku)
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>NotifyFilters.LastAccess      ← odczyt pliku (uwaga: wyłączone na wielu systemach)
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>NotifyFilters.CreationTime    ← zmiana daty utworzenia
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>NotifyFilters.Security        ← zmiany ACL
+</span></code></pre></div>
+<h4 id="dwie-puapki-o-ktorych-musicie-wiedziec">Dwie pułapki, o których musicie wiedzieć<a class="headerlink" href="#dwie-puapki-o-ktorych-musicie-wiedziec" title="Permanent link">#</a></h4>
+<p><strong>Pułapka 1: wiele zdarzeń na jeden plik</strong></p>
+<p>Edytor tekstu zapisując plik może wygenerować 3-4 zdarzenia <code>Changed</code> pod rząd (bo pisze nagłówek, potem treść, potem flushuje). Nie powinniście tego debugować — powinniście to <strong>zaakceptować</strong> i zaprojektować obsługę idempotentnie (albo debounce'ować — poczekać np. 500 ms od ostatniej zmiany, dopiero wtedy reagować).</p>
+<p><strong>Pułapka 2: plik może być jeszcze zajęty</strong></p>
+<p>Gdy <code>Created</code> się odpala, system mówi "ktoś zaczął tworzyć plik" — ale zapis może jeszcze trwać. Jeśli od razu spróbujecie otworzyć plik do odczytu, dostaniecie <code>IOException: file is being used by another process</code>. Typowe rozwiązanie:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="kt">string?</span><span class="o">&gt;</span><span class="w"> </span><span class="n">BezpiecznyOdczytAsync</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">sciezka</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">proby</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="p">{</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">proby</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="w">        </span><span class="k">try</span>
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-33-7"><a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">File</span><span class="p">.</span><span class="n">ReadAllTextAsync</span><span class="p">(</span><span class="n">sciezka</span><span class="p">);</span>
+</span><span id="__span-33-8"><a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-33-9"><a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="w">        </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="p">)</span>
+</span><span id="__span-33-10"><a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-33-11"><a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a><span class="w">            </span><span class="k">await</span><span class="w"> </span><span class="n">Task</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w">  </span><span class="c1">// poczekaj i spróbuj ponownie</span>
+</span><span id="__span-33-12"><a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-33-13"><a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-33-14"><a id="__codelineno-33-14" name="__codelineno-33-14" href="#__codelineno-33-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">null</span><span class="p">;</span>
+</span><span id="__span-33-15"><a id="__codelineno-33-15" name="__codelineno-33-15" href="#__codelineno-33-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="includesubdirectories"><code>IncludeSubdirectories</code><a class="headerlink" href="#includesubdirectories" title="Permanent link">#</a></h4>
+<p>Domyślnie watcher pilnuje tylko wskazanego katalogu. Żeby objąć również podkatalogi:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">watcher</span><span class="p">.</span><span class="n">IncludeSubdirectories</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Uwaga: przy dużych drzewach katalogów (np. cały dysk C:) generuje to lawinę zdarzeń. Używajcie z rozsądkiem.</p>
+<h4 id="internalbuffersize"><code>InternalBufferSize</code><a class="headerlink" href="#internalbuffersize" title="Permanent link">#</a></h4>
+<p><code>FileSystemWatcher</code> trzyma wewnętrzny bufor na zdarzenia z systemu operacyjnego. Przy intensywnych zmianach (kopiowanie 10 000 plików naraz) bufor może się przepełnić i <strong>niektóre zdarzenia po prostu zginą</strong> — odpali się wtedy zdarzenie <code>Error</code>. Dla aplikacji produkcyjnych zwiększa się bufor (max 64 KB):</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">watcher</span><span class="p">.</span><span class="n">InternalBufferSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">64</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="p">;</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="n">watcher</span><span class="p">.</span><span class="n">Error</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Watcher error: {e.GetException().Message}&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="podsumowanie">Podsumowanie<a class="headerlink" href="#podsumowanie" title="Permanent link">#</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>System.IO (File, Directory, Path)
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>  → Podstawowe operacje — czytaj/pisz małe pliki, sklejaj ścieżki
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>Strumienie (FileStream, StreamReader/Writer)
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>  → Duże pliki, czytanie/pisanie porcjami
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>  → Zawsze przez using!
+</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>
+</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>JSON (System.Text.Json)
+</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a>  → Standard dla web API i nowoczesnej konfiguracji
+</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>  → Serialize / Deserialize + JsonSerializerOptions + atrybuty
+</span><span id="__span-36-11"><a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a>
+</span><span id="__span-36-12"><a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a>XML (XmlSerializer)
+</span><span id="__span-36-13"><a id="__codelineno-36-13" name="__codelineno-36-13" href="#__codelineno-36-13"></a>  → Klasa ↔ XML 1:1, wymaga bezparametrowego konstruktora
+</span><span id="__span-36-14"><a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>  → Atrybuty XmlElement, XmlAttribute, XmlArray, XmlIgnore
+</span><span id="__span-36-15"><a id="__codelineno-36-15" name="__codelineno-36-15" href="#__codelineno-36-15"></a>
+</span><span id="__span-36-16"><a id="__codelineno-36-16" name="__codelineno-36-16" href="#__codelineno-36-16"></a>LINQ to XML (XDocument, XElement)
+</span><span id="__span-36-17"><a id="__codelineno-36-17" name="__codelineno-36-17" href="#__codelineno-36-17"></a>  → Drzewo obiektów — budowa programatyczna i zapytania LINQ
+</span><span id="__span-36-18"><a id="__codelineno-36-18" name="__codelineno-36-18" href="#__codelineno-36-18"></a>  → Świetne do dynamicznego XML i przeszukiwania
+</span><span id="__span-36-19"><a id="__codelineno-36-19" name="__codelineno-36-19" href="#__codelineno-36-19"></a>
+</span><span id="__span-36-20"><a id="__codelineno-36-20" name="__codelineno-36-20" href="#__codelineno-36-20"></a>FileSystemWatcher
+</span><span id="__span-36-21"><a id="__codelineno-36-21" name="__codelineno-36-21" href="#__codelineno-36-21"></a>  → Reaguj na zmiany w katalogu (Created/Changed/Deleted/Renamed)
+</span><span id="__span-36-22"><a id="__codelineno-36-22" name="__codelineno-36-22" href="#__codelineno-36-22"></a>  → Ustawcie NotifyFilter; uwaga na duplikaty zdarzeń i zajęte pliki
+</span></code></pre></div>
+<hr />
+<h2 id="laboratorium-3-persystencja-i-monitoring-plikow-w-orderflow">Laboratorium 3 — Persystencja i monitoring plików w OrderFlow<a class="headerlink" href="#laboratorium-3-persystencja-i-monitoring-plikow-w-orderflow" title="Permanent link">#</a></h2>
+<p><strong>Projekt:</strong> OrderFlow — kontynuacja</p>
+<p><strong>Tematy:</strong> System.IO, serializacja JSON i XML, LINQ to XML, FileSystemWatcher</p>
+<p>Pracujecie w tej samej solucji co na Lab 1 i Lab 2. W zadaniu 3 wykorzystacie <strong>zdarzenia z Lab 2</strong> — spajamy kolejne warstwy w jedną aplikację.</p>
+<p>Sugerowana rozbudowa struktury:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>OrderFlow.Console/
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>├── Models/
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>├── Services/
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>├── Persistence/          ← nowość: OrderRepository, XmlReportBuilder
+</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>├── Watchers/             ← nowość: InboxWatcher
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>├── data/                 ← katalog na pliki JSON/XML (dodać do .gitignore!)
+</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>└── Program.cs
+</span></code></pre></div>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a0.svg" title=":warning:" /> Dodajcie do <code>.gitignore</code>: <code>data/</code>, <code>inbox/</code>, <code>*.tmp</code> — repozytorium ma zawierać kod, nie dane testowe.</p>
+</blockquote>
+<hr />
+<h3 id="zadanie-1-repozytorium-zapis-i-odczyt-zamowien-w-json-i-xml-5-pkt">Zadanie 1 — Repozytorium: zapis i odczyt zamówień w JSON i XML (5 pkt)<a class="headerlink" href="#zadanie-1-repozytorium-zapis-i-odczyt-zamowien-w-json-i-xml-5-pkt" title="Permanent link">#</a></h3>
+<p>Zbudujcie klasę <code>OrderRepository</code>, która potrafi zapisać i wczytać kolekcję zamówień w dwóch formatach.</p>
+<p><strong>Wymagania:</strong></p>
+<ul>
+<li>Metody asynchroniczne:<ul>
+<li><code>Task SaveToJsonAsync(IEnumerable&lt;Order&gt; orders, string path)</code></li>
+<li><code>Task&lt;List&lt;Order&gt;&gt; LoadFromJsonAsync(string path)</code></li>
+<li><code>Task SaveToXmlAsync(IEnumerable&lt;Order&gt; orders, string path)</code></li>
+<li><code>Task&lt;List&lt;Order&gt;&gt; LoadFromXmlAsync(string path)</code></li>
+</ul>
+</li>
+<li>Każda metoda zapisu tworzy katalog docelowy, jeśli nie istnieje (<code>Directory.CreateDirectory</code>).</li>
+<li>JSON ma być <strong>sformatowany z wcięciami</strong>, z <code>camelCase</code> i bez ucieczki polskich znaków.</li>
+<li>Użyjcie atrybutów:<ul>
+<li>w JSON: minimum jedno <code>[JsonPropertyName("...")]</code> i jedno <code>[JsonIgnore]</code>,</li>
+<li>w XML: minimum jedno <code>[XmlAttribute]</code> i jedno <code>[XmlElement]</code> z customową nazwą oraz <code>[XmlIgnore]</code>.</li>
+</ul>
+</li>
+<li>Wszystkie metody używają strumieni (<code>FileStream</code>/<code>StreamReader</code>) i <code>await using</code>.</li>
+<li>Obsłużcie przypadek <strong>braku pliku</strong> — <code>LoadFrom...Async</code> zwraca pustą listę zamiast rzucać wyjątkiem.</li>
+</ul>
+<p><strong>Pokażcie w konsoli round-trip:</strong> zapiszcie dane z <code>SampleData</code> do <code>data/orders.json</code> i <code>data/orders.xml</code>, wyczyśćcie pamięć, wczytajcie z powrotem, porównajcie liczbę i kwoty (powinny się zgadzać).</p>
+<hr />
+<h3 id="zadanie-2-raport-xml-budowany-przez-linq-to-xml-5-pkt">Zadanie 2 — Raport XML budowany przez LINQ to XML (5 pkt)<a class="headerlink" href="#zadanie-2-raport-xml-budowany-przez-linq-to-xml-5-pkt" title="Permanent link">#</a></h3>
+<p>Zbudujcie klasę <code>XmlReportBuilder</code> generującą raport zagregowany z kolekcji zamówień.</p>
+<p><strong>Wymagania:</strong></p>
+<ol>
+<li>
+<p>Metoda <code>XDocument BuildReport(IEnumerable&lt;Order&gt; orders)</code> zwraca drzewo XML o strukturze:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="nt">&lt;report</span><span class="w"> </span><span class="na">generated=</span><span class="s">&quot;2026-04-16T14:30:00&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="w">  </span><span class="nt">&lt;summary</span><span class="w"> </span><span class="na">totalOrders=</span><span class="s">&quot;6&quot;</span><span class="w"> </span><span class="na">totalRevenue=</span><span class="s">&quot;12345.67&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="w">  </span><span class="nt">&lt;byStatus&gt;</span>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="w">    </span><span class="nt">&lt;status</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Completed&quot;</span><span class="w"> </span><span class="na">count=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="na">revenue=</span><span class="s">&quot;9000.00&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="w">    </span><span class="nt">&lt;status</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;New&quot;</span><span class="w"> </span><span class="na">count=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">revenue=</span><span class="s">&quot;2345.67&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="w">    </span>...
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a><span class="w">  </span><span class="nt">&lt;/byStatus&gt;</span>
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a><span class="w">  </span><span class="nt">&lt;byCustomer&gt;</span>
+</span><span id="__span-38-9"><a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a><span class="w">    </span><span class="nt">&lt;customer</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Jan Kowalski&quot;</span><span class="w"> </span><span class="na">isVip=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-38-10"><a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a><span class="w">      </span><span class="nt">&lt;orderCount&gt;</span>3<span class="nt">&lt;/orderCount&gt;</span>
+</span><span id="__span-38-11"><a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a><span class="w">      </span><span class="nt">&lt;totalSpent&gt;</span>4500.00<span class="nt">&lt;/totalSpent&gt;</span>
+</span><span id="__span-38-12"><a id="__codelineno-38-12" name="__codelineno-38-12" href="#__codelineno-38-12"></a><span class="w">      </span><span class="nt">&lt;orders&gt;</span>
+</span><span id="__span-38-13"><a id="__codelineno-38-13" name="__codelineno-38-13" href="#__codelineno-38-13"></a><span class="w">        </span><span class="nt">&lt;orderRef</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;101&quot;</span><span class="w"> </span><span class="na">total=</span><span class="s">&quot;1500.00&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-38-14"><a id="__codelineno-38-14" name="__codelineno-38-14" href="#__codelineno-38-14"></a><span class="w">        </span><span class="nt">&lt;orderRef</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;102&quot;</span><span class="w"> </span><span class="na">total=</span><span class="s">&quot;2000.00&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-38-15"><a id="__codelineno-38-15" name="__codelineno-38-15" href="#__codelineno-38-15"></a><span class="w">        </span>...
+</span><span id="__span-38-16"><a id="__codelineno-38-16" name="__codelineno-38-16" href="#__codelineno-38-16"></a><span class="w">      </span><span class="nt">&lt;/orders&gt;</span>
+</span><span id="__span-38-17"><a id="__codelineno-38-17" name="__codelineno-38-17" href="#__codelineno-38-17"></a><span class="w">    </span><span class="nt">&lt;/customer&gt;</span>
+</span><span id="__span-38-18"><a id="__codelineno-38-18" name="__codelineno-38-18" href="#__codelineno-38-18"></a><span class="w">    </span>...
+</span><span id="__span-38-19"><a id="__codelineno-38-19" name="__codelineno-38-19" href="#__codelineno-38-19"></a><span class="w">  </span><span class="nt">&lt;/byCustomer&gt;</span>
+</span><span id="__span-38-20"><a id="__codelineno-38-20" name="__codelineno-38-20" href="#__codelineno-38-20"></a><span class="nt">&lt;/report&gt;</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Struktura ma być <strong>budowana w całości przez LINQ to XML</strong> (<code>XDocument</code>, <code>XElement</code>, <code>XAttribute</code>) — bez <code>XmlSerializer</code>, bez sklejania stringów.</p>
+</li>
+<li>
+<p>Użyjcie LINQ (z zajęć 1) do obliczenia agregacji: <code>GroupBy</code> po statusie, <code>GroupBy</code> po kliencie, sumy kwot.</p>
+</li>
+<li>
+<p>Metoda <code>Task SaveReportAsync(XDocument report, string path)</code> zapisuje raport do pliku.</p>
+</li>
+<li>
+<p>Dodatkowo napiszcie metodę <code>Task&lt;IEnumerable&lt;int&gt;&gt; FindHighValueOrderIdsAsync(string reportPath, decimal threshold)</code>, która <strong>wczytuje raport z pliku</strong> i za pomocą zapytania LINQ to XML zwraca <code>Id</code> zamówień o kwocie powyżej progu. Nie odczytujcie zamówień z pamięci — czytajcie z pliku XML.</p>
+</li>
+</ol>
+<p><strong>Pokażcie w konsoli:</strong> wygenerowanie raportu do <code>data/report.xml</code>, a potem wywołanie <code>FindHighValueOrderIdsAsync("data/report.xml", 1000m)</code> i wypisanie wyników.</p>
+<hr />
+<h3 id="zadanie-3-automatyczny-import-z-folderu-inbox-5-pkt">Zadanie 3 — Automatyczny import z folderu <code>inbox</code> (5 pkt)<a class="headerlink" href="#zadanie-3-automatyczny-import-z-folderu-inbox-5-pkt" title="Permanent link">#</a></h3>
+<p>Zbudujcie klasę <code>InboxWatcher</code>, która obserwuje katalog <code>inbox/</code> i automatycznie importuje zamówienia z pojawiających się tam plików JSON.</p>
+<p><strong>Wymagania:</strong></p>
+<ol>
+<li>
+<p>Klasa przyjmuje w konstruktorze ścieżkę do obserwowanego katalogu i <strong>referencję do <code>OrderPipeline</code></strong> (tego z Lab 2).</p>
+</li>
+<li>
+<p>Obserwujcie tylko pliki <code>*.json</code> i reagujcie na zdarzenie <code>Created</code>.</p>
+</li>
+<li>
+<p>Po wykryciu nowego pliku:</p>
+<ul>
+<li>Odczekajcie 200-500 ms albo implementujcie <strong>retry</strong> na <code>IOException</code> (plik może być jeszcze zajęty).</li>
+<li>Zdeserializujcie plik do <code>List&lt;Order&gt;</code> (pojedynczy plik może zawierać jedno lub wiele zamówień).</li>
+<li>Dodajcie każde zamówienie do pipeline'u i uruchomcie <code>ProcessOrderAsync</code> (z Lab 2).</li>
+<li>Przenieście przetworzony plik do podkatalogu <code>inbox/processed/</code>, a w razie błędu do <code>inbox/failed/</code> (wraz z plikiem <code>.error.txt</code> zawierającym opis błędu).</li>
+</ul>
+</li>
+<li>
+<p>Wykorzystajcie <strong>zdarzenia z Lab 2</strong> — <code>StatusChanged</code> powinno się odpalać dla zamówień zaimportowanych z pliku, bo przechodzą przez ten sam pipeline.</p>
+</li>
+<li>
+<p>Zadbajcie o thread safety — <code>Created</code> może odpalić się dla kilku plików równocześnie. Użyjcie <code>SemaphoreSlim</code> (znanego z Lab 2) do ograniczenia równoczesnego przetwarzania do np. 2 plików naraz.</p>
+</li>
+<li>
+<p>Klasa implementuje <code>IDisposable</code> — w <code>Dispose()</code> wyłącza watcher i zwalnia zasoby.</p>
+</li>
+</ol>
+<p><strong>Pokażcie w konsoli scenariusz demo:</strong></p>
+<ul>
+<li>Uruchomcie program z aktywnym watcherem.</li>
+<li>W trakcie działania ręcznie utwórzcie w <code>inbox/</code> plik JSON z 2-3 zamówieniami (możecie użyć <code>OrderRepository.SaveToJsonAsync</code> z zadania 1 — albo wkleić ręcznie przygotowany JSON).</li>
+<li>W konsoli powinny pojawić się: wykrycie pliku, import, zdarzenia <code>StatusChanged</code> z pipeline'u, potwierdzenie przeniesienia do <code>processed/</code>.</li>
+</ul>
+<blockquote>
+<p><strong>Wskazówka:</strong> Najprościej zademonstrować to tak, że <code>Program.cs</code> uruchamia watcher, a potem w pętli co 3 sekundy sam wrzuca testowy plik do <code>inbox/</code>. Nie musicie nic robić ręcznie w Eksploratorze.</p>
+</blockquote>
+<hr />
+<h3 id="punktacja">Punktacja<a class="headerlink" href="#punktacja" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Zadanie</th>
+<th>Punkty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wysłanie na GitHub z commitem z zajęć</td>
+<td><strong>5 pkt</strong></td>
+</tr>
+<tr>
+<td>1. Repozytorium JSON + XML (OrderRepository)</td>
+<td>5 pkt</td>
+</tr>
+<tr>
+<td>2. Raport XML z LINQ to XML (XmlReportBuilder)</td>
+<td>5 pkt</td>
+</tr>
+<tr>
+<td>3. FileSystemWatcher (InboxWatcher)</td>
+<td>5 pkt</td>
+</tr>
+<tr>
+<td><strong>Razem</strong></td>
+<td><strong>20 pkt</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Uwaga o GitHub:</strong> Jak zawsze — aby otrzymać 5 pkt za wysłanie, musicie mieć <strong>co najmniej 1 commit z czasów zajęć</strong>. Zadanie można dokończyć po zajęciach, ale finalna wersja też musi być na repozytorium.</p>
+</blockquote>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Zadanie 1 zróbcie najpierw i dokładnie — pozostałe z niego korzystają (repozytorium używacie w zadaniu 3, a dane testowe z zadania 1 są podstawą raportu z zadania 2).</li>
+<li>W zadaniu 2 <strong>nie serializujcie obiektów</strong> — zadanie polega właśnie na tym, żeby ręcznie zbudować drzewo XML przez <code>XElement</code>/<code>XAttribute</code>. Pokazuje to kiedy LINQ to XML jest lepszy od <code>XmlSerializer</code>.</li>
+<li>W zadaniu 3 pamiętajcie, że <code>FileSystemWatcher</code> może odpalić <code>Created</code> <strong>wielokrotnie</strong> dla tego samego pliku. Dobrą praktyką jest trzymanie <code>HashSet&lt;string&gt;</code> już przetwarzanych plików albo użycie <code>SemaphoreSlim</code> per plik.</li>
+<li>Jeżeli zadanie 3 sprawia Wam trudność — zacznijcie od najprostszej wersji (wykryj plik → wypisz nazwę → skopiuj do <code>processed/</code>). Dopiero gdy to działa, dokładajcie pipeline i obsługę błędów.</li>
+<li>Logujcie wszystko do konsoli na bieżąco — łatwiej zrozumieć, co się dzieje, gdy widzicie kolejność zdarzeń.</li>
+<li>Kolejne zajęcia (Lab 4) wprowadzają Entity Framework Core — zastąpimy pliki JSON/XML bazą danych. Ale mechanizm importu z <code>inbox/</code> zostanie, więc dobrze go już teraz napiszcie czytelnie.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

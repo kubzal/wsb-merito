@@ -1,0 +1,2745 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/python_w_data_science/zajecia_5/">
+      
+      
+        <link rel="prev" href="../zajecia_4/">
+      
+      
+        <link rel="next" href="../zajecia_6/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zajęcia 5 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-5" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../jakosc_aplikacji/" class="md-tabs__link">
+          
+  
+  
+  Jakosc aplikacji
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_stron_internetowych_2/" class="md-tabs__link">
+          
+  
+  
+  Programowanie stron internetowych 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_wysokopoziomowe/" class="md-tabs__link">
+          
+  
+  
+  Programowanie wysokopoziomowe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_zaawansowane/" class="md-tabs__link">
+          
+  
+  
+  Programowanie zaawansowane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Python w data science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../zarzadzanie_big_data/" class="md-tabs__link">
+          
+  
+  
+  Zarzadzanie big data
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakosc aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakosc aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python w data science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python w data science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modele-klasyfikacyjne-6-algorytmow-i-kiedy-ktorego-uzyc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modele klasyfikacyjne — 6 algorytmów i kiedy którego użyć
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-klasyfikacja-vs-regresja-co-sie-zmienia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Klasyfikacja vs regresja — co się zmienia?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-dane-do-przykadow-i-przygotowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Dane do przykładów i przygotowanie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Dane do przykładów i przygotowanie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#podzia-ze-stratyfikacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podział ze stratyfikacją
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skalowanie-cech-nowosc-ktora-jest-kluczowa-dla-poowy-modeli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skalowanie cech — nowość, która jest kluczowa dla połowy modeli
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-model-1-regresja-logistyczna-nasz-punkt-odniesienia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Model 1 — Regresja logistyczna (nasz punkt odniesienia)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-metryki-klasyfikacji-bo-accuracy-potrafi-kamac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Metryki klasyfikacji — bo accuracy potrafi kłamać
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Metryki klasyfikacji — bo accuracy potrafi kłamać">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macierz-pomyek-confusion-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macierz pomyłek (confusion matrix)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cztery-metryki-z-tej-tabelki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cztery metryki z tej tabelki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlaczego-sama-accuracy-kamie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dlaczego sama accuracy kłamie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-vs-recall-i-po-co-nam-prog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision vs recall — i po co nam próg
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jeden-raport-zamiast-liczenia-recznie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jeden raport zamiast liczenia ręcznie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roc-auc-jakosc-niezalezna-od-progu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ROC-AUC — jakość niezależna od progu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-model-2-drzewo-decyzyjne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Model 2 — Drzewo decyzyjne
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-model-3-las-losowy-random-forest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Model 3 — Las losowy (Random Forest)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-model-4-knn-k-najblizszych-sasiadow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Model 4 — KNN (k najbliższych sąsiadów)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-model-5-svm-maszyna-wektorow-nosnych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Model 5 — SVM (maszyna wektorów nośnych)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-model-6-xgboost-krol-danych-tabelarycznych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Model 6 — XGBoost (król danych tabelarycznych)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-porownanie-kiedy-czego-uzyc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Porównanie — kiedy czego użyć?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aczymy-wszystko-trenujemy-i-porownujemy-6-modeli-naraz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Łączymy wszystko — trenujemy i porównujemy 6 modeli naraz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#praca-projektowa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Praca projektowa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Praca projektowa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-5-titanic-kto-przezy-20-pkt-podzielone-na-etapy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 5 — Titanic: kto przeżył? (20 pkt, podzielone na etapy)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 5 — Titanic: kto przeżył? (20 pkt, podzielone na etapy)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-51-przygotowanie-danych-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 5.1 — Przygotowanie danych (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-52-regresja-logistyczna-metryki-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 5.2 — Regresja logistyczna + metryki (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-53-drzewo-i-las-losowy-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 5.3 — Drzewo i las losowy (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-54-knn-i-svm-dlaczego-skalowanie-ma-znaczenie-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 5.4 — KNN i SVM + dlaczego skalowanie ma znaczenie (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-55-xgboost-finaowe-porownanie-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 5.5 — XGBoost + finałowe porównanie (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podsumowanie-punktacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podsumowanie punktacji
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materiay-dodatkowe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materiały dodatkowe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarzadzanie big data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarzadzanie big data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-5">Zajęcia 5<a class="headerlink" href="#zajecia-5" title="Permanent link">#</a></h1>
+<h2 id="modele-klasyfikacyjne-6-algorytmow-i-kiedy-ktorego-uzyc">Modele klasyfikacyjne — 6 algorytmów i kiedy którego użyć<a class="headerlink" href="#modele-klasyfikacyjne-6-algorytmow-i-kiedy-ktorego-uzyc" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>Poprzednie zajęcia:</strong> zbudowaliśmy regresję liniową i przeszliśmy pełny workflow ML — EDA, podział, trening, ewaluacja. Przewidywaliśmy <strong>liczbę</strong> (cenę, spalanie).
+Dziś przewidujemy <strong>kategorię</strong>: spam / nie-spam, przeżył / nie przeżył, nowotwór złośliwy / łagodny. To jest <strong>klasyfikacja</strong>. Dobra wiadomość: workflow zostaje ten sam. Zła (a właściwie ciekawa): zmieniają się <strong>metryki</strong>, dochodzi <strong>skalowanie cech</strong>, i poznajemy aż <strong>6 różnych algorytmów</strong>.</p>
+</blockquote>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>wyjaśnić różnicę między klasyfikacją a regresją i dlaczego accuracy potrafi kłamać,</li>
+<li>czytać <strong>macierz pomyłek</strong> oraz metryki <strong>precision / recall / F1 / ROC-AUC</strong>,</li>
+<li>wiedzieć, <strong>kiedy skalować cechy</strong> (i dlaczego dla KNN/SVM to być albo nie być),</li>
+<li>wytrenować i porównać 6 klasyfikatorów: <strong>regresję logistyczną, drzewo decyzyjne, las losowy, KNN, SVM i XGBoost</strong>,</li>
+<li>dobrać model do problemu — wiedząc, co każdy z nich robi pod maską i czym płaci.</li>
+</ul>
+<blockquote>
+<p><strong>Środowisko:</strong> Google Colab. Większość bibliotek jest preinstalowana; XGBoost instalujemy jedną linijką (patrz sekcja 9).</p>
+</blockquote>
+<hr />
+<h2 id="1-klasyfikacja-vs-regresja-co-sie-zmienia">1. Klasyfikacja vs regresja — co się zmienia?<a class="headerlink" href="#1-klasyfikacja-vs-regresja-co-sie-zmienia" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Regresja (zajęcia 4)</th>
+<th>Klasyfikacja (dziś)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cel (<code>y</code>)</strong></td>
+<td>liczba ciągła (cena, spalanie)</td>
+<td>kategoria / klasa (0 lub 1, „pies"/„kot")</td>
+</tr>
+<tr>
+<td><strong>Wynik modelu</strong></td>
+<td>konkretna wartość <code>ŷ</code></td>
+<td><strong>prawdopodobieństwo</strong> przynależności do klasy → próg → klasa</td>
+</tr>
+<tr>
+<td><strong>Metryki</strong></td>
+<td>MAE, RMSE, R²</td>
+<td>accuracy, precision, recall, F1, ROC-AUC</td>
+</tr>
+<tr>
+<td><strong>Pytanie</strong></td>
+<td>„ile?"</td>
+<td>„która klasa?"</td>
+</tr>
+</tbody>
+</table>
+<p>Skupiamy się na <strong>klasyfikacji binarnej</strong> (dwie klasy: 0/1), bo na niej najłatwiej zrozumieć metryki. Wszystkie poznane modele radzą sobie też z wieloma klasami — <code>scikit-learn</code> ogarnia to za nas.</p>
+<p>Kluczowa intuicja: klasyfikator zwykle nie mówi od razu „klasa 1". Najpierw zwraca <strong>prawdopodobieństwo</strong> (np. 0.83), a potem stosujemy <strong>próg</strong> (domyślnie 0.5): powyżej → klasa 1, poniżej → klasa 0. Ten próg będziemy mogli przesuwać — i to ma realne konsekwencje (zaraz zobaczymy, przy precision/recall).</p>
+<hr />
+<h2 id="2-dane-do-przykadow-i-przygotowanie">2. Dane do przykładów i przygotowanie<a class="headerlink" href="#2-dane-do-przykadow-i-przygotowanie" title="Permanent link">#</a></h2>
+<p>Przykłady robimy na wbudowanym zbiorze <strong>Breast Cancer Wisconsin</strong> — 569 guzów opisanych 30 cechami numerycznymi, a celem jest klasyfikacja: <strong>złośliwy (0) czy łagodny (1)</strong>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_breast_cancer</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">dane</span> <span class="o">=</span> <span class="n">load_breast_cancer</span><span class="p">(</span><span class="n">as_frame</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">X</span> <span class="o">=</span> <span class="n">dane</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">])</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">y</span> <span class="o">=</span> <span class="n">dane</span><span class="o">.</span><span class="n">frame</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>                      <span class="c1"># (569, 30)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>   <span class="c1"># {1: 357, 0: 212} — 1=łagodny, 0=złośliwy</span>
+</span></code></pre></div>
+<h3 id="podzia-ze-stratyfikacja">Podział ze stratyfikacją<a class="headerlink" href="#podzia-ze-stratyfikacja" title="Permanent link">#</a></h3>
+<p>W klasyfikacji dochodzi jeden niuans względem zajęć 4: <strong><code>stratify=y</code></strong>. Gwarantuje, że proporcje klas w zbiorze treningowym i testowym będą takie same jak w całości. Bez tego przy niezbalansowanych danych może się zdarzyć, że jedna klasa wpadnie głównie do testu — i wyniki przestaną cokolwiek znaczyć.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="skalowanie-cech-nowosc-ktora-jest-kluczowa-dla-poowy-modeli">Skalowanie cech — nowość, która jest kluczowa dla połowy modeli<a class="headerlink" href="#skalowanie-cech-nowosc-ktora-jest-kluczowa-dla-poowy-modeli" title="Permanent link">#</a></h3>
+<p>Część modeli (KNN, SVM, regresja logistyczna) liczy <strong>odległości</strong> albo jest wrażliwa na <strong>skalę</strong> cech. Jeśli jedna cecha ma wartości w tysiącach, a druga w setnych, ta pierwsza zdominuje obliczenia — nie dlatego, że jest ważniejsza, tylko dlatego, że ma większe liczby. Lekarstwo: <strong>standaryzacja</strong> (<code>StandardScaler</code>) — każdą cechę przeskalowujemy do średniej 0 i odchylenia 1.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">X_train_s</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>   <span class="c1"># uczymy skaler i przekształcamy TRAIN</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">X_test_s</span>  <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>         <span class="c1"># TEST tylko przekształcamy</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>Najważniejsza zasada skalowania:</strong> skaler <strong>uczysz tylko na zbiorze treningowym</strong> (<code>fit_transform</code>), a test tylko <strong>przekształcasz</strong> (<code>transform</code>). Gdybyś dopasował skaler do całości, informacja o teście „przeciekłaby" do treningu (<em>data leakage</em>) i ocena byłaby zawyżona.</p>
+<p><strong>Które modele wymagają skalowania?</strong> KNN, SVM — <strong>tak, koniecznie</strong>. Regresja logistyczna — pomaga (szybsza zbieżność). Drzewo, las, XGBoost — <strong>nie potrzebują</strong>, bo dzielą dane progami, a nie liczą odległości. Skalowanie ich nie psuje, więc dla wygody można skalować wszystko.</p>
+</blockquote>
+<hr />
+<h2 id="3-model-1-regresja-logistyczna-nasz-punkt-odniesienia">3. Model 1 — Regresja logistyczna (nasz punkt odniesienia)<a class="headerlink" href="#3-model-1-regresja-logistyczna-nasz-punkt-odniesienia" title="Permanent link">#</a></h2>
+<p>Mimo „regresji" w nazwie to <strong>klasyfikator</strong>. Pomysł: weź regresję liniową z zajęć 4, a jej wynik (dowolna liczba od −∞ do +∞) <strong>przepuść przez funkcję sigmoidalną</strong>, która ściśnie go do przedziału (0, 1) — i tak powstaje prawdopodobieństwo.</p>
+<p><img alt="Regresja liniowa do klasyfikacji" src="../obrazki/wykres_regresja_liniowa_klasyfikacja.png" /></p>
+<p>Powyżej 0.5 → klasa 1, poniżej → klasa 0. Wagi <code>w</code> są <strong>interpretowalne</strong> tak samo jak w regresji liniowej — dodatnia waga zwiększa prawdopodobieństwo klasy 1.</p>
+<p><img alt="Dlaczego regresja logistyczna jest lepsza?" src="../obrazki/wykres_dlaczego_logistyczna.png" /></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">logreg</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>   <span class="c1"># więcej iteracji = pewna zbieżność</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">logreg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_s</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">y_pred</span>  <span class="o">=</span> <span class="n">logreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_s</span><span class="p">)</span>            <span class="c1"># klasy (0/1)</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">y_proba</span> <span class="o">=</span> <span class="n">logreg</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test_s</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># prawdopodobieństwa klasy 1</span>
+</span></code></pre></div>
+<p>Na tym zbiorze regresja logistyczna jest <strong>bardzo mocna</strong> — ok. 98% trafień. To dobry punkt odniesienia: zanim sięgniesz po cięższe działa (XGBoost), zawsze warto zobaczyć, jak radzi sobie prosty, interpretowalny model.</p>
+<hr />
+<h2 id="4-metryki-klasyfikacji-bo-accuracy-potrafi-kamac">4. Metryki klasyfikacji — bo accuracy potrafi kłamać<a class="headerlink" href="#4-metryki-klasyfikacji-bo-accuracy-potrafi-kamac" title="Permanent link">#</a></h2>
+<p>To najważniejsza sekcja teoretyczna dzisiejszych zajęć. Mamy predykcje — jak ocenić, czy są dobre?</p>
+<h3 id="macierz-pomyek-confusion-matrix">Macierz pomyłek (confusion matrix)<a class="headerlink" href="#macierz-pomyek-confusion-matrix" title="Permanent link">#</a></h3>
+<p>Wszystko zaczyna się tutaj. Zestawiamy, co model <strong>przewidział</strong>, z tym, co było <strong>naprawdę</strong>:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>                      PRZEWIDZIANE
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                  złośliwy    łagodny
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>PRAWDZIWE  złośliwy   TP          FN     ← FN = przeoczony nowotwór (groźne!)
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>           łagodny    FP          TN
+</span></code></pre></div>
+<ul>
+<li><strong>TP</strong> (true positive) — poprawnie wykryty złośliwy,</li>
+<li><strong>TN</strong> (true negative) — poprawnie uznany za łagodny,</li>
+<li><strong>FP</strong> (false positive) — fałszywy alarm (łagodny uznany za złośliwy),</li>
+<li><strong>FN</strong> (false negative) — <strong>przeoczony złośliwy</strong> (uznany za łagodny).</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">ConfusionMatrixDisplay</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">ConfusionMatrixDisplay</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">display_labels</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;złośliwy&quot;</span><span class="p">,</span> <span class="s2">&quot;łagodny&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="cztery-metryki-z-tej-tabelki">Cztery metryki z tej tabelki<a class="headerlink" href="#cztery-metryki-z-tej-tabelki" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Metryka</th>
+<th>Wzór</th>
+<th>Po ludzku</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td>(TP+TN) / wszystko</td>
+<td>jaki % wszystkich predykcji jest poprawny</td>
+</tr>
+<tr>
+<td><strong>Precision</strong></td>
+<td>TP / (TP+FP)</td>
+<td>gdy model mówi „złośliwy", jak często ma rację</td>
+</tr>
+<tr>
+<td><strong>Recall</strong> (czułość)</td>
+<td>TP / (TP+FN)</td>
+<td>jaki % faktycznych złośliwych model <strong>wyłapał</strong></td>
+</tr>
+<tr>
+<td><strong>F1</strong></td>
+<td>średnia harmoniczna precision i recall</td>
+<td>jedna liczba balansująca oba</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dlaczego-sama-accuracy-kamie">Dlaczego sama accuracy kłamie<a class="headerlink" href="#dlaczego-sama-accuracy-kamie" title="Permanent link">#</a></h3>
+<p>Wyobraź sobie zbiór, gdzie 99% guzów jest łagodnych. Model, który <strong>zawsze</strong> mówi „łagodny", ma 99% accuracy — i jest <strong>bezużyteczny</strong>, bo nie wykrył ani jednego nowotworu (recall = 0%). To jest dokładnie powód, dla którego przy niezbalansowanych danych patrzymy na precision i recall, a nie na samą accuracy.</p>
+<h3 id="precision-vs-recall-i-po-co-nam-prog">Precision vs recall — i po co nam próg<a class="headerlink" href="#precision-vs-recall-i-po-co-nam-prog" title="Permanent link">#</a></h3>
+<p>Tu wraca próg decyzyjny z sekcji 3. To <strong>kompromis</strong>:</p>
+<ul>
+<li>chcesz wyłapać <strong>wszystkie</strong> nowotwory (wysoki recall)? Obniż próg — model będzie częściej krzyczeć „złośliwy". Cena: więcej fałszywych alarmów (niższa precision).</li>
+<li>chcesz, żeby alarm był <strong>pewny</strong> (wysoka precision)? Podnieś próg. Cena: kilka nowotworów się prześlizgnie (niższy recall).</li>
+</ul>
+<p>W diagnostyce raka świadomie wybieramy <strong>wysoki recall</strong> — lepiej wezwać zdrowego pacjenta na dodatkowe badania (FP), niż przeoczyć chorego (FN). W filtrze spamu odwrotnie — wolisz wysoką precision (żeby ważny mail nie trafił do spamu). <strong>To zależy od problemu, nie od modelu.</strong></p>
+<h3 id="jeden-raport-zamiast-liczenia-recznie">Jeden raport zamiast liczenia ręcznie<a class="headerlink" href="#jeden-raport-zamiast-liczenia-recznie" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>                            <span class="n">target_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;złośliwy&quot;</span><span class="p">,</span> <span class="s2">&quot;łagodny&quot;</span><span class="p">]))</span>
+</span></code></pre></div>
+<h3 id="roc-auc-jakosc-niezalezna-od-progu">ROC-AUC — jakość niezależna od progu<a class="headerlink" href="#roc-auc-jakosc-niezalezna-od-progu" title="Permanent link">#</a></h3>
+<p>Krzywa <strong>ROC</strong> pokazuje, jak zmieniają się trafienia i fałszywe alarmy, gdy <strong>przesuwamy próg</strong> przez cały zakres. Pole pod nią — <strong>AUC</strong> (Area Under Curve) — to jedna liczba podsumowująca jakość modelu <strong>niezależnie od wyboru progu</strong>:</p>
+<ul>
+<li><strong>AUC = 1.0</strong> → idealny,</li>
+<li><strong>AUC = 0.5</strong> → model nie lepszy niż rzut monetą,</li>
+<li>im bliżej 1.0, tym lepiej.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">roc_auc_score</span><span class="p">,</span> <span class="n">RocCurveDisplay</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">auc</span> <span class="o">=</span> <span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_proba</span><span class="p">)</span>        <span class="c1"># uwaga: prawdopodobieństwa, nie klasy!</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ROC-AUC: </span><span class="si">{</span><span class="n">auc</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>                 <span class="c1"># tu ~0.995</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">RocCurveDisplay</span><span class="o">.</span><span class="n">from_predictions</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_proba</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>Pamiętaj:</strong> accuracy/precision/recall/F1 liczymy z <strong>predykcji klas</strong> (<code>predict</code>), a ROC-AUC z <strong>prawdopodobieństw</strong> (<code>predict_proba</code>). To częsty błąd początkujących.</p>
+</blockquote>
+<hr />
+<h2 id="5-model-2-drzewo-decyzyjne">5. Model 2 — Drzewo decyzyjne<a class="headerlink" href="#5-model-2-drzewo-decyzyjne" title="Permanent link">#</a></h2>
+<p>Najbardziej intuicyjny z modeli — to po prostu <strong>gra w 20 pytań</strong>. Model uczy się sekwencji warunków typu „czy cecha X &gt; 5?", a każda odpowiedź prowadzi w dół drzewa aż do liścia z decyzją.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>                  promień &gt; 16?
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>                 ╱            ╲
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>              tak              nie
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>              ╱                  ╲
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>      tekstura &gt; 22?          ŁAGODNY
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>        ╱        ╲
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>     ZŁOŚLIWY   ŁAGODNY
+</span></code></pre></div>
+<p>Na każdym podziale drzewo wybiera pytanie, które <strong>najlepiej rozdziela klasy</strong> (mierzone <em>gini</em> lub <em>entropią</em>). Kluczowy hiperparametr to <strong><code>max_depth</code></strong> — głębokość. Zbyt głębokie drzewo <strong>przeucza się</strong> (zapamiętuje pojedyncze przypadki); płytkie jest ogólniejsze.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.tree</span><span class="w"> </span><span class="kn">import</span> <span class="n">DecisionTreeClassifier</span><span class="p">,</span> <span class="n">plot_tree</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">tree</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">tree</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>   <span class="c1"># drzewo NIE potrzebuje skalowania!</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">plot_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">class_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;złośliwy&quot;</span><span class="p">,</span> <span class="s2">&quot;łagodny&quot;</span><span class="p">],</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>          <span class="n">filled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>Zalety:</strong> w pełni interpretowalne (można narysować i pokazać lekarzowi), nie wymaga skalowania, radzi sobie z nieliniowością. <strong>Wady:</strong> pojedyncze drzewo łatwo się przeucza i bywa niestabilne (mała zmiana danych → inne drzewo). Stąd pomysł na następny model...</p>
+<hr />
+<h2 id="6-model-3-las-losowy-random-forest">6. Model 3 — Las losowy (Random Forest)<a class="headerlink" href="#6-model-3-las-losowy-random-forest" title="Permanent link">#</a></h2>
+<p>Skoro jedno drzewo bywa kapryśne — <strong>zróbmy ich setki i pozwólmy głosować</strong>. To <em>mądrość tłumu</em>: każde drzewo trenuje się na lekko innej próbce danych i innym podzbiorze cech (technika zwana <em>baggingiem</em>), a końcowa decyzja to <strong>głosowanie większościowe</strong>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>   🌳 → złośliwy        ┐
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>   🌳 → łagodny          │
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>   🌳 → złośliwy        ├──→ głosowanie → ZŁOŚLIWY (2:1)
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>   ... (×200)           ┘
+</span></code></pre></div>
+<p>Pojedyncze drzewa się mylą, ale ich <strong>błędy się uśredniają</strong>, a trafne odpowiedzi wzmacniają. Las prawie zawsze bije pojedyncze drzewo i jest dużo stabilniejszy.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">forest</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">forest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>   <span class="c1"># też bez skalowania</span>
+</span></code></pre></div>
+<p>Las daje też <strong>ważność cech</strong> (<code>feature_importances_</code>) — które cechy najczęściej decydowały o podziałach:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">waznosc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">forest</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">waznosc</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</span></code></pre></div>
+<p><strong>Zalety:</strong> mocny „od ręki", odporny na przeuczenie, mało strojenia, ważność cech. <strong>Wady:</strong> tracimy czytelność pojedynczego drzewa (200 drzew się nie narysuje), wolniejszy i cięższy niż jedno drzewo.</p>
+<hr />
+<h2 id="7-model-4-knn-k-najblizszych-sasiadow">7. Model 4 — KNN (k najbliższych sąsiadów)<a class="headerlink" href="#7-model-4-knn-k-najblizszych-sasiadow" title="Permanent link">#</a></h2>
+<p>Najprostszy pomysł ze wszystkich: <strong>„jesteś taki, jak twoi sąsiedzi"</strong>. Żeby sklasyfikować nowy punkt, KNN znajduje <code>k</code> najbliższych mu punktów ze zbioru treningowego i robi wśród nich głosowanie.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>        ●  ●          ? = nowy punkt, k=3
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>      ●   ? ▲         najbliżsi sąsiedzi: ●, ●, ▲
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>        ●   ▲         głosy: 2× ● vs 1× ▲  →  klasa ●
+</span></code></pre></div>
+<p>KNN liczy <strong>odległości</strong> — dlatego <strong>skalowanie jest absolutnie konieczne</strong>. Bez niego cecha o dużych wartościach zdominuje odległość i wynik będzie bez sensu.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.neighbors</span><span class="w"> </span><span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_s</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>   <span class="c1"># KONIECZNIE dane przeskalowane!</span>
+</span></code></pre></div>
+<p>Kluczowy hiperparametr to <strong><code>k</code></strong>: małe <code>k</code> (np. 1) jest czułe na szum, duże <code>k</code> wygładza granice decyzyjne. <strong>Zalety:</strong> zero założeń o danych, trywialny w idei. <strong>Wady:</strong> wolny przy predykcji (musi porównać się z całym zbiorem), kiepski przy wielu cechach (<em>klątwa wymiarowości</em>), wymaga skalowania.</p>
+<hr />
+<h2 id="8-model-5-svm-maszyna-wektorow-nosnych">8. Model 5 — SVM (maszyna wektorów nośnych)<a class="headerlink" href="#8-model-5-svm-maszyna-wektorow-nosnych" title="Permanent link">#</a></h2>
+<p>SVM szuka <strong>najszerszej możliwej „ulicy"</strong> (marginesu) rozdzielającej dwie klasy. Im szerszy margines między klasami, tym pewniejsza i lepiej generalizująca granica. Punkty leżące na krawędziach tej ulicy to <strong>wektory nośne</strong> — to one definiują granicę (reszta danych jest nieistotna).</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>   ●  ●              │        ╲ margines
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>     ●  ●     ●      │   ▲      ╲
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>   ────────────●─────┼──────▲────  ← granica decyzyjna (środek ulicy)
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>     ●            ●  │   ▲ ▲     ╱
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>   ●     ●           │  ▲      ╱
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>                  najszersza „ulica&quot; między klasami
+</span></code></pre></div>
+<p>A co, jeśli klas nie da się rozdzielić linią? Tu wchodzi <strong>kernel trick</strong> — SVM potrafi „zakrzywić" przestrzeń (jądro <code>rbf</code>), żeby znaleźć nieliniową granicę. SVM też liczy odległości, więc <strong>skalowanie jest konieczne</strong>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.svm</span><span class="w"> </span><span class="kn">import</span> <span class="n">SVC</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">svm</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s2">&quot;rbf&quot;</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">svm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_s</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>   <span class="c1"># znów dane przeskalowane</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="c1"># probability=True pozwala później na predict_proba (potrzebne do ROC-AUC)</span>
+</span></code></pre></div>
+<p><strong>Zalety:</strong> bardzo skuteczny na średnich zbiorach, dobrze radzi sobie z wieloma cechami, kernel trick łapie nieliniowość. <strong>Wady:</strong> wolny na dużych zbiorach, wymaga skalowania i strojenia (<code>C</code>, <code>gamma</code>), słabo interpretowalny.</p>
+<hr />
+<h2 id="9-model-6-xgboost-krol-danych-tabelarycznych">9. Model 6 — XGBoost (król danych tabelarycznych)<a class="headerlink" href="#9-model-6-xgboost-krol-danych-tabelarycznych" title="Permanent link">#</a></h2>
+<p>Las losowy budował drzewa <strong>niezależnie</strong> i uśredniał. XGBoost robi coś sprytniejszego — buduje drzewa <strong>po kolei</strong>, gdzie <strong>każde kolejne naprawia błędy poprzednich</strong>. To <strong>boosting</strong>: zamiast tłumu niezależnych ekspertów masz sztafetę, w której każdy biegacz poprawia to, co zepsuł poprzedni.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>   drzewo 1 ──→ błędy ──→ drzewo 2 (uczy się na błędach 1) ──→ błędy ──→ drzewo 3 ...
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>                                  └──────────── suma → predykcja ─────────────┘
+</span></code></pre></div>
+<p>To od lat <strong>domyślny wybór do danych tabelarycznych</strong> i najczęstszy zwycięzca konkursów Kaggle. Trzeba go doinstalować:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>pip<span class="w"> </span>install<span class="w"> </span>xgboost
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xgboost</span><span class="w"> </span><span class="kn">import</span> <span class="n">XGBClassifier</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">xgb</span> <span class="o">=</span> <span class="n">XGBClassifier</span><span class="p">(</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">eval_metric</span><span class="o">=</span><span class="s2">&quot;logloss&quot;</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="p">)</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="n">xgb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>   <span class="c1"># jako model drzewiasty — skalowania nie wymaga</span>
+</span></code></pre></div>
+<p><strong>Zalety:</strong> zwykle najwyższa jakość na danych tabelarycznych, ważność cech, radzi sobie z brakami. <strong>Wady:</strong> więcej hiperparametrów do strojenia, łatwiej przeuczić niż las, mniej interpretowalny.</p>
+<hr />
+<h2 id="10-porownanie-kiedy-czego-uzyc">10. Porównanie — kiedy czego użyć?<a class="headerlink" href="#10-porownanie-kiedy-czego-uzyc" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Skalowanie?</th>
+<th>Interpretowalność</th>
+<th>Szybkość treningu</th>
+<th>Łapie nieliniowość</th>
+<th>Typowe zastosowanie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Regresja logistyczna</strong></td>
+<td>pomaga</td>
+<td>⭐⭐⭐ wysoka</td>
+<td>bardzo szybki</td>
+<td>nie</td>
+<td>baseline, gdy liczy się interpretacja</td>
+</tr>
+<tr>
+<td><strong>Drzewo decyzyjne</strong></td>
+<td>nie</td>
+<td>⭐⭐⭐ wysoka</td>
+<td>szybki</td>
+<td>tak</td>
+<td>gdy trzeba pokazać reguły decyzji</td>
+</tr>
+<tr>
+<td><strong>Las losowy</strong></td>
+<td>nie</td>
+<td>⭐⭐ średnia</td>
+<td>średni</td>
+<td>tak</td>
+<td>solidny „pierwszy strzał" bez strojenia</td>
+</tr>
+<tr>
+<td><strong>KNN</strong></td>
+<td><strong>konieczne</strong></td>
+<td>⭐ niska</td>
+<td>brak (leniwy)</td>
+<td>tak</td>
+<td>małe zbiory, prosty baseline</td>
+</tr>
+<tr>
+<td><strong>SVM</strong></td>
+<td><strong>konieczne</strong></td>
+<td>⭐ niska</td>
+<td>wolny na dużych</td>
+<td>tak (kernel)</td>
+<td>średnie zbiory, dużo cech</td>
+</tr>
+<tr>
+<td><strong>XGBoost</strong></td>
+<td>nie</td>
+<td>⭐ niska</td>
+<td>średni</td>
+<td>tak</td>
+<td>maksymalna jakość na danych tabelarycznych</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reguła kciuka:</strong></p>
+<ul>
+<li>zacznij od <strong>regresji logistycznej</strong> (baseline + interpretacja),</li>
+<li>chcesz solidny wynik bez strojenia → <strong>las losowy</strong>,</li>
+<li>walczysz o ostatnie procenty jakości → <strong>XGBoost</strong>,</li>
+<li>mały zbiór / szybki prototyp → <strong>KNN</strong>,</li>
+<li>średni zbiór z wyraźną strukturą → <strong>SVM</strong>.</li>
+</ul>
+<p>Wyniki na naszym zbiorze (test) — żeby zobaczyć rzędy wielkości:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+<th>F1</th>
+<th>ROC-AUC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regresja logistyczna</td>
+<td>0.982</td>
+<td>0.986</td>
+<td>0.995</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.982</td>
+<td>0.986</td>
+<td>0.995</td>
+</tr>
+<tr>
+<td>Las losowy</td>
+<td>0.956</td>
+<td>0.966</td>
+<td>0.993</td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>0.947</td>
+<td>0.959</td>
+<td>0.994</td>
+</tr>
+<tr>
+<td>KNN</td>
+<td>0.956</td>
+<td>0.966</td>
+<td>0.979</td>
+</tr>
+<tr>
+<td>Drzewo decyzyjne</td>
+<td>0.939</td>
+<td>0.951</td>
+<td>0.934</td>
+</tr>
+</tbody>
+</table>
+<p>Zwróć uwagę: na tym akurat (małym, czystym, dobrze separowalnym) zbiorze <strong>prosta regresja logistyczna wygrywa z XGBoostem</strong>. To ważna lekcja — najcięższy model nie zawsze jest najlepszy. Zaczynaj od prostych.</p>
+<hr />
+<h2 id="aczymy-wszystko-trenujemy-i-porownujemy-6-modeli-naraz">Łączymy wszystko — trenujemy i porównujemy 6 modeli naraz<a class="headerlink" href="#aczymy-wszystko-trenujemy-i-porownujemy-6-modeli-naraz" title="Permanent link">#</a></h2>
+<p>Spięjmy całość w jedną pętlę, która trenuje wszystkie modele i zbiera metryki do tabeli porównawczej:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.tree</span><span class="w"> </span><span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.neighbors</span><span class="w"> </span><span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.svm</span><span class="w"> </span><span class="kn">import</span> <span class="n">SVC</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xgboost</span><span class="w"> </span><span class="kn">import</span> <span class="n">XGBClassifier</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">roc_auc_score</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="c1"># Skalujemy raz dla wszystkich — modele drzewiaste to zignorują, reszcie pomoże</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="n">modele</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>    <span class="s2">&quot;Regresja logistyczna&quot;</span><span class="p">:</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">5000</span><span class="p">),</span>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>    <span class="s2">&quot;Drzewo decyzyjne&quot;</span><span class="p">:</span>     <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>    <span class="s2">&quot;Las losowy&quot;</span><span class="p">:</span>           <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>    <span class="s2">&quot;KNN&quot;</span><span class="p">:</span>                  <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>    <span class="s2">&quot;SVM&quot;</span><span class="p">:</span>                  <span class="n">SVC</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a>    <span class="s2">&quot;XGBoost&quot;</span><span class="p">:</span>              <span class="n">XGBClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a>                                          <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">eval_metric</span><span class="o">=</span><span class="s2">&quot;logloss&quot;</span><span class="p">),</span>
+</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="p">}</span>
+</span><span id="__span-20-20"><a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a>
+</span><span id="__span-20-21"><a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a><span class="n">wyniki</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-20-22"><a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a><span class="k">for</span> <span class="n">nazwa</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">modele</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-20-23"><a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a>    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_s</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span><span id="__span-20-24"><a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a>    <span class="n">y_pred</span>  <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_s</span><span class="p">)</span>
+</span><span id="__span-20-25"><a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a>    <span class="n">y_proba</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test_s</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-20-26"><a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a>    <span class="n">wyniki</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+</span><span id="__span-20-27"><a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a>        <span class="s2">&quot;model&quot;</span><span class="p">:</span>    <span class="n">nazwa</span><span class="p">,</span>
+</span><span id="__span-20-28"><a id="__codelineno-20-28" name="__codelineno-20-28" href="#__codelineno-20-28"></a>        <span class="s2">&quot;accuracy&quot;</span><span class="p">:</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">),</span>
+</span><span id="__span-20-29"><a id="__codelineno-20-29" name="__codelineno-20-29" href="#__codelineno-20-29"></a>        <span class="s2">&quot;F1&quot;</span><span class="p">:</span>       <span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">),</span>
+</span><span id="__span-20-30"><a id="__codelineno-20-30" name="__codelineno-20-30" href="#__codelineno-20-30"></a>        <span class="s2">&quot;ROC_AUC&quot;</span><span class="p">:</span>  <span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_proba</span><span class="p">),</span>
+</span><span id="__span-20-31"><a id="__codelineno-20-31" name="__codelineno-20-31" href="#__codelineno-20-31"></a>    <span class="p">})</span>
+</span><span id="__span-20-32"><a id="__codelineno-20-32" name="__codelineno-20-32" href="#__codelineno-20-32"></a>
+</span><span id="__span-20-33"><a id="__codelineno-20-33" name="__codelineno-20-33" href="#__codelineno-20-33"></a><span class="n">tabela</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">wyniki</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;F1&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-20-34"><a id="__codelineno-20-34" name="__codelineno-20-34" href="#__codelineno-20-34"></a><span class="nb">print</span><span class="p">(</span><span class="n">tabela</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</span></code></pre></div>
+<p>Jedna pętla, jeden ranking. Dokładnie tak wygląda pierwszy etap realnego projektu ML — zanim zaczniesz stroić hiperparametry, sprawdzasz, który rodzaj modelu w ogóle pasuje do Twoich danych.</p>
+<hr />
+<h2 id="praca-projektowa">Praca projektowa<a class="headerlink" href="#praca-projektowa" title="Permanent link">#</a></h2>
+<h3 id="zadanie-5-titanic-kto-przezy-20-pkt-podzielone-na-etapy">Zadanie 5 — Titanic: kto przeżył? (20 pkt, podzielone na etapy)<a class="headerlink" href="#zadanie-5-titanic-kto-przezy-20-pkt-podzielone-na-etapy" title="Permanent link">#</a></h3>
+<blockquote>
+<p><strong>Uwaga:</strong> przykłady liczyliśmy na zbiorze breast cancer. <strong>Zadania robisz na innym zbiorze — Titanic</strong> (przewidujemy, czy pasażer przeżył katastrofę: <code>survived</code> = 0/1). Te same kroki, inne dane — przejdź cały proces samodzielnie.</p>
+</blockquote>
+<p>Zbiór jest wbudowany w <code>seaborn</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">df</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;titanic&quot;</span><span class="p">)</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<hr />
+<h4 id="zadanie-51-przygotowanie-danych-4-pkt">🏋️ Zadanie 5.1 — Przygotowanie danych (4 pkt)<a class="headerlink" href="#zadanie-51-przygotowanie-danych-4-pkt" title="Permanent link">#</a></h4>
+<p>Ten zbiór jest „brudniejszy" niż breast cancer i ma kilka pułapek.</p>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Wyświetl <code>shape</code>, <code>info()</code>, rozkład klas (<code>df["survived"].value_counts()</code>) oraz braki danych (<code>df.isna().sum()</code>). W komentarzu napisz, ile jest pasażerów, czy klasy są zbalansowane i które kolumny mają najwięcej braków.</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Wyczyść dane:</p>
+</li>
+<li><strong>Usuń kolumnę <code>alive</code></strong> — to <strong>wyciek danych</strong> (<em>data leakage</em>): <code>alive</code> to dosłownie to samo co <code>survived</code>, tylko jako tekst. Gdybyś ją zostawił, model miałby 100% i byłby bezużyteczny w praktyce.</li>
+<li>Usuń kolumnę <code>deck</code> (zbyt dużo braków) oraz kolumny zdublowane/tekstowe powielające inne (<code>class</code>, <code>who</code>, <code>embark_town</code>, <code>adult_male</code>, <code>alone</code> — pochodne od pozostałych).</li>
+<li>Zostaw cechy: <code>pclass</code>, <code>sex</code>, <code>age</code>, <code>sibsp</code>, <code>parch</code>, <code>fare</code>, <code>embarked</code>.</li>
+<li>Uzupełnij braki w <code>age</code> <strong>medianą</strong>, a w <code>embarked</code> <strong>wartością najczęstszą</strong> (modą).</li>
+</ol>
+<p>W komentarzu wypisz, które kolumny usunąłeś i dlaczego usunięcie <code>alive</code> jest konieczne.</p>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Zakoduj cechy tekstowe na liczby — regresja i reszta modeli przyjmują tylko liczby. Najprościej <code>pd.get_dummies(df, columns=["sex", "embarked"], drop_first=True)</code>. Wyświetl <code>head()</code> po zakodowaniu.</p>
+</li>
+<li>
+<p><strong>(0.5 pkt)</strong> Rozdziel na <code>X</code> / <code>y</code> (<code>survived</code>), zrób <strong>podział ze stratyfikacją</strong> (<code>stratify=y</code>, <code>test_size=0.25</code>, <code>random_state=42</code>) i <strong>przeskaluj</strong> cechy <code>StandardScaler</code> (ucz skaler tylko na train!).</p>
+</li>
+</ol>
+<hr />
+<h4 id="zadanie-52-regresja-logistyczna-metryki-4-pkt">🏋️ Zadanie 5.2 — Regresja logistyczna + metryki (4 pkt)<a class="headerlink" href="#zadanie-52-regresja-logistyczna-metryki-4-pkt" title="Permanent link">#</a></h4>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>LogisticRegression</code> na przeskalowanym zbiorze treningowym i zrób predykcje na teście.</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Wyświetl <strong>macierz pomyłek</strong> (<code>confusion_matrix</code> lub <code>ConfusionMatrixDisplay</code>). W komentarzu opisz, ile było FN (przeoczonych ocalałych) i FP.</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Policz <strong>accuracy, precision, recall i F1</strong>. Zinterpretuj <strong>recall</strong> w kontekście problemu (jaki % faktycznie ocalałych pasażerów model poprawnie wskazał?).</p>
+</li>
+<li>
+<p><strong>(0.5 pkt)</strong> Wyświetl <code>classification_report</code>.</p>
+</li>
+</ol>
+<hr />
+<h4 id="zadanie-53-drzewo-i-las-losowy-4-pkt">🏋️ Zadanie 5.3 — Drzewo i las losowy (4 pkt)<a class="headerlink" href="#zadanie-53-drzewo-i-las-losowy-4-pkt" title="Permanent link">#</a></h4>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>DecisionTreeClassifier</code> (ustaw <code>max_depth</code>) i oceń accuracy + F1 na teście.</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>RandomForestClassifier</code> (<code>n_estimators=200</code>) i oceń tak samo.</p>
+</li>
+<li>
+<p><strong>(0.5 pkt)</strong> Porównaj wyniki drzewa i lasu w komentarzu — który lepszy i czy to zgodne z intuicją z wykładu?</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Wyciągnij z lasu <strong>ważność cech</strong> (<code>feature_importances_</code>), wyświetl 5 najważniejszych (najlepiej jako wykres słupkowy). W komentarzu: które cechy najmocniej decydowały o przeżyciu? (Czy płeć i klasa biletu są na górze?)</p>
+</li>
+</ol>
+<hr />
+<h4 id="zadanie-54-knn-i-svm-dlaczego-skalowanie-ma-znaczenie-4-pkt">🏋️ Zadanie 5.4 — KNN i SVM + dlaczego skalowanie ma znaczenie (4 pkt)<a class="headerlink" href="#zadanie-54-knn-i-svm-dlaczego-skalowanie-ma-znaczenie-4-pkt" title="Permanent link">#</a></h4>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>KNeighborsClassifier</code> na <strong>przeskalowanych</strong> danych dla dwóch różnych wartości <code>k</code> (np. 3 i 15). Porównaj F1.</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>SVC</code> (<code>kernel="rbf"</code>) na przeskalowanych danych i oceń accuracy + F1.</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> <strong>Eksperyment ze skalowaniem:</strong> wytrenuj KNN jeszcze raz, ale na danych <strong>nieprzeskalowanych</strong> (surowe <code>X_train</code>). Porównaj jego F1 z wersją przeskalowaną z punktu 1.</p>
+</li>
+<li>
+<p><strong>(0.5 pkt)</strong> W komentarzu wyjaśnij, dlaczego skalowanie zmieniło wynik KNN (a nie zmieniłoby wyniku lasu losowego).</p>
+</li>
+</ol>
+<hr />
+<h4 id="zadanie-55-xgboost-finaowe-porownanie-4-pkt">🏋️ Zadanie 5.5 — XGBoost + finałowe porównanie (4 pkt)<a class="headerlink" href="#zadanie-55-xgboost-finaowe-porownanie-4-pkt" title="Permanent link">#</a></h4>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Zainstaluj (<code>pip install xgboost</code>) i wytrenuj <code>XGBClassifier</code>. Oceń accuracy + F1.</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Narysuj <strong>krzywą ROC</strong> (<code>RocCurveDisplay</code>) dla co najmniej dwóch modeli na jednym wykresie i policz ich <strong>ROC-AUC</strong> (pamiętaj: <code>predict_proba</code>, nie <code>predict</code>).</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Zbuduj <strong>tabelę porównawczą wszystkich 6 modeli</strong> (accuracy, F1, ROC-AUC), posortowaną po F1 — wzorem sekcji „Łączymy wszystko". W komentarzu: który model wygrał na Titanicu i czy to ten sam, co na breast cancer?</p>
+</li>
+</ol>
+<hr />
+<h2 id="podsumowanie-punktacji">Podsumowanie punktacji<a class="headerlink" href="#podsumowanie-punktacji" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Zadanie</th>
+<th>Temat</th>
+<th>Punkty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.1</td>
+<td>Przygotowanie danych (czyszczenie, leakage, kodowanie, skalowanie)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Regresja logistyczna + metryki klasyfikacji</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5.3</td>
+<td>Drzewo decyzyjne + las losowy + ważność cech</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5.4</td>
+<td>KNN + SVM + eksperyment ze skalowaniem</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5.5</td>
+<td>XGBoost + ROC-AUC + finałowe porównanie</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Suma</strong></td>
+<td></td>
+<td><strong>20</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Maksymalne <strong>20 pkt</strong> zdobywasz, prezentując rozwiązanie prowadzącemu na zajęciach. Zadanie wysyłasz na Moodle najpóźniej dzień przed kolejnymi zajęciami.</p>
+</blockquote>
+<hr />
+<h2 id="materiay-dodatkowe">Materiały dodatkowe<a class="headerlink" href="#materiay-dodatkowe" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://scikit-learn.org/stable/supervised_learning.html">scikit-learn — Supervised learning</a></li>
+<li><a href="https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics">scikit-learn — metryki klasyfikacji</a></li>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html">scikit-learn — <code>StandardScaler</code></a></li>
+<li><a href="https://scikit-learn.org/stable/modules/ensemble.html#random-forests">scikit-learn — Random Forest</a></li>
+<li><a href="https://scikit-learn.org/stable/modules/svm.html">scikit-learn — SVM</a></li>
+<li><a href="https://xgboost.readthedocs.io/">XGBoost — dokumentacja</a></li>
+<li><a href="https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html">Macierz pomyłek i metryki — przystępne wprowadzenie</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2658 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/python_w_data_science/zajecia_4/">
+      
+      
+        <link rel="prev" href="../zajecia_3/">
+      
+      
+        <link rel="next" href="../zajecia_5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zajęcia 4 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-4" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../jakosc_aplikacji/" class="md-tabs__link">
+          
+  
+  
+  Jakosc aplikacji
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_stron_internetowych_2/" class="md-tabs__link">
+          
+  
+  
+  Programowanie stron internetowych 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_wysokopoziomowe/" class="md-tabs__link">
+          
+  
+  
+  Programowanie wysokopoziomowe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_zaawansowane/" class="md-tabs__link">
+          
+  
+  
+  Programowanie zaawansowane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Python w data science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../zarzadzanie_big_data/" class="md-tabs__link">
+          
+  
+  
+  Zarzadzanie big data
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakosc aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakosc aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python w data science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python w data science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regresja-liniowa-od-danych-do-dziaajacego-modelu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regresja liniowa — od danych do działającego modelu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-co-to-jest-regresja-liniowa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Co to jest regresja liniowa?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Co to jest regresja liniowa?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intuicja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intuicja
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matematyka-mniej-straszna-niz-wyglada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matematyka — mniej straszna niż wygląda
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czego-model-sie-uczy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czego model się "uczy"?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-41-intuicja-i-reczna-predykcja-3-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 4.1 — Intuicja i ręczna predykcja (3 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-najpierw-dane-potem-model-analiza-zbioru-eda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Najpierw dane, potem model — analiza zbioru (EDA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Najpierw dane, potem model — analiza zbioru (EDA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wczytanie-zbioru" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wczytanie zbioru
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pierwsze-spojrzenie-info-i-describe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pierwsze spojrzenie — info() i describe()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rozkady-cech-histogramy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozkłady cech — histogramy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#korelacje-ktore-cechy-w-ogole-sa-przydatne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Korelacje — które cechy w ogóle są przydatne?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wykres-rozrzutu-zobacz-zaleznosc-na-oczy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wykres rozrzutu — zobacz zależność na oczy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-42-analiza-i-czyszczenie-zbioru-5-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 4.2 — Analiza i czyszczenie zbioru (5 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-podzia-na-zbior-treningowy-i-walidacyjny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Podział na zbiór treningowy i walidacyjny
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Podział na zbiór treningowy i walidacyjny">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-co-w-ogole-dzielic-dane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Po co w ogóle dzielić dane?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overfitting-uczen-ktory-wyku-odpowiedzi-na-pamiec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overfitting — uczeń, który wykuł odpowiedzi na pamięć
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#train_test_split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        train_test_split
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-43-podzia-danych-3-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 4.3 — Podział danych (3 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-trenowanie-modelu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Trenowanie modelu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Trenowanie modelu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#predykcja-na-nowych-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Predykcja na nowych danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-44-trenowanie-i-interpretacja-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 4.4 — Trenowanie i interpretacja (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ewaluacja-modelu-czy-on-jest-w-ogole-dobry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ewaluacja modelu — czy on jest w ogóle dobry?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Ewaluacja modelu — czy on jest w ogóle dobry?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trzy-metryki-ktore-musisz-znac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trzy metryki, które musisz znać
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wykres-reszt-diagnostyka-ktorej-metryki-nie-pokaza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wykres reszt — diagnostyka, której metryki nie pokażą
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-45-ewaluacja-5-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Zadanie 4.5 — Ewaluacja (5 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aczymy-wszystko-peny-pipeline-w-jednej-klasie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Łączymy wszystko — pełny pipeline w jednej klasie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podsumowanie-punktacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podsumowanie punktacji
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materiay-dodatkowe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materiały dodatkowe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarzadzanie big data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarzadzanie big data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-4">Zajęcia 4<a class="headerlink" href="#zajecia-4" title="Permanent link">#</a></h1>
+<h2 id="regresja-liniowa-od-danych-do-dziaajacego-modelu">Regresja liniowa — od danych do działającego modelu<a class="headerlink" href="#regresja-liniowa-od-danych-do-dziaajacego-modelu" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>Poprzednie zajęcia:</strong> poznaliśmy NLP i spaCy, a wcześniej zbudowaliśmy solidny fundament OOP.
+Dziś robimy duży krok w stronę <strong>uczenia maszynowego</strong>. Zbudujemy nasz pierwszy model predykcyjny — regresję liniową — ale (uwaga!) <strong>nie zaczniemy od trenowania</strong>. Zaczniemy od zrozumienia danych, bo "garbage in, garbage out" to nie jest tylko ładny cytat.</p>
+</blockquote>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>wyjaśnić, czym jest regresja liniowa i co model tak naprawdę "uczy się" z danych,</li>
+<li>przeprowadzić <strong>analizę zbioru (EDA)</strong> zanim cokolwiek wytrenujesz,</li>
+<li>świadomie podzielić dane na zbiór treningowy i walidacyjny — i wiedzieć, <strong>po co</strong> to robimy,</li>
+<li>wytrenować model regresji w <code>scikit-learn</code> w kilku linijkach,</li>
+<li><strong>ocenić jakość modelu</strong> za pomocą MAE, RMSE i R² oraz wykresu reszt,</li>
+<li>rozpoznać, kiedy model jest dobry, a kiedy tylko udaje, że jest.</li>
+</ul>
+<blockquote>
+<p><strong>Środowisko:</strong> Google Colab. Wszystkie biblioteki (<code>numpy</code>, <code>pandas</code>, <code>matplotlib</code>, <code>scikit-learn</code>) są tam już zainstalowane.</p>
+</blockquote>
+<hr />
+<h2 id="1-co-to-jest-regresja-liniowa">1. Co to jest regresja liniowa?<a class="headerlink" href="#1-co-to-jest-regresja-liniowa" title="Permanent link">#</a></h2>
+<h3 id="intuicja">Intuicja<a class="headerlink" href="#intuicja" title="Permanent link">#</a></h3>
+<p>Wyobraź sobie, że masz dane o mieszkaniach: metraż i cenę. Patrzysz na wykres punktowy i widzisz, że im większy metraż, tym wyższa cena. Punkty układają się mniej więcej w <strong>linię prostą</strong>.</p>
+<p>Regresja liniowa to nic innego jak <strong>znalezienie tej najlepszej prostej</strong> — takiej, która przechodzi "jak najbliżej" wszystkich punktów. Mając taką prostą, możemy przewidzieć cenę mieszkania, którego nie ma w danych: podajemy metraż, odczytujemy cenę z linii.</p>
+<p>Zobaczmy to na obrazku — szare pionowe odcinki to <strong>reszty</strong> (różnice między punktem a prostą); model dobiera prostą tak, żeby suma ich kwadratów (MSE) była najmniejsza:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># dane przykładowe (metraż -&gt; cena w tys. zł), z lekkim szumem</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">metraz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">32</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">95</span><span class="p">])</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">cena</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9500</span> <span class="o">*</span> <span class="n">metraz</span> <span class="o">+</span> <span class="mi">50000</span> <span class="o">+</span> <span class="n">rng</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">45000</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">metraz</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span> <span class="o">/</span> <span class="mi">1000</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># dopasowanie prostej</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">X</span> <span class="o">=</span> <span class="n">metraz</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">cena</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">x_line</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">metraz</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="mi">3</span><span class="p">,</span> <span class="n">metraz</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">y_line</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_line</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="c1"># reszty: pionowe odcinki od punktu do prostej</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="k">for</span> <span class="n">xi</span><span class="p">,</span> <span class="n">yi</span><span class="p">,</span> <span class="n">ypi</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">metraz</span><span class="p">,</span> <span class="n">cena</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">xi</span><span class="p">,</span> <span class="n">xi</span><span class="p">],</span> <span class="p">[</span><span class="n">yi</span><span class="p">,</span> <span class="n">ypi</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#bdbdbd&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_line</span><span class="p">,</span> <span class="n">y_line</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#d62728&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">2.5</span><span class="p">,</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        <span class="n">label</span><span class="o">=</span><span class="s2">&quot;model (dopasowana prosta)&quot;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">metraz</span><span class="p">,</span> <span class="n">cena</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#1f77b4&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>           <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;dane (mieszkania)&quot;</span><span class="p">)</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;metraż [m²]&quot;</span><span class="p">)</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;cena [tys. zł]&quot;</span><span class="p">)</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Regresja liniowa — prosta przechodząca przez „środek” punktów&quot;</span><span class="p">)</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper left&quot;</span><span class="p">)</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.35</span><span class="p">)</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[[</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="s2">&quot;right&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p><img alt="Regresja liniowa" src="../obrazki/regresja_liniowa.png" /></p>
+<h3 id="matematyka-mniej-straszna-niz-wyglada">Matematyka — mniej straszna niż wygląda<a class="headerlink" href="#matematyka-mniej-straszna-niz-wyglada" title="Permanent link">#</a></h3>
+<p>Dla <strong>jednej cechy</strong> (np. metraż) model to po prostu równanie prostej, które znasz ze szkoły:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ŷ = w · x + b
+</span></code></pre></div>
+<ul>
+<li><code>x</code> — cecha wejściowa (metraż),</li>
+<li><code>ŷ</code> ("y daszek") — przewidywana wartość (cena),</li>
+<li><code>w</code> — <strong>waga</strong> (slope, nachylenie) — o ile rośnie cena, gdy metraż rośnie o 1 m²,</li>
+<li><code>b</code> — <strong>wyraz wolny</strong> (intercept) — wartość, gdy <code>x = 0</code>.</li>
+</ul>
+<p>Dla <strong>wielu cech</strong> (metraż, liczba pokoi, piętro, ...) prosta zamienia się w hiperpłaszczyznę, a równanie rośnie:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ŷ = w₁·x₁ + w₂·x₂ + w₃·x₃ + ... + wₙ·xₙ + b
+</span></code></pre></div>
+<p>To wciąż <strong>liniowy</strong> model — każda cecha ma swoją wagę, a my je sumujemy. Cała magia "uczenia" polega na znalezieniu takich <code>w</code> i <code>b</code>, które dają najlepsze predykcje.</p>
+<h3 id="czego-model-sie-uczy">Czego model się "uczy"?<a class="headerlink" href="#czego-model-sie-uczy" title="Permanent link">#</a></h3>
+<p>Model szuka wag, które <strong>minimalizują błąd</strong> między predykcją <code>ŷ</code> a rzeczywistą wartością <code>y</code>. Najczęściej używaną miarą błędu jest <strong>MSE</strong> (Mean Squared Error — średni błąd kwadratowy):</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>MSE = (1/n) · Σ (yᵢ - ŷᵢ)²
+</span></code></pre></div>
+<p>Czyli: dla każdego punktu liczymy różnicę (rzeczywista − przewidziana), podnosimy do kwadratu (żeby plusy i minusy się nie kasowały, i żeby duże błędy bolały bardziej), i uśredniamy.</p>
+<blockquote>
+<p><strong>Po co kwadrat?</strong> Gdybyśmy sumowali same różnice, błąd +10 i −10 dałyby 0 — model wyglądałby na idealny, mimo że się myli. Kwadrat to naprawia: każdy błąd jest dodatni, a te duże ważą nieproporcjonalnie więcej.</p>
+</blockquote>
+<p>Algorytm (pod maską <code>scikit-learn</code> to metoda najmniejszych kwadratów) dobiera <code>w</code> i <code>b</code> tak, żeby ta liczba była <strong>jak najmniejsza</strong>. Na szczęście nie musimy robić tego ręcznie — od tego mamy bibliotekę.</p>
+<h3 id="zadanie-41-intuicja-i-reczna-predykcja-3-pkt">🏋️ Zadanie 4.1 — Intuicja i ręczna predykcja (3 pkt)<a class="headerlink" href="#zadanie-41-intuicja-i-reczna-predykcja-3-pkt" title="Permanent link">#</a></h3>
+<p>Zanim sięgniemy po <code>scikit-learn</code>, poczujmy mechanikę "na piechotę".</p>
+<p>Załóżmy, że ktoś wytrenował dla nas prosty model ceny mieszkania:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cena = 9500 · metraż + 50000
+</span></code></pre></div>
+<p>(czyli <code>w = 9500</code>, <code>b = 50000</code>)</p>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Napisz funkcję <code>predict(metraz: float) -&gt; float</code>, która zwraca przewidywaną cenę dla podanego metrażu. Przetestuj dla 40, 60 i 75 m².</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Masz prawdziwe ceny trzech mieszkań. Napisz funkcję <code>mse(y_true: list, y_pred: list) -&gt; float</code>, która liczy MSE ręcznie (bez bibliotek). Policz MSE dla danych poniżej.</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Zmień <code>b</code> z <code>50000</code> na <code>100000</code> i policz MSE jeszcze raz. Czy błąd wzrósł, czy zmalał? Napisz w komentarzu, co to mówi o tym, który <code>b</code> jest lepszy.</p>
+</li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">metraze</span>   <span class="o">=</span> <span class="p">[</span><span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">75</span><span class="p">]</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">ceny_real</span> <span class="o">=</span> <span class="p">[</span><span class="mi">430000</span><span class="p">,</span> <span class="mi">620000</span><span class="p">,</span> <span class="mi">770000</span><span class="p">]</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># y_pred = [predict(m) for m in metraze]</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># print(mse(ceny_real, y_pred))</span>
+</span></code></pre></div>
+<hr />
+<h2 id="2-najpierw-dane-potem-model-analiza-zbioru-eda">2. Najpierw dane, potem model — analiza zbioru (EDA)<a class="headerlink" href="#2-najpierw-dane-potem-model-analiza-zbioru-eda" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>Najważniejsza zasada dzisiejszych zajęć:</strong> nie trenujesz modelu na danych, których nie rozumiesz. Etap EDA (<em>Exploratory Data Analysis</em>) to nie strata czasu — to moment, w którym łapiesz literówki, braki, wartości odstające i cechy, które w ogóle nic nie wnoszą. Pominięcie tego etapu to najczęstszy powód, dla którego "model nie działa".</p>
+</blockquote>
+<h3 id="wczytanie-zbioru">Wczytanie zbioru<a class="headerlink" href="#wczytanie-zbioru" title="Permanent link">#</a></h3>
+<p>Użyjemy gotowego, wbudowanego w <code>scikit-learn</code> zbioru <strong>California Housing</strong> — dane o cenach mieszkań w Kalifornii. Cechy są zrozumiałe (mediana dochodu, wiek budynku, liczba pokoi...), a celem jest mediana wartości domu.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_california_housing</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">dane</span> <span class="o">=</span> <span class="n">fetch_california_housing</span><span class="p">(</span><span class="n">as_frame</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">dane</span><span class="o">.</span><span class="n">frame</span>   <span class="c1"># gotowy DataFrame z cechami + kolumną celu</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>    <span class="c1"># (20640, 9) — 20640 wierszy, 8 cech + 1 cel</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Kolumna celu nazywa się <code>MedHouseVal</code> (mediana wartości domu, w setkach tysięcy dolarów). Reszta kolumn to nasze cechy:</p>
+<table>
+<thead>
+<tr>
+<th>Kolumna</th>
+<th>Znaczenie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MedInc</code></td>
+<td>mediana dochodu w dzielnicy</td>
+</tr>
+<tr>
+<td><code>HouseAge</code></td>
+<td>mediana wieku budynków</td>
+</tr>
+<tr>
+<td><code>AveRooms</code></td>
+<td>średnia liczba pokoi</td>
+</tr>
+<tr>
+<td><code>AveBedrms</code></td>
+<td>średnia liczba sypialni</td>
+</tr>
+<tr>
+<td><code>Population</code></td>
+<td>populacja dzielnicy</td>
+</tr>
+<tr>
+<td><code>AveOccup</code></td>
+<td>średnie zaludnienie domu</td>
+</tr>
+<tr>
+<td><code>Latitude</code> / <code>Longitude</code></td>
+<td>współrzędne geograficzne</td>
+</tr>
+<tr>
+<td><code>MedHouseVal</code></td>
+<td><strong>cel</strong> — mediana wartości domu</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pierwsze-spojrzenie-info-i-describe">Pierwsze spojrzenie — <code>info()</code> i <code>describe()</code><a class="headerlink" href="#pierwsze-spojrzenie-info-i-describe" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>         <span class="c1"># typy kolumn, ile wartości niepustych</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>     <span class="c1"># statystyki: min, max, średnia, kwartyle</span>
+</span></code></pre></div>
+<p>Na co patrzymy:</p>
+<ul>
+<li><strong>Braki danych</strong> — czy <code>info()</code> pokazuje mniej wartości niepustych niż wierszy? (tu akurat zbiór jest czysty, ale w prawdziwym świecie rzadko tak jest).</li>
+<li><strong>Zakresy</strong> — czy <code>min</code>/<code>max</code> mają sens? Ujemny wiek budynku albo cena 0 to sygnał ostrzegawczy.</li>
+<li><strong>Wartości odstające (outliers)</strong> — czy <code>max</code> nie odjeżdża absurdalnie od kwartyla 75% (<code>AveRooms</code> = 142 przy medianie ~5 to podejrzane).</li>
+</ul>
+<h3 id="rozkady-cech-histogramy">Rozkłady cech — histogramy<a class="headerlink" href="#rozkady-cech-histogramy" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">df</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Histogram od razu pokazuje, czy cecha ma sensowny rozkład, czy jest "zlepiona" przy jednej wartości albo ucięta (np. cena w tym zbiorze jest sztucznie obcięta przy 5.0 — to artefakt danych, dobrze o nim wiedzieć).</p>
+<h3 id="korelacje-ktore-cechy-w-ogole-sa-przydatne">Korelacje — które cechy w ogóle są przydatne?<a class="headerlink" href="#korelacje-ktore-cechy-w-ogole-sa-przydatne" title="Permanent link">#</a></h3>
+<p>Regresja liniowa lubi cechy, które są <strong>liniowo powiązane</strong> z celem. Sprawdźmy to:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">korelacje</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s2">&quot;MedHouseVal&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">korelacje</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>MedHouseVal    1.000000
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>MedInc         0.688075   ← dochód mocno koreluje z ceną — to będzie nasza gwiazda
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>AveRooms       0.151948
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>HouseAge       0.105623
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>...
+</span></code></pre></div>
+<p>Wniosek czytamy wprost: <strong><code>MedInc</code> (dochód) to najsilniejszy predyktor ceny</strong>. Cechy o korelacji bliskiej zera prawdopodobnie niewiele wniosą do liniowego modelu.</p>
+<blockquote>
+<p><strong>Uwaga:</strong> korelacja Pearsona wykrywa tylko <strong>zależności liniowe</strong>. Cecha może być świetnym predyktorem w sposób nieliniowy i mieć korelację ~0. Dlatego korelacja to wskazówka, nie wyrok.</p>
+</blockquote>
+<h3 id="wykres-rozrzutu-zobacz-zaleznosc-na-oczy">Wykres rozrzutu — zobacz zależność na oczy<a class="headerlink" href="#wykres-rozrzutu-zobacz-zaleznosc-na-oczy" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;MedInc&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;MedHouseVal&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Widać tu wyraźny trend rosnący (im wyższy dochód, tym droższe domy) oraz tę poziomą "ścianę" na górze przy 5.0 — obcięcie ceny, które zauważyliśmy w histogramie.</p>
+<blockquote>
+<p><strong>Uwaga:</strong> przykłady powyżej liczyliśmy na zbiorze California Housing. <strong>Zadania robisz na innym zbiorze — Auto MPG</strong> (dane o autach z lat 1970–1982, gdzie celem jest <code>mpg</code>, czyli spalanie w milach na galon — im więcej, tym oszczędniejsze auto). Te same kroki, inne dane — chodzi o to, żebyś samodzielnie przeszedł cały proces, a nie przepisał gotowca.</p>
+</blockquote>
+<h3 id="zadanie-42-analiza-i-czyszczenie-zbioru-5-pkt">🏋️ Zadanie 4.2 — Analiza i czyszczenie zbioru (5 pkt)<a class="headerlink" href="#zadanie-42-analiza-i-czyszczenie-zbioru-5-pkt" title="Permanent link">#</a></h3>
+<p>Wczytaj zbiór Auto MPG (jest wbudowany w <code>seaborn</code>):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">df</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;mpg&quot;</span><span class="p">)</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Wyświetl <code>shape</code>, <code>head()</code> oraz <code>info()</code>. W komentarzu napisz: ile jest wierszy, ile kolumn i <strong>czy są braki danych</strong> (podpowiedź: <code>df.isna().sum()</code> pokaże braki per kolumna — jedna z cech ma ich kilka).</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Ten zbiór nie jest gotowy do regresji — trzeba go <strong>wyczyścić</strong>:</p>
+</li>
+<li>usuń kolumny nienumeryczne (regresja liniowa przyjmuje tylko liczby — sprawdź, które kolumny to tekst),</li>
+<li>usuń wiersze z brakami danych (<code>dropna()</code>).</li>
+</ol>
+<p>Po czyszczeniu wyświetl nowy <code>shape</code>. W komentarzu napisz, ile wierszy i kolumn zostało i które kolumny usunąłeś.</p>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Na wyczyszczonych danych wywołaj <code>describe()</code> oraz narysuj histogramy wszystkich cech (<code>df.hist(...)</code>). Wskaż w komentarzu jedną cechę, której rozkład jest wyraźnie skośny lub "skokowy".</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Policz korelacje cech z <code>mpg</code>, posortuj i wyświetl. <strong>Zwróć uwagę na znak</strong> — część cech będzie skorelowana <strong>ujemnie</strong>. Narysuj wykres rozrzutu (<code>scatter</code>) dla cechy o najsilniejszej korelacji (co do wartości bezwzględnej). W komentarzu napisz, czy zależność jest rosnąca, czy malejąca, i dlaczego to ma sens (pomyśl: cięższe auto = ?).</p>
+</li>
+</ol>
+<hr />
+<h2 id="3-podzia-na-zbior-treningowy-i-walidacyjny">3. Podział na zbiór treningowy i walidacyjny<a class="headerlink" href="#3-podzia-na-zbior-treningowy-i-walidacyjny" title="Permanent link">#</a></h2>
+<h3 id="po-co-w-ogole-dzielic-dane">Po co w ogóle dzielić dane?<a class="headerlink" href="#po-co-w-ogole-dzielic-dane" title="Permanent link">#</a></h3>
+<p>Załóżmy, że trenujemy model na <strong>wszystkich</strong> danych, a potem na tych samych danych sprawdzamy jego jakość. Model dostanie świetny wynik — bo widział już te odpowiedzi! To jak ocenianie ucznia po pytaniu go o zadania, które wcześniej rozwiązaliście razem na tablicy. Nic to nie mówi o tym, czy poradzi sobie na <strong>prawdziwym</strong> egzaminie.</p>
+<p>Dlatego dzielimy dane na dwa rozłączne kawałki:</p>
+<table>
+<thead>
+<tr>
+<th>Zbiór</th>
+<th>Do czego służy</th>
+<th>Typowy udział</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Treningowy</strong> (train)</td>
+<td>model uczy się na nim wag <code>w</code>, <code>b</code></td>
+<td>~70–80%</td>
+</tr>
+<tr>
+<td><strong>Walidacyjny / testowy</strong> (test)</td>
+<td>sprawdzamy jakość na danych, których model <strong>nigdy nie widział</strong></td>
+<td>~20–30%</td>
+</tr>
+</tbody>
+</table>
+<p>To jedyny uczciwy sposób, żeby ocenić, jak model zachowa się na nowych danych.</p>
+<h3 id="overfitting-uczen-ktory-wyku-odpowiedzi-na-pamiec">Overfitting — uczeń, który wykuł odpowiedzi na pamięć<a class="headerlink" href="#overfitting-uczen-ktory-wyku-odpowiedzi-na-pamiec" title="Permanent link">#</a></h3>
+<p>Jeśli model świetnie radzi sobie na treningu, ale słabo na teście — mamy <strong>przeuczenie (overfitting)</strong>. Model "wykuł" dane treningowe zamiast nauczyć się ogólnej reguły. Podział train/test jest naszym wykrywaczem tego problemu.</p>
+<h3 id="train_test_split"><code>train_test_split</code><a class="headerlink" href="#train_test_split" title="Permanent link">#</a></h3>
+<p><code>scikit-learn</code> robi podział za nas:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1"># X — cechy (wszystko oprócz celu), y — cel</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;MedHouseVal&quot;</span><span class="p">])</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;MedHouseVal&quot;</span><span class="p">]</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>    <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>      <span class="c1"># 20% danych ląduje w teście</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>     <span class="c1"># ziarno losowości — żeby podział był powtarzalny</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="p">)</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>   <span class="c1"># np. (16512, 8) (4128, 8)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong><code>random_state=42</code></strong> — ustawienie ziarna gwarantuje, że za każdym uruchomieniem dostaniesz <strong>ten sam</strong> podział. Bez tego porównywanie wyników między uruchomieniami nie miałoby sensu. (Liczba 42 to żart programistów — może być dowolna, byle stała).</p>
+</blockquote>
+<h3 id="zadanie-43-podzia-danych-3-pkt">🏋️ Zadanie 4.3 — Podział danych (3 pkt)<a class="headerlink" href="#zadanie-43-podzia-danych-3-pkt" title="Permanent link">#</a></h3>
+<p>Pracujesz na <strong>wyczyszczonym</strong> zbiorze MPG z zadania 4.2.</p>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Rozdziel zbiór na cechy <code>X</code> (wszystkie kolumny oprócz celu) i wektor celu <code>y</code> (<code>mpg</code>).</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Podziel dane na treningowe i testowe w proporcji <strong>75/25</strong> (<code>test_size=0.25</code>), ustawiając <code>random_state=42</code>. Wyświetl kształty (<code>shape</code>) wszystkich czterech wynikowych zbiorów.</p>
+</li>
+<li>
+<p><strong>(0.5 pkt)</strong> W komentarzu odpowiedz krótko: dlaczego ustawiamy <code>random_state</code> i co by się stało, gdybyśmy oceniali model na zbiorze treningowym zamiast testowym?</p>
+</li>
+</ol>
+<hr />
+<h2 id="4-trenowanie-modelu">4. Trenowanie modelu<a class="headerlink" href="#4-trenowanie-modelu" title="Permanent link">#</a></h2>
+<p>Teraz część, na którą wszyscy czekali — i która, jak się okaże, jest <strong>najkrótsza</strong>. Cała ciężka praca była wcześniej.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>   <span class="c1"># &lt;- tu dzieje się &quot;uczenie&quot;</span>
+</span></code></pre></div>
+<p>Tyle. Po <code>fit()</code> model ma już dobrane wagi. Możemy je podejrzeć:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wyraz wolny (b):&quot;</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">intercept_</span><span class="p">)</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wagi (w):&quot;</span><span class="p">)</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="k">for</span> <span class="n">cecha</span><span class="p">,</span> <span class="n">waga</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">coef_</span><span class="p">):</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">cecha</span><span class="si">:</span><span class="s2">&lt;12</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">waga</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Wagi są <strong>interpretowalne</strong> — to jedna z najpiękniejszych cech regresji liniowej. Dodatnia waga przy <code>MedInc</code> oznacza: "gdy dochód w dzielnicy rośnie, przewidywana cena rośnie". To nie czarna skrzynka — widzimy, na co model patrzy.</p>
+<h3 id="predykcja-na-nowych-danych">Predykcja na nowych danych<a class="headerlink" href="#predykcja-na-nowych-danych" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>   <span class="c1"># predykcje dla zbioru, którego model nie widział</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="c1"># Porównanie kilku pierwszych predykcji z rzeczywistością:</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="k">for</span> <span class="n">real</span><span class="p">,</span> <span class="n">pred</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">y_test</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">[:</span><span class="mi">5</span><span class="p">]):</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;rzeczywista: </span><span class="si">{</span><span class="n">real</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">   przewidziana: </span><span class="si">{</span><span class="n">pred</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="zadanie-44-trenowanie-i-interpretacja-4-pkt">🏋️ Zadanie 4.4 — Trenowanie i interpretacja (4 pkt)<a class="headerlink" href="#zadanie-44-trenowanie-i-interpretacja-4-pkt" title="Permanent link">#</a></h3>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>LinearRegression</code> na zbiorze treningowym z poprzedniego zadania.</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Wyświetl wyraz wolny oraz wagi dla wszystkich cech (ładnie sformatowane, z nazwami kolumn). Wskaż w komentarzu cechę o <strong>największej dodatniej</strong> i <strong>największej ujemnej</strong> wadze i napisz jednym zdaniem, jak je interpretujesz (np. „ujemna waga przy <code>weight</code> znaczy, że cięższe auto pali więcej, więc <code>mpg</code> spada").</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Zrób predykcję na zbiorze testowym (<code>predict</code>) i wyświetl porównanie 5 pierwszych predykcji z wartościami rzeczywistymi. Czy model "trafia w okolice"?</p>
+</li>
+</ol>
+<hr />
+<h2 id="5-ewaluacja-modelu-czy-on-jest-w-ogole-dobry">5. Ewaluacja modelu — czy on jest w ogóle dobry?<a class="headerlink" href="#5-ewaluacja-modelu-czy-on-jest-w-ogole-dobry" title="Permanent link">#</a></h2>
+<p>Predykcje mamy. Teraz pytanie za 5 punktów: <strong>jak dobre one są?</strong> Do tego służą metryki.</p>
+<h3 id="trzy-metryki-ktore-musisz-znac">Trzy metryki, które musisz znać<a class="headerlink" href="#trzy-metryki-ktore-musisz-znac" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">r2_score</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">mae</span>  <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">mse</span>  <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="n">rmse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mse</span><span class="p">)</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="n">r2</span>   <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MAE:  </span><span class="si">{</span><span class="n">mae</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMSE: </span><span class="si">{</span><span class="n">rmse</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R²:   </span><span class="si">{</span><span class="n">r2</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Metryka</th>
+<th>Co mierzy</th>
+<th>Jak czytać</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MAE</strong> (Mean Absolute Error)</td>
+<td>średni błąd bezwzględny</td>
+<td>"średnio mylę się o tyle". W tych samych jednostkach co cel — łatwa do interpretacji</td>
+</tr>
+<tr>
+<td><strong>RMSE</strong> (Root MSE)</td>
+<td>pierwiastek z MSE</td>
+<td>jak MAE, ale <strong>mocniej karze duże błędy</strong>. Też w jednostkach celu</td>
+</tr>
+<tr>
+<td><strong>R²</strong> (współczynnik determinacji)</td>
+<td>jaki % zmienności celu model wyjaśnia</td>
+<td>1.0 = ideał, 0.0 = model nie lepszy niż "zgaduj średnią", &lt; 0 = gorszy niż średnia</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>MAE czy RMSE?</strong> Jeśli pojedyncze duże pomyłki są groźne (np. wycena nieruchomości) — patrz na RMSE, bo ono je wyłapuje. Jeśli chcesz prostej, odpornej na outliery liczby — MAE. W praktyce raportuje się oba.</p>
+</blockquote>
+<h3 id="wykres-reszt-diagnostyka-ktorej-metryki-nie-pokaza">Wykres reszt — diagnostyka, której metryki nie pokażą<a class="headerlink" href="#wykres-reszt-diagnostyka-ktorej-metryki-nie-pokaza" title="Permanent link">#</a></h3>
+<p><strong>Reszta (residual)</strong> to różnica między wartością rzeczywistą a przewidzianą: <code>y - ŷ</code>. Wykres reszt względem predykcji to najważniejsze narzędzie diagnostyczne regresji:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">reszty</span> <span class="o">=</span> <span class="n">y_test</span> <span class="o">-</span> <span class="n">y_pred</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">reszty</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Przewidziane wartości&quot;</span><span class="p">)</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Reszty (y - ŷ)&quot;</span><span class="p">)</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Wykres reszt&quot;</span><span class="p">)</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Jak czytać:</p>
+<ul>
+<li><strong>Reszty losowo rozrzucone wokół zera</strong> → dobrze, model nie ma systematycznego błędu.</li>
+<li><strong>Widoczny wzór</strong> (np. lejek, łuk) → model coś przeoczył; być może zależność jest nieliniowa albo brakuje ważnej cechy.</li>
+</ul>
+<p>To jest moment, w którym wracasz do etapu 2 (EDA) i kombinujesz dalej. Modelowanie to <strong>pętla</strong>, nie linia prosta.</p>
+<h3 id="zadanie-45-ewaluacja-5-pkt">🏋️ Zadanie 4.5 — Ewaluacja (5 pkt)<a class="headerlink" href="#zadanie-45-ewaluacja-5-pkt" title="Permanent link">#</a></h3>
+<ol>
+<li>
+<p><strong>(2 pkt)</strong> Policz i wyświetl <strong>MAE, RMSE oraz R²</strong> dla predykcji na zbiorze testowym. W komentarzu napisz, ile procent zmienności ceny wyjaśnia model (na podstawie R²) i czy uważasz, że to dużo, czy mało.</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Policz te same trzy metryki na zbiorze <strong>treningowym</strong> (predykcja na <code>X_train</code>). Porównaj z wynikami testowymi. W komentarzu: czy widać oznaki przeuczenia (duża różnica train vs test)?</p>
+</li>
+<li>
+<p><strong>(1.5 pkt)</strong> Narysuj wykres reszt (<code>y_test - y_pred</code> względem <code>y_pred</code>) z poziomą linią na zerze. Opisz w komentarzu: czy reszty są losowo rozrzucone, czy widać jakiś wzór?</p>
+</li>
+<li>
+<p><strong>(0.5 pkt)</strong> Wytrenuj <strong>drugi</strong> model regresji używając <strong>tylko jednej cechy</strong> <code>weight</code> — najsilniej skorelowanej z celem (przekaż <code>X_train[["weight"]]</code>). Porównaj jego R² z modelem na wszystkich cechach. Czy więcej cech pomogło?</p>
+</li>
+</ol>
+<hr />
+<h2 id="aczymy-wszystko-peny-pipeline-w-jednej-klasie">Łączymy wszystko — pełny pipeline w jednej klasie<a class="headerlink" href="#aczymy-wszystko-peny-pipeline-w-jednej-klasie" title="Permanent link">#</a></h2>
+<p>Na zakończenie spięjmy cały dzisiejszy workflow w jedną klasę (ukłon w stronę OOP z poprzednich zajęć). To <strong>opcjonalne</strong>, ale pokazuje, jak w praktyce porządkuje się taki kod:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">r2_score</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="k">class</span><span class="w"> </span><span class="nc">RegressionPipeline</span><span class="p">:</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Spina cały workflow: dane → podział → trening → ewaluacja.&quot;&quot;&quot;</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">test_size</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">):</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>        <span class="k">if</span> <span class="n">target</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Brak kolumny celu &#39;</span><span class="si">{</span><span class="n">target</span><span class="si">}</span><span class="s2">&#39; w danych.&quot;</span><span class="p">)</span>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">target</span> <span class="o">=</span> <span class="n">target</span>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>        <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">target</span><span class="p">])</span>
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>        <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
+</span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">X_train</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_test</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_train</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+</span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>            <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="n">test_size</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
+</span><span id="__span-19-21"><a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>        <span class="p">)</span>
+</span><span id="__span-19-22"><a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a>
+</span><span id="__span-19-23"><a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-19-24"><a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">X_train</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_train</span><span class="p">)</span>
+</span><span id="__span-19-25"><a id="__codelineno-19-25" name="__codelineno-19-25" href="#__codelineno-19-25"></a>        <span class="k">return</span> <span class="bp">self</span>
+</span><span id="__span-19-26"><a id="__codelineno-19-26" name="__codelineno-19-26" href="#__codelineno-19-26"></a>
+</span><span id="__span-19-27"><a id="__codelineno-19-27" name="__codelineno-19-27" href="#__codelineno-19-27"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+</span><span id="__span-19-28"><a id="__codelineno-19-28" name="__codelineno-19-28" href="#__codelineno-19-28"></a>        <span class="n">y_pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">X_test</span><span class="p">)</span>
+</span><span id="__span-19-29"><a id="__codelineno-19-29" name="__codelineno-19-29" href="#__codelineno-19-29"></a>        <span class="k">return</span> <span class="p">{</span>
+</span><span id="__span-19-30"><a id="__codelineno-19-30" name="__codelineno-19-30" href="#__codelineno-19-30"></a>            <span class="s2">&quot;MAE&quot;</span><span class="p">:</span>  <span class="n">mean_absolute_error</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">),</span>
+</span><span id="__span-19-31"><a id="__codelineno-19-31" name="__codelineno-19-31" href="#__codelineno-19-31"></a>            <span class="s2">&quot;RMSE&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)),</span>
+</span><span id="__span-19-32"><a id="__codelineno-19-32" name="__codelineno-19-32" href="#__codelineno-19-32"></a>            <span class="s2">&quot;R2&quot;</span><span class="p">:</span>   <span class="n">r2_score</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">),</span>
+</span><span id="__span-19-33"><a id="__codelineno-19-33" name="__codelineno-19-33" href="#__codelineno-19-33"></a>        <span class="p">}</span>
+</span><span id="__span-19-34"><a id="__codelineno-19-34" name="__codelineno-19-34" href="#__codelineno-19-34"></a>
+</span><span id="__span-19-35"><a id="__codelineno-19-35" name="__codelineno-19-35" href="#__codelineno-19-35"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-19-36"><a id="__codelineno-19-36" name="__codelineno-19-36" href="#__codelineno-19-36"></a>        <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RegressionPipeline(cel=&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">target</span><span class="si">}</span><span class="s2">&#39;, &quot;</span>
+</span><span id="__span-19-37"><a id="__codelineno-19-37" name="__codelineno-19-37" href="#__codelineno-19-37"></a>                <span class="sa">f</span><span class="s2">&quot;train=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">X_train</span><span class="p">)</span><span class="si">}</span><span class="s2">, test=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">X_test</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+</span><span id="__span-19-38"><a id="__codelineno-19-38" name="__codelineno-19-38" href="#__codelineno-19-38"></a>
+</span><span id="__span-19-39"><a id="__codelineno-19-39" name="__codelineno-19-39" href="#__codelineno-19-39"></a>
+</span><span id="__span-19-40"><a id="__codelineno-19-40" name="__codelineno-19-40" href="#__codelineno-19-40"></a><span class="c1"># Użycie (przykład wciąż na California Housing):</span>
+</span><span id="__span-19-41"><a id="__codelineno-19-41" name="__codelineno-19-41" href="#__codelineno-19-41"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_california_housing</span>
+</span><span id="__span-19-42"><a id="__codelineno-19-42" name="__codelineno-19-42" href="#__codelineno-19-42"></a>
+</span><span id="__span-19-43"><a id="__codelineno-19-43" name="__codelineno-19-43" href="#__codelineno-19-43"></a><span class="n">dane</span> <span class="o">=</span> <span class="n">fetch_california_housing</span><span class="p">(</span><span class="n">as_frame</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-19-44"><a id="__codelineno-19-44" name="__codelineno-19-44" href="#__codelineno-19-44"></a><span class="n">pipe</span> <span class="o">=</span> <span class="n">RegressionPipeline</span><span class="p">(</span><span class="n">dane</span><span class="o">.</span><span class="n">frame</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s2">&quot;MedHouseVal&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+</span><span id="__span-19-45"><a id="__codelineno-19-45" name="__codelineno-19-45" href="#__codelineno-19-45"></a><span class="nb">print</span><span class="p">(</span><span class="n">pipe</span><span class="p">)</span>
+</span><span id="__span-19-46"><a id="__codelineno-19-46" name="__codelineno-19-46" href="#__codelineno-19-46"></a><span class="nb">print</span><span class="p">(</span><span class="n">pipe</span><span class="o">.</span><span class="n">evaluate</span><span class="p">())</span>
+</span></code></pre></div>
+<p>Widzisz, jak <code>__init__</code>, walidacja przez <code>ValueError</code> i <code>__str__</code> z poprzednich zajęć wracają tu naturalnie? Dobry kod ML to <strong>najpierw dobry kod</strong>, a dopiero potem ML.</p>
+<hr />
+<h2 id="podsumowanie-punktacji">Podsumowanie punktacji<a class="headerlink" href="#podsumowanie-punktacji" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Zadanie</th>
+<th>Temat</th>
+<th>Punkty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.1</td>
+<td>Intuicja i ręczna predykcja (MSE)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>Analiza zbioru (EDA)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>4.3</td>
+<td>Podział train/test</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4.4</td>
+<td>Trenowanie i interpretacja wag</td>
+<td>4</td>
+</tr>
+<tr>
+<td>4.5</td>
+<td>Ewaluacja (MAE / RMSE / R² / reszty)</td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>Suma</strong></td>
+<td></td>
+<td><strong>20</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Pamiętaj: maksymalne <strong>20 pkt</strong> zdobywasz, prezentując rozwiązanie prowadzącemu na zajęciach. Zadanie wysyłasz na Moodle najpóźniej dzień przed kolejnymi zajęciami.</p>
+</blockquote>
+<hr />
+<h2 id="materiay-dodatkowe">Materiały dodatkowe<a class="headerlink" href="#materiay-dodatkowe" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">scikit-learn — Linear Regression</a></li>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">scikit-learn — <code>train_test_split</code></a></li>
+<li><a href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics">scikit-learn — metryki regresji</a></li>
+<li><a href="https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset">California Housing dataset</a></li>
+<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html">pandas — <code>DataFrame.corr</code></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2774 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/jakosc_aplikacji/zajecia_3/">
+      
+      
+        <link rel="prev" href="../zajecia_2/">
+      
+      
+        <link rel="next" href="../../programowanie_stron_internetowych_2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zajęcia 3 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-3" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Jakosc aplikacji
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_stron_internetowych_2/" class="md-tabs__link">
+          
+  
+  
+  Programowanie stron internetowych 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_wysokopoziomowe/" class="md-tabs__link">
+          
+  
+  
+  Programowanie wysokopoziomowe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_zaawansowane/" class="md-tabs__link">
+          
+  
+  
+  Programowanie zaawansowane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python_w_data_science/" class="md-tabs__link">
+          
+  
+  
+  Python w data science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../zarzadzanie_big_data/" class="md-tabs__link">
+          
+  
+  
+  Zarzadzanie big data
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakosc aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakosc aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#powtorka-z-zajec-1-i-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Powtórka z zajęć 1 i 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czesc-1-jakosc-z-perspektywy-uzytkownika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — Jakość z perspektywy użytkownika
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 1 — Jakość z perspektywy użytkownika">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ux-vs-ui-to-nie-to-samo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UX vs UI — to nie to samo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uzytecznosc-usability-10-heurystyk-nielsena" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Użyteczność (usability) — 10 heurystyk Nielsena
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testy-uzytecznosci-usability-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testy użyteczności (usability testing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dostepnosc-accessibility-a11y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dostępność (accessibility, a11y)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lighthouse-automatyczny-audyt-strony" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lighthouse — automatyczny audyt strony
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-web-vitals-mierzalne-wrazenie-z-adowania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Web Vitals — mierzalne wrażenie z ładowania
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czesc-2-jakosc-z-perspektywy-procesu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — Jakość z perspektywy procesu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 2 — Jakość z perspektywy procesu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shift-left-testing-testuj-jak-najwczesniej" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shift-left testing — testuj jak najwcześniej
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kryteria-akceptacji-i-definition-of-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kryteria akceptacji i Definition of Done
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gherkin-kryteria-akceptacji-w-formacie-given-when-then" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gherkin — kryteria akceptacji w formacie Given-When-Then
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cykl-zycia-buga-bug-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cykl życia buga (bug lifecycle)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#severity-vs-priority-to-dwie-rozne-osie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Severity vs Priority — to dwie różne osie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rodzaje-testow-na-poziomie-procesu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rodzaje testów na poziomie procesu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metryki-jakosci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metryki jakości
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrospektywa-jakosc-procesu-nie-tylko-produktu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retrospektywa — jakość procesu, nie tylko produktu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podsumowanie-najwazniejszych-pojec-i-narzedzi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podsumowanie najważniejszych pojęć i narzędzi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-praktyczne-20-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie praktyczne (20 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie praktyczne (20 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-audyt-ux-i-dostepnosci-10-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — Audyt UX i dostępności (10 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 1 — Audyt UX i dostępności (10 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#krok-1-audyt-lighthouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 1 — Audyt Lighthouse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-2-interpretacja-wynikow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 2 — Interpretacja wyników
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-3-reczny-test-dostepnosci-czego-lighthouse-nie-zapie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 3 — Ręczny test dostępności (czego Lighthouse nie złapie)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-4-ewaluacja-heurystyczna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 4 — Ewaluacja heurystyczna
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#co-oddajesz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co oddajesz?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-kryteria-akceptacji-i-test-e2e-10-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — Kryteria akceptacji i test E2E (10 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 2 — Kryteria akceptacji i test E2E (10 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#krok-1-napisz-kryteria-akceptacji-w-gherkin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 1 — Napisz kryteria akceptacji w Gherkin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-2-zainstaluj-playwright" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 2 — Zainstaluj Playwright
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-3-zaimplementuj-testy-e2e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 3 — Zaimplementuj testy E2E
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-4-uruchom-testy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 4 — Uruchom testy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#co-oddajesz_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co oddajesz?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podsumowanie-zajec-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podsumowanie zajęć 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python w data science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python w data science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarzadzanie big data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarzadzanie big data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-3">Zajęcia 3<a class="headerlink" href="#zajecia-3" title="Permanent link">#</a></h1>
+<h2 id="powtorka-z-zajec-1-i-2">Powtórka z zajęć 1 i 2<a class="headerlink" href="#powtorka-z-zajec-1-i-2" title="Permanent link">#</a></h2>
+<p>Do tej pory patrzyliśmy na jakość „od środka":</p>
+<ul>
+<li><strong>Zajęcia 1</strong> — testy manualne, piramida testów, pisanie testów jednostkowych w <code>pytest</code>.</li>
+<li><strong>Zajęcia 2</strong> — jakość samego kodu (PEP 8, linter, formatter, typy) i automatyzacja (pre-commit, CI/CD, coverage).</li>
+</ul>
+<p>To wszystko sprawdza, czy kod <strong>działa zgodnie ze specyfikacją</strong> i czy jest <strong>dobrze napisany</strong>. Ale można mieć projekt z zielonym CI, 100% coverage i kodem czystym jak łza — który dla użytkownika jest koszmarem. Bo specyfikacja była zła, albo formularz da się wysłać tylko myszką, albo „Zapisz" wygląda jak „Anuluj".</p>
+<p>Dziś patrzymy na jakość z <strong>dwóch perspektyw, których nie widać w testach jednostkowych</strong>:</p>
+<ul>
+<li><strong>perspektywa użytkownika</strong> — czy aplikacja jest użyteczna, dostępna i szybka <em>dla człowieka</em>,</li>
+<li><strong>perspektywa procesu</strong> — czy <em>sposób</em>, w jaki pracujemy, w ogóle prowadzi do jakości (kryteria akceptacji, Definition of Done, cykl życia buga, metryki).</li>
+</ul>
+<p>Hasło na dziś: <strong>„it works on my machine" to nie jest jakość.</strong></p>
+<hr />
+<h2 id="czesc-1-jakosc-z-perspektywy-uzytkownika">Część 1 — Jakość z perspektywy użytkownika<a class="headerlink" href="#czesc-1-jakosc-z-perspektywy-uzytkownika" title="Permanent link">#</a></h2>
+<h3 id="ux-vs-ui-to-nie-to-samo">UX vs UI — to nie to samo<a class="headerlink" href="#ux-vs-ui-to-nie-to-samo" title="Permanent link">#</a></h3>
+<p>Dwa pojęcia, które notorycznie się myli:</p>
+<ul>
+<li><strong>UI (User Interface)</strong> — <em>jak to wygląda</em>. Kolory, przyciski, czcionki, layout. Warstwa wizualna.</li>
+<li><strong>UX (User Experience)</strong> — <em>jak się tego używa</em>. Czy użytkownik dociera do celu szybko i bez frustracji. Cały proces, nie tylko obrazek.</li>
+</ul>
+<blockquote>
+<p>Analogia: UI to wygląd pilota do telewizora. UX to czy faktycznie da się nim ściszyć dźwięk bez czytania instrukcji. Można mieć piękny pilot z 80 przyciskami i fatalny UX.</p>
+</blockquote>
+<p>Aplikacja może mieć śliczny UI i tragiczny UX (ładny, ale nie wiadomo, gdzie kliknąć) — albo brzydki UI i niezły UX (proste i działa).</p>
+<h3 id="uzytecznosc-usability-10-heurystyk-nielsena">Użyteczność (usability) — 10 heurystyk Nielsena<a class="headerlink" href="#uzytecznosc-usability-10-heurystyk-nielsena" title="Permanent link">#</a></h3>
+<p><strong>Heurystyki Nielsena</strong> to 10 ogólnych zasad projektowania użytecznych interfejsów. Nie są to sztywne reguły, tylko „dobre nawyki", po których ocenia się interfejs (tzw. <strong>ewaluacja heurystyczna</strong> — tester ocenia ekran pod kątem każdej zasady).</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Heurystyka</th>
+<th>O co chodzi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Widoczność statusu systemu</td>
+<td>Użytkownik zawsze wie, co się dzieje (spinner, „Zapisano", pasek postępu)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Zgodność z rzeczywistością</td>
+<td>Język i ikony znane użytkownikowi, nie żargon programisty</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Kontrola i wolność użytkownika</td>
+<td>Łatwe „cofnij", wyjście awaryjne, anulowanie operacji</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Spójność i standardy</td>
+<td>Te same rzeczy wyglądają i działają tak samo w całej aplikacji</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Zapobieganie błędom</td>
+<td>Lepiej nie dopuścić do błędu, niż ładnie go pokazać</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Rozpoznawanie zamiast przypominania</td>
+<td>Opcje widoczne, użytkownik nie musi nic pamiętać</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Elastyczność i wydajność</td>
+<td>Skróty dla zaawansowanych, prostota dla nowych</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Estetyka i minimalizm</td>
+<td>Nie zaśmiecaj ekranu nieistotnymi informacjami</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Pomoc w rozpoznaniu i naprawie błędów</td>
+<td>Komunikat błędu mówi <em>co</em> i <em>jak naprawić</em> (nie „Error 0x8004")</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Pomoc i dokumentacja</td>
+<td>Dostępna, gdy potrzebna, łatwa do przeszukania</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Przykład naruszenia #9: komunikat „Wystąpił błąd" to porażka. Dobry komunikat: „Hasło musi mieć min. 8 znaków i jedną cyfrę".</p>
+</blockquote>
+<h3 id="testy-uzytecznosci-usability-testing">Testy użyteczności (usability testing)<a class="headerlink" href="#testy-uzytecznosci-usability-testing" title="Permanent link">#</a></h3>
+<p>To <strong>obserwacja prawdziwych użytkowników</strong> wykonujących realne zadania w aplikacji. Nie pytamy „czy podoba ci się ten przycisk" — dajemy zadanie („zamów produkt i opłać") i <strong>patrzymy, gdzie się gubią</strong>.</p>
+<p>Kluczowe zasady:</p>
+<ul>
+<li>Dajemy <strong>zadanie</strong>, nie instrukcję krok po kroku.</li>
+<li><strong>Nie podpowiadamy</strong> — milczymy, nawet gdy boli.</li>
+<li>Prosimy o <strong>myślenie na głos</strong> (think-aloud) — „teraz szukam koszyka... gdzie to jest...".</li>
+<li>Wystarczy <strong>5 użytkowników</strong>, żeby wyłapać większość problemów (zasada Nielsena — pierwszych 5 testerów znajduje ~85% problemów).</li>
+</ul>
+<h3 id="dostepnosc-accessibility-a11y">Dostępność (accessibility, a11y)<a class="headerlink" href="#dostepnosc-accessibility-a11y" title="Permanent link">#</a></h3>
+<p><strong>Dostępność</strong> to projektowanie tak, żeby z aplikacji mogły korzystać <strong>osoby z niepełnosprawnościami</strong> — niewidome (czytniki ekranu), słabowidzące, niesłyszące, z ograniczeniami ruchowymi (tylko klawiatura).</p>
+<blockquote>
+<p>Skrót <code>a11y</code> = „accessibility" (a + 11 liter + y). Tak samo jak <code>i18n</code> = internationalization.</p>
+</blockquote>
+<p>Standardem są <strong>WCAG</strong> (Web Content Accessibility Guidelines). Cztery filary — zasada <strong>POUR</strong>:</p>
+<ul>
+<li><strong>Perceivable</strong> (postrzegalny) — treść da się odebrać (tekst alternatywny do obrazków, napisy do wideo),</li>
+<li><strong>Operable</strong> (obsługiwalny) — da się obsłużyć z klawiatury, bez myszy,</li>
+<li><strong>Understandable</strong> (zrozumiały) — przewidywalny, czytelny język,</li>
+<li><strong>Robust</strong> (solidny) — działa z różnymi technologiami wspomagającymi.</li>
+</ul>
+<p>Najczęstsze grzechy dostępności (i jak je sprawdzić):</p>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Jak sprawdzić</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brak <code>alt</code> przy obrazkach</td>
+<td>Czytnik ekranu nie wie, co jest na obrazku</td>
+</tr>
+<tr>
+<td>Za niski kontrast tekstu</td>
+<td>WCAG wymaga kontrastu min. <strong>4.5:1</strong> dla zwykłego tekstu</td>
+</tr>
+<tr>
+<td>Nie da się nawigować klawiszem Tab</td>
+<td>Spróbuj przejść cały formularz bez myszy</td>
+</tr>
+<tr>
+<td>Brak etykiet (<code>label</code>) przy polach formularza</td>
+<td>Czytnik czyta „pole tekstowe", nie wie czego dotyczy</td>
+</tr>
+<tr>
+<td>Informacja przekazana tylko kolorem</td>
+<td>Daltonista nie odróżni „czerwone = błąd"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lighthouse-automatyczny-audyt-strony">Lighthouse — automatyczny audyt strony<a class="headerlink" href="#lighthouse-automatyczny-audyt-strony" title="Permanent link">#</a></h3>
+<p><strong>Lighthouse</strong> to wbudowane w Chrome narzędzie (zakładka <strong>Lighthouse</strong> w DevTools, F12), które automatycznie audytuje stronę w kilku kategoriach i wystawia ocenę <strong>0–100</strong>:</p>
+<ul>
+<li><strong>Performance</strong> — jak szybko strona się ładuje i staje się interaktywna,</li>
+<li><strong>Accessibility</strong> — automatyczne sprawdzenie części reguł dostępności,</li>
+<li><strong>Best Practices</strong> — bezpieczeństwo, poprawne API przeglądarki,</li>
+<li><strong>SEO</strong> — czy strona jest przyjazna wyszukiwarkom.</li>
+</ul>
+<blockquote>
+<p><strong>Uwaga:</strong> Lighthouse łapie tylko część problemów dostępności (np. kontrast, brak <code>alt</code>). Ocena 100/100 w Accessibility <strong>nie znaczy</strong>, że strona jest w pełni dostępna — tak jak 100% coverage nie znaczy „brak bugów". Audyt automatyczny + ręczny test (klawiatura, czytnik) = dopiero komplet.</p>
+</blockquote>
+<p>Można też uruchomić z linii poleceń:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>lighthouse
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>lighthouse<span class="w"> </span>https://example.com<span class="w"> </span>--view
+</span></code></pre></div>
+<h3 id="core-web-vitals-mierzalne-wrazenie-z-adowania">Core Web Vitals — mierzalne wrażenie z ładowania<a class="headerlink" href="#core-web-vitals-mierzalne-wrazenie-z-adowania" title="Permanent link">#</a></h3>
+<p>Google zdefiniował zestaw metryk opisujących <strong>realne odczucie szybkości</strong> (Lighthouse je raportuje):</p>
+<ul>
+<li><strong>LCP</strong> (Largest Contentful Paint) — kiedy załaduje się największy element. Dobrze: <strong>&lt; 2.5 s</strong>.</li>
+<li><strong>CLS</strong> (Cumulative Layout Shift) — jak bardzo „skacze" layout podczas ładowania. Dobrze: <strong>&lt; 0.1</strong>.</li>
+<li><strong>INP</strong> (Interaction to Next Paint) — jak szybko strona reaguje na kliknięcie. Dobrze: <strong>&lt; 200 ms</strong>.</li>
+</ul>
+<blockquote>
+<p>CLS znacie z życia: chcesz kliknąć przycisk, w ostatniej chwili doładowuje się baner i klikasz reklamę. To wysoki CLS.</p>
+</blockquote>
+<hr />
+<h2 id="czesc-2-jakosc-z-perspektywy-procesu">Część 2 — Jakość z perspektywy procesu<a class="headerlink" href="#czesc-2-jakosc-z-perspektywy-procesu" title="Permanent link">#</a></h2>
+<p>Tu nie chodzi o to, <em>co</em> testujemy, tylko <em>jak zorganizowana jest praca</em>, żeby jakość w ogóle powstawała.</p>
+<h3 id="shift-left-testing-testuj-jak-najwczesniej">Shift-left testing — testuj jak najwcześniej<a class="headerlink" href="#shift-left-testing-testuj-jak-najwczesniej" title="Permanent link">#</a></h3>
+<p><strong>Shift-left</strong> to przesunięcie testowania „w lewo" na osi czasu projektu — czyli <strong>jak najbliżej początku</strong>, a nie dopiero na końcu przed wdrożeniem.</p>
+<p>Dlaczego? <strong>Koszt naprawy błędu rośnie wykładniczo</strong> im później go znajdziemy:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Wymagania → Projekt → Kod → Test → Produkcja
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>   1×         3×       10×    30×      100×     ← orientacyjny koszt naprawy
+</span></code></pre></div>
+<p>Bug w wymaganiach poprawiamy zdaniem w dokumencie. Ten sam bug znaleziony na produkcji = hotfix, przeprosiny i nieprzespana noc. To ta sama logika co piramida testów i CI z poprzednich zajęć — <strong>wykrywaj wcześnie</strong>.</p>
+<h3 id="kryteria-akceptacji-i-definition-of-done">Kryteria akceptacji i Definition of Done<a class="headerlink" href="#kryteria-akceptacji-i-definition-of-done" title="Permanent link">#</a></h3>
+<p>Dwa pojęcia, które łatwo pomylić:</p>
+<ul>
+<li><strong>Kryteria akceptacji (Acceptance Criteria)</strong> — warunki, które musi spełnić <strong>konkretne zadanie/funkcja</strong>, żeby uznać je za zrobione. Specyficzne dla zadania.</li>
+<li><strong>Definition of Done (DoD)</strong> — wspólna lista warunków dla <strong>każdego</strong> zadania w zespole. Uniwersalna.</li>
+</ul>
+<p>Przykładowa <strong>Definition of Done</strong> zespołu:</p>
+<ul>
+<li>[ ] kod przechodzi <code>ruff check</code> i <code>ruff format --check</code> (z zajęć 2!),</li>
+<li>[ ] napisane testy jednostkowe, CI zielone,</li>
+<li>[ ] code review zaakceptowane przez min. 1 osobę,</li>
+<li>[ ] funkcja przetestowana manualnie na środowisku testowym,</li>
+<li>[ ] dokumentacja zaktualizowana.</li>
+</ul>
+<blockquote>
+<p>DoD to taki „pre-commit hook dla całego zadania" — dopóki nie spełnisz wszystkich punktów, zadanie nie jest <em>Done</em>, tylko <em>prawie done</em> (czyli niezrobione).</p>
+</blockquote>
+<h3 id="gherkin-kryteria-akceptacji-w-formacie-given-when-then">Gherkin — kryteria akceptacji w formacie Given-When-Then<a class="headerlink" href="#gherkin-kryteria-akceptacji-w-formacie-given-when-then" title="Permanent link">#</a></h3>
+<p><strong>Gherkin</strong> to ustrukturyzowany sposób zapisu scenariuszy, czytelny zarówno dla biznesu, jak i programisty. Schemat <strong>Given-When-Then</strong>:</p>
+<ul>
+<li><strong>Given</strong> (zakładając) — stan początkowy,</li>
+<li><strong>When</strong> (kiedy) — akcja użytkownika,</li>
+<li><strong>Then</strong> (wtedy) — oczekiwany rezultat.</li>
+</ul>
+<div class="language-gherkin highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">Funkcja: Logowanie do aplikacji</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nf">  </span><span class="k">Scenariusz:</span><span class="nf"> Poprawne logowanie</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nf">    Zakładając, że jestem na stronie logowania</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">    Oraz </span><span class="nf">mam konto o adresie &quot;</span><span class="s">jan@example.com</span><span class="nf">&quot;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nf">    Kiedy wpiszę poprawny email i hasło</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nf">    </span><span class="k">I </span><span class="nf">kliknę &quot;</span><span class="s">Zaloguj</span><span class="nf">&quot;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nf">    </span><span class="k">Wtedy </span><span class="nf">zobaczę pulpit użytkownika</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nf">  </span><span class="k">Scenariusz:</span><span class="nf"> Błędne hasło</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nf">    Zakładając, że jestem na stronie logowania</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nf">    Kiedy wpiszę poprawny email i błędne hasło</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="k">    I </span><span class="nf">kliknę &quot;</span><span class="s">Zaloguj</span><span class="nf">&quot;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nf">    </span><span class="k">Wtedy </span><span class="nf">zobaczę komunikat &quot;</span><span class="s">Nieprawidłowy email lub hasło</span><span class="nf">&quot;</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="nf">    </span><span class="k">Oraz </span><span class="nf">pozostanę na stronie logowania</span>
+</span></code></pre></div>
+<p>Ten sam zapis to fundament <strong>BDD (Behavior-Driven Development)</strong> — podejścia, w którym scenariusze pisze się <em>przed</em> kodem, wspólnie z biznesem. W Pythonie realizuje to np. biblioteka <code>behave</code>, a scenariusze Gherkin stają się wykonywalnymi testami.</p>
+<h3 id="cykl-zycia-buga-bug-lifecycle">Cykl życia buga (bug lifecycle)<a class="headerlink" href="#cykl-zycia-buga-bug-lifecycle" title="Permanent link">#</a></h3>
+<p>Błąd nie żyje w próżni — przechodzi przez statusy. Typowy cykl:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>New → Assigned → In Progress → Fixed → Retest → Closed
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>                                  │
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>                                  └──(błąd wraca)──► Reopened
+</span></code></pre></div>
+<ul>
+<li><strong>New</strong> — zgłoszony, jeszcze nieprzejrzany.</li>
+<li><strong>Assigned</strong> — przypisany do programisty.</li>
+<li><strong>In Progress / Fixed</strong> — naprawiany / naprawiony.</li>
+<li><strong>Retest</strong> — tester sprawdza poprawkę.</li>
+<li><strong>Closed</strong> — potwierdzone, że działa.</li>
+<li><strong>Reopened</strong> — poprawka nie zadziałała, bug wraca do gry.</li>
+</ul>
+<p>Inne częste statusy: <strong>Rejected</strong> (to nie błąd / działa zgodnie z założeniem), <strong>Duplicate</strong> (już zgłoszony), <strong>Won't Fix</strong> (świadomie nie naprawiamy).</p>
+<h3 id="severity-vs-priority-to-dwie-rozne-osie">Severity vs Priority — to dwie różne osie<a class="headerlink" href="#severity-vs-priority-to-dwie-rozne-osie" title="Permanent link">#</a></h3>
+<p>Najczęściej mylone pojęcia w QA:</p>
+<ul>
+<li><strong>Severity (waga / dotkliwość)</strong> — jak bardzo bug szkodzi <em>technicznie</em> (czy wywala aplikację?).</li>
+<li><strong>Priority (priorytet)</strong> — jak szybko trzeba to naprawić <em>z perspektywy biznesu</em>.</li>
+</ul>
+<p>Nie zawsze idą w parze:</p>
+<table>
+<thead>
+<tr>
+<th>Sytuacja</th>
+<th>Severity</th>
+<th>Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aplikacja wywala się przy starcie</td>
+<td>Wysoka</td>
+<td>Wysoki</td>
+</tr>
+<tr>
+<td>Literówka w nazwie firmy na stronie głównej</td>
+<td>Niska</td>
+<td><strong>Wysoki</strong> (wstyd!)</td>
+</tr>
+<tr>
+<td>Crash w funkcji, której nikt nie używa</td>
+<td><strong>Wysoka</strong></td>
+<td>Niski</td>
+</tr>
+<tr>
+<td>Drobne przesunięcie ikony o 2px</td>
+<td>Niska</td>
+<td>Niski</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Klasyk: literówka w logo prezesa — technicznie błahostka (severity niska), ale naprawiasz to <em>natychmiast</em> (priority wysoki).</p>
+</blockquote>
+<h3 id="rodzaje-testow-na-poziomie-procesu">Rodzaje testów na poziomie procesu<a class="headerlink" href="#rodzaje-testow-na-poziomie-procesu" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>Smoke test</strong> — szybki test „czy w ogóle się pali" — czy najważniejsze funkcje (login, główny ekran) działają. Robi się po każdym deployu, zanim w ogóle warto testować dalej.</li>
+<li><strong>Sanity test</strong> — wąskie sprawdzenie konkretnej poprawki, czy zadziałała.</li>
+<li><strong>Regression test</strong> — sprawdzenie, czy nowa zmiana <strong>nie zepsuła</strong> tego, co wcześniej działało. To główny kandydat do automatyzacji (nikt nie chce klikać tego samego ręcznie co tydzień).</li>
+</ul>
+<h3 id="metryki-jakosci">Metryki jakości<a class="headerlink" href="#metryki-jakosci" title="Permanent link">#</a></h3>
+<p>To, czego nie mierzysz, trudno poprawić. Kilka praktycznych metryk:</p>
+<ul>
+<li><strong>Defect density</strong> — liczba bugów na 1000 linii kodu (lub na moduł). Pokazuje, gdzie jest najgoręcej.</li>
+<li><strong>Defect escape rate</strong> — ile bugów „uciekło" na produkcję zamiast zostać złapanych w testach. Im mniej, tym lepszy proces QA.</li>
+<li><strong>MTTR</strong> (Mean Time To Repair) — średni czas od zgłoszenia do naprawy.</li>
+<li><strong>Lead time</strong> — czas od pomysłu do wdrożenia.</li>
+<li><strong>Test coverage</strong> — znane z zajęć 2 (ale to metryka <em>kodu</em>, nie jakości całego produktu).</li>
+</ul>
+<blockquote>
+<p>Ostrożnie z metrykami: jeśli rozliczasz testerów z „liczby znalezionych bugów", nagle wszyscy zaczną zgłaszać literówki. Metryka, która staje się celem, przestaje być dobrą metryką (prawo Goodharta).</p>
+</blockquote>
+<h3 id="retrospektywa-jakosc-procesu-nie-tylko-produktu">Retrospektywa — jakość procesu, nie tylko produktu<a class="headerlink" href="#retrospektywa-jakosc-procesu-nie-tylko-produktu" title="Permanent link">#</a></h3>
+<p>Po każdym sprincie zespół robi <strong>retrospektywę</strong> — krótkie spotkanie, na którym odpowiada na trzy pytania:</p>
+<ol>
+<li>Co poszło dobrze?</li>
+<li>Co poszło źle?</li>
+<li>Co zmieniamy na następny raz?</li>
+</ol>
+<p>To „testowanie jednostkowe procesu" — szukamy bugów nie w kodzie, tylko w <em>sposobie pracy</em>. Dobry zespół z każdej retro wynosi 1–2 konkretne zmiany, a nie listę pretensji.</p>
+<hr />
+<h2 id="podsumowanie-najwazniejszych-pojec-i-narzedzi">Podsumowanie najważniejszych pojęć i narzędzi<a class="headerlink" href="#podsumowanie-najwazniejszych-pojec-i-narzedzi" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Pojęcie / Narzędzie</th>
+<th>Perspektywa</th>
+<th>Po co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heurystyki Nielsena</td>
+<td>Użytkownik</td>
+<td>Szybka ocena użyteczności interfejsu</td>
+</tr>
+<tr>
+<td>WCAG / a11y</td>
+<td>Użytkownik</td>
+<td>Dostępność dla osób z niepełnosprawnościami</td>
+</tr>
+<tr>
+<td>Lighthouse</td>
+<td>Użytkownik</td>
+<td>Automatyczny audyt: performance, a11y, SEO, best practices</td>
+</tr>
+<tr>
+<td>Core Web Vitals (LCP, CLS, INP)</td>
+<td>Użytkownik</td>
+<td>Mierzalne odczucie szybkości strony</td>
+</tr>
+<tr>
+<td>Shift-left</td>
+<td>Proces</td>
+<td>Testuj wcześnie — taniej naprawiać</td>
+</tr>
+<tr>
+<td>Definition of Done</td>
+<td>Proces</td>
+<td>Wspólna definicja „skończone" dla zespołu</td>
+</tr>
+<tr>
+<td>Gherkin / BDD</td>
+<td>Proces</td>
+<td>Czytelne kryteria akceptacji i testy</td>
+</tr>
+<tr>
+<td>Cykl życia buga</td>
+<td>Proces</td>
+<td>Wspólny język statusów błędu</td>
+</tr>
+<tr>
+<td>Severity vs Priority</td>
+<td>Proces</td>
+<td>Rozdzielenie „jak groźne" od „jak pilne"</td>
+</tr>
+<tr>
+<td>Smoke / regression</td>
+<td>Proces</td>
+<td>Co i kiedy testować po zmianie</td>
+</tr>
+<tr>
+<td>Metryki jakości</td>
+<td>Proces</td>
+<td>Mierzyć, żeby poprawiać</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-praktyczne-20-pkt">Zadanie praktyczne (20 pkt)<a class="headerlink" href="#zadanie-praktyczne-20-pkt" title="Permanent link">#</a></h2>
+<p>Za każdą z części do uzyskania jest 10 pkt jeżeli będzie wykonana w trakcie zajęć lub 8 pkt jeżeli będzie dokończona w domu.</p>
+<h3 id="czesc-1-audyt-ux-i-dostepnosci-10-pkt">Część 1 — Audyt UX i dostępności (10 pkt)<a class="headerlink" href="#czesc-1-audyt-ux-i-dostepnosci-10-pkt" title="Permanent link">#</a></h3>
+<p>Twoim zadaniem jest przeprowadzenie <strong>audytu jakości z perspektywy użytkownika</strong> dla wybranej strony internetowej.</p>
+<p><strong>Wybór strony:</strong> możesz użyć dowolnej <strong>publicznej</strong> strony (np. strona uczelni, sklep internetowy, serwis informacyjny) <strong>lub</strong> własnego projektu z poprzednich zajęć. Unikaj stron, które wymagają logowania.</p>
+<h4 id="krok-1-audyt-lighthouse">Krok 1 — Audyt Lighthouse<a class="headerlink" href="#krok-1-audyt-lighthouse" title="Permanent link">#</a></h4>
+<ol>
+<li>Otwórz stronę w Chrome, naciśnij <strong>F12</strong> i przejdź do zakładki <strong>Lighthouse</strong>.</li>
+<li>Zaznacz wszystkie kategorie (Performance, Accessibility, Best Practices, SEO), tryb <strong>Navigation</strong>, urządzenie <strong>Desktop</strong> lub <strong>Mobile</strong> (wybierz jedno i się go trzymaj).</li>
+<li>Kliknij <strong>Analyze page load</strong> i poczekaj na raport.</li>
+<li>Zrób <strong>screenshot</strong> czterech ocen (0–100) oraz sekcji <strong>Accessibility</strong> z listą problemów.</li>
+</ol>
+<h4 id="krok-2-interpretacja-wynikow">Krok 2 — Interpretacja wyników<a class="headerlink" href="#krok-2-interpretacja-wynikow" title="Permanent link">#</a></h4>
+<p>W raporcie opisz:</p>
+<ul>
+<li>Cztery oceny liczbowe i krótki komentarz, która kategoria wypadła najgorzej.</li>
+<li><strong>Minimum 3 konkretne problemy</strong> zgłoszone przez Lighthouse (np. „za niski kontrast", „obrazki bez <code>alt</code>", „LCP = 4.2 s").</li>
+<li>Dla każdego problemu — <strong>proponowaną poprawkę</strong>.</li>
+</ul>
+<h4 id="krok-3-reczny-test-dostepnosci-czego-lighthouse-nie-zapie">Krok 3 — Ręczny test dostępności (czego Lighthouse nie złapie)<a class="headerlink" href="#krok-3-reczny-test-dostepnosci-czego-lighthouse-nie-zapie" title="Permanent link">#</a></h4>
+<p>Wykonaj <strong>2 testy ręczne</strong> i opisz wynik:</p>
+<ol>
+<li><strong>Nawigacja klawiaturą</strong> — przejdź przez stronę używając tylko klawisza <strong>Tab</strong> (i Enter). Czy da się dotrzeć do wszystkich linków i przycisków? Czy widać, który element jest aktualnie zaznaczony (focus)?</li>
+<li><strong>Test kontrastu / koloru</strong> — znajdź miejsce, gdzie informacja jest przekazana <strong>tylko kolorem</strong>, albo tekst o niskim kontraście. Jeśli nie ma — napisz, że strona zdała.</li>
+</ol>
+<h4 id="krok-4-ewaluacja-heurystyczna">Krok 4 — Ewaluacja heurystyczna<a class="headerlink" href="#krok-4-ewaluacja-heurystyczna" title="Permanent link">#</a></h4>
+<p>Oceń stronę według <strong>minimum 5 heurystyk Nielsena</strong> (z notatki). Wypełnij tabelę:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Heurystyka</th>
+<th>Ocena (✅ / ⚠️ / ❌)</th>
+<th>Komentarz / przykład ze strony</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="co-oddajesz">Co oddajesz?<a class="headerlink" href="#co-oddajesz" title="Permanent link">#</a></h4>
+<p>Raport w formacie <strong>PDF</strong> zawierający:</p>
+<ul>
+<li>nazwę i URL badanej strony,</li>
+<li>screenshoty z Lighthouse (oceny + sekcja Accessibility),</li>
+<li>interpretację wyników (min. 3 problemy + poprawki),</li>
+<li>wyniki 2 testów ręcznych dostępności,</li>
+<li>tabelę ewaluacji heurystycznej (min. 5 heurystyk),</li>
+<li><strong>podsumowanie</strong> — 3–5 zdań: czy strona jest jakościowa z perspektywy użytkownika i co poprawiłbyś w pierwszej kolejności.</li>
+</ul>
+<hr />
+<h3 id="czesc-2-kryteria-akceptacji-i-test-e2e-10-pkt">Część 2 — Kryteria akceptacji i test E2E (10 pkt)<a class="headerlink" href="#czesc-2-kryteria-akceptacji-i-test-e2e-10-pkt" title="Permanent link">#</a></h3>
+<p>W tej części łączysz <strong>perspektywę procesu</strong> (kryteria akceptacji w Gherkin) z <strong>automatyzacją testu użytkownika</strong> (E2E w Playwright). Wracamy do szczytu piramidy testów z zajęć 1 — ale tym razem piszemy te testy sami.</p>
+<p>Testować będziemy publiczną stronę-piaskownicę <strong>The Internet</strong> (Heroku) — przygotowaną specjalnie do nauki testów E2E:</p>
+<ul>
+<li><strong>Strona logowania:</strong> <code>https://the-internet.herokuapp.com/login</code></li>
+<li>Poprawne dane: login <code>tomsmith</code>, hasło <code>SuperSecretPassword!</code></li>
+<li>Po poprawnym logowaniu pojawia się komunikat o sukcesie i strona <code>/secure</code>.</li>
+<li>Po błędnym logowaniu pojawia się komunikat o błędzie.</li>
+</ul>
+<blockquote>
+<p>Jeśli wolisz, możesz przetestować własną aplikację z poprzednich zajęć — wystarczy, że ma formularz z walidacją.</p>
+</blockquote>
+<h4 id="krok-1-napisz-kryteria-akceptacji-w-gherkin">Krok 1 — Napisz kryteria akceptacji w Gherkin<a class="headerlink" href="#krok-1-napisz-kryteria-akceptacji-w-gherkin" title="Permanent link">#</a></h4>
+<p>Dla funkcji logowania napisz <strong>minimum 3 scenariusze</strong> w formacie Given-When-Then (Zakładając–Kiedy–Wtedy). Muszą obejmować:</p>
+<ul>
+<li>1 scenariusz <strong>pozytywny</strong> (poprawne logowanie),</li>
+<li>minimum 2 scenariusze <strong>negatywne</strong> (błędne hasło, błędny login / puste pola).</li>
+</ul>
+<p>Zapisz je w pliku <code>kryteria_akceptacji.feature</code> (czysty Gherkin, jak w notatce).</p>
+<h4 id="krok-2-zainstaluj-playwright">Krok 2 — Zainstaluj Playwright<a class="headerlink" href="#krok-2-zainstaluj-playwright" title="Permanent link">#</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pytest-playwright
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>playwright<span class="w"> </span>install<span class="w"> </span>chromium
+</span></code></pre></div>
+<h4 id="krok-3-zaimplementuj-testy-e2e">Krok 3 — Zaimplementuj testy E2E<a class="headerlink" href="#krok-3-zaimplementuj-testy-e2e" title="Permanent link">#</a></h4>
+<p>W pliku <code>test_login_e2e.py</code> napisz <strong>testy automatyzujące Twoje scenariusze z Kroku 1</strong>. Szkielet na start:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">playwright.sync_api</span><span class="w"> </span><span class="kn">import</span> <span class="n">Page</span><span class="p">,</span> <span class="n">expect</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">LOGIN_URL</span> <span class="o">=</span> <span class="s2">&quot;https://the-internet.herokuapp.com/login&quot;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_poprawne_logowanie</span><span class="p">(</span><span class="n">page</span><span class="p">:</span> <span class="n">Page</span><span class="p">):</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="c1"># Arrange</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">LOGIN_URL</span><span class="p">)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="c1"># Act</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    <span class="n">page</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s2">&quot;#username&quot;</span><span class="p">,</span> <span class="s2">&quot;tomsmith&quot;</span><span class="p">)</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="n">page</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s2">&quot;#password&quot;</span><span class="p">,</span> <span class="s2">&quot;SuperSecretPassword!&quot;</span><span class="p">)</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s2">&quot;button[type=&#39;submit&#39;]&quot;</span><span class="p">)</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="c1"># Assert</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="n">expect</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">locator</span><span class="p">(</span><span class="s2">&quot;#flash&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">to_contain_text</span><span class="p">(</span><span class="s2">&quot;You logged into a secure area&quot;</span><span class="p">)</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="n">expect</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">.</span><span class="n">to_have_url</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;/secure&quot;</span><span class="p">))</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_bledne_haslo</span><span class="p">(</span><span class="n">page</span><span class="p">:</span> <span class="n">Page</span><span class="p">):</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">LOGIN_URL</span><span class="p">)</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>    <span class="n">page</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s2">&quot;#username&quot;</span><span class="p">,</span> <span class="s2">&quot;tomsmith&quot;</span><span class="p">)</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>    <span class="n">page</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s2">&quot;#password&quot;</span><span class="p">,</span> <span class="s2">&quot;zle_haslo&quot;</span><span class="p">)</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s2">&quot;button[type=&#39;submit&#39;]&quot;</span><span class="p">)</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>    <span class="n">expect</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">locator</span><span class="p">(</span><span class="s2">&quot;#flash&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">to_contain_text</span><span class="p">(</span><span class="s2">&quot;Your password is invalid!&quot;</span><span class="p">)</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_bledny_login</span><span class="p">(</span><span class="n">page</span><span class="p">:</span> <span class="n">Page</span><span class="p">):</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>    <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">LOGIN_URL</span><span class="p">)</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>    <span class="n">page</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s2">&quot;#username&quot;</span><span class="p">,</span> <span class="s2">&quot;nieistnieje&quot;</span><span class="p">)</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>    <span class="n">page</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s2">&quot;#password&quot;</span><span class="p">,</span> <span class="s2">&quot;SuperSecretPassword!&quot;</span><span class="p">)</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>    <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s2">&quot;button[type=&#39;submit&#39;]&quot;</span><span class="p">)</span>
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>    <span class="n">expect</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">locator</span><span class="p">(</span><span class="s2">&quot;#flash&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">to_contain_text</span><span class="p">(</span><span class="s2">&quot;Your username is invalid!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Wymagania:</p>
+<ul>
+<li><strong>Minimum 3 testy</strong>, po jednym na każdy scenariusz z Kroku 1.</li>
+<li>Każdy test zgodny ze strukturą <strong>AAA</strong> (Arrange–Act–Assert) — z zajęć 1.</li>
+<li>Dodaj <strong>przynajmniej jeden test parametryzowany</strong> (<code>@pytest.mark.parametrize</code>) — np. kilka wariantów błędnych danych logowania w jednym teście.</li>
+</ul>
+<h4 id="krok-4-uruchom-testy">Krok 4 — Uruchom testy<a class="headerlink" href="#krok-4-uruchom-testy" title="Permanent link">#</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Tryb headless (bez okna przeglądarki)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>pytest<span class="w"> </span>-v
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Tryb headed — zobaczysz, jak Playwright klika za Ciebie</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>pytest<span class="w"> </span>-v<span class="w"> </span>--headed
+</span></code></pre></div>
+<p>Uruchom przynajmniej raz w trybie <code>--headed</code>, żeby zobaczyć test E2E w akcji. Zrób screenshot z wynikiem <code>pytest -v</code> (wszystkie testy zielone).</p>
+<h4 id="co-oddajesz_1">Co oddajesz?<a class="headerlink" href="#co-oddajesz_1" title="Permanent link">#</a></h4>
+<p>Spakowany folder <code>zadanie_3.zip</code> zawierający:</p>
+<ul>
+<li>plik <code>kryteria_akceptacji.feature</code> (min. 3 scenariusze Gherkin),</li>
+<li>plik <code>test_login_e2e.py</code> (min. 3 testy + 1 parametryzowany),</li>
+<li>screenshot z wynikiem <code>pytest -v</code> (wszystkie testy zielone),</li>
+<li>krótki plik <code>README.md</code> (3–5 zdań): które kryterium akceptacji odpowiada któremu testowi.</li>
+</ul>
+<hr />
+<h2 id="podsumowanie-zajec-3">Podsumowanie zajęć 3<a class="headerlink" href="#podsumowanie-zajec-3" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Temat</th>
+<th>Kluczowy wniosek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UX vs UI</td>
+<td>Ładny wygląd to nie to samo co dobre doświadczenie</td>
+</tr>
+<tr>
+<td>Heurystyki Nielsena</td>
+<td>10 zasad do szybkiej oceny użyteczności</td>
+</tr>
+<tr>
+<td>Dostępność (a11y / WCAG)</td>
+<td>Aplikacja musi działać też bez myszy i dla czytnika ekranu</td>
+</tr>
+<tr>
+<td>Lighthouse</td>
+<td>Automatyczny audyt — ale nie zastępuje testu ręcznego</td>
+</tr>
+<tr>
+<td>Shift-left</td>
+<td>Im wcześniej znajdziesz błąd, tym taniej go naprawisz</td>
+</tr>
+<tr>
+<td>Definition of Done</td>
+<td>Wspólna definicja „skończone" dla całego zespołu</td>
+</tr>
+<tr>
+<td>Gherkin / BDD</td>
+<td>Kryteria akceptacji czytelne dla biznesu i wykonywalne jako testy</td>
+</tr>
+<tr>
+<td>Severity vs Priority</td>
+<td>„Jak groźne" to nie to samo co „jak pilne"</td>
+</tr>
+<tr>
+<td>Cykl życia buga</td>
+<td>Błąd ma statusy — od New do Closed (czasem Reopened)</td>
+</tr>
+<tr>
+<td>E2E (Playwright)</td>
+<td>Szczyt piramidy testów — symulacja prawdziwego użytkownika</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

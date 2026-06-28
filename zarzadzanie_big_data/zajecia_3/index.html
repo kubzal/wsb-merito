@@ -1,0 +1,3126 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/zarzadzanie_big_data/zajecia_3/">
+      
+      
+        <link rel="prev" href="../zajecia_2/">
+      
+      
+        <link rel="next" href="../zajecia_4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zajęcia 3 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-3" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../jakosc_aplikacji/" class="md-tabs__link">
+          
+  
+  
+  Jakosc aplikacji
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_stron_internetowych_2/" class="md-tabs__link">
+          
+  
+  
+  Programowanie stron internetowych 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_wysokopoziomowe/" class="md-tabs__link">
+          
+  
+  
+  Programowanie wysokopoziomowe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_zaawansowane/" class="md-tabs__link">
+          
+  
+  
+  Programowanie zaawansowane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python_w_data_science/" class="md-tabs__link">
+          
+  
+  
+  Python w data science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Zarzadzanie big data
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakosc aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakosc aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python w data science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python w data science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarzadzanie big data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarzadzanie big data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eksploracyjna-analiza-danych-eda-i-detekcja-outlierow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eksploracyjna analiza danych (EDA) i detekcja outlierów
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dorzucamy-pakiety-do-projektu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dorzucamy pakiety do projektu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czym-jest-eda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czym jest EDA?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statystyki-opisowe-gebiej-niz-describe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statystyki opisowe — głębiej niż describe()
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statystyki opisowe — głębiej niż describe()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#miary-centralnej-tendencji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Miary centralnej tendencji
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miary-rozproszenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Miary rozproszenia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kwartyle-percentyle-iqr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kwartyle, percentyle, IQR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewness-i-kurtosis-ksztat-rozkadu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skewness i kurtosis — kształt rozkładu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analiza-pojedynczej-zmiennej-univariate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analiza pojedynczej zmiennej (univariate)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analiza pojedynczej zmiennej (univariate)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zmienne-numeryczne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zmienne numeryczne
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zmienne numeryczne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#histogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histogram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wykres-gestosci-kde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wykres gęstości (KDE)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxplot-diament-eda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boxplot — diament EDA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#violinplot-boxplot-kde-w-jednym" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Violinplot — boxplot + KDE w jednym
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zmienne-kategoryczne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zmienne kategoryczne
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zmienne kategoryczne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#countplot-licznosc-kategorii" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Countplot — liczność kategorii
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barplot-ze-srednia-lub-inna-agregacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barplot ze średnią (lub inną agregacją)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analiza-zaleznosci-miedzy-zmiennymi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analiza zależności między zmiennymi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analiza zależności między zmiennymi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numeryczna-vs-numeryczna-scatter-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numeryczna vs numeryczna — scatter plot
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Numeryczna vs numeryczna — scatter plot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#z-linia-regresji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Z linią regresji
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#korelacja-sia-zaleznosci-liniowej" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Korelacja — siła zależności liniowej
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Korelacja — siła zależności liniowej">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heatmapa-macierzy-korelacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heatmapa macierzy korelacji
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kategoryczna-vs-numeryczna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kategoryczna vs numeryczna
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kategoryczna vs numeryczna">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boxplot-grupowy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boxplot grupowy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#violinplot-grupowy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Violinplot grupowy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stripplot-swarmplot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stripplot / swarmplot
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kategoryczna-vs-kategoryczna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kategoryczna vs kategoryczna
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kategoryczna vs kategoryczna">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crosstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crosstab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heatmapa-crosstaba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heatmapa crosstaba
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pairplot-wszystko-naraz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pairplot — wszystko naraz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detekcja-outlierow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detekcja outlierów
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detekcja outlierów">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metoda-1-iqr-najpopularniejsza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metoda 1: IQR (najpopularniejsza)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metoda-2-z-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metoda 2: Z-score
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metoda-3-modified-z-score-oparta-na-mad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metoda 3: Modified Z-score (oparta na MAD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porownanie-metod-ktora-kiedy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Porównanie metod — która kiedy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outliery-wielowymiarowe-krotko" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outliery wielowymiarowe — krótko
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#co-zrobic-z-outlierami" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co zrobić z outlierami?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Co zrobić z outlierami?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#winsoryzacja-capping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Winsoryzacja (capping)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformacja-logarytmiczna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformacja logarytmiczna
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cwiczenie-aczone-pena-eda-na-titanicu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ćwiczenie łączone — pełna EDA na Titanicu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ćwiczenie łączone — pełna EDA na Titanicu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#krok-1-wczytanie-i-wstepna-ocena" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 1 — wczytanie i wstępna ocena
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-2-rozkady-kluczowych-zmiennych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 2 — rozkłady kluczowych zmiennych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-3-zaleznosci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 3 — zależności
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-4-detekcja-outlierow-w-cenie-biletu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 4 — detekcja outlierów w cenie biletu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krok-5-co-z-nimi-zrobimy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 5 — co z nimi zrobimy?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analiza-rynku-mieszkan-w-warszawie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analiza rynku mieszkań w Warszawie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analiza rynku mieszkań w Warszawie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generowanie-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generowanie danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polecenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Polecenia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#podpowiedzi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podpowiedzi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kryteria-zaliczenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kryteria zaliczenia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-3">Zajęcia 3<a class="headerlink" href="#zajecia-3" title="Permanent link">#</a></h1>
+<h2 id="eksploracyjna-analiza-danych-eda-i-detekcja-outlierow">Eksploracyjna analiza danych (EDA) i detekcja outlierów<a class="headerlink" href="#eksploracyjna-analiza-danych-eda-i-detekcja-outlierow" title="Permanent link">#</a></h2>
+<p>Na poprzednich zajęciach przeszliśmy przez pozyskiwanie danych i ich czyszczenie. Mamy więc komplet narzędzi, żeby z surowego pliku CSV / odpowiedzi API / tabeli SQL zrobić <strong>czysty DataFrame</strong> — bez braków, z poprawnymi typami, z ujednoliconym tekstem.</p>
+<p>Co dalej? Zanim zaczniemy modelować, raportować albo wyciągać wnioski biznesowe, musimy <strong>zrozumieć dane</strong>. Tym zajmuje się EDA — Exploratory Data Analysis. Jest to etap, na którym zadajesz zbiorowi danych pytania i sprawdzasz, czego można się po nim spodziewać:</p>
+<ul>
+<li>jakie są rozkłady poszczególnych zmiennych?</li>
+<li>czy są wartości skrajne (outliery)?</li>
+<li>jak zmienne zachowują się względem siebie?</li>
+<li>czy są nieoczywiste zależności, wzorce, anomalie?</li>
+</ul>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>liczyć i interpretować statystyki opisowe (centralne tendencje, miary rozproszenia, percentyle),</li>
+<li>robić sensowne wykresy jednowymiarowe (histogram, boxplot, KDE) i interpretować, co z nich wynika,</li>
+<li>badać zależności między zmiennymi (scatter, korelacja, heatmapa, pairplot),</li>
+<li>wykrywać outliery trzema metodami (IQR, Z-score, modified Z-score / MAD),</li>
+<li>podjąć świadomą decyzję, co z outlierami zrobić.</li>
+</ul>
+<hr />
+<h2 id="dorzucamy-pakiety-do-projektu">Dorzucamy pakiety do projektu<a class="headerlink" href="#dorzucamy-pakiety-do-projektu" title="Permanent link">#</a></h2>
+<p>Dziś dochodzą dwa nowe pakiety: <code>seaborn</code> (ładniejsze i bardziej „statystyczne" wykresy nad matplotlibem) i <code>scipy</code> (do Z-score i innych funkcji statystycznych).</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>uv<span class="w"> </span>add<span class="w"> </span>seaborn<span class="w"> </span>scipy
+</span></code></pre></div>
+<p>Standardowy zestaw importów na dziś:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>  <span class="c1"># ładniejsze domyślne wykresy</span>
+</span></code></pre></div>
+<hr />
+<h2 id="czym-jest-eda">Czym jest EDA?<a class="headerlink" href="#czym-jest-eda" title="Permanent link">#</a></h2>
+<p>Termin <strong>EDA</strong> spopularyzował statystyk <strong>John Tukey</strong> w latach 70. (ten sam, od którego pochodzi boxplot). Jego główna myśl: zanim założysz cokolwiek o danych — popatrz na nie. <strong>Wykres często mówi więcej niż średnia.</strong></p>
+<p>Dobry przykład — kwartet Anscombe'a. Cztery zbiory danych, które mają <strong>identyczne</strong> średnie, wariancje i korelację, a wyglądają zupełnie inaczej:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">df_anscombe</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;anscombe&quot;</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">relplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_anscombe</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;dataset&quot;</span><span class="p">,</span> <span class="n">col_wrap</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>            <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Spróbuj zgadnąć, czy regresja liniowa ma sens dla każdego z nich — popatrzysz na statystyki i powiesz „tak", popatrzysz na wykres i powiesz „tylko dla jednego".</p>
+<p>!!! note "Złota zasada EDA"
+    Liczby kłamią chętniej niż wykresy. Zawsze rób oba — statystyki <strong>i</strong> wizualizację.</p>
+<hr />
+<h2 id="statystyki-opisowe-gebiej-niz-describe">Statystyki opisowe — głębiej niż <code>describe()</code><a class="headerlink" href="#statystyki-opisowe-gebiej-niz-describe" title="Permanent link">#</a></h2>
+<p><code>df.describe()</code> znamy z poprzednich zajęć, ale warto rozumieć, <strong>co konkretnie zwraca</strong> i czego nie powie.</p>
+<h3 id="miary-centralnej-tendencji">Miary centralnej tendencji<a class="headerlink" href="#miary-centralnej-tendencji" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv&quot;</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>    <span class="c1"># średnia arytmetyczna</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>  <span class="c1"># mediana — środek po posortowaniu</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>    <span class="c1"># moda — najczęściej występująca wartość</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Miara</th>
+<th>Kiedy używać</th>
+<th>Wada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Średnia (<code>mean</code>)</td>
+<td>Rozkład symetryczny, bez outlierów</td>
+<td>Bardzo wrażliwa na wartości skrajne</td>
+</tr>
+<tr>
+<td>Mediana (<code>median</code>)</td>
+<td>Rozkład skośny lub z outlierami</td>
+<td>Ignoruje całkowicie wielkość ogonów</td>
+</tr>
+<tr>
+<td>Moda (<code>mode</code>)</td>
+<td>Dane kategoryczne, dyskretne</td>
+<td>Dla ciągłych często bezużyteczna</td>
+</tr>
+</tbody>
+</table>
+<p>!!! tip "Test domowy"
+    Zarobki w firmie: 4 osoby zarabiają po 4000 zł, jedna 500 000 zł (CEO). Średnia: <strong>103 200 zł</strong>. Mediana: <strong>4 000 zł</strong>. Która liczba lepiej opisuje „typową pensję"? Mediana — i dlatego w raportach o płacach zawsze podaje się medianę, nie średnią.</p>
+<h3 id="miary-rozproszenia">Miary rozproszenia<a class="headerlink" href="#miary-rozproszenia" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>      <span class="c1"># odchylenie standardowe</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span>      <span class="c1"># wariancja (std do kwadratu)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>  <span class="c1"># range / rozstęp</span>
+</span></code></pre></div>
+<p>Sama średnia nic ci nie powie bez informacji o rozrzucie. Dwa zbiory mogą mieć tę samą średnią, ale jeden zmienia się o ±1, a drugi o ±100.</p>
+<h3 id="kwartyle-percentyle-iqr">Kwartyle, percentyle, IQR<a class="headerlink" href="#kwartyle-percentyle-iqr" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>    <span class="c1"># Q1 — pierwszy kwartyl (25 percentyl)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span>    <span class="c1"># Q2 — mediana</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>    <span class="c1"># Q3 — trzeci kwartyl</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">])</span>  <span class="c1"># wiele naraz</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># IQR — Interquartile Range, kluczowa miara w detekcji outlierów</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">iqr</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;IQR: </span><span class="si">{</span><span class="n">iqr</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>IQR (Interquartile Range)</strong> to rozstęp między Q1 a Q3 — szerokość „środkowych 50%" obserwacji. Odporny na outliery, bo wyrzuca skrajne 25% z każdej strony.</p>
+<h3 id="skewness-i-kurtosis-ksztat-rozkadu">Skewness i kurtosis — kształt rozkładu<a class="headerlink" href="#skewness-i-kurtosis-ksztat-rozkadu" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>      <span class="c1"># skośność</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">kurt</span><span class="p">()</span>      <span class="c1"># kurtoza (excess kurtosis)</span>
+</span></code></pre></div>
+<ul>
+<li><strong>Skewness ≈ 0</strong> → rozkład symetryczny (np. rozkład normalny)</li>
+<li><strong>Skewness &gt; 0</strong> → prawostronnie skośny (długi ogon w prawo — typowo: ceny, dochody, czas oczekiwania)</li>
+<li><strong>Skewness &lt; 0</strong> → lewostronnie skośny (długi ogon w lewo)</li>
+<li><strong>Kurtoza &gt; 0</strong> → ostry pik, ciężkie ogony</li>
+<li><strong>Kurtoza &lt; 0</strong> → spłaszczony rozkład</li>
+</ul>
+<p>!!! tip "Praktyczna intuicja"
+    Jeśli widzisz w <code>describe()</code>, że <strong>średnia jest dużo wyższa niż mediana</strong> — masz prawostronną skośność i prawdopodobnie outliery w górnym ogonie. Mediana &lt; średnia to klasyczny sygnał, że warto zerknąć na rozkład.</p>
+<hr />
+<h2 id="analiza-pojedynczej-zmiennej-univariate">Analiza pojedynczej zmiennej (univariate)<a class="headerlink" href="#analiza-pojedynczej-zmiennej-univariate" title="Permanent link">#</a></h2>
+<p>Pierwsze, co robisz po <code>describe()</code>, to rysujesz <strong>rozkład każdej ważnej zmiennej z osobna</strong>. To pokazuje rzeczy, których statystyki nie wyłapią — bimodalność, dziury w danych, sztuczne wartości graniczne.</p>
+<h3 id="zmienne-numeryczne">Zmienne numeryczne<a class="headerlink" href="#zmienne-numeryczne" title="Permanent link">#</a></h3>
+<h4 id="histogram">Histogram<a class="headerlink" href="#histogram" title="Permanent link">#</a></h4>
+<p>Klasyka — pokazuje, jak rozkłada się zmienna na przedziałach (binach).</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Rozkład wieku pasażerów Titanica&quot;</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Wiek&quot;</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Liczba pasażerów&quot;</span><span class="p">)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Liczba binów ma znaczenie — za mało zgubi szczegóły, za dużo zrobi szum. Domyślne <code>bins="auto"</code> jest często OK, ale czasem trzeba ustawić ręcznie.</p>
+<h4 id="wykres-gestosci-kde">Wykres gęstości (KDE)<a class="headerlink" href="#wykres-gestosci-kde" title="Permanent link">#</a></h4>
+<p>KDE (Kernel Density Estimation) to „wygładzony histogram" — pokazuje rozkład bez konieczności wybierania binów.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># histogram + KDE razem</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Sam KDE</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">],</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>KDE jest super, ale uważaj — wygładzanie może „wymyślać" wartości tam, gdzie ich nie było (np. ujemny wiek). Histogram jest zawsze blisko surowych danych.</p>
+<h4 id="boxplot-diament-eda">Boxplot — diament EDA<a class="headerlink" href="#boxplot-diament-eda" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">])</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Boxplot ceny biletu&quot;</span><span class="p">)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Boxplot pokazuje na jednym wykresie:</p>
+<ul>
+<li><strong>medianę</strong> (linia w środku pudełka),</li>
+<li><strong>Q1 i Q3</strong> (krawędzie pudełka),</li>
+<li><strong>wąsy</strong> (zazwyczaj 1.5 × IQR od krawędzi pudełka),</li>
+<li><strong>outliery</strong> (kropki poza wąsami).</li>
+</ul>
+<p>!!! note "Jak czytać boxplot"
+    - Symetryczne pudełko + krótkie wąsy → rozkład symetryczny, mało outlierów
+    - Pudełko ścieśnione przy jednym końcu + długi wąs po drugiej stronie → skośność
+    - Dużo kropek za wąsami → masz outliery, których nie zobaczysz w <code>describe()</code></p>
+<h4 id="violinplot-boxplot-kde-w-jednym">Violinplot — boxplot + KDE w jednym<a class="headerlink" href="#violinplot-boxplot-kde-w-jednym" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">])</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Łączy informację o medianie/kwartylach z kształtem rozkładu. Świetny, gdy chcesz zobaczyć <strong>bimodalność</strong> — czego boxplot nie pokaże.</p>
+<h3 id="zmienne-kategoryczne">Zmienne kategoryczne<a class="headerlink" href="#zmienne-kategoryczne" title="Permanent link">#</a></h3>
+<h4 id="countplot-licznosc-kategorii">Countplot — liczność kategorii<a class="headerlink" href="#countplot-licznosc-kategorii" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Pclass&quot;</span><span class="p">)</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Liczba pasażerów wg klasy biletu&quot;</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>To samo co <code>df["Pclass"].value_counts()</code>, tylko wykresem.</p>
+<h4 id="barplot-ze-srednia-lub-inna-agregacja">Barplot ze średnią (lub inną agregacją)<a class="headerlink" href="#barplot-ze-srednia-lub-inna-agregacja" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Pclass&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Survived&quot;</span><span class="p">)</span>  <span class="c1"># domyślnie średnia</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Średnia przeżywalność wg klasy&quot;</span><span class="p">)</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Pionowa kreska na słupku to przedział ufności — pokazuje niepewność estymacji.</p>
+<hr />
+<h2 id="analiza-zaleznosci-miedzy-zmiennymi">Analiza zależności między zmiennymi<a class="headerlink" href="#analiza-zaleznosci-miedzy-zmiennymi" title="Permanent link">#</a></h2>
+<p>Pojedyncze zmienne to dopiero początek. Najciekawsze odkrycia robi się na <strong>parach</strong> zmiennych — czy <code>wiek</code> wpływa na <code>przeżywalność</code>, czy <code>cena biletu</code> koreluje z <code>klasą</code> itd.</p>
+<h3 id="numeryczna-vs-numeryczna-scatter-plot">Numeryczna vs numeryczna — scatter plot<a class="headerlink" href="#numeryczna-vs-numeryczna-scatter-plot" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;tip&quot;</span><span class="p">)</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Napiwek vs całkowity rachunek&quot;</span><span class="p">)</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Z dodatkową informacją kategoryczną (kolor, kształt):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;tip&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;smoker&quot;</span><span class="p">)</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<h4 id="z-linia-regresji">Z linią regresji<a class="headerlink" href="#z-linia-regresji" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;tip&quot;</span><span class="p">)</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p><code>regplot</code> dorzuca dopasowaną linię prostą + przedział ufności. Szybka odpowiedź na pytanie „czy w ogóle jest tu zależność liniowa?".</p>
+<h3 id="korelacja-sia-zaleznosci-liniowej">Korelacja — siła zależności liniowej<a class="headerlink" href="#korelacja-sia-zaleznosci-liniowej" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">df_num</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;Fare&quot;</span><span class="p">,</span> <span class="s2">&quot;Pclass&quot;</span><span class="p">,</span> <span class="s2">&quot;SibSp&quot;</span><span class="p">,</span> <span class="s2">&quot;Parch&quot;</span><span class="p">,</span> <span class="s2">&quot;Survived&quot;</span><span class="p">]]</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">df_num</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>                  <span class="c1"># korelacja Pearsona (domyślnie)</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">df_num</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;spearman&quot;</span><span class="p">)</span> <span class="c1"># korelacja Spearmana (rangowa, odporna na outliery)</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Wartość</th>
+<th>Interpretacja</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>Idealna dodatnia zależność liniowa</td>
+</tr>
+<tr>
+<td>0.7–0.9</td>
+<td>Silna dodatnia</td>
+</tr>
+<tr>
+<td>0.4–0.7</td>
+<td>Umiarkowana dodatnia</td>
+</tr>
+<tr>
+<td>0.1–0.4</td>
+<td>Słaba dodatnia</td>
+</tr>
+<tr>
+<td>~0</td>
+<td>Brak zależności liniowej</td>
+</tr>
+<tr>
+<td>-0.1 do -0.4</td>
+<td>Słaba ujemna</td>
+</tr>
+<tr>
+<td>...</td>
+<td>(analogicznie ujemne)</td>
+</tr>
+<tr>
+<td>-1.0</td>
+<td>Idealna ujemna zależność liniowa</td>
+</tr>
+</tbody>
+</table>
+<p>!!! warning "Pułapka korelacji"
+    Korelacja Pearsona wykrywa <strong>tylko zależności liniowe</strong>. Jeśli zmienne są związane parabolicznie (<code>y = x²</code>), Pearson da prawie 0, choć zależność jest oczywista. Zawsze patrz na <strong>scatter plot</strong>, nie tylko na liczbę.</p>
+<div class="language-text highlight"><pre><span></span><code>Klasyczne hasło: *correlation is not causation* — silna korelacja nie znaczy, że jedna zmienna wpływa na drugą. Może oba zjawiska zależą od trzeciej zmiennej, której nie widzisz.
+</code></pre></div>
+<h4 id="heatmapa-macierzy-korelacji">Heatmapa macierzy korelacji<a class="headerlink" href="#heatmapa-macierzy-korelacji" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df_num</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Macierz korelacji&quot;</span><span class="p">)</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Najczytelniejszy sposób, żeby od razu zobaczyć, które pary zmiennych są ze sobą najsilniej związane. <code>annot=True</code> dorzuca wartości w komórkach, <code>center=0</code> ustawia neutralny kolor dla zera.</p>
+<h3 id="kategoryczna-vs-numeryczna">Kategoryczna vs numeryczna<a class="headerlink" href="#kategoryczna-vs-numeryczna" title="Permanent link">#</a></h3>
+<h4 id="boxplot-grupowy">Boxplot grupowy<a class="headerlink" href="#boxplot-grupowy" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Pclass&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Age&quot;</span><span class="p">)</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Rozkład wieku w każdej klasie biletu&quot;</span><span class="p">)</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Od razu widać, że pasażerowie w 1. klasie byli średnio starsi.</p>
+<h4 id="violinplot-grupowy">Violinplot grupowy<a class="headerlink" href="#violinplot-grupowy" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Pclass&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;Sex&quot;</span><span class="p">,</span> <span class="n">split</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p><code>split=True</code> pokazuje rozkład K i M po dwóch stronach jednego „skrzypka" — kompaktowe porównanie.</p>
+<h4 id="stripplot-swarmplot">Stripplot / swarmplot<a class="headerlink" href="#stripplot-swarmplot" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">)</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Każdy punkt to jedna obserwacja. Świetne dla małych zbiorów, bo nie zlewa się jak boxplot.</p>
+<h3 id="kategoryczna-vs-kategoryczna">Kategoryczna vs kategoryczna<a class="headerlink" href="#kategoryczna-vs-kategoryczna" title="Permanent link">#</a></h3>
+<h4 id="crosstab">Crosstab<a class="headerlink" href="#crosstab" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Survived&quot;</span><span class="p">])</span>             <span class="c1"># liczności</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Survived&quot;</span><span class="p">],</span> <span class="n">normalize</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>  <span class="c1"># proporcje w wierszach</span>
+</span></code></pre></div>
+<h4 id="heatmapa-crosstaba">Heatmapa crosstaba<a class="headerlink" href="#heatmapa-crosstaba" title="Permanent link">#</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">ct</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Pclass&quot;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Survived&quot;</span><span class="p">],</span> <span class="n">normalize</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">ct</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;YlOrRd&quot;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="pairplot-wszystko-naraz">Pairplot — wszystko naraz<a class="headerlink" href="#pairplot-wszystko-naraz" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;Fare&quot;</span><span class="p">,</span> <span class="s2">&quot;Pclass&quot;</span><span class="p">,</span> <span class="s2">&quot;Survived&quot;</span><span class="p">]],</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;Survived&quot;</span><span class="p">)</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Pairplot rysuje <strong>wszystkie pary zmiennych</strong> w jednej siatce — na diagonali rozkłady jednowymiarowe, poza nią scatter ploty. Świetne narzędzie do szybkiego przeglądu, ale wolne i nieczytelne przy &gt;6 zmiennych.</p>
+<hr />
+<h2 id="detekcja-outlierow">Detekcja outlierów<a class="headerlink" href="#detekcja-outlierow" title="Permanent link">#</a></h2>
+<p><strong>Outlier</strong> (wartość odstająca) to obserwacja, która znacząco różni się od pozostałych. Może być:</p>
+<ul>
+<li><strong>prawdziwa, ale rzadka</strong> — najbogatszy klient, sportowiec o niebywałej formie, wyjątkowy dzień świąteczny w sprzedaży,</li>
+<li><strong>błędem</strong> — wiek 200 lat, ujemna cena, literówka przy wpisywaniu,</li>
+<li><strong>artefaktem zbioru</strong> — np. wartość <code>999</code> jako kod „brak danych".</li>
+</ul>
+<p>!!! warning "Outlier ≠ błąd"
+    Outlier to obiektywny fakt statystyczny — coś, co odstaje. Czy to <strong>błąd</strong>, czy <strong>interesujący przypadek</strong> — to już decyzja kontekstowa. <strong>Najpierw wykryj, potem zdecyduj.</strong></p>
+<h3 id="metoda-1-iqr-najpopularniejsza">Metoda 1: IQR (najpopularniejsza)<a class="headerlink" href="#metoda-1-iqr-najpopularniejsza" title="Permanent link">#</a></h3>
+<p>Wartość jest outlierem, jeśli leży poza zakresem <code>[Q1 - 1.5 × IQR, Q3 + 1.5 × IQR]</code>. To dokładnie to, co pokazuje boxplot.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">outliers_iqr</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">mnoznik</span><span class="o">=</span><span class="mf">1.5</span><span class="p">):</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>    <span class="n">Q1</span> <span class="o">=</span> <span class="n">series</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>    <span class="n">Q3</span> <span class="o">=</span> <span class="n">series</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>    <span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    <span class="n">dolna</span> <span class="o">=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="n">mnoznik</span> <span class="o">*</span> <span class="n">IQR</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>    <span class="n">gorna</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="n">mnoznik</span> <span class="o">*</span> <span class="n">IQR</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">series</span> <span class="o">&lt;</span> <span class="n">dolna</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">series</span> <span class="o">&gt;</span> <span class="n">gorna</span><span class="p">)</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="n">maska</span> <span class="o">=</span> <span class="n">outliers_iqr</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">])</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Liczba outlierów: </span><span class="si">{</span><span class="n">maska</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> z </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">maska</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%)&quot;</span><span class="p">)</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="n">df</span><span class="p">[</span><span class="n">maska</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Możesz też pobawić się mnożnikiem:</p>
+<ul>
+<li><strong>1.5</strong> — standard, „mild outliers"</li>
+<li><strong>3.0</strong> — bardziej konserwatywne, „extreme outliers"</li>
+</ul>
+<p><strong>Zalety:</strong> prosta, odporna na same outliery (bo Q1/Q3 ich nie uwzględniają), nie zakłada normalności.</p>
+<p><strong>Wady:</strong> dla rozkładów silnie skośnych może oznaczać zbyt dużo wartości jako outliery (np. dla cen biletów na Titanicu).</p>
+<h3 id="metoda-2-z-score">Metoda 2: Z-score<a class="headerlink" href="#metoda-2-z-score" title="Permanent link">#</a></h3>
+<p>Z-score mierzy, ile odchyleń standardowych obserwacja jest od średniej.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="c1"># albo z scipy:</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="n">z</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">],</span> <span class="n">nan_policy</span><span class="o">=</span><span class="s2">&quot;omit&quot;</span><span class="p">)</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="n">maska</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Liczba outlierów (|z| &gt; 3): </span><span class="si">{</span><span class="n">maska</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="n">df</span><span class="p">[</span><span class="n">maska</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Typowy próg to <strong>|z| &gt; 3</strong> (mniej niż 0.3% obserwacji w rozkładzie normalnym).</p>
+<p><strong>Zalety:</strong> intuicyjna interpretacja, łatwa do liczenia.</p>
+<p><strong>Wady:</strong> <strong>wrażliwa na same outliery!</strong> Średnia i odchylenie standardowe są wciągane przez wartości skrajne, przez co realne outliery mają mniejsze z-score niż powinny (efekt „masking"). Zakłada też rozkład w miarę normalny.</p>
+<h3 id="metoda-3-modified-z-score-oparta-na-mad">Metoda 3: Modified Z-score (oparta na MAD)<a class="headerlink" href="#metoda-3-modified-z-score-oparta-na-mad" title="Permanent link">#</a></h3>
+<p>Wariant Z-score odporny na outliery — używa <strong>mediany</strong> i <strong>MAD (Median Absolute Deviation)</strong> zamiast średniej i odchylenia.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">modified_zscore</span><span class="p">(</span><span class="n">series</span><span class="p">):</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    <span class="n">mediana</span> <span class="o">=</span> <span class="n">series</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>    <span class="n">mad</span> <span class="o">=</span> <span class="p">(</span><span class="n">series</span> <span class="o">-</span> <span class="n">mediana</span><span class="p">)</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="k">return</span> <span class="mf">0.6745</span> <span class="o">*</span> <span class="p">(</span><span class="n">series</span> <span class="o">-</span> <span class="n">mediana</span><span class="p">)</span> <span class="o">/</span> <span class="n">mad</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="n">z_mod</span> <span class="o">=</span> <span class="n">modified_zscore</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">])</span>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="n">maska</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z_mod</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">3.5</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Liczba outlierów (|mod z| &gt; 3.5): </span><span class="si">{</span><span class="n">maska</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Próg <strong>3.5</strong> to standardowa rekomendacja (Iglewicz &amp; Hoaglin, 1993). Stała <code>0.6745</code> to czynnik skalujący, żeby przy rozkładzie normalnym wynik był porównywalny z klasycznym Z-score.</p>
+<p><strong>Zalety:</strong> odporna na outliery, dobra dla rozkładów skośnych.</p>
+<p><strong>Wady:</strong> mniej znana, trochę mniej intuicyjna w interpretacji.</p>
+<h3 id="porownanie-metod-ktora-kiedy">Porównanie metod — która kiedy<a class="headerlink" href="#porownanie-metod-ktora-kiedy" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Metoda</th>
+<th>Najlepsza dla</th>
+<th>Słabość</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IQR (1.5×)</td>
+<td>Większości przypadków, szybki sanity check</td>
+<td>Może być za agresywna dla skośnych</td>
+</tr>
+<tr>
+<td>Z-score</td>
+<td>Rozkładów ~normalnych, łatwa interpretacja</td>
+<td>Wciągana przez ekstremalne outliery</td>
+</tr>
+<tr>
+<td>Modified Z (MAD)</td>
+<td>Skośnych i z dużymi outlierami</td>
+<td>Mniej znana</td>
+</tr>
+<tr>
+<td>Boxplot wizualny</td>
+<td>Pierwsze spojrzenie</td>
+<td>Subiektywny dla bordeline cases</td>
+</tr>
+</tbody>
+</table>
+<p>!!! tip "W praktyce"
+    Najczęściej zaczynam od boxplota + IQR. Jeśli wynik jest dziwny (np. zbyt dużo outlierów), uciekam się do modified Z-score. Z-score używam, gdy mam pewność, że rozkład jest blisko normalnego.</p>
+<h3 id="outliery-wielowymiarowe-krotko">Outliery wielowymiarowe — krótko<a class="headerlink" href="#outliery-wielowymiarowe-krotko" title="Permanent link">#</a></h3>
+<p>Czasem obserwacja <strong>w żadnej pojedynczej zmiennej nie jest outlierem</strong>, ale <strong>kombinacja</strong> wartości jest nietypowa — np. człowiek mierzący 1.50 m i ważący 120 kg. Każda wartość z osobna jest w normie, ale razem to anomalia.</p>
+<p>Do takich przypadków używa się metod modelowych:</p>
+<ul>
+<li><strong>Isolation Forest</strong> (<code>sklearn.ensemble.IsolationForest</code>) — drzewa decyzyjne izolujące anomalie,</li>
+<li><strong>Local Outlier Factor</strong> (<code>sklearn.neighbors.LocalOutlierFactor</code>) — porównuje gęstość lokalną,</li>
+<li><strong>DBSCAN</strong> — clustering, który wprost identyfikuje punkty „nieprzypisane".</li>
+</ul>
+<p>Nie będziemy ich dziś używać, ale dobrze wiedzieć, że istnieją.</p>
+<hr />
+<h2 id="co-zrobic-z-outlierami">Co zrobić z outlierami?<a class="headerlink" href="#co-zrobic-z-outlierami" title="Permanent link">#</a></h2>
+<p>Tu nie ma jednej odpowiedzi — to <strong>decyzja biznesowa</strong>, nie techniczna. Podstawowe opcje:</p>
+<table>
+<thead>
+<tr>
+<th>Decyzja</th>
+<th>Kiedy stosować</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zostaw jak jest</strong></td>
+<td>Outlier jest prawdziwą obserwacją i niesie informację (np. VIP klient, czarny łabędź w sprzedaży)</td>
+</tr>
+<tr>
+<td><strong>Usuń</strong></td>
+<td>Jasny błąd danych (wiek 200, ujemna cena) lub gdy psuje model i ich obecność jest nieistotna</td>
+</tr>
+<tr>
+<td><strong>Zwinsoryzuj (capping)</strong></td>
+<td>Chcesz ograniczyć wpływ, ale nie usuwać obserwacji — np. ucinasz wszystko &gt; 99 percentyla</td>
+</tr>
+<tr>
+<td><strong>Zlogarytmuj zmienną</strong></td>
+<td>Rozkład jest silnie skośny i log spłaszcza ogony (typowe dla cen, dochodów)</td>
+</tr>
+<tr>
+<td><strong>Modeluj osobno</strong></td>
+<td>Outliery są ciekawe same w sobie (detekcja fraudów, oszustw)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="winsoryzacja-capping">Winsoryzacja (capping)<a class="headerlink" href="#winsoryzacja-capping" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">gorna_granica</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="n">dolna_granica</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.01</span><span class="p">)</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare_capped&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="n">dolna_granica</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="n">gorna_granica</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>.clip()</code> ustala wartości spoza granic na granice — zachowujesz wiersz, ale „odgryzasz" mu skrajną wartość.</p>
+<h3 id="transformacja-logarytmiczna">Transformacja logarytmiczna<a class="headerlink" href="#transformacja-logarytmiczna" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare_log&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">])</span>  <span class="c1"># log1p = log(1+x), działa też dla zer</span>
+</span></code></pre></div>
+<p>Po transformacji rozkład jest zwykle bliższy normalnemu, a outliery „wracają do stada".</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare&quot;</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Przed: surowe Fare&quot;</span><span class="p">)</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Fare_log&quot;</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Po: log(1 + Fare)&quot;</span><span class="p">)</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>!!! note "Dokumentuj decyzję"
+    Jeśli usuwasz lub modyfikujesz dane — <strong>zapisz, co i dlaczego</strong>. Inny analityk (albo ty za pół roku) musi móc odtworzyć twój tok rozumowania. Komentarz w notebooku jest złotem.</p>
+<hr />
+<h2 id="cwiczenie-aczone-pena-eda-na-titanicu">Ćwiczenie łączone — pełna EDA na Titanicu<a class="headerlink" href="#cwiczenie-aczone-pena-eda-na-titanicu" title="Permanent link">#</a></h2>
+<p>Zróbmy razem pełen przepływ EDA na znanym już zbiorze.</p>
+<h3 id="krok-1-wczytanie-i-wstepna-ocena">Krok 1 — wczytanie i wstępna ocena<a class="headerlink" href="#krok-1-wczytanie-i-wstepna-ocena" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv&quot;</span>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;pclass&quot;</span><span class="p">)[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">median</span><span class="p">()))</span>
+</span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;embarked&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;embarked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;embarked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-30-14"><a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>
+</span><span id="__span-30-15"><a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span><span id="__span-30-16"><a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="krok-2-rozkady-kluczowych-zmiennych">Krok 2 — rozkłady kluczowych zmiennych<a class="headerlink" href="#krok-2-rozkady-kluczowych-zmiennych" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Wiek&quot;</span><span class="p">)</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Cena biletu&quot;</span><span class="p">)</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;pclass&quot;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Klasa biletu&quot;</span><span class="p">)</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skewness wieku: </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skewness fare:  </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;fare&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Od razu widać, że <code>fare</code> jest mocno prawostronnie skośny (skewness ~5) — typowy kandydat na log lub winsoryzację.</p>
+<h3 id="krok-3-zaleznosci">Krok 3 — zależności<a class="headerlink" href="#krok-3-zaleznosci" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>    <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="s2">&quot;fare&quot;</span><span class="p">,</span> <span class="s2">&quot;pclass&quot;</span><span class="p">,</span> <span class="s2">&quot;sibsp&quot;</span><span class="p">,</span> <span class="s2">&quot;parch&quot;</span><span class="p">,</span> <span class="s2">&quot;survived&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="p">)</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Macierz korelacji&quot;</span><span class="p">)</span>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="c1"># Przeżywalność wg klasy i płci — pivot + heatmapa</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="n">ct</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">&quot;pclass&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;sex&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;survived&quot;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s2">&quot;mean&quot;</span><span class="p">)</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">ct</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;YlGn&quot;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Średnia przeżywalność: klasa × płeć&quot;</span><span class="p">)</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="krok-4-detekcja-outlierow-w-cenie-biletu">Krok 4 — detekcja outlierów w cenie biletu<a class="headerlink" href="#krok-4-detekcja-outlierow-w-cenie-biletu" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># Boxplot wizualny</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare&quot;</span><span class="p">])</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Boxplot cen biletów&quot;</span><span class="p">)</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="c1"># IQR</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">outliers_iqr</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">1.5</span><span class="p">):</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>    <span class="n">Q1</span><span class="p">,</span> <span class="n">Q3</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">),</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>    <span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span>
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">s</span> <span class="o">&lt;</span> <span class="n">Q1</span> <span class="o">-</span> <span class="n">k</span> <span class="o">*</span> <span class="n">IQR</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">s</span> <span class="o">&gt;</span> <span class="n">Q3</span> <span class="o">+</span> <span class="n">k</span> <span class="o">*</span> <span class="n">IQR</span><span class="p">)</span>
+</span><span id="__span-34-12"><a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a>
+</span><span id="__span-34-13"><a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a><span class="n">m_iqr</span> <span class="o">=</span> <span class="n">outliers_iqr</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare&quot;</span><span class="p">])</span>
+</span><span id="__span-34-14"><a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;IQR (1.5×):       </span><span class="si">{</span><span class="n">m_iqr</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> outlierów (</span><span class="si">{</span><span class="n">m_iqr</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%)&quot;</span><span class="p">)</span>
+</span><span id="__span-34-15"><a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a>
+</span><span id="__span-34-16"><a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a><span class="c1"># Z-score</span>
+</span><span id="__span-34-17"><a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a><span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
+</span><span id="__span-34-18"><a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a><span class="n">z</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare&quot;</span><span class="p">])</span>
+</span><span id="__span-34-19"><a id="__codelineno-34-19" name="__codelineno-34-19" href="#__codelineno-34-19"></a><span class="n">m_z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span>
+</span><span id="__span-34-20"><a id="__codelineno-34-20" name="__codelineno-34-20" href="#__codelineno-34-20"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Z-score (|z|&gt;3):  </span><span class="si">{</span><span class="n">m_z</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> outlierów&quot;</span><span class="p">)</span>
+</span><span id="__span-34-21"><a id="__codelineno-34-21" name="__codelineno-34-21" href="#__codelineno-34-21"></a>
+</span><span id="__span-34-22"><a id="__codelineno-34-22" name="__codelineno-34-22" href="#__codelineno-34-22"></a><span class="c1"># Modified Z-score</span>
+</span><span id="__span-34-23"><a id="__codelineno-34-23" name="__codelineno-34-23" href="#__codelineno-34-23"></a><span class="k">def</span><span class="w"> </span><span class="nf">mod_z</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+</span><span id="__span-34-24"><a id="__codelineno-34-24" name="__codelineno-34-24" href="#__codelineno-34-24"></a>    <span class="n">med</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</span><span id="__span-34-25"><a id="__codelineno-34-25" name="__codelineno-34-25" href="#__codelineno-34-25"></a>    <span class="n">mad</span> <span class="o">=</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="n">med</span><span class="p">)</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</span><span id="__span-34-26"><a id="__codelineno-34-26" name="__codelineno-34-26" href="#__codelineno-34-26"></a>    <span class="k">return</span> <span class="mf">0.6745</span> <span class="o">*</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="n">med</span><span class="p">)</span> <span class="o">/</span> <span class="n">mad</span>
+</span><span id="__span-34-27"><a id="__codelineno-34-27" name="__codelineno-34-27" href="#__codelineno-34-27"></a>
+</span><span id="__span-34-28"><a id="__codelineno-34-28" name="__codelineno-34-28" href="#__codelineno-34-28"></a><span class="n">m_mod</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">mod_z</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare&quot;</span><span class="p">]))</span> <span class="o">&gt;</span> <span class="mf">3.5</span>
+</span><span id="__span-34-29"><a id="__codelineno-34-29" name="__codelineno-34-29" href="#__codelineno-34-29"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mod Z (&gt;3.5):     </span><span class="si">{</span><span class="n">m_mod</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> outlierów&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="krok-5-co-z-nimi-zrobimy">Krok 5 — co z nimi zrobimy?<a class="headerlink" href="#krok-5-co-z-nimi-zrobimy" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1"># Zobaczmy outliery z bliska</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">m_iqr</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;pclass&quot;</span><span class="p">,</span> <span class="s2">&quot;fare&quot;</span><span class="p">,</span> <span class="s2">&quot;survived&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;fare&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Top „outliery" to pasażerowie 1. klasy z biletami za ponad 200 GBP — to nie są błędy, to prawdziwi VIP-owie. Decyzja: nie usuwamy, ale na potrzeby modelu wykonamy log-transformację.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare_log&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare&quot;</span><span class="p">])</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare&quot;</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;fare&quot;</span><span class="p">)</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;fare_log&quot;</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;log(1 + fare)&quot;</span><span class="p">)</span>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>
+</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skewness przed: </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;fare&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skewness po:    </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;fare_log&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Skośność spadła z ~5 do ~0.4 — rozkład jest teraz prawie symetryczny, outliery są w normie.</p>
+<p>To pełen przepływ EDA: dane → rozkłady → zależności → outliery → decyzja.</p>
+<hr />
+<h2 id="zadanie">Zadanie<a class="headerlink" href="#zadanie" title="Permanent link">#</a></h2>
+<h3 id="analiza-rynku-mieszkan-w-warszawie">Analiza rynku mieszkań w Warszawie<a class="headerlink" href="#analiza-rynku-mieszkan-w-warszawie" title="Permanent link">#</a></h3>
+<p>Twoim zadaniem jest przeprowadzenie pełnej eksploracyjnej analizy danych o ofertach sprzedaży mieszkań w Warszawie — od wstępnej oceny zbioru, przez wizualizacje, po detekcję i obsługę outlierów.</p>
+<h4 id="generowanie-danych">Generowanie danych<a class="headerlink" href="#generowanie-danych" title="Permanent link">#</a></h4>
+<p>Wygeneruj plik z danymi — <strong>uruchom poniższy skrypt raz</strong>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">2000</span>
+</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="n">dzielnice</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Mokotów&quot;</span><span class="p">,</span> <span class="s2">&quot;Wola&quot;</span><span class="p">,</span> <span class="s2">&quot;Śródmieście&quot;</span><span class="p">,</span> <span class="s2">&quot;Praga-Południe&quot;</span><span class="p">,</span> <span class="s2">&quot;Ursynów&quot;</span><span class="p">,</span>
+</span><span id="__span-37-8"><a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a>             <span class="s2">&quot;Bemowo&quot;</span><span class="p">,</span> <span class="s2">&quot;Białołęka&quot;</span><span class="p">,</span> <span class="s2">&quot;Targówek&quot;</span><span class="p">,</span> <span class="s2">&quot;Bielany&quot;</span><span class="p">,</span> <span class="s2">&quot;Ochota&quot;</span><span class="p">,</span> <span class="s2">&quot;Wilanów&quot;</span><span class="p">]</span>
+</span><span id="__span-37-9"><a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a><span class="n">multiplikator_dzielnicy</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-37-10"><a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a>    <span class="s2">&quot;Mokotów&quot;</span><span class="p">:</span> <span class="mf">1.15</span><span class="p">,</span> <span class="s2">&quot;Wola&quot;</span><span class="p">:</span> <span class="mf">1.10</span><span class="p">,</span> <span class="s2">&quot;Śródmieście&quot;</span><span class="p">:</span> <span class="mf">1.40</span><span class="p">,</span> <span class="s2">&quot;Praga-Południe&quot;</span><span class="p">:</span> <span class="mf">0.90</span><span class="p">,</span>
+</span><span id="__span-37-11"><a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a>    <span class="s2">&quot;Ursynów&quot;</span><span class="p">:</span> <span class="mf">1.00</span><span class="p">,</span> <span class="s2">&quot;Bemowo&quot;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span> <span class="s2">&quot;Białołęka&quot;</span><span class="p">:</span> <span class="mf">0.85</span><span class="p">,</span> <span class="s2">&quot;Targówek&quot;</span><span class="p">:</span> <span class="mf">0.88</span><span class="p">,</span>
+</span><span id="__span-37-12"><a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a>    <span class="s2">&quot;Bielany&quot;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span> <span class="s2">&quot;Ochota&quot;</span><span class="p">:</span> <span class="mf">1.05</span><span class="p">,</span> <span class="s2">&quot;Wilanów&quot;</span><span class="p">:</span> <span class="mf">1.20</span>
+</span><span id="__span-37-13"><a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a><span class="p">}</span>
+</span><span id="__span-37-14"><a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a>
+</span><span id="__span-37-15"><a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a><span class="n">dzielnica</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">dzielnice</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span><span id="__span-37-16"><a id="__codelineno-37-16" name="__codelineno-37-16" href="#__codelineno-37-16"></a><span class="n">metraz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">55</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>
+</span><span id="__span-37-17"><a id="__codelineno-37-17" name="__codelineno-37-17" href="#__codelineno-37-17"></a><span class="n">pokoje</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">metraz</span> <span class="o">/</span> <span class="mi">18</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">n</span><span class="p">)),</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-37-18"><a id="__codelineno-37-18" name="__codelineno-37-18" href="#__codelineno-37-18"></a><span class="n">pietro</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span><span id="__span-37-19"><a id="__codelineno-37-19" name="__codelineno-37-19" href="#__codelineno-37-19"></a><span class="n">rok_budowy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span>
+</span><span id="__span-37-20"><a id="__codelineno-37-20" name="__codelineno-37-20" href="#__codelineno-37-20"></a>    <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1950</span><span class="p">,</span> <span class="mi">2025</span><span class="p">)),</span>
+</span><span id="__span-37-21"><a id="__codelineno-37-21" name="__codelineno-37-21" href="#__codelineno-37-21"></a>    <span class="n">n</span><span class="p">,</span>
+</span><span id="__span-37-22"><a id="__codelineno-37-22" name="__codelineno-37-22" href="#__codelineno-37-22"></a>    <span class="n">p</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">75</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">75</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span><span id="__span-37-23"><a id="__codelineno-37-23" name="__codelineno-37-23" href="#__codelineno-37-23"></a><span class="p">)</span>
+</span><span id="__span-37-24"><a id="__codelineno-37-24" name="__codelineno-37-24" href="#__codelineno-37-24"></a><span class="n">ma_balkon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span> <span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">])</span>
+</span><span id="__span-37-25"><a id="__codelineno-37-25" name="__codelineno-37-25" href="#__codelineno-37-25"></a><span class="n">ma_miejsce_parkingowe</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span> <span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">[</span><span class="mf">0.45</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">])</span>
+</span><span id="__span-37-26"><a id="__codelineno-37-26" name="__codelineno-37-26" href="#__codelineno-37-26"></a><span class="n">odleglosc_od_centrum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">gamma</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+</span><span id="__span-37-27"><a id="__codelineno-37-27" name="__codelineno-37-27" href="#__codelineno-37-27"></a>
+</span><span id="__span-37-28"><a id="__codelineno-37-28" name="__codelineno-37-28" href="#__codelineno-37-28"></a><span class="c1"># Cena za m² zależna od wielu czynników + szum</span>
+</span><span id="__span-37-29"><a id="__codelineno-37-29" name="__codelineno-37-29" href="#__codelineno-37-29"></a><span class="n">cena_za_m2</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-37-30"><a id="__codelineno-37-30" name="__codelineno-37-30" href="#__codelineno-37-30"></a>    <span class="mi">14000</span>
+</span><span id="__span-37-31"><a id="__codelineno-37-31" name="__codelineno-37-31" href="#__codelineno-37-31"></a>    <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">multiplikator_dzielnicy</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dzielnica</span><span class="p">])</span>
+</span><span id="__span-37-32"><a id="__codelineno-37-32" name="__codelineno-37-32" href="#__codelineno-37-32"></a>    <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">0.005</span> <span class="o">*</span> <span class="p">(</span><span class="n">rok_budowy</span> <span class="o">-</span> <span class="mi">1980</span><span class="p">))</span>
+</span><span id="__span-37-33"><a id="__codelineno-37-33" name="__codelineno-37-33" href="#__codelineno-37-33"></a>    <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mf">0.015</span> <span class="o">*</span> <span class="n">odleglosc_od_centrum</span><span class="p">)</span>
+</span><span id="__span-37-34"><a id="__codelineno-37-34" name="__codelineno-37-34" href="#__codelineno-37-34"></a>    <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">0.05</span> <span class="o">*</span> <span class="n">ma_balkon</span><span class="p">)</span>
+</span><span id="__span-37-35"><a id="__codelineno-37-35" name="__codelineno-37-35" href="#__codelineno-37-35"></a>    <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">0.08</span> <span class="o">*</span> <span class="n">ma_miejsce_parkingowe</span><span class="p">)</span>
+</span><span id="__span-37-36"><a id="__codelineno-37-36" name="__codelineno-37-36" href="#__codelineno-37-36"></a>    <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1500</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span><span id="__span-37-37"><a id="__codelineno-37-37" name="__codelineno-37-37" href="#__codelineno-37-37"></a><span class="p">)</span>
+</span><span id="__span-37-38"><a id="__codelineno-37-38" name="__codelineno-37-38" href="#__codelineno-37-38"></a><span class="n">cena</span> <span class="o">=</span> <span class="p">(</span><span class="n">cena_za_m2</span> <span class="o">*</span> <span class="n">metraz</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-37-39"><a id="__codelineno-37-39" name="__codelineno-37-39" href="#__codelineno-37-39"></a>
+</span><span id="__span-37-40"><a id="__codelineno-37-40" name="__codelineno-37-40" href="#__codelineno-37-40"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+</span><span id="__span-37-41"><a id="__codelineno-37-41" name="__codelineno-37-41" href="#__codelineno-37-41"></a>    <span class="s2">&quot;id_oferty&quot;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10001</span><span class="p">,</span> <span class="mi">10001</span> <span class="o">+</span> <span class="n">n</span><span class="p">),</span>
+</span><span id="__span-37-42"><a id="__codelineno-37-42" name="__codelineno-37-42" href="#__codelineno-37-42"></a>    <span class="s2">&quot;dzielnica&quot;</span><span class="p">:</span> <span class="n">dzielnica</span><span class="p">,</span>
+</span><span id="__span-37-43"><a id="__codelineno-37-43" name="__codelineno-37-43" href="#__codelineno-37-43"></a>    <span class="s2">&quot;metraz_m2&quot;</span><span class="p">:</span> <span class="n">metraz</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+</span><span id="__span-37-44"><a id="__codelineno-37-44" name="__codelineno-37-44" href="#__codelineno-37-44"></a>    <span class="s2">&quot;liczba_pokoi&quot;</span><span class="p">:</span> <span class="n">pokoje</span><span class="p">,</span>
+</span><span id="__span-37-45"><a id="__codelineno-37-45" name="__codelineno-37-45" href="#__codelineno-37-45"></a>    <span class="s2">&quot;pietro&quot;</span><span class="p">:</span> <span class="n">pietro</span><span class="p">,</span>
+</span><span id="__span-37-46"><a id="__codelineno-37-46" name="__codelineno-37-46" href="#__codelineno-37-46"></a>    <span class="s2">&quot;rok_budowy&quot;</span><span class="p">:</span> <span class="n">rok_budowy</span><span class="p">,</span>
+</span><span id="__span-37-47"><a id="__codelineno-37-47" name="__codelineno-37-47" href="#__codelineno-37-47"></a>    <span class="s2">&quot;ma_balkon&quot;</span><span class="p">:</span> <span class="n">ma_balkon</span><span class="p">,</span>
+</span><span id="__span-37-48"><a id="__codelineno-37-48" name="__codelineno-37-48" href="#__codelineno-37-48"></a>    <span class="s2">&quot;ma_miejsce_parkingowe&quot;</span><span class="p">:</span> <span class="n">ma_miejsce_parkingowe</span><span class="p">,</span>
+</span><span id="__span-37-49"><a id="__codelineno-37-49" name="__codelineno-37-49" href="#__codelineno-37-49"></a>    <span class="s2">&quot;odleglosc_od_centrum_km&quot;</span><span class="p">:</span> <span class="n">odleglosc_od_centrum</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
+</span><span id="__span-37-50"><a id="__codelineno-37-50" name="__codelineno-37-50" href="#__codelineno-37-50"></a>    <span class="s2">&quot;cena_pln&quot;</span><span class="p">:</span> <span class="n">cena</span>
+</span><span id="__span-37-51"><a id="__codelineno-37-51" name="__codelineno-37-51" href="#__codelineno-37-51"></a><span class="p">})</span>
+</span><span id="__span-37-52"><a id="__codelineno-37-52" name="__codelineno-37-52" href="#__codelineno-37-52"></a>
+</span><span id="__span-37-53"><a id="__codelineno-37-53" name="__codelineno-37-53" href="#__codelineno-37-53"></a><span class="c1"># Wstrzykujemy outliery i błędy</span>
+</span><span id="__span-37-54"><a id="__codelineno-37-54" name="__codelineno-37-54" href="#__codelineno-37-54"></a><span class="n">outlier_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-37-55"><a id="__codelineno-37-55" name="__codelineno-37-55" href="#__codelineno-37-55"></a><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">outlier_idx</span><span class="p">[:</span><span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;cena_pln&quot;</span><span class="p">]</span> <span class="o">*=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>   <span class="c1"># absurdalnie drogie (penthousy / błędy)</span>
+</span><span id="__span-37-56"><a id="__codelineno-37-56" name="__codelineno-37-56" href="#__codelineno-37-56"></a><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">outlier_idx</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">],</span> <span class="s2">&quot;cena_pln&quot;</span><span class="p">]</span> <span class="o">*=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># absurdalnie tanie (błędy / oszustwa)</span>
+</span><span id="__span-37-57"><a id="__codelineno-37-57" name="__codelineno-37-57" href="#__codelineno-37-57"></a><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">outlier_idx</span><span class="p">[</span><span class="mi">20</span><span class="p">:</span><span class="mi">25</span><span class="p">],</span> <span class="s2">&quot;metraz_m2&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>   <span class="c1"># gigantyczne metraże</span>
+</span><span id="__span-37-58"><a id="__codelineno-37-58" name="__codelineno-37-58" href="#__codelineno-37-58"></a><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">outlier_idx</span><span class="p">[</span><span class="mi">25</span><span class="p">:</span><span class="mi">30</span><span class="p">],</span> <span class="s2">&quot;rok_budowy&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">1800</span><span class="p">,</span> <span class="mi">1850</span><span class="p">,</span> <span class="mi">2050</span><span class="p">,</span> <span class="mi">2099</span><span class="p">],</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># bzdurne daty</span>
+</span><span id="__span-37-59"><a id="__codelineno-37-59" name="__codelineno-37-59" href="#__codelineno-37-59"></a>
+</span><span id="__span-37-60"><a id="__codelineno-37-60" name="__codelineno-37-60" href="#__codelineno-37-60"></a><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;mieszkania_warszawa.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-37-61"><a id="__codelineno-37-61" name="__codelineno-37-61" href="#__codelineno-37-61"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wygenerowano plik &#39;mieszkania_warszawa.csv&#39; — </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="si">}</span><span class="s2"> ofert&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="polecenia">Polecenia<a class="headerlink" href="#polecenia" title="Permanent link">#</a></h4>
+<p><strong>Część 1 — Wstępna eksploracja (2 pkt)</strong></p>
+<ol>
+<li>Wczytaj plik <code>mieszkania_warszawa.csv</code> do DataFrame.</li>
+<li>Wykonaj wstępną ocenę zbioru: <code>shape</code>, <code>info</code>, <code>describe</code>, <code>isnull().sum()</code>. W komentarzu lub komórce markdown opisz, <strong>co już teraz widać podejrzanego</strong> w statystykach opisowych (np. nielogiczne min/max).</li>
+</ol>
+<p><strong>Część 2 — Statystyki opisowe (3 pkt)</strong></p>
+<ol>
+<li>Dla kolumny <code>cena_pln</code> policz: średnią, medianę, odchylenie standardowe, skewness i kurtosis. Skomentuj — co skewness mówi o kształcie rozkładu?</li>
+<li>Dla kolumny <code>metraz_m2</code> policz Q1, Q3 i IQR.</li>
+<li>Pokaż, ile jest unikalnych dzielnic i ile ofert przypada na każdą (<code>value_counts</code>).</li>
+</ol>
+<p><strong>Część 3 — Analiza pojedynczych zmiennych (3 pkt)</strong></p>
+<ol>
+<li>Narysuj histogram + KDE dla <code>cena_pln</code> i <code>metraz_m2</code>. Czy widzisz skośność?</li>
+<li>Narysuj boxplot dla <code>cena_pln</code> — w komentarzu opisz, co widać.</li>
+<li>Narysuj countplot pokazujący liczność ofert w każdej dzielnicy (posortuj malejąco).</li>
+</ol>
+<p><strong>Część 4 — Analiza zależności (3 pkt)</strong></p>
+<ol>
+<li>Narysuj heatmapę macierzy korelacji dla wszystkich zmiennych numerycznych. Która zmienna najsilniej koreluje z ceną?</li>
+<li>Narysuj scatter plot <code>metraz_m2</code> vs <code>cena_pln</code> (dodatkowo użyj <code>hue="dzielnica"</code> lub innego sensownego kolorowania).</li>
+<li>Narysuj boxplot ceny za m² (<code>cena_pln / metraz_m2</code>) w podziale na dzielnice. Która dzielnica ma najwyższe ceny za m²?</li>
+</ol>
+<p><strong>Część 5 — Detekcja outlierów (4 pkt)</strong></p>
+<ol>
+<li>Wykryj outliery w kolumnie <code>cena_pln</code> <strong>trzema metodami</strong>: IQR (1.5×), Z-score (|z| &gt; 3), Modified Z-score (|z_mod| &gt; 3.5). Wypisz, ile outlierów znalazła każda metoda.</li>
+<li>Wykryj outliery w kolumnie <code>metraz_m2</code> metodą IQR. Pokaż top 5 największych wartości.</li>
+<li>Znajdź wiersze z bzdurnymi wartościami w <code>rok_budowy</code> (lata przed 1900 lub po 2026).</li>
+</ol>
+<p><strong>Część 6 — Decyzja i czyszczenie (2 pkt)</strong></p>
+<ol>
+<li>Usuń wiersze z nielogicznym <code>rok_budowy</code>.</li>
+<li>Dla <code>cena_pln</code> — zastosuj winsoryzację (cap na 1 i 99 percentylu). Dodaj nową kolumnę <code>cena_pln_capped</code>.</li>
+<li>Dodaj kolumnę <code>cena_pln_log</code> = <code>log1p(cena_pln)</code>. Porównaj skewness przed i po — narysuj dwa histogramy obok siebie.</li>
+</ol>
+<p><strong>Część 7 — Wnioski (1 pkt)</strong></p>
+<ol>
+<li>W komórce markdown wypisz <strong>3–5 najważniejszych wniosków</strong> z całej analizy. Czego dowiedziałeś się o rynku mieszkań w Warszawie z tego zbioru?</li>
+</ol>
+<h4 id="podpowiedzi">Podpowiedzi<a class="headerlink" href="#podpowiedzi" title="Permanent link">#</a></h4>
+<ul>
+<li>Dla heatmapy korelacji rzutuj <code>ma_balkon</code> i <code>ma_miejsce_parkingowe</code> na <code>int</code> — pandas nie liczy korelacji dla bool:</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">df_corr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="n">df_corr</span><span class="p">[</span><span class="s2">&quot;ma_balkon&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_corr</span><span class="p">[</span><span class="s2">&quot;ma_balkon&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="n">df_corr</span><span class="p">[</span><span class="s2">&quot;ma_miejsce_parkingowe&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_corr</span><span class="p">[</span><span class="s2">&quot;ma_miejsce_parkingowe&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="n">df_corr</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">&quot;number&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+</span></code></pre></div>
+<ul>
+<li>
+<p>Cena za m² to świetne narzędzie do porównywania ofert — kawalerka 30 m² za 500 000 zł i 80-metrowe mieszkanie za 1 200 000 zł mają inne ceny <strong>całkowite</strong>, ale podobne <strong>za m²</strong>.</p>
+</li>
+<li>
+<p><code>df["cena_pln_per_m2"] = df["cena_pln"] / df["metraz_m2"]</code> przyda ci się w kilku miejscach.</p>
+</li>
+</ul>
+<h4 id="kryteria-zaliczenia">Kryteria zaliczenia<a class="headerlink" href="#kryteria-zaliczenia" title="Permanent link">#</a></h4>
+<ul>
+<li>Wstępna eksploracja — <strong>2 pkt</strong></li>
+<li>Statystyki opisowe (3 zadania) — <strong>3 pkt</strong></li>
+<li>Analiza pojedynczych zmiennych (3 wykresy) — <strong>3 pkt</strong></li>
+<li>Analiza zależności (3 zadania) — <strong>3 pkt</strong></li>
+<li>Detekcja outlierów (3 metody + 2 dodatkowe) — <strong>4 pkt</strong></li>
+<li>Decyzja i czyszczenie — <strong>2 pkt</strong></li>
+<li>Wnioski w markdown — <strong>1 pkt</strong></li>
+<li>Wysłanie zadania w trakcie zajęć — <strong>2 pkt</strong></li>
+</ul>
+<p><strong>TOTAL: 20 pkt</strong></p>
+<p>Powodzenia! 📊</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

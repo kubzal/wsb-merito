@@ -1,0 +1,2557 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/python_w_data_science/zajecia_6/">
+      
+      
+        <link rel="prev" href="../zajecia_5/">
+      
+      
+        <link rel="next" href="../../zarzadzanie_big_data/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zajęcia 6 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-6" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../jakosc_aplikacji/" class="md-tabs__link">
+          
+  
+  
+  Jakosc aplikacji
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_stron_internetowych_2/" class="md-tabs__link">
+          
+  
+  
+  Programowanie stron internetowych 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_wysokopoziomowe/" class="md-tabs__link">
+          
+  
+  
+  Programowanie wysokopoziomowe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_zaawansowane/" class="md-tabs__link">
+          
+  
+  
+  Programowanie zaawansowane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Python w data science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../zarzadzanie_big_data/" class="md-tabs__link">
+          
+  
+  
+  Zarzadzanie big data
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakosc aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakosc aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python w data science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python w data science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uczenie-nienadzorowane-klasteryzacja-danych-bez-etykiet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uczenie nienadzorowane — klasteryzacja danych bez etykiet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-nadzorowane-vs-nienadzorowane-co-sie-zmienia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Nadzorowane vs nienadzorowane — co się zmienia?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Nadzorowane vs nienadzorowane — co się zmienia?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-co-to-komu-realne-zastosowania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Po co to komu? Realne zastosowania
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-dane-do-przykadow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Dane do przykładów
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-algorytm-1-k-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Algorytm 1 — K-Means
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Algorytm 1 — K-Means">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jak-dziaa-petla-w-4-krokach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak działa — pętla w 4 krokach
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ile-klastrow-metoda-okcia-i-silhouette" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ile klastrów? Metoda łokcia i silhouette
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Ile klastrów? Metoda łokcia i silhouette">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metoda-okcia-elbow-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metoda łokcia (elbow method)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wspoczynnik-silhouette" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Współczynnik silhouette
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-algorytm-2-klasteryzacja-hierarchiczna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Algorytm 2 — Klasteryzacja hierarchiczna
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-algorytm-3-dbscan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Algorytm 3 — DBSCAN
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Algorytm 3 — DBSCAN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intuicja-gestosc-zamiast-odlegosci-od-srodka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intuicja — gęstość zamiast odległości od środka
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiedy-dbscan-wygrywa-test-poksiezycow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kiedy DBSCAN wygrywa — test półksiężyców
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-porownanie-kiedy-czego-uzyc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Porównanie — kiedy czego użyć?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aczymy-wszystko-trzy-algorytmy-obok-siebie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Łączymy wszystko — trzy algorytmy obok siebie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#praca-projektowa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Praca projektowa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Praca projektowa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-6-segmentacja-klientow-centrum-handlowego-10-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6 — Segmentacja klientów centrum handlowego (10 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 6 — Segmentacja klientów centrum handlowego (10 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etap-1-przygotowanie-danych-2-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Etap 1 — Przygotowanie danych (2 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etap-2-k-means-dobor-liczby-klastrow-4-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Etap 2 — K-Means + dobór liczby klastrów (4 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etap-3-hierarchiczna-i-dbscan-3-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Etap 3 — Hierarchiczna i DBSCAN (3 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etap-4-wnioski-1-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️ Etap 4 — Wnioski (1 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podsumowanie-punktacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podsumowanie punktacji
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-juz-koniec-kursu-co-dalej" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To już koniec kursu — co dalej?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materiay-dodatkowe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materiały dodatkowe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarzadzanie big data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarzadzanie big data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-6">Zajęcia 6<a class="headerlink" href="#zajecia-6" title="Permanent link">#</a></h1>
+<h2 id="uczenie-nienadzorowane-klasteryzacja-danych-bez-etykiet">Uczenie nienadzorowane — klasteryzacja danych bez etykiet<a class="headerlink" href="#uczenie-nienadzorowane-klasteryzacja-danych-bez-etykiet" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>Poprzednie zajęcia:</strong> zbudowaliśmy regresję (przewidywanie liczby) i 6 klasyfikatorów (przewidywanie kategorii). We wszystkich tych przypadkach mieliśmy <strong>etykiety</strong> — dane mówiły nam, jaka jest poprawna odpowiedź (<code>y</code>). To było <strong>uczenie nadzorowane</strong>.
+Dziś robimy ostatni krok i wchodzimy do drugiego świata: <strong>uczenia nienadzorowanego</strong>. Tu <strong>nie ma <code>y</code></strong>. Dostajemy tylko cechy <code>X</code> i sami szukamy w nich struktury — naturalnych grup, które same się wyłaniają z danych. Algorytm nikt nie mówi „to jest grupa A, to grupa B" — on musi to odkryć sam.</p>
+<p><strong>Uwaga:</strong> to są zajęcia w skróconym formacie (2h). Mniej teorii, jedno zadanie, ale przechodzimy przez trzy najważniejsze algorytmy klasteryzacji.</p>
+</blockquote>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>wyjaśnić różnicę między uczeniem <strong>nadzorowanym</strong> a <strong>nienadzorowanym</strong>,</li>
+<li>wytrenować i zinterpretować trzy algorytmy klastrowania: <strong>K-Means</strong>, <strong>klasteryzację hierarchiczną</strong> i <strong>DBSCAN</strong>,</li>
+<li>dobrać liczbę klastrów metodą <strong>łokcia</strong> i współczynnikiem <strong>silhouette</strong>,</li>
+<li>rozumieć, czym DBSCAN różni się od K-Means (kształty klastrów, szum, brak <code>k</code>),</li>
+<li>wiedzieć, <strong>kiedy którego algorytmu użyć</strong> — i czym każdy z nich płaci.</li>
+</ul>
+<blockquote>
+<p><strong>Środowisko:</strong> Google Colab. Wszystkie biblioteki (<code>numpy</code>, <code>pandas</code>, <code>matplotlib</code>, <code>scikit-learn</code>) są tam już zainstalowane.</p>
+</blockquote>
+<hr />
+<h2 id="1-nadzorowane-vs-nienadzorowane-co-sie-zmienia">1. Nadzorowane vs nienadzorowane — co się zmienia?<a class="headerlink" href="#1-nadzorowane-vs-nienadzorowane-co-sie-zmienia" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Uczenie nadzorowane (zajęcia 4–5)</th>
+<th>Uczenie nienadzorowane (dziś)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dane wejściowe</strong></td>
+<td>cechy <code>X</code> <strong>+ etykiety <code>y</code></strong></td>
+<td><strong>tylko cechy <code>X</code></strong></td>
+</tr>
+<tr>
+<td><strong>Cel</strong></td>
+<td>nauczyć się mapowania <code>X → y</code></td>
+<td>znaleźć <strong>ukrytą strukturę</strong> w <code>X</code></td>
+</tr>
+<tr>
+<td><strong>Przykład</strong></td>
+<td>„czy ten guz jest złośliwy?"</td>
+<td>„na ile naturalnych grup dzielą się ci klienci?"</td>
+</tr>
+<tr>
+<td><strong>Ewaluacja</strong></td>
+<td>proste — porównujemy z prawdą (<code>y_test</code>)</td>
+<td>trudne — nie ma „prawidłowej odpowiedzi"</td>
+</tr>
+<tr>
+<td><strong>Typowe zadania</strong></td>
+<td>regresja, klasyfikacja</td>
+<td><strong>klasteryzacja</strong>, redukcja wymiarów, wykrywanie anomalii</td>
+</tr>
+</tbody>
+</table>
+<p>Najważniejsza zmiana mentalna: <strong>nie ma <code>train_test_split</code>, nie ma <code>y_test</code>, nie ma accuracy</strong>. Skoro nikt nie powiedział nam, jaki jest poprawny podział, to nie mamy z czym porównać wyniku. Jakość klasteryzacji oceniamy <strong>pośrednio</strong> — albo metrykami wewnętrznymi (jak zwarte i odseparowane są grupy), albo zdrowym rozsądkiem („czy te grupy mają sens biznesowy?").</p>
+<h3 id="po-co-to-komu-realne-zastosowania">Po co to komu? Realne zastosowania<a class="headerlink" href="#po-co-to-komu-realne-zastosowania" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>Segmentacja klientów</strong> — podziel użytkowników na grupy o podobnym zachowaniu (bez z góry zdefiniowanych segmentów).</li>
+<li><strong>Wykrywanie anomalii</strong> — punkty, które nie pasują do żadnej grupy, to potencjalne fraudy / awarie.</li>
+<li><strong>Kompresja i eksploracja</strong> — zanim zbudujesz model nadzorowany, klasteryzacja pokaże Ci, jak w ogóle wyglądają Twoje dane.</li>
+</ul>
+<hr />
+<h2 id="2-dane-do-przykadow">2. Dane do przykładów<a class="headerlink" href="#2-dane-do-przykadow" title="Permanent link">#</a></h2>
+<p>Żeby <strong>zobaczyć</strong> klastry na oczy, pracujemy w 2D na danych syntetycznych — <code>make_blobs</code> generuje gotowe „kleksy", a <code>make_moons</code> dwa zachodzące na siebie półksiężyce (to drugie świetnie pokaże różnicę między algorytmami).</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_blobs</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># 4 naturalne grupy punktów w 2D</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">X</span><span class="p">,</span> <span class="n">y_prawda</span> <span class="o">=</span> <span class="n">make_blobs</span><span class="p">(</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">n_samples</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">centers</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">cluster_std</span><span class="o">=</span><span class="mf">0.70</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Dane bez etykiet — ile tu widzisz grup?&quot;</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;cecha 1&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;cecha 2&quot;</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p><code>make_blobs</code> zwraca też prawdziwe etykiety (<code>y_prawda</code>), ale <strong>udajemy, że ich nie mamy</strong> — używamy ich tylko na końcu, żeby sprawdzić, czy algorytm „zgadł". W prawdziwym zadaniu nienadzorowanym ich po prostu nie ma.</p>
+<blockquote>
+<p><strong>Skalowanie — tak jak na zajęciach 5.</strong> Wszystkie trzy dzisiejsze algorytmy liczą <strong>odległości</strong> między punktami, więc cechy o różnych skalach trzeba <strong>standaryzować</strong> (<code>StandardScaler</code>). <code>make_blobs</code> daje już ładne dane, ale na prawdziwym zbiorze skalowanie jest <strong>obowiązkowe</strong> — inaczej cecha o większych liczbach zdominuje odległość (dokładnie ten sam problem, co przy KNN).</p>
+</blockquote>
+<hr />
+<h2 id="3-algorytm-1-k-means">3. Algorytm 1 — K-Means<a class="headerlink" href="#3-algorytm-1-k-means" title="Permanent link">#</a></h2>
+<p>Najpopularniejszy algorytm klastrowania. Pomysł jest prosty: <strong>„podziel dane na <code>k</code> grup tak, żeby punkty w każdej grupie były jak najbliżej swojego środka"</strong>.</p>
+<h3 id="jak-dziaa-petla-w-4-krokach">Jak działa — pętla w 4 krokach<a class="headerlink" href="#jak-dziaa-petla-w-4-krokach" title="Permanent link">#</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>1. Rozrzuć losowo k środków (centroidów).
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>2. Przypisz każdy punkt do NAJBLIŻSZEGO środka.
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>3. Przesuń każdy środek do ŚREDNIEJ jego punktów.
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>4. Powtarzaj 2–3, aż środki przestaną się ruszać.
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>   krok 1: losowe środki      krok 4: środki ustabilizowane
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>        ●    ✦                       ●●●    ✦
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>      ●   ●       ▲                 ●●●●    
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>   ✦    ●     ▲  ▲              ✦ otoczony swoimi punktami
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        ●        ▲                       ▲▲▲ ✦
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>   (✦ = centroid)                        ▲▲▲
+</span></code></pre></div>
+<p>Kluczowy hiperparametr to <strong><code>k</code> — liczbę klastrów podajesz z góry</strong>. To zarazem największa wada K-Means: musisz wiedzieć (albo zgadnąć), ile grup szukasz.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">KMeans</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">etykiety</span> <span class="o">=</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>   <span class="c1"># przypisanie każdego punktu do klastra (0,1,2,3)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">)</span>     <span class="c1"># współrzędne 4 środków</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">etykiety</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>            <span class="n">c</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;centroidy&quot;</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;K-Means, k=4&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong><code>n_init=10</code></strong> — K-Means startuje od losowych środków i może utknąć w kiepskim podziale. <code>n_init=10</code> uruchamia algorytm 10 razy z różnych startów i wybiera najlepszy wynik. Zostaw to ustawienie.</p>
+</blockquote>
+<p><strong>Zalety:</strong> szybki, prosty, skaluje się na duże zbiory. <strong>Wady:</strong> musisz podać <code>k</code>, zakłada klastry <strong>okrągłe i podobnej wielkości</strong>, źle radzi sobie z dziwnymi kształtami (zaraz zobaczymy), wrażliwy na outliery.</p>
+<hr />
+<h2 id="4-ile-klastrow-metoda-okcia-i-silhouette">4. Ile klastrów? Metoda łokcia i silhouette<a class="headerlink" href="#4-ile-klastrow-metoda-okcia-i-silhouette" title="Permanent link">#</a></h2>
+<p>Skoro K-Means wymaga <code>k</code>, a w prawdziwym zadaniu nie znamy prawdy — jak je dobrać? Dwa narzędzia.</p>
+<h3 id="metoda-okcia-elbow-method">Metoda łokcia (elbow method)<a class="headerlink" href="#metoda-okcia-elbow-method" title="Permanent link">#</a></h3>
+<p>Dla każdego <code>k</code> liczymy <strong>inercję</strong> (<code>inertia_</code>) — sumę kwadratów odległości punktów od ich środków. Im więcej klastrów, tym inercja mniejsza (przy <code>k</code> = liczbie punktów spada do zera). Szukamy <strong>„łokcia"</strong> — punktu, w którym dokładanie kolejnych klastrów przestaje istotnie poprawiać wynik.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">inercje</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">zakres_k</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">zakres_k</span><span class="p">:</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">km</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">inercje</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">km</span><span class="o">.</span><span class="n">inertia_</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">zakres_k</span><span class="p">,</span> <span class="n">inercje</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;liczba klastrów k&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;inercja&quot;</span><span class="p">)</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Metoda łokcia&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Na wykresie szukasz miejsca, gdzie krzywa „łamie się" jak łokieć — dla naszych danych będzie to <code>k=4</code>.</p>
+<h3 id="wspoczynnik-silhouette">Współczynnik silhouette<a class="headerlink" href="#wspoczynnik-silhouette" title="Permanent link">#</a></h3>
+<p>Metryka od <strong>−1 do 1</strong>, która mówi, jak dobrze każdy punkt pasuje do swojego klastra w porównaniu z sąsiednim. Bierze pod uwagę dwie rzeczy: jak blisko ma do <strong>swojej</strong> grupy i jak daleko do <strong>najbliższej obcej</strong>.</p>
+<ul>
+<li><strong>bliski 1</strong> → punkt jest głęboko w swoim klastrze (świetnie),</li>
+<li><strong>bliski 0</strong> → punkt leży na granicy dwóch klastrów,</li>
+<li><strong>ujemny</strong> → punkt prawdopodobnie wpadł do złego klastra.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">silhouette_score</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="n">et</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;k=</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">:  silhouette = </span><span class="si">{</span><span class="n">silhouette_score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">et</span><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Wybierasz <code>k</code> o <strong>najwyższym</strong> silhouette. W przeciwieństwie do łokcia (który czyta się „na oko") silhouette daje <strong>konkretną liczbę</strong> — dlatego często wygrywa jako kryterium.</p>
+<blockquote>
+<p><strong>Łokieć czy silhouette?</strong> Łokieć jest szybki i intuicyjny, ale bywa niejednoznaczny (czasem nie ma wyraźnego załamania). Silhouette jest bardziej obiektywny. W praktyce patrzy się na <strong>oba</strong> — i na koniec na zdrowy rozsądek.</p>
+</blockquote>
+<hr />
+<h2 id="5-algorytm-2-klasteryzacja-hierarchiczna">5. Algorytm 2 — Klasteryzacja hierarchiczna<a class="headerlink" href="#5-algorytm-2-klasteryzacja-hierarchiczna" title="Permanent link">#</a></h2>
+<p>Zamiast od razu dzielić dane na <code>k</code> grup, <strong>buduj hierarchię</strong>: zacznij od tego, że każdy punkt to osobny klaster, a potem <strong>łącz po kolei najbliższe</strong> klastry, aż zostanie jeden. To podejście <strong>aglomeracyjne</strong> (od dołu do góry).</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>punkty:    a   b   c   d   e
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>           │   │   │   │   │
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>           └─┬─┘   │   └─┬─┘     ← łączymy najbliższe pary
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>             │     │     │
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>             └──┬──┘     │       ← potem najbliższe grupy
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>                │        │
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>                └────┬───┘
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>                     │           ← aż wszystko w jednym
+</span></code></pre></div>
+<p>Efektem jest <strong>dendrogram</strong> — drzewo pokazujące, w jakiej kolejności i na jakim „dystansie" łączyły się grupy. Tnąc dendrogram poziomą linią na wybranej wysokości, dostajesz dowolną liczbę klastrów.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.cluster.hierarchy</span><span class="w"> </span><span class="kn">import</span> <span class="n">dendrogram</span><span class="p">,</span> <span class="n">linkage</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">Z</span> <span class="o">=</span> <span class="n">linkage</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;ward&quot;</span><span class="p">)</span>   <span class="c1"># ward minimalizuje wariancję wewnątrz klastrów</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">dendrogram</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">truncate_mode</span><span class="o">=</span><span class="s2">&quot;lastp&quot;</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Dendrogram&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;punkty&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;dystans&quot;</span><span class="p">)</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Sam podział na klastry robi <code>AgglomerativeClustering</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">AgglomerativeClustering</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">hc</span> <span class="o">=</span> <span class="n">AgglomerativeClustering</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">linkage</span><span class="o">=</span><span class="s2">&quot;ward&quot;</span><span class="p">)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">etykiety_hc</span> <span class="o">=</span> <span class="n">hc</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong><code>linkage</code></strong> — sposób mierzenia odległości między <strong>grupami</strong> punktów: <code>ward</code> (minimalizuje wariancję, domyślny wybór), <code>complete</code> (najdalsze punkty), <code>average</code> (średnia), <code>single</code> (najbliższe punkty). <code>ward</code> jest najbezpieczniejszym startem.</p>
+</blockquote>
+<p><strong>Zalety:</strong> <strong>nie musisz podawać <code>k</code> z góry</strong> (decydujesz, oglądając dendrogram), daje czytelną hierarchię, działa z różnymi metrykami odległości. <strong>Wady:</strong> wolny na dużych zbiorach (porównuje wszystko ze wszystkim — <code>O(n²)</code> i gorzej), wynik zależy od wyboru <code>linkage</code>.</p>
+<hr />
+<h2 id="6-algorytm-3-dbscan">6. Algorytm 3 — DBSCAN<a class="headerlink" href="#6-algorytm-3-dbscan" title="Permanent link">#</a></h2>
+<p>K-Means i hierarchiczna mają wspólny problem: zakładają, że klastry są w miarę <strong>okrągłe</strong>, i <strong>każdy</strong> punkt wpychają do jakiejś grupy. DBSCAN podchodzi zupełnie inaczej: <strong>klaster to gęsty obszar punktów otoczony pustką</strong>.</p>
+<h3 id="intuicja-gestosc-zamiast-odlegosci-od-srodka">Intuicja — gęstość zamiast odległości od środka<a class="headerlink" href="#intuicja-gestosc-zamiast-odlegosci-od-srodka" title="Permanent link">#</a></h3>
+<p>DBSCAN ma dwa parametry:</p>
+<ul>
+<li><strong><code>eps</code></strong> — promień, w którym szukamy sąsiadów (jak „blisko" znaczy blisko),</li>
+<li><strong><code>min_samples</code></strong> — ile punktów musi być w tym promieniu, żeby uznać obszar za gęsty.</li>
+</ul>
+<p>Punkt, który ma wokół siebie (w promieniu <code>eps</code>) co najmniej <code>min_samples</code> sąsiadów, to <strong>rdzeń</strong> klastra. Algorytm „rozlewa się" od rdzeni, dołączając gęsto połączone punkty. Punkty, które do żadnego gęstego obszaru nie pasują, dostają etykietę <strong><code>-1</code> — to szum (outliery)</strong>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>   ●●●●           ▲▲▲▲
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>   ●●●●●    ✱     ▲▲▲▲▲        ✱ = szum (etykieta -1)
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>   ●●●●           ▲▲▲▲
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  klaster 0       klaster 1
+</span></code></pre></div>
+<p>To jest <strong>dwie supermoce DBSCAN naraz</strong>: sam wykrywa <strong>outliery</strong> i radzi sobie z <strong>dowolnymi kształtami</strong> klastrów.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">DBSCAN</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">db</span> <span class="o">=</span> <span class="n">DBSCAN</span><span class="p">(</span><span class="n">eps</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">min_samples</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">etykiety_db</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Znalezione klastry:&quot;</span><span class="p">,</span> <span class="nb">set</span><span class="p">(</span><span class="n">etykiety_db</span><span class="p">))</span>   <span class="c1"># np. {0, 1, 2, 3, -1}</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="n">n_szum</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">etykiety_db</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Punktów uznanych za szum: </span><span class="si">{</span><span class="n">n_szum</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong><code>-1</code> to nie błąd!</strong> Etykieta <code>-1</code> oznacza świadomą decyzję algorytmu: „ten punkt nie należy do żadnej grupy". Przy rysowaniu warto pokolorować szum osobno (np. na czarno), żeby było widać, co DBSCAN odrzucił.</p>
+</blockquote>
+<h3 id="kiedy-dbscan-wygrywa-test-poksiezycow">Kiedy DBSCAN wygrywa — test półksiężyców<a class="headerlink" href="#kiedy-dbscan-wygrywa-test-poksiezycow" title="Permanent link">#</a></h3>
+<p>To jest moment, w którym DBSCAN miażdży K-Means. Dwa zachodzące półksiężyce — K-Means przetnie je linią na pół (bo szuka okrągłych grup), a DBSCAN poprawnie wykryje dwa kształty:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_moons</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">X_moons</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">make_moons</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">noise</span><span class="o">=</span><span class="mf">0.06</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">km_lab</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X_moons</span><span class="p">)</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">db_lab</span> <span class="o">=</span> <span class="n">DBSCAN</span><span class="p">(</span><span class="n">eps</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">min_samples</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X_moons</span><span class="p">)</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_moons</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X_moons</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">km_lab</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;K-Means — tnie półksiężyce na pół ❌&quot;</span><span class="p">)</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_moons</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X_moons</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">db_lab</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;DBSCAN — łapie kształty ✅&quot;</span><span class="p">)</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>Zalety:</strong> nie musisz podawać <code>k</code>, wykrywa <strong>dowolne kształty</strong>, automatycznie znajduje <strong>outliery</strong>, odporny na szum. <strong>Wady:</strong> czuły na dobór <code>eps</code> i <code>min_samples</code> (zła wartość = jeden wielki klaster albo same szumy), słabo radzi sobie z klastrami o <strong>różnej gęstości</strong>, gorszy przy wielu cechach.</p>
+<hr />
+<h2 id="7-porownanie-kiedy-czego-uzyc">7. Porównanie — kiedy czego użyć?<a class="headerlink" href="#7-porownanie-kiedy-czego-uzyc" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cecha</th>
+<th>K-Means</th>
+<th>Hierarchiczna</th>
+<th>DBSCAN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Trzeba podać <code>k</code>?</strong></td>
+<td>tak</td>
+<td>nie (czytasz z dendrogramu)</td>
+<td>nie</td>
+</tr>
+<tr>
+<td><strong>Kształty klastrów</strong></td>
+<td>tylko okrągłe</td>
+<td>dość elastyczne</td>
+<td><strong>dowolne</strong></td>
+</tr>
+<tr>
+<td><strong>Wykrywa outliery?</strong></td>
+<td>nie</td>
+<td>nie</td>
+<td><strong>tak</strong> (etykieta <code>-1</code>)</td>
+</tr>
+<tr>
+<td><strong>Szybkość</strong></td>
+<td>bardzo szybki</td>
+<td>wolny (<code>O(n²)</code>)</td>
+<td>średni</td>
+</tr>
+<tr>
+<td><strong>Duże zbiory</strong></td>
+<td>⭐⭐⭐ tak</td>
+<td>⭐ słabo</td>
+<td>⭐⭐ ok</td>
+</tr>
+<tr>
+<td><strong>Klastry różnej gęstości</strong></td>
+<td>ok</td>
+<td>ok</td>
+<td>słabo</td>
+</tr>
+<tr>
+<td><strong>Główny parametr</strong></td>
+<td><code>k</code></td>
+<td><code>linkage</code>, próg cięcia</td>
+<td><code>eps</code>, <code>min_samples</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reguła kciuka:</strong></p>
+<ul>
+<li>duży zbiór, spodziewasz się okrągłych grup, znasz mniej więcej <code>k</code> → <strong>K-Means</strong>,</li>
+<li>chcesz zobaczyć <strong>hierarchię</strong> podobieństw albo nie wiesz, ile grup → <strong>hierarchiczna</strong>,</li>
+<li>dziwne kształty, dużo szumu / outlierów, nie chcesz podawać <code>k</code> → <strong>DBSCAN</strong>.</li>
+</ul>
+<p>Tak jak na zajęciach 5 z klasyfikacją — <strong>nie ma jednego najlepszego algorytmu</strong>. Zaczynaj od K-Means jako baseline (jest najszybszy i najprostszy), a po dziwne kształty i outliery sięgaj po DBSCAN.</p>
+<hr />
+<h2 id="aczymy-wszystko-trzy-algorytmy-obok-siebie">Łączymy wszystko — trzy algorytmy obok siebie<a class="headerlink" href="#aczymy-wszystko-trzy-algorytmy-obok-siebie" title="Permanent link">#</a></h2>
+<p>Spięjmy całość: trenujemy wszystkie trzy na tych samych danych i porównujemy wizualnie + metryką silhouette.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_blobs</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">KMeans</span><span class="p">,</span> <span class="n">AgglomerativeClustering</span><span class="p">,</span> <span class="n">DBSCAN</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">silhouette_score</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">X</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">make_blobs</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">centers</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">cluster_std</span><span class="o">=</span><span class="mf">0.70</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="n">modele</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    <span class="s2">&quot;K-Means&quot;</span><span class="p">:</span>        <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="s2">&quot;Hierarchiczna&quot;</span><span class="p">:</span>  <span class="n">AgglomerativeClustering</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">linkage</span><span class="o">=</span><span class="s2">&quot;ward&quot;</span><span class="p">),</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    <span class="s2">&quot;DBSCAN&quot;</span><span class="p">:</span>         <span class="n">DBSCAN</span><span class="p">(</span><span class="n">eps</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">min_samples</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="p">}</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="p">(</span><span class="n">nazwa</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="n">modele</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>    <span class="n">et</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>    <span class="c1"># silhouette wymaga min. 2 klastrów i nie liczy się dla samego szumu</span>
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">et</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>        <span class="n">sil</span> <span class="o">=</span> <span class="n">silhouette_score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">et</span><span class="p">)</span>
+</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>        <span class="n">tytul</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nazwa</span><span class="si">}</span><span class="s2">  (silhouette=</span><span class="si">{</span><span class="n">sil</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">)&quot;</span>
+</span><span id="__span-13-22"><a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-13-23"><a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>        <span class="n">tytul</span> <span class="o">=</span> <span class="n">nazwa</span>
+</span><span id="__span-13-24"><a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">et</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+</span><span id="__span-13-25"><a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a>    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">tytul</span><span class="p">)</span>
+</span><span id="__span-13-26"><a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Jeden przebieg, trzy podejścia, jedna metryka do porównania. Dokładnie tak wygląda pierwszy etap eksploracji nienadzorowanej — sprawdzasz kilka algorytmów i patrzysz, który układ klastrów ma sens.</p>
+<hr />
+<h2 id="praca-projektowa">Praca projektowa<a class="headerlink" href="#praca-projektowa" title="Permanent link">#</a></h2>
+<h3 id="zadanie-6-segmentacja-klientow-centrum-handlowego-10-pkt">Zadanie 6 — Segmentacja klientów centrum handlowego (10 pkt)<a class="headerlink" href="#zadanie-6-segmentacja-klientow-centrum-handlowego-10-pkt" title="Permanent link">#</a></h3>
+<blockquote>
+<p><strong>Uwaga:</strong> przykłady liczyliśmy na danych syntetycznych (<code>make_blobs</code>). <strong>Zadanie robisz na prawdziwym zbiorze — Mall Customers</strong> (dane klientów centrum handlowego: wiek, dochód roczny, „spending score"). Celem jest <strong>podzielić klientów na segmenty</strong> — bez żadnych etykiet, bo nikt ich nie nadał. To klasyczne zadanie segmentacji marketingowej.</p>
+</blockquote>
+<p>Zbiór wczytasz bezpośrednio z URL-a (to publiczny, popularny dataset):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/SteffiPeTaffy/machineLearningAZ/master/Machine</span><span class="si">%20Le</span><span class="s2">arning%20A-Z%20Template</span><span class="si">%20F</span><span class="s2">older/Part</span><span class="si">%204%</span><span class="s2">20-%20Clustering/Section</span><span class="si">%2025%</span><span class="s2">20-%20Hierarchical%20Clustering/Mall_Customers.csv&quot;</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Kolumny: <code>CustomerID</code>, <code>Genre</code> (płeć), <code>Age</code>, <code>Annual Income (k$)</code>, <code>Spending Score (1-100)</code>.</p>
+<blockquote>
+<p>Jeśli URL nie zadziała — pobierz „Mall_Customers.csv" z Kaggle (Mall Customer Segmentation Data) i wgraj do Colaba przez <code>files.upload()</code>.</p>
+</blockquote>
+<hr />
+<h4 id="etap-1-przygotowanie-danych-2-pkt">🏋️ Etap 1 — Przygotowanie danych (2 pkt)<a class="headerlink" href="#etap-1-przygotowanie-danych-2-pkt" title="Permanent link">#</a></h4>
+<ol>
+<li>
+<p><strong>(0.5 pkt)</strong> Wyświetl <code>shape</code>, <code>head()</code> i <code>info()</code>. W komentarzu napisz, ilu jest klientów i czy są braki danych.</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Wybierz do klastrowania <strong>dwie cechy numeryczne</strong>: <code>Annual Income (k$)</code> oraz <code>Spending Score (1-100)</code> (zostawiamy 2 cechy, żeby dało się <strong>narysować</strong> wynik na płaszczyźnie). Zapisz je jako <code>X</code>. <strong>Przeskaluj</strong> je <code>StandardScaler</code> (przypomnienie z zajęć 5 — algorytmy liczą odległości!).</p>
+</li>
+<li>
+<p><strong>(0.5 pkt)</strong> Narysuj wykres rozrzutu surowych danych (<code>income</code> vs <code>spending</code>). W komentarzu napisz, ile grup wstępnie widzisz „na oko".</p>
+</li>
+</ol>
+<hr />
+<h4 id="etap-2-k-means-dobor-liczby-klastrow-4-pkt">🏋️ Etap 2 — K-Means + dobór liczby klastrów (4 pkt)<a class="headerlink" href="#etap-2-k-means-dobor-liczby-klastrow-4-pkt" title="Permanent link">#</a></h4>
+<ol>
+<li>
+<p><strong>(1.5 pkt)</strong> Wykonaj <strong>metodę łokcia</strong> dla <code>k</code> od 1 do 10 (zbierz <code>inertia_</code> i narysuj wykres). W komentarzu wskaż, gdzie jest „łokieć".</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Policz <strong>silhouette score</strong> dla <code>k</code> od 2 do 8. Wskaż <code>k</code> o najwyższej wartości. Czy zgadza się z łokciem?</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>KMeans</code> z wybranym <code>k</code> i narysuj klastry różnymi kolorami <strong>wraz z centroidami</strong> (czerwone <code>X</code>).</p>
+</li>
+<li>
+<p><strong>(0.5 pkt)</strong> W komentarzu <strong>opisz segmenty po ludzku</strong> — np. „klaster 0 = wysoki dochód + niskie wydatki = klienci oszczędni". To jest sedno segmentacji: liczby muszą zamienić się w wnioski biznesowe.</p>
+</li>
+</ol>
+<hr />
+<h4 id="etap-3-hierarchiczna-i-dbscan-3-pkt">🏋️ Etap 3 — Hierarchiczna i DBSCAN (3 pkt)<a class="headerlink" href="#etap-3-hierarchiczna-i-dbscan-3-pkt" title="Permanent link">#</a></h4>
+<ol>
+<li>
+<p><strong>(1 pkt)</strong> Narysuj <strong>dendrogram</strong> (<code>scipy.cluster.hierarchy.linkage</code> + <code>dendrogram</code>, <code>method="ward"</code>). W komentarzu napisz, ile klastrów sugeruje cięcie dendrogramu.</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>AgglomerativeClustering</code> z tą samą liczbą klastrów co w K-Means i narysuj wynik. Porównaj w komentarzu z podziałem z K-Means — czy segmenty wyszły podobne?</p>
+</li>
+<li>
+<p><strong>(1 pkt)</strong> Wytrenuj <code>DBSCAN</code> (dobierz <code>eps</code> i <code>min_samples</code> — zacznij od <code>eps=0.5</code>, <code>min_samples=5</code> na przeskalowanych danych i <strong>poeksperymentuj</strong>). Narysuj wynik z <strong>szumem na osobnym kolorze</strong>. W komentarzu: ilu klientów DBSCAN uznał za <strong>outliery</strong> (etykieta <code>-1</code>) i czy to ma sens (np. nietypowy profil wydatków)?</p>
+</li>
+</ol>
+<hr />
+<h4 id="etap-4-wnioski-1-pkt">🏋️ Etap 4 — Wnioski (1 pkt)<a class="headerlink" href="#etap-4-wnioski-1-pkt" title="Permanent link">#</a></h4>
+<ol>
+<li><strong>(1 pkt)</strong> W komentarzu (3–5 zdań) podsumuj: <strong>który algorytm dał najsensowniejszy podział</strong> dla tego zbioru i dlaczego? Który segment klientów jest najciekawszy z punktu widzenia marketingu (np. „wysoki dochód, wysokie wydatki — VIP-y, warci programu lojalnościowego")?</li>
+</ol>
+<hr />
+<h2 id="podsumowanie-punktacji">Podsumowanie punktacji<a class="headerlink" href="#podsumowanie-punktacji" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Etap</th>
+<th>Temat</th>
+<th>Punkty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Przygotowanie danych (wybór cech, skalowanie)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>K-Means + łokieć + silhouette + opis segmentów</td>
+<td>4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Hierarchiczna (dendrogram) + DBSCAN (szum)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Wnioski i porównanie algorytmów</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Suma</strong></td>
+<td></td>
+<td><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>To krótsze zajęcia — maksymalnie <strong>10 pkt</strong> zdobywasz, prezentując rozwiązanie prowadzącemu na zajęciach. Zadanie wysyłasz na Moodle najpóźniej dzień przed... no właśnie, to ostatnie zajęcia — termin oddania ustalimy wspólnie. 🎓</p>
+</blockquote>
+<hr />
+<h2 id="to-juz-koniec-kursu-co-dalej">To już koniec kursu — co dalej?<a class="headerlink" href="#to-juz-koniec-kursu-co-dalej" title="Permanent link">#</a></h2>
+<p>Przeszliśmy razem całą drogę: od podstaw Pythona i klas (zajęcia 1–2), przez NLP (3), regresję (4) i klasyfikację (5), aż po uczenie nienadzorowane (dziś). Masz teraz solidny fundament Data Science w Pythonie.</p>
+<p>Naturalne kierunki dalej:</p>
+<ul>
+<li><strong>Strojenie hiperparametrów</strong> — <code>GridSearchCV</code>, <code>RandomizedSearchCV</code> (jak automatycznie znaleźć najlepsze <code>k</code>, <code>max_depth</code> itd.),</li>
+<li><strong>Pipeline'y w scikit-learn</strong> — <code>Pipeline</code> spinający skalowanie + model w jeden obiekt (koniec z ręcznym <code>fit_transform</code>),</li>
+<li><strong>Redukcja wymiarów</strong> — <strong>PCA</strong>, <strong>t-SNE</strong>, <strong>UMAP</strong> (drugi wielki dział uczenia nienadzorowanego — wizualizacja danych wielowymiarowych),</li>
+<li><strong>Sieci neuronowe</strong> — <code>PyTorch</code> / <code>TensorFlow</code>, gdy dane przestają być tabelaryczne (obrazy, dźwięk, tekst).</li>
+</ul>
+<hr />
+<h2 id="materiay-dodatkowe">Materiały dodatkowe<a class="headerlink" href="#materiay-dodatkowe" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/clustering.html">scikit-learn — Clustering (przegląd wszystkich algorytmów)</a></li>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">scikit-learn — <code>KMeans</code></a></li>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html">scikit-learn — <code>DBSCAN</code></a></li>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html">scikit-learn — <code>AgglomerativeClustering</code></a></li>
+<li><a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html">scikit-learn — silhouette analysis</a></li>
+<li><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html">scipy — dendrogramy (<code>linkage</code>)</a></li>
+<li><a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html">Porównanie algorytmów klastrowania — galeria scikit-learn</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

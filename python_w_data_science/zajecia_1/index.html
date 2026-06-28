@@ -1,0 +1,2348 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/python_w_data_science/zajecia_1/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../zajecia_2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zajęcia 1 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-1" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../jakosc_aplikacji/" class="md-tabs__link">
+          
+  
+  
+  Jakosc aplikacji
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_stron_internetowych_2/" class="md-tabs__link">
+          
+  
+  
+  Programowanie stron internetowych 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_wysokopoziomowe/" class="md-tabs__link">
+          
+  
+  
+  Programowanie wysokopoziomowe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../programowanie_zaawansowane/" class="md-tabs__link">
+          
+  
+  
+  Programowanie zaawansowane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Python w data science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../zarzadzanie_big_data/" class="md-tabs__link">
+          
+  
+  
+  Zarzadzanie big data
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakosc aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakosc aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python w data science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python w data science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#powtorzenie-podstaw-pythona-i-wstep-do-klas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Powtórzenie podstaw Pythona i wstęp do klas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typy-podstawowe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typy podstawowe
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Typy podstawowe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typowanie-dynamiczne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typowanie dynamiczne
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Listy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iteracja-po-liscie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteracja po liście
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sowniki-i-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Słowniki (i set)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Słowniki (i set)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#puapka-to-nie-zawsze-sownik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pułapka — {} to nie zawsze słownik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zagniezdzone-struktury-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zagnieżdżone struktury danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funkcje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funkcje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#klasy-wstep-do-oop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Klasy — wstęp do OOP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Klasy — wstęp do OOP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metody" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metody
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metoda-specjalna-__str__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metoda specjalna __str__
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walidacja-w-konstruktorze" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Walidacja w konstruktorze
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aczymy-wszystko-system-biblioteki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Łączymy wszystko — System Biblioteki
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#praca-projektowa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Praca projektowa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Praca projektowa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zadanie-1-mini-sklep-internetowy-10-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1 — Mini Sklep Internetowy (10 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarzadzanie big data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarzadzanie big data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-1">Zajęcia 1<a class="headerlink" href="#zajecia-1" title="Permanent link">#</a></h1>
+<h2 id="powtorzenie-podstaw-pythona-i-wstep-do-klas">Powtórzenie podstaw Pythona i wstęp do klas<a class="headerlink" href="#powtorzenie-podstaw-pythona-i-wstep-do-klas" title="Permanent link">#</a></h2>
+<p>Pierwsze zajęcia zaczynamy od krótkiego przypomnienia podstaw Pythona — typów danych, list, słowników, pętli i funkcji — a następnie przechodzimy do <strong>klas</strong>, które są punktem wyjścia do całego dalszego kursu.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>swobodnie operować na podstawowych typach i strukturach danych Pythona,</li>
+<li>iterować po kolekcjach na trzy różne sposoby (<code>for</code>, <code>for</code> + <code>range</code>, <code>while</code>),</li>
+<li>rozróżnić słownik od seta i wiedzieć, kiedy używać którego,</li>
+<li>zdefiniować własną klasę z konstruktorem i metodami,</li>
+<li>użyć metody specjalnej <code>__str__</code>, żeby Twój obiekt ładnie się drukował.</li>
+</ul>
+<hr />
+<h2 id="typy-podstawowe">Typy podstawowe<a class="headerlink" href="#typy-podstawowe" title="Permanent link">#</a></h2>
+<p>Cztery typy, których używa się najczęściej:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">liczby_calkowite</span> <span class="o">=</span> <span class="mi">100</span>         <span class="c1"># int</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">liczby_rzeczywiste</span> <span class="o">=</span> <span class="mf">3.14</span>      <span class="c1"># float</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">tekstowy</span> <span class="o">=</span> <span class="s2">&quot;Tekst tekst&quot;</span>       <span class="c1"># str</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">logiczny</span> <span class="o">=</span> <span class="kc">True</span>                <span class="c1"># bool</span>
+</span></code></pre></div>
+<p>Typ zmiennej sprawdzimy funkcją <code>type()</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">zmienna_a</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">zmienna_a</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">zmienna_a</span><span class="p">))</span>   <span class="c1"># 1 &lt;class &#39;int&#39;&gt;</span>
+</span></code></pre></div>
+<h3 id="typowanie-dynamiczne">Typowanie dynamiczne<a class="headerlink" href="#typowanie-dynamiczne" title="Permanent link">#</a></h3>
+<p>Python jest typowany <strong>dynamicznie</strong> — zmienna nie ma stałego typu. Tej samej zmiennej można w kolejnej linii przypisać wartość zupełnie innego typu:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">zmienna_a</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">zmienna_a</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">zmienna_a</span><span class="p">))</span>   <span class="c1"># 1 &lt;class &#39;int&#39;&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">zmienna_a</span> <span class="o">=</span> <span class="mf">1.5</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">zmienna_a</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">zmienna_a</span><span class="p">))</span>   <span class="c1"># 1.5 &lt;class &#39;float&#39;&gt;</span>
+</span></code></pre></div>
+<p>To wygodne, ale w większych projektach bywa źródłem błędów — dlatego później w kursie poznamy <strong>type hints</strong> i <strong>dataclasses</strong>, które przywracają trochę dyscypliny.</p>
+<hr />
+<h2 id="listy">Listy<a class="headerlink" href="#listy" title="Permanent link">#</a></h2>
+<p>Lista to <strong>uporządkowana kolekcja</strong> elementów. W Pythonie nie wymusza jednego typu — może mieszać wszystko ze wszystkim, łącznie z innymi listami:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">lista_a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">lista_b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="s2">&quot;tekst&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;inny tekst&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">]]</span>
+</span></code></pre></div>
+<p>Pustą listę tworzymy tak:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">lista_a</span> <span class="o">=</span> <span class="p">[]</span>          <span class="c1"># zapis &quot;literałowy&quot;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">lista_b</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>      <span class="c1"># konstruktor — to samo</span>
+</span></code></pre></div>
+<p>Dostęp do elementu po <strong>indeksie</strong> (od zera):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">lista_b</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>     <span class="c1"># 2.5</span>
+</span></code></pre></div>
+<h3 id="iteracja-po-liscie">Iteracja po liście<a class="headerlink" href="#iteracja-po-liscie" title="Permanent link">#</a></h3>
+<p>Trzy najczęstsze sposoby:</p>
+<p><strong>1. <code>for</code> przez element</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">lista_b</span><span class="p">:</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">element</span><span class="p">))</span>
+</span></code></pre></div>
+<p>Najczystszy zapis — używamy, gdy potrzebujemy tylko wartości.</p>
+<p><strong>2. <code>for</code> z <code>range()</code> przez indeks</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista_b</span><span class="p">)):</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">lista_b</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">lista_b</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+</span></code></pre></div>
+<p>Przydatne, gdy potrzebujemy znać indeks (np. żeby modyfikować element listy w miejscu).</p>
+<p><strong>3. <code>while</code></strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista_b</span><span class="p">):</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">lista_b</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">lista_b</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>   <span class="c1"># to samo co i = i + 1</span>
+</span></code></pre></div>
+<p>Używamy, gdy nie wiemy z góry, ile razy pętla się wykona — czekamy na warunek.</p>
+<hr />
+<h2 id="sowniki-i-set">Słowniki (i set)<a class="headerlink" href="#sowniki-i-set" title="Permanent link">#</a></h2>
+<p><strong>Słownik (dict)</strong> to kolekcja par <strong>klucz–wartość</strong>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">slownik_a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;imie&quot;</span><span class="p">:</span> <span class="s2">&quot;Jakub&quot;</span><span class="p">,</span> <span class="s2">&quot;nazwisko&quot;</span><span class="p">:</span> <span class="s2">&quot;Zalewski&quot;</span><span class="p">,</span> <span class="s2">&quot;miasto&quot;</span><span class="p">:</span> <span class="s2">&quot;Warszawa&quot;</span><span class="p">}</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">slownik_a</span><span class="p">[</span><span class="s2">&quot;imie&quot;</span><span class="p">])</span>   <span class="c1"># Jakub</span>
+</span></code></pre></div>
+<p>Pusty słownik tworzymy przez <code>{}</code> lub <code>dict()</code>.</p>
+<h3 id="puapka-to-nie-zawsze-sownik">Pułapka — <code>{}</code> to nie zawsze słownik<a class="headerlink" href="#puapka-to-nie-zawsze-sownik" title="Permanent link">#</a></h3>
+<p>Nawiasy klamrowe <strong>bez par klucz–wartość</strong> to <strong>set</strong> (zbiór), a nie słownik:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">to_jest_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">to_jest_set</span><span class="p">)</span>         <span class="c1"># {1, 2, 3}  — duplikaty znikają</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">to_jest_set</span><span class="p">))</span>   <span class="c1"># &lt;class &#39;set&#39;&gt;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">pusty_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>           <span class="c1"># pusty set</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="n">pusty_dict</span> <span class="o">=</span> <span class="p">{}</span>              <span class="c1"># pusty słownik</span>
+</span></code></pre></div>
+<p>Set to zbiór unikalnych wartości — przyda się, gdy chcemy zdeduplikować dane lub szybko sprawdzić przynależność (<code>x in zbior</code>).</p>
+<h3 id="zagniezdzone-struktury-danych">Zagnieżdżone struktury danych<a class="headerlink" href="#zagniezdzone-struktury-danych" title="Permanent link">#</a></h3>
+<p>Słowniki i listy łączą się dowolnie, więc można nimi zamodelować bardziej złożone dane:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">ksiazka_1</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;tytul&quot;</span><span class="p">:</span> <span class="s2">&quot;Harry Potter i kamień filozoficzny&quot;</span><span class="p">,</span> <span class="s2">&quot;autor&quot;</span><span class="p">:</span> <span class="s2">&quot;J.K. Rowling&quot;</span><span class="p">}</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">ksiazka_2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;tytul&quot;</span><span class="p">:</span> <span class="s2">&quot;Władca Pierścieni&quot;</span><span class="p">,</span> <span class="s2">&quot;autor&quot;</span><span class="p">:</span> <span class="s2">&quot;J.R.R. Tolkien&quot;</span><span class="p">}</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">biblioteka</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="s2">&quot;ksiazki&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">ksiazka_1</span><span class="p">,</span> <span class="n">ksiazka_2</span><span class="p">],</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="s2">&quot;czytelnicy&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Jan Kowalski&quot;</span><span class="p">,</span> <span class="s2">&quot;Elżbieta Nowak&quot;</span><span class="p">]</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="p">}</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="k">for</span> <span class="n">ksiazka</span> <span class="ow">in</span> <span class="n">biblioteka</span><span class="p">[</span><span class="s2">&quot;ksiazki&quot;</span><span class="p">]:</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tytuł: &#39;</span><span class="si">{</span><span class="n">ksiazka</span><span class="p">[</span><span class="s1">&#39;tytul&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&#39;, Autor: </span><span class="si">{</span><span class="n">ksiazka</span><span class="p">[</span><span class="s1">&#39;autor&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>To działa, ale ma wady — klucze trzeba pisać jako stringi (łatwo o literówkę), IDE nie podpowiada pól, brak walidacji, brak metod operujących na danych. Za chwilę zobaczymy, że <strong>lepszym narzędziem do tego są klasy</strong>.</p>
+<hr />
+<h2 id="funkcje">Funkcje<a class="headerlink" href="#funkcje" title="Permanent link">#</a></h2>
+<p>Funkcja to nazwany fragment kodu, który można wywoływać wielokrotnie:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">suma</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">suma</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>   <span class="c1"># 3</span>
+</span></code></pre></div>
+<p>Słowo kluczowe <code>def</code>, nazwa, parametry w nawiasach, dwukropek, blok kodu. <code>return</code> zwraca wartość — bez niego funkcja zwraca <code>None</code>.</p>
+<hr />
+<h2 id="klasy-wstep-do-oop">Klasy — wstęp do OOP<a class="headerlink" href="#klasy-wstep-do-oop" title="Permanent link">#</a></h2>
+<p>Wracamy do biblioteki. Zamiast modelować książkę słownikiem, zdefiniujemy <strong>klasę</strong> — szablon opisujący, "co to znaczy być książką":</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Ksiazka</span><span class="p">:</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tytul</span><span class="p">,</span> <span class="n">autor</span><span class="p">):</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tytul</span> <span class="o">=</span> <span class="n">tytul</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">autor</span> <span class="o">=</span> <span class="n">autor</span>
+</span></code></pre></div>
+<p>Co tu się dzieje:</p>
+<ul>
+<li><code>class Ksiazka:</code> — definicja klasy. Konwencjonalnie nazwy klas piszemy w <strong>PascalCase</strong> (każde słowo z dużej litery).</li>
+<li><code>__init__</code> — <strong>konstruktor</strong>, metoda uruchamiana automatycznie przy tworzeniu nowego obiektu.</li>
+<li><code>self</code> — referencja do <strong>konkretnego obiektu</strong>, na którym wywołujemy metodę. Pierwszy parametr każdej metody — Python przekazuje go automatycznie.</li>
+<li><code>self.tytul = tytul</code> — zapisanie wartości parametru jako atrybut tego konkretnego obiektu.</li>
+</ul>
+<p>Tworzenie obiektu (instancji klasy) wygląda jak wywołanie funkcji o nazwie klasy:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">ksiazka_1</span> <span class="o">=</span> <span class="n">Ksiazka</span><span class="p">(</span><span class="n">tytul</span><span class="o">=</span><span class="s2">&quot;Harry Potter i komnata tajemnic&quot;</span><span class="p">,</span> <span class="n">autor</span><span class="o">=</span><span class="s2">&quot;J.K. Rowling&quot;</span><span class="p">)</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">ksiazka_1</span><span class="o">.</span><span class="n">tytul</span><span class="p">)</span>    <span class="c1"># Harry Potter i komnata tajemnic</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">ksiazka_1</span><span class="o">.</span><span class="n">autor</span><span class="p">)</span>    <span class="c1"># J.K. Rowling</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">ksiazka_1</span><span class="p">))</span>    <span class="c1"># &lt;class &#39;__main__.Ksiazka&#39;&gt;</span>
+</span></code></pre></div>
+<h3 id="metody">Metody<a class="headerlink" href="#metody" title="Permanent link">#</a></h3>
+<p>Funkcje zdefiniowane wewnątrz klasy nazywamy <strong>metodami</strong>. Pierwszy parametr to zawsze <code>self</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Ksiazka</span><span class="p">:</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tytul</span><span class="p">,</span> <span class="n">autor</span><span class="p">):</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tytul</span> <span class="o">=</span> <span class="n">tytul</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">autor</span> <span class="o">=</span> <span class="n">autor</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">pokaz_tytul_i_autora</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tytuł:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tytul</span><span class="p">,</span> <span class="s2">&quot;Autor:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">autor</span><span class="p">)</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="n">ksiazka_1</span> <span class="o">=</span> <span class="n">Ksiazka</span><span class="p">(</span><span class="s2">&quot;Solaris&quot;</span><span class="p">,</span> <span class="s2">&quot;Stanisław Lem&quot;</span><span class="p">)</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="n">ksiazka_1</span><span class="o">.</span><span class="n">pokaz_tytul_i_autora</span><span class="p">()</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="c1"># Tytuł: Solaris Autor: Stanisław Lem</span>
+</span></code></pre></div>
+<p>Wywołanie <code>ksiazka_1.pokaz_tytul_i_autora()</code> Python tłumaczy pod spodem na <code>Ksiazka.pokaz_tytul_i_autora(ksiazka_1)</code>. Stąd <code>self</code> jako pierwszy parametr — to <strong>ten obiekt</strong>, na którym wywołaliśmy metodę.</p>
+<h3 id="metoda-specjalna-__str__">Metoda specjalna <code>__str__</code><a class="headerlink" href="#metoda-specjalna-__str__" title="Permanent link">#</a></h3>
+<p><code>__str__</code> to <strong>metoda specjalna</strong> (tzw. <em>dunder</em>, od <em>double underscore</em>), która mówi Pythonowi, jak obiekt ma się "drukować" przez <code>print()</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Ksiazka</span><span class="p">:</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tytul</span><span class="p">,</span> <span class="n">autor</span><span class="p">):</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tytul</span> <span class="o">=</span> <span class="n">tytul</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">autor</span> <span class="o">=</span> <span class="n">autor</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Tytuł: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">tytul</span><span class="si">}</span><span class="s2">, Autor: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">autor</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="n">ksiazka_1</span> <span class="o">=</span> <span class="n">Ksiazka</span><span class="p">(</span><span class="s2">&quot;Solaris&quot;</span><span class="p">,</span> <span class="s2">&quot;Stanisław Lem&quot;</span><span class="p">)</span>
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">ksiazka_1</span><span class="p">)</span>
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="c1"># Tytuł: Solaris, Autor: Stanisław Lem</span>
+</span></code></pre></div>
+<p>Bez <code>__str__</code> <code>print(ksiazka_1)</code> wypisałby coś w stylu <code>&lt;__main__.Ksiazka object at 0x7f...&gt;</code> — adres w pamięci. Z <code>__str__</code> mamy czytelną reprezentację obiektu.</p>
+<h3 id="walidacja-w-konstruktorze">Walidacja w konstruktorze<a class="headerlink" href="#walidacja-w-konstruktorze" title="Permanent link">#</a></h3>
+<p>Konstruktor to dobre miejsce, żeby od razu sprawdzić, czy dane wejściowe mają sens. Jeśli nie — rzucamy <code>ValueError</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Ksiazka</span><span class="p">:</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tytul</span><span class="p">,</span> <span class="n">autor</span><span class="p">,</span> <span class="n">rok</span><span class="p">):</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">tytul</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">tytul</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Tytuł nie może być pusty.&quot;</span><span class="p">)</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">rok</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Rok musi być liczbą całkowitą.&quot;</span><span class="p">)</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tytul</span> <span class="o">=</span> <span class="n">tytul</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">autor</span> <span class="o">=</span> <span class="n">autor</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">rok</span> <span class="o">=</span> <span class="n">rok</span>
+</span></code></pre></div>
+<p>Dzięki temu <strong>nie da się stworzyć obiektu w niepoprawnym stanie</strong>. Błąd wyłapujemy w momencie konstrukcji, a nie pół godziny później przy pierwszym użyciu, kiedy ciężko już zrozumieć, skąd wziął się pusty tytuł.</p>
+<hr />
+<h2 id="aczymy-wszystko-system-biblioteki">Łączymy wszystko — System Biblioteki<a class="headerlink" href="#aczymy-wszystko-system-biblioteki" title="Permanent link">#</a></h2>
+<p>Mając klasę <code>Ksiazka</code>, zbudujmy drugą klasę — <code>Biblioteka</code> — która <strong>przechowuje listę książek</strong> i operuje na nich. Pokazuje to, jak klasy ze sobą współpracują.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Ksiazka</span><span class="p">:</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tytul</span><span class="p">,</span> <span class="n">autor</span><span class="p">,</span> <span class="n">rok</span><span class="p">):</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">tytul</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">tytul</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Tytuł nie może być pusty.&quot;</span><span class="p">)</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tytul</span> <span class="o">=</span> <span class="n">tytul</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">autor</span> <span class="o">=</span> <span class="n">autor</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">rok</span> <span class="o">=</span> <span class="n">rok</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">dostepna</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">wypozycz</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">dostepna</span><span class="p">:</span>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>            <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">tytul</span><span class="si">}</span><span class="s1">&quot; jest już wypożyczona.&#39;</span>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">dostepna</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Wypożyczono: &quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">tytul</span><span class="si">}</span><span class="s1">&quot;.&#39;</span>
+</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>
+</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">zwroc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dostepna</span><span class="p">:</span>
+</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a>            <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">tytul</span><span class="si">}</span><span class="s1">&quot; nie jest wypożyczona.&#39;</span>
+</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">dostepna</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Zwrócono: &quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">tytul</span><span class="si">}</span><span class="s1">&quot;.&#39;</span>
+</span><span id="__span-18-22"><a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a>
+</span><span id="__span-18-23"><a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-18-24"><a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a>        <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;dostępna&quot;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dostepna</span> <span class="k">else</span> <span class="s2">&quot;wypożyczona&quot;</span>
+</span><span id="__span-18-25"><a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">tytul</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">autor</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">rok</span><span class="si">}</span><span class="s2">) [</span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s2">]&quot;</span>
+</span><span id="__span-18-26"><a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a>
+</span><span id="__span-18-27"><a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a>
+</span><span id="__span-18-28"><a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="k">class</span><span class="w"> </span><span class="nc">Biblioteka</span><span class="p">:</span>
+</span><span id="__span-18-29"><a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a>
+</span><span id="__span-18-30"><a id="__codelineno-18-30" name="__codelineno-18-30" href="#__codelineno-18-30"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nazwa</span><span class="o">=</span><span class="s2">&quot;Biblioteka&quot;</span><span class="p">):</span>
+</span><span id="__span-18-31"><a id="__codelineno-18-31" name="__codelineno-18-31" href="#__codelineno-18-31"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nazwa</span> <span class="o">=</span> <span class="n">nazwa</span>
+</span><span id="__span-18-32"><a id="__codelineno-18-32" name="__codelineno-18-32" href="#__codelineno-18-32"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">ksiazki</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-18-33"><a id="__codelineno-18-33" name="__codelineno-18-33" href="#__codelineno-18-33"></a>
+</span><span id="__span-18-34"><a id="__codelineno-18-34" name="__codelineno-18-34" href="#__codelineno-18-34"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">dodaj</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ksiazka</span><span class="p">):</span>
+</span><span id="__span-18-35"><a id="__codelineno-18-35" name="__codelineno-18-35" href="#__codelineno-18-35"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">ksiazki</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ksiazka</span><span class="p">)</span>
+</span><span id="__span-18-36"><a id="__codelineno-18-36" name="__codelineno-18-36" href="#__codelineno-18-36"></a>
+</span><span id="__span-18-37"><a id="__codelineno-18-37" name="__codelineno-18-37" href="#__codelineno-18-37"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">szukaj</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fraza</span><span class="p">):</span>
+</span><span id="__span-18-38"><a id="__codelineno-18-38" name="__codelineno-18-38" href="#__codelineno-18-38"></a>        <span class="n">fraza</span> <span class="o">=</span> <span class="n">fraza</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span><span id="__span-18-39"><a id="__codelineno-18-39" name="__codelineno-18-39" href="#__codelineno-18-39"></a>        <span class="k">return</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ksiazki</span>
+</span><span id="__span-18-40"><a id="__codelineno-18-40" name="__codelineno-18-40" href="#__codelineno-18-40"></a>                <span class="k">if</span> <span class="n">fraza</span> <span class="ow">in</span> <span class="n">k</span><span class="o">.</span><span class="n">tytul</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">or</span> <span class="n">fraza</span> <span class="ow">in</span> <span class="n">k</span><span class="o">.</span><span class="n">autor</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
+</span><span id="__span-18-41"><a id="__codelineno-18-41" name="__codelineno-18-41" href="#__codelineno-18-41"></a>
+</span><span id="__span-18-42"><a id="__codelineno-18-42" name="__codelineno-18-42" href="#__codelineno-18-42"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">dostepne</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-18-43"><a id="__codelineno-18-43" name="__codelineno-18-43" href="#__codelineno-18-43"></a>        <span class="k">return</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ksiazki</span> <span class="k">if</span> <span class="n">k</span><span class="o">.</span><span class="n">dostepna</span><span class="p">]</span>
+</span><span id="__span-18-44"><a id="__codelineno-18-44" name="__codelineno-18-44" href="#__codelineno-18-44"></a>
+</span><span id="__span-18-45"><a id="__codelineno-18-45" name="__codelineno-18-45" href="#__codelineno-18-45"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-18-46"><a id="__codelineno-18-46" name="__codelineno-18-46" href="#__codelineno-18-46"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">ksiazki</span><span class="p">:</span>
+</span><span id="__span-18-47"><a id="__codelineno-18-47" name="__codelineno-18-47" href="#__codelineno-18-47"></a>            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nazwa</span><span class="si">}</span><span class="s2">: brak książek.&quot;</span>
+</span><span id="__span-18-48"><a id="__codelineno-18-48" name="__codelineno-18-48" href="#__codelineno-18-48"></a>        <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nazwa</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ksiazki</span><span class="p">)</span><span class="si">}</span><span class="s2"> książek):&quot;</span><span class="p">]</span>
+</span><span id="__span-18-49"><a id="__codelineno-18-49" name="__codelineno-18-49" href="#__codelineno-18-49"></a>        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ksiazki</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-18-50"><a id="__codelineno-18-50" name="__codelineno-18-50" href="#__codelineno-18-50"></a>            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-18-51"><a id="__codelineno-18-51" name="__codelineno-18-51" href="#__codelineno-18-51"></a>        <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Użycie:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">lib</span> <span class="o">=</span> <span class="n">Biblioteka</span><span class="p">(</span><span class="s2">&quot;Biblioteka Uczelniana&quot;</span><span class="p">)</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">lib</span><span class="o">.</span><span class="n">dodaj</span><span class="p">(</span><span class="n">Ksiazka</span><span class="p">(</span><span class="s2">&quot;Solaris&quot;</span><span class="p">,</span> <span class="s2">&quot;Stanisław Lem&quot;</span><span class="p">,</span> <span class="mi">1961</span><span class="p">))</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">lib</span><span class="o">.</span><span class="n">dodaj</span><span class="p">(</span><span class="n">Ksiazka</span><span class="p">(</span><span class="s2">&quot;Cyberiada&quot;</span><span class="p">,</span> <span class="s2">&quot;Stanisław Lem&quot;</span><span class="p">,</span> <span class="mi">1965</span><span class="p">))</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="n">lib</span><span class="o">.</span><span class="n">dodaj</span><span class="p">(</span><span class="n">Ksiazka</span><span class="p">(</span><span class="s2">&quot;Lalka&quot;</span><span class="p">,</span> <span class="s2">&quot;Bolesław Prus&quot;</span><span class="p">,</span> <span class="mi">1890</span><span class="p">))</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">lib</span><span class="p">)</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="c1"># Wypożyczenie</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">lib</span><span class="o">.</span><span class="n">ksiazki</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">wypozycz</span><span class="p">())</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="c1"># Wyszukiwanie po autorze</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">lib</span><span class="o">.</span><span class="n">szukaj</span><span class="p">(</span><span class="s2">&quot;lem&quot;</span><span class="p">):</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Zwróć uwagę na podział odpowiedzialności:</p>
+<ul>
+<li><code>Ksiazka</code> wie wszystko o <strong>pojedynczej książce</strong> — tytuł, autor, rok, status, jak się ją wypożycza.</li>
+<li><code>Biblioteka</code> wie wszystko o <strong>kolekcji książek</strong> — jak je dodawać, wyszukiwać, jakie są dostępne.</li>
+</ul>
+<p>To podstawowa zasada OOP: <strong>każda klasa odpowiada za swój kawałek logiki</strong>. <code>Biblioteka</code> nie zagląda w pola <code>Ksiazka</code> i nie ustawia ich ręcznie — woła <code>wypozycz()</code> i ufa, że książka sama wie, co zrobić ze swoim stanem.</p>
+<hr />
+<h2 id="praca-projektowa">Praca projektowa<a class="headerlink" href="#praca-projektowa" title="Permanent link">#</a></h2>
+<h3 id="zadanie-1-mini-sklep-internetowy-10-pkt">Zadanie 1 — Mini Sklep Internetowy (10 pkt)<a class="headerlink" href="#zadanie-1-mini-sklep-internetowy-10-pkt" title="Permanent link">#</a></h3>
+<p><strong>Czas:</strong> ok. 60 minut
+<strong>Środowisko:</strong> Google Colab</p>
+<p>Zaimplementuj dwie klasy tworzące uproszczony system sklepu: <code>Product</code> (produkt) i <code>Cart</code> (koszyk). Klasy mają ze sobą współpracować — koszyk przechowuje produkty i operuje na ich danych.</p>
+<p><strong>Klasa <code>Product</code>:</strong></p>
+<ul>
+<li>konstruktor: <code>name</code> (str), <code>price</code> (float), <code>quantity</code> (int, domyślnie 0)</li>
+<li>walidacja: nazwa nie może być pusta, cena ani ilość nie mogą być ujemne — w razie błędu <code>raise ValueError</code></li>
+<li>metody:</li>
+<li><code>is_available()</code> — <code>True</code> jeśli <code>quantity &gt; 0</code></li>
+<li><code>sell(amount=1)</code> — zmniejsza stan; obsługuje brak stanu i <code>amount &lt;= 0</code></li>
+<li><code>restock(amount)</code> — zwiększa stan; obsługuje <code>amount &lt;= 0</code></li>
+<li><code>__str__</code> — np. <code>Laptop - 3499.99 zł [5 szt.]</code> lub <code>Słuchawki - 199.99 zł [BRAK]</code> przy <code>quantity == 0</code></li>
+</ul>
+<p><strong>Klasa <code>Cart</code>:</strong></p>
+<ul>
+<li>konstruktor: bez argumentów; tworzy pustą listę <code>items</code> ze słownikami <code>{"product": Product, "quantity": int}</code></li>
+<li>metody:</li>
+<li><code>add(product, quantity=1)</code> — dodaje produkt; jeśli już jest w koszyku, zwiększa ilość; sprawdza stan magazynowy</li>
+<li><code>remove(product_name)</code> — usuwa po nazwie (case-insensitive)</li>
+<li><code>total()</code> — łączna kwota koszyka (<code>float</code>)</li>
+<li><code>checkout()</code> — finalizuje zakup: na każdym produkcie woła <code>sell()</code>, wyświetla podsumowanie i czyści koszyk</li>
+<li><code>__str__</code> — zawartość koszyka z sumą</li>
+</ul>
+<p><strong>Plan testów (kolejne komórki w notebooku):</strong></p>
+<ol>
+<li>Utwórz min. <strong>4 produkty</strong> (jeden z <code>quantity=0</code>).</li>
+<li>Wyświetl wszystkie produkty (<code>print</code>).</li>
+<li>Sprawdź dostępność metodą <code>is_available()</code>.</li>
+<li>Uzupełnij stan niedostępnego produktu metodą <code>restock()</code>.</li>
+<li>Stwórz koszyk i dodaj kilka produktów w różnych ilościach.</li>
+<li>Wyświetl koszyk.</li>
+<li>Usuń jeden produkt z koszyka i wyświetl ponownie.</li>
+<li>Wywołaj <code>checkout()</code>.</li>
+<li>Sprawdź, że stany magazynowe spadły poprawnie.</li>
+<li>Sprawdź, że koszyk jest pusty po finalizacji.</li>
+</ol>
+<p><strong>Wskazówki:</strong></p>
+<ul>
+<li><code>self</code> to referencja do konkretnej instancji — każdy produkt i każdy koszyk mają swój własny stan.</li>
+<li><code>__str__</code> wywołuje się automatycznie przez <code>print()</code>.</li>
+<li>Formatowanie kwot: <code>f"{cena:.2f}"</code> (dwa miejsca po przecinku).</li>
+<li>Porównania nazw bez wielkości liter: <code>.lower()</code>.</li>
+</ul>
+<p><strong>Punktacja (10 pkt):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Punkty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klasa <code>Product</code> z atrybutami i walidacją w konstruktorze</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Metody <code>is_available</code>, <code>sell</code>, <code>restock</code> (w tym obsługa błędnych argumentów)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Metody <code>__str__</code> w <code>Product</code> i <code>Cart</code> (czytelne formatowanie)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Klasa <code>Cart</code> z metodami <code>add</code> / <code>remove</code> / <code>total</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>checkout()</code> — finalizacja zakupu i czyszczenie koszyka</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Realizacja planu testów w notebooku (1–10)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
