@@ -1,5 +1,10 @@
 # Wprowadzenie
 
+!!! warning "Strona archiwalna"
+
+    To archiwalna strona przedmiotu **Zarządzanie Big Data**, prowadzonego
+    w semestrze letnim roku akademickiego 2025/26.
+
 ## Plan zajęć
 
 - **Zajęcia 1 (_2026-03-22_):** Pozyskiwanie i wczytywanie danych z różnych źródeł

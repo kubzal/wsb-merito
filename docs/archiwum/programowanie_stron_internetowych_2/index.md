@@ -1,6 +1,9 @@
 # Wprowadzenie
 
-Strona przedmiotu Programowanie stron internetowych 2
+!!! warning "Strona archiwalna"
+
+    To archiwalna strona przedmiotu **Programowanie stron internetowych 2**, prowadzonego
+    w semestrze letnim roku akademickiego 2025/26.
 
 ## Plan zajęć
 

@@ -1,5 +1,10 @@
 # Wprowadzenie
 
+!!! warning "Strona archiwalna"
+
+    To archiwalna strona przedmiotu **Programowanie zaawansowane**, prowadzonego
+    w semestrze letnim roku akademickiego 2025/26.
+
 ## Plan zajęć
 
 - **Zajęcia 1 (_2026-03-19_):** Delegaty (Action, Func, Predicate), wyrażenia lambda, LINQ (składnia zapytań i metod, projekcje, joiny)

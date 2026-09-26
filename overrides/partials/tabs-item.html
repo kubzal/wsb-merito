@@ -1,0 +1,54 @@
+{#-
+  Nadpisanie partiala z Material for MkDocs.
+  Zakładka posiadająca podstrony (np. "Archiwum") renderuje dodatkowo
+  listę rozwijaną z przedmiotami, pokazywaną po najechaniu myszą.
+-#}
+{% macro render_content(nav_item, ref) %}
+  {% set ref = ref or nav_item %}
+  {% if nav_item == ref or "navigation.indexes" in features %}
+    {% if nav_item.is_index and nav_item.meta.icon %}
+      {% include ".icons/" ~ nav_item.meta.icon ~ ".svg" %}
+    {% endif %}
+  {% endif %}
+  {{ ref.title }}
+{% endmacro %}
+{% macro link_url(nav_item) -%}
+  {%- if nav_item.children -%}
+    {{- link_url(nav_item.children | first) -}}
+  {%- else -%}
+    {{- nav_item.url | url -}}
+  {%- endif -%}
+{%- endmacro %}
+{% macro render(nav_item, ref) %}
+  {% set ref = ref or nav_item %}
+  {% set class = "md-tabs__item" %}
+  {% if ref.active %}
+    {% set class = class ~ " md-tabs__item--active" %}
+  {% endif %}
+  {% if nav_item.children %}
+    <li class="{{ class }} md-tabs__item--nested">
+      <a href="{{ link_url(nav_item) }}" class="md-tabs__link">
+        {{ render_content(nav_item, ref) }}
+      </a>
+      <ul class="md-tabs__dropdown">
+        {% for child in nav_item.children %}
+          {% set link_class = "md-tabs__dropdown-link" %}
+          {% if child.active %}
+            {% set link_class = link_class ~ " md-tabs__dropdown-link--active" %}
+          {% endif %}
+          <li class="md-tabs__dropdown-item">
+            <a href="{{ link_url(child) }}" class="{{ link_class }}">
+              {{ child.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% else %}
+    <li class="{{ class }}">
+      <a href="{{ nav_item.url | url }}" class="md-tabs__link">
+        {{ render_content(nav_item) }}
+      </a>
+    </li>
+  {% endif %}
+{% endmacro %}

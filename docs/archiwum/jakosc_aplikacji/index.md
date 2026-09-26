@@ -1,5 +1,10 @@
 # Wprowadzenie
 
+!!! warning "Strona archiwalna"
+
+    To archiwalna strona przedmiotu **Jakość aplikacji**, prowadzonego
+    w semestrze letnim roku akademickiego 2025/26.
+
 ## Plan zajęć
 
 - **Zajęcia 1 (_2026-03-28_ godz. 8:00 - 10:25 - 3h):** Testy manualne, piramida testów i pisanie testów jednostkowych w pytest.

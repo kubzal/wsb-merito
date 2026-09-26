@@ -19,14 +19,25 @@ Materiały będą sukcesywnie uzupełniane w trakcie semestru, więc warto tu za
 
 ## Zajęcia
 
-W semestrze letnim w roku akademickim 2025/26 prowadzę zajęcia:
+W semestrze zimowym w roku akademickim 2026/27 prowadzę zajęcia:
 
-  1. [Jakość aplikacji](jakosc_aplikacji/index.md)
-  2. [Programowanie stron internetowych 2](programowanie_stron_internetowych_2/index.md)
-  3. [Programowanie wysokopoziomowe (w Python)](programowanie_wysokopoziomowe/index.md)
-  4. [Programowanie zaawansowane (w C#)](programowanie_zaawansowane/index.md)
-  5. [Zaawansowane programowanie w języku Python dla Data Science](python_w_data_science/index.md)
-  6. [Zarządzanie Big Data](zarzadzanie_big_data/index.md)
+  1. [Data Science](semestr_zimowy_2026_27/data_science/index.md)
+  2. [Data Science w Pythonie](semestr_zimowy_2026_27/data_science_w_pythonie/index.md)
+  3. [Metody analizy, przetwarzania i wizualizacji danych](semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/index.md)
+  4. [Systemy BIG DATA](semestr_zimowy_2026_27/systemy_big_data/index.md)
+  5. [Uczenie głębokie](semestr_zimowy_2026_27/uczenie_glebokie/index.md)
+  6. [Zarządzanie Big Data](semestr_zimowy_2026_27/zarzadzanie_big_data/index.md)
+
+## Archiwum
+
+Materiały do przedmiotów prowadzonych w semestrze letnim w roku akademickim 2025/26:
+
+  1. [Jakość aplikacji](archiwum/jakosc_aplikacji/index.md)
+  2. [Programowanie stron internetowych 2](archiwum/programowanie_stron_internetowych_2/index.md)
+  3. [Programowanie wysokopoziomowe (w Python)](archiwum/programowanie_wysokopoziomowe/index.md)
+  4. [Programowanie zaawansowane (w C#)](archiwum/programowanie_zaawansowane/index.md)
+  5. [Zaawansowane programowanie w języku Python dla Data Science](archiwum/python_w_data_science/index.md)
+  6. [Zarządzanie Big Data](archiwum/zarzadzanie_big_data/index.md)
 
 ## Kontakt
 

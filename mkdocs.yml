@@ -4,6 +4,7 @@ repo_url: https://github.com/kubzal/wsb-merito
 repo_name: kubzal/wsb-merito
 theme:
   name: material
+  custom_dir: overrides
   language: pl
   palette:
     scheme: slate
@@ -15,7 +16,67 @@ theme:
     - toc.integrate
   favicon: images/favicon.ico
   logo: images/favicon.ico
+nav:
+  - Hello world!: index.md
+  - Semestr zimowy 2026/27:
+      - Data Science:
+          - semestr_zimowy_2026_27/data_science/index.md
+      - Data Science w Pythonie:
+          - semestr_zimowy_2026_27/data_science_w_pythonie/index.md
+          - semestr_zimowy_2026_27/data_science_w_pythonie/zajecia_1.md
+      - Metody analizy, przetwarzania i wizualizacji danych:
+          - semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/index.md
+      - Systemy BIG DATA:
+          - semestr_zimowy_2026_27/systemy_big_data/index.md
+      - Uczenie głębokie:
+          - semestr_zimowy_2026_27/uczenie_glebokie/index.md
+          - semestr_zimowy_2026_27/uczenie_glebokie/zajecia_1.md
+      - Zarządzanie Big Data:
+          - semestr_zimowy_2026_27/zarzadzanie_big_data/index.md
+  - Archiwum:
+      - Jakość aplikacji:
+          - archiwum/jakosc_aplikacji/index.md
+          - archiwum/jakosc_aplikacji/zajecia_1.md
+          - archiwum/jakosc_aplikacji/zajecia_2.md
+          - archiwum/jakosc_aplikacji/zajecia_3.md
+      - Programowanie stron internetowych 2:
+          - archiwum/programowanie_stron_internetowych_2/index.md
+          - archiwum/programowanie_stron_internetowych_2/projekt.md
+          - archiwum/programowanie_stron_internetowych_2/zajecia_1.md
+          - archiwum/programowanie_stron_internetowych_2/zajecia_2.md
+          - archiwum/programowanie_stron_internetowych_2/zajecia_3.md
+      - Programowanie wysokopoziomowe:
+          - archiwum/programowanie_wysokopoziomowe/index.md
+          - archiwum/programowanie_wysokopoziomowe/zajecia_1.md
+          - archiwum/programowanie_wysokopoziomowe/zajecia_2.md
+          - archiwum/programowanie_wysokopoziomowe/zajecia_3.md
+          - archiwum/programowanie_wysokopoziomowe/zajecia_4.md
+      - Programowanie zaawansowane:
+          - archiwum/programowanie_zaawansowane/index.md
+          - archiwum/programowanie_zaawansowane/zajecia_1.md
+          - archiwum/programowanie_zaawansowane/zajecia_2.md
+          - archiwum/programowanie_zaawansowane/zajecia_3.md
+          - archiwum/programowanie_zaawansowane/zajecia_4.md
+          - archiwum/programowanie_zaawansowane/zajecia_5.md
+      - Python dla Data Science:
+          - archiwum/python_w_data_science/index.md
+          - archiwum/python_w_data_science/zajecia_1.md
+          - archiwum/python_w_data_science/zajecia_2.md
+          - archiwum/python_w_data_science/zajecia_3.md
+          - archiwum/python_w_data_science/zajecia_4.md
+          - archiwum/python_w_data_science/zajecia_5.md
+          - archiwum/python_w_data_science/zajecia_6.md
+      - Zarządzanie Big Data:
+          - archiwum/zarzadzanie_big_data/index.md
+          - archiwum/zarzadzanie_big_data/projekt_zaliczeniowy.md
+          - archiwum/zarzadzanie_big_data/zajecia_1.md
+          - archiwum/zarzadzanie_big_data/zajecia_2.md
+          - archiwum/zarzadzanie_big_data/zajecia_3.md
+          - archiwum/zarzadzanie_big_data/zajecia_4.md
+extra_css:
+  - stylesheets/extra.css
 markdown_extensions:
+  - admonition
   - toc:
       permalink: "#"
   - attr_list

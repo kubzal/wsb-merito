@@ -1,5 +1,10 @@
 # Wprowadzenie
 
+!!! warning "Strona archiwalna"
+
+    To archiwalna strona przedmiotu **Programowanie wysokopoziomowe**, prowadzonego
+    w semestrze letnim roku akademickiego 2025/26.
+
 ## Plan zajęć
 
 - **Zajęcia 1 (_2026-03-22_):** Wprowadzenie, środowisko pracy, paradygmaty programowania, programowanie strukturalne

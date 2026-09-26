@@ -1,6 +1,9 @@
 # Wprowadzenie
 
-**Zaawansowane programowanie w języku Python dla Data Science**
+!!! warning "Strona archiwalna"
+
+    To archiwalna strona przedmiotu **Zaawansowane programowanie w języku Python dla Data Science**, prowadzonego
+    w semestrze letnim roku akademickiego 2025/26.
 
 ## Plan zajęć
 
