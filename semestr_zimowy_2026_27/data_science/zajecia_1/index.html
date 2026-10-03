@@ -1,0 +1,4316 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science/zajecia_1/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../data_science_w_pythonie/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Zajęcia 1 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-1" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-tabs__dropdown-link">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../systemy_big_data/" class="md-tabs__dropdown-link">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#od-excela-do-pythona-ta-sama-analiza-dwa-narzedzia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Od Excela do Pythona — ta sama analiza, dwa narzędzia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czym-jest-data-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czym jest Data Science
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Czym jest Data Science">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kto-sie-tym-zajmuje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kto się tym zajmuje
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jak-wyglada-projekt-analityczny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak wygląda projekt analityczny
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dane-na-ktorych-pracujemy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dane, na których pracujemy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czesc-1-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1: Excel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 1: Excel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pierwsze-spojrzenie-na-dane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pierwsze spojrzenie na dane
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sortowanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtrowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtrowanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kolumny-obliczeniowe-przychod-koszt-zysk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kolumny obliczeniowe — przychód, koszt, zysk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formuy-podsumowujace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formuły podsumowujące
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formuły podsumowujące">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formuy-warunkowe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formuły warunkowe
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kolumny-pomocnicze-miesiac-i-kwarta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kolumny pomocnicze — miesiąc i kwartał
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabela-przestawna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabela przestawna
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-czy-sprzedaz-naprawde-spada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case: czy sprzedaż naprawdę spadła?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wykres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wykres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gdzie-excel-zaczyna-bolec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gdzie Excel zaczyna boleć
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przerwa-10-minut" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przerwa — 10 minut
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czesc-2-to-samo-w-pythonie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2: to samo w Pythonie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Część 2: to samo w Pythonie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-colab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Colab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wczytanie-tego-samego-pliku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wczytanie tego samego pliku
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pierwsze-spojrzenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pierwsze spojrzenie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kolumna-obliczeniowa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kolumna obliczeniowa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#podsumowania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Podsumowania
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtrowanie_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtrowanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortowanie_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sortowanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupby-serce-analizy-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groupby — serce analizy danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daty-i-tabela-przestawna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Daty i tabela przestawna
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wykres_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wykres
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excel-kontra-python-sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Excel kontra Python — ściągawka
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Excel kontra Python — ściągawka">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-ktorego-w-koncu-uzywac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To którego w końcu używać?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-1-siec-kawiarni-12-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1 — Sieć kawiarni (12 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 1 — Sieć kawiarni (12 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-excel-ok-30-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — Excel (ok. 30 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-python-ok-30-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — Python (ok. 30 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-12-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (12 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-1">Zajęcia 1<a class="headerlink" href="#zajecia-1" title="Permanent link">#</a></h1>
+<h2 id="od-excela-do-pythona-ta-sama-analiza-dwa-narzedzia">Od Excela do Pythona — ta sama analiza, dwa narzędzia<a class="headerlink" href="#od-excela-do-pythona-ta-sama-analiza-dwa-narzedzia" title="Permanent link">#</a></h2>
+<p>Zaczynamy od rzeczy, którą większość z Was już zna: arkusza kalkulacyjnego.
+Weźmiemy prawdziwie wyglądający zbiór danych sprzedażowych, odpowiemy na nim na
+kilka pytań biznesowych — a potem zrobimy <strong>dokładnie to samo</strong> w Pythonie, na
+tym samym pliku, żeby zobaczyć, że to nie jest inny świat, tylko inne narzędzie
+do tej samej roboty.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>powiedzieć, czym zajmuje się Data Science i jak wygląda projekt analityczny,</li>
+<li>policzyć w Excelu przychód, koszt i marżę oraz podsumować dane formułami
+  warunkowymi,</li>
+<li>zbudować tabelę przestawną i wykres, i <strong>wyczytać z nich, co się stało w firmie</strong>,</li>
+<li>zrobić to samo w Pythonie: wczytać plik, przefiltrować, pogrupować, narysować,</li>
+<li>ocenić, kiedy Excel wystarczy, a kiedy zaczyna przeszkadzać.</li>
+</ul>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Czym jest Data Science</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>Excel: dane, sortowanie, filtrowanie</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>Excel: formuły i kolumny obliczeniowe</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>Excel: tabela przestawna i wykres</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>Przerwa</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>To samo w Pythonie — Colab i pandas</td>
+<td>35 min</td>
+</tr>
+<tr>
+<td>Excel kontra Python — podsumowanie</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 1</strong></td>
+<td><strong>60 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="czym-jest-data-science">Czym jest Data Science<a class="headerlink" href="#czym-jest-data-science" title="Permanent link">#</a></h2>
+<p>Data Science to wyciąganie z danych odpowiedzi na pytania, na które nie da się
+odpowiedzieć „na oko". Nie chodzi o to, żeby mieć dużo danych — chodzi o to, żeby
+z nich coś <strong>wynikało</strong>.</p>
+<p>Typowe pytania, które w firmie trafiają do analityka:</p>
+<ul>
+<li>Dlaczego sprzedaż spadła w ostatnim kwartale i czy to problem, czy sezonowość?</li>
+<li>Którzy klienci najprawdopodobniej odejdą do konkurencji w przyszłym miesiącu?</li>
+<li>Czy warto dać rabat 10%, czy zjemy nim całą marżę?</li>
+<li>Komu możemy bezpiecznie udzielić kredytu?</li>
+</ul>
+<p>Zwróć uwagę, że w każdym z nich <strong>najpierw jest pytanie, potem dane</strong>. Odwrotna
+kolejność — „mamy dane, zobaczmy co z nich wyjdzie" — kończy się zwykle ładnym
+wykresem, z którego nic nie wynika.</p>
+<h3 id="kto-sie-tym-zajmuje">Kto się tym zajmuje<a class="headerlink" href="#kto-sie-tym-zajmuje" title="Permanent link">#</a></h3>
+<p>Nazwy stanowisk bywają mylące, ale podział jest mniej więcej taki:</p>
+<table>
+<thead>
+<tr>
+<th>Rola</th>
+<th>Czym się zajmuje</th>
+<th>Typowe narzędzia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data Analyst</strong></td>
+<td>opisuje, co się wydarzyło; raporty, dashboardy</td>
+<td>Excel, SQL, Power BI</td>
+</tr>
+<tr>
+<td><strong>Data Scientist</strong></td>
+<td>prognozuje, co się wydarzy; modele, eksperymenty</td>
+<td>Python, R, SQL</td>
+</tr>
+<tr>
+<td><strong>Data Engineer</strong></td>
+<td>buduje rurociągi, którymi płyną dane</td>
+<td>SQL, Spark, chmura</td>
+</tr>
+</tbody>
+</table>
+<p>Na tym przedmiocie stoimy głównie w butach <strong>analityka</strong>, a na ostatnich zajęciach
+wejdziemy jedną nogą w buty <strong>data scientista</strong>.</p>
+<h3 id="jak-wyglada-projekt-analityczny">Jak wygląda projekt analityczny<a class="headerlink" href="#jak-wyglada-projekt-analityczny" title="Permanent link">#</a></h3>
+<p>Prawie każdy projekt przechodzi przez te same etapy:</p>
+<ol>
+<li><strong>Pytanie</strong> — co konkretnie chcemy wiedzieć i jaką decyzję to zmieni.</li>
+<li><strong>Zebranie danych</strong> — pliki, baza, system sprzedażowy.</li>
+<li><strong>Czyszczenie</strong> — braki, duplikaty, literówki, złe formaty. Zwykle najdłuższy etap.</li>
+<li><strong>Analiza</strong> — statystyki, grupowania, wykresy.</li>
+<li><strong>Modelowanie</strong> — jeśli pytanie dotyczy przyszłości.</li>
+<li><strong>Komunikacja</strong> — wniosek i rekomendacja. Analiza, której nikt nie zrozumiał,
+   nie istnieje.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Gdzie jesteśmy dzisiaj</p>
+<p>Dziś robimy punkty 1, 2, 4 i 6 — i to dwa razy: raz w Excelu, raz w Pythonie.
+Czyszczenie danych (3) to temat zajęć 3, a modelowanie (5) — zajęć 4.</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Zasada, o której warto pamiętać przez cały semestr</p>
+<p>Liczba bez interpretacji jest bezużyteczna. „Przychód wyniósł 3 835 357 zł" to
+nie jest wniosek. Wnioskiem jest dopiero: „przychód spadł o 10% i wiemy,
+który region za to odpowiada".</p>
+</div>
+<hr />
+<h2 id="dane-na-ktorych-pracujemy">Dane, na których pracujemy<a class="headerlink" href="#dane-na-ktorych-pracujemy" title="Permanent link">#</a></h2>
+<p>Pracujemy na danych sprzedażowych fikcyjnej sieci sklepów RTV/AGD za <strong>cały
+2025 rok</strong>. Każdy wiersz to jedna transakcja: co, gdzie, kiedy i za ile.</p>
+<p>Pobierz plik w wygodnym dla siebie formacie — <strong>to ten sam zbiór danych</strong>:</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25M7 13.06l1.18 2.22h1.79L8 12.06l1.93-3.17H8.22L7.13 10.9l-.04.06-.03.07q-.26-.53-.56-1.07-.25-.53-.53-1.07H4.16l1.89 3.19L4 15.28h1.78m8.1 4.22V17H8.25v2.5m5.63-3.75v-3.12H12v3.12m1.88-4.37V8.25H12v3.13M13.88 7V4.5H8.25V7m12.5 12.5V17h-5.62v2.5m5.62-3.75v-3.12h-5.62v3.12m5.62-4.37V8.25h-5.62v3.13M20.75 7V4.5h-5.62V7Z"/></svg></span> <a href="../dane/sprzedaz_2025.xlsx"><strong>sprzedaz_2025.xlsx</strong></a> — do Excela</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8zm1 14-2 4h-3l2-4H9v-5h6zm-2-7V3.5L18.5 9z"/></svg></span> <a href="../dane/sprzedaz_2025.csv"><strong>sprzedaz_2025.csv</strong></a> — do Pythona</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Kolumna</th>
+<th>Co oznacza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data</code></td>
+<td>data transakcji (2025-01-01 … 2025-12-28)</td>
+</tr>
+<tr>
+<td><code>region</code></td>
+<td>region sprzedaży: Północ, Południe, Wschód, Zachód</td>
+</tr>
+<tr>
+<td><code>kategoria</code></td>
+<td>Elektronika, AGD, Meble</td>
+</tr>
+<tr>
+<td><code>produkt</code></td>
+<td>nazwa produktu</td>
+</tr>
+<tr>
+<td><code>sztuki</code></td>
+<td>ile sztuk sprzedano</td>
+</tr>
+<tr>
+<td><code>cena</code></td>
+<td>cena sprzedaży jednej sztuki (zł)</td>
+</tr>
+<tr>
+<td><code>koszt</code></td>
+<td>koszt zakupu jednej sztuki (zł)</td>
+</tr>
+</tbody>
+</table>
+<p>Zbiór ma <strong>576 wierszy danych</strong> — czyli w Excelu wiersze od 2 do 577, bo wiersz 1
+to nagłówki.</p>
+<div class="admonition tip">
+<p class="admonition-title">Trzy pytania, na które dziś odpowiemy</p>
+<ol>
+<li>Ile zarobiliśmy w 2025 roku i na czym zarabiamy najlepiej?</li>
+<li><strong>Zarząd twierdzi, że sprzedaż spadła w ostatnim kwartale. Czy to prawda?</strong></li>
+<li>Jeśli tak — co za to odpowiada?</li>
+</ol>
+</div>
+<hr />
+<h2 id="czesc-1-excel">Część 1: Excel<a class="headerlink" href="#czesc-1-excel" title="Permanent link">#</a></h2>
+<h3 id="pierwsze-spojrzenie-na-dane">Pierwsze spojrzenie na dane<a class="headerlink" href="#pierwsze-spojrzenie-na-dane" title="Permanent link">#</a></h3>
+<p>Otwórz <code>sprzedaz_2025.xlsx</code>. Zanim cokolwiek policzysz, zorientuj się, co masz
+w ręku — to nawyk, który zostaje na całe życie zawodowe.</p>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Jak</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zobaczyć, gdzie kończą się dane</td>
+<td><code>Ctrl</code> + <code>End</code> → powinno rzucić do <code>G577</code></td>
+</tr>
+<tr>
+<td>policzyć wiersze</td>
+<td>zaznacz kolumnę <code>A</code>, spójrz na pasek stanu na dole</td>
+</tr>
+<tr>
+<td>wrócić na górę</td>
+<td><code>Ctrl</code> + <code>Home</code></td>
+</tr>
+</tbody>
+</table>
+<p>Nagłówki są już zamrożone (<em>Widok → Zablokuj okienka</em>), więc przy przewijaniu
+w dół nie stracisz z oczu nazw kolumn.</p>
+<h3 id="sortowanie">Sortowanie<a class="headerlink" href="#sortowanie" title="Permanent link">#</a></h3>
+<p>Sortowanie odpowiada na pytania typu „co jest największe / najmniejsze".</p>
+<p>Kliknij dowolną komórkę w danych, potem <em>Dane → Sortuj</em>. Posortuj po kolumnie
+<code>sztuki</code> malejąco — na górze wylądują największe transakcje.</p>
+<div class="admonition warning">
+<p class="admonition-title">Najczęstszy błąd początkującego</p>
+<p>Nigdy nie zaznaczaj <strong>jednej kolumny</strong> przed sortowaniem. Excel posortuje
+wtedy tylko ją, a reszta wierszy zostanie na miejscu — dane się rozjadą
+i każdy wiersz będzie opisywał coś innego niż przed chwilą. Zaznacz
+<strong>jedną komórkę</strong> wewnątrz danych i pozwól Excelowi wykryć zakres.</p>
+</div>
+<h3 id="filtrowanie">Filtrowanie<a class="headerlink" href="#filtrowanie" title="Permanent link">#</a></h3>
+<p>Filtr odpowiada na pytanie „pokaż mi tylko te wiersze, które…".</p>
+<p>Zaznacz komórkę w danych i wciśnij <code>Ctrl</code> + <code>Shift</code> + <code>L</code>. W nagłówkach pojawią
+się strzałki. Spróbuj:</p>
+<ul>
+<li>pokazać tylko region <strong>Południe</strong>,</li>
+<li>pokazać tylko kategorię <strong>Elektronika</strong>,</li>
+<li>oba filtry naraz (działają jak „i", nie „lub").</li>
+</ul>
+<p>Zwróć uwagę na numery wierszy z lewej — robią się niebieskie i „przeskakują".
+To znaczy, że część wierszy jest <strong>ukryta, a nie usunięta</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Sortowanie kontra filtrowanie</p>
+<p><strong>Sortowanie</strong> trwale zmienia kolejność wierszy w pliku.
+<strong>Filtrowanie</strong> tylko ukrywa wiersze — wyłączasz filtr i wszystko wraca.
+Dlatego filtr jest bezpieczniejszy do „rozglądania się" po danych.</p>
+</div>
+<h3 id="kolumny-obliczeniowe-przychod-koszt-zysk">Kolumny obliczeniowe — przychód, koszt, zysk<a class="headerlink" href="#kolumny-obliczeniowe-przychod-koszt-zysk" title="Permanent link">#</a></h3>
+<p>W danych nie ma kolumny z przychodem. I bardzo dobrze — systemy sprzedażowe
+zapisują fakty (ile sztuk, po jakiej cenie), a nie wyliczenia. Policzenie
+wyliczeń to <strong>Twoja</strong> robota.</p>
+<p>Zanim zaczniesz klikać, ustalmy pojęcia — to ekonomia, nie Excel:</p>
+<table>
+<thead>
+<tr>
+<th>Pojęcie</th>
+<th>Wzór</th>
+<th>Co mówi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>przychód</strong></td>
+<td><code>sztuki × cena</code></td>
+<td>ile pieniędzy wpłynęło</td>
+</tr>
+<tr>
+<td><strong>koszt całkowity</strong></td>
+<td><code>sztuki × koszt</code></td>
+<td>ile nas to kosztowało</td>
+</tr>
+<tr>
+<td><strong>zysk</strong> (marża kwotowa)</td>
+<td><code>przychód − koszt całkowity</code></td>
+<td>ile zostało w kieszeni</td>
+</tr>
+<tr>
+<td><strong>marża %</strong></td>
+<td><code>zysk ÷ przychód</code></td>
+<td>ile groszy z każdej złotówki zostaje</td>
+</tr>
+</tbody>
+</table>
+<p>Przychód to <strong>nie</strong> jest zarobek. To rozróżnienie wraca dziś jeszcze dwa razy,
+w tym w zadaniu.</p>
+<p>W komórkach <code>H1</code>, <code>I1</code>, <code>J1</code> wpisz nagłówki <code>przychod</code>, <code>koszt_calkowity</code>, <code>zysk</code>,
+a pod nimi formuły:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>H2:  =E2*F2
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>I2:  =E2*G2
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>J2:  =H2-I2
+</span></code></pre></div>
+<p>Teraz skopiuj je w dół do wiersza 577. Najszybciej: zaznacz <code>H2:J2</code>, złap mały
+kwadracik w prawym dolnym rogu zaznaczenia i <strong>kliknij go dwukrotnie</strong> — Excel
+sam wypełni w dół do końca danych.</p>
+<div class="admonition tip">
+<p class="admonition-title">Skąd Excel wie, że ma zmienić E2 na E3?</p>
+<p>Bo <code>E2</code> to <strong>adres względny</strong> — przy kopiowaniu w dół przesuwa się razem
+z formułą. Gdybyś chciał, żeby adres się nie ruszał (np. wskazywał stałą
+stawkę VAT w jednej komórce), piszesz <code>$E$2</code>. Znak <code>$</code> znaczy „zablokuj".
+Skrót: zaznacz adres w formule i wciśnij <code>F4</code>.</p>
+</div>
+<h3 id="formuy-podsumowujace">Formuły podsumowujące<a class="headerlink" href="#formuy-podsumowujace" title="Permanent link">#</a></h3>
+<p>Teraz policzmy podsumowania. Wejdź na wolne miejsce z boku, np. <code>L2</code> w dół,
+i wpisuj kolejno:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>=SUMA(H2:H577)                                  3 835 357 zł  - przychód roczny
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>=SUMA(J2:J577)                                  1 051 409 zł  - zysk roczny
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>=SUMA(J2:J577)/SUMA(H2:H577)                    27,4%         - marża
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>=ŚREDNIA(E2:E577)                               5,79          - średnia sztuk
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>=MAX(H2:H577)                                   31 491 zł     - największa transakcja
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>=MIN(H2:H577)                                   89 zł         - najmniejsza
+</span></code></pre></div>
+<p>Czyli z każdej złotówki przychodu zostaje nam <strong>27 groszy</strong>. To pierwsza liczba,
+która naprawdę coś mówi.</p>
+<h4 id="formuy-warunkowe">Formuły warunkowe<a class="headerlink" href="#formuy-warunkowe" title="Permanent link">#</a></h4>
+<p>Tu zaczyna się prawdziwa analiza — liczymy nie wszystko, tylko to, co spełnia
+warunek.</p>
+<table>
+<thead>
+<tr>
+<th>Pytanie</th>
+<th>Formuła (PL)</th>
+<th>Wynik</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ile było transakcji w Elektronice?</td>
+<td><code>=LICZ.JEŻELI(C2:C577;"Elektronika")</code></td>
+<td>192</td>
+</tr>
+<tr>
+<td>Jaki przychód dała Elektronika?</td>
+<td><code>=SUMA.JEŻELI(C2:C577;"Elektronika";H2:H577)</code></td>
+<td>1 841 124 zł</td>
+</tr>
+<tr>
+<td>A Elektronika na Południu?</td>
+<td><code>=SUMA.WARUNKÓW(H2:H577;B2:B577;"Południe";C2:C577;"Elektronika")</code></td>
+<td>389 635 zł</td>
+</tr>
+</tbody>
+</table>
+<p>Zwróć uwagę na kolejność argumentów — to klasyczna pułapka:</p>
+<ul>
+<li><code>SUMA.JEŻELI(gdzie_szukam; czego; co_sumuję)</code> — zakres do zsumowania <strong>na końcu</strong>,</li>
+<li><code>SUMA.WARUNKÓW(co_sumuję; gdzie_szukam_1; czego_1; gdzie_szukam_2; czego_2)</code> —
+  zakres do zsumowania <strong>na początku</strong>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Polskie i angielskie nazwy funkcji</p>
+<p>Jeśli masz Excela po angielsku, nazwy są inne, a argumenty rozdzielasz
+przecinkiem zamiast średnika.</p>
+<table>
+<thead>
+<tr>
+<th>Polski</th>
+<th>Angielski</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SUMA</code></td>
+<td><code>SUM</code></td>
+</tr>
+<tr>
+<td><code>ŚREDNIA</code></td>
+<td><code>AVERAGE</code></td>
+</tr>
+<tr>
+<td><code>MEDIANA</code></td>
+<td><code>MEDIAN</code></td>
+</tr>
+<tr>
+<td><code>LICZ.JEŻELI</code></td>
+<td><code>COUNTIF</code></td>
+</tr>
+<tr>
+<td><code>LICZ.WARUNKI</code></td>
+<td><code>COUNTIFS</code></td>
+</tr>
+<tr>
+<td><code>SUMA.JEŻELI</code></td>
+<td><code>SUMIF</code></td>
+</tr>
+<tr>
+<td><code>SUMA.WARUNKÓW</code></td>
+<td><code>SUMIFS</code></td>
+</tr>
+<tr>
+<td><code>MIESIĄC</code></td>
+<td><code>MONTH</code></td>
+</tr>
+<tr>
+<td><code>ZAOKR.GÓRA</code></td>
+<td><code>ROUNDUP</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="kolumny-pomocnicze-miesiac-i-kwarta">Kolumny pomocnicze — miesiąc i kwartał<a class="headerlink" href="#kolumny-pomocnicze-miesiac-i-kwarta" title="Permanent link">#</a></h3>
+<p>Zarząd myśli w kwartałach, a w danych mamy pojedyncze daty. Dodajmy więc dwie
+kolumny pomocnicze. W <code>K1</code> i <code>L1</code> wpisz nagłówki <code>miesiac</code> i <code>kwartal</code>, a pod nimi:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>K2:  =MIESIĄC(A2)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>L2:  ="Q"&amp;ZAOKR.GÓRA(MIESIĄC(A2)/3;1)
+</span></code></pre></div>
+<p>Po angielsku: <code>=MONTH(A2)</code> oraz <code>="Q"&amp;ROUNDUP(MONTH(A2)/3,0)</code>.</p>
+<p>Skopiuj w dół. Znak <code>&amp;</code> skleja tekst — dzięki niemu zamiast <code>1</code> dostajesz <code>Q1</code>.</p>
+<hr />
+<h3 id="tabela-przestawna">Tabela przestawna<a class="headerlink" href="#tabela-przestawna" title="Permanent link">#</a></h3>
+<p>Formuły warunkowe są dobre, gdy masz jedno konkretne pytanie. Ale gdy chcesz
+zobaczyć <strong>wszystkie przekroje naraz</strong>, pisanie kilkunastu <code>SUMA.WARUNKÓW</code> jest
+bez sensu. Od tego jest tabela przestawna — narzędzie, które w kilka sekund
+podsumowuje dane w dowolnym układzie.</p>
+<p>Zaznacz komórkę w danych, potem <em>Wstawianie → Tabela przestawna → Nowy arkusz</em>.
+Po prawej pojawi się panel z listą pól. Przeciągnij:</p>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Gdzie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>region</code></td>
+<td><strong>Wiersze</strong></td>
+</tr>
+<tr>
+<td><code>kwartal</code></td>
+<td><strong>Kolumny</strong></td>
+</tr>
+<tr>
+<td><code>przychod</code></td>
+<td><strong>Wartości</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Jeśli w polu Wartości pojawi się <em>Liczba z przychod</em> zamiast <em>Suma z przychod</em> —
+kliknij to pole, <em>Ustawienia pola wartości</em> → <strong>Suma</strong>. Excel wybiera sumowanie
+tylko wtedy, gdy cała kolumna jest liczbowa.</p>
+<p>Dostaniesz to (zaokrąglone do pełnych złotych):</p>
+<table>
+<thead>
+<tr>
+<th>region</th>
+<th>Q1</th>
+<th>Q2</th>
+<th>Q3</th>
+<th>Q4</th>
+<th><strong>Razem</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Południe</td>
+<td>260 185</td>
+<td>231 971</td>
+<td>241 359</td>
+<td><strong>59 990</strong></td>
+<td>793 505</td>
+</tr>
+<tr>
+<td>Północ</td>
+<td>257 314</td>
+<td>245 920</td>
+<td>245 255</td>
+<td>280 120</td>
+<td>1 028 609</td>
+</tr>
+<tr>
+<td>Wschód</td>
+<td>236 251</td>
+<td>219 327</td>
+<td>241 749</td>
+<td>245 165</td>
+<td>942 492</td>
+</tr>
+<tr>
+<td>Zachód</td>
+<td>255 587</td>
+<td>269 072</td>
+<td>251 809</td>
+<td>294 283</td>
+<td>1 070 751</td>
+</tr>
+<tr>
+<td><strong>Razem</strong></td>
+<td>1 009 337</td>
+<td>966 290</td>
+<td><strong>980 172</strong></td>
+<td><strong>879 558</strong></td>
+<td>3 835 357</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Formatowanie, żeby dało się to czytać</p>
+<p>Zaznacz obszar wartości i nadaj format liczbowy z separatorem tysięcy i bez
+miejsc po przecinku (<code>Ctrl</code> + <code>1</code> → <em>Liczbowe</em>). Siedmiocyfrowe liczby bez
+spacji są nieczytelne, a nieczytelna tabela to tabela, z której nikt nie
+wyciągnie wniosku.</p>
+</div>
+<h3 id="case-czy-sprzedaz-naprawde-spada">Case: czy sprzedaż naprawdę spadła?<a class="headerlink" href="#case-czy-sprzedaz-naprawde-spada" title="Permanent link">#</a></h3>
+<p>Wróćmy do pytania zarządu.</p>
+<p><strong>Krok 1 — czy spadek w ogóle jest?</strong> Patrzymy na wiersz Razem: Q3 to 980 172 zł,
+Q4 to 879 558 zł. Czyli spadek o <strong>10,3%</strong>. Tak, zarząd ma rację.</p>
+<p><strong>Krok 2 — kogo to dotyczy?</strong> I tu robi się ciekawie. Porównaj Q4 z Q3 w każdym
+regionie:</p>
+<table>
+<thead>
+<tr>
+<th>region</th>
+<th>Q3</th>
+<th>Q4</th>
+<th>zmiana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Południe</td>
+<td>241 359</td>
+<td>59 990</td>
+<td><strong>−75,1%</strong></td>
+</tr>
+<tr>
+<td>Północ</td>
+<td>245 255</td>
+<td>280 120</td>
+<td>+14,2%</td>
+</tr>
+<tr>
+<td>Wschód</td>
+<td>241 749</td>
+<td>245 165</td>
+<td>+1,4%</td>
+</tr>
+<tr>
+<td>Zachód</td>
+<td>251 809</td>
+<td>294 283</td>
+<td>+16,9%</td>
+</tr>
+</tbody>
+</table>
+<p>Trzy regiony na cztery <strong>urosły</strong> — co ma sens, bo Q4 to okres przedświąteczny.
+Cały spadek pochodzi z jednego regionu, w którym sprzedaż praktycznie się
+zawaliła.</p>
+<p><strong>Krok 3 — kiedy to się stało?</strong> Dodaj do tabeli przestawnej <code>miesiac</code> zamiast
+<code>kwartal</code> w kolumnach. Zobaczysz, że Południe przez dziewięć miesięcy kręciło się
+wokół 80 tys. zł miesięcznie, a od października spadło do 25, 20 i 15 tys. zł.
+To nie jest powolne osuwanie się — to <strong>ścięcie z miesiąca na miesiąc</strong>.</p>
+<div class="admonition success">
+<p class="admonition-title">Wniosek, który idzie do zarządu</p>
+<p>Sprzedaż spadła o 10% kwartał do kwartału, ale to nie jest problem rynkowy —
+trzy z czterech regionów urosły. Cały spadek to region Południe, gdzie
+sprzedaż runęła o 75% i stało się to nagle w październiku. Szukamy przyczyny
+lokalnej: zamknięty sklep, odejście zespołu handlowego, nowa konkurencja,
+awaria systemu sprzedażowego.</p>
+<p>Zwróć uwagę, że dane <strong>nie mówią, co się stało</strong>. Mówią, gdzie i kiedy szukać.
+To już ogromna różnica wobec „sprzedaż spadła, zróbmy promocję".</p>
+</div>
+<h3 id="wykres">Wykres<a class="headerlink" href="#wykres" title="Permanent link">#</a></h3>
+<p>Liczby przekonują, ale wykres przekonuje szybciej. Na tabeli przestawnej
+z układem <code>region</code> w wierszach i <code>miesiac</code> w kolumnach: <em>Wstawianie → Wykres
+liniowy</em>.</p>
+<p>Zobaczysz cztery linie — trzy falują sobie mniej więcej w przedziale
+55–105 tys. zł przez cały rok, a czwarta (Południe) trzyma ten sam poziom do września i <strong>spada
+pionowo w dół</strong> w październiku. Tego jednego obrazka nie trzeba tłumaczyć nikomu.</p>
+<div class="admonition warning">
+<p class="admonition-title">Wykres ma odpowiadać na pytanie</p>
+<p>Wykres kołowy z dwunastoma kawałkami, wykres słupkowy z pięćdziesięcioma
+słupkami albo trójwymiarowy cokolwiek — to nie są wizualizacje, to dekoracje.
+Zanim wstawisz wykres, odpowiedz sobie: <strong>jakie zdanie ma z niego wynikać?</strong>
+Tutaj zdanie brzmi „Południe odpadło w październiku" — i dlatego rysujemy
+zmianę w czasie, czyli wykres liniowy.</p>
+</div>
+<h3 id="gdzie-excel-zaczyna-bolec">Gdzie Excel zaczyna boleć<a class="headerlink" href="#gdzie-excel-zaczyna-bolec" title="Permanent link">#</a></h3>
+<p>Excel jest świetny i nie zamierzam Was do niego zniechęcać. Ale zanim przejdziemy
+do Pythona, zauważ kilka rzeczy z ostatniej godziny:</p>
+<ul>
+<li>klikanie w tabelę przestawną <strong>nie zostawia śladu</strong> — za tydzień nie odtworzysz,
+  co dokładnie zrobiłeś,</li>
+<li>gdybyś dostał nowy plik za 2026 rok, całą tę pracę robisz <strong>od zera</strong>,</li>
+<li>nikt nie jest w stanie sprawdzić Twojej analizy inaczej niż klikając to samo,</li>
+<li>przy 500 tys. wierszy zamiast 576 Excel zaczyna się dławić (limit arkusza to
+  ok. 1 048 576 wierszy).</li>
+</ul>
+<p>Python rozwiązuje wszystkie cztery, bo analiza jest <strong>zapisana jako tekst</strong>.
+Uruchamiasz ją ponownie jednym kliknięciem, na dowolnym pliku, a każdy może
+przeczytać, co dokładnie policzyłeś.</p>
+<hr />
+<h2 id="przerwa-10-minut">Przerwa — 10 minut<a class="headerlink" href="#przerwa-10-minut" title="Permanent link">#</a></h2>
+<hr />
+<h2 id="czesc-2-to-samo-w-pythonie">Część 2: to samo w Pythonie<a class="headerlink" href="#czesc-2-to-samo-w-pythonie" title="Permanent link">#</a></h2>
+<p>Teraz przechodzimy na drugą stronę. <strong>Nie uczymy się programowania</strong> — nie będzie
+pętli, funkcji ani klas. Będziemy robić te same rzeczy co przed chwilą, tylko
+zapisywać je zdaniami zamiast klikać.</p>
+<h3 id="google-colab">Google Colab<a class="headerlink" href="#google-colab" title="Permanent link">#</a></h3>
+<p>Wejdź na <a href="https://colab.research.google.com">colab.research.google.com</a> i załóż
+nowy notatnik (<em>Plik → Nowy notatnik</em>). Nie trzeba nic instalować — wszystko
+działa w przeglądarce, a pandas jest już na miejscu.</p>
+<p>Notatnik składa się z <strong>komórek</strong>:</p>
+<ul>
+<li><strong>komórki z kodem</strong> — uruchamiasz je i pod spodem pojawia się wynik,</li>
+<li><strong>komórki tekstowe (Markdown)</strong> — opis, wnioski, nagłówki.</li>
+</ul>
+<p>To ważna różnica wobec zwykłego programowania: nie piszesz całego programu
+i nie uruchamiasz go raz. Pracujesz <strong>małymi krokami</strong>, oglądając wynik każdego
+z nich — dokładnie tak, jak przed chwilą w Excelu.</p>
+<table>
+<thead>
+<tr>
+<th>Skrót</th>
+<th>Działanie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Shift</code> + <code>Enter</code></td>
+<td>uruchom komórkę i przejdź do następnej</td>
+</tr>
+<tr>
+<td><code>Ctrl</code> + <code>Enter</code></td>
+<td>uruchom komórkę i zostań w niej</td>
+</tr>
+<tr>
+<td><code>Esc</code>, potem <code>A</code> / <code>B</code></td>
+<td>dodaj komórkę nad / pod</td>
+</tr>
+<tr>
+<td><code>Esc</code>, potem <code>M</code></td>
+<td>zamień komórkę na tekstową</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger">
+<p class="admonition-title">Pułapka, która zje Wam pół zajęć, jeśli jej nie zrozumiecie</p>
+<p>Notatnik pamięta stan <strong>w kolejności, w jakiej uruchamiałeś komórki</strong>, a nie
+w kolejności, w jakiej leżą na ekranie. Jeśli zmienisz komórkę wyżej i jej
+<strong>nie uruchomisz</strong>, komórki niżej nadal widzą starą wartość.</p>
+<p>Gdy coś zachowuje się nielogicznie: <em>Środowisko wykonawcze → Uruchom ponownie
+i wykonaj wszystko</em>. To rozwiązuje zdecydowaną większość takich problemów.</p>
+</div>
+<h3 id="wczytanie-tego-samego-pliku">Wczytanie tego samego pliku<a class="headerlink" href="#wczytanie-tego-samego-pliku" title="Permanent link">#</a></h3>
+<p>W Excelu plik otwierałeś dwuklikiem. W Pythonie robi to jedna linijka — i co
+ważne, możesz wczytać plik <strong>prosto z internetu</strong>, bez pobierania:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science/dane/sprzedaz_2025.csv"</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>         data    region    kategoria             produkt  sztuki    cena  koszt
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>0  2025-01-01    Wschód  Elektronika       Tablet Lenovo       6   899.0  690.0
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>1  2025-01-01    Północ          AGD  Mikrofalówka Amica       5   529.0  385.0
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>2  2025-01-02  Południe        Meble       Fotel biurowy       4  1199.0  760.0
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>3  2025-01-02    Zachód          AGD     Ekspres do kawy       6   899.0  640.0
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>4  2025-01-02    Zachód  Elektronika     Smartfon Xiaomi       6  1299.0  980.0
+</span></code></pre></div>
+<p>Trzy rzeczy, które właśnie się wydarzyły:</p>
+<ul>
+<li><code>import pandas as pd</code> — wczytujemy bibliotekę <strong>pandas</strong> i nadajemy jej krótką
+  nazwę <code>pd</code>. Pandas to „Excel w Pythonie". Ta linijka jest na początku
+  praktycznie każdej analizy na świecie.</li>
+<li><code>pd.read_csv(...)</code> — wczytuje plik do <strong>DataFrame'u</strong>, czyli tabeli. <code>df</code> to
+  standardowa nazwa, zobaczysz ją w każdym poradniku.</li>
+<li>Liczby z lewej (0, 1, 2, …) to <strong>indeks</strong> — numery wierszy. Python liczy od zera,
+  więc pierwszy wiersz ma numer 0, a nie 1.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Bez print()</p>
+<p>W notatniku ostatnia linijka komórki wyświetla się sama, i to ładnie
+sformatowana jako tabela. <code>df.head()</code> da czytelniejszy wynik niż
+<code>print(df.head())</code>.</p>
+</div>
+<h3 id="pierwsze-spojrzenie">Pierwsze spojrzenie<a class="headerlink" href="#pierwsze-spojrzenie" title="Permanent link">#</a></h3>
+<p>Pamiętasz <code>Ctrl</code> + <code>End</code> w Excelu? To samo, tylko konkretniej:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>(576, 7)
+</span></code></pre></div>
+<p>576 wierszy, 7 kolumn. Teraz typy danych:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;class 'pandas.DataFrame'&gt;
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>RangeIndex: 576 entries, 0 to 575
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Data columns (total 7 columns):
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a> #   Column     Non-Null Count  Dtype
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>---  ------     --------------  -----
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a> 0   data       576 non-null    str
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a> 1   region     576 non-null    str
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a> 2   kategoria  576 non-null    str
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a> 3   produkt    576 non-null    str
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a> 4   sztuki     576 non-null    int64
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a> 5   cena       576 non-null    float64
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a> 6   koszt      576 non-null    float64
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>dtypes: float64(2), int64(1), str(4)
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>memory usage: 31.6 KB
+</span></code></pre></div>
+<p>Dwie rzeczy warte zauważenia:</p>
+<ul>
+<li>Kolumna <code>Non-Null Count</code> mówi, ile jest <strong>niepustych</strong> wartości. Wszędzie 576,
+  czyli komplet — nie ma braków danych. To pierwsze miejsce, gdzie się je wykrywa.</li>
+<li>Kolumna <code>data</code> ma typ <code>str</code>, czyli <strong>tekst</strong>. Python nie wie, że to data. Zaraz
+  to naprawimy.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>           sztuki         cena        koszt
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>count  576.000000   576.000000   576.000000
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>mean     5.786458  1138.322917   819.086806
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>std      1.570785   882.498071   685.069537
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>min      1.000000    89.000000    41.000000
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>25%      5.000000   399.000000   230.000000
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>50%      6.000000   899.000000   690.000000
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>75%      7.000000  1599.000000  1020.000000
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>max      9.000000  3499.000000  2750.000000
+</span></code></pre></div>
+<p>Jedna komenda zamiast sześciu formuł z Excela. <code>describe()</code> pomija kolumny
+tekstowe i dla pozostałych podaje liczebność, średnią, odchylenie standardowe,
+minimum, maksimum i kwartyle. Na razie patrz na <code>mean</code>, <code>min</code> i <code>max</code> — resztą
+zajmiemy się na zajęciach 2.</p>
+<p>Kolumna <code>data</code> się tu nie pojawiła, bo jest tekstem. Gdy za chwilę wczytamy ją
+jako prawdziwą datę, <code>describe()</code> pokaże także ją — z najwcześniejszą i najpóźniejszą
+datą zamiast minimum i maksimum.</p>
+<div class="admonition note">
+<p class="admonition-title">Jeśli u Ciebie zamiast <code>str</code> jest <code>object</code></p>
+<p>To ta sama rzecz, tylko starsza nazwa (pandas 2.x). Nic nie musisz zmieniać.</p>
+</div>
+<p>Odpowiednik <code>LICZ.JEŻELI</code> dla całej kolumny naraz:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"region"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>region
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>Wschód      144
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>Północ      144
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>Południe    144
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>Zachód      144
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>Name: count, dtype: int64
+</span></code></pre></div>
+<h3 id="kolumna-obliczeniowa">Kolumna obliczeniowa<a class="headerlink" href="#kolumna-obliczeniowa" title="Permanent link">#</a></h3>
+<p>W Excelu: wpisz <code>=E2*F2</code> i przeciągnij w dół 576 razy. W Pythonie:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"przychod"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"sztuki"</span><span class="p">]</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s2">"cena"</span><span class="p">]</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">df</span><span class="p">[[</span><span class="s2">"data"</span><span class="p">,</span> <span class="s2">"region"</span><span class="p">,</span> <span class="s2">"produkt"</span><span class="p">,</span> <span class="s2">"sztuki"</span><span class="p">,</span> <span class="s2">"cena"</span><span class="p">,</span> <span class="s2">"przychod"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>         data    region             produkt  sztuki    cena  przychod
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>0  2025-01-01    Wschód       Tablet Lenovo       6   899.0    5394.0
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>1  2025-01-01    Północ  Mikrofalówka Amica       5   529.0    2645.0
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>2  2025-01-02  Południe       Fotel biurowy       4  1199.0    4796.0
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>3  2025-01-02    Zachód     Ekspres do kawy       6   899.0    5394.0
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>4  2025-01-02    Zachód     Smartfon Xiaomi       6  1299.0    7794.0
+</span></code></pre></div>
+<p>Nie ma przeciągania i nie ma pętli. Mnożenie <strong>całej kolumny przez całą kolumnę</strong>
+wykonuje się wiersz po wierszu automatycznie. To się nazywa <em>wektoryzacja</em> i jest
+jednym z głównych powodów, dla których pandas jest szybki.</p>
+<p>Dorzućmy pozostałe:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"koszt_calkowity"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"sztuki"</span><span class="p">]</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s2">"koszt"</span><span class="p">]</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">"zysk"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"przychod"</span><span class="p">]</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s2">"koszt_calkowity"</span><span class="p">]</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Jeden nawias czy dwa?</p>
+<p><code>df["cena"]</code> → <strong>jedna kolumna</strong>.
+<code>df[["produkt", "cena"]]</code> → <strong>kilka kolumn</strong> — w środku jest lista nazw,
+stąd podwójny nawias. To najczęstsza pomyłka pierwszego dnia.</p>
+</div>
+<h3 id="podsumowania">Podsumowania<a class="headerlink" href="#podsumowania" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"przychod"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>        <span class="c1"># 3835357.0</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">"zysk"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>            <span class="c1"># 1051409.0</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"sztuki"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">)</span>   <span class="c1"># 5.79</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">df</span><span class="p">[</span><span class="s2">"przychod"</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>        <span class="c1"># 31491.0</span>
+</span></code></pre></div>
+<p>Te same liczby co w Excelu — bo to te same dane i ta sama arytmetyka.</p>
+<h3 id="filtrowanie_1">Filtrowanie<a class="headerlink" href="#filtrowanie_1" title="Permanent link">#</a></h3>
+<p>W Excelu klikałeś strzałkę w nagłówku. W Pythonie piszesz warunek:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">"kategoria"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Elektronika"</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>(192, 10)
+</span></code></pre></div>
+<p>192 wiersze — dokładnie tyle, ile pokazało <code>LICZ.JEŻELI</code>.</p>
+<p>Jak to działa? Porównanie kolumny z wartością daje kolumnę wartości
+<code>True</code>/<code>False</code> (nazywamy ją <strong>maską</strong>), a wstawienie maski w nawias kwadratowy
+zostawia tylko wiersze z <code>True</code>.</p>
+<p>Dwa warunki naraz — odpowiednik dwóch filtrów w Excelu:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">maska</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"region"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Południe"</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"kategoria"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Elektronika"</span><span class="p">)</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">df</span><span class="p">[</span><span class="n">maska</span><span class="p">][[</span><span class="s2">"data"</span><span class="p">,</span> <span class="s2">"produkt"</span><span class="p">,</span> <span class="s2">"sztuki"</span><span class="p">,</span> <span class="s2">"przychod"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>          data          produkt  sztuki  przychod
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>27  2025-01-14    Tablet Lenovo       6    5394.0
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>38  2025-01-21      Laptop Dell       7   24493.0
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>40  2025-01-22  Smartfon Xiaomi       6    7794.0
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>48  2025-02-01    Tablet Lenovo       8    7192.0
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>54  2025-02-02  Smartfon Xiaomi       7    9093.0
+</span></code></pre></div>
+<p>Zwróć uwagę na indeks — zostały oryginalne numery wierszy (27, 38, 40…), więc
+od razu widać, że to wycinek. A odpowiednik <code>SUMA.WARUNKÓW</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">df</span><span class="p">[</span><span class="n">maska</span><span class="p">][</span><span class="s2">"przychod"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>     <span class="c1"># 389635.0</span>
+</span></code></pre></div>
+<p>Ta sama liczba co w Excelu.</p>
+<div class="admonition warning">
+<p class="admonition-title"><code>&amp;</code> zamiast <code>and</code></p>
+<p>W pandas piszemy <code>&amp;</code> (i) oraz <code>|</code> (lub), nie <code>and</code>/<code>or</code>. Nawiasy wokół
+każdego warunku są <strong>obowiązkowe</strong> — bez nich Python policzy to w złej
+kolejności i dostaniesz błąd.</p>
+</div>
+<h3 id="sortowanie_1">Sortowanie<a class="headerlink" href="#sortowanie_1" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"przychod"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[[</span><span class="s2">"data"</span><span class="p">,</span> <span class="s2">"region"</span><span class="p">,</span> <span class="s2">"produkt"</span><span class="p">,</span> <span class="s2">"sztuki"</span><span class="p">,</span> <span class="s2">"przychod"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>           data    region      produkt  sztuki  przychod
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>559  2025-12-20    Zachód  Laptop Dell       9   31491.0
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>494  2025-11-09    Zachód  Laptop Dell       9   31491.0
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>529  2025-12-01    Północ  Laptop Dell       9   31491.0
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>380  2025-08-27  Południe  Laptop Dell       8   27992.0
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>444  2025-10-09    Północ  Laptop Dell       8   27992.0
+</span></code></pre></div>
+<p><code>ascending=False</code> to sortowanie malejąco. Pięć największych transakcji roku to
+same laptopy — najdroższy produkt w ofercie.</p>
+<h3 id="groupby-serce-analizy-danych">groupby — serce analizy danych<a class="headerlink" href="#groupby-serce-analizy-danych" title="Permanent link">#</a></h3>
+<p><code>groupby</code> odpowiada dokładnie na to samo pytanie co tabela przestawna: <strong>podziel
+dane na grupy i policz coś w każdej</strong>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"region"</span><span class="p">)[</span><span class="s2">"przychod"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>region
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>Zachód      1070751.0
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>Północ      1028609.0
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>Wschód       942492.0
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>Południe     793505.0
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>Name: przychod, dtype: float64
+</span></code></pre></div>
+<p>Czytaj to jak zdanie: <em>pogrupuj po regionie, weź kolumnę przychód, zsumuj,
+posortuj malejąco</em>. Jedna linijka zamiast całego panelu z przeciąganiem pól.</p>
+<p>Można policzyć kilka statystyk naraz:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"kategoria"</span><span class="p">)[</span><span class="s2">"przychod"</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s2">"sum"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">,</span> <span class="s2">"count"</span><span class="p">])</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>                   sum     mean  count
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>kategoria
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>AGD           968211.0  4939.85    196
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>Elektronika  1841124.0  9589.19    192
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>Meble        1026022.0  5457.56    188
+</span></code></pre></div>
+<p>I tu od razu ciekawostka biznesowa — policzmy marżę w każdej kategorii:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">g</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"kategoria"</span><span class="p">)[[</span><span class="s2">"przychod"</span><span class="p">,</span> <span class="s2">"zysk"</span><span class="p">]]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="n">g</span><span class="p">[</span><span class="s2">"marza_%"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="s2">"zysk"</span><span class="p">]</span> <span class="o">/</span> <span class="n">g</span><span class="p">[</span><span class="s2">"przychod"</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="n">g</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>              przychod      zysk  marza_%
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>kategoria
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>AGD           968211.0  253925.0     26.2
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>Elektronika  1841124.0  435199.0     23.6
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>Meble        1026022.0  362285.0     35.3
+</span></code></pre></div>
+<p><strong>Elektronika daje prawie dwa razy większy przychód niż Meble, ale ma najgorszą
+marżę.</strong> Gdyby patrzeć tylko na przychód, wnioski byłyby odwrotne. To jest ta
+różnica między „ile wpłynęło" a „ile zarobiliśmy", o której mówiliśmy na początku.</p>
+<h3 id="daty-i-tabela-przestawna">Daty i tabela przestawna<a class="headerlink" href="#daty-i-tabela-przestawna" title="Permanent link">#</a></h3>
+<p>Pamiętasz, że kolumna <code>data</code> była tekstem? Żeby wyciągnąć z niej miesiąc, trzeba
+powiedzieć Pythonowi, że to data:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s2">"data"</span><span class="p">])</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">"przychod"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"sztuki"</span><span class="p">]</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s2">"cena"</span><span class="p">]</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="n">df</span><span class="p">[</span><span class="s2">"kwartal"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Q"</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s2">"data"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">quarter</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="n">df</span><span class="p">[</span><span class="s2">"miesiac"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"data"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
+</span></code></pre></div>
+<p><code>parse_dates=["data"]</code> mówi: potraktuj tę kolumnę jako datę. Potem <code>.dt</code> daje
+dostęp do części daty — <code>.dt.month</code>, <code>.dt.quarter</code>, <code>.dt.year</code>, <code>.dt.day_name()</code>.</p>
+<p>A teraz tabela przestawna. Nazywa się tak samo jak w Excelu:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">"region"</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"kwartal"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"przychod"</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s2">"sum"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>kwartal         Q1        Q2        Q3        Q4
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>region
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>Południe  260185.0  231971.0  241359.0   59990.0
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>Północ    257314.0  245920.0  245255.0  280120.0
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>Wschód    236251.0  219327.0  241749.0  245165.0
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>Zachód    255587.0  269072.0  251809.0  294283.0
+</span></code></pre></div>
+<p>Porównaj to z tabelą, którą klikałeś pół godziny temu. <strong>Identyczne liczby.</strong>
+Cztery argumenty odpowiadają czterem polom z panelu Excela:</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Pole w Excelu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index=</code></td>
+<td>Wiersze</td>
+</tr>
+<tr>
+<td><code>columns=</code></td>
+<td>Kolumny</td>
+</tr>
+<tr>
+<td><code>values=</code></td>
+<td>Wartości</td>
+</tr>
+<tr>
+<td><code>aggfunc=</code></td>
+<td>Suma / Średnia / Licznik</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wykres_1">Wykres<a class="headerlink" href="#wykres_1" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">"miesiac"</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"region"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"przychod"</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s2">"sum"</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>    <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>    <span class="n">title</span><span class="o">=</span><span class="s2">"Przychód wg regionu i miesiąca (2025)"</span><span class="p">,</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="p">)</span>
+</span></code></pre></div>
+<p>Jedna linijka i masz ten sam wykres, co po kilku kliknięciach w Excelu: cztery
+linie, z których jedna spada pionowo w październiku.</p>
+<p>Zwróć uwagę, że w <code>index</code> dałem tym razem <code>miesiac</code>, a w <code>columns</code> — <code>region</code>.
+Zamiana miejscami decyduje o tym, co jest na osi poziomej, a co jest linią.</p>
+<div class="admonition success">
+<p class="admonition-title">Tu jest cała pointa dzisiejszych zajęć</p>
+<p>Ta analiza — od wczytania pliku po wykres — to jakieś <strong>15 linijek kodu</strong>.
+Możesz je jutro uruchomić na danych za 2026 rok, zmieniając jeden adres.
+Możesz wysłać je koledze, który zobaczy dokładnie, co policzyłeś. Możesz
+wrócić do nich za rok i zrozumieć własną pracę.</p>
+<p>Żadnej z tych trzech rzeczy nie da się zrobić z tabelą przestawną, którą się
+wyklikało.</p>
+</div>
+<hr />
+<h2 id="excel-kontra-python-sciagawka">Excel kontra Python — ściągawka<a class="headerlink" href="#excel-kontra-python-sciagawka" title="Permanent link">#</a></h2>
+<p>Trzymaj to pod ręką, robiąc zadanie. Zakresy typu <code>H2:H577</code> dotyczą naszego pliku.</p>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Excel</th>
+<th>Python (pandas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>otworzyć plik</td>
+<td>dwuklik</td>
+<td><code>df = pd.read_csv(URL)</code></td>
+</tr>
+<tr>
+<td>zobaczyć początek</td>
+<td>patrzę na ekran</td>
+<td><code>df.head()</code></td>
+</tr>
+<tr>
+<td>ile wierszy i kolumn</td>
+<td><code>Ctrl</code> + <code>End</code></td>
+<td><code>df.shape</code></td>
+</tr>
+<tr>
+<td>typy kolumn i braki</td>
+<td>oglądam</td>
+<td><code>df.info()</code></td>
+</tr>
+<tr>
+<td>podstawowe statystyki</td>
+<td><code>SUMA</code>, <code>ŚREDNIA</code>, <code>MIN</code>, <code>MAX</code></td>
+<td><code>df.describe()</code></td>
+</tr>
+<tr>
+<td>nowa kolumna</td>
+<td><code>=E2*F2</code> + przeciągnięcie</td>
+<td><code>df["p"] = df["a"] * df["b"]</code></td>
+</tr>
+<tr>
+<td>suma kolumny</td>
+<td><code>=SUMA(H2:H577)</code></td>
+<td><code>df["p"].sum()</code></td>
+</tr>
+<tr>
+<td>średnia</td>
+<td><code>=ŚREDNIA(E2:E577)</code></td>
+<td><code>df["sztuki"].mean()</code></td>
+</tr>
+<tr>
+<td>mediana</td>
+<td><code>=MEDIANA(E2:E577)</code></td>
+<td><code>df["sztuki"].median()</code></td>
+</tr>
+<tr>
+<td>zliczanie z warunkiem</td>
+<td><code>=LICZ.JEŻELI(C:C;"AGD")</code></td>
+<td><code>(df["kategoria"] == "AGD").sum()</code></td>
+</tr>
+<tr>
+<td>suma z warunkiem</td>
+<td><code>=SUMA.JEŻELI(C:C;"AGD";H:H)</code></td>
+<td><code>df[df["kategoria"] == "AGD"]["p"].sum()</code></td>
+</tr>
+<tr>
+<td>filtr</td>
+<td><code>Ctrl</code> + <code>Shift</code> + <code>L</code></td>
+<td><code>df[df["cena"] &gt; 1000]</code></td>
+</tr>
+<tr>
+<td>filtr z dwoma warunkami</td>
+<td>dwa filtry naraz</td>
+<td><code>df[(df["a"] &gt; 1) &amp; (df["b"] == "x")]</code></td>
+</tr>
+<tr>
+<td>sortowanie</td>
+<td><em>Dane → Sortuj</em></td>
+<td><code>df.sort_values("cena", ascending=False)</code></td>
+</tr>
+<tr>
+<td>ile razy występuje wartość</td>
+<td>tabela przestawna</td>
+<td><code>df["region"].value_counts()</code></td>
+</tr>
+<tr>
+<td>podsumowanie wg grup</td>
+<td>tabela przestawna</td>
+<td><code>df.groupby("region")["p"].sum()</code></td>
+</tr>
+<tr>
+<td>tabela przestawna</td>
+<td>przeciąganie pól</td>
+<td><code>df.pivot_table(index=…, columns=…, values=…, aggfunc="sum")</code></td>
+</tr>
+<tr>
+<td>wykres</td>
+<td><em>Wstawianie → Wykres</em></td>
+<td><code>.plot()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="to-ktorego-w-koncu-uzywac">To którego w końcu używać?<a class="headerlink" href="#to-ktorego-w-koncu-uzywac" title="Permanent link">#</a></h3>
+<p>Obu. Naprawdę.</p>
+<table>
+<thead>
+<tr>
+<th>Sytuacja</th>
+<th>Narzędzie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>szybkie zerknięcie w dane, 200 wierszy</td>
+<td><strong>Excel</strong></td>
+</tr>
+<tr>
+<td>pokazanie czegoś osobie nietechnicznej</td>
+<td><strong>Excel</strong></td>
+</tr>
+<tr>
+<td>ten sam raport co miesiąc</td>
+<td><strong>Python</strong></td>
+</tr>
+<tr>
+<td>ponad 100 tys. wierszy</td>
+<td><strong>Python</strong></td>
+</tr>
+<tr>
+<td>analiza, którą ktoś musi zweryfikować</td>
+<td><strong>Python</strong></td>
+</tr>
+<tr>
+<td>łączenie danych z kilku źródeł</td>
+<td><strong>Python</strong></td>
+</tr>
+<tr>
+<td>prognozowanie, modele</td>
+<td><strong>Python</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Analityk, który zna tylko Excela, w pewnym momencie uderza w sufit. Analityk,
+który zna tylko Pythona, marnuje pół godziny na coś, co w arkuszu zająłby minutę.</p>
+<hr />
+<h2 id="zadanie-1-siec-kawiarni-12-pkt">Zadanie 1 — Sieć kawiarni (12 pkt)<a class="headerlink" href="#zadanie-1-siec-kawiarni-12-pkt" title="Permanent link">#</a></h2>
+<p><strong>Czas:</strong> ok. 60 minut (30 min Excel + 30 min Python)
+<strong>Oddanie:</strong> plik <code>.xlsx</code> (część 1) oraz notatnik <code>.ipynb</code> (część 2) na Moodle</p>
+<p>Prowadzisz analizę dla sieci pięciu kawiarni. Właściciel jest zadowolony, bo
+lokal w Gdańsku sprzedaje najwięcej ze wszystkich. Twoim zadaniem jest sprawdzić,
+czy „sprzedaje najwięcej" znaczy to samo co „zarabia najwięcej".</p>
+<p>Dane obejmują pierwsze <strong>półrocze 2026 roku</strong>, 180 wierszy:</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25M7 13.06l1.18 2.22h1.79L8 12.06l1.93-3.17H8.22L7.13 10.9l-.04.06-.03.07q-.26-.53-.56-1.07-.25-.53-.53-1.07H4.16l1.89 3.19L4 15.28h1.78m8.1 4.22V17H8.25v2.5m5.63-3.75v-3.12H12v3.12m1.88-4.37V8.25H12v3.13M13.88 7V4.5H8.25V7m12.5 12.5V17h-5.62v2.5m5.62-3.75v-3.12h-5.62v3.12m5.62-4.37V8.25h-5.62v3.13M20.75 7V4.5h-5.62V7Z"/></svg></span> <a href="../dane/kawiarnie_2026.xlsx"><strong>kawiarnie_2026.xlsx</strong></a> — do części 1</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8zm1 14-2 4h-3l2-4H9v-5h6zm-2-7V3.5L18.5 9z"/></svg></span> <a href="../dane/kawiarnie_2026.csv"><strong>kawiarnie_2026.csv</strong></a> — do części 2</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Kolumna</th>
+<th>Co oznacza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data</code></td>
+<td>data sprzedaży (2026-01-01 … 2026-06-27)</td>
+</tr>
+<tr>
+<td><code>miasto</code></td>
+<td>Warszawa, Kraków, Gdańsk, Wrocław</td>
+</tr>
+<tr>
+<td><code>lokal</code></td>
+<td>Nowy Świat, Mokotów, Rynek Główny, Długi Targ, Świdnicka</td>
+</tr>
+<tr>
+<td><code>kategoria</code></td>
+<td>Kawa, Herbata, Ciasta, Kanapki</td>
+</tr>
+<tr>
+<td><code>produkt</code></td>
+<td>nazwa pozycji z menu</td>
+</tr>
+<tr>
+<td><code>sztuki</code></td>
+<td>ile sztuk sprzedano</td>
+</tr>
+<tr>
+<td><code>cena</code></td>
+<td>cena sprzedaży jednej sztuki (zł)</td>
+</tr>
+<tr>
+<td><code>koszt</code></td>
+<td>koszt przygotowania jednej sztuki (zł)</td>
+</tr>
+</tbody>
+</table>
+<p>Rób części po kolei i <strong>pokaż mi wynik każdej z nich, gdy będzie gotowa</strong> —
+punktacja zależy od tego, ile zdążysz na zajęciach.</p>
+<h3 id="czesc-1-excel-ok-30-min">Część 1 — Excel (ok. 30 min)<a class="headerlink" href="#czesc-1-excel-ok-30-min" title="Permanent link">#</a></h3>
+<p>Otwórz <code>kawiarnie_2026.xlsx</code>. Dane zajmują wiersze <strong>2–181</strong>, kolumny <strong>A–H</strong>.</p>
+<ol>
+<li>
+<p>Dodaj trzy kolumny obliczeniowe (nagłówki w <code>I1</code>, <code>J1</code>, <code>K1</code>) i skopiuj
+   formuły w dół do wiersza 181:</p>
+<ul>
+<li><code>przychod</code> = <code>sztuki × cena</code></li>
+<li><code>koszt_calkowity</code> = <code>sztuki × koszt</code></li>
+<li><code>zysk</code> = <code>przychod − koszt_calkowity</code></li>
+</ul>
+</li>
+<li>
+<p>Obok danych policz dla całej sieci: <strong>łączny przychód</strong>, <strong>łączny zysk</strong>
+   i <strong>marżę procentową</strong> (zysk ÷ przychód). Marżę sformatuj jako procent.</p>
+</li>
+<li>
+<p>Używając formuł warunkowych, policz:</p>
+<ul>
+<li>ile było transakcji w kategorii <strong>Ciasta</strong> (<code>LICZ.JEŻELI</code>),</li>
+<li>jaki przychód dała kategoria <strong>Kawa</strong> (<code>SUMA.JEŻELI</code>),</li>
+<li>jaki przychód dały <strong>Ciasta w lokalu Długi Targ</strong> (<code>SUMA.WARUNKÓW</code>).</li>
+</ul>
+</li>
+<li>
+<p>Zbuduj <strong>tabelę przestawną</strong>: <code>lokal</code> w wierszach, a w wartościach <strong>suma
+   przychodu</strong> oraz <strong>suma zysku</strong>. Posortuj ją malejąco po przychodzie.</p>
+</li>
+<li>
+<p>Dodaj do tej tabeli kolumnę z <strong>marżą procentową</strong> każdego lokalu
+   (zysk ÷ przychód — policz ją formułą obok tabeli).</p>
+</li>
+<li>
+<p>Zbuduj <strong>drugą tabelę przestawną</strong>: <code>kategoria</code> w wierszach, przychód i zysk
+   w wartościach. Policz marżę też tutaj.</p>
+</li>
+<li>
+<p>Wstaw <strong>wykres słupkowy</strong> porównujący przychód i zysk w poszczególnych
+   lokalach.</p>
+</li>
+<li>
+<p>W pustej komórce arkusza napisz w 2–3 zdaniach odpowiedź na pytanie
+   właściciela: <strong>czy lokal z największym przychodem jest lokalem, który
+   najwięcej zarabia?</strong> Jeśli nie — wyjaśnij, co to powoduje. Wskazówka: spójrz
+   na tabelę z kategoriami i zastanów się, czym różni się to, co sprzedaje
+   każdy lokal.</p>
+</li>
+</ol>
+<h3 id="czesc-2-python-ok-30-min">Część 2 — Python (ok. 30 min)<a class="headerlink" href="#czesc-2-python-ok-30-min" title="Permanent link">#</a></h3>
+<p>Nowy notatnik w Colabie. Zaczynamy od wczytania tych samych danych:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science/dane/kawiarnie_2026.csv"</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s2">"data"</span><span class="p">])</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Następnie wykonaj poniższe punkty, <strong>każdy w osobnej komórce</strong>:</p>
+<ol>
+<li>Sprawdź rozmiar zbioru (<code>shape</code>) oraz typy kolumn i braki danych (<code>info</code>).</li>
+<li>Wyświetl podstawowe statystyki kolumn liczbowych (<code>describe</code>).</li>
+<li>Dodaj kolumny <code>przychod</code>, <code>koszt_calkowity</code> i <code>zysk</code> — tak jak w części 1.</li>
+<li>Policz łączny przychód i łączny zysk całej sieci. Sprawdź, czy zgadzają się
+   z wynikiem z Excela (powinny!).</li>
+<li>Wyświetl <strong>przychód i zysk w podziale na lokale</strong>, posortowane malejąco po
+   przychodzie. Użyj <code>groupby</code>.</li>
+<li>Dodaj do tego wyniku kolumnę <code>marza_%</code> i zaokrąglij ją do jednego miejsca
+   po przecinku.</li>
+<li>Zrób to samo w podziale na <strong>kategorie</strong> — przychód, zysk i marża.</li>
+<li>Wyświetl <strong>5 transakcji o największym zysku</strong> (tylko kolumny <code>data</code>, <code>lokal</code>,
+   <code>produkt</code>, <code>sztuki</code>, <code>zysk</code>).</li>
+<li>Wyświetl transakcje z kategorii <strong>Kawa</strong> w lokalu <strong>Mokotów</strong>, w których
+   sprzedano więcej niż 100 sztuk (filtr z trzema warunkami).</li>
+<li>Zbuduj tabelę przestawną: <code>lokal</code> w wierszach, <code>miesiac</code> w kolumnach,
+    suma przychodu w wartościach. Kolumnę <code>miesiac</code> musisz najpierw dodać
+    (<code>df["data"].dt.month</code>).</li>
+<li>Narysuj wykres z tej tabeli przestawnej (<code>.plot()</code>).</li>
+<li>Na koniec dodaj <strong>komórkę tekstową (Markdown)</strong> i napisz w 3–4 zdaniach:
+    który lokal ma największy przychód, który ma największy zysk, dlaczego to
+    nie jest ten sam lokal i co doradziłbyś właścicielowi.</li>
+</ol>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Ściągawka Excel ↔ Python jest kilka sekcji wyżej. Korzystaj z niej bez skrupułów
+  — nikt nie pamięta składni na pamięć, ja też nie.</li>
+<li>Punkt 6 części 2: policz to tak, jak liczyliśmy marżę kategorii na zajęciach —
+  najpierw <code>groupby</code> do zmiennej, potem dodanie kolumny.</li>
+<li>Punkt 9: trzy warunki łączysz tak samo jak dwa, każdy w swoim nawiasie:
+  <code>(A) &amp; (B) &amp; (C)</code>.</li>
+<li>Jeśli w Excelu tabela przestawna pokazuje <em>Liczba z przychod</em> zamiast sumy —
+  kliknij pole wartości i zmień na <strong>Suma</strong>.</li>
+<li>Jeśli w Colabie coś zachowuje się nielogicznie — <em>Środowisko wykonawcze →
+  Uruchom ponownie i wykonaj wszystko</em>.</li>
+<li>Nazywaj rzeczy sensownie. <code>df</code> dla tabeli jest w porządku, <code>x1</code>, <code>x2</code>, <code>x3</code>
+  już nie.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Na co patrzę przy ocenie</p>
+<p>Nie na to, czy kod jest elegancki. Na to, czy <strong>liczby się zgadzają</strong> i czy
+wniosek na końcu wynika z tego, co policzyłeś. Punkt 12 to nie jest
+formalność — to właściwie całe zadanie. Reszta to tylko droga do niego.</p>
+</div>
+<h3 id="punktacja-12-pkt">Punktacja (12 pkt)<a class="headerlink" href="#punktacja-12-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>8 pkt</strong></td>
+<td>jedna z dwóch części zrobiona <strong>na zajęciach</strong> i pokazana prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>4 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>2026-10-24</strong> (dzień przed kolejnymi zajęciami).</p>
+<div class="admonition danger">
+<p class="admonition-title">Serio, róbcie to na zajęciach</p>
+<p>Ta sama godzina pracy jest warta 12 pkt tu i teraz albo 4 pkt w domu. Mamy
+tylko cztery zadania w całym semestrze, więc każde z nich to 12% oceny
+końcowej. Jestem na sali po to, żeby Wam pomagać — korzystajcie z tego,
+zamiast walczyć z tym samym problemem wieczorem w domu.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
