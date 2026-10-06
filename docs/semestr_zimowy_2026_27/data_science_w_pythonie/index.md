@@ -12,7 +12,7 @@
 ## Plan zajęć
 
 - **Zajęcia 1 (_2026-09-26_ godz. 15:10 - 16:40 - 2h):** Czym jest Data Science i jak wygląda workflow projektu; Jupyter Notebook; przypomnienie podstaw Pythona; numpy; wprowadzenie do pandas
-- **Zajęcia 2 (_2026-10-10_ godz. 15:10 - 16:40 - 2h)**
+- **Zajęcia 2 (_2026-10-10_ godz. 15:10 - 16:40 - 2h):** Wczytywanie danych z różnych źródeł — CSV, internet, Excel, JSON; diagnoza zbioru; duplikaty, ujednolicanie tekstu, konwersja typów i dat; braki danych i wartości niemożliwe
 - **Zajęcia 3 (_2026-10-24_ godz. 15:10 - 16:40 - 2h)**
 - **Zajęcia 4 (_2026-11-14_ godz. 15:10 - 16:40 - 2h)**
 - **Zajęcia 5 (_2026-11-28_ godz. 15:10 - 16:40 - 2h)**
