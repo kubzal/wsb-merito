@@ -1,0 +1,3974 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/systemy_big_data/zajecia_1/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../uczenie_glebokie/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Zajęcia 1 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-1" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-tabs__dropdown-link">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kiedy-jeden-komputer-przestaje-wystarczac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kiedy jeden komputer przestaje wystarczać
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-przedmiocie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O przedmiocie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czym-jest-big-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czym jest Big Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Czym jest Big Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skala
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-5v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model 5V
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kiedy-jedna-maszyna-przestaje-wystarczac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kiedy jedna maszyna przestaje wystarczać
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kiedy jedna maszyna przestaje wystarczać">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skalowanie-w-gore-i-wszerz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skalowanie w górę i wszerz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formaty-plikow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formaty plików
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formaty plików">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wierszowo-czy-kolumnowo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wierszowo czy kolumnowo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parquet-od-srodka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parquet od środka
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kompresja-i-kodowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kompresja i kodowanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partycjonowanie-i-pushdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partycjonowanie i pushdown
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partycjonowanie i pushdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partycjonowanie-w-stylu-hive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partycjonowanie w stylu Hive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#predicate-pushdown-i-projection-pushdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Predicate pushdown i projection pushdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo-nyc-taxi-w-pandas-i-duckdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo: NYC Taxi w pandas i DuckDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo: NYC Taxi w pandas i DuckDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#duckdb-w-jednym-akapicie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DuckDB w jednym akapicie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pobranie-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pobranie danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wczytanie-w-pandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wczytanie w pandas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projection-pushdown-w-praktyce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projection pushdown w praktyce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-samo-w-duckdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To samo w DuckDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv-dla-porownania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSV dla porównania
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zagladamy-do-planu-zapytania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zaglądamy do planu zapytania
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-1-taksowki-w-nowym-jorku-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1 — Taksówki w Nowym Jorku (6 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 1 — Taksówki w Nowym Jorku (6 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-od-jednego-miesiaca-do-caego-roku-ok-30-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — od jednego miesiąca do całego roku (ok. 30 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-konto-w-databricks-ok-15-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — konto w Databricks (ok. 15 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (6 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-1">Zajęcia 1<a class="headerlink" href="#zajecia-1" title="Permanent link">#</a></h1>
+<h2 id="kiedy-jeden-komputer-przestaje-wystarczac">Kiedy jeden komputer przestaje wystarczać<a class="headerlink" href="#kiedy-jeden-komputer-przestaje-wystarczac" title="Permanent link">#</a></h2>
+<p>Zanim uruchomimy pierwszy klaster, warto zrozumieć, <strong>co właściwie robi dane
+„dużymi”</strong>. Zaskakująco często okazuje się, że problemem nie jest liczba
+wierszy, tylko sposób, w jaki je przechowujemy i czytamy. Dziś zobaczysz, że ten
+sam zbiór danych może zajmować 300 MB albo 50 MB, a to samo zapytanie może
+przeczytać cały rok danych albo tylko jeden miesiąc. Zależy to wyłącznie od
+formatu pliku i od tego, jak ułożymy pliki na dysku.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>wyjaśnić, czym jest Big Data i opisać problem za pomocą modelu 5V,</li>
+<li>powiedzieć, kiedy wystarczy jedna maszyna, a kiedy trzeba skalować wszerz,</li>
+<li>porównać formaty wierszowe (CSV) i kolumnowe (Parquet) i uzasadnić, dlaczego
+  analityka lubi te drugie,</li>
+<li>opisać, jak zbudowany jest plik Parquet i do czego służą jego statystyki,</li>
+<li>zapisać dane jako Parquet partycjonowany w stylu Hive,</li>
+<li>odczytać z planu zapytania (<code>EXPLAIN</code>), ile plików i kolumn naprawdę zostało
+  przeczytanych.</li>
+</ul>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O przedmiocie i narzędziach</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Czym jest Big Data — model 5V</td>
+<td>7 min</td>
+</tr>
+<tr>
+<td>Kiedy jedna maszyna przestaje wystarczać</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Formaty plików: wierszowe kontra kolumnowe, Parquet od środka</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Partycjonowanie i predicate pushdown</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Demo: NYC Taxi w pandas i DuckDB</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 1</strong></td>
+<td><strong>45 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="o-przedmiocie">O przedmiocie<a class="headerlink" href="#o-przedmiocie" title="Permanent link">#</a></h2>
+<p>Przez osiem spotkań przejdziemy drogę od pojedynczego pliku na laptopie do
+pipeline'u danych w chmurze:</p>
+<table>
+<thead>
+<tr>
+<th>Zajęcia</th>
+<th>Temat</th>
+<th>Gdzie pracujemy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Kiedy jeden komputer przestaje wystarczać — formaty, partycjonowanie</td>
+<td>Colab</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Obliczenia rozproszone: od MapReduce do Sparka</td>
+<td>Colab (PySpark)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Spark SQL i DataFrame w praktyce</td>
+<td>Databricks</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Delta Lake — data lake z transakcjami</td>
+<td>Databricks</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Architektura medalionowa i jakość danych</td>
+<td>Databricks</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Przetwarzanie strumieniowe</td>
+<td>Databricks</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Hurtownia danych w chmurze</td>
+<td>BigQuery</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Big Data w praktyce: od danych do modelu</td>
+<td>Databricks</td>
+</tr>
+</tbody>
+</table>
+<p>Wszystkie narzędzia są <strong>darmowe</strong> i nie wymagają karty płatniczej:</p>
+<ul>
+<li><strong>Google Colab</strong> — notatniki Pythona w przeglądarce. Dziś i za tydzień.</li>
+<li><strong>Databricks Free Edition</strong> — Spark, Delta Lake i pipeline'y danych. Główne
+  narzędzie od zajęć 3. Konto zakładacie <strong>dziś</strong>, w ramach zadania. Rejestracja
+  i potwierdzanie maila potrafią chwilę potrwać, a na zajęciach 3 nie chcę na to
+  tracić czasu.</li>
+<li><strong>BigQuery Sandbox</strong> — hurtownia danych Google. Na zajęciach 7, wystarczy konto
+  Google.</li>
+</ul>
+<p>Zasady zaliczenia znajdziesz na <a href="../#zasady-zaliczenia">stronie przedmiotu</a>.
+W skrócie: 50 pkt za zadania na zajęciach i 50 pkt za test końcowy.</p>
+<hr />
+<h2 id="czym-jest-big-data">Czym jest Big Data<a class="headerlink" href="#czym-jest-big-data" title="Permanent link">#</a></h2>
+<p>Nie ma jednej liczby, od której dane stają się „duże”. Najuczciwsza definicja
+brzmi tak:</p>
+<blockquote>
+<p>Dane są duże wtedy, gdy narzędzia, które masz, przestają sobie z nimi radzić.</p>
+</blockquote>
+<p>Dla Excela granicą jest 1 048 576 wierszy. Dla pandas na laptopie z 16 GB RAM —
+kilka gigabajtów. Dla bazy danych na jednym serwerze — kilka terabajtów. Big Data
+to zbiór technik na moment, w którym przekraczasz taką granicę.</p>
+<h3 id="skala">Skala<a class="headerlink" href="#skala" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Jednostka</th>
+<th>Ile to jest</th>
+<th>Przykład</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 MB</td>
+<td>10⁶ B</td>
+<td>kilka tysięcy wierszy w CSV</td>
+</tr>
+<tr>
+<td>1 GB</td>
+<td>10⁹ B</td>
+<td>miesiąc kursów taksówek w NYC w CSV (~0,3 GB)</td>
+</tr>
+<tr>
+<td>1 TB</td>
+<td>10¹² B</td>
+<td>dzienne logi dużego serwisu internetowego</td>
+</tr>
+<tr>
+<td>1 PB</td>
+<td>10¹⁵ B</td>
+<td>hurtownia danych dużego banku czy operatora</td>
+</tr>
+<tr>
+<td>1 EB</td>
+<td>10¹⁸ B</td>
+<td>dane przechowywane przez największych dostawców chmury</td>
+</tr>
+</tbody>
+</table>
+<h3 id="model-5v">Model 5V<a class="headerlink" href="#model-5v" title="Permanent link">#</a></h3>
+<p>Najczęściej używany opis tego, co sprawia, że dane są trudne:</p>
+<table>
+<thead>
+<tr>
+<th>V</th>
+<th>Co oznacza</th>
+<th>Przykład</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Volume</strong> — wolumen</td>
+<td>po prostu dużo danych</td>
+<td>40 mln kursów taksówek rocznie</td>
+</tr>
+<tr>
+<td><strong>Velocity</strong> — szybkość</td>
+<td>dane napływają nieustannie i trzeba reagować na bieżąco</td>
+<td>kliknięcia w sklepie internetowym, transakcje kartą</td>
+</tr>
+<tr>
+<td><strong>Variety</strong> — różnorodność</td>
+<td>różne formaty i struktury</td>
+<td>tabele, JSON z API, logi, obrazy, tekst</td>
+</tr>
+<tr>
+<td><strong>Veracity</strong> — wiarygodność</td>
+<td>dane bywają brudne, niekompletne i sprzeczne</td>
+<td>kurs taksówki z datą z 2002 roku w danych za 2024</td>
+</tr>
+<tr>
+<td><strong>Value</strong> — wartość</td>
+<td>z danych ma coś wynikać, inaczej to tylko koszt</td>
+<td>rekomendacje, wykrywanie oszustw</td>
+</tr>
+</tbody>
+</table>
+<p>Przykład z kolumny <em>Veracity</em> nie jest wymyślony. Takie kursy naprawdę są
+w danych, na których dziś pracujemy. Sprawdzisz to w zadaniu.</p>
+<div class="admonition info">
+<p class="admonition-title">Volume to nie wszystko</p>
+<p>Dwa gigabajty danych napływające co minutę (Velocity) albo pochodzące z
+piętnastu systemów o różnych formatach (Variety) to problem Big Data, choć
+zmieszczą się na pendrivie. Na tym przedmiocie zajmiemy się wszystkimi pięcioma
+V, ale dziś skupiamy się na pierwszym.</p>
+</div>
+<hr />
+<h2 id="kiedy-jedna-maszyna-przestaje-wystarczac">Kiedy jedna maszyna przestaje wystarczać<a class="headerlink" href="#kiedy-jedna-maszyna-przestaje-wystarczac" title="Permanent link">#</a></h2>
+<p>Komputer ma trzy zasoby, które mogą się skończyć:</p>
+<ul>
+<li><strong>pamięć RAM</strong> — pandas wczytuje całą tabelę do pamięci, i to zwykle w formie
+  kilka razy większej niż plik na dysku,</li>
+<li><strong>dysk</strong> — zarówno jego pojemność, jak i szybkość odczytu,</li>
+<li><strong>procesor</strong> — przy złożonych obliczeniach.</li>
+</ul>
+<p>Najczęściej wąskim gardłem jest <strong>szybkość odczytu</strong>. Rzędy wielkości:</p>
+<table>
+<thead>
+<tr>
+<th>Źródło</th>
+<th>Przepustowość</th>
+<th>Odczyt 1 TB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pamięć RAM</td>
+<td>~20 GB/s</td>
+<td>~1 min</td>
+</tr>
+<tr>
+<td>dysk SSD NVMe</td>
+<td>~3 GB/s</td>
+<td>~6 min</td>
+</tr>
+<tr>
+<td>dysk HDD</td>
+<td>~150 MB/s</td>
+<td>~2 h</td>
+</tr>
+<tr>
+<td>sieć 1 Gb/s</td>
+<td>~120 MB/s</td>
+<td>~2,5 h</td>
+</tr>
+</tbody>
+</table>
+<p>Jeśli dane leżą na stu maszynach i każda czyta swoją setną część, ten sam terabajt
+z dysków HDD przeczytasz w nieco ponad minutę zamiast w dwie godziny. Na tym
+pomyśle opiera się całe przetwarzanie rozproszone.</p>
+<h3 id="skalowanie-w-gore-i-wszerz">Skalowanie w górę i wszerz<a class="headerlink" href="#skalowanie-w-gore-i-wszerz" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Skalowanie w górę (<em>scale up</em>)</th>
+<th>Skalowanie wszerz (<em>scale out</em>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Na czym polega</td>
+<td>większa maszyna: więcej RAM, rdzeni, szybszy dysk</td>
+<td>więcej maszyn, każda robi część pracy</td>
+</tr>
+<tr>
+<td>Zaleta</td>
+<td>prosto — kod się nie zmienia</td>
+<td>praktycznie bez górnej granicy</td>
+</tr>
+<tr>
+<td>Wada</td>
+<td>jest sufit i ceny rosną szybciej niż moc</td>
+<td>koordynacja, sieć, awarie pojedynczych węzłów</td>
+</tr>
+<tr>
+<td>Przykład</td>
+<td>DuckDB, Polars, pandas na mocnym serwerze</td>
+<td>Spark, BigQuery, Snowflake</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Zanim sięgniesz po klaster</p>
+<p>Dzisiejszy laptop ma 16–32 GB RAM i dysk czytający kilka GB/s. Silniki
+jednomaszynowe, takie jak <strong>DuckDB</strong> czy <strong>Polars</strong>, przetwarzają na nim
+dziesiątki, a nawet setki gigabajtów, jeśli dane są w dobrym formacie. Klaster
+ma sens, gdy dane naprawdę przekraczają możliwości jednej maszyny albo gdy
+potrzebujesz odporności na awarie i pracy wielu zespołów na tych samych danych.
+Spark poznamy za tydzień. Dziś zobaczymy, jak daleko można zajść bez niego.</p>
+</div>
+<hr />
+<h2 id="formaty-plikow">Formaty plików<a class="headerlink" href="#formaty-plikow" title="Permanent link">#</a></h2>
+<p>Ten sam zbiór danych możesz zapisać na wiele sposobów. To, który wybierzesz,
+decyduje o rozmiarze pliku, czasie odczytu i o tym, czy w ogóle da się czytać
+tylko jego część.</p>
+<h3 id="wierszowo-czy-kolumnowo">Wierszowo czy kolumnowo<a class="headerlink" href="#wierszowo-czy-kolumnowo" title="Permanent link">#</a></h3>
+<p>Weźmy małą tabelę:</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>miasto</th>
+<th>kwota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Warszawa</td>
+<td>25.0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Kraków</td>
+<td>18.5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Warszawa</td>
+<td>31.2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Format wierszowy</strong> (CSV, JSON, Avro, tabele w PostgreSQL) zapisuje dane wiersz po
+wierszu:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1,Warszawa,25.0 | 2,Kraków,18.5 | 3,Warszawa,31.2
+</span></code></pre></div>
+<p><strong>Format kolumnowy</strong> (Parquet, ORC) zapisuje kolumna po kolumnie:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>1,2,3 | Warszawa,Kraków,Warszawa | 25.0,18.5,31.2
+</span></code></pre></div>
+<p>Różnica wygląda niewinnie, ale ma ogromne konsekwencje. Typowe zapytanie
+analityczne, np. „średnia kwota per miasto”, potrzebuje <strong>dwóch kolumn z
+dziewiętnastu</strong>:</p>
+<ul>
+<li>w CSV trzeba przeczytać i sparsować <strong>cały plik</strong>, bo kolumny są przemieszane
+  w każdym wierszu,</li>
+<li>w Parquet czytamy <strong>tylko te dwie kolumny</strong>, a resztę pomijamy, nawet jej nie
+  dotykając.</li>
+</ul>
+<p>Druga konsekwencja: w jednej kolumnie leżą obok siebie wartości tego samego typu
+i często powtarzające się (<code>Warszawa, Warszawa, Warszawa…</code>). Takie dane <strong>świetnie
+się kompresują</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Wierszowy (CSV, Avro)</th>
+<th>Kolumnowy (Parquet, ORC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dobry do</td>
+<td>zapisywania pojedynczych rekordów, systemów transakcyjnych (OLTP)</td>
+<td>analityki, agregacji po wielu wierszach (OLAP)</td>
+</tr>
+<tr>
+<td>Odczyt kilku kolumn</td>
+<td>trzeba przeczytać wszystko</td>
+<td>czyta się tylko potrzebne</td>
+</tr>
+<tr>
+<td>Kompresja</td>
+<td>słaba</td>
+<td>bardzo dobra</td>
+</tr>
+<tr>
+<td>Typy danych</td>
+<td>CSV — brak, wszystko jest tekstem</td>
+<td>zapisane w pliku</td>
+</tr>
+<tr>
+<td>Czytelny dla człowieka</td>
+<td>CSV — tak</td>
+<td>nie</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">CSV gubi typy</p>
+<p>W CSV nie ma informacji, że <code>2024-01-01 00:57:55</code> to data, a <code>00123</code> to kod,
+a nie liczba 123. Każde narzędzie zgaduje typy na nowo i każde może zgadnąć
+inaczej. Parquet przechowuje schemat w pliku, więc data pozostaje datą.</p>
+</div>
+<h3 id="parquet-od-srodka">Parquet od środka<a class="headerlink" href="#parquet-od-srodka" title="Permanent link">#</a></h3>
+<p>Plik Parquet nie jest jednym wielkim blokiem. Ma strukturę, dzięki której da się
+czytać jego fragmenty:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>yellow_tripdata_2024-01.parquet
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── Row group 0  (wiersze 0 – 1 048 575)
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>│   ├── kolumna tpep_pickup_datetime  ← skompresowane strony (pages)
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│   ├── kolumna trip_distance
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>│   ├── ...
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│   └── kolumna total_amount
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>├── Row group 1  (wiersze 1 048 576 – 2 097 151)
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>│   └── ...
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>├── Row group 2  (pozostałe wiersze)
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>│   └── ...
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>└── Stopka (footer)
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    ├── schemat: nazwy i typy kolumn
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    ├── położenie każdej kolumny w każdym row group
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    └── statystyki: min, max, liczba NULL-i dla kolumn w row groupach
+</span></code></pre></div>
+<ul>
+<li><strong>Row group</strong> to poziomy kawałek tabeli, zwykle od kilkuset tysięcy do miliona
+  wierszy.</li>
+<li><strong>Column chunk</strong> to jedna kolumna w obrębie row group. To najmniejsza jednostka,
+  którą czytamy z dysku.</li>
+<li><strong>Stopka</strong> jest czytana jako pierwsza. Silnik zagląda do niej, zanim przeczyta
+  jakiekolwiek dane, i na jej podstawie decyduje, czego <strong>nie</strong> musi czytać.</li>
+</ul>
+<p>Jeśli zapytanie dotyczy <code>total_amount &gt; 500</code>, a statystyki row group mówią
+<code>max(total_amount) = 312</code>, to cały row group zostaje pominięty bez czytania.</p>
+<h3 id="kompresja-i-kodowanie">Kompresja i kodowanie<a class="headerlink" href="#kompresja-i-kodowanie" title="Permanent link">#</a></h3>
+<p>Parquet zmniejsza dane w dwóch krokach:</p>
+<ol>
+<li><strong>Kodowanie</strong> wykorzystuje strukturę danych:<ul>
+<li><em>dictionary encoding</em>: zamiast <code>Warszawa, Kraków, Warszawa</code> zapisuje słownik
+  <code>{0: Warszawa, 1: Kraków}</code> i ciąg <code>0, 1, 0</code>,</li>
+<li><em>run-length encoding (RLE)</em>: zamiast <code>1, 1, 1, 1, 1</code> zapisuje „pięć razy 1”.</li>
+</ul>
+</li>
+<li><strong>Kompresja</strong> to ogólny algorytm nakładany na wynik kodowania.</li>
+</ol>
+<p>Jak to wygląda dla jednego miesiąca kursów taksówek (2,96 mln wierszy, 19 kolumn):</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Rozmiar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSV</td>
+<td>299 MB</td>
+</tr>
+<tr>
+<td>CSV + gzip</td>
+<td>56 MB</td>
+</tr>
+<tr>
+<td>Parquet bez kompresji</td>
+<td>86 MB</td>
+</tr>
+<tr>
+<td>Parquet + snappy</td>
+<td>61 MB</td>
+</tr>
+<tr>
+<td>Parquet + zstd</td>
+<td>45 MB</td>
+</tr>
+</tbody>
+</table>
+<p>Zwróć uwagę na dwie rzeczy. Po pierwsze, Parquet <strong>bez żadnej kompresji</strong> jest
+3,5 razy mniejszy od CSV. To zasługa samego kodowania i binarnego zapisu liczb.
+Po drugie, CSV spakowany gzipem jest prawie tak mały jak Parquet, ale żeby
+przeczytać z niego jedną kolumnę, trzeba rozpakować i sparsować cały plik.</p>
+<table>
+<thead>
+<tr>
+<th>Kodek</th>
+<th>Charakterystyka</th>
+<th>Kiedy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>snappy</strong></td>
+<td>szybki, umiarkowana kompresja</td>
+<td>domyślny w Sparku, dane często czytane</td>
+</tr>
+<tr>
+<td><strong>zstd</strong></td>
+<td>dobra kompresja przy dobrej szybkości</td>
+<td>rozsądny wybór domyślny</td>
+</tr>
+<tr>
+<td><strong>gzip</strong></td>
+<td>mocna kompresja, wolny</td>
+<td>archiwizacja, przesyłanie przez sieć</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="partycjonowanie-i-pushdown">Partycjonowanie i pushdown<a class="headerlink" href="#partycjonowanie-i-pushdown" title="Permanent link">#</a></h2>
+<h3 id="partycjonowanie-w-stylu-hive">Partycjonowanie w stylu Hive<a class="headerlink" href="#partycjonowanie-w-stylu-hive" title="Permanent link">#</a></h3>
+<p>Gdy danych jest dużo, nie trzymamy ich w jednym pliku. Dzielimy je na katalogi
+według wartości wybranej kolumny:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>taxi_2024/
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── miesiac=1/
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>│   └── data_0.parquet
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── miesiac=2/
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>│   └── data_0.parquet
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>├── ...
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>└── miesiac=12/
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    └── data_0.parquet
+</span></code></pre></div>
+<p>Taki układ katalogów <code>kolumna=wartość</code> nazywa się <strong>partycjonowaniem w stylu Hive</strong>
+(od narzędzia, które go spopularyzowało). Rozumieją go Spark, DuckDB, BigQuery,
+Athena, pandas i praktycznie każde inne narzędzie.</p>
+<p>Kolumny <code>miesiac</code> <strong>nie ma w środku plików</strong>. Jej wartość wynika z nazwy katalogu.
+Dzięki temu zapytanie <code>WHERE miesiac = 3</code> może pominąć jedenaście katalogów na
+podstawie samych nazw, bez otwierania choćby jednego pliku. To jest <strong>partition
+pruning</strong>.</p>
+<p>Jak wybrać kolumnę partycjonującą:</p>
+<ul>
+<li><strong>filtrujesz po niej często</strong> — zwykle data, rzadziej region lub kraj,</li>
+<li><strong>ma umiarkowaną liczbę wartości</strong> — miesiące albo dni tak, identyfikator
+  klienta nie,</li>
+<li><strong>dzieli dane w miarę równo</strong> — jedna partycja z 90% danych niewiele daje.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Problem małych plików</p>
+<p>Partycjonowanie po kolumnie o wielu wartościach (np. po identyfikatorze
+strefy, minucie albo kliencie) daje tysiące katalogów z malutkimi plikami.
+Otwarcie pliku i przeczytanie jego stopki kosztuje tyle samo, niezależnie od
+tego, czy plik ma 1 KB, czy 100 MB. Tysiąc plików po 50 KB czyta się
+<strong>wolniej</strong> niż jeden plik 50 MB. Rozsądny rozmiar pliku to dziesiątki do
+setek megabajtów.</p>
+</div>
+<h3 id="predicate-pushdown-i-projection-pushdown">Predicate pushdown i projection pushdown<a class="headerlink" href="#predicate-pushdown-i-projection-pushdown" title="Permanent link">#</a></h3>
+<p>Oba pojęcia oznaczają to samo: <strong>przepchnąć część pracy jak najbliżej danych</strong>,
+żeby czytać jak najmniej.</p>
+<ul>
+<li><strong>Projection pushdown</strong> — czytamy tylko kolumny potrzebne w zapytaniu
+  (<code>SELECT a, b</code> → kolumny <code>a</code> i <code>b</code>, reszta zostaje na dysku).</li>
+<li><strong>Predicate pushdown</strong> — warunek <code>WHERE</code> jest sprawdzany już w trakcie czytania
+  pliku, a nie po wczytaniu wszystkiego. Silnik pomija row groupy, których
+  statystyki wykluczają dopasowanie.</li>
+</ul>
+<p>Razem z partycjonowaniem daje to trzy poziomy pomijania danych:</p>
+<table>
+<thead>
+<tr>
+<th>Poziom</th>
+<th>Mechanizm</th>
+<th>Na podstawie czego</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>katalogi i pliki</td>
+<td>partition pruning</td>
+<td>nazwy katalogów (<code>miesiac=3</code>)</td>
+</tr>
+<tr>
+<td>row groupy</td>
+<td>predicate pushdown</td>
+<td>statystyki min/max w stopce</td>
+</tr>
+<tr>
+<td>kolumny</td>
+<td>projection pushdown</td>
+<td>lista kolumn w <code>SELECT</code></td>
+</tr>
+</tbody>
+</table>
+<p>Najlepsze zapytanie to takie, które <strong>nie czyta</strong> prawie niczego.</p>
+<hr />
+<h2 id="demo-nyc-taxi-w-pandas-i-duckdb">Demo: NYC Taxi w pandas i DuckDB<a class="headerlink" href="#demo-nyc-taxi-w-pandas-i-duckdb" title="Permanent link">#</a></h2>
+<p>Komisja taksówek Nowego Jorku (NYC TLC) publikuje dane o każdym kursie żółtych
+taksówek: kiedy się zaczął i skończył, skąd i dokąd, ile kosztował i jak za niego
+zapłacono. Jeden miesiąc to około 3 mln wierszy, cały rok 2024 to <strong>41 mln</strong>.
+Dane są publiczne i udostępniane jako pliki Parquet, po jednym na miesiąc.</p>
+<p>Pracujemy w <a href="https://colab.research.google.com">Google Colab</a>. Pandas jest tam
+od razu, a DuckDB aktualizujemy do najnowszej wersji:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="o">-</span><span class="n">U</span> <span class="n">duckdb</span>
+</span></code></pre></div>
+<h3 id="duckdb-w-jednym-akapicie">DuckDB w jednym akapicie<a class="headerlink" href="#duckdb-w-jednym-akapicie" title="Permanent link">#</a></h3>
+<p><strong>DuckDB</strong> to analityczna baza danych, która działa jako biblioteka Pythona. Nie
+ma serwera, nie trzeba niczego konfigurować. Piszesz SQL, a w miejscu tabeli
+podajesz ścieżkę do pliku. Dane są przetwarzane kolumnowo, na wszystkich rdzeniach
+procesora i bez wczytywania wszystkiego do pamięci. Można ją traktować jak
+„SQLite do analityki”.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">duckdb</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"SELECT 42 AS odpowiedz"</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="pobranie-danych">Pobranie danych<a class="headerlink" href="#pobranie-danych" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">pobierz</span><span class="p">(</span><span class="n">rok</span><span class="p">,</span> <span class="n">miesiac</span><span class="p">,</span> <span class="n">katalog</span><span class="o">=</span><span class="s2">"dane"</span><span class="p">):</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="sd">"""Pobiera jeden miesiąc kursów żółtych taksówek NYC (jeśli jeszcze go nie ma)."""</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">katalog</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="n">nazwa</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"yellow_tripdata_</span><span class="si">{</span><span class="n">rok</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">miesiac</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">.parquet"</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="n">sciezka</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">katalog</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">nazwa</span><span class="si">}</span><span class="s2">"</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">sciezka</span><span class="p">):</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"https://d37ci6vzurychx.cloudfront.net/trip-data/</span><span class="si">{</span><span class="n">nazwa</span><span class="si">}</span><span class="s2">"</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>        <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">sciezka</span><span class="p">)</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="k">return</span> <span class="n">sciezka</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="n">plik</span> <span class="o">=</span> <span class="n">pobierz</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">plik</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="n">plik</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1e6</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>dane/yellow_tripdata_2024-01.parquet: 50.0 MB
+</span></code></pre></div>
+<h3 id="wczytanie-w-pandas">Wczytanie w pandas<a class="headerlink" href="#wczytanie-w-pandas" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="o">%</span><span class="n">time</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="n">plik</span><span class="p">)</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Pamięć: </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">memory_usage</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1e6</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>(2964624, 19)
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Pamięć: 418 MB
+</span></code></pre></div>
+<p>Plik ma 50 MB, a w pamięci zajmuje <strong>418 MB</strong> — ponad osiem razy więcej. Na
+dysku dane są skompresowane, w pamięci pandas trzyma je w pełnej postaci, po 8
+bajtów na każdą liczbę. Zapamiętaj tę proporcję: rozmiar pliku nie mówi, czy
+dane zmieszczą się w RAM.</p>
+<div class="admonition tip">
+<p class="admonition-title"><code>%time</code> i <code>%%time</code></p>
+<p><code>%time</code> przed linijką mierzy czas jej wykonania. <code>%%time</code> w pierwszej linijce
+komórki mierzy czas całej komórki. Interesuje nas wiersz <code>Wall time</code> — tyle
+faktycznie czekałeś.</p>
+<p>Czasy w tym dokumencie pomijam, bo na każdym komputerze będą inne. W Colabie
+wyjdą zwykle kilka razy dłuższe niż na moim laptopie. Liczą się
+<strong>proporcje</strong>, nie wartości bezwzględne.</p>
+</div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">df</span><span class="p">[[</span><span class="s2">"tpep_pickup_datetime"</span><span class="p">,</span> <span class="s2">"trip_distance"</span><span class="p">,</span> <span class="s2">"PULocationID"</span><span class="p">,</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="s2">"payment_type"</span><span class="p">,</span> <span class="s2">"total_amount"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>  tpep_pickup_datetime  trip_distance  PULocationID  payment_type  total_amount
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>0  2024-01-01 00:57:55           1.72           186             2         22.70
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>1  2024-01-01 00:03:00           1.80           140             1         18.75
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>2  2024-01-01 00:17:06           4.70           236             1         31.30
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>3  2024-01-01 00:36:38           1.40            79             1         17.00
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>4  2024-01-01 00:46:51           0.80           211             1         16.10
+</span></code></pre></div>
+<h3 id="projection-pushdown-w-praktyce">Projection pushdown w praktyce<a class="headerlink" href="#projection-pushdown-w-praktyce" title="Permanent link">#</a></h3>
+<p>Teraz wczytujemy tylko dwie kolumny z dziewiętnastu:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="o">%</span><span class="n">time</span> <span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="n">plik</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"payment_type"</span><span class="p">,</span> <span class="s2">"total_amount"</span><span class="p">])</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Pamięć: </span><span class="si">{</span><span class="n">df2</span><span class="o">.</span><span class="n">memory_usage</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1e6</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Pamięć: 47 MB
+</span></code></pre></div>
+<p>Dziewięć razy mniej pamięci, a czas odczytu spada o rząd wielkości. Parquet
+pozwolił pominąć 17 kolumn bez czytania ich z dysku.</p>
+<h3 id="to-samo-w-duckdb">To samo w DuckDB<a class="headerlink" href="#to-samo-w-duckdb" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="s2">    SELECT payment_type,</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="s2">           COUNT(*)                   AS kursy,</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="s2">           ROUND(AVG(total_amount), 2) AS srednia_kwota</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="s2">    FROM '</span><span class="si">{</span><span class="n">plik</span><span class="si">}</span><span class="s2">'</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="s2">    GROUP BY payment_type</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="s2">    ORDER BY kursy DESC</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>┌──────────────┬─────────┬───────────────┐
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>│ payment_type │  kursy  │ srednia_kwota │
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>│    int64     │  int64  │    double     │
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>├──────────────┼─────────┼───────────────┤
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>│            1 │ 2319046 │         28.26 │
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>│            2 │  439191 │         22.88 │
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>│            0 │  140162 │         25.81 │
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>│            4 │   46628 │          1.77 │
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>│            3 │   19597 │          8.76 │
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>└──────────────┴─────────┴───────────────┘
+</span></code></pre></div>
+<p>Dwie rzeczy są tu ważne:</p>
+<ul>
+<li>DuckDB <strong>nie wczytał tabeli do pamięci Pythona</strong>. Przeczytał z pliku dwie
+  potrzebne kolumny, policzył wynik i oddał pięć wierszy.</li>
+<li>Dla porównania w pandas trzeba najpierw wczytać plik (<code>read_parquet</code>), a dopiero
+  potem liczyć (<code>groupby</code>). Policz oba kroki razem, a nie samo <code>groupby</code>, bo
+  inaczej porównanie jest nieuczciwe.</li>
+</ul>
+<p>Wynik w pandas, dla porównania:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"payment_type"</span><span class="p">)[</span><span class="s2">"total_amount"</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s2">"count"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">])</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>payment_type</code> to kod sposobu płatności: 1 — karta, 2 — gotówka, 0 — taryfa
+elastyczna (<em>flex fare</em>), 3 — bez opłaty, 4 — spór. Średnia kwota 1,77 $ przy
+sporach to nie błąd: prawie połowa spornych kursów ma kwotę ujemną (zwrot).</p>
+<h3 id="csv-dla-porownania">CSV dla porównania<a class="headerlink" href="#csv-dla-porownania" title="Permanent link">#</a></h3>
+<p>Zapiszmy ten sam miesiąc jako CSV. DuckDB robi to w sekundę, <code>df.to_csv()</code>
+w pandas kilka razy dłużej:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="sa">f</span><span class="s2">"COPY (SELECT * FROM '</span><span class="si">{</span><span class="n">plik</span><span class="si">}</span><span class="s2">') TO 'dane/taxi_2024-01.csv' (HEADER)"</span><span class="p">)</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"CSV: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="s1">'dane/taxi_2024-01.csv'</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1e6</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>CSV: 299.3 MB
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="o">%</span><span class="n">time</span> <span class="n">df_csv</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"dane/taxi_2024-01.csv"</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Pamięć: </span><span class="si">{</span><span class="n">df_csv</span><span class="o">.</span><span class="n">memory_usage</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1e6</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"tpep_pickup_datetime"</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="s2">"kontra"</span><span class="p">,</span> <span class="n">df_csv</span><span class="p">[</span><span class="s2">"tpep_pickup_datetime"</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Pamięć: 566 MB
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>datetime64[us] kontra str
+</span></code></pre></div>
+<p>CSV jest sześć razy większy, czyta się wolniej, zajmuje w pamięci więcej, a na
+dodatek <strong>daty stały się tekstem</strong>, bo CSV nie przechowuje typów. Żeby z nich
+skorzystać, trzeba je jeszcze raz sparsować.</p>
+<h3 id="zagladamy-do-planu-zapytania">Zaglądamy do planu zapytania<a class="headerlink" href="#zagladamy-do-planu-zapytania" title="Permanent link">#</a></h3>
+<p><code>EXPLAIN</code> pokazuje, <strong>jak</strong> silnik zamierza wykonać zapytanie. Wynik jest tekstem
+w drugiej kolumnie, więc wypisujemy go przez <code>print</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">plan</span><span class="p">(</span><span class="n">zapytanie</span><span class="p">):</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"EXPLAIN "</span> <span class="o">+</span> <span class="n">zapytanie</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="n">plan</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="s2">    SELECT payment_type, AVG(total_amount)</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="s2">    FROM '</span><span class="si">{</span><span class="n">plik</span><span class="si">}</span><span class="s2">'</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="s2">    WHERE trip_distance &gt; 10</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="s2">    GROUP BY payment_type</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>┌───────────────────────────┐
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>│       HASH_GROUP_BY       │
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>│    ────────────────────   │
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>│         Groups: #0        │
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>│    Aggregates: avg(#1)    │
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>└─────────────┬─────────────┘
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>┌─────────────┴─────────────┐
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>│         PROJECTION        │
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>│    ────────────────────   │
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>│        payment_type       │
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>│        total_amount       │
+</span><span id="__span-22-12"><a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>└─────────────┬─────────────┘
+</span><span id="__span-22-13"><a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>┌─────────────┴─────────────┐
+</span><span id="__span-22-14"><a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>│        PARQUET_SCAN       │
+</span><span id="__span-22-15"><a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>│    ────────────────────   │
+</span><span id="__span-22-16"><a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>│        Projections:       │
+</span><span id="__span-22-17"><a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a>│        payment_type       │
+</span><span id="__span-22-18"><a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a>│        total_amount       │
+</span><span id="__span-22-19"><a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a>│                           │
+</span><span id="__span-22-20"><a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a>│          Filters:         │
+</span><span id="__span-22-21"><a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a>│     trip_distance&gt;10.0    │
+</span><span id="__span-22-22"><a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a>└───────────────────────────┘
+</span></code></pre></div>
+<p>Plan czytamy <strong>od dołu</strong>. Na samym dole jest odczyt pliku (<code>PARQUET_SCAN</code>), a w nim
+widać oba rodzaje pushdownu:</p>
+<ul>
+<li><code>Projections</code> — czytane są tylko potrzebne kolumny,</li>
+<li><code>Filters</code> — warunek <code>WHERE</code> został „wepchnięty” do odczytu pliku.</li>
+</ul>
+<p>Po dodaniu <code>ANALYZE</code> (<code>EXPLAIN ANALYZE</code>) zapytanie zostanie faktycznie wykonane,
+a plan pokaże rzeczywistą liczbę wierszy, czas każdego kroku i <strong>liczbę
+przeczytanych plików</strong>. To przyda się w zadaniu.</p>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zmierzyć czas linijki / komórki</td>
+<td><code>%time ...</code> / <code>%%time</code></td>
+</tr>
+<tr>
+<td>rozmiar pliku w MB</td>
+<td><code>os.path.getsize(plik) / 1e6</code></td>
+</tr>
+<tr>
+<td>pamięć DataFrame'u w MB</td>
+<td><code>df.memory_usage(deep=True).sum() / 1e6</code></td>
+</tr>
+<tr>
+<td>wczytać Parquet w pandas</td>
+<td><code>pd.read_parquet(plik)</code></td>
+</tr>
+<tr>
+<td>tylko wybrane kolumny</td>
+<td><code>pd.read_parquet(plik, columns=["a", "b"])</code></td>
+</tr>
+<tr>
+<td>zapytanie SQL na pliku</td>
+<td><code>duckdb.sql("SELECT ... FROM 'plik.parquet'")</code></td>
+</tr>
+<tr>
+<td>zapytanie na wielu plikach</td>
+<td><code>FROM 'dane/*.parquet'</code></td>
+</tr>
+<tr>
+<td>wynik DuckDB jako DataFrame</td>
+<td><code>duckdb.sql("...").df()</code></td>
+</tr>
+<tr>
+<td>zapisać wynik jako CSV</td>
+<td><code>COPY (SELECT ...) TO 'plik.csv' (HEADER)</code></td>
+</tr>
+<tr>
+<td>zapisać jako Parquet partycjonowany</td>
+<td><code>COPY (SELECT ...) TO 'katalog' (FORMAT parquet, PARTITION_BY (kol))</code></td>
+</tr>
+<tr>
+<td>czytać dane partycjonowane</td>
+<td><code>FROM read_parquet('katalog/*/*.parquet', hive_partitioning = true)</code></td>
+</tr>
+<tr>
+<td>rok / miesiąc / godzina z daty</td>
+<td><code>year(kol)</code>, <code>month(kol)</code>, <code>hour(kol)</code></td>
+</tr>
+<tr>
+<td>plan zapytania</td>
+<td><code>EXPLAIN SELECT ...</code></td>
+</tr>
+<tr>
+<td>plan z wykonaniem i liczbą plików</td>
+<td><code>EXPLAIN ANALYZE SELECT ...</code></td>
+</tr>
+<tr>
+<td>pamięć RAM maszyny w GB</td>
+<td><code>psutil.virtual_memory().total / 1e9</code></td>
+</tr>
+<tr>
+<td>zawartość katalogu</td>
+<td><code>!ls -R katalog</code> / <code>!du -sh katalog/*</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-1-taksowki-w-nowym-jorku-6-pkt">Zadanie 1 — Taksówki w Nowym Jorku (6 pkt)<a class="headerlink" href="#zadanie-1-taksowki-w-nowym-jorku-6-pkt" title="Permanent link">#</a></h2>
+<p><strong>Czas:</strong> maks. 45 minut
+<strong>Środowisko:</strong> Google Colab i Databricks
+<strong>Oddanie:</strong> notatnik <code>.ipynb</code> (część 1) oraz zrzut ekranu z Databricks (część 2)
+na Moodle</p>
+<p>Zadanie ma dwie części. Rób je po kolei i <strong>pokaż mi wynik każdej części, gdy
+będzie gotowa</strong> — punktacja zależy od tego, ile zrobisz na zajęciach.</p>
+<h3 id="czesc-1-od-jednego-miesiaca-do-caego-roku-ok-30-min">Część 1 — od jednego miesiąca do całego roku (ok. 30 min)<a class="headerlink" href="#czesc-1-od-jednego-miesiaca-do-caego-roku-ok-30-min" title="Permanent link">#</a></h3>
+<p>Każdy analizuje inny miesiąc 2024 roku. Wylicz go ze swojego numeru albumu.
+Pierwsze komórki notatnika:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="o">-</span><span class="n">U</span> <span class="n">duckdb</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>                 <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="n">MIESIAC</span> <span class="o">=</span> <span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">12</span> <span class="o">+</span> <span class="mi">1</span>       <span class="c1"># Twój miesiąc: 1–12</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Mój miesiąc: </span><span class="si">{</span><span class="n">MIESIAC</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Wszędzie, gdzie zadanie mówi o <strong>Twoim miesiącu</strong>, chodzi o ten wynik. Rozwiązania
+z cudzym miesiącem nie zaliczam. Skopiuj też do notatnika funkcje <code>pobierz()</code>
+i <code>plan()</code> z demo.</p>
+<ol>
+<li><strong>Jeden miesiąc w pandas.</strong> Pobierz swój miesiąc i wczytaj go w pandas dwa
+   razy: najpierw cały plik, potem tylko kolumny <code>payment_type</code> i <code>total_amount</code>.
+   Dla obu wariantów zmierz czas i pamięć. Wypisz też rozmiar pliku na dysku.</li>
+<li><strong>Parquet kontra CSV.</strong> Zapisz swój miesiąc jako CSV i porównaj rozmiar
+   z Parquetem. W DuckDB policz liczbę kursów i średnią kwotę <code>total_amount</code>
+   w podziale na <code>payment_type</code> — raz na pliku Parquet, raz na CSV. Porównaj czasy.</li>
+<li><strong>Cały rok, partycjonowany.</strong> Pobierz wszystkie 12 miesięcy 2024 roku
+   i zapisz je jako <strong>Parquet partycjonowany po miesiącu</strong> (katalog <code>taxi_2024/</code>,
+   kolumna <code>miesiac</code> wyliczona z <code>tpep_pickup_datetime</code>). Zapisuj tylko kursy
+   z 2024 roku — w danych są kursy z błędnymi latami. Sprawdź, ile ich jest.</li>
+<li>
+<p><strong>Ile plików czyta zapytanie.</strong> Dla swojego miesiąca policz liczbę kursów
+   i średnią kwotę <code>total_amount</code> przez <code>EXPLAIN ANALYZE</code> na dwa sposoby:</p>
+<ul>
+<li>(a) na danych partycjonowanych, z warunkiem <code>WHERE miesiac = ...</code>,</li>
+<li>(b) na oryginalnych plikach (<code>'dane/*.parquet'</code>), z warunkiem na zakres dat
+  <code>tpep_pickup_datetime</code>.</li>
+</ul>
+<p>Wyniki liczbowe muszą być identyczne. Znajdź w obu planach, <strong>ile plików
+zostało przeczytanych</strong>.</p>
+</li>
+<li>
+<p><strong>Wnioski.</strong> Dodaj komórkę tekstową (Markdown) i w 3–4 zdaniach odpowiedz:
+   skąd biorą się różnice z punktów 1 i 2 oraz dlaczego w punkcie 4 wariant (a)
+   czyta jeden plik, a wariant (b) wszystkie.</p>
+</li>
+</ol>
+<h3 id="czesc-2-konto-w-databricks-ok-15-min">Część 2 — konto w Databricks (ok. 15 min)<a class="headerlink" href="#czesc-2-konto-w-databricks-ok-15-min" title="Permanent link">#</a></h3>
+<p>Od zajęć 3 pracujemy w Databricks, więc konto zakładamy już dziś.</p>
+<ol>
+<li>Wejdź na
+   <a href="https://www.databricks.com/signup/free-edition">databricks.com/signup/free-edition</a>
+   i zarejestruj się (najprościej kontem Google albo mailem uczelnianym).</li>
+<li>Potwierdź adres e-mail i zaloguj się do swojego workspace'u.</li>
+<li>Zrób <strong>zrzut ekranu</strong> strony głównej workspace'u, na którym widać Twój adres
+   e-mail (kliknij ikonę użytkownika w prawym górnym rogu).</li>
+<li>Wgraj zrzut na Moodle razem z notatnikiem.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Free Edition, nie Free Trial</p>
+<p>Jeśli formularz każe Ci wybrać dostawcę chmury (AWS, Azure, GCP) albo podać
+kartę płatniczą, to trafiłeś na 14-dniowy <em>Free Trial</em>. Wróć i wybierz
+<strong>Free Edition</strong>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Mail z potwierdzeniem</p>
+<p>Mail z kodem czasem przychodzi z opóźnieniem albo wpada do spamu. Możesz
+zacząć rejestrację na początku zadania, a w czasie oczekiwania pracować nad
+częścią 1.</p>
+</div>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Ściągawka jest kilka sekcji wyżej — wszystkie potrzebne polecenia tam są.</li>
+<li>Plan z wykonaniem wypiszesz funkcją <code>plan()</code> z demo, dopisując <code>ANALYZE</code> na
+  początku zapytania: <code>plan("ANALYZE SELECT ...")</code>.</li>
+<li>Kolumnę do partycjonowania dodajesz w <code>SELECT</code>:
+  <code>SELECT *, month(tpep_pickup_datetime) AS miesiac FROM ...</code>.</li>
+<li>Jeśli zapis do istniejącego katalogu kończy się błędem, dopisz w opcjach
+  <code>COPY</code> jeszcze <code>OVERWRITE_OR_IGNORE</code>.</li>
+<li><strong>Nie wczytuj całego roku w pandas.</strong> Colab ma około 12 GB RAM, a rok danych
+  zajmuje w pandas około 6 GB, plus kopie robione przy wczytywaniu. Runtime się
+  zrestartuje i stracisz wszystkie zmienne. Cały rok obsługujemy w DuckDB.</li>
+</ul>
+<h3 id="punktacja-6-pkt">Punktacja (6 pkt)<a class="headerlink" href="#punktacja-6-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>6 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>4 pkt</strong></td>
+<td>jedna z dwóch części zrobiona na zajęciach</td>
+</tr>
+<tr>
+<td><strong>2 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>2026-10-16</strong> (dzień przed kolejnymi zajęciami).</p>
+<div class="admonition danger">
+<p class="admonition-title">Serio, róbcie to na zajęciach</p>
+<p>Te same 45 minut pracy jest warte 6 pkt tu i teraz albo 2 pkt w domu. Przez
+cały semestr robi to różnicę 32 punktów, czyli całej oceny w górę lub w dół.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

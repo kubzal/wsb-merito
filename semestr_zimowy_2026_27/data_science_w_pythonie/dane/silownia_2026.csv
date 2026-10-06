@@ -1,0 +1,1543 @@
+klient_id;wiek;miasto;typ_karnetu;oplata_mies;staz_mies;wizyty_mies;zgloszenia;zrezygnowal
+K1342;45;Gdańsk;basic;99,00 zł;20;1.2;0;tak
+K0802;34;Poznań;Standard ;119,00 zł;17;7.6;1;Nie
+K0240;34;warszawa;Basic;99,00 zł;5;5.1;1;nie
+K0144;46;Poznań; Basic;99,00 zł;52;2.4;0;nie
+K0619;48;Wrocław;Basic;99,00 zł;52;6.1;1;nie
+K1394;46;Warszawa;basic;79,00 zł;33;3.8;2;nie
+K0691;24;Warszawa; Basic;99,00 zł;44;14.5;2;Tak
+K1109;43;Gdańsk; Standard;139,00 zł;60;4.4;0;Nie
+K1195;32;Warszawa;BASIC;89,00 zł;6;3.9;4;tak
+K0970;36;Gdańsk;basic;99,00 zł;7;5.4;1;nie
+K0335;36;Warszawa;Standard;139,00 zł;34;3.4;0;nie
+K0353;51;Kraków;Basic;99,00 zł;6;7.5;0;nie
+K1391;18;Kraków; Basic;99,00 zł;37;5.0;1;Nie
+K0864;24;Wrocław;Standard;119,00 zł;35;6.9;1;nie
+K0766;43;Warszawa ;Standard;139,00 zł;42;6.0;0;nie
+K1057;34;Poznań;Standard;139,00 zł;27;6.3;2;Nie
+K0985;38;POZNAŃ;Basic;99,00 zł;39;4.4;0;nie
+K0386;36;Warszawa;basic;99,00 zł;2;1.4;1;tak
+K1257;54;Warszawa;Standard ;139,00 zł;60;4.2;0;NIE
+K0520;35;Warszawa;Basic;89,00 zł;3;16.6;0;nie
+K0485;28;Kraków;Basic;79,00 zł;42;3.0;2;nie
+K1130;17;Gdańsk; Standard;139,00 zł;11;1.1;0;TAK
+K0782;41;Gdańsk;Standard;139,00 zł;39;2.6;1;NIE
+K1106;41;KRAKÓW;STANDARD;139,00 zł;1;8.9;0;nie
+K0826;34;Warszawa;standard;139,00 zł;13;9.3;2;nie
+K0950;59;Wrocław;Basic;99,00 zł;60;3.9;1;nie
+K0827;37;WROCŁAW;basic;99,00 zł;12;3.3;0;nie
+K0665;16;Poznań;Premium ;199,00 zł;35;5.5;0;tak
+K0906;33;Kraków ;premium;199,00 zł;54;2.1;1;TAK
+K0548;28;Warszawa;Basic ;99,00 zł;26;7.6;2;NIE
+K0308;44;Wrocław;Basic ;99,00 zł;14;7.7;2;nie
+K0955;28;wrocław;Basic;99,00 zł;54;3.7;1;NIE
+K1498;45;GDAŃSK;Basic ;89,00 zł;60;3.1;0;nie
+K1116;23;Warszawa;basic;99,00 zł;54;9.1;0;Nie
+K1166;40;Kraków;Premium;199,00 zł;56;11.3;0;nie
+K1255;20;Gdańsk ; Basic;99,00 zł;14;2.0;2;Tak
+K0200;44;Warszawa;Basic ;89,00 zł;48;0.5;1;tak
+K0700;34;WARSZAWA;Standard;129,00 zł;50;6.4;0;nie
+K0706;38;Wrocław;Basic;99,00 zł;12;5.3;2;nie
+K0158;45;Warszawa;Basic;79,00 zł;55;9.5;0;nie
+K1122;33;Kraków;basic;99,00 zł;42;5.1;1;nie
+K0591;27;GDAŃSK;basic;79,00 zł;9;5.6;1;nie
+K1223;53;Warszawa;Standard;129,00 zł;31;3.4;3;tak
+K0602;39;Poznań;Standard;139,00 zł;46;3.0;0;nie
+K0503;29;Warszawa;Premium;199,00 zł;3;5.8;2;tak
+K0271;33;Gdańsk;BASIC;99,00 zł;10;8.5;0;nie
+K0465;20;Wrocław;Basic ;99,00 zł;51;2.8;1;Nie
+K0355;24;Warszawa;Basic;99,00 zł;26;8.0;1;tak
+K0274;42;kraków;Standard;139,00 zł;40;2.1;0;nie
+K1316;40;Warszawa;Premium;199,00 zł;50;6.4;1;Nie
+K1117;30;Poznań;Basic;99,00 zł;56;12.6;1;nie
+K0269;22; Warszawa;premium;199,00 zł;42;6.8;2;nie
+K0077;17;WARSZAWA;basic;99,00 zł;24;5.3;2;nie
+K0469;36;Warszawa;Basic;99,00 zł;32;6.6;1;NIE
+K0502;46;kraków;Basic;79,00 zł;5;7.3;2;nie
+K1171;24;Gdańsk;STANDARD;139,00 zł;45;6.6;1;nie
+K1293;57;Kraków;BASIC;89,00 zł;29;8.9;2;nie
+K0046;41; Warszawa;Standard;139,00 zł;14;2.8;5;tak
+K0015;38;KRAKÓW;Standard;139,00 zł;34;4.9;1;nie
+K1041;26;Warszawa;Premium;189,00 zł;54;1.6;1;Nie
+K0493;33;Warszawa;standard;139,00 zł;5;6.3;1;nie
+K1059;44;Warszawa;basic;89,00 zł;18;4.3;2;tak
+K0874;33;Poznań; Basic;89,00 zł;17;15.9;0;nie
+K0247;34;Warszawa;standard;129,00 zł;14;13.5;2;nie
+K0666;;Kraków;BASIC;89,00 zł;30;1.9;0;tak
+K0449;33;Warszawa;Standard;129,00 zł;27;10.6;0;NIE
+K1037;19;Gdańsk;Basic;99,00 zł;45;8.7;0;NIE
+K1495;41;WROCŁAW;Basic ;99,00 zł;12;6.9;0;tak
+K0969;24;POZNAŃ; Premium;199,00 zł;55;10.4;1;nie
+K0668;33;gdańsk;Premium;199,00 zł;32;1.4;1;tak
+K0478;40;Wrocław; Premium;189,00 zł;20;11.8;1;Nie
+K1280;33;Gdańsk ;Standard;139,00 zł;42;2.1;0;nie
+K0504;40;warszawa;Basic;79,00 zł;50;3.5;3;nie
+K0446;18;Kraków;Basic;99,00 zł;5;12.3;1;nie
+K1416;53; Wrocław;BASIC;99,00 zł;31;12.0;1;nie
+K0103;30;Gdańsk;Standard;139,00 zł;23;2.2;1;TAK
+K1455;35;Kraków;Basic;89,00 zł;17;6.0;0;nie
+K1095;36;Kraków ;BASIC;99,00 zł;23;13.6;1;nie
+K0418;31;wrocław; Standard;139,00 zł;3;2.6;3;tak
+K0306;16;warszawa;Basic;99,00 zł;41;3.7;1;nie
+K1043;40;Warszawa;standard;139,00 zł;51;1.8;1;nie
+K1035;42;Gdańsk ; Premium;199,00 zł;58;4.6;0;nie
+K1322;23;kraków;Premium;199,00 zł;27;5.3;0;nie
+K0506;31;Wrocław;BASIC;79,00 zł;16;6.9;0;tak
+K1186;43;Poznań; Basic;89,00 zł;1;6.9;0;nie
+K0545;41;Kraków;Standard;139,00 zł;15;8.6;0;NIE
+K0388;37;GDAŃSK;Premium;199,00 zł;53;4.4;2;nie
+K0072;20;Poznań;Basic;79,00 zł;7;6.8;2;nie
+K0076;26;Poznań;Standard;139,00 zł;2;10.0;0;nie
+K0143;;Kraków;Basic;99,00 zł;33;8.6;0;Nie
+K0279;330;Poznań; Basic;99,00 zł;6;7.8;1;nie
+K0480;29;Poznań;Premium ;199,00 zł;38;9.5;1;nie
+K1482;16;Wrocław;basic;99,00 zł;58;0.6;0;nie
+K0774;51;Gdańsk;Standard;139,00 zł;42;6.9;2;nie
+K0241;17;Warszawa;Standard;119,00 zł;49;5.6;0;nie
+K0495;39;Warszawa;Premium ;199,00 zł;30;9.2;0;nie
+K0527;40;warszawa;Premium ;199,00 zł;6;8.4;0;NIE
+K1314;30;Warszawa;basic;99,00 zł;35;14.4;1;nie
+K0184;37; Warszawa;Premium;199,00 zł;6;11.4;0;nie
+K1243;35;Warszawa;Premium;199,00 zł;39;18.7;1;nie
+K0643;43;Wrocław;Basic;89,00 zł;7;6.2;2;Nie
+K0070;42;Poznań;Basic;99,00 zł;29;16.1;0;nie
+K1286;35;Wrocław;Standard;139,00 zł;15;9.9;1;nie
+K0613;20;poznań;premium;189,00 zł;2;2.5;2;nie
+K0463;34;Gdańsk;Premium;199,00 zł;37;5.1;1;nie
+K0419;20;Warszawa;BASIC;99,00 zł;30;7.9;1;nie
+K0783;30;Warszawa; Premium;189,00 zł;9;18.5;1;nie
+K0702;41;Kraków;Basic;99,00 zł;26;8.0;0;tak
+K0722;42;GDAŃSK;Standard;139,00 zł;6;8.6;1;nie
+K0814;35;Warszawa; Basic;99,00 zł;53;2.3;0;tak
+K0287;36;Warszawa; Standard;139,00 zł;33;4.4;1;nie
+K1283;; Gdańsk;STANDARD;139,00 zł;31;3.4;1;Nie
+K1147;16;Wrocław;Standard;139,00 zł;34;9.2;0;nie
+K1304;28;WARSZAWA;PREMIUM;199,00 zł;12;10.6;0;nie
+K1164;30;Wrocław;Basic;99,00 zł;45;2.4;0;nie
+K1239;36;kraków;Basic;99,00 zł;19;6.7;3;Nie
+K1047;36;Poznań;Standard;139,00 zł;59;4.4;1;tak
+K0673;40;Poznań;standard;139,00 zł;43;1.9;1;nie
+K0366;30;poznań;BASIC;89,00 zł;12;6.6;2;nie
+K0772;;Warszawa;standard;119,00 zł;44;1.7;3;tak
+K1300;16; Warszawa;PREMIUM;189,00 zł;31;6.3;0;nie
+K0242;24;Warszawa;Premium;189,00 zł;19;4.8;2;nie
+K0319;; Warszawa;Basic;99,00 zł;31;6.0;1;Nie
+K1166;40;Kraków;Premium;199,00 zł;56;11.3;0;nie
+K0312;32;kraków;Premium;199,00 zł;60;16.0;0;nie
+K0796;37;Warszawa ;Standard;139,00 zł;21;5.4;0;nie
+K0309;25;Gdańsk ;STANDARD;139,00 zł;57;7.2;2;nie
+K0825;25;Kraków;Basic;99,00 zł;19;7.0;0;nie
+K0432;49;Wrocław;Basic;99,00 zł;7;2.1;1;tak
+K0182;38; Wrocław;Standard;139,00 zł;51;4.5;0;nie
+K0843;21;WARSZAWA;basic;99,00 zł;43;3.2;0;tak
+K1178;25;WARSZAWA;Standard;139,00 zł;5;0.7;1;tak
+K0069;44;Poznań;Standard ;139,00 zł;9;4.3;1;nie
+K0927;30;Wrocław;Basic;89,00 zł;14;2.5;0;nie
+K0198;33;Poznań;BASIC;99,00 zł;36;5.4;0;nie
+K0854;27;GDAŃSK;basic;89,00 zł;28;8.8;0;nie
+K0930;42;Warszawa;Basic;89,00 zł;39;6.3;0;nie
+K0284;25;Gdańsk ;Standard;139,00 zł;11;12.0;1;tak
+K1189;23;Poznań;Standard;139,00 zł;40;7.0;1;nie
+K0059;45;Warszawa;Basic ;89,00 zł;18;5.9;1;tak
+K0838;43;Warszawa;Basic;99,00 zł;10;3.0;0;nie
+K0138;42; Warszawa;Premium;199,00 zł;51;5.8;0;Nie
+K0889;30;Wrocław ;Standard;139,00 zł;59;8.7;0;nie
+K1099;44;Kraków ; Premium;199,00 zł;23;1.5;1;
+K0324;35;Warszawa ;standard;139,00 zł;2;2.5;1;nie
+K0758;34;Warszawa;Premium;199,00 zł;6;5.0;2;TAK
+K0926;34;Warszawa;Standard;129,00 zł;45;8.5;1;nie
+K0205;32;Kraków;Standard;119,00 zł;36;4.1;0;tak
+K1073;34;Warszawa; Basic;99,00 zł;51;8.2;0;nie
+K1264;30;Poznań;Basic;99,00 zł;19;4.1;2;tak
+K1202;31;wrocław;Standard;139,00 zł;16;2.6;0;nie
+K0499;32;POZNAŃ; Basic;99,00 zł;32;10.4;1;
+K0720;42;Warszawa;BASIC;99,00 zł;49;7.8;2;nie
+K0695;46;Poznań;Standard;139,00 zł;25;6.5;2;NIE
+K0403;44;Kraków;Basic;79,00 zł;4;3.7;1;Tak
+K1019;36;Wrocław;Standard;139,00 zł;6;4.9;2;tak
+K0683;41;kraków;Standard;139,00 zł;34;5.5;0;nie
+K1145;22;Warszawa;Standard;139,00 zł;50;5.0;3;NIE
+K1439;51;Wrocław ;Basic;99,00 zł;46;5.1;0;NIE
+K0482;26;Wrocław; Basic;99,00 zł;58;3.2;0;NIE
+K0733;;Gdańsk; Standard;139,00 zł;17;5.4;0;nie
+K0266;31;Warszawa ;Basic;89,00 zł;59;4.9;1;nie
+K0102;21;Wrocław;Basic;99,00 zł;54;14.1;0;nie
+K1126;35;Poznań; Basic;99,00 zł;18;1.3;0;NIE
+K1267;34;Gdańsk ;Premium;199,00 zł;1;2.5;2;tak
+K1388;35;wrocław;Standard;119,00 zł;34;0.9;1;tak
+K1136;32;Warszawa;basic;99,00 zł;50;9.2;1;nie
+K1354;43;Warszawa;Basic;99,00 zł;45;6.7;2;nie
+K0620;28; Poznań;Basic;79,00 zł;7;8.4;1;nie
+K1497;31;WROCŁAW;BASIC;99,00 zł;26;4.7;1;nie
+K0847;35;Warszawa;Standard;139,00 zł;45;9.9;1;nie
+K0845;16;Warszawa;Standard;119,00 zł;58;4.7;0;nie
+K0775;22;Wrocław;BASIC;79,00 zł;12;2.5;0;nie
+K0146;32;Poznań;Basic;89,00 zł;10;3.9;1;tak
+K0473;42;Kraków;Basic;99,00 zł;49;10.4;0;Nie
+K0404;38;Kraków; Basic;99,00 zł;20;16.7;1;NIE
+K0066;49;Wrocław;Premium;199,00 zł;8;4.6;0;tak
+K1069;45; Gdańsk;Basic;89,00 zł;35;4.8;5;tak
+K1261;25; Wrocław;Premium;189,00 zł;44;1.4;0;nie
+K1337;35;warszawa;Standard;139,00 zł;7;9.0;0;nie
+K0682;28;Warszawa;Standard;139,00 zł;13;7.8;0;nie
+K0273;16;Wrocław;premium;199,00 zł;22;1.6;1;TAK
+K0933;31;warszawa;Basic;99,00 zł;14;9.5;0;nie
+K1167;29;KRAKÓW;Basic;99,00 zł;33;6.4;2;nie
+K1481;28;Wrocław;standard;139,00 zł;16;3.1;0;nie
+K1366;31;Poznań;Premium;199,00 zł;22;5.6;1;nie
+K0333;37; Kraków; Basic;99,00 zł;42;5.0;1;nie
+K0862;33;Poznań;Standard;129,00 zł;12;7.8;1;nie
+K0604;22;Warszawa;Basic ;89,00 zł;1;4.4;0;nie
+K0800;16;Warszawa; Basic;99,00 zł;19;4.0;1;tak
+K1357;26;Poznań;Basic;99,00 zł;38;9.8;2;nie
+K1326;32;Gdańsk; Standard;129,00 zł;35;4.8;1;nie
+K0811;48;Gdańsk;Basic;89,00 zł;15;8.4;0;nie
+K1307;16;Warszawa; Basic;99,00 zł;32;7.9;1;nie
+K1181;33;Warszawa;Basic;99,00 zł;57;2.6;2;Nie
+K1382;36;Wrocław;Standard;129,00 zł;2;6.7;2;TAK
+K1200;33;Warszawa ;BASIC;99,00 zł;12;5.2;0;Nie
+K0824;29;Warszawa;Standard;139,00 zł;18;6.7;0;NIE
+K1445;53;poznań;Standard;139,00 zł;27;4.8;0;nie
+K0788;24;kraków;Premium;199,00 zł;12;6.6;0;nie
+K1259;31;Warszawa;STANDARD;139,00 zł;20;1.3;0;TAK
+K0162;34;Warszawa;Basic ;89,00 zł;6;7.0;0;
+K0047;21;warszawa;standard;129,00 zł;6;11.2;2;tak
+K0625;39;Wrocław;Standard;139,00 zł;34;1.9;2;Tak
+K1097;16;GDAŃSK;Premium;199,00 zł;31;4.6;1;TAK
+K0458;39;Warszawa;standard;139,00 zł;15;2.7;2;tak
+K0406;50;Warszawa;Standard;129,00 zł;13;10.8;0;nie
+K1470;20; Warszawa;Basic;99,00 zł;29;8.6;1;nie
+K0094;35;Warszawa;Standard;129,00 zł;4;5.8;0;nie
+K0918;16;Kraków;Premium;199,00 zł;54;2.5;0;nie
+K0757;42;Warszawa;Standard;139,00 zł;57;3.1;1;nie
+K0231;34;Poznań;Basic;99,00 zł;35;11.5;1;nie
+K0373;53;gdańsk;Premium;199,00 zł;49;10.0;1;Nie
+K0264;24;Warszawa;Standard;139,00 zł;51;3.0;0;nie
+K0795;31;wrocław;Premium;199,00 zł;2;3.4;2;TAK
+K0302;36;Gdańsk;basic;99,00 zł;25;3.9;0;nie
+K0957;36;Warszawa;Standard;139,00 zł;15;5.7;0;tak
+K0981;58;WARSZAWA;Premium;199,00 zł;55;5.6;0;nie
+K0999;19; Warszawa;Basic;99,00 zł;54;3.0;1;nie
+K0471;38;Poznań;Basic;99,00 zł;56;3.4;0;nie
+K0174;50;Gdańsk;Premium;199,00 zł;52;5.4;0;Nie
+K0689;28;Warszawa;STANDARD;139,00 zł;16;9.9;0;nie
+K0987;28;Kraków;Basic;99,00 zł;21;4.1;0;nie
+K1256;23;poznań;Premium;199,00 zł;59;7.1;2;Nie
+K0822;25;warszawa;Standard;139,00 zł;48;5.4;0;nie
+K0580;37;WARSZAWA;Standard;139,00 zł;39;3.0;0;Nie
+K0953;41; Warszawa;Basic;99,00 zł;42;1.7;1;Nie
+K1438;37; Warszawa;Basic;99,00 zł;52;10.9;1;nie
+K1350;34;Poznań;BASIC;99,00 zł;38;9.5;0;tak
+K1405;46;warszawa;standard;129,00 zł;9;13.3;2;nie
+K0453;33;Poznań;Basic ;89,00 zł;35;1.9;2;nie
+K1096;24;Warszawa;Basic;79,00 zł;20;2.3;0;nie
+K1252;51;Kraków;Basic;89,00 zł;6;14.8;0;nie
+K1148;24;Warszawa ;Basic;99,00 zł;57;12.5;0;nie
+K0730;20; Poznań;Standard;139,00 zł;54;9.7;0;nie
+K0288;30;Warszawa ;Premium;189,00 zł;38;12.3;1;nie
+K0964;26;Gdańsk ;Basic;89,00 zł;28;9.2;0;NIE
+K0497;35; Kraków;STANDARD;139,00 zł;17;11.3;0;nie
+K0227;16;Poznań;Standard;139,00 zł;41;3.8;0;nie
+K0509;26;Gdańsk;BASIC;99,00 zł;47;4.4;0;nie
+K0115;26;Kraków;Basic;89,00 zł;1;2.8;0;tak
+K1159;30;Kraków;Basic;79,00 zł;12;6.7;3;nie
+K0334;38;Warszawa;Standard;139,00 zł;45;6.4;1;nie
+K0124;31;Warszawa;BASIC;99,00 zł;29;4.8;0;nie
+K0004;32;Warszawa;Basic;89,00 zł;51;4.2;1;
+K0716;30;Warszawa; Standard;139,00 zł;54;4.0;5;tak
+K0678;33;warszawa;BASIC;79,00 zł;41;6.4;1;nie
+K0550;22;Kraków;Premium;189,00 zł;47;5.0;0;NIE
+K0018;40;Wrocław ;Basic;99,00 zł;9;7.4;3;nie
+K1132;;Kraków;Premium;179,00 zł;34;7.3;0;nie
+K1369;26; Warszawa;Premium;199,00 zł;30;2.7;0;TAK
+K0561;25;Gdańsk;Premium;189,00 zł;38;9.4;1;nie
+K1124;32;Kraków;Basic;99,00 zł;15;9.1;1;nie
+K1321;47;WARSZAWA;Basic;79,00 zł;8;7.4;2;nie
+K1291;18; Warszawa;Basic;99,00 zł;46;9.0;0;nie
+K0249;33;POZNAŃ;Basic;79,00 zł;10;2.5;1;tak
+K0609;28;kraków;Standard;119,00 zł;26;3.0;1;Nie
+K0654;45;kraków;Standard;139,00 zł;23;9.4;1;tak
+K0554;21;Poznań;Premium;199,00 zł;44;17.5;1;Nie
+K1281;27;Kraków;Premium;179,00 zł;14;2.2;0;tak
+K0607;43;Poznań;Premium;199,00 zł;34;5.8;2;nie
+K0034;20;Kraków ;Standard;139,00 zł;56;8.9;2;nie
+K0612;36;kraków;Basic;99,00 zł;50;8.1;0;tak
+K1029;49;Wrocław;Premium;199,00 zł;10;3.2;0;tak
+K0777;33;Warszawa;standard;139,00 zł;22;2.8;2;TAK
+K0053;26;Warszawa; Basic;99,00 zł;18;9.9;1;nie
+K0836;30;Wrocław;BASIC;99,00 zł;21;13.3;3;nie
+K0915;28;Warszawa;basic;89,00 zł;32;16.9;1;nie
+K1390;;Wrocław;Standard;139,00 zł;56;4.1;1;Nie
+K0232;26;Poznań;Basic;99,00 zł;7;7.3;1;nie
+K0848;28;Warszawa;Basic;99,00 zł;35;11.4;2;nie
+K0585;37;Warszawa;BASIC;99,00 zł;60;6.1;1;nie
+K1207;46;Gdańsk; Basic;89,00 zł;48;11.5;0;nie
+K1331;49;Poznań;Premium ;199,00 zł;40;8.3;0;nie
+K0113;43;Kraków;Standard;139,00 zł;50;14.0;0;nie
+K0551;51;Warszawa ;Premium;199,00 zł;48;8.6;0;NIE
+K0110;40;Poznań;Basic;89,00 zł;45;2.5;1;nie
+K0663;20;Gdańsk;Standard;139,00 zł;35;9.4;1;nie
+K0281;39;Kraków ;Standard;139,00 zł;51;7.1;2;nie
+K0189;;Kraków;Standard;139,00 zł;14;4.9;1;NIE
+K1332;31;Warszawa;Premium;199,00 zł;34;1.2;0;tak
+K0746;16;Poznań;Standard;139,00 zł;12;14.6;0;nie
+K0412;; Warszawa;Premium;199,00 zł;42;4.5;0;nie
+K0331;53;Warszawa;BASIC;99,00 zł;27;0.7;0;nie
+K1446;38;Poznań;Standard;139,00 zł;34;6.0;1;nie
+K0696;39;Warszawa ;Premium;189,00 zł;32;8.9;0;tak
+K1362;;WARSZAWA;Standard;139,00 zł;20;11.5;1;nie
+K0019;16;Warszawa;Basic;99,00 zł;46;4.3;1;NIE
+K0850;29;Kraków;Basic;99,00 zł;55;7.2;0;NIE
+K0337;35;Kraków;Premium;199,00 zł;2;1.6;1;NIE
+K0437;31;Warszawa;standard;139,00 zł;52;3.3;1;nie
+K1429;20;Wrocław;Premium;199,00 zł;57;8.3;0;NIE
+K0712;40;Warszawa;Premium;199,00 zł;56;9.4;2;nie
+K0791;40;Kraków;Basic;99,00 zł;16;7.8;2;nie
+K0599;16;Warszawa; Premium;199,00 zł;48;8.3;2;NIE
+K0350;25;Wrocław;Standard;139,00 zł;40;4.4;2;nie
+K1174;62;Kraków; Basic;99,00 zł;30;7.2;1;nie
+K1196;44;Wrocław;Standard;139,00 zł;45;15.1;1;nie
+K1161;24; Warszawa;Basic;99,00 zł;7;11.5;1;nie
+K1241;16;Gdańsk; Standard;139,00 zł;19;6.4;0;nie
+K0898;27;Poznań; Standard;139,00 zł;13;6.3;1;NIE
+K0257;41;Gdańsk; Basic;89,00 zł;32;6.8;0;nie
+K0213;39;Warszawa;Basic;99,00 zł;40;7.2;0;nie
+K0260;35;Warszawa;Standard ;139,00 zł;28;4.5;0;nie
+K0598;24;WARSZAWA; Basic;99,00 zł;18;5.2;0;tak
+K1284;24;Gdańsk;Basic;89,00 zł;3;1.8;0;tak
+K1087;24;Warszawa;Basic;99,00 zł;58;4.5;1;nie
+K1085;38;Warszawa ;Basic;99,00 zł;11;13.3;2;nie
+K0236;;Warszawa; Basic;99,00 zł;40;5.3;0;nie
+K0956;40;Warszawa;basic;89,00 zł;52;7.8;0;nie
+K1363;45;Warszawa;Basic ;99,00 zł;35;5.5;0;nie
+K0477;30;Poznań;Premium;179,00 zł;60;4.5;0;Nie
+K1002;16;Poznań; Basic;99,00 zł;11;11.7;0;nie
+K0022;38; Gdańsk;Basic;99,00 zł;6;12.4;1;nie
+K1473;38;Warszawa;Basic;99,00 zł;58;9.9;1;nie
+K0558;37;Warszawa ;basic;99,00 zł;14;13.8;2;nie
+K0454;29;Wrocław;standard;139,00 zł;50;4.4;0;nie
+K0709;35;Gdańsk;Standard ;139,00 zł;13;2.1;0;nie
+K1491;42;Kraków;standard;139,00 zł;26;10.9;1;nie
+K0071;23;gdańsk;Standard;129,00 zł;9;3.8;0;Nie
+K1383;46;Wrocław;premium;199,00 zł;20;1.7;0;Tak
+K1119;45;Kraków;Standard;139,00 zł;20;3.9;1;tak
+K0697;37;Kraków;Standard;139,00 zł;56;5.6;1;nie
+K0357;27;Kraków;Basic;99,00 zł;37;10.6;0;nie
+K0021;43;Kraków;Standard;139,00 zł;32;2.1;1;NIE
+K1340;30;Kraków;Basic;79,00 zł;55;7.2;1;nie
+K1138;41;GDAŃSK;Standard;139,00 zł;49;7.6;1;nie
+K1135;50;Warszawa;Premium;199,00 zł;32;5.2;0;nie
+K1432;39;Kraków;Premium ;199,00 zł;23;2.3;0;Tak
+K1345;35;Warszawa;Standard;129,00 zł;58;7.0;1;nie
+K0573;26; Warszawa;STANDARD;139,00 zł;36;5.6;0;nie
+K1067;43;Warszawa; Basic;99,00 zł;40;4.6;0;tak
+K0383;31;Gdańsk;Standard;139,00 zł;36;5.5;1;nie
+K0129;21;Wrocław;Standard;119,00 zł;33;7.8;1;nie
+K0541;18;Warszawa;STANDARD;129,00 zł;57;14.7;1;nie
+K0085;32;Kraków;Basic;79,00 zł;43;4.9;1;nie
+K1272;30; Kraków;Basic ;79,00 zł;13;5.0;0;Nie
+K0371;45;Kraków;Basic;79,00 zł;9;4.3;0;tak
+K0569;19;Warszawa ;standard;139,00 zł;39;3.2;0;nie
+K0364;31;gdańsk;Standard;139,00 zł;48;6.3;2;nie
+K1430;31;Warszawa;Premium;199,00 zł;37;10.5;0;nie
+K1217;32; Kraków;Basic;79,00 zł;48;8.3;1;nie
+K0908;20;poznań;Premium;189,00 zł;25;9.2;2;nie
+K0860;51;Poznań;BASIC;99,00 zł;34;1.0;1;tak
+K0370;24;Gdańsk ; Basic;89,00 zł;42;7.2;0;NIE
+K0102;21;Wrocław;Basic;99,00 zł;54;14.1;0;nie
+K1406;27;Warszawa;Basic ;99,00 zł;41;9.2;0;nie
+K0008;21;Gdańsk ;Basic ;99,00 zł;28;3.0;5;nie
+K1384;42;Wrocław;Basic;99,00 zł;56;6.5;1;nie
+K0872;38;Gdańsk ;Standard;139,00 zł;39;4.7;0;nie
+K0513;26;Wrocław;premium;199,00 zł;25;7.7;1;nie
+K0725;16; Gdańsk; Standard;139,00 zł;53;8.7;1;nie
+K0399;57;Gdańsk ;Standard;129,00 zł;11;9.2;2;tak
+K0947;18; Warszawa; Basic;99,00 zł;5;10.9;0;nie
+K0342;30; Warszawa;Premium ;199,00 zł;43;8.9;1;nie
+K0103;30;Gdańsk;Standard;139,00 zł;23;2.2;1;TAK
+K1275;32;WROCŁAW;PREMIUM;199,00 zł;24;4.8;2;nie
+K0984;34;Warszawa;basic;99,00 zł;24;5.7;0;nie
+K0422;32;Kraków ;Standard;139,00 zł;14;4.8;1;nie
+K0048;34;Warszawa;BASIC;79,00 zł;50;2.4;0;nie
+K0401;38; Wrocław;Basic;99,00 zł;23;11.0;0;nie
+K0186;25;Warszawa;Standard;139,00 zł;31;13.2;0;tak
+K0172;39;Poznań;Basic;99,00 zł;51;3.4;0;nie
+K0771;43;Warszawa;premium;199,00 zł;30;9.6;0;nie
+K0650;33;Warszawa;basic;99,00 zł;47;12.3;2;nie
+K1305;;Wrocław;Premium;199,00 zł;2;4.5;3;nie
+K0942;16;Gdańsk;premium;189,00 zł;26;4.9;2;tak
+K1441;29;Warszawa;basic;99,00 zł;28;2.8;1;nie
+K0062;37;WARSZAWA;Basic ;99,00 zł;49;20.1;1;nie
+K1260;31;kraków;Standard;139,00 zł;28;5.8;0;nie
+K1105;30;Wrocław ;Standard;129,00 zł;24;3.3;0;nie
+K1360;35;Poznań;Standard;119,00 zł;28;7.9;1;nie
+K0505;37;Wrocław ;BASIC;79,00 zł;45;4.6;2;nie
+K0286;20; Poznań;Premium;189,00 zł;6;11.2;0;Nie
+K0195;44; Warszawa;Standard ;129,00 zł;47;12.9;0;tak
+K0652;45;Poznań;premium;199,00 zł;52;4.2;2;nie
+K0456;25;Kraków;Basic;99,00 zł;49;6.6;2;nie
+K1292;38;warszawa;Basic ;99,00 zł;58;1.6;0;nie
+K0576;33;Wrocław; Basic;99,00 zł;60;1.6;1;nie
+K0793;32;Warszawa ; Standard;139,00 zł;18;13.0;1;nie
+K0130;36;Warszawa;Standard;119,00 zł;10;4.1;1;nie
+K0368;29;Warszawa;Basic;99,00 zł;11;3.5;2;Tak
+K1177;31;Warszawa;Standard;139,00 zł;23;2.4;0;nie
+K0852;29;Warszawa;Premium;199,00 zł;33;5.4;2;tak
+K0810;40;Kraków;premium;199,00 zł;55;7.3;0;nie
+K0667;30;Gdańsk;Basic;99,00 zł;7;11.1;0;nie
+K1385;39;Gdańsk;STANDARD;139,00 zł;10;8.5;1;nie
+K0660;18;Poznań;Premium;189,00 zł;31;3.7;0;Nie
+K1271;38;Gdańsk;Standard;119,00 zł;54;11.4;0;nie
+K0466;57;Warszawa;Basic;99,00 zł;43;6.7;1;nie
+K0676;16;Gdańsk;Basic;99,00 zł;36;9.3;2;nie
+K0954;22;gdańsk;Standard;139,00 zł;54;3.9;0;nie
+K0128;44;Warszawa;Premium ;199,00 zł;11;2.7;1;tak
+K1245;51;Wrocław;Premium;199,00 zł;17;11.8;2;TAK
+K0362;34;Gdańsk ;Basic;99,00 zł;41;7.3;2;Nie
+K0844;32;warszawa; Basic;99,00 zł;57;14.2;2;nie
+K0170;35;Warszawa; Standard;139,00 zł;22;9.1;1;NIE
+K1367;16;Wrocław;BASIC;89,00 zł;4;3.8;2;tak
+K0120;31;Warszawa;Standard;139,00 zł;57;11.8;1;nie
+K1463;46;Gdańsk;Standard;139,00 zł;48;2.8;2;nie
+K0785;39;Warszawa;Basic;99,00 zł;48;1.9;1;nie
+K1346;45;Warszawa;Standard;139,00 zł;50;7.6;0;nie
+K1168;410;Kraków;Premium ;179,00 zł;44;11.8;0;nie
+K0740;;KRAKÓW;Basic;79,00 zł;44;14.3;0;nie
+K1201;35;Wrocław ;Basic;79,00 zł;34;9.5;0;nie
+K1183;32;GDAŃSK;Basic;99,00 zł;25;1.4;1;tak
+K0533;34;Warszawa; Basic;99,00 zł;23;1.5;1;tak
+K1409;44;warszawa; Standard;129,00 zł;37;7.8;1;nie
+K0679;39; Wrocław;Basic;99,00 zł;24;3.5;1;nie
+K0201;47;Warszawa;Standard;139,00 zł;21;4.0;1;Tak
+K1055;26;Kraków ;Basic;89,00 zł;58;6.7;0;nie
+K0250;16; Warszawa;Basic;99,00 zł;15;9.5;0;nie
+K0378;33;warszawa;Basic ;79,00 zł;26;2.7;0;Nie
+K0316;38;Wrocław;BASIC;89,00 zł;10;10.3;0;
+K0147;30; Wrocław;Basic;99,00 zł;55;11.2;1;nie
+K0626;29;Poznań;Standard;129,00 zł;10;16.2;0;nie
+K1045;40;Gdańsk;Premium;199,00 zł;39;5.0;2;tak
+K1494;53;Gdańsk;Premium;179,00 zł;60;10.6;0;nie
+K1466;29;POZNAŃ;BASIC;79,00 zł;30;4.7;0;nie
+K0142;16;WARSZAWA; Basic;99,00 zł;29;0.9;0;nie
+K1476;26; Gdańsk;Standard;139,00 zł;31;6.7;1;nie
+K1040;32;Gdańsk;Basic;89,00 zł;51;3.7;1;NIE
+K0526;;Gdańsk;Standard;139,00 zł;9;4.8;1;tak
+K0356;21;Gdańsk;Standard;139,00 zł;43;3.1;1;nie
+K0924;45;Warszawa;Premium;189,00 zł;56;8.2;1;nie
+K0336;27;Warszawa ; Basic;99,00 zł;32;4.7;0;nie
+K0068;35;Poznań;Basic;99,00 zł;43;11.2;2;nie
+K1393;;Warszawa; Basic;89,00 zł;44;1.8;3;tak
+K1499;25;Warszawa;Basic;99,00 zł;6;9.0;1;nie
+K0420;34;Wrocław;Standard;139,00 zł;25;8.9;1;nie
+K1411;41;Kraków;Basic ;99,00 zł;22;9.8;0;nie
+K0083;33;Warszawa;Standard;139,00 zł;6;8.7;0;nie
+K0326;31;WROCŁAW;standard;139,00 zł;50;5.9;0;nie
+K0931;;warszawa;Basic;99,00 zł;27;3.7;3;tak
+K0042;58; Poznań;Basic;99,00 zł;7;7.0;2;nie
+K0016;37;Poznań;Premium;199,00 zł;42;7.0;2;nie
+K0159;;Kraków;BASIC;99,00 zł;8;6.4;1;nie
+K1435;32;WARSZAWA;Basic;99,00 zł;38;6.4;0;tak
+K0858;32;gdańsk; Standard;129,00 zł;55;3.3;1;nie
+K0769;32;Warszawa ;Basic;99,00 zł;39;6.5;0;nie
+K0871;37;Poznań;Standard;139,00 zł;38;6.1;0;nie
+K0574;29;GDAŃSK;standard;139,00 zł;6;3.1;0;tak
+K0644;45;Kraków;Basic ;99,00 zł;8;4.8;0;nie
+K1172;50;Wrocław;STANDARD;139,00 zł;31;2.2;0;NIE
+K0962;45;Poznań;Standard;139,00 zł;45;8.3;3;nie
+K1038;199;POZNAŃ;Basic;89,00 zł;59;1.6;0;nie
+K0583;23; Poznań;Basic;99,00 zł;14;6.6;3;tak
+K1356;42;Poznań;STANDARD;139,00 zł;33;2.5;2;tak
+K0910;29;Poznań; Premium;199,00 zł;48;2.8;2;TAK
+K1185;27;Kraków; Standard;139,00 zł;58;9.2;1;nie
+K0944;44;Warszawa;Basic;99,00 zł;30;3.8;2;nie
+K0100;26;Kraków;Standard;139,00 zł;2;5.0;2;nie
+K0329;23;Kraków ;Premium;199,00 zł;15;5.0;0;nie
+K1329;45; Kraków;Standard;139,00 zł;11;4.6;0;nie
+K0530;50;warszawa;Premium;199,00 zł;52;5.2;0;TAK
+K1197;36;Warszawa;Basic ;99,00 zł;25;2.8;0;tak
+K0084;;kraków;basic;89,00 zł;12;13.3;1;tak
+K0003;26;Warszawa;Standard;139,00 zł;40;6.0;0;nie
+K0797;25;POZNAŃ;Basic;89,00 zł;22;7.9;2;Nie
+K1318;37;Warszawa; Premium;199,00 zł;41;5.7;2;TAK
+K1098;26; Kraków;Basic;99,00 zł;37;13.1;3;nie
+K1374;48;Wrocław;Standard;139,00 zł;59;2.3;0;nie
+K1062;16;Warszawa;premium;199,00 zł;8;5.2;0;TAK
+K1091;17;wrocław;Premium;199,00 zł;19;2.9;0;Nie
+K0216;36;Gdańsk;Basic;79,00 zł;6;15.9;0;nie
+K1279;39;poznań;Basic;99,00 zł;27;15.7;1;nie
+K1485;25;Kraków;Basic;99,00 zł;54;4.2;1;nie
+K0705;16;Kraków;Basic;89,00 zł;29;2.5;1;nie
+K0081;29;Wrocław;Basic;99,00 zł;29;5.8;0;nie
+K1371;16;Warszawa;Premium;199,00 zł;55;11.0;0;nie
+K0038;33;Gdańsk;Basic;99,00 zł;19;3.8;2;tak
+K1450;17;Wrocław;Standard;119,00 zł;49;3.2;0;tak
+K1052;38;Kraków;basic;99,00 zł;49;4.1;0;nie
+K0912;36;Warszawa;Basic ;89,00 zł;51;11.4;0;nie
+K1044;22;KRAKÓW;Standard;129,00 zł;40;11.5;1;nie
+K0392;;gdańsk;Basic;99,00 zł;47;4.3;0;nie
+K0183;27;Kraków;Premium ;179,00 zł;10;4.0;1;tak
+K0375;33;Wrocław;Premium;199,00 zł;28;1.4;0;tak
+K1433;33;Warszawa; Standard;129,00 zł;18;6.4;0;nie
+K1026;33; Poznań;Basic;99,00 zł;3;2.6;0;tak
+K0489;31; Warszawa;Premium;199,00 zł;1;5.8;3;tak
+K0067;32;Warszawa;Basic;99,00 zł;23;2.6;1;tak
+K0923;23;Poznań;PREMIUM;199,00 zł;24;1.0;0;tak
+K0749;35;Warszawa ;Standard;139,00 zł;8;1.9;0;tak
+K1411;41;Kraków;Basic ;99,00 zł;22;9.8;0;nie
+K0408;20;Warszawa ;Standard;139,00 zł;42;2.3;0;nie
+K0587;20;Poznań;Basic ;99,00 zł;25;7.5;0;nie
+K1403;36;Warszawa;Standard;129,00 zł;6;8.2;0;nie
+K0430;46;Gdańsk;Premium ;199,00 zł;19;1.4;1;nie
+K0173;16;Warszawa;Standard;129,00 zł;16;1.3;0;tak
+K0594;18;Kraków;Basic;99,00 zł;20;8.1;0;nie
+K1294;27;Warszawa;Basic;89,00 zł;29;4.7;1;nie
+K0331;53;Warszawa;BASIC;99,00 zł;27;0.7;0;nie
+K0728;29;POZNAŃ;Standard;139,00 zł;19;4.2;0;nie
+K0488;48;Warszawa;Standard;139,00 zł;14;9.7;1;nie
+K0285;52;Kraków;PREMIUM;199,00 zł;34;11.4;1;tak
+K1368;36;Kraków;Basic;99,00 zł;41;7.3;0;tak
+K0815;42; Warszawa;Basic;79,00 zł;25;5.1;0;tak
+K1212;32;Warszawa ;Premium;199,00 zł;3;6.2;0;tak
+K1254;30; Warszawa;Standard;139,00 zł;5;5.6;0;nie
+K1273;31;Warszawa; Basic;99,00 zł;2;4.9;0;NIE
+K0233;35;Kraków;Premium;199,00 zł;4;4.2;0;nie
+K1418;16;Kraków;Basic;89,00 zł;49;4.3;1;nie
+K0565;37;Poznań;Basic;89,00 zł;37;3.8;0;nie
+K0280;47; Warszawa;BASIC;99,00 zł;52;5.7;2;nie
+K0932;39; Wrocław; Standard;139,00 zł;24;3.3;1;Nie
+K0892;29;Warszawa;Standard;139,00 zł;34;13.2;1;tak
+K0664;33;Wrocław;Basic;99,00 zł;50;6.6;0;nie
+K1049;37;Warszawa;premium;199,00 zł;23;5.8;0;nie
+K0557;39;poznań;Standard;129,00 zł;51;5.5;1;nie
+K1452;26; Wrocław;STANDARD;139,00 zł;42;2.4;1;nie
+K1309;46;Kraków ;Premium;179,00 zł;36;7.9;1;nie
+K0737;48;Wrocław;Basic;99,00 zł;44;3.3;0;nie
+K0581;23;Gdańsk;Standard;139,00 zł;10;5.9;2;tak
+K0628;29;Kraków;standard;129,00 zł;18;13.1;1;nie
+K0461;46;Gdańsk;Premium;179,00 zł;17;2.2;0;Tak
+K1287;16;Warszawa;standard;119,00 zł;58;10.2;1;nie
+K1242;35; Warszawa;Premium;189,00 zł;33;6.5;1;nie
+K0061;22;Kraków;Standard;139,00 zł;32;3.8;1;nie
+K0202;50;Poznań;Standard ;139,00 zł;11;1.8;1;tak
+K0400;41;KRAKÓW;Standard ;119,00 zł;37;4.0;1;tak
+K0029;37;WROCŁAW;Basic;89,00 zł;54;1.6;1;nie
+K0601;31;Kraków;Standard;139,00 zł;18;1.9;0;nie
+K0542;16;Warszawa ;premium;199,00 zł;12;2.1;0;tak
+K1216;40;Warszawa;Basic ;79,00 zł;16;5.9;1;Nie
+K0543;43;Poznań;Standard;139,00 zł;26;3.9;2;nie
+K0452;39; Warszawa;Basic;79,00 zł;30;2.8;0;nie
+K0886;38;Kraków;Basic;89,00 zł;29;1.3;2;tak
+K0127;39;GDAŃSK;Standard;139,00 zł;49;6.7;2;nie
+K0983;50;Wrocław; Standard;139,00 zł;16;5.0;0;NIE
+K0348;44;Wrocław;Basic;99,00 zł;47;4.2;0;nie
+K1007;19;Poznań;Premium;199,00 zł;15;3.5;0;tak
+K0117;45;warszawa;Basic ;99,00 zł;23;6.6;0;nie
+K0105;40;kraków;Standard;139,00 zł;58;6.8;0;nie
+K0849;42;Kraków;Premium;199,00 zł;3;6.9;0;tak
+K0380;41; Kraków;standard;129,00 zł;9;4.9;0;nie
+K0536;35;Wrocław;Basic;99,00 zł;32;5.9;2;NIE
+K0352;25;Gdańsk;Standard;139,00 zł;18;2.0;0;tak
+K0294;48;Gdańsk ;Basic;89,00 zł;10;4.8;0;nie
+K1460;;Wrocław;BASIC;79,00 zł;57;2.2;1;nie
+K1240;21;Warszawa;Standard;139,00 zł;56;3.9;0;nie
+K1080;41;Wrocław;Basic;99,00 zł;18;2.9;1;Tak
+K1032;42;wrocław;Standard;139,00 zł;15;7.0;0;nie
+K0092;40;Warszawa;Basic;99,00 zł;19;9.6;1;Tak
+K0024;22; Warszawa;BASIC;99,00 zł;16;4.8;1;nie
+K0887;27;Warszawa;Basic;99,00 zł;27;5.9;0;nie
+K0992;27;Poznań;premium;199,00 zł;2;7.2;1;nie
+K0091;40;Warszawa;PREMIUM;199,00 zł;30;19.6;0;nie
+K0736;31;Poznań;BASIC;99,00 zł;17;2.4;0;tak
+K0524;39;Warszawa; Standard;139,00 zł;32;8.9;1;tak
+K0572;38;Kraków;premium;199,00 zł;21;7.4;0;NIE
+K0790;21; Gdańsk;Standard ;119,00 zł;44;10.8;2;nie
+K0904;23;Wrocław;Basic;89,00 zł;48;9.8;0;nie
+K0415;25;Poznań;basic;99,00 zł;4;10.0;2;nie
+K0978;45; Warszawa;Basic;99,00 zł;28;5.1;1;nie
+K1165;32;Kraków;Basic ;99,00 zł;16;8.1;1;nie
+K0641;17;Poznań;Premium;199,00 zł;39;2.5;1;tak
+K0817;16;warszawa;Standard;139,00 zł;26;4.8;0;Nie
+K1224;21;Poznań;Basic;99,00 zł;32;5.4;0;tak
+K0745;26;Kraków;Standard;119,00 zł;6;4.4;1;tak
+K0615;26;Warszawa;Premium ;189,00 zł;53;3.6;1;nie
+K0659;34;Warszawa;PREMIUM;199,00 zł;35;7.9;0;tak
+K0224;;Warszawa;Standard;139,00 zł;7;4.6;2;tak
+K1306;32;Kraków;Premium ;199,00 zł;48;11.8;1;nie
+K0214;24;GDAŃSK;basic;99,00 zł;59;3.9;1;nie
+K0779;44;Wrocław;STANDARD;119,00 zł;50;3.4;0;nie
+K1190;34;warszawa;Basic;99,00 zł;59;8.0;2;Nie
+K1154;28;Poznań ;Premium;199,00 zł;29;14.0;2;nie
+K1250;49;Warszawa;Standard;139,00 zł;42;6.7;1;nie
+K0078;32;gdańsk;Premium;199,00 zł;28;0.5;0;nie
+K1054;38;Kraków;Standard;139,00 zł;34;2.0;2;TAK
+K0001;23;gdańsk;Basic;99,00 zł;38;3.8;0;nie
+K0389;29; Wrocław;standard;139,00 zł;44;4.4;0;nie
+K1128;38;Warszawa;Premium;199,00 zł;1;10.0;0;nie
+K0440;16;Poznań;Basic;99,00 zł;27;3.9;0;nie
+K1443;36;Wrocław;Basic;99,00 zł;1;11.5;0;nie
+K0863;43;Kraków;Basic;99,00 zł;53;8.7;1;nie
+K0808;37;Kraków; Premium;199,00 zł;39;7.5;1;nie
+K1131;51;Poznań ;Premium ;199,00 zł;12;2.3;1;tak
+K1269;28;KRAKÓW;premium;199,00 zł;4;2.1;1;tak
+K1355;26;Warszawa;basic;99,00 zł;14;6.6;2;nie
+K0552;24;Gdańsk;Basic;99,00 zł;40;5.9;0;nie
+K0729;53;gdańsk;standard;139,00 zł;45;0.8;0;nie
+K0298;39;Wrocław;basic;99,00 zł;24;6.6;0;nie
+K0546;32; Warszawa;Standard;139,00 zł;58;11.5;0;nie
+K0544;37;Wrocław; Basic;99,00 zł;5;3.6;2;tak
+K0278;29;Warszawa;Basic;79,00 zł;7;1.0;1;Tak
+K0336;27;Warszawa ; Basic;99,00 zł;32;4.7;0;nie
+K0323;59;Warszawa;Basic;99,00 zł;12;6.5;0;nie
+K0491;34;Warszawa;Standard;139,00 zł;37;10.2;1;nie
+K1060;54;Warszawa;Basic;99,00 zł;56;10.4;1;nie
+K0881;32;kraków;Standard;119,00 zł;48;4.8;2;nie
+K1182;41;Gdańsk;STANDARD;139,00 zł;14;12.1;1;tak
+K1056;;Warszawa ;Basic;99,00 zł;47;0.6;1;TAK
+K0941;32; Poznań; Standard;139,00 zł;35;7.3;0;nie
+K1413;39;Kraków;Basic;99,00 zł;41;6.3;0;nie
+K1448;25;Gdańsk;Standard;139,00 zł;26;14.6;1;nie
+K1444;37;Gdańsk;Premium;199,00 zł;14;9.7;0;nie
+K0979;56;Wrocław;Basic;89,00 zł;16;15.2;0;tak
+K1213;16;GDAŃSK;Standard;119,00 zł;39;7.2;2;nie
+K0222;20;Kraków; Standard;129,00 zł;11;5.9;3;tak
+K1333;43;WROCŁAW;Premium;179,00 zł;38;6.7;1;nie
+K1349;39;Wrocław;Basic;99,00 zł;2;2.5;0;TAK
+K1102;16;Kraków;standard;139,00 zł;4;3.7;0;TAK
+K1401;23;Warszawa;STANDARD;119,00 zł;43;4.7;0;nie
+K0946;35;Wrocław;Basic;99,00 zł;14;10.2;0;Nie
+K0007;26;Kraków;premium;189,00 zł;54;6.3;2;tak
+K0310;30; Warszawa;Basic ;99,00 zł;17;7.7;0;nie
+K1121;35; Warszawa;STANDARD;139,00 zł;12;8.7;4;TAK
+K0949;58;Gdańsk;Premium;199,00 zł;5;3.7;1;NIE
+K0282;57;Gdańsk;Basic;99,00 zł;24;2.2;0;NIE
+K1064;31;Gdańsk ;Premium;199,00 zł;19;6.5;1;nie
+K1477;30;Kraków; Premium;199,00 zł;60;1.7;1;nie
+K0149;;kraków;Basic ;99,00 zł;23;9.6;2;nie
+K0398;16;WARSZAWA;PREMIUM;199,00 zł;3;4.9;0;tak
+K1066;46;Gdańsk;premium;199,00 zł;42;4.0;0;tak
+K0328;39;Kraków;Standard;139,00 zł;15;5.4;2;nie
+K0487;30;Wrocław;Basic;79,00 zł;35;1.6;1;nie
+K0578;34;Warszawa;Basic ;99,00 zł;42;2.2;0;Nie
+K0692;29;Kraków; Standard;119,00 zł;53;1.1;0;nie
+K0523;35;Gdańsk;Premium;189,00 zł;38;3.0;1;tak
+K0958;28;Wrocław; Premium;199,00 zł;43;3.0;1;tak
+K0646;32;Warszawa;standard;129,00 zł;36;10.7;2;tak
+K0272;33;WARSZAWA;Premium;199,00 zł;39;9.1;1;nie
+K0888;26;warszawa; Basic;99,00 zł;41;6.9;0;nie
+K1251;310; Warszawa;Standard;129,00 zł;28;6.2;2;nie
+K0087;29;Warszawa;Standard;139,00 zł;32;5.4;0;tak
+K0165;20;WARSZAWA;Basic ;99,00 zł;56;7.9;2;NIE
+K1330;43; Warszawa; Basic;99,00 zł;30;13.0;1;nie
+K0653;45;Wrocław ;Standard;139,00 zł;11;19.9;0;TAK
+K0556;45;Poznań; Premium;199,00 zł;21;11.4;0;nie
+K0194;35; Poznań;Standard;139,00 zł;39;9.8;1;nie
+K0327;18;Warszawa ;Basic;99,00 zł;2;4.8;2;tak
+K0344;40;Warszawa ;standard;139,00 zł;30;6.8;1;NIE
+K0109;24;Gdańsk;Standard;139,00 zł;32;2.1;0;nie
+K0156;34;kraków;Basic;99,00 zł;46;2.9;0;Nie
+K0531;48;Kraków;Standard;129,00 zł;12;5.9;1;nie
+K1231;32; Warszawa;Standard;139,00 zł;29;3.5;0;nie
+K0376;24;Poznań ;Basic;99,00 zł;60;13.4;0;nie
+K0756;;Poznań; Basic;99,00 zł;59;2.7;0;nie
+K1407;31;Gdańsk;BASIC;99,00 zł;57;3.9;0;nie
+K0789;34;Kraków ;Basic;89,00 zł;54;14.3;1;nie
+K0481;0;Gdańsk ; Basic;79,00 zł;18;9.0;0;nie
+K0732;16;Kraków;Standard;139,00 zł;27;0.8;0;tak
+K0721;51;Kraków;Premium ;199,00 zł;53;12.0;3;tak
+K0799;42;Warszawa;Basic;89,00 zł;34;5.2;0;nie
+K1461;39;Warszawa ;standard;129,00 zł;39;11.5;1;nie
+K1353;49;Warszawa; Basic;99,00 zł;49;3.3;0;Nie
+K0472;33;Warszawa;Standard;139,00 zł;12;1.3;1;tak
+K1299;33;Warszawa ;Standard ;139,00 zł;60;3.5;0;nie
+K0017;53;Warszawa ;BASIC;99,00 zł;45;1.7;1;nie
+K1137;22;Warszawa;Standard;129,00 zł;15;11.6;2;nie
+K1389;19;KRAKÓW;PREMIUM;199,00 zł;36;5.3;1;nie
+K0076;26;Poznań;Standard;139,00 zł;2;10.0;0;nie
+K0135;21;Kraków;Basic ;99,00 zł;12;3.1;0;Nie
+K0002;21;Warszawa;standard;139,00 zł;42;5.4;0;Nie
+K0438;42;Kraków;Basic;99,00 zł;50;9.2;1;Nie
+K1421;25;Gdańsk;Basic;99,00 zł;50;5.3;0;nie
+K0320;32;Wrocław;Basic;99,00 zł;20;1.4;0;Tak
+K1016;37;Warszawa; Standard;139,00 zł;41;4.1;0;nie
+K1298;43;Poznań;STANDARD;129,00 zł;54;15.9;0;nie
+K0997;33;Warszawa;Premium;199,00 zł;60;5.0;1;NIE
+K0739;31;Kraków ;Premium;199,00 zł;23;13.0;1;nie
+K0322;39;Wrocław;Premium;199,00 zł;48;3.7;0;nie
+K0568;26;Warszawa;Standard;139,00 zł;31;5.2;2;tak
+K0917;;Wrocław;Basic;99,00 zł;10;4.6;0;Tak
+K0252;25;Warszawa;Basic ;79,00 zł;21;9.8;1;nie
+K1343;32;warszawa;Basic;99,00 zł;28;2.9;0;Nie
+K1112;40;kraków;Premium;199,00 zł;6;7.3;2;tak
+K1377;34;Kraków;Standard;139,00 zł;52;2.3;1;Nie
+K0063;39;Kraków;Standard;139,00 zł;54;2.6;0;nie
+K0764;36;Wrocław ;Standard;129,00 zł;36;1.3;0;nie
+K0090;45;Wrocław;Premium;189,00 zł;27;2.5;2;tak
+K0804;37; Warszawa;Basic;79,00 zł;23;1.9;2;nie
+K0738;53;Wrocław;standard;139,00 zł;3;3.2;1;tak
+K0157;45;Poznań;Standard;139,00 zł;32;3.0;1;nie
+K0442;36;WARSZAWA;Standard;139,00 zł;28;2.9;0;nie
+K1289;19;KRAKÓW;Standard;139,00 zł;36;2.6;2;tak
+K1162;29;WARSZAWA;BASIC;99,00 zł;12;8.9;0;nie
+K0415;25;Poznań;basic;99,00 zł;4;10.0;2;nie
+K0952;35;Poznań;basic;99,00 zł;40;6.1;0;nie
+K1282;43;Warszawa;Standard;119,00 zł;25;10.6;0;nie
+K0553;49;Kraków;Basic;99,00 zł;14;2.1;0;nie
+K0512;26; Warszawa;Standard;129,00 zł;53;12.5;1;NIE
+K1419;37;Warszawa;Premium;199,00 zł;6;5.3;0;tak
+K0522;32;Kraków;Premium;199,00 zł;12;5.5;0;nie
+K0902;36;Kraków ;Premium;179,00 zł;10;4.0;0;nie
+K1134;40;Kraków;Standard ;139,00 zł;19;10.5;1;NIE
+K1244;18;Kraków;Standard;139,00 zł;37;6.4;1;tak
+K0474;25;WROCŁAW;Premium;189,00 zł;25;13.4;1;Nie
+K1038;199;POZNAŃ;Basic;89,00 zł;59;1.6;0;nie
+K0780;39;Kraków;Premium;189,00 zł;19;15.0;0;nie
+K1310;37; Warszawa;Basic ;89,00 zł;34;6.6;0;nie
+K0181;34;warszawa;Standard;129,00 zł;29;5.6;1;nie
+K0744;49;gdańsk;Basic;79,00 zł;32;11.0;1;nie
+K1296;17;GDAŃSK;Standard;139,00 zł;21;12.5;2;nie
+K1396;30;Warszawa ;Standard;139,00 zł;33;6.0;0;nie
+K0402;51; Wrocław;Basic;99,00 zł;43;12.9;0;nie
+K1200;33;Warszawa ;BASIC;99,00 zł;12;5.2;0;Nie
+K0923;23;Poznań;PREMIUM;199,00 zł;24;1.0;0;tak
+K0346;49;Warszawa ;Standard;129,00 zł;45;2.2;2;nie
+K1464;28;Warszawa;basic;99,00 zł;21;7.9;0;nie
+K0251;25;Gdańsk;Premium;199,00 zł;49;5.2;1;nie
+K0296;34;Warszawa;Standard;129,00 zł;16;5.3;1;Nie
+K1184;35;Gdańsk;Standard ;129,00 zł;53;2.3;1;NIE
+K1302;29;Warszawa ;Premium;199,00 zł;33;6.4;1;NIE
+K1265;3;Kraków;Basic;99,00 zł;55;9.7;1;Nie
+K0718;25;Wrocław;Standard;129,00 zł;19;4.4;1;TAK
+K0263;34;WARSZAWA; Basic;89,00 zł;48;14.5;1;nie
+K0121;27;Kraków;Standard;139,00 zł;44;2.1;1;NIE
+K1133;32; Poznań;STANDARD;139,00 zł;25;3.4;2;tak
+K1336;41; Kraków;standard;139,00 zł;33;11.6;0;nie
+K0220;34;Gdańsk;basic;99,00 zł;52;3.6;0;nie
+K0268;; Wrocław;Basic;99,00 zł;5;7.2;0;nie
+K0369;32;Gdańsk ;premium;199,00 zł;60;3.0;1;nie
+K0193;26;Warszawa;Standard;139,00 zł;27;15.2;2;nie
+K0291;26;KRAKÓW;BASIC;99,00 zł;16;2.5;1;tak
+K0693;37;Warszawa;Standard;119,00 zł;41;6.4;1;nie
+K0698;46; Warszawa;Standard;129,00 zł;2;8.2;0;nie
+K1211;39;Gdańsk ;premium;199,00 zł;50;16.5;1;nie
+K1408;28;Gdańsk ;Basic;99,00 zł;57;3.6;1;nie
+K1159;30;Kraków;Basic;79,00 zł;12;6.7;3;nie
+K1115;;Poznań ;STANDARD;139,00 zł;56;2.7;1;nie
+K1199;51;Poznań;Basic;99,00 zł;31;5.1;1;nie
+K0547;38;WARSZAWA;Basic;99,00 zł;11;5.9;0;nie
+K0075;27;Gdańsk;Premium;189,00 zł;42;8.3;2;Tak
+K1246;42;Warszawa;Premium ;199,00 zł;49;3.9;0;nie
+K0803;31;Warszawa;Standard ;139,00 zł;29;5.1;1;nie
+K0253;40;Warszawa;Basic;99,00 zł;9;17.2;2;nie
+K0433;40;Gdańsk;Basic;99,00 zł;25;3.5;1;TAK
+K1248;42;Kraków;Basic;99,00 zł;19;2.8;1;tak
+K0597;32;Kraków;Standard;139,00 zł;46;1.5;0;nie
+K1442;46;Wrocław;Basic;89,00 zł;60;4.2;0;NIE
+K0012;34;Kraków;PREMIUM;179,00 zł;26;8.1;1;nie
+K0787;34;Warszawa;Premium;199,00 zł;44;6.6;0;nie
+K0655;41;Kraków;Premium;199,00 zł;50;2.2;1;tak
+K1144;38;warszawa;Basic;99,00 zł;50;2.1;1;Nie
+K0735;16;Poznań ;Basic;99,00 zł;24;3.8;1;tak
+K1024;38;Kraków ;Standard;139,00 zł;5;5.5;0;nie
+K0210;37;Warszawa;Premium;189,00 zł;25;4.2;0;nie
+K1465;32;Gdańsk;Standard;129,00 zł;3;3.4;0;nie
+K0820;36;Warszawa;premium;189,00 zł;14;10.4;0;tak
+K1352;39;Kraków;Basic;99,00 zł;48;7.3;1;nie
+K0180;18;Warszawa;Basic;99,00 zł;14;5.1;2;tak
+K1365;38;KRAKÓW;STANDARD;119,00 zł;18;3.0;0;nie
+K0514;44;Kraków;Basic;99,00 zł;3;4.7;0;nie
+K0313;32;Kraków;Standard;119,00 zł;39;1.6;2;tak
+K0441;33;Wrocław;standard;139,00 zł;32;4.5;0;tak
+K0622;32;Warszawa ;Premium;199,00 zł;29;7.0;1;nie
+K0161;19;Warszawa;Standard ;139,00 zł;53;4.0;2;tak
+K0830;31;Wrocław; Basic;99,00 zł;49;9.1;0;tak
+K0377;23;Kraków;PREMIUM;199,00 zł;3;11.3;1;Nie
+K0206;;kraków;STANDARD;139,00 zł;12;3.7;2;tak
+K0922;16;Warszawa;Standard ;139,00 zł;35;2.8;0;nie
+K0289;30;Warszawa;Standard ;139,00 zł;45;2.8;0;Nie
+K0057;41;poznań;Standard;139,00 zł;42;14.4;1;nie
+K0685;30;Gdańsk;Standard;139,00 zł;10;3.4;0;NIE
+K0385;45;Warszawa;Basic;99,00 zł;9;2.7;4;tak
+K0501;40;Warszawa ;Premium ;199,00 zł;43;2.6;2;nie
+K1027;41;Kraków;Standard;129,00 zł;52;5.0;0;nie
+K0170;35;Warszawa; Standard;139,00 zł;22;9.1;1;NIE
+K0232;26;Poznań;Basic;99,00 zł;7;7.3;1;nie
+K1290;33;Warszawa;basic;99,00 zł;35;1.4;0;nie
+K0426;31;Wrocław;Basic ;99,00 zł;31;3.8;0;nie
+K1323;37;gdańsk;BASIC;89,00 zł;57;7.8;1;nie
+K0742;31;poznań;BASIC;79,00 zł;19;2.1;1;nie
+K0311;;Wrocław; Basic;79,00 zł;24;3.2;2;nie
+K0590;45;Warszawa ;Basic ;99,00 zł;34;7.8;1;NIE
+K0238;26;Warszawa;Standard;139,00 zł;24;5.6;1;nie
+K0237;39;Poznań;Basic;99,00 zł;9;5.3;0;nie
+K0427;2;Poznań;Basic;99,00 zł;23;6.6;2;nie
+K1004;25;Kraków;Standard;139,00 zł;3;18.7;2;tak
+K1372;;Gdańsk;Standard;139,00 zł;59;8.7;0;Nie
+K0582;34;Wrocław;Basic ;99,00 zł;7;8.2;1;nie
+K1149;36;Kraków;Basic;99,00 zł;26;9.2;0;NIE
+K0762;48;Warszawa; Premium;199,00 zł;53;10.6;2;nie
+K0176;40;Poznań;BASIC;99,00 zł;41;8.0;0;nie
+K1155;39;Gdańsk;Standard;139,00 zł;16;3.5;1;tak
+K1198;29;Poznań;BASIC;99,00 zł;53;8.5;1;nie
+K0995;32;Poznań;Basic;99,00 zł;26;8.6;1;nie
+K1489;39;WROCŁAW;Standard ;129,00 zł;23;3.0;1;nie
+K0457;40;Warszawa;Premium ;199,00 zł;25;4.4;2;tak
+K0835;34;Warszawa;BASIC;79,00 zł;14;16.4;4;nie
+K1474;18; Kraków;Basic;99,00 zł;27;4.0;0;nie
+K1467;49;GDAŃSK;Basic;89,00 zł;27;11.4;1;
+K1484;50;wrocław;Basic;99,00 zł;43;2.3;0;nie
+K0318;23;Warszawa;Standard;119,00 zł;32;7.8;3;nie
+K1010;26;gdańsk;Basic;99,00 zł;50;2.5;0;nie
+K1247;18;Wrocław;Standard;139,00 zł;9;8.8;0;nie
+K0672;16;Warszawa ;Premium;189,00 zł;37;1.2;0;tak
+K0387;40;Poznań;Basic;99,00 zł;1;5.4;0;nie
+K0153;34;Kraków;Standard;139,00 zł;32;10.9;0;tak
+K0559;24;Poznań; Standard;139,00 zł;31;12.7;1;NIE
+K1227;41;GDAŃSK;Standard;139,00 zł;28;4.8;0;tak
+K1400;41;gdańsk;Premium;199,00 zł;38;7.2;3;NIE
+K0945;37;Gdańsk;Basic;99,00 zł;15;4.9;0;NIE
+K0998;38;Warszawa;Basic ;79,00 zł;27;4.1;0;tak
+K1301;31;Gdańsk;Premium;189,00 zł;51;11.4;0;nie
+K1398;47;Wrocław;Standard;139,00 zł;33;4.2;0;
+K0753;29;Warszawa;Premium;189,00 zł;20;10.8;2;nie
+K1425;36;Kraków;STANDARD;139,00 zł;33;1.5;0;NIE
+K1379;16;KRAKÓW;Basic;99,00 zł;21;5.6;3;tak
+K0575;29;Gdańsk;Basic;89,00 zł;39;2.6;2;nie
+K1335;45; Poznań;BASIC;99,00 zł;5;2.1;1;nie
+K0265;34;Kraków ;STANDARD;139,00 zł;51;9.9;0;nie
+K0292;53;Warszawa;Basic;99,00 zł;44;3.1;1;nie
+K1320;27;warszawa;Premium;199,00 zł;54;3.5;0;nie
+K0600;30;Warszawa;BASIC;99,00 zł;50;3.5;2;nie
+K1000;43;Wrocław;Basic;99,00 zł;2;3.0;0;nie
+K0155;27;Warszawa;standard;139,00 zł;32;2.3;1;Tak
+K1218;47;Warszawa ;Basic;99,00 zł;47;2.1;1;Nie
+K0023;;Gdańsk;Standard;129,00 zł;5;7.2;0;nie
+K0882;26;gdańsk;Standard;129,00 zł;38;1.1;1;tak
+K1447;27;Warszawa;Premium ;199,00 zł;10;3.9;0;tak
+K1140;38;Wrocław;Basic;79,00 zł;24;5.9;1;nie
+K1478;31;Warszawa;Premium;199,00 zł;5;14.0;0;tak
+K1298;43;Poznań;STANDARD;129,00 zł;54;15.9;0;nie
+K1437;;Gdańsk;Standard;129,00 zł;27;6.1;1;nie
+K0828;44;Warszawa; Standard;119,00 zł;30;3.8;2;nie
+K0259;25;Kraków;Premium;199,00 zł;9;7.1;0;tak
+K0228;37;kraków;Premium;199,00 zł;50;6.4;2;nie
+K0317;44;Warszawa;Basic ;99,00 zł;9;12.5;0;nie
+K0968;18;Wrocław;Basic;99,00 zł;33;2.7;0;nie
+K0108;36;Kraków;premium;189,00 zł;4;4.3;0;nie
+K1412;33;Kraków;Premium;189,00 zł;22;6.0;0;NIE
+K1180;28;WARSZAWA;Basic;79,00 zł;11;6.2;3;NIE
+K0428;36;Wrocław;Basic;99,00 zł;2;7.0;0;nie
+K0086;28;Poznań;Standard;139,00 zł;15;4.5;0;nie
+K0916;37;WROCŁAW;Basic;99,00 zł;56;3.7;1;tak
+K0884;31;Warszawa;Standard;129,00 zł;59;9.0;1;tak
+K1065;27;Kraków;Standard;139,00 zł;7;1.7;1;Nie
+K0593;40;Gdańsk ;Premium;189,00 zł;40;8.2;1;nie
+K0611;41;Gdańsk;Premium;199,00 zł;43;2.1;3;NIE
+K0809;42;WROCŁAW;Premium ;199,00 zł;20;3.7;2;nie
+K0525;16; Warszawa;Basic;99,00 zł;19;8.9;1;NIE
+K0031;41;Warszawa; Basic;99,00 zł;51;4.8;0;nie
+K0011;41;Poznań ;Premium;199,00 zł;25;1.0;0;nie
+K0982;45;Warszawa;Standard;139,00 zł;9;6.5;2;tak
+K0439;30;Warszawa;Basic;89,00 zł;48;18.5;3;nie
+K0343;42;Kraków;Basic;99,00 zł;53;6.6;3;nie
+K0711;28;Warszawa ;Basic;89,00 zł;47;4.8;0;nie
+K0875;27;warszawa;standard;129,00 zł;28;3.3;0;nie
+K0459;43;Warszawa;Basic ;99,00 zł;35;6.1;1;nie
+K0878;48;Kraków;STANDARD;129,00 zł;57;4.2;2;nie
+K0670;33;Kraków ;BASIC;99,00 zł;34;11.6;0;nie
+K1146;49;Warszawa;Standard;139,00 zł;47;5.2;1;nie
+K0846;63;warszawa;PREMIUM;199,00 zł;49;2.9;0;NIE
+K0126;37;Gdańsk;Basic ;99,00 zł;11;8.9;0;nie
+K0258;44;GDAŃSK;premium;199,00 zł;51;6.3;2;nie
+K1214;32;WROCŁAW;BASIC;99,00 zł;59;4.1;0;nie
+K0867;44;Warszawa;Standard;139,00 zł;2;8.3;2;nie
+K0314;36;Warszawa;Premium;199,00 zł;39;12.4;1;Nie
+K1228;21;warszawa;Basic;99,00 zł;4;6.9;1;nie
+K1078;24;Gdańsk;Basic;99,00 zł;41;12.5;0;nie
+K0005;42;Kraków;BASIC;89,00 zł;22;2.2;2;tak
+K1468;46;WARSZAWA;Basic;89,00 zł;27;5.9;2;nie
+K0199;21;Warszawa;Basic;99,00 zł;36;8.6;1;nie
+K0629;43;Warszawa;Premium;199,00 zł;22;5.0;1;NIE
+K0410;47; Warszawa;Standard;139,00 zł;14;3.7;0;nie
+K1276;38;Warszawa;STANDARD;129,00 zł;47;1.5;0;nie
+K0717;39;warszawa; Standard;129,00 zł;17;6.6;0;nie
+K1434;36;Wrocław ;Basic;99,00 zł;45;5.4;0;nie
+K0175;16; Warszawa;Premium;189,00 zł;42;6.7;0;nie
+K1297;23;WARSZAWA;Basic ;89,00 zł;20;1.5;0;nie
+K1423;25;Kraków;Standard;129,00 zł;51;12.3;0;nie
+K0840;23;Gdańsk;Standard;139,00 zł;17;3.7;2;tak
+K0470;1;Warszawa;basic;99,00 zł;38;4.5;1;Nie
+K0203;42;Warszawa;Basic;99,00 zł;31;6.5;1;NIE
+K1156;26;Kraków;Basic;99,00 zł;1;8.0;0;nie
+K0596;33;Warszawa;basic;79,00 zł;35;3.3;0;nie
+K0632;47;kraków;Standard;119,00 zł;54;6.3;1;nie
+K0178;27;WARSZAWA;Basic;99,00 zł;25;5.6;1;tak
+K0276;23;Gdańsk;Standard;139,00 zł;28;11.7;0;tak
+K0927;30;Wrocław;Basic;89,00 zł;14;2.5;0;nie
+K0413;33;warszawa; Premium;189,00 zł;49;8.4;1;nie
+K0014;39; Warszawa;STANDARD;139,00 zł;57;7.3;0;NIE
+K0484;30;Kraków;Standard ;119,00 zł;56;9.3;4;nie
+K1486;28;Poznań;Basic ;99,00 zł;53;2.2;1;tak
+K1475;27;GDAŃSK;Standard;139,00 zł;8;7.5;0;nie
+K0476;32;GDAŃSK;premium;179,00 zł;18;5.0;0;nie
+K1206;32;POZNAŃ;Standard;139,00 zł;46;3.7;1;tak
+K0539;26;Warszawa;standard;139,00 zł;26;10.4;0;nie
+K0616;19;Warszawa;STANDARD;139,00 zł;55;10.0;0;nie
+K1008;35;KRAKÓW;Basic;99,00 zł;17;7.6;2;nie
+K0118;37;Warszawa;Standard;129,00 zł;40;5.1;1;nie
+K0537;31;Wrocław;Standard;139,00 zł;31;5.3;0;nie
+K1141;30;Poznań;basic;89,00 zł;46;9.9;1;nie
+K1142;18;WARSZAWA; Premium;199,00 zł;43;1.0;1;TAK
+K0642;37;WARSZAWA;Basic;99,00 zł;45;1.6;1;nie
+K0603;35; Wrocław;Standard;139,00 zł;16;10.4;1;tak
+K1225;29;Kraków;standard;139,00 zł;44;3.1;1;nie
+K1204;35;wrocław;Standard;139,00 zł;42;15.6;1;nie
+K1458;33;WARSZAWA;Premium;199,00 zł;29;1.4;0;TAK
+K0164;29;Poznań;Standard;139,00 zł;53;3.9;1;tak
+K0112;28;Gdańsk;basic;89,00 zł;52;6.6;1;nie
+K0345;22;Warszawa ;Standard;129,00 zł;55;5.5;2;nie
+K1205;46;Warszawa;Basic;99,00 zł;47;10.3;1;nie
+K1089;23;Poznań;Basic;99,00 zł;35;8.4;0;nie
+K0483;39;Warszawa ;Basic;99,00 zł;54;8.6;1;nie
+K1347;42;POZNAŃ;Standard;129,00 zł;35;5.2;1;nie
+K0994;16;Wrocław;Standard ;119,00 zł;13;3.6;0;Nie
+K0131;24;kraków;Premium;199,00 zł;3;8.9;1;nie
+K1308;22;Warszawa;basic;89,00 zł;47;13.1;2;nie
+K1381;39;kraków;Basic ;99,00 zł;45;4.1;1;nie
+K0339;49;Poznań;Premium;199,00 zł;22;2.8;0;NIE
+K1325;46;Warszawa;Premium;199,00 zł;11;10.8;2;tak
+K1082;47;warszawa;Basic;99,00 zł;4;8.1;0;nie
+K0073;16;Warszawa;STANDARD;139,00 zł;49;4.9;1;nie
+K0515;37;Gdańsk;Standard;139,00 zł;31;1.4;0;nie
+K0991;44;Wrocław;basic;79,00 zł;6;4.0;0;nie
+K0516;31;Warszawa;PREMIUM;199,00 zł;55;5.0;1;nie
+K1237;25;Poznań;Standard;139,00 zł;4;5.0;0;nie
+K0379;21;Poznań;Basic;99,00 zł;50;2.8;0;nie
+K0013;35;Wrocław;Standard;129,00 zł;39;6.6;0;NIE
+K0448;40;Warszawa;Basic;99,00 zł;23;25.0;1;nie
+K1009;20;Kraków;Premium;199,00 zł;28;8.6;0;nie
+K0209;16;Warszawa;Premium;199,00 zł;50;1.6;0;nie
+K0304;27;Warszawa;Standard;119,00 zł;31;3.4;0;nie
+K0577;40;Kraków;Standard;139,00 zł;14;9.8;0;nie
+K0621;30;Warszawa ;standard;139,00 zł;37;11.2;0;tak
+K0965;29;Warszawa;Premium;199,00 zł;9;6.8;2;Tak
+K1079;31;Wrocław ;Basic;99,00 zł;45;7.0;1;nie
+K0566;46;Warszawa ;STANDARD;139,00 zł;39;7.0;2;nie
+K1399;36;Warszawa;STANDARD;139,00 zł;60;4.3;0;nie
+K0694;29;Poznań;Basic ;99,00 zł;33;8.5;1;Nie
+K1123;38;WARSZAWA;Premium;199,00 zł;57;6.0;0;nie
+K0961;29;Wrocław;Standard;139,00 zł;17;6.0;1;nie
+K0645;37; Kraków;BASIC;89,00 zł;44;4.5;1;nie
+K0929;30;Gdańsk;Standard;139,00 zł;49;8.0;2;nie
+K0883;24;POZNAŃ;premium;199,00 zł;3;9.4;1;Nie
+K0341;46; Warszawa;Premium;199,00 zł;47;10.2;2;nie
+K1151;41;Gdańsk;standard;139,00 zł;9;10.9;0;nie
+K0347;60;Warszawa;Standard;139,00 zł;10;4.9;1;tak
+K1456;16;WROCŁAW;Premium;199,00 zł;43;5.6;3;Tak
+K1339;16;warszawa;Basic;99,00 zł;44;2.6;0;Nie
+K0305;22;Warszawa;Basic;99,00 zł;11;2.3;0;nie
+K0037;22;Kraków;Standard ;139,00 zł;41;5.5;1;nie
+K0812;43;GDAŃSK;Premium;199,00 zł;46;5.3;0;nie
+K0043;27;Poznań ;basic;99,00 zł;52;4.5;0;nie
+K0972;49;Warszawa;Standard;139,00 zł;28;2.3;0;tak
+K0395;37;Warszawa ;Standard;129,00 zł;50;2.2;2;Nie
+K0879;35;POZNAŃ;basic;99,00 zł;58;4.1;1;nie
+K1375;36;Kraków;BASIC;99,00 zł;17;10.4;1;tak
+K0926;34;Warszawa;Standard;129,00 zł;45;8.5;1;nie
+K1238;39;Warszawa;BASIC;99,00 zł;32;3.8;1;nie
+K0734;27;Gdańsk; Basic;79,00 zł;58;11.4;0;nie
+K0460;25;POZNAŃ;Basic;89,00 zł;32;3.2;1;NIE
+K0708;31;Warszawa;standard;139,00 zł;43;8.5;1;nie
+K0424;16;KRAKÓW;Premium;199,00 zł;1;8.0;1;tak
+K0693;37;Warszawa;Standard;119,00 zł;41;6.4;1;nie
+K0967;40;Gdańsk;Standard;139,00 zł;32;9.1;1;nie
+K0880;34;wrocław;STANDARD;129,00 zł;52;2.9;2;nie
+K0295;27;Warszawa;Standard;119,00 zł;36;4.3;1;nie
+K0586;25;warszawa;Standard;139,00 zł;36;6.6;0;nie
+K0027;42;Warszawa;Basic ;99,00 zł;35;4.6;1;nie
+K0681;16;Warszawa;Basic;99,00 zł;34;11.3;1;NIE
+K1068;25;Poznań;Basic;99,00 zł;21;6.2;2;NIE
+K1063;25;poznań;Standard;139,00 zł;37;15.4;0;nie
+K0136;53;Warszawa;STANDARD;139,00 zł;52;4.8;2;nie
+K0511;44;Warszawa;Basic;99,00 zł;29;5.9;1;nie
+K0211;35;Kraków;Basic;99,00 zł;9;15.7;0;nie
+K1313;17;Wrocław;standard;139,00 zł;55;3.6;2;tak
+K0354;;warszawa;Basic;99,00 zł;56;2.5;1;nie
+K0986;57;warszawa;STANDARD;139,00 zł;10;3.1;1;tak
+K1274;;Kraków;Basic;99,00 zł;58;8.8;1;tak
+K0853;;Wrocław; Basic;99,00 zł;27;5.1;0;nie
+K0056;34; Gdańsk;Standard;139,00 zł;59;10.1;2;NIE
+K0464;45;poznań;standard;139,00 zł;32;7.5;0;NIE
+K1451;28;Gdańsk;basic;89,00 zł;3;6.8;0;nie
+K1472;43;Kraków;Basic;99,00 zł;44;8.0;1;Nie
+K0857;35;Poznań; Premium;179,00 zł;9;8.0;0;nie
+K0217;;Warszawa;basic;89,00 zł;52;3.9;0;nie
+K1101;39;WROCŁAW;Standard ;139,00 zł;8;7.9;0;nie
+K0041;46;Wrocław;Standard;139,00 zł;28;8.1;1;nie
+K0885;46;Wrocław; Basic;99,00 zł;16;6.8;0;nie
+K0397;33;KRAKÓW;Basic;99,00 zł;38;15.9;2;tak
+K1483;50;Warszawa;PREMIUM;199,00 zł;36;9.7;2;Nie
+K1358;16;Wrocław;Basic;79,00 zł;2;10.5;0;tak
+K1266;31;WARSZAWA;Basic;79,00 zł;55;7.8;0;nie
+K1414;47;Kraków;Standard ;139,00 zł;19;4.4;1;nie
+K1277;16;Warszawa; Basic;89,00 zł;31;5.2;0;NIE
+K1488;25;Warszawa;Premium;199,00 zł;20;2.7;0;NIE
+K0179;28;Gdańsk;PREMIUM;199,00 zł;32;7.6;1;TAK
+K0177;38;wrocław;Premium ;199,00 zł;52;3.1;1;nie
+K0741;29;Kraków;Premium ;179,00 zł;9;7.5;1;Nie
+K0508;28;Kraków;Basic;89,00 zł;38;8.8;1;NIE
+K0571;45;POZNAŃ;Standard;139,00 zł;55;8.2;1;nie
+K0921;30;poznań;BASIC;99,00 zł;55;9.7;0;tak
+K0182;38; Wrocław;Standard;139,00 zł;51;4.5;0;nie
+K0301;44;Gdańsk;Standard;129,00 zł;43;9.6;2;Nie
+K1453;43;Kraków ;Basic;89,00 zł;11;3.0;1;nie
+K1015;54;Gdańsk;Basic ;99,00 zł;21;14.3;0;NIE
+K0640;23; Wrocław;Basic;99,00 zł;59;9.4;2;NIE
+K0564;48; Wrocław;Standard;139,00 zł;46;13.9;2;tak
+K1278;35;Warszawa;Basic;89,00 zł;6;1.3;0;tak
+K0079;17; Warszawa;BASIC;99,00 zł;59;6.0;0;nie
+K0519;22;Warszawa; Standard;129,00 zł;27;3.3;0;tak
+K0996;20;Warszawa;Standard;129,00 zł;35;0.8;0;nie
+K1092;21;Kraków; Basic;99,00 zł;33;14.9;1;TAK
+K0727;34;Warszawa;Premium;179,00 zł;56;4.9;1;nie
+K0229;45;Wrocław;Standard;139,00 zł;56;6.3;0;nie
+K0819;37;POZNAŃ;Basic ;99,00 zł;52;13.3;2;nie
+K1090;37;Wrocław;Standard;139,00 zł;55;6.3;0;nie
+K0989;57;KRAKÓW;Premium;199,00 zł;2;5.0;0;nie
+K0051;32; Wrocław;Standard;139,00 zł;32;7.2;1;NIE
+K0030;46;Poznań;Basic;79,00 zł;54;9.5;0;nie
+K0634;57;Warszawa;Standard;139,00 zł;20;8.7;1;Nie
+K0657;24;Warszawa ;Premium;179,00 zł;36;7.3;1;nie
+K0562;36; Gdańsk;BASIC;99,00 zł;36;3.9;2;nie
+K1386;17;Warszawa ; Premium;199,00 zł;16;4.0;0;tak
+K1192;31; Wrocław;Basic;99,00 zł;55;7.9;2;nie
+K0841;37;Gdańsk;Standard;139,00 zł;45;5.3;0;nie
+K0226;;poznań;Basic ;99,00 zł;1;4.9;1;nie
+K1157;45;Gdańsk ;BASIC;99,00 zł;58;6.2;1;nie
+K0204;26;Warszawa;Standard;139,00 zł;1;5.3;1;tak
+K0445;53;Kraków;Basic;99,00 zł;38;12.1;1;nie
+K0372;51;Warszawa;Basic;89,00 zł;27;11.0;0;nie
+K0033;26;Poznań;Standard;129,00 zł;24;7.4;0;nie
+K1143;28;Warszawa;Premium;199,00 zł;50;8.1;1;nie
+K1230;25;Gdańsk;Basic;99,00 zł;7;3.3;1;tak
+K0966;21;POZNAŃ;Standard;139,00 zł;48;4.2;1;Tak
+K1083;28;Kraków;Standard;139,00 zł;20;8.4;0;nie
+K0894;38;Kraków;Premium;199,00 zł;16;2.4;0;NIE
+K0669;43;Warszawa;Premium;199,00 zł;8;1.9;0;TAK
+K1229;36;Wrocław;Standard;139,00 zł;53;4.4;0;nie
+K1253;20;KRAKÓW;Premium;189,00 zł;45;13.2;1;nie
+K0959;32; Wrocław;BASIC;99,00 zł;30;8.5;0;nie
+K1328;26;Kraków; Premium;189,00 zł;40;5.5;0;nie
+K0152;32;WARSZAWA;BASIC;79,00 zł;57;4.6;2;tak
+K0960;21;Kraków;Basic;99,00 zł;8;9.7;1;Nie
+K0223;29;Wrocław ;Standard;129,00 zł;53;2.7;3;nie
+K1028;38;Poznań;Basic;99,00 zł;31;8.7;2;NIE
+K0703;29;Wrocław; Premium;199,00 zł;30;2.9;1;TAK
+K1210;40;Warszawa;STANDARD;139,00 zł;24;10.5;1;nie
+K1319;39;wrocław;Standard ;139,00 zł;54;12.1;1;Nie
+K0855;35;Warszawa;Basic;89,00 zł;51;5.9;2;nie
+K0834;31;Wrocław;Basic;79,00 zł;20;3.8;4;tak
+K0114;32;Warszawa;Basic;79,00 zł;14;2.3;1;Nie
+K0049;38;Gdańsk;STANDARD;139,00 zł;39;5.6;1;nie
+K0290;19;Warszawa;Standard;139,00 zł;17;4.3;3;tak
+K1022;26;Warszawa;Premium ;199,00 zł;21;15.5;0;tak
+K0207;37;Warszawa; Basic;99,00 zł;59;6.6;0;nie
+K0974;34;Gdańsk;basic;89,00 zł;9;6.6;1;Nie
+K0633;35;Warszawa;Premium;199,00 zł;42;5.1;1;TAK
+K0776;29;Wrocław;STANDARD;139,00 zł;41;6.4;0;nie
+K0890;44;Kraków;Standard;139,00 zł;34;3.6;0;Nie
+K0900;33;Wrocław;Standard;139,00 zł;26;2.8;1;nie
+K0833;43;Wrocław;Basic;89,00 zł;60;13.1;1;Tak
+K0684;43;Wrocław;standard;139,00 zł;27;7.1;1;nie
+K1397;23;wrocław;basic;99,00 zł;20;6.1;0;Nie
+K0618;46;Gdańsk;Standard;139,00 zł;29;11.5;0;nie
+K0686;27;Kraków; Standard;139,00 zł;30;1.0;1;TAK
+K0870;36;kraków;Standard;139,00 zł;25;3.4;0;nie
+K0674;41;Wrocław ;Standard;129,00 zł;5;12.9;1;nie
+K0750;27;WARSZAWA;Premium;189,00 zł;28;7.3;0;nie
+K1003;28;WARSZAWA;Standard ;139,00 zł;47;1.8;1;nie
+K1093;33;gdańsk;basic;89,00 zł;41;4.3;0;nie
+K0409;19;Warszawa;basic;99,00 zł;19;7.0;1;nie
+K0630;24;KRAKÓW;Basic;99,00 zł;19;4.2;0;tak
+K1258;35;Kraków;Basic ;99,00 zł;19;1.7;0;tak
+K0647;32;Kraków;Premium;199,00 zł;9;2.9;1;tak
+K0140;34; Poznań;Standard;129,00 zł;17;21.5;0;nie
+K1153;49;WARSZAWA;Standard;139,00 zł;24;2.7;3;tak
+K0914;21;Warszawa; Basic;99,00 zł;34;3.3;1;nie
+K0166;25;Warszawa ;Basic;99,00 zł;37;5.6;0;nie
+K1114;35;Wrocław;STANDARD;139,00 zł;53;1.0;1;tak
+K0813;27;gdańsk;PREMIUM;199,00 zł;38;6.1;1;nie
+K0215;42; Warszawa;Basic;99,00 zł;32;7.8;1;Nie
+K0132;47;Poznań;Standard;139,00 zł;2;10.5;1;nie
+K0315;46;Warszawa;premium;199,00 zł;3;3.7;0;tak
+K0139;16;WARSZAWA;Basic;99,00 zł;4;6.1;0;nie
+K1215;42;Gdańsk ;basic;89,00 zł;27;10.4;0;nie
+K0417;16;poznań;Standard;139,00 zł;40;0.7;0;TAK
+K1030;23;warszawa; Standard;139,00 zł;52;6.0;1;nie
+K0039;35;Warszawa;premium;199,00 zł;52;3.3;2;Nie
+K0054;43;Warszawa;Standard;129,00 zł;43;5.0;0;nie
+K0707;32;Kraków;Basic;99,00 zł;28;10.2;0;nie
+K0137;32;Warszawa ;standard;129,00 zł;51;22.2;1;Nie
+K1402;21;Wrocław;Premium;199,00 zł;26;4.0;1;Nie
+K0794;39;Gdańsk;Basic;99,00 zł;27;2.5;1;NIE
+K0036;49;Kraków;premium;199,00 zł;26;9.2;1;nie
+K0026;40;Poznań;Basic;99,00 zł;52;5.8;2;Nie
+K0658;50;Wrocław;Premium;179,00 zł;7;9.8;3;nie
+K0450;20;Wrocław; Standard;139,00 zł;15;4.4;1;TAK
+K0579;40;Warszawa; Basic;79,00 zł;12;3.8;1;nie
+K1077;26;Wrocław;basic;99,00 zł;31;7.2;2;nie
+K0303;16;WARSZAWA;Basic;79,00 zł;28;2.2;2;tak
+K1440;37; Warszawa;Basic;99,00 zł;49;4.6;2;nie
+K1493;33;Warszawa;Premium;199,00 zł;24;3.6;0;NIE
+K1179;41;Wrocław ; Basic;99,00 zł;41;2.5;2;nie
+K1053;48;Warszawa; Premium;199,00 zł;5;3.8;0;tak
+K1208;25; Gdańsk;Standard;139,00 zł;53;6.0;0;nie
+K0778;31;Gdańsk;Standard;119,00 zł;27;3.1;0;nie
+K1234;16;Gdańsk;Standard ;139,00 zł;12;14.2;0;nie
+K0245;19;Poznań;BASIC;99,00 zł;52;9.7;2;nie
+K0104;23;Gdańsk;Basic;79,00 zł;11;5.7;0;nie
+K0277;30; Warszawa;Basic;99,00 zł;51;3.3;0;Nie
+K0394;33;warszawa;Basic ;99,00 zł;30;19.5;2;Nie
+K0111;50;Kraków;Standard;119,00 zł;17;9.6;1;NIE
+K0589;32;Warszawa ;Basic ;99,00 zł;52;0.8;1;nie
+K0160;34;Poznań;Standard;139,00 zł;17;2.5;1;tak
+K0971;16;warszawa;Basic;99,00 zł;26;9.3;1;NIE
+K0748;27;POZNAŃ; Basic;99,00 zł;48;15.6;0;nie
+K0562;36; Gdańsk;BASIC;99,00 zł;36;3.9;2;nie
+K1125;24;Kraków;Basic;99,00 zł;34;8.5;1;nie
+K0661;34;Poznań;STANDARD;139,00 zł;29;3.0;1;tak
+K1175;29;Warszawa; Standard;139,00 zł;27;5.8;2;NIE
+K0340;35;KRAKÓW; Premium;199,00 zł;48;7.8;1;nie
+K0330;;Kraków;Premium;199,00 zł;17;13.5;0;nie
+K0134;31;KRAKÓW;Premium;199,00 zł;34;4.7;1;tak
+K0638;25;Kraków;Standard;139,00 zł;54;5.8;2;nie
+K0168;;Warszawa; Basic;99,00 zł;39;12.2;1;tak
+K1415;39;Poznań;standard;139,00 zł;42;9.4;0;nie
+K0928;28;WROCŁAW;Basic;89,00 zł;13;11.8;1;NIE
+K0861;31;Warszawa;Standard ;139,00 zł;7;5.5;0;Nie
+K1021;40;Wrocław;basic;99,00 zł;43;10.0;1;nie
+K1500;22;KRAKÓW;Standard;129,00 zł;22;11.6;0;nie
+K0025;33;warszawa;Basic;89,00 zł;18;1.6;3;tak
+K0807;;POZNAŃ;Standard;139,00 zł;59;5.7;3;Nie
+K1431;16;Poznań;Basic;89,00 zł;53;5.9;1;nie
+K0444;40;Gdańsk;Standard;129,00 zł;48;5.4;0;NIE
+K0151;25;Warszawa ;premium;199,00 zł;58;7.0;1;nie
+K1324;31;POZNAŃ; Standard;129,00 zł;40;7.9;4;nie
+K0095;34;Poznań;Standard;129,00 zł;53;9.5;0;Nie
+K1370;36;Kraków; Basic;99,00 zł;16;8.8;0;nie
+K0218;33;Gdańsk; Premium;199,00 zł;2;6.3;1;tak
+K0382;20;Gdańsk; Standard;139,00 zł;13;4.7;1;tak
+K1048;26;poznań;Basic;99,00 zł;19;10.9;0;Nie
+K0781;23;Wrocław;Standard;139,00 zł;52;8.5;2;nie
+K0901;42;Warszawa ;standard;139,00 zł;17;6.5;0;Nie
+K1454;31;Warszawa;Basic;99,00 zł;30;10.4;1;nie
+K0865;22;Warszawa;Standard;139,00 zł;19;9.2;1;tak
+K0293;35;Warszawa;premium;199,00 zł;13;1.4;1;tak
+K0713;20;Kraków;Basic;99,00 zł;56;6.7;1;nie
+K0101;39;Gdańsk;PREMIUM;189,00 zł;60;7.9;0;nie
+K1050;16;Kraków;Premium;199,00 zł;32;9.0;1;tak
+K0784;27;Poznań;Standard;139,00 zł;41;4.4;0;nie
+K1221;50; Warszawa; Basic;99,00 zł;33;2.6;0;TAK
+K0490;26;Warszawa ;Basic ;99,00 zł;38;1.9;0;nie
+K0701;41; Warszawa;Basic ;99,00 zł;36;6.3;2;nie
+K1169;33; Wrocław;Basic;99,00 zł;53;2.0;2;nie
+K0751;35; Kraków;Standard;139,00 zł;22;15.2;0;NIE
+K0963;;Warszawa;Basic;99,00 zł;25;5.1;0;nie
+K1013;34;Gdańsk;Basic;89,00 zł;55;6.1;0;Tak
+K0243;41;warszawa;Premium;199,00 zł;60;2.8;3;tak
+K0169;46; Gdańsk;Basic;99,00 zł;49;4.7;0;nie
+K0074;33;Gdańsk;Premium ;199,00 zł;26;2.0;0;Tak
+K0560;43;Kraków; Standard;119,00 zł;30;14.9;0;nie
+K1334;41; Wrocław; Standard;139,00 zł;25;2.8;2;nie
+K1221;50; Warszawa; Basic;99,00 zł;33;2.6;0;TAK
+K1285;38; Wrocław;STANDARD;139,00 zł;34;8.3;0;nie
+K0119;32;Poznań;Basic;79,00 zł;22;8.2;0;tak
+K1139;;Wrocław; Standard;139,00 zł;23;9.7;1;Nie
+K0521;34;Kraków;Standard;119,00 zł;48;3.1;0;nie
+K0714;22;WROCŁAW;Premium;199,00 zł;14;3.9;1;Tak
+K0993;32;Gdańsk ;Standard;139,00 zł;20;9.5;0;nie
+K0006;16;Warszawa;Standard;139,00 zł;56;5.8;1;nie
+K0255;39;Kraków;Standard;139,00 zł;4;5.1;0;NIE
+K1094;22;WARSZAWA; Basic;99,00 zł;59;3.8;0;tak
+K1039;40;Kraków;standard;139,00 zł;36;8.1;1;Nie
+K0384;42;Poznań;Basic;99,00 zł;60;2.5;2;tak
+K1103;28;Kraków;Basic ;99,00 zł;6;9.0;2;Nie
+K0517;25;Kraków;Standard;139,00 zł;30;2.9;0;nie
+K0055;;poznań;STANDARD;139,00 zł;35;2.5;0;Nie
+K0468;45;Warszawa ;Standard;139,00 zł;10;7.8;2;nie
+K0267;230;Warszawa; Standard;139,00 zł;10;3.6;1;TAK
+K1034;30; Warszawa; Standard;139,00 zł;51;5.2;0;NIE
+K0584;34;Wrocław;STANDARD;139,00 zł;48;7.2;0;tak
+K0767;44;Warszawa;Basic;89,00 zł;47;6.1;2;nie
+K0538;28;warszawa;Basic;99,00 zł;10;2.4;0;Nie
+K1459;33;Warszawa ;basic;99,00 zł;35;2.2;3;
+K0060;18;Warszawa;Standard;139,00 zł;32;8.9;1;NIE
+K1191;51;Poznań;Basic;99,00 zł;57;2.3;0;nie
+K0167;;Gdańsk;Premium;199,00 zł;47;3.1;2;tak
+K1280;33;Gdańsk ;Standard;139,00 zł;42;2.1;0;nie
+K0816;34;Poznań;Basic;79,00 zł;10;2.5;2;tak
+K0332;16;KRAKÓW;premium;189,00 zł;27;5.7;0;nie
+K0248;;warszawa; Basic;99,00 zł;39;6.5;0;nie
+K0374;41;WARSZAWA;Standard;129,00 zł;33;11.8;1;Nie
+K1219;23; Warszawa;Premium;199,00 zł;23;4.4;0;tak
+K0500;27;Warszawa;BASIC;89,00 zł;60;11.8;1;nie
+K1222;49;poznań;premium;199,00 zł;33;1.9;2;NIE
+K1194;25;Wrocław;Basic;89,00 zł;7;7.4;1;nie
+K0637;39;WARSZAWA;Standard ;139,00 zł;27;5.5;1;nie
+K0617;16;WARSZAWA;Standard;139,00 zł;45;3.0;4;nie
+K1387;27;Poznań;BASIC;89,00 zł;60;11.2;0;tak
+K1188;31;Wrocław ;Standard;129,00 zł;26;5.4;0;NIE
+K0567;32;Wrocław;Premium;179,00 zł;38;7.7;0;nie
+K0235;44;GDAŃSK;Standard;139,00 zł;57;8.8;2;Tak
+K0627;35;WROCŁAW;BASIC;99,00 zł;3;6.8;0;nie
+K0431;32;Gdańsk;Standard;139,00 zł;29;5.2;0;Nie
+K1011;47;Warszawa;Standard;139,00 zł;18;3.7;1;tak
+K1380;36;Kraków;Basic;99,00 zł;24;7.6;0;nie
+K0192;26;Kraków ;Standard;139,00 zł;11;5.6;1;nie
+K1203;25;warszawa;Premium;199,00 zł;32;16.0;0;nie
+K1176;22;Poznań;basic;79,00 zł;18;4.0;2;tak
+K0436;;WROCŁAW;Basic;99,00 zł;6;6.4;0;TAK
+K0837;54;Warszawa ;Premium ;199,00 zł;4;4.3;1;tak
+K1427;40; Warszawa;Standard;119,00 zł;55;11.9;1;nie
+K1187;50;Gdańsk;Premium;179,00 zł;45;3.7;1;nie
+K1017;22;Kraków;Standard ;139,00 zł;21;4.4;1;tak
+K0185;40;Wrocław;Basic ;99,00 zł;18;3.3;0;Nie
+K0688;45;Gdańsk;Basic;79,00 zł;43;4.4;1;nie
+K0639;42;warszawa;basic;99,00 zł;1;2.5;1;tak
+K0570;36;GDAŃSK;Premium;199,00 zł;58;7.5;1;nie
+K0934;37;Kraków;Premium;199,00 zł;16;9.3;0;nie
+K1170;27;poznań;Standard;139,00 zł;53;4.5;1;Nie
+K0534;45;Warszawa ;Premium;189,00 zł;51;2.2;0;TAK
+K0038;33;Gdańsk;Basic;99,00 zł;19;3.8;2;tak
+K1249;20;Poznań;Basic;99,00 zł;18;5.8;0;nie
+K0743;;warszawa;STANDARD;139,00 zł;5;4.6;0;nie
+K0197;29;Poznań ; Premium;179,00 zł;35;4.3;0;Nie
+K1337;35;warszawa;Standard;139,00 zł;7;9.0;0;nie
+K0496;41;Gdańsk;STANDARD;129,00 zł;27;7.7;1;nie
+K0592;49;Gdańsk;standard;139,00 zł;18;2.4;0;Nie
+K0937;47;warszawa;Standard;119,00 zł;41;9.5;1;nie
+K1042;16;Poznań;Standard;129,00 zł;6;10.8;0;nie
+K0980;36;GDAŃSK;Standard;139,00 zł;55;11.7;0;NIE
+K0381;36;Wrocław;basic;99,00 zł;60;8.2;1;nie
+K0028;16;Kraków;Standard;139,00 zł;40;0.7;1;tak
+K0396;34; Warszawa;STANDARD;129,00 zł;33;1.2;0;tak
+K0321;25;warszawa;premium;199,00 zł;33;7.7;0;Nie
+K0148;27;Warszawa;Basic;99,00 zł;28;5.4;0;nie
+K0798;35;Gdańsk;Standard;129,00 zł;57;8.3;0;nie
+K0624;34; Warszawa;Basic;89,00 zł;46;11.2;1;nie
+K0239;27;Poznań;Basic;99,00 zł;8;9.2;0;NIE
+K1010;26;gdańsk;Basic;99,00 zł;50;2.5;0;nie
+K0911;40;Kraków; Basic;99,00 zł;7;8.0;0;nie
+K0896;31;Warszawa;standard;139,00 zł;1;6.2;0;Nie
+K0686;27;Kraków; Standard;139,00 zł;30;1.0;1;TAK
+K0107;20; Warszawa;standard;139,00 zł;2;3.4;1;tak
+K0351;16;Warszawa;Basic;89,00 zł;18;3.7;2;tak
+K0651;39;Gdańsk;Premium;199,00 zł;18;2.9;2;tak
+K0390;35;Gdańsk;Basic;89,00 zł;18;7.6;1;nie
+K1005;69;Gdańsk;Standard ;139,00 zł;24;8.5;0;nie
+K1118;26; Warszawa;Basic;99,00 zł;32;3.0;0;nie
+K0555;24; Wrocław;Standard;139,00 zł;34;14.0;1;Tak
+K1457;28; Warszawa;Basic;99,00 zł;28;11.5;1;nie
+K0171;;Warszawa;Basic;99,00 zł;8;5.7;1;NIE
+K1268;31;Poznań;Basic ;99,00 zł;56;5.2;0;nie
+K0307;41;Gdańsk;Standard;139,00 zł;28;1.9;1;nie
+K0416;38;POZNAŃ;basic;89,00 zł;31;1.9;0;nie
+K1265;3;Kraków;Basic;99,00 zł;55;9.7;1;Nie
+K1311;35;Warszawa;Premium;199,00 zł;3;5.9;1;tak
+K0429;16;Wrocław;PREMIUM;199,00 zł;60;14.0;0;nie
+K0187;41;Warszawa; Standard;129,00 zł;38;8.2;0;nie
+K1006;33;warszawa;BASIC;99,00 zł;43;11.1;0;nie
+K0909;36;Warszawa; Basic;79,00 zł;16;5.9;4;tak
+K0270;44;Kraków ;Standard;119,00 zł;20;7.7;1;nie
+K0868;23; Wrocław; Basic;99,00 zł;60;9.1;1;nie
+K0631;28;POZNAŃ;Basic;79,00 zł;59;2.7;0;Tak
+K0951;34;Poznań;Standard;129,00 zł;45;3.8;0;nie
+K0163;16;Poznań;Basic;99,00 zł;46;5.7;1;nie
+K0414;38;Warszawa;Standard;129,00 zł;28;9.3;0;tak
+K1359;24;warszawa;Standard;139,00 zł;31;9.6;1;NIE
+K0096;22;Wrocław;Standard;139,00 zł;37;9.1;1;
+K0099;42;Wrocław;basic;99,00 zł;8;2.3;0;nie
+K1031;17;KRAKÓW;Basic;99,00 zł;22;12.5;0;nie
+K0877;31;Gdańsk ;Basic;99,00 zł;13;6.7;2;nie
+K0818;50;Warszawa; Premium;199,00 zł;25;7.2;0;nie
+K0823;33;Kraków; Basic;99,00 zł;39;4.1;1;nie
+K0208;46;Warszawa;Basic;99,00 zł;7;10.2;0;tak
+K0975;46;KRAKÓW;Standard;119,00 zł;1;3.8;1;nie
+K0687;16;Warszawa;Premium ;199,00 zł;54;8.1;0;nie
+K0873;27;Kraków;STANDARD;139,00 zł;3;0.8;0;tak
+K0246;18;Warszawa;Basic;89,00 zł;42;3.4;1;tak
+K0230;26;Warszawa;Premium;199,00 zł;20;13.4;0;nie
+K0907;28;Warszawa ;basic;99,00 zł;51;2.7;2;Tak
+K0009;16; Poznań;standard;139,00 zł;4;12.6;1;nie
+K0897;49;Kraków ;Premium;199,00 zł;59;4.7;1;nie
+K1436;36;Warszawa;Basic;79,00 zł;46;4.8;1;Nie
+K1420;31;Warszawa ;Basic;99,00 zł;45;8.8;1;nie
+K1465;32;Gdańsk;Standard;129,00 zł;3;3.4;0;nie
+K0866;27;Warszawa; Basic;79,00 zł;4;4.1;1;tak
+K1317;44;WARSZAWA;basic;89,00 zł;33;6.5;1;nie
+K0792;30;KRAKÓW;standard;139,00 zł;17;3.9;1;tak
+K1023;52;WROCŁAW;Basic;99,00 zł;28;6.4;1;nie
+K0190;41;warszawa; Basic;99,00 zł;2;12.0;0;Nie
+K0261;37; Warszawa; Premium;199,00 zł;4;17.1;1;tak
+K0145;18;Warszawa; Premium;199,00 zł;56;1.8;0;
+K0829;36;Wrocław;Premium;199,00 zł;35;2.1;2;tak
+K0699;21;Wrocław;Standard ;129,00 zł;26;5.5;0;nie
+K0920;36; Kraków;standard;139,00 zł;6;6.5;1;nie
+K1428;40;GDAŃSK;Premium ;199,00 zł;17;5.2;0;nie
+K0938;19; Poznań;Standard;139,00 zł;10;19.4;0;nie
+K1036;23;Kraków;Premium;199,00 zł;22;3.8;1;tak
+K1395;34;Gdańsk;Premium;199,00 zł;38;0.6;1;
+K0891;43;Kraków;Standard;129,00 zł;6;14.0;0;tak
+K0595;26;warszawa;Basic;99,00 zł;28;11.1;0;nie
+K0532;43;Warszawa; Premium;199,00 zł;9;7.7;1;tak
+K0895;26;Kraków;standard;129,00 zł;36;19.5;2;Tak
+K0092;40;Warszawa;Basic;99,00 zł;19;9.6;1;Tak
+K1152;35;Gdańsk; Standard;139,00 zł;36;5.5;1;nie
+K0058;46;Gdańsk;Basic;99,00 zł;54;3.0;0;NIE
+K1058;21;gdańsk;Standard ;119,00 zł;9;4.4;1;
+K1262;28;Poznań;Standard;129,00 zł;10;8.8;1;NIE
+K0283;25;warszawa;Basic;99,00 zł;43;8.0;1;nie
+K0935;49;Warszawa;Basic;89,00 zł;46;6.7;3;nie
+K0363;26;Kraków;Standard;139,00 zł;23;2.5;3;tak
+K0244;26;Kraków; Standard;129,00 zł;42;3.8;0;nie
+K0093;37;Warszawa;Premium ;199,00 zł;30;4.3;0;
+K1235;37;Warszawa ;basic;89,00 zł;6;6.1;1;nie
+K0338;24;Kraków;Standard;139,00 zł;24;6.7;2;nie
+K1014;44;Wrocław;Premium;199,00 zł;41;8.7;0;TAK
+K0948;44;warszawa;Basic ;99,00 zł;26;13.8;2;tak
+K1110;48;WARSZAWA;Basic ;99,00 zł;60;4.4;1;NIE
+K0191;36;Wrocław;Basic;99,00 zł;57;10.3;0;nie
+K0040;37;Warszawa;Basic;99,00 zł;60;5.8;0;NIE
+K0976;36;Kraków ;Basic;89,00 zł;47;4.5;0;nie
+K0635;40;GDAŃSK;Premium;189,00 zł;34;10.8;3;nie
+K0765;43;Warszawa; Premium;199,00 zł;26;15.4;0;nie
+K0724;18;Kraków;Premium;199,00 zł;41;5.0;0;NIE
+K1129;44;Warszawa;Standard;139,00 zł;3;5.0;1;tak
+K0064;36;Wrocław ;Basic;89,00 zł;49;5.0;0;tak
+K0234;31;gdańsk;Standard;129,00 zł;43;6.7;1;nie
+K0677;36;Kraków ;Basic ;89,00 zł;16;4.5;2;nie
+K0106;53;Warszawa;BASIC;89,00 zł;32;14.4;3;nie
+K0754;40;Kraków;Basic;99,00 zł;49;8.6;0;nie
+K0903;19;Warszawa;Basic;99,00 zł;51;5.4;2;nie
+K0254;41;Kraków;Premium;179,00 zł;43;12.9;2;nie
+K0423;35;KRAKÓW;Standard;139,00 zł;35;1.9;0;nie
+K0775;22;Wrocław;BASIC;79,00 zł;12;2.5;0;nie
+K1233;;Poznań;Basic;89,00 zł;28;7.2;1;nie
+K0859;21; Poznań;basic;89,00 zł;46;2.8;3;nie
+K0925;34; Gdańsk; Standard;139,00 zł;54;9.5;1;nie
+K0080;21;Wrocław;Basic;99,00 zł;1;5.2;3;tak
+K0990;16;warszawa;standard;139,00 zł;13;6.4;1;Nie
+K1107;38;Warszawa;Basic;99,00 zł;49;1.6;2;nie
+K0498;19;Warszawa;Basic;99,00 zł;36;10.9;1;nie
+K1480;26; Warszawa; Basic;89,00 zł;46;10.6;1;nie
+K0088;24;Poznań;Standard;139,00 zł;54;6.0;1;nie
+K0065;47; Warszawa;premium;199,00 zł;5;4.0;0;tak
+K1295;23;Wrocław;Standard;139,00 zł;46;3.1;0;nie
+K0606;27;Wrocław;Standard;139,00 zł;11;3.0;0;tak
+K0275;21;Wrocław;Basic;99,00 zł;52;11.4;1;nie
+K0762;48;Warszawa; Premium;199,00 zł;53;10.6;2;nie
+K1378;16; Kraków;Standard;119,00 zł;60;5.7;0;nie
+K1462;36;Warszawa;BASIC;99,00 zł;28;8.6;2;nie
+K0154;19;Warszawa;Basic;79,00 zł;39;4.6;0;tak
+K0614;43;Kraków;Standard;139,00 zł;36;4.8;2;nie
+K0411;32;Warszawa;Basic;99,00 zł;15;5.3;2;tak
+K0831;39;Poznań;Premium;189,00 zł;42;5.7;1;nie
+K0913;24;Kraków;Standard;139,00 zł;47;8.6;0;nie
+K0518;35;Warszawa; Standard;129,00 zł;29;3.9;1;nie
+K0045;17;WARSZAWA;basic;99,00 zł;14;4.2;0;nie
+K0391;35;Warszawa;Standard;139,00 zł;16;3.1;0;nie
+K0221;;KRAKÓW;Basic;89,00 zł;13;10.4;2;nie
+K0141;41;Gdańsk; Standard;139,00 zł;6;25.0;0;nie
+K0358;44;Warszawa;standard;129,00 zł;1;6.9;0;nie
+K0723;28;Wrocław ;PREMIUM;179,00 zł;29;2.6;0;tak
+K1158;31;Kraków;Standard;139,00 zł;44;3.6;2;nie
+K0262;28;Warszawa;STANDARD;119,00 zł;53;7.0;0;nie
+K1303;39;warszawa;Premium;199,00 zł;40;15.0;0;nie
+K0899;34;warszawa;Standard;119,00 zł;53;2.9;1;nie
+K1104;39;Kraków;premium;189,00 zł;6;6.0;2;TAK
+K0196;35;Warszawa; Standard;139,00 zł;46;2.4;0;nie
+K0116;29;Warszawa;Basic;99,00 zł;41;9.3;0;nie
+K1076;30;Wrocław;BASIC;99,00 zł;49;3.4;2;nie
+K1074;48; Warszawa;premium;199,00 zł;17;11.6;0;nie
+K0719;34;Poznań;Standard;139,00 zł;9;2.7;0;tak
+K1490;22; Wrocław;Standard;139,00 zł;55;6.6;0;nie
+K1209;35;Warszawa ;Basic;99,00 zł;32;2.2;0;nie
+K1039;40;Kraków;standard;139,00 zł;36;8.1;1;Nie
+K0359;38;Gdańsk;Basic ;99,00 zł;38;12.7;1;Nie
+K1061;28;Kraków;Premium ;189,00 zł;18;10.2;0;tak
+K1020;32;Kraków;Premium;199,00 zł;35;3.8;1;tak
+K1364;33;warszawa;Premium;189,00 zł;59;5.8;3;nie
+K1001;43;Warszawa;Premium;199,00 zł;10;11.2;0;nie
+K0936;42; Gdańsk; Standard;139,00 zł;46;3.8;0;nie
+K0755;24;Poznań;basic;99,00 zł;21;1.5;0;nie
+K0421;35;warszawa;Basic ;89,00 zł;41;6.5;1;nie
+K0150;24;Poznań; Basic;79,00 zł;25;6.9;0;nie
+K0010;20;Kraków;Basic;99,00 zł;33;12.0;0;nie
+K1070;50;Warszawa;Standard;119,00 zł;56;2.3;0;Nie
+K1120;23;Gdańsk; Standard;129,00 zł;32;3.7;1;nie
+K1469;20;Warszawa;Premium;189,00 zł;36;3.6;0;nie
+K0535;27;Warszawa;Standard ;139,00 zł;58;5.0;1;nie
+K0549;28;Kraków;Standard;129,00 zł;17;3.3;0;nie
+K0299;31;WARSZAWA;Standard ;139,00 zł;6;20.5;1;nie
+K0977;40;Gdańsk;Premium;199,00 zł;37;12.8;0;nie
+K1315;37;GDAŃSK;Standard;139,00 zł;47;12.9;0;nie
+K1338;45;Kraków ;standard;139,00 zł;17;7.3;2;nie
+K0123;55;Wrocław;Basic;99,00 zł;5;2.7;2;NIE
+K1417;37;Poznań;standard;129,00 zł;39;10.2;0;nie
+K1373;39;Warszawa;Basic;99,00 zł;52;5.5;0;nie
+K1361;;Warszawa;Standard;139,00 zł;17;12.6;1;nie
+K1160;33; Kraków;Standard;139,00 zł;6;10.1;0;
+K1424;38;Wrocław;Premium ;199,00 zł;57;3.5;1;nie
+K0710;32;Poznań;Basic;89,00 zł;34;3.0;0;nie
+K1404;35; Gdańsk;basic;99,00 zł;28;6.7;1;nie
+K0770;18;Warszawa ;Standard;129,00 zł;19;8.3;0;nie
+K1392;27;Warszawa;Standard;139,00 zł;15;4.1;1;tak
+K0089;33;Kraków;Standard ;139,00 zł;57;5.6;0;
+K1471;42;Kraków;Standard;119,00 zł;16;4.3;1;Nie
+K1033;29;Poznań ;Basic;99,00 zł;51;9.0;0;nie
+K0098;23; Gdańsk;Premium;199,00 zł;47;3.5;3;tak
+K1127;53;Wrocław ;Standard ;139,00 zł;23;8.9;2;Nie
+K0349;20;Warszawa;BASIC;89,00 zł;28;6.1;2;nie
+K0510;24; Warszawa;STANDARD;129,00 zł;56;1.1;0;nie
+K0212;36; Kraków;Standard;139,00 zł;18;6.1;1;nie
+K0704;21; Kraków;Standard;139,00 zł;10;0.4;0;tak
+K0747;22;Gdańsk; Premium;199,00 zł;22;10.0;1;nie
+K1046;29;Warszawa;standard;129,00 zł;55;7.3;1;nie
+K0940;41;Warszawa;Basic ;99,00 zł;44;6.9;1;nie
+K1286;35;Wrocław;Standard;139,00 zł;15;9.9;1;nie
+K0293;35;Warszawa;premium;199,00 zł;13;1.4;1;tak
+K1422;31;Gdańsk ;STANDARD;139,00 zł;9;7.4;0;Nie
+K0479;24;Warszawa ;basic;89,00 zł;30;9.5;4;nie
+K0492;41;Warszawa;Standard;139,00 zł;45;9.3;0;nie
+K0842;47;Poznań;Standard;139,00 zł;23;5.3;0;nie
+K1071;16;Wrocław;Basic;79,00 zł;21;7.5;2;nie
+K0365;30;KRAKÓW;Premium;179,00 zł;9;3.4;0;Tak
+K0297;40;wrocław;Basic;89,00 zł;41;4.5;3;tak
+K0050;47;poznań;Standard;139,00 zł;39;2.4;1;tak
+K0225;32;Warszawa;Basic;99,00 zł;45;8.1;1;nie
+K1244;18;Kraków;Standard;139,00 zł;37;6.4;1;tak
+K1496;29;gdańsk;STANDARD;119,00 zł;54;7.9;0;Nie
+K0851;40;Kraków;Standard;139,00 zł;24;6.6;1;tak
+K0648;38;Wrocław;Basic;79,00 zł;54;12.7;2;nie
+K1226;35;Kraków;standard;129,00 zł;15;3.9;0;nie
+K0563;26;Gdańsk;Basic;89,00 zł;22;7.9;0;Nie
+K0623;21;Gdańsk;Premium ;189,00 zł;14;3.7;2;tak
+K1142;18;WARSZAWA; Premium;199,00 zł;43;1.0;1;TAK
+K1088;33;Poznań;Basic;79,00 zł;53;5.2;0;nie
+K0805;44;Kraków;Basic;99,00 zł;8;6.0;1;nie
+K0605;41;gdańsk;Premium;199,00 zł;21;5.3;0;nie
+K1270;29;Warszawa;Basic;99,00 zł;38;8.3;1;nie
+K0443;;Warszawa;Premium ;199,00 zł;60;8.9;0;tak
+K1449;44;Warszawa;Premium;199,00 zł;57;2.1;0;nie
+K1025;17;Poznań; Basic;79,00 zł;11;9.8;1;nie
+K0540;37; Warszawa;Standard;139,00 zł;51;3.5;1;nie
+K0768;22;Warszawa;Premium;199,00 zł;33;15.9;1;nie
+K0763;40;Kraków;Standard ;129,00 zł;23;18.0;0;nie
+K0869;59;kraków;Basic ;99,00 zł;57;6.6;0;NIE
+K0690;26;Poznań;Premium;189,00 zł;21;9.8;1;nie
+K0188;37;Warszawa ; Basic;89,00 zł;28;8.1;1;nie
+K0407;36;Kraków;Basic;99,00 zł;52;0.6;2;tak
+K1012;33;kraków; Basic;79,00 zł;24;8.7;0;nie
+K1173;31; Gdańsk; Premium;199,00 zł;4;8.4;0;nie
+K0752;35;kraków;basic;99,00 zł;31;5.2;0;NIE
+K1051;25;Wrocław;Basic;99,00 zł;3;6.1;0;nie
+K0462;58;Warszawa;Standard;129,00 zł;47;3.1;0;nie
+K0671;20;Kraków;PREMIUM;199,00 zł;7;6.2;1;tak
+K0656;50;Poznań ;Basic;99,00 zł;60;2.8;1;Nie
+K0786;37;Warszawa ;Standard;129,00 zł;54;9.4;0;nie
+K1084;35;Warszawa;Basic;89,00 zł;25;11.9;3;nie
+K0715;20;Warszawa; Basic;99,00 zł;43;7.4;2;nie
+K1351;29;Wrocław; Basic;99,00 zł;3;8.7;0;nie
+K0425;23;Warszawa;Basic;89,00 zł;31;12.3;0;NIE
+K0044;30;Kraków;Standard;129,00 zł;3;7.6;0;nie
+K0662;36;POZNAŃ;Standard;139,00 zł;55;6.7;0;nie
+K0636;45;Warszawa;Premium;199,00 zł;2;3.9;1;tak
+K0529;41;Kraków ;Basic;89,00 zł;21;3.6;2;nie
+K0988;22;Gdańsk;Premium ;199,00 zł;6;17.4;0;tak
+K0219;28;Wrocław;Standard;139,00 zł;56;7.9;1;nie
+K0821;36;GDAŃSK; Basic;89,00 zł;59;7.8;1;nie
+K0054;43;Warszawa;Standard;129,00 zł;43;5.0;0;nie
+K1487;28;Poznań;Basic;99,00 zł;54;7.8;1;nie
+K0856;23;Kraków;Standard;119,00 zł;52;5.3;1;nie
+K0610;33;Warszawa;Standard;129,00 zł;3;1.0;1;tak
+K0486;26;Warszawa;Premium;199,00 zł;23;7.9;0;nie
+K1150;35;Poznań;Standard;129,00 zł;13;21.0;0;nie
+K1018;33;Kraków;Basic;79,00 zł;48;3.8;2;nie
+K1086;48;Warszawa;Standard;139,00 zł;21;8.5;1;nie
+K0082;38;Warszawa;Standard;139,00 zł;49;3.8;0;tak
+K0325;;Poznań;Standard;139,00 zł;17;2.9;1;tak
+K1410;25;POZNAŃ;Basic;99,00 zł;56;12.5;1;Nie
+K1081;40;KRAKÓW;Premium;189,00 zł;20;10.1;0;nie
+K0020;39;Poznań;Basic;99,00 zł;38;6.9;1;nie
+K0455;27;KRAKÓW;Basic;99,00 zł;45;1.3;2;tak
+K1111;41; Gdańsk;Premium;199,00 zł;58;5.2;3;nie
+K0839;45;Kraków;Standard;139,00 zł;8;8.6;1;nie
+K0759;16;Gdańsk;Premium;199,00 zł;57;7.6;0;nie
+K1341;25;Warszawa;Basic;89,00 zł;22;6.5;0;tak
+K0035;42;Wrocław;Basic ;99,00 zł;42;8.0;3;NIE
+K0809;42;WROCŁAW;Premium ;199,00 zł;20;3.7;2;nie
+K1163;17;wrocław;Basic;99,00 zł;38;8.0;0;nie
+K0905;39;Warszawa;Basic;89,00 zł;40;2.8;2;tak
+K0801;28;Wrocław ;Standard;139,00 zł;14;8.2;0;
+K0097;21;kraków;Standard;129,00 zł;30;12.6;2;nie
+K1108;27;Warszawa;Basic;99,00 zł;6;0.8;0;tak
+K0447;51;Kraków;standard;139,00 zł;13;1.6;1;Tak
+K0475;16;Gdańsk;Basic;79,00 zł;13;8.4;2;NIE
+K0367;39;poznań;Premium ;189,00 zł;11;16.6;3;NIE
+K1492;39;Poznań ;Standard;139,00 zł;6;13.1;0;NIE
+K0761;38;Kraków;Premium;199,00 zł;27;4.7;1;tak
+K0919;47;Warszawa;Standard;139,00 zł;29;11.7;1;nie
+K1426;42;Warszawa;Premium;189,00 zł;26;5.0;3;tak
+K0760;28;Warszawa ;Standard;139,00 zł;14;5.2;0;nie
+K0393;36;Gdańsk;Standard;129,00 zł;7;8.6;0;nie
+K1296;17;GDAŃSK;Standard;139,00 zł;21;12.5;2;nie
+K0507;47;Kraków;Basic;99,00 zł;13;2.9;0;nie
+K0435;39;Warszawa;basic;99,00 zł;58;7.8;2;nie
+K0649;;Warszawa;Standard;129,00 zł;24;3.8;2;tak
+K0943;41;Kraków;STANDARD;129,00 zł;60;6.9;1;nie
+K1232;17;Kraków;Premium;199,00 zł;44;14.5;2;nie
+K1344;41;gdańsk;Basic;99,00 zł;53;6.4;1;nie
+K1400;41;gdańsk;Premium;199,00 zł;38;7.2;3;NIE
+K0133;41;Gdańsk ;Standard;139,00 zł;15;5.0;2;tak
+K1075;17;gdańsk;Basic;99,00 zł;33;2.2;2;Tak
+K0973;47;Gdańsk;Premium;199,00 zł;47;5.1;0;nie
+K1263;38;Warszawa;Basic;99,00 zł;49;4.7;0;tak
+K0451;34;poznań; Premium;199,00 zł;43;12.0;1;nie
+K0032;60;GDAŃSK;Premium;189,00 zł;7;9.5;0;nie
+K0122;40;gdańsk;Premium;179,00 zł;36;6.5;1;Nie
+K1236;21;WROCŁAW;Basic;99,00 zł;30;2.9;2;tak
+K1376;20;Gdańsk;Premium ;199,00 zł;35;5.2;0;nie
+K1479;17;Wrocław;Premium;189,00 zł;16;7.8;0;nie
+K1327;41;Warszawa;Basic ;99,00 zł;3;4.4;1;nie
+K1113;21;Kraków;STANDARD;119,00 zł;7;2.9;1;tak
+K1350;34;Poznań;BASIC;99,00 zł;38;9.5;0;tak
+K1348;34;Warszawa;BASIC;79,00 zł;43;6.8;0;nie
+K0256;16;Warszawa;Standard ;139,00 zł;49;6.3;1;nie
+K0893;27;kraków;Basic;79,00 zł;45;2.4;1;nie
+K0360;48;Warszawa;Standard ;139,00 zł;42;7.4;0;tak
+K0052;28;Poznań;Basic;99,00 zł;53;7.6;0;nie
+K0876;32;Warszawa;Standard;139,00 zł;30;6.5;0;nie
+K0939;16;Poznań;Basic;99,00 zł;57;6.0;0;nie
+K0773;23;Warszawa;Standard;139,00 zł;10;2.2;0;TAK
+K1127;53;Wrocław ;Standard ;139,00 zł;23;8.9;2;Nie
+K1220;38;Wrocław;Basic;99,00 zł;56;5.9;0;nie
+K0680;25; Warszawa;Basic;99,00 zł;45;3.0;3;tak
+K0806;33;Warszawa;basic;99,00 zł;17;7.8;0;tak
+K0125;22;Warszawa ;Basic;79,00 zł;46;9.8;3;nie
+K0405;40;Gdańsk;Basic;99,00 zł;8;7.0;0;nie
+K0731;27;Poznań ;STANDARD;139,00 zł;40;6.9;2;nie
+K1312;33;Wrocław;Premium;189,00 zł;23;8.5;1;nie
+K0832;44;Kraków ; Standard;139,00 zł;5;4.9;0;NIE
+K1072;31;Warszawa; Premium;199,00 zł;20;7.7;1;nie
+K0726;27;warszawa;PREMIUM;179,00 zł;33;7.4;1;nie
+K0588;35;Poznań;Premium;189,00 zł;33;5.7;0;nie
+K0608;28; Kraków;Basic;99,00 zł;57;10.0;4;nie
+K0434;45;Wrocław;Premium;199,00 zł;41;2.7;1;Nie
+K0675;29;Wrocław;basic;99,00 zł;23;12.8;1;nie
+K1288;36;Kraków;Basic;99,00 zł;33;3.1;2;NIE
+K0361;27; Wrocław;Standard;139,00 zł;57;10.6;0;nie
+K1100;37;Warszawa; Basic;99,00 zł;18;5.7;3;tak
+K0467;39;poznań;basic;99,00 zł;3;7.4;1;nie
+K0300;34;Kraków;Standard;129,00 zł;24;3.2;2;nie
+K0494;37;poznań;Standard;139,00 zł;41;6.2;0;Nie
+K0528;31;Poznań;Premium;189,00 zł;11;10.2;0;nie
+K1193;48;Gdańsk ; Standard;139,00 zł;26;2.7;1;tak
