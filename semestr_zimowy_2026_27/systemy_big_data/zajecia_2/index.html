@@ -1,0 +1,3979 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/systemy_big_data/zajecia_2/">
+      
+      
+        <link rel="prev" href="../zajecia_1/">
+      
+      
+        <link rel="next" href="../../uczenie_glebokie/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Zajęcia 2 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-2" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-tabs__dropdown-link">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obliczenia-rozproszone-od-mapreduce-do-sparka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obliczenia rozproszone: od MapReduce do Sparka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#po-co-dzielic-prace-miedzy-maszyny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Po co dzielić pracę między maszyny
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-mapreduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model MapReduce
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model MapReduce">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#word-count-hello-world-przetwarzania-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Word count — „Hello world” przetwarzania danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hadoop-i-jego-ograniczenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hadoop i jego ograniczenia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache Spark
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Apache Spark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architektura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architektura
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#job-stage-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Job, stage, task
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformacje-akcje-i-leniwe-wykonanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformacje, akcje i leniwe wykonanie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformacje-waskie-i-szerokie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformacje wąskie i szerokie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rdd-kontra-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RDD kontra DataFrame
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo-word-count-w-pysparku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo: word count w PySparku
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo: word count w PySparku">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uruchomienie-sparka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uruchomienie Sparka
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leniwe-wykonanie-na-zywo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leniwe wykonanie na żywo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word-count-krok-po-kroku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Word count krok po kroku
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prawdziwa-ksiazka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prawdziwa książka
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gdzie-jest-shuffle-todebugstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gdzie jest shuffle — toDebugString()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-samo-w-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To samo w DataFrame
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plan-wykonania-explain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan wykonania — explain()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spark-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spark UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-2-word-count-po-polsku-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2 — Word count po polsku (6 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 2 — Word count po polsku (6 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#twoja-ksiazka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Twoja książka
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-rdd-ok-20-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — RDD (ok. 20 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-dataframe-i-bigramy-ok-25-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — DataFrame i bigramy (ok. 25 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (6 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-2">Zajęcia 2<a class="headerlink" href="#zajecia-2" title="Permanent link">#</a></h1>
+<h2 id="obliczenia-rozproszone-od-mapreduce-do-sparka">Obliczenia rozproszone: od MapReduce do Sparka<a class="headerlink" href="#obliczenia-rozproszone-od-mapreduce-do-sparka" title="Permanent link">#</a></h2>
+<p>Tydzień temu doszliśmy do granicy jednego komputera. Dziś przechodzimy na drugą
+stronę: co zrobić, gdy dane trzeba podzielić między wiele maszyn i jak połączyć
+wyniki ich pracy w jedną odpowiedź. Zaczniemy od pomysłu, który w 2004 roku
+opisał Google — <strong>MapReduce</strong> — i dojdziemy do <strong>Apache Spark</strong>, który jest dziś
+standardem przetwarzania dużych danych. Sparka będziemy używać przez resztę
+semestru, więc dziś poznajemy jego fundamenty.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>wyjaśnić, jak działa model MapReduce i co dzieje się w fazie shuffle,</li>
+<li>opisać architekturę Sparka: driver, executory, joby, stage'e i taski,</li>
+<li>odróżnić transformację od akcji i wyjaśnić, czym jest leniwe wykonanie,</li>
+<li>wskazać transformacje wąskie i szerokie oraz powiedzieć, dlaczego shuffle
+  jest drogi,</li>
+<li>napisać word count w API RDD i w API DataFrame,</li>
+<li>odczytać z planu wykonania, gdzie Spark przesyła dane między partycjami.</li>
+</ul>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Po co dzielić pracę między maszyny</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Model MapReduce</td>
+<td>8 min</td>
+</tr>
+<tr>
+<td>Architektura Sparka</td>
+<td>7 min</td>
+</tr>
+<tr>
+<td>Transformacje, akcje i leniwe wykonanie</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Transformacje wąskie i szerokie — shuffle</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>RDD kontra DataFrame</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Demo: word count w PySparku</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 2</strong></td>
+<td><strong>45 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="po-co-dzielic-prace-miedzy-maszyny">Po co dzielić pracę między maszyny<a class="headerlink" href="#po-co-dzielic-prace-miedzy-maszyny" title="Permanent link">#</a></h2>
+<p>Przypomnienie z zeszłego tygodnia: jeden dysk czyta terabajt w kilka minut albo
+kilka godzin. Sto dysków czyta ten sam terabajt sto razy szybciej, o ile każdy
+czyta <strong>swoją</strong> część. Brzmi prosto, ale od razu pojawiają się pytania:</p>
+<ul>
+<li><strong>Jak podzielić dane?</strong> Każda maszyna musi wiedzieć, którą część przetwarza.</li>
+<li><strong>Jak połączyć wyniki?</strong> Jeśli liczymy słowa, to słowo „pan” występuje na
+  każdej maszynie. Ktoś musi zsumować te częściowe wyniki.</li>
+<li><strong>Co, gdy maszyna padnie?</strong> Przy stu maszynach awaria jednej z nich to nie
+  wyjątek, tylko codzienność.</li>
+<li><strong>Gdzie wykonać obliczenia?</strong> Przesłanie terabajta przez sieć trwa godzinami.
+  Taniej jest wysłać kod do danych niż dane do kodu.</li>
+</ul>
+<p>Ostatni punkt to jedna z najważniejszych zasad przetwarzania rozproszonego:
+<strong>przenoś obliczenia, nie dane</strong> (<em>data locality</em>). Program ma kilka kilobajtów,
+dane — terabajty.</p>
+<hr />
+<h2 id="model-mapreduce">Model MapReduce<a class="headerlink" href="#model-mapreduce" title="Permanent link">#</a></h2>
+<p>MapReduce to sposób zapisania obliczenia tak, żeby dało się je automatycznie
+rozłożyć na wiele maszyn. Programista pisze tylko dwie funkcje:</p>
+<ul>
+<li><strong>map</strong> — przetwarza jeden rekord i zwraca pary <code>(klucz, wartość)</code>,</li>
+<li><strong>reduce</strong> — dostaje klucz i wszystkie wartości dla tego klucza, a zwraca wynik.</li>
+</ul>
+<p>Całą resztę, czyli podział danych, przesyłanie, sortowanie i obsługę awarii,
+robi framework.</p>
+<h3 id="word-count-hello-world-przetwarzania-danych">Word count — „Hello world” przetwarzania danych<a class="headerlink" href="#word-count-hello-world-przetwarzania-danych" title="Permanent link">#</a></h3>
+<p>Zadanie: policz, ile razy występuje każde słowo w tekście. Tekst jest podzielony
+na dwie maszyny:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>          Maszyna 1                         Maszyna 2
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>      "ala ma kota"                     "ala ma psa"
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>      "kot ma ale"
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            │                                 │
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            ▼  MAP                            ▼  MAP
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  (ala,1) (ma,1) (kota,1)             (ala,1) (ma,1) (psa,1)
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  (kot,1) (ma,1) (ale,1)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            │                                 │
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            └──────────────┬──────────────────┘
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                           ▼  SHUFFLE — pary z tym samym kluczem
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                              trafiają na tę samą maszynę
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            ┌──────────────┴──────────────────┐
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            ▼                                 ▼
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>     ala: [1, 1]                       kot:  [1]
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>     ma:  [1, 1, 1]                    kota: [1]
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>     ale: [1]                          psa:  [1]
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            │                                 │
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>            ▼  REDUCE (suma)                  ▼  REDUCE (suma)
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>     (ala,2) (ma,3) (ale,1)            (kot,1) (kota,1) (psa,1)
+</span></code></pre></div>
+<p>Najciekawsza jest środkowa faza, czyli <strong>shuffle</strong>. Żeby zsumować wszystkie
+wystąpienia słowa <code>ma</code>, wszystkie pary <code>(ma, 1)</code> muszą trafić <strong>na jedną
+maszynę</strong>. To oznacza przesłanie danych przez sieć: każda maszyna wysyła
+fragmenty swoich wyników do każdej innej. Shuffle jest najdroższą częścią prawie
+każdego obliczenia rozproszonego.</p>
+<div class="admonition tip">
+<p class="admonition-title">Combiner — redukcja przed wysłaniem</p>
+<p>Maszyna 1 ma u siebie dwie pary <code>(ma, 1)</code>. Zamiast wysyłać obie, może je
+najpierw zsumować lokalnie i wysłać jedną parę <code>(ma, 2)</code>. To jest
+<strong>combiner</strong> (lokalna, częściowa redukcja). Przy prawdziwych tekstach,
+gdzie słowo „się” występuje tysiące razy na każdej maszynie, zmniejsza to
+ilość przesyłanych danych o rzędy wielkości. Zobaczymy go za chwilę w planie
+Sparka pod nazwą <code>partial_count</code>.</p>
+</div>
+<h3 id="hadoop-i-jego-ograniczenia">Hadoop i jego ograniczenia<a class="headerlink" href="#hadoop-i-jego-ograniczenia" title="Permanent link">#</a></h3>
+<p>Google opisał MapReduce w 2004 roku, a w 2006 roku powstał jego otwarty
+odpowiednik — <strong>Apache Hadoop</strong>. Składał się z dwóch części:</p>
+<ul>
+<li><strong>HDFS</strong> (Hadoop Distributed File System) — system plików, który dzieli pliki
+  na bloki po 128 MB i trzyma każdy blok w trzech kopiach na różnych maszynach,</li>
+<li><strong>MapReduce</strong> — silnik obliczeń działający na tych blokach.</li>
+</ul>
+<p>Hadoop zmienił branżę, ale miał poważną wadę: <strong>każdy krok zapisywał wyniki na
+dysk</strong>. Algorytm złożony z dziesięciu kroków MapReduce dziesięć razy zapisywał
+i czytał wszystkie dane z dysku. Uczenie maszynowe, które przechodzi po tych
+samych danych setki razy, było przez to boleśnie wolne. Pisanie wszystkiego
+w postaci par map i reduce też nie należało do przyjemności.</p>
+<hr />
+<h2 id="apache-spark">Apache Spark<a class="headerlink" href="#apache-spark" title="Permanent link">#</a></h2>
+<p>Spark powstał w 2009 roku na Uniwersytecie Kalifornijskim w Berkeley jako
+odpowiedź na te problemy. Główne pomysły:</p>
+<ul>
+<li><strong>trzymaj dane pośrednie w pamięci</strong>, a nie na dysku — dla obliczeń
+  wieloetapowych to przyspieszenie nawet o dwa rzędy wielkości,</li>
+<li><strong>zamiast tylko map i reduce — bogaty zestaw operacji</strong>: filtrowanie, łączenie,
+  grupowanie, sortowanie, SQL,</li>
+<li><strong>całe obliczenie jako graf</strong>, który Spark sam optymalizuje, zanim cokolwiek
+  wykona.</li>
+</ul>
+<p>Z tego samego zespołu wyrosła firma <strong>Databricks</strong>, na której platformie
+będziemy pracować od następnych zajęć.</p>
+<h3 id="architektura">Architektura<a class="headerlink" href="#architektura" title="Permanent link">#</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>                     ┌──────────────────────────┐
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                     │          DRIVER          │
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>                     │  Twój program (notatnik) │
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>                     │  SparkSession            │
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>                     │  planuje i rozdziela     │
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>                     │  pracę                   │
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>                     └────────────┬─────────────┘
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>                                  │
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>                     ┌────────────┴─────────────┐
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>                     │      CLUSTER MANAGER     │
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>                     │ (YARN, Kubernetes, ...)  │
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>                     └────────────┬─────────────┘
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>              ┌───────────────────┼───────────────────┐
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>              ▼                   ▼                   ▼
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>     ┌────────────────┐  ┌────────────────┐  ┌────────────────┐
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>     │   EXECUTOR 1   │  │   EXECUTOR 2   │  │   EXECUTOR 3   │
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>     │  task  task    │  │  task  task    │  │  task  task    │
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>     │  [partycje]    │  │  [partycje]    │  │  [partycje]    │
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>     └────────────────┘  └────────────────┘  └────────────────┘
+</span></code></pre></div>
+<ul>
+<li><strong>Driver</strong> to proces, w którym działa Twój kod. Buduje plan obliczeń, dzieli go
+  na zadania i rozsyła je do executorów. Do drivera wracają też wyniki.</li>
+<li><strong>Executor</strong> to proces na maszynie roboczej, który wykonuje zadania na swoich
+  kawałkach danych i trzyma je w pamięci.</li>
+<li><strong>Cluster manager</strong> przydziela zasoby, czyli decyduje, ile executorów
+  i na których maszynach dostanie aplikacja.</li>
+<li><strong>Partycja</strong> to kawałek danych przetwarzany przez jeden task. Liczba partycji
+  decyduje o tym, ile pracy może iść równolegle.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Spark w Colabie</p>
+<p>W Colabie nie mamy klastra. Uruchamiamy Sparka w trybie <strong>lokalnym</strong>
+(<code>local[*]</code>): driver i executor to jeden proces na jednej maszynie, a taski
+wykonują się na wątkach, po jednym na rdzeń procesora. Kod jest <strong>dokładnie
+taki sam</strong> jak na klastrze ze stu maszyn — zmienia się tylko adres mastera.
+Dzięki temu naukę Sparka można zacząć na laptopie.</p>
+</div>
+<h3 id="job-stage-task">Job, stage, task<a class="headerlink" href="#job-stage-task" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Pojęcie</th>
+<th>Co to jest</th>
+<th>Kiedy powstaje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Job</strong></td>
+<td>całe obliczenie uruchomione jedną akcją</td>
+<td>przy każdym wywołaniu akcji, np. <code>count()</code></td>
+</tr>
+<tr>
+<td><strong>Stage</strong></td>
+<td>fragment joba, który da się wykonać bez przesyłania danych między partycjami</td>
+<td>Spark tnie job na stage'e w miejscach shuffle</td>
+</tr>
+<tr>
+<td><strong>Task</strong></td>
+<td>praca jednego stage'a na jednej partycji</td>
+<td>tyle tasków, ile partycji w stage'u</td>
+</tr>
+</tbody>
+</table>
+<p>Word count z rysunku wyżej to <strong>jeden job</strong> złożony z <strong>dwóch stage'ów</strong>: przed
+shufflem (map) i po nim (reduce). Jeśli tekst ma 8 partycji, pierwszy stage ma
+8 tasków.</p>
+<hr />
+<h2 id="transformacje-akcje-i-leniwe-wykonanie">Transformacje, akcje i leniwe wykonanie<a class="headerlink" href="#transformacje-akcje-i-leniwe-wykonanie" title="Permanent link">#</a></h2>
+<p>Operacje w Sparku dzielą się na dwa rodzaje:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Transformacje</th>
+<th>Akcje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Co robią</td>
+<td>opisują <strong>nowy</strong> zbiór danych na podstawie poprzedniego</td>
+<td>zwracają wynik do drivera albo zapisują go na dysk</td>
+</tr>
+<tr>
+<td>Czy coś liczą</td>
+<td><strong>nie</strong> — tylko dopisują krok do planu</td>
+<td><strong>tak</strong> — uruchamiają cały plan</td>
+</tr>
+<tr>
+<td>RDD</td>
+<td><code>map</code>, <code>flatMap</code>, <code>filter</code>, <code>reduceByKey</code>, <code>distinct</code></td>
+<td><code>count</code>, <code>collect</code>, <code>take</code>, <code>takeOrdered</code>, <code>saveAsTextFile</code></td>
+</tr>
+<tr>
+<td>DataFrame</td>
+<td><code>select</code>, <code>filter</code>, <code>groupBy</code>, <code>withColumn</code>, <code>orderBy</code></td>
+<td><code>count</code>, <code>show</code>, <code>collect</code>, <code>write</code></td>
+</tr>
+</tbody>
+</table>
+<p>To jest <strong>leniwe wykonanie</strong> (<em>lazy evaluation</em>): transformacje tylko budują
+plan, a dopiero akcja go uruchamia. Spark widzi wtedy całe obliczenie naraz
+i może je zoptymalizować: połączyć kroki, pominąć niepotrzebne kolumny,
+przestawić filtry.</p>
+<p>Zbudowany plan to <strong>DAG</strong> (<em>directed acyclic graph</em>, skierowany graf acykliczny):
+węzły to zbiory danych, krawędzie to transformacje. Ten sam DAG służy też do
+<strong>odporności na awarie</strong>. Jeśli executor padnie i zniknie jedna partycja, Spark
+wie, z czego i jak ją policzyć (<em>lineage</em>, czyli rodowód danych), więc liczy
+tylko ją od nowa, a nie całe zadanie.</p>
+<div class="admonition warning">
+<p class="admonition-title">Akcja na końcu każdej komórki</p>
+<p>Jeśli komórka zawiera same transformacje, wykonuje się natychmiast i nie
+zwraca żadnego wyniku — bo nic nie zostało policzone. Błąd w lambdzie też
+się wtedy nie pokaże. Wyskoczy dopiero przy pierwszej akcji, czasem kilka
+komórek niżej. Szukając błędu, patrz więc nie tylko na komórkę, w której
+wyskoczył.</p>
+</div>
+<hr />
+<h2 id="transformacje-waskie-i-szerokie">Transformacje wąskie i szerokie<a class="headerlink" href="#transformacje-waskie-i-szerokie" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Wąska</strong> (<em>narrow</em>) — każda partycja wyniku zależy od <strong>jednej</strong> partycji
+  wejścia. Można ją liczyć na miejscu, bez wymiany danych. Przykłady: <code>map</code>,
+  <code>flatMap</code>, <code>filter</code>.</li>
+<li><strong>Szeroka</strong> (<em>wide</em>) — partycja wyniku potrzebuje danych z <strong>wielu</strong> partycji
+  wejścia. Wymaga <strong>shuffle</strong>. Przykłady: <code>reduceByKey</code>, <code>groupBy</code>, <code>join</code>,
+  <code>orderBy</code>, <code>distinct</code>.</li>
+</ul>
+<p><img alt="Transformacje wąskie i szerokie" src="../obrazki/transformacje_waskie_szerokie.svg" /></p>
+<p>Po lewej <code>map</code> zamienia każde słowo w parę <code>(słowo, 1)</code> w obrębie tej samej
+partycji. Po prawej <code>reduceByKey</code> musi zebrać wszystkie wystąpienia słowa w jednym
+miejscu: każde „ala” (niebieskie) z trzech partycji wejścia trafia do partycji 1′,
+każde „ma” (pomarańczowe) do partycji 2′. Partycja 2 nie ma żadnego „kot”, więc
+nic nie wysyła do partycji 3′.</p>
+<p>Kilka wąskich transformacji pod rząd Spark łączy w jeden stage i wykonuje
+jednym przebiegiem po danych (<em>pipelining</em>). Każda szeroka transformacja to
+<strong>granica stage'a</strong>: dane trzeba zapisać, posortować według klucza, przesłać
+i odczytać po drugiej stronie.</p>
+<p>Shuffle jest drogi z trzech powodów: zapis na dysk, przesyłanie przez sieć
+i serializacja danych. Na Databricksie zobaczymy, że optymalizacja zapytań to
+w dużej mierze <strong>unikanie zbędnych shuffli</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title"><code>reduceByKey</code> zamiast <code>groupByKey</code></p>
+<p>Oba dają możliwość zsumowania wartości dla klucza, ale <code>groupByKey</code> przesyła
+przez sieć <strong>każdą pojedynczą parę</strong> <code>(słowo, 1)</code>, a <code>reduceByKey</code> najpierw
+sumuje lokalnie (combiner!) i wysyła tylko sumy częściowe. Przy dużych
+danych różnica jest dramatyczna.</p>
+</div>
+<hr />
+<h2 id="rdd-kontra-dataframe">RDD kontra DataFrame<a class="headerlink" href="#rdd-kontra-dataframe" title="Permanent link">#</a></h2>
+<p>Spark ma dwa główne API:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>RDD</th>
+<th>DataFrame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Czym jest</td>
+<td>rozproszona kolekcja dowolnych obiektów Pythona</td>
+<td>rozproszona tabela z kolumnami i schematem</td>
+</tr>
+<tr>
+<td>Jak piszesz</td>
+<td>funkcje Pythona (<code>lambda</code>)</td>
+<td>operacje na kolumnach albo SQL</td>
+</tr>
+<tr>
+<td>Optymalizacja</td>
+<td>brak — Spark wykonuje dokładnie to, co napisałeś</td>
+<td>optymalizator <strong>Catalyst</strong> przepisuje plan</td>
+</tr>
+<tr>
+<td>Wydajność w PySparku</td>
+<td>niska — każdy wiersz wędruje z JVM do Pythona i z powrotem</td>
+<td>wysoka — wszystko liczy się w JVM</td>
+</tr>
+<tr>
+<td>Kiedy używać</td>
+<td>dziś, żeby zrozumieć mechanikę; nietypowe przetwarzanie</td>
+<td>prawie zawsze</td>
+</tr>
+</tbody>
+</table>
+<p>Spark jest napisany w Scali i działa w maszynie wirtualnej Javy (JVM). Gdy
+w RDD piszesz <code>lambda w: (w, 1)</code>, Spark musi każdy rekord przesłać do procesu
+Pythona, wykonać tam lambdę i odesłać wynik. W DataFrame nie ma lambd: piszesz
+<strong>co</strong> chcesz osiągnąć, a Spark sam wykonuje to w JVM.</p>
+<div class="admonition info">
+<p class="admonition-title">Dlaczego w ogóle RDD?</p>
+<p>Na Databricks Free Edition (serverless) API RDD <strong>nie jest dostępne</strong> — tylko
+DataFrame i SQL. RDD poznajemy dziś lokalnie, bo najlepiej pokazuje, jak
+Spark działa pod spodem: map, shuffle, reduce, stage'e. DataFrame robi to
+samo, tylko ukrywa szczegóły.</p>
+</div>
+<hr />
+<h2 id="demo-word-count-w-pysparku">Demo: word count w PySparku<a class="headerlink" href="#demo-word-count-w-pysparku" title="Permanent link">#</a></h2>
+<p>Dane: <strong>Chłopi</strong> Władysława Reymonta (tom pierwszy, <em>Jesień</em>) z serwisu
+<a href="https://wolnelektury.pl">Wolne Lektury</a>, który udostępnia polskie lektury
+w domenie publicznej jako zwykłe pliki tekstowe.</p>
+<h3 id="uruchomienie-sparka">Uruchomienie Sparka<a class="headerlink" href="#uruchomienie-sparka" title="Permanent link">#</a></h3>
+<p>W Colabie Java jest już zainstalowana, a PySpark zwykle też. Pierwsza komórka
+doinstaluje go tylko wtedy, gdy go brakuje:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="s2">"pyspark&lt;4"</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Dlaczego <code>pyspark&lt;4</code></p>
+<p>Spark 4 wymaga Javy 17, a Colab ma zwykle starszą wersję. Spark 3.5 działa
+od ręki. Dla tego, czego się dziś uczymy, wersje się nie różnią.</p>
+</div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparkSession</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">spark</span> <span class="o">=</span> <span class="p">(</span><span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>         <span class="o">.</span><span class="n">master</span><span class="p">(</span><span class="s2">"local[*]"</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>         <span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">"zajecia2"</span><span class="p">)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>         <span class="o">.</span><span class="n">getOrCreate</span><span class="p">())</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">sc</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sparkContext</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">spark</span><span class="o">.</span><span class="n">version</span><span class="p">,</span> <span class="s2">"| rdzeni:"</span><span class="p">,</span> <span class="n">sc</span><span class="o">.</span><span class="n">defaultParallelism</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>spark</code> to <strong>SparkSession</strong>, wejście do API DataFrame. <code>sc</code> to <strong>SparkContext</strong>,
+wejście do API RDD. W Colabie zobaczysz 2 rdzenie.</p>
+<h3 id="leniwe-wykonanie-na-zywo">Leniwe wykonanie na żywo<a class="headerlink" href="#leniwe-wykonanie-na-zywo" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">liczby</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">parallelize</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10_000_001</span><span class="p">))</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">kwadraty</span> <span class="o">=</span> <span class="n">liczby</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">podzielne</span> <span class="o">=</span> <span class="n">kwadraty</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">podzielne</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>PythonRDD[1] at RDD at PythonRDD.scala:53
+</span></code></pre></div>
+<p>Komórka wykonała się w ułamku milisekundy, choć „przetworzyła” 10 milionów
+liczb. Nic się nie policzyło — mamy tylko opis. Wynik pojawi się dopiero po
+akcji:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">podzielne</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>3333333
+</span></code></pre></div>
+<h3 id="word-count-krok-po-kroku">Word count krok po kroku<a class="headerlink" href="#word-count-krok-po-kroku" title="Permanent link">#</a></h3>
+<p>Najpierw na trzech linijkach, żeby zobaczyć każdy krok:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">tekst</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">parallelize</span><span class="p">([</span><span class="s2">"ala ma kota"</span><span class="p">,</span> <span class="s2">"kot ma ale"</span><span class="p">,</span> <span class="s2">"ala ma psa"</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">slowa</span> <span class="o">=</span> <span class="n">tekst</span><span class="o">.</span><span class="n">flatMap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">linia</span><span class="p">:</span> <span class="n">linia</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">slowa</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>['ala', 'ma', 'kota', 'kot', 'ma', 'ale', 'ala', 'ma', 'psa']
+</span></code></pre></div>
+<p><code>flatMap</code> z każdej linii robi listę słów i „spłaszcza” je w jedną kolekcję.
+Zwykły <code>map</code> dałby listę list.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">pary</span> <span class="o">=</span> <span class="n">slowa</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span> <span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">pary</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>[('ala', 1), ('ma', 1), ('kota', 1), ('kot', 1), ('ma', 1), ('ale', 1), ('ala', 1), ('ma', 1), ('psa', 1)]
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">wynik</span> <span class="o">=</span> <span class="n">pary</span><span class="o">.</span><span class="n">reduceByKey</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">wynik</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>[('ma', 3), ('kota', 1), ('ale', 1), ('psa', 1), ('ala', 2), ('kot', 1)]
+</span></code></pre></div>
+<p>To jest dokładnie MapReduce z rysunku: <code>flatMap</code> i <code>map</code> to faza map,
+<code>reduceByKey</code> to shuffle i reduce. Kolejność wyników jest przypadkowa — zależy
+od tego, na którą partycję trafił klucz.</p>
+<h3 id="prawdziwa-ksiazka">Prawdziwa książka<a class="headerlink" href="#prawdziwa-ksiazka" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="s2">"https://wolnelektury.pl/media/book/txt/chlopi-czesc-pierwsza-jesien.txt"</span><span class="p">,</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="s2">"chlopi.txt"</span><span class="p">,</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="p">)</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="n">linie</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">textFile</span><span class="p">(</span><span class="s2">"chlopi.txt"</span><span class="p">)</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">linie</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span> <span class="s2">"linii,"</span><span class="p">,</span> <span class="n">linie</span><span class="o">.</span><span class="n">getNumPartitions</span><span class="p">(),</span> <span class="s2">"partycje"</span><span class="p">)</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="n">linie</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>6030 linii, 2 partycje
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>['Władysław Stanisław Reymont', '', 'Chłopi', 'Część pierwsza. Jesień']
+</span></code></pre></div>
+<p>Prawdziwy tekst ma wielkie litery, interpunkcję i mnóstwo słów typu „i”, „się”,
+„nie”, które zdominowałyby każdy ranking. Dlatego:</p>
+<ul>
+<li>zamieniamy wszystko na małe litery,</li>
+<li>dzielimy tekst wyrażeniem regularnym na ciągi liter (wszystko, co nie jest
+  literą, jest separatorem),</li>
+<li>odrzucamy puste napisy i <strong>stopwords</strong>, czyli słowa, które niczego nie
+  wnoszą.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">WZORZEC</span> <span class="o">=</span> <span class="s2">"[^a-ząćęłńóśźż]+"</span>     <span class="c1"># separator: wszystko, co nie jest polską literą</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">STOPWORDS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="s2">a aby ach ale albo ani aż bardzo bez bo by byli był była było były być będzie</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="s2">chce choć ci co coś czy czyli dla do dobrze gdy gdyż gdzie go i ich im iż ja jak</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="s2">jakby jako je jednak jego jej jeszcze jest jestem jeśli już ją każdy kiedy kto</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="s2">która które którego której których który ku lecz lub ma mam mi mnie może mu my</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="s2">na nad nam nas nawet nic nich niego nie niech niej nim nią no o od on ona one oni</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="s2">ono oraz po pod potem przecież przed przez przy raz sam se się siebie sobie swoje</span>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="s2">swój swego swą swoją ta tak także tam te tego tej ten teraz też to tu tych ty</span>
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="s2">tylko tym u w was we wiem więc wszystko wy z za zaś ze że żeby</span>
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="s2">"""</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>
+</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="n">licznik</span> <span class="o">=</span> <span class="p">(</span><span class="n">linie</span>
+</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>    <span class="o">.</span><span class="n">flatMap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">linia</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">WZORZEC</span><span class="p">,</span> <span class="n">linia</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span> <span class="n">w</span> <span class="o">!=</span> <span class="s2">""</span> <span class="ow">and</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">STOPWORDS</span><span class="p">)</span>
+</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>    <span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span> <span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>    <span class="o">.</span><span class="n">reduceByKey</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">))</span>
+</span><span id="__span-16-19"><a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a>
+</span><span id="__span-16-20"><a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="n">licznik</span><span class="o">.</span><span class="n">takeOrdered</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">para</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="n">para</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">para</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>[('ino', 375), ('kiej', 207), ('boryna', 117), ('juści', 106), ('abo', 98),
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a> ('kuba', 97), ('oczy', 94), ('niby', 84), ('zaraz', 84), ('antek', 79)]
+</span></code></pre></div>
+<p><code>takeOrdered(10, key=...)</code> zwraca 10 elementów o najmniejszym kluczu. Klucz
+<code>(-liczba, słowo)</code> oznacza: najpierw malejąco po liczbie, przy remisie
+alfabetycznie.</p>
+<p>Wynik dobrze pokazuje, że <strong>lista stopwords zależy od tekstu</strong>. Reymont pisze
+gwarą, więc na szczycie są „ino” (tylko), „kiej” (kiedy), „juści” (pewnie)
+i „abo” (albo). Żadna standardowa lista ich nie zawiera. Dla „Chłopów” trzeba by
+ją rozszerzyć, dla Sienkiewicza raczej nie.</p>
+<h3 id="gdzie-jest-shuffle-todebugstring">Gdzie jest shuffle — <code>toDebugString()</code><a class="headerlink" href="#gdzie-jest-shuffle-todebugstring" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">licznik</span><span class="o">.</span><span class="n">toDebugString</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>(2) PythonRDD[12] at RDD at PythonRDD.scala:53 []
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a> |  MapPartitionsRDD[9] at mapPartitions at PythonRDD.scala:160 []
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a> |  ShuffledRDD[8] at partitionBy at NativeMethodAccessorImpl.java:0 []
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a> +-(2) PairwiseRDD[7] at reduceByKey at &lt;ipython-input-…&gt;:4 []
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    |  PythonRDD[6] at reduceByKey at &lt;ipython-input-…&gt;:4 []
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    |  chlopi.txt MapPartitionsRDD[1] at textFile at NativeMethodAccessorImpl.java:0 []
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    |  chlopi.txt HadoopRDD[0] at textFile at NativeMethodAccessorImpl.java:0 []
+</span></code></pre></div>
+<p>To jest rodowód (<em>lineage</em>) RDD, czytany <strong>od dołu</strong>:</p>
+<ul>
+<li>na dole odczyt pliku (<code>HadoopRDD</code>, <code>textFile</code>),</li>
+<li>potem wszystkie wąskie transformacje (<code>flatMap</code>, <code>filter</code>, <code>map</code>), sklejone
+  przez Sparka w jeden krok <code>PythonRDD</code>,</li>
+<li><code>+-</code> i zmiana wcięcia oznacza <strong>granicę stage'a</strong>, a nad nią <code>ShuffledRDD</code> —
+  tu dane przechodzą przez shuffle,</li>
+<li><code>(2)</code> to liczba partycji na danym poziomie.</li>
+</ul>
+<p>Jedno wcięcie, czyli jedna granica, oznacza dwa stage'e.</p>
+<h3 id="to-samo-w-dataframe">To samo w DataFrame<a class="headerlink" href="#to-samo-w-dataframe" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">"chlopi.txt"</span><span class="p">)</span>      <span class="c1"># jedna kolumna: value</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>+---------------------------+
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>|                      value|
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>+---------------------------+
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>|Władysław Stanisław Reymont|
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>|                           |
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>|                     Chłopi|
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>|     Część pierwsza. Jesień|
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>+---------------------------+
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">slowa</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>    <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">explode</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="s2">"value"</span><span class="p">),</span> <span class="n">WZORZEC</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"slowo"</span><span class="p">))</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>    <span class="o">.</span><span class="n">filter</span><span class="p">((</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"slowo"</span><span class="p">)</span> <span class="o">!=</span> <span class="s2">""</span><span class="p">)</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"slowo"</span><span class="p">)</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">STOPWORDS</span><span class="p">))))</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">ranking</span> <span class="o">=</span> <span class="p">(</span><span class="n">slowa</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    <span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="s2">"slowo"</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>    <span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">desc</span><span class="p">(</span><span class="s2">"count"</span><span class="p">),</span> <span class="s2">"slowo"</span><span class="p">))</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="n">ranking</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>+------+-----+
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>| slowo|count|
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>+------+-----+
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>|   ino|  375|
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>|  kiej|  207|
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>|boryna|  117|
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>| juści|  106|
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>|   abo|   98|
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>|  kuba|   97|
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>|  oczy|   94|
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>|  niby|   84|
+</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>| zaraz|   84|
+</span><span id="__span-23-13"><a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>| antek|   79|
+</span><span id="__span-23-14"><a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>+------+-----+
+</span></code></pre></div>
+<p>Wynik identyczny, ale nie ma ani jednej lambdy. <code>split</code> tnie tekst na tablicę
+słów, <code>explode</code> robi z tablicy osobne wiersze — to odpowiednik <code>flatMap</code>.</p>
+<h3 id="plan-wykonania-explain">Plan wykonania — <code>explain()</code><a class="headerlink" href="#plan-wykonania-explain" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">ranking</span><span class="o">.</span><span class="n">explain</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>== Physical Plan ==
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>AdaptiveSparkPlan isFinalPlan=false
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>+- Sort [count#8L DESC NULLS LAST, slowo#3 ASC NULLS FIRST], true, 0
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>   +- Exchange rangepartitioning(count#8L DESC NULLS LAST, slowo#3 ASC NULLS FIRST, 200), ...
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>      +- HashAggregate(keys=[slowo#3], functions=[count(1)])
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>         +- Exchange hashpartitioning(slowo#3, 200), ...
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>            +- HashAggregate(keys=[slowo#3], functions=[partial_count(1)])
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>               +- Filter (NOT (slowo#3 = ) AND NOT slowo#3 INSET a, aby, ach, ...)
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>                  +- Generate explode(split(lower(value#0), [^a-ząćęłńóśźż]+, -1)), ...
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>                     +- FileScan text [value#0] ...
+</span></code></pre></div>
+<p>Plan znowu czytamy <strong>od dołu</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Krok planu</th>
+<th>Co oznacza</th>
+<th>Odpowiednik w RDD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FileScan text</code></td>
+<td>odczyt pliku</td>
+<td><code>textFile</code></td>
+</tr>
+<tr>
+<td><code>Generate explode(split(...))</code></td>
+<td>podział linii na słowa</td>
+<td><code>flatMap</code></td>
+</tr>
+<tr>
+<td><code>Filter</code></td>
+<td>odrzucenie pustych i stopwords</td>
+<td><code>filter</code></td>
+</tr>
+<tr>
+<td><code>HashAggregate(... partial_count)</code></td>
+<td><strong>lokalne</strong> liczenie na każdej partycji</td>
+<td>combiner w <code>reduceByKey</code></td>
+</tr>
+<tr>
+<td><code>Exchange hashpartitioning(slowo)</code></td>
+<td><strong>shuffle</strong> — słowa trafiają na partycję według skrótu (hash)</td>
+<td>shuffle w <code>reduceByKey</code></td>
+</tr>
+<tr>
+<td><code>HashAggregate(... count)</code></td>
+<td>zsumowanie częściowych wyników</td>
+<td>reduce</td>
+</tr>
+<tr>
+<td><code>Exchange rangepartitioning(count)</code></td>
+<td><strong>drugi shuffle</strong> — do globalnego sortowania</td>
+<td><code>takeOrdered</code> (inaczej)</td>
+</tr>
+<tr>
+<td><code>Sort</code></td>
+<td>sortowanie</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>Exchange</code> to w planie DataFrame'u słowo oznaczające shuffle.</strong> Szukając
+w planie drogich miejsc, szukasz właśnie jego. Widać też, że Spark sam dodał
+combiner (<code>partial_count</code>) — nie musieliśmy o to prosić.</p>
+<h3 id="spark-ui">Spark UI<a class="headerlink" href="#spark-ui" title="Permanent link">#</a></h3>
+<p>Spark ma panel webowy, w którym widać każdy job, jego stage'e, liczbę tasków
+i ilość danych przesłanych w shufflu. Lokalnie jest pod adresem
+<a href="http://localhost:4040">localhost:4040</a>. W Colabie można spróbować otworzyć go
+przez proxy:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">output</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="n">output</span><span class="o">.</span><span class="n">serve_kernel_port_as_window</span><span class="p">(</span><span class="mi">4040</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="s2">"/jobs/"</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Działa to kapryśnie (część linków w panelu może nie działać), dlatego w zadaniu
+korzystamy z <code>toDebugString()</code> i <code>explain()</code>, które pokazują to samo w tekście.
+Na Databricksie Spark UI jest wbudowany.</p>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>RDD</th>
+<th>DataFrame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wczytać plik tekstowy</td>
+<td><code>sc.textFile("plik.txt")</code></td>
+<td><code>spark.read.text("plik.txt")</code></td>
+</tr>
+<tr>
+<td>liczba elementów / wierszy</td>
+<td><code>rdd.count()</code></td>
+<td><code>df.count()</code></td>
+</tr>
+<tr>
+<td>kilka pierwszych</td>
+<td><code>rdd.take(5)</code></td>
+<td><code>df.show(5)</code></td>
+</tr>
+<tr>
+<td>liczba partycji</td>
+<td><code>rdd.getNumPartitions()</code></td>
+<td><code>df.rdd.getNumPartitions()</code></td>
+</tr>
+<tr>
+<td>przekształcić każdy element</td>
+<td><code>rdd.map(lambda x: ...)</code></td>
+<td><code>df.select(F.lower("value"))</code></td>
+</tr>
+<tr>
+<td>jeden element → wiele</td>
+<td><code>rdd.flatMap(lambda x: lista)</code></td>
+<td><code>F.explode(F.split(kol, wzorzec))</code></td>
+</tr>
+<tr>
+<td>przefiltrować</td>
+<td><code>rdd.filter(lambda x: warunek)</code></td>
+<td><code>df.filter(F.col("a") != "")</code></td>
+</tr>
+<tr>
+<td>„nie należy do listy”</td>
+<td><code>x not in ZBIOR</code></td>
+<td><code>~F.col("a").isin(lista)</code></td>
+</tr>
+<tr>
+<td>policzyć per klucz</td>
+<td><code>rdd.map(lambda w: (w, 1)).reduceByKey(lambda a, b: a + b)</code></td>
+<td><code>df.groupBy("a").count()</code></td>
+</tr>
+<tr>
+<td>top N</td>
+<td><code>rdd.takeOrdered(N, key=lambda p: (-p[1], p[0]))</code></td>
+<td><code>df.orderBy(F.desc("count"), "a").limit(N)</code></td>
+</tr>
+<tr>
+<td>liczba unikalnych</td>
+<td><code>rdd.distinct().count()</code></td>
+<td><code>df.select("a").distinct().count()</code></td>
+</tr>
+<tr>
+<td>plan wykonania</td>
+<td><code>print(rdd.toDebugString().decode())</code></td>
+<td><code>df.explain()</code></td>
+</tr>
+<tr>
+<td>wynik jako lista / pandas</td>
+<td><code>rdd.collect()</code></td>
+<td><code>df.collect()</code> / <code>df.toPandas()</code></td>
+</tr>
+</tbody>
+</table>
+<p>Do bigramów przydają się dwa gotowe narzędzia z <code>pyspark.ml.feature</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tablica słów w każdej linii, bez pustych</td>
+<td><code>F.array_remove(F.split(F.lower("value"), WZORZEC), "")</code></td>
+</tr>
+<tr>
+<td>usunąć stopwords z tablicy</td>
+<td><code>StopWordsRemover(inputCol="slowa", outputCol="bez_stop", stopWords=list(STOPWORDS))</code></td>
+</tr>
+<tr>
+<td>zrobić pary sąsiednich słów</td>
+<td><code>NGram(n=2, inputCol="bez_stop", outputCol="bigramy")</code></td>
+</tr>
+<tr>
+<td>zastosować transformer</td>
+<td><code>df = transformer.transform(df)</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-2-word-count-po-polsku-6-pkt">Zadanie 2 — Word count po polsku (6 pkt)<a class="headerlink" href="#zadanie-2-word-count-po-polsku-6-pkt" title="Permanent link">#</a></h2>
+<p><strong>Czas:</strong> maks. 45 minut
+<strong>Środowisko:</strong> Google Colab (PySpark)
+<strong>Oddanie:</strong> notatnik <code>.ipynb</code> na Moodle</p>
+<p>Zadanie ma dwie części. Rób je po kolei i <strong>pokaż mi wynik każdej części, gdy
+będzie gotowa</strong> — punktacja zależy od tego, ile zrobisz na zajęciach.</p>
+<h3 id="twoja-ksiazka">Twoja książka<a class="headerlink" href="#twoja-ksiazka" title="Permanent link">#</a></h3>
+<p>Każdy analizuje inną lekturę. Wybiera ją ostatnia cyfra numeru albumu.
+Pierwsze komórki notatnika:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="s2">"pyspark&lt;4"</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparkSession</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>                 <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="n">KSIAZKI</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>    <span class="s2">"pan-tadeusz"</span><span class="p">,</span>                    <span class="c1"># 0</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>    <span class="s2">"quo-vadis"</span><span class="p">,</span>                      <span class="c1"># 1</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>    <span class="s2">"lalka-tom-pierwszy"</span><span class="p">,</span>             <span class="c1"># 2</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>    <span class="s2">"ogniem-i-mieczem-tom-pierwszy"</span><span class="p">,</span>  <span class="c1"># 3</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>    <span class="s2">"przedwiosnie"</span><span class="p">,</span>                   <span class="c1"># 4</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>    <span class="s2">"potop-tom-pierwszy"</span><span class="p">,</span>             <span class="c1"># 5</span>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>    <span class="s2">"krzyzacy-tom-pierwszy"</span><span class="p">,</span>          <span class="c1"># 6</span>
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a>    <span class="s2">"ziemia-obiecana-tom-pierwszy"</span><span class="p">,</span>   <span class="c1"># 7</span>
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a>    <span class="s2">"nad-niemnem-tom-pierwszy"</span><span class="p">,</span>       <span class="c1"># 8</span>
+</span><span id="__span-28-19"><a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a>    <span class="s2">"w-pustyni-i-w-puszczy"</span><span class="p">,</span>          <span class="c1"># 9</span>
+</span><span id="__span-28-20"><a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a><span class="p">]</span>
+</span><span id="__span-28-21"><a id="__codelineno-28-21" name="__codelineno-28-21" href="#__codelineno-28-21"></a><span class="n">KSIAZKA</span> <span class="o">=</span> <span class="n">KSIAZKI</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">10</span><span class="p">]</span>
+</span><span id="__span-28-22"><a id="__codelineno-28-22" name="__codelineno-28-22" href="#__codelineno-28-22"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Moja książka: </span><span class="si">{</span><span class="n">KSIAZKA</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-28-23"><a id="__codelineno-28-23" name="__codelineno-28-23" href="#__codelineno-28-23"></a>
+</span><span id="__span-28-24"><a id="__codelineno-28-24" name="__codelineno-28-24" href="#__codelineno-28-24"></a><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span>
+</span><span id="__span-28-25"><a id="__codelineno-28-25" name="__codelineno-28-25" href="#__codelineno-28-25"></a>    <span class="sa">f</span><span class="s2">"https://wolnelektury.pl/media/book/txt/</span><span class="si">{</span><span class="n">KSIAZKA</span><span class="si">}</span><span class="s2">.txt"</span><span class="p">,</span> <span class="s2">"ksiazka.txt"</span>
+</span><span id="__span-28-26"><a id="__codelineno-28-26" name="__codelineno-28-26" href="#__codelineno-28-26"></a><span class="p">)</span>
+</span><span id="__span-28-27"><a id="__codelineno-28-27" name="__codelineno-28-27" href="#__codelineno-28-27"></a>
+</span><span id="__span-28-28"><a id="__codelineno-28-28" name="__codelineno-28-28" href="#__codelineno-28-28"></a><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">master</span><span class="p">(</span><span class="s2">"local[*]"</span><span class="p">)</span><span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">"zadanie2"</span><span class="p">)</span><span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
+</span><span id="__span-28-29"><a id="__codelineno-28-29" name="__codelineno-28-29" href="#__codelineno-28-29"></a><span class="n">sc</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sparkContext</span>
+</span></code></pre></div>
+<p>Skopiuj też z demo <code>WZORZEC</code> i <code>STOPWORDS</code> — <strong>bez zmian</strong>, żebym mógł porównać
+Twój wynik z moim. Rozwiązania z cudzą książką nie zaliczam.</p>
+<h3 id="czesc-1-rdd-ok-20-min">Część 1 — RDD (ok. 20 min)<a class="headerlink" href="#czesc-1-rdd-ok-20-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Wczytaj książkę przez <code>sc.textFile</code> i wypisz liczbę linii oraz liczbę partycji.</li>
+<li>
+<p>Zbuduj word count w API RDD: małe litery, podział wzorcem <code>WZORZEC</code>,
+   odrzucenie pustych napisów i stopwords, pary <code>(słowo, 1)</code>, <code>reduceByKey</code>.
+   Wypisz:</p>
+<ul>
+<li>łączną liczbę słów (po odfiltrowaniu),</li>
+<li>liczbę <strong>różnych</strong> słów,</li>
+<li><strong>15 najczęstszych</strong> słów (malejąco po liczbie, przy remisie alfabetycznie).</li>
+</ul>
+</li>
+<li>
+<p>Wypisz rodowód wyniku przez <code>toDebugString()</code>. W komórce Markdown odpowiedz:
+   w którym miejscu jest shuffle i która operacja go powoduje? Z ilu stage'ów
+   składa się ten job?</p>
+</li>
+</ol>
+<h3 id="czesc-2-dataframe-i-bigramy-ok-25-min">Część 2 — DataFrame i bigramy (ok. 25 min)<a class="headerlink" href="#czesc-2-dataframe-i-bigramy-ok-25-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Policz te same <strong>15 najczęstszych</strong> słów w API DataFrame (<code>spark.read.text</code>,
+   <code>split</code>, <code>explode</code>, <code>filter</code>, <code>groupBy</code>, <code>orderBy</code>). Wynik musi być
+   <strong>identyczny</strong> z częścią 1 — sprawdź to w kodzie, porównując obie listy.</li>
+<li>
+<p>Wypisz plan przez <code>explain()</code>. W komórce Markdown odpowiedz:</p>
+<ul>
+<li>ile razy w planie występuje <code>Exchange</code> i która operacja w Twoim kodzie
+  powoduje każde z nich?</li>
+<li>co oznacza <code>partial_count</code> i czemu odpowiada w części 1?</li>
+</ul>
+</li>
+<li>
+<p>Znajdź <strong>10 najczęstszych bigramów</strong>, czyli par sąsiednich słów. Z każdej
+   linii zrób tablicę słów (bez pustych), usuń z niej stopwords
+   (<code>StopWordsRemover</code>), utwórz pary (<code>NGram</code>), rozbij na wiersze i policz.
+   W komórce Markdown napisz w 1–2 zdaniach, co bigramy mówią o Twojej książce,
+   czego nie widać w rankingu pojedynczych słów.</p>
+</li>
+</ol>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Ściągawka jest kilka sekcji wyżej — wszystkie potrzebne polecenia tam są.</li>
+<li>Pamiętaj o leniwym wykonaniu: dopóki nie wywołasz akcji, błąd w lambdzie się
+  nie pokaże.</li>
+<li>Część 1, punkt 2: zapisz RDD po <code>reduceByKey</code> w zmiennej. Liczbę różnych słów
+  dostaniesz wtedy przez zwykłe <code>count()</code> na tym RDD.</li>
+<li>Część 2, punkt 1: <code>ranking.limit(15).collect()</code> zwraca listę obiektów <code>Row</code>.
+  Zamień ją na listę krotek, np. <code>[(r["slowo"], r["count"]) for r in ...]</code>,
+  i porównaj z listą z części 1 operatorem <code>==</code>.</li>
+<li>Część 2, punkt 3: importy to
+  <code>from pyspark.ml.feature import StopWordsRemover, NGram</code>. Bigram to napis
+  ze spacją w środku, np. <code>"pan sędzia"</code>.</li>
+<li>Jeśli Spark po błędzie przestaje odpowiadać: <em>Środowisko wykonawcze → Uruchom
+  ponownie sesję</em> i wykonaj komórki od początku.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Na co patrzę przy ocenie</p>
+<p>Na zgodność rankingu z moim (dlatego <code>WZORZEC</code> i <code>STOPWORDS</code> muszą być
+niezmienione) oraz na odpowiedzi w komórkach Markdown. Chcę zobaczyć, że
+potrafisz wskazać shuffle w obu planach i wyjaśnić, skąd się bierze.</p>
+</div>
+<h3 id="punktacja-6-pkt">Punktacja (6 pkt)<a class="headerlink" href="#punktacja-6-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>6 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>4 pkt</strong></td>
+<td>jedna z dwóch części zrobiona na zajęciach</td>
+</tr>
+<tr>
+<td><strong>2 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>2026-11-06</strong> (dzień przed kolejnymi zajęciami).</p>
+<div class="admonition danger">
+<p class="admonition-title">Serio, róbcie to na zajęciach</p>
+<p>Te same 45 minut pracy jest warte 6 pkt tu i teraz albo 2 pkt w domu. Przez
+cały semestr robi to różnicę 32 punktów, czyli całej oceny w górę lub w dół.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

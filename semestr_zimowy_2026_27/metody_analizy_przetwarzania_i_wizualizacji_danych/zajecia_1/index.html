@@ -1,0 +1,3715 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_1/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../systemy_big_data/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Zajęcia 1 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-1" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../systemy_big_data/" class="md-tabs__dropdown-link">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#skad-sie-biora-dane-pozyskiwanie-i-wczytywanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skąd się biorą dane — pozyskiwanie i wczytywanie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skad-biora-sie-dane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skąd biorą się dane
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pliki-csv-z-niespodzianka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pliki: CSV z niespodzianką
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pliki: CSV z niespodzianką">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zagniezdzony-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zagnieżdżony JSON
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-dane-prosto-z-serwisu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API — dane prosto z serwisu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bazy-danych-sql-z-pythona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bazy danych — SQL z Pythona
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aczenie-zrode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Łączenie źródeł
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Łączenie źródeł">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gdy-daty-nie-pasuja-merge_asof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gdy daty nie pasują: merge_asof
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-1-sprzedaz-zagraniczna-12-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1 — Sprzedaż zagraniczna (12 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 1 — Sprzedaż zagraniczna (12 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-dwa-pliki-jedna-tabela-ok-25-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — Dwa pliki, jedna tabela (ok. 25 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-przeliczenie-na-zotowki-ok-30-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — Przeliczenie na złotówki (ok. 30 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-12-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (12 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-1">Zajęcia 1<a class="headerlink" href="#zajecia-1" title="Permanent link">#</a></h1>
+<h2 id="skad-sie-biora-dane-pozyskiwanie-i-wczytywanie">Skąd się biorą dane — pozyskiwanie i wczytywanie<a class="headerlink" href="#skad-sie-biora-dane-pozyskiwanie-i-wczytywanie" title="Permanent link">#</a></h2>
+<p>Każda analiza zaczyna się od tego samego pytania: <strong>skąd wziąć dane?</strong> Na
+kursach zwykle dostaje się gotowy, grzeczny plik CSV. W pracy dane przychodzą
+z eksportu starego systemu (z polskimi znakami w egzotycznym kodowaniu),
+z serwisu internetowego przez API, z firmowej bazy danych — i prawie nigdy
+z jednego miejsca naraz.</p>
+<p>Dziś zajmujemy się pierwszym krokiem drogi, którą będziemy szli cały semestr:
+<strong>pozyskanie → czyszczenie → analiza → wizualizacja</strong>. Nauczysz się wyciągać dane
+z różnych źródeł i sklejać je w jedną tabelę, na której da się już coś policzyć.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>wczytać plik CSV, który „nie chce się wczytać" — złe kodowanie, opis nad
+  tabelą, średniki, przecinek dziesiętny,</li>
+<li>wczytać zagnieżdżony JSON i spłaszczyć go do tabeli,</li>
+<li>pobrać dane z publicznego REST API (Narodowy Bank Polski) biblioteką <code>requests</code>,</li>
+<li>zadać zapytanie SQL do bazy danych prosto z Pythona,</li>
+<li>połączyć dane z kilku źródeł — także wtedy, gdy daty nie pasują do siebie
+  jeden do jednego.</li>
+</ul>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organizacja i zasady zaliczenia</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Skąd biorą się dane</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Pliki: CSV z niespodzianką i zagnieżdżony JSON</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>API — dane prosto z serwisu</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>Bazy danych — SQL z Pythona</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Łączenie źródeł — <code>merge</code> i <code>merge_asof</code></td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Przerwa</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 1</strong></td>
+<td><strong>55 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="skad-biora-sie-dane">Skąd biorą się dane<a class="headerlink" href="#skad-biora-sie-dane" title="Permanent link">#</a></h2>
+<p>Najczęstsze źródła danych, z którymi spotkasz się w pracy:</p>
+<table>
+<thead>
+<tr>
+<th>Źródło</th>
+<th>Przykład</th>
+<th>Czym wczytujemy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pliki</strong></td>
+<td>eksport z systemu sprzedażowego, raport z Excela</td>
+<td><code>pd.read_csv</code>, <code>pd.read_excel</code></td>
+</tr>
+<tr>
+<td><strong>API</strong></td>
+<td>kursy walut z NBP, pogoda, dane z aplikacji</td>
+<td><code>requests</code> + <code>pd.json_normalize</code></td>
+</tr>
+<tr>
+<td><strong>bazy danych</strong></td>
+<td>firmowa baza zamówień, CRM</td>
+<td><code>pd.read_sql_query</code></td>
+</tr>
+<tr>
+<td><strong>strony WWW</strong></td>
+<td>tabela na Wikipedii, cennik konkurencji</td>
+<td><code>pd.read_html</code>, scraping</td>
+</tr>
+</tbody>
+</table>
+<p>Bez względu na źródło cel jest zawsze ten sam: dostać <strong>DataFrame</strong> — tabelę
+pandas, z którą dalej pracuje się już identycznie. Wszystkie przykłady
+uruchamiamy w <a href="https://colab.research.google.com">Google Colab</a>, więc niczego nie
+musisz instalować.</p>
+<div class="admonition info">
+<p class="admonition-title">Dane, na których pracujemy w demo</p>
+<p>W przykładach analizujemy miejską wypożyczalnię rowerów: przejazdy (plik CSV),
+stacje (JSON) i — dla odmiany — ceny złota z NBP. W zadaniu te same techniki
+zastosujesz do danych sklepu internetowego.</p>
+</div>
+<hr />
+<h2 id="pliki-csv-z-niespodzianka">Pliki: CSV z niespodzianką<a class="headerlink" href="#pliki-csv-z-niespodzianka" title="Permanent link">#</a></h2>
+<p>Uruchom komórkę — utworzy plik <code>przejazdy.csv</code> taki, jaki dostałbyś z systemu
+wypożyczalni:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">tekst</span> <span class="o">=</span> <span class="s2">"""Raport wypożyczeń — Rower Miejski</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="s2">Okres: 2026-09-01 – 2026-09-03</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="s2">id;data;stacja_id;czas_min;oplata</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="s2">1;2026-09-01;S01;12;0,00</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="s2">2;2026-09-01;S02;47;4,50</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="s2">3;2026-09-01;S01;23;0,00</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="s2">4;2026-09-02;S03;65;8,00</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="s2">5;2026-09-02;S02;8;0,00</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="s2">6;2026-09-02;S04;31;2,00</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="s2">7;2026-09-03;S01;94;12,50</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="s2">8;2026-09-03;S03;19;0,00</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="s2">"""</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"przejazdy.csv"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"cp1250"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">tekst</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Zwróć uwagę na <code>encoding="cp1250"</code> — tak zapisują pliki starsze polskie systemy
+i Excel na Windowsie. Spróbujmy go wczytać „normalnie":</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"przejazdy.csv"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>UnicodeDecodeError: 'utf-8' codec can't decode byte 0xbf in position 11: invalid start byte
+</span></code></pre></div>
+<p>Pierwsza niespodzianka. pandas domyślnie zakłada kodowanie <strong>UTF-8</strong>, a w pliku
+litera „ż" z „wypożyczeń" jest zapisana jako bajt <code>0xbf</code>, który w UTF-8 nic nie
+znaczy. Podpowiadamy kodowanie:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"przejazdy.csv"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"cp1250"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ParserError: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+</span></code></pre></div>
+<p>Druga niespodzianka. pandas uznał pierwszy wiersz („Raport wypożyczeń…") za
+nagłówek z jedną kolumną, a w wierszu 4 znalazł nagle dwie — bo przecinek
+w <code>0,00</code> wziął za separator. Dwa pierwsze wiersze to opis, nie dane. Pomijamy je
+parametrem <code>skiprows</code>, a do tego podajemy separator i przecinek dziesiętny:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">przejazdy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="s2">"przejazdy.csv"</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">encoding</span><span class="o">=</span><span class="s2">"cp1250"</span><span class="p">,</span>   <span class="c1"># polskie znaki ze starego systemu</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">skiprows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>          <span class="c1"># dwa wiersze opisu nad tabelą</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">sep</span><span class="o">=</span><span class="s2">";"</span><span class="p">,</span>             <span class="c1"># kolumny rozdzielone średnikiem</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">decimal</span><span class="o">=</span><span class="s2">","</span><span class="p">,</span>         <span class="c1"># liczby z przecinkiem: 4,50</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">)</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">przejazdy</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>   id        data stacja_id  czas_min  oplata
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>0   1  2026-09-01       S01        12     0.0
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>1   2  2026-09-01       S02        47     4.5
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>2   3  2026-09-01       S01        23     0.0
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>3   4  2026-09-02       S03        65     8.0
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>4   5  2026-09-02       S02         8     0.0
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>5   6  2026-09-02       S04        31     2.0
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>6   7  2026-09-03       S01        94    12.5
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>7   8  2026-09-03       S03        19     0.0
+</span></code></pre></div>
+<p>Teraz wygląda jak tabela. Ale „wygląda" to za mało — sprawdzamy typy:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">przejazdy</span><span class="o">.</span><span class="n">dtypes</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>id             int64
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>data             str
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>stacja_id        str
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>czas_min     int64
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>oplata       float64
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>dtype: object
+</span></code></pre></div>
+<p><code>oplata</code> to liczba (<code>float64</code>), więc da się ją sumować. Gdyby nie <code>decimal=","</code>,
+byłaby tekstem <code>"4,50"</code> — i to bez żadnego błędu, po cichu. Data na razie jest
+tekstem; tym zajmiemy się za chwilę.</p>
+<div class="admonition tip">
+<p class="admonition-title">Jak czytać błędy przy wczytywaniu</p>
+<table>
+<thead>
+<tr>
+<th>Objaw</th>
+<th>Przyczyna</th>
+<th>Lekarstwo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UnicodeDecodeError</code> albo „GdaÅ„sk" zamiast „Gdańsk"</td>
+<td>kodowanie inne niż UTF-8</td>
+<td><code>encoding="cp1250"</code></td>
+</tr>
+<tr>
+<td><code>Expected 1 fields in line …</code></td>
+<td>coś nad tabelą albo zły separator</td>
+<td><code>skiprows=…</code>, <code>sep=";"</code></td>
+</tr>
+<tr>
+<td>wszystko w jednej kolumnie</td>
+<td>zły separator</td>
+<td><code>sep=";"</code></td>
+</tr>
+<tr>
+<td>liczby jako tekst <code>"4,50"</code></td>
+<td>przecinek dziesiętny</td>
+<td><code>decimal=","</code></td>
+</tr>
+</tbody>
+</table>
+<p>Zanim zaczniesz zgadywać — otwórz plik w zwykłym edytorze tekstu albo podejrzyj
+pierwsze linijki. Dwie sekundy patrzenia oszczędzają kwadrans prób.</p>
+</div>
+<h3 id="zagniezdzony-json">Zagnieżdżony JSON<a class="headerlink" href="#zagniezdzony-json" title="Permanent link">#</a></h3>
+<p>JSON to format, w którym dane zwracają serwisy internetowe. Często jest
+<strong>zagnieżdżony</strong> — w środku rekordu siedzi kolejny słownik. Tak wyglądają
+stacje naszej wypożyczalni:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">stacje_json</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="p">{</span><span class="s2">"stacja_id"</span><span class="p">:</span> <span class="s2">"S01"</span><span class="p">,</span> <span class="s2">"nazwa"</span><span class="p">:</span> <span class="s2">"Metro Centrum"</span><span class="p">,</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>     <span class="s2">"lokalizacja"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"dzielnica"</span><span class="p">:</span> <span class="s2">"Śródmieście"</span><span class="p">,</span> <span class="s2">"stojaki"</span><span class="p">:</span> <span class="mi">30</span><span class="p">}},</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="p">{</span><span class="s2">"stacja_id"</span><span class="p">:</span> <span class="s2">"S02"</span><span class="p">,</span> <span class="s2">"nazwa"</span><span class="p">:</span> <span class="s2">"Plac Wilsona"</span><span class="p">,</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>     <span class="s2">"lokalizacja"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"dzielnica"</span><span class="p">:</span> <span class="s2">"Żoliborz"</span><span class="p">,</span> <span class="s2">"stojaki"</span><span class="p">:</span> <span class="mi">20</span><span class="p">}},</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="p">{</span><span class="s2">"stacja_id"</span><span class="p">:</span> <span class="s2">"S03"</span><span class="p">,</span> <span class="s2">"nazwa"</span><span class="p">:</span> <span class="s2">"Politechnika"</span><span class="p">,</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>     <span class="s2">"lokalizacja"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"dzielnica"</span><span class="p">:</span> <span class="s2">"Mokotów"</span><span class="p">,</span> <span class="s2">"stojaki"</span><span class="p">:</span> <span class="mi">25</span><span class="p">}},</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="p">]</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"stacje.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">stacje_json</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>pd.read_json</code> wczyta plik, ale zagnieżdżony słownik wrzuci w całości do jednej
+kolumny:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s2">"stacje.json"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>  stacja_id          nazwa                                  lokalizacja
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>0       S01  Metro Centrum  {'dzielnica': 'Śródmieście', 'stojaki': 30}
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>1       S02   Plac Wilsona     {'dzielnica': 'Żoliborz', 'stojaki': 20}
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>2       S03   Politechnika      {'dzielnica': 'Mokotów', 'stojaki': 25}
+</span></code></pre></div>
+<p>Z kolumny pełnej słowników niewiele policzysz. Do spłaszczania służy
+<code>pd.json_normalize</code> — dostaje listę słowników i każde zagnieżdżone pole zamienia
+na osobną kolumnę:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"stacje.json"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="n">dane</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>          <span class="c1"># plik JSON → lista słowników Pythona</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">stacje</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">json_normalize</span><span class="p">(</span><span class="n">dane</span><span class="p">)</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">stacje</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>  stacja_id          nazwa lokalizacja.dzielnica  lokalizacja.stojaki
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>0       S01  Metro Centrum           Śródmieście                   30
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>1       S02   Plac Wilsona              Żoliborz                   20
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>2       S03   Politechnika               Mokotów                   25
+</span></code></pre></div>
+<p>Nazwy nowych kolumn powstają z całej „ścieżki" do pola: <code>lokalizacja.dzielnica</code>.
+Kropka w nazwie nie przeszkadza — w nawiasach kwadratowych działa normalnie:
+<code>stacje["lokalizacja.dzielnica"]</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Rodzina <code>read_...</code></p>
+<p>Do innych formatów pandas ma bliźniacze funkcje: <code>read_excel</code> (z parametrem
+<code>sheet_name</code>), <code>read_parquet</code>, <code>read_html</code>, <code>read_sql_query</code>… Wszystkie
+zwracają ten sam <code>DataFrame</code>. Jak raz nauczysz się pracować z tabelą,
+źródło przestaje mieć znaczenie.</p>
+</div>
+<hr />
+<h2 id="api-dane-prosto-z-serwisu">API — dane prosto z serwisu<a class="headerlink" href="#api-dane-prosto-z-serwisu" title="Permanent link">#</a></h2>
+<p><strong>API</strong> (<em>Application Programming Interface</em>) to „drzwi dla programów" do
+serwisu internetowego. Zamiast klikać na stronie i ręcznie pobierać plik,
+wysyłasz zapytanie pod konkretny adres i dostajesz dane — zwykle w JSON-ie.
+Zaletą jest to, że kod działa zawsze tak samo: jutro uruchamiasz go jeszcze raz
+i masz świeże dane.</p>
+<p>Ćwiczymy na <strong>API Narodowego Banku Polskiego</strong>
+(<a href="https://api.nbp.pl">api.nbp.pl</a>): darmowe, bez rejestracji i bez klucza. NBP
+udostępnia kursy walut i ceny złota. Adres zapytania składa się z kawałków:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>https://api.nbp.pl/api/cenyzlota/2025-12-19/2026-01-09/?format=json
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>└──────── serwis ───────┘└ co ──┘└─ od ────┘└─ do ────┘└─ format ─┘
+</span></code></pre></div>
+<p>Zapytanie wysyłamy biblioteką <code>requests</code> (w Colabie jest od razu):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://api.nbp.pl/api/cenyzlota/2025-12-19/2026-01-09/?format=json"</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="n">odp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">odp</span><span class="o">.</span><span class="n">status_code</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>200
+</span></code></pre></div>
+<p><strong>Kod odpowiedzi</strong> mówi, czy się udało: <code>200</code> — OK, <code>404</code> — nie ma takich
+danych, <code>400</code> — błędne zapytanie (np. zła data). Zawsze sprawdzaj go przed dalszą
+pracą. Same dane wyciągamy metodą <code>.json()</code> — dostajemy zwykłą listę słowników:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">odp</span><span class="o">.</span><span class="n">json</span><span class="p">()[:</span><span class="mi">3</span><span class="p">]</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>[{'data': '2025-12-19', 'cena': 498.88}, {'data': '2025-12-22', 'cena': 500.23}, {'data': '2025-12-23', 'cena': 509.15}]
+</span></code></pre></div>
+<p>A z listy słowników robimy tabelę — dokładnie tak jak z pliku JSON:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">zloto</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">odp</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">zloto</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>          data    cena
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>0   2025-12-19  498.88
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>1   2025-12-22  500.23
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>2   2025-12-23  509.15
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>3   2025-12-29  516.35
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>4   2025-12-30  516.11
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>5   2025-12-31  505.12
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>6   2026-01-02  500.84
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>7   2026-01-05  507.01
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>8   2026-01-07  513.89
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>9   2026-01-08  517.03
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>10  2026-01-09  514.00
+</span></code></pre></div>
+<p>Cena to złotówki za gram złota. Przyjrzyj się datom: brakuje weekendów, ale
+też 24–26 grudnia, 1 i 6 stycznia. <strong>NBP publikuje notowania tylko w dni robocze.</strong>
+Zapamiętaj to — za chwilę będzie z tego problem.</p>
+<div class="admonition tip">
+<p class="admonition-title">Kursy walut z NBP</p>
+<p>Kursy średnie walut (tabela A) mają adres w tym samym stylu:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-03-01/2025-03-31/?format=json
+</span></code></pre></div>
+<p>Tu odpowiedź jest zagnieżdżona: kursy siedzą w kluczu <code>"rates"</code>, a każdy
+kurs ma pola <code>effectiveDate</code> (data) i <code>mid</code> (kurs średni). Dwie rzeczy, na
+które trzeba uważać: jedno zapytanie obejmuje maksymalnie <strong>93 dni</strong>, a zakres
+dat bez żadnego notowania (np. sam weekend) kończy się kodem <code>404</code> i komunikatem
+„Brak danych".</p>
+</div>
+<hr />
+<h2 id="bazy-danych-sql-z-pythona">Bazy danych — SQL z Pythona<a class="headerlink" href="#bazy-danych-sql-z-pythona" title="Permanent link">#</a></h2>
+<p>W firmach większość danych mieszka w <strong>bazach danych</strong> (PostgreSQL, MySQL,
+SQL Server, Oracle…). Pyta się je językiem <strong>SQL</strong>, a pandas potrafi wysłać
+zapytanie i od razu zwrócić wynik jako DataFrame.</p>
+<p>Ćwiczymy na <strong>SQLite</strong> — to baza w jednym pliku, wbudowana w Pythona. Nie ma
+serwera, nie ma haseł, a SQL jest taki sam jak w „dużych" bazach. Najpierw
+zapiszemy do niej nasze dwie tabele (w prawdziwej firmie baza już by istniała):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sqlite3</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="n">con</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">"rowery.db"</span><span class="p">)</span>      <span class="c1"># połączenie; plik powstanie, jeśli go nie ma</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">przejazdy</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s2">"przejazdy"</span><span class="p">,</span> <span class="n">con</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s2">"replace"</span><span class="p">)</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="n">stacje</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s2">"stacje"</span><span class="p">,</span> <span class="n">con</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s2">"replace"</span><span class="p">)</span>
+</span></code></pre></div>
+<p>A teraz zapytanie. SQL czyta się prawie jak zdanie po angielsku: <em>wybierz stację,
+liczbę przejazdów, średni czas i sumę opłat z tabeli przejazdy, pogrupuj po
+stacji, posortuj malejąco po liczbie</em>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">zapytanie</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="s2">SELECT stacja_id,</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="s2">       COUNT(*)                AS liczba,</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="s2">       ROUND(AVG(czas_min), 1) AS sredni_czas,</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="s2">       SUM(oplata)             AS oplaty</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="s2">FROM przejazdy</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="s2">GROUP BY stacja_id</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="s2">ORDER BY liczba DESC</span>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="s2">"""</span>
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">zapytanie</span><span class="p">,</span> <span class="n">con</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>  stacja_id  liczba  sredni_czas  oplaty
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>0       S01       3         43.0    12.5
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>1       S03       2         42.0     8.0
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>2       S02       2         27.5     4.5
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>3       S04       1         31.0     2.0
+</span></code></pre></div>
+<p>To samo w pandas zrobiłbyś przez <code>groupby</code>. Po co więc SQL? Bo przy dużej bazie
+<strong>liczy baza</strong>, a do Pythona przychodzi tylko gotowy wynik — cztery wiersze
+zamiast czterech milionów.</p>
+<div class="admonition note">
+<p class="admonition-title">Najważniejsze słowa SQL</p>
+<table>
+<thead>
+<tr>
+<th>SQL</th>
+<th>Co robi</th>
+<th>Odpowiednik w pandas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SELECT kol1, kol2</code></td>
+<td>wybiera kolumny</td>
+<td><code>df[["kol1", "kol2"]]</code></td>
+</tr>
+<tr>
+<td><code>FROM tabela</code></td>
+<td>z której tabeli</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>WHERE oplata &gt; 0</code></td>
+<td>filtruje wiersze</td>
+<td><code>df[df["oplata"] &gt; 0]</code></td>
+</tr>
+<tr>
+<td><code>GROUP BY kol</code></td>
+<td>grupuje</td>
+<td><code>df.groupby("kol")</code></td>
+</tr>
+<tr>
+<td><code>ORDER BY kol DESC</code></td>
+<td>sortuje malejąco</td>
+<td><code>df.sort_values("kol", ascending=False)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Z prawdziwą bazą firmową łączysz się tak samo, tylko zamiast <code>sqlite3.connect</code>
+używasz biblioteki SQLAlchemy z adresem serwera i hasłem.</p>
+</div>
+<hr />
+<h2 id="aczenie-zrode">Łączenie źródeł<a class="headerlink" href="#aczenie-zrode" title="Permanent link">#</a></h2>
+<p>Mamy przejazdy z CSV i stacje z JSON-a. Chcemy wiedzieć, w których
+<strong>dzielnicach</strong> jeździ się najwięcej — a dzielnica jest w drugiej tabeli. Łączymy
+je po wspólnej kolumnie <code>stacja_id</code> metodą <code>merge</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">razem</span> <span class="o">=</span> <span class="n">przejazdy</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">stacje</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">"stacja_id"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="n">razem</span><span class="p">[[</span><span class="s2">"id"</span><span class="p">,</span> <span class="s2">"stacja_id"</span><span class="p">,</span> <span class="s2">"czas_min"</span><span class="p">,</span> <span class="s2">"nazwa"</span><span class="p">,</span> <span class="s2">"lokalizacja.dzielnica"</span><span class="p">]]</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>   id stacja_id  czas_min          nazwa lokalizacja.dzielnica
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>0   1       S01        12  Metro Centrum           Śródmieście
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>1   2       S02        47   Plac Wilsona              Żoliborz
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>2   3       S01        23  Metro Centrum           Śródmieście
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>3   4       S03        65   Politechnika               Mokotów
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>4   5       S02         8   Plac Wilsona              Żoliborz
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>5   6       S04        31            NaN                   NaN
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>6   7       S01        94  Metro Centrum           Śródmieście
+</span><span id="__span-26-9"><a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>7   8       S03        19   Politechnika               Mokotów
+</span></code></pre></div>
+<p>Przejazd nr 6 zaczął się na stacji <code>S04</code>, której nie ma w pliku stacji — dostał
+więc <code>NaN</code>. Parametr <code>how</code> decyduje, co z takimi wierszami zrobić:</p>
+<ul>
+<li><code>how="left"</code> — zostaw <strong>wszystkie</strong> wiersze lewej tabeli (przejazdów), braki
+  uzupełnij <code>NaN</code>; to najczęstszy wybór,</li>
+<li><code>how="inner"</code> (domyślnie) — zostaw tylko wiersze, które mają parę w obu
+  tabelach; przejazd nr 6 by <strong>zniknął</strong>, i to bez żadnego ostrzeżenia.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Po każdym <code>merge</code> policz wiersze</p>
+<p>Sprawdź <code>len()</code> przed i po łączeniu. Mniej wierszy — coś się nie dopasowało.
+Więcej — w drugiej tabeli klucz się powtarza i wiersze się zduplikowały.
+Jedno i drugie po cichu psuje wszystkie późniejsze sumy.</p>
+</div>
+<h3 id="gdy-daty-nie-pasuja-merge_asof">Gdy daty nie pasują: <code>merge_asof</code><a class="headerlink" href="#gdy-daty-nie-pasuja-merge_asof" title="Permanent link">#</a></h3>
+<p>Teraz trudniejszy przypadek. Klient kupował złoto w różne dni, także w weekendy
+i święta, a chcemy wycenić każdy zakup po cenie NBP. Zwykły <code>merge</code> po dacie
+zawodzi:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">zloto</span><span class="p">[</span><span class="s2">"data"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">zloto</span><span class="p">[</span><span class="s2">"data"</span><span class="p">])</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="n">zakupy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="s2">"data"</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">([</span><span class="s2">"2025-12-22"</span><span class="p">,</span> <span class="s2">"2025-12-24"</span><span class="p">,</span> <span class="s2">"2025-12-26"</span><span class="p">,</span> <span class="s2">"2025-12-28"</span><span class="p">,</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>                            <span class="s2">"2026-01-01"</span><span class="p">,</span> <span class="s2">"2026-01-06"</span><span class="p">,</span> <span class="s2">"2026-01-08"</span><span class="p">]),</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>    <span class="s2">"gramy"</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="p">})</span>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="n">zakupy</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">zloto</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">"data"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>        data  gramy    cena
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>0 2025-12-22     10  500.23
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>1 2025-12-24      5     NaN
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>2 2025-12-26     20     NaN
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>3 2025-12-28      2     NaN
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>4 2026-01-01     50     NaN
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>5 2026-01-06     15     NaN
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>6 2026-01-08      1  517.03
+</span></code></pre></div>
+<p>Pięć z siedmiu zakupów bez ceny — bo tego dnia NBP nic nie opublikował. Chcemy
+reguły: <strong>weź ostatnią cenę opublikowaną w dniu zakupu albo wcześniej</strong>. Robi to
+dokładnie <code>pd.merge_asof</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">wycena</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge_asof</span><span class="p">(</span><span class="n">zakupy</span><span class="p">,</span> <span class="n">zloto</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">"data"</span><span class="p">)</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">wycena</span><span class="p">[</span><span class="s2">"wartosc"</span><span class="p">]</span> <span class="o">=</span> <span class="n">wycena</span><span class="p">[</span><span class="s2">"gramy"</span><span class="p">]</span> <span class="o">*</span> <span class="n">wycena</span><span class="p">[</span><span class="s2">"cena"</span><span class="p">]</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="n">wycena</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>        data  gramy    cena   wartosc
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>0 2025-12-22     10  500.23   5002.30
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>1 2025-12-24      5  509.15   2545.75
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>2 2025-12-26     20  509.15  10183.00
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>3 2025-12-28      2  509.15   1018.30
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>4 2026-01-01     50  505.12  25256.00
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>5 2026-01-06     15  507.01   7605.15
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>6 2026-01-08      1  517.03    517.03
+</span></code></pre></div>
+<p>Zakupy z 24, 26 i 28 grudnia dostały cenę z 23 grudnia, a zakup z 1 stycznia —
+cenę z 31 grudnia. Dwa warunki, bez których <code>merge_asof</code> nie zadziała:</p>
+<ol>
+<li>kolumna, po której łączysz, musi mieć <strong>ten sam typ</strong> w obu tabelach — tu
+   obie są datami (<code>pd.to_datetime</code>), a nie tekstem,</li>
+<li>obie tabele muszą być <strong>posortowane</strong> po tej kolumnie — w razie czego
+   <code>.sort_values("data")</code>.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Pierwszy dzień zakresu</p>
+<p><code>merge_asof</code> szuka ceny <em>wcześniej</em>. Jeśli pierwszy zakup przypada na dzień
+przed pierwszym notowaniem w pobranej tabeli, nie ma czego wziąć — wyjdzie
+<code>NaN</code>. Dlatego notowania pobiera się z kilkudniowym zapasem <strong>przed</strong> początkiem
+okresu, który analizujesz.</p>
+</div>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSV z polskiego systemu</td>
+<td><code>pd.read_csv("plik.csv", encoding="cp1250", sep=";", decimal=",")</code></td>
+</tr>
+<tr>
+<td>pominąć wiersze nad tabelą</td>
+<td><code>pd.read_csv(..., skiprows=2)</code></td>
+</tr>
+<tr>
+<td>dane z internetu</td>
+<td><code>pd.read_csv("https://...")</code></td>
+</tr>
+<tr>
+<td>sprawdzić typy kolumn</td>
+<td><code>df.dtypes</code></td>
+</tr>
+<tr>
+<td>plik JSON → lista słowników</td>
+<td><code>json.load(open("plik.json", encoding="utf-8"))</code></td>
+</tr>
+<tr>
+<td>JSON z internetu → lista słowników</td>
+<td><code>requests.get(URL).json()</code></td>
+</tr>
+<tr>
+<td>spłaszczyć zagnieżdżony JSON</td>
+<td><code>pd.json_normalize(lista)</code></td>
+</tr>
+<tr>
+<td>zapytanie do API</td>
+<td><code>odp = requests.get(URL)</code></td>
+</tr>
+<tr>
+<td>czy się udało</td>
+<td><code>odp.status_code</code> (200 = OK)</td>
+</tr>
+<tr>
+<td>połączyć się z bazą SQLite</td>
+<td><code>con = sqlite3.connect("baza.db")</code></td>
+</tr>
+<tr>
+<td>zapisać tabelę do bazy</td>
+<td><code>df.to_sql("nazwa", con, index=False, if_exists="replace")</code></td>
+</tr>
+<tr>
+<td>zapytanie SQL → DataFrame</td>
+<td><code>pd.read_sql_query("SELECT ...", con)</code></td>
+</tr>
+<tr>
+<td>zmienić nazwy kolumn</td>
+<td><code>df.rename(columns={"stara": "nowa"})</code></td>
+</tr>
+<tr>
+<td>tekst na datę</td>
+<td><code>pd.to_datetime(df["kol"])</code></td>
+</tr>
+<tr>
+<td>połączyć tabele po kluczu</td>
+<td><code>a.merge(b, on="klucz", how="left")</code></td>
+</tr>
+<tr>
+<td>połączyć „ostatnią wartością wcześniej"</td>
+<td><code>pd.merge_asof(a, b, on="data")</code></td>
+</tr>
+<tr>
+<td>czy wartość występuje w innej kolumnie</td>
+<td><code>a["data"].isin(b["data"])</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-1-sprzedaz-zagraniczna-12-pkt">Zadanie 1 — Sprzedaż zagraniczna (12 pkt)<a class="headerlink" href="#zadanie-1-sprzedaz-zagraniczna-12-pkt" title="Permanent link">#</a></h2>
+<p><strong>Czas:</strong> ok. 55 minut
+<strong>Środowisko:</strong> Google Colab
+<strong>Oddanie:</strong> notatnik <code>.ipynb</code> na Moodle</p>
+<p>Sklep internetowy „Gadżet24" sprzedaje w Polsce i za granicą. Klienci zagraniczni
+płacą w swojej walucie, więc w systemie sprzedażowym wszystkie ceny są w różnych
+walutach, a zarząd chce znać przychód <strong>w złotówkach</strong>. Masz do dyspozycji trzy
+źródła: eksport zamówień ze starego systemu (CSV), bazę klientów (JSON) i kursy
+walut z API NBP. Twoim zadaniem jest skleić je w jedną tabelę.</p>
+<p>Dane obejmują cały <strong>rok 2025</strong>:</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8zm1 14-2 4h-3l2-4H9v-5h6zm-2-7V3.5L18.5 9z"/></svg></span> <a href="../dane/zamowienia_2025.csv"><strong>zamowienia_2025.csv</strong></a> —
+  4000 zamówień</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h2v2H5v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5h2v2H5c-1.07-.27-2-.9-2-2v-4a2 2 0 0 0-2-2H0v-2h1a2 2 0 0 0 2-2V5a2 2 0 0 1 2-2m14 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3zm-7 12a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-4 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m8 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1"/></svg></span> <a href="../dane/klienci.json"><strong>klienci.json</strong></a> — 400 klientów</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Kolumna</th>
+<th>Co oznacza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>zamowienie_id</code></td>
+<td>numer zamówienia</td>
+</tr>
+<tr>
+<td><code>data</code></td>
+<td>data złożenia zamówienia</td>
+</tr>
+<tr>
+<td><code>klient_id</code></td>
+<td>identyfikator klienta (ten sam co w <code>klienci.json</code>)</td>
+</tr>
+<tr>
+<td><code>produkt</code>, <code>kategoria</code></td>
+<td>co kupiono</td>
+</tr>
+<tr>
+<td><code>sztuki</code></td>
+<td>ile sztuk</td>
+</tr>
+<tr>
+<td><code>cena</code></td>
+<td>cena jednej sztuki <strong>w walucie klienta</strong></td>
+</tr>
+<tr>
+<td><code>waluta</code></td>
+<td>PLN, EUR, USD, GBP, CHF albo CZK</td>
+</tr>
+</tbody>
+</table>
+<p>Rób części po kolei i <strong>pokaż mi wynik każdej z nich, gdy będzie gotowa</strong> —
+punktacja zależy od tego, ile zdążysz na zajęciach.</p>
+<h3 id="czesc-1-dwa-pliki-jedna-tabela-ok-25-min">Część 1 — Dwa pliki, jedna tabela (ok. 25 min)<a class="headerlink" href="#czesc-1-dwa-pliki-jedna-tabela-ok-25-min" title="Permanent link">#</a></h3>
+<p>Adresy plików:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">URL_ZAMOWIENIA</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/dane/zamowienia_2025.csv"</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="n">URL_KLIENCI</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/dane/klienci.json"</span>
+</span></code></pre></div>
+<ol>
+<li>Wczytaj zamówienia do DataFrame'u <code>zamowienia</code>. Plik pochodzi ze starego
+   systemu — zanim zaczniesz zgadywać parametry, otwórz go w przeglądarce
+   i zobacz, jak wygląda. Masz dostać <strong>4000 wierszy i 8 kolumn</strong>, a kolumna
+   <code>cena</code> ma być liczbą.</li>
+<li>Wczytaj klientów do DataFrame'u <code>klienci</code> tak, żeby miasto i kraj były
+   osobnymi kolumnami (<strong>400 wierszy, 6 kolumn</strong>).</li>
+<li>Połącz obie tabele w jedną o nazwie <code>df</code> (każde zamówienie ma dostać dane
+   swojego klienta) i policz dla każdego kraju: <strong>liczbę zamówień</strong> i <strong>liczbę
+   różnych klientów</strong>. W komórce tekstowej odpowiedz jednym zdaniem: dlaczego
+   na tej tabeli nie można jeszcze policzyć łącznego przychodu sklepu?</li>
+</ol>
+<p>Komórka sprawdzająca — skopiuj i uruchom:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"zamówienia:  </span><span class="si">{</span><span class="n">zamowienia</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">   (powinno być (4000, 8))"</span><span class="p">)</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"cena:        </span><span class="si">{</span><span class="n">zamowienia</span><span class="p">[</span><span class="s1">'cena'</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">   (powinno być float64)"</span><span class="p">)</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"sztuk:       </span><span class="si">{</span><span class="n">zamowienia</span><span class="p">[</span><span class="s1">'sztuki'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">   (powinno być 6678)"</span><span class="p">)</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"klienci:     </span><span class="si">{</span><span class="n">klienci</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">   (powinno być (400, 6))"</span><span class="p">)</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"po złączeniu: </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">   (powinno być (4000, 13))"</span><span class="p">)</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"zamówień z Polski: </span><span class="si">{</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'adres.kraj'</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'Polska'</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">   (powinno być 2012)"</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="czesc-2-przeliczenie-na-zotowki-ok-30-min">Część 2 — Przeliczenie na złotówki (ok. 30 min)<a class="headerlink" href="#czesc-2-przeliczenie-na-zotowki-ok-30-min" title="Permanent link">#</a></h3>
+<p>Każdy liczy na <strong>swojej walucie i swoim miesiącu</strong> 2025 roku. Wpisz swój numer
+albumu i uruchom komórkę:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>   <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="n">WALUTY</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"EUR"</span><span class="p">,</span> <span class="s2">"USD"</span><span class="p">,</span> <span class="s2">"GBP"</span><span class="p">,</span> <span class="s2">"CHF"</span><span class="p">,</span> <span class="s2">"CZK"</span><span class="p">]</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="n">WALUTA</span> <span class="o">=</span> <span class="n">WALUTY</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="n">MIESIAC</span> <span class="o">=</span> <span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">12</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>
+</span><span id="__span-33-7"><a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="c1"># kursy pobieramy z tygodniowym zapasem przed początkiem miesiąca</span>
+</span><span id="__span-33-8"><a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="n">OD</span> <span class="o">=</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="mi">2025</span><span class="p">,</span> <span class="n">MIESIAC</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">))</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%Y-%m-</span><span class="si">%d</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-33-9"><a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="n">DO</span> <span class="o">=</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="mi">2025</span><span class="p">,</span> <span class="n">MIESIAC</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">pd</span><span class="o">.</span><span class="n">offsets</span><span class="o">.</span><span class="n">MonthEnd</span><span class="p">())</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%Y-%m-</span><span class="si">%d</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-33-10"><a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a>
+</span><span id="__span-33-11"><a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">WALUTA</span><span class="p">,</span> <span class="n">MIESIAC</span><span class="p">,</span> <span class="n">OD</span><span class="p">,</span> <span class="n">DO</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>USD 1 2024-12-25 2025-01-31
+</span></code></pre></div>
+<ol>
+<li>Pobierz z API NBP kursy średnie swojej waluty od <code>OD</code> do <code>DO</code> (adres jest
+   w ramce „Kursy walut z NBP" w materiale). Zbuduj z nich DataFrame <code>kursy</code>
+   z dwiema kolumnami: <code>data</code> (typ daty) i <code>kurs</code>.</li>
+<li>Wybierz z <code>df</code> zamówienia w Twojej walucie złożone w Twoim miesiącu
+   i dołącz do każdego kurs NBP — z dnia zamówienia, a jeśli tego dnia nie było
+   notowania (weekend, święto), z ostatniego wcześniejszego dnia. Wynik zapisz
+   jako <code>wynik</code>.</li>
+<li>Dodaj kolumnę <code>wartosc_pln</code> (sztuki × cena × kurs). W komórce tekstowej podaj:
+   <strong>łączny przychód w PLN</strong> z Twojego wariantu oraz <strong>ile zamówień</strong> przypadło
+   na dzień, w którym NBP nie opublikował kursu.</li>
+</ol>
+<p>Komórka sprawdzająca:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"wariant:      </span><span class="si">{</span><span class="n">WALUTA</span><span class="si">}</span><span class="s2">, miesiąc </span><span class="si">{</span><span class="n">MIESIAC</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"notowań:      </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">kursy</span><span class="p">)</span><span class="si">}</span><span class="s2">, od </span><span class="si">{</span><span class="n">kursy</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">:</span><span class="s2">%Y-%m-%d</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"zamówień:     </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">wynik</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"braki kursu:  </span><span class="si">{</span><span class="n">wynik</span><span class="p">[</span><span class="s1">'kurs'</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">   (powinno być 0)"</span><span class="p">)</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"kurs:         </span><span class="si">{</span><span class="n">wynik</span><span class="p">[</span><span class="s1">'kurs'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> – </span><span class="si">{</span><span class="n">wynik</span><span class="p">[</span><span class="s1">'kurs'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"przychód PLN: </span><span class="si">{</span><span class="n">wynik</span><span class="p">[</span><span class="s1">'wartosc_pln'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Plik zamówień nie chce się wczytać? Wróć do ramki „Jak czytać błędy przy
+  wczytywaniu" i poprawiaj <strong>po jednym</strong> parametrze naraz.</li>
+<li><code>pd.json_normalize</code> potrzebuje listy słowników, a nie adresu. Plik JSON
+  z internetu zamienisz na listę przez <code>requests.get(URL_KLIENCI).json()</code>.</li>
+<li>Część 1, punkt 3: grupowanie po kraju i dwie różne funkcje naraz —
+  <code>df.groupby("adres.kraj").agg(zamowienia=("zamowienie_id", "count"), klienci=("klient_id", "nunique"))</code>.</li>
+<li>Część 2, punkt 1: kursy są w kluczu <code>"rates"</code> odpowiedzi. Kolumny
+  <code>effectiveDate</code> i <code>mid</code> przemianuj przez <code>rename(columns={...})</code>. Jeśli
+  dostajesz kod <code>404</code> albo <code>400</code>, wypisz adres (<code>print(url)</code>) i sprawdź go
+  w przeglądarce.</li>
+<li>Część 2, punkt 2: data w <code>df</code> jest tekstem — przed filtrowaniem po miesiącu
+  (<code>.dt.month</code>) i przed <code>merge_asof</code> zamień ją na datę. Pamiętaj
+  o sortowaniu po dacie.</li>
+<li><code>wynik["kurs"]</code> ma braki? Sprawdź, czy pobrałeś kursy od <code>OD</code>, a nie od
+  pierwszego dnia miesiąca — to dokładnie problem z ramki „Pierwszy dzień zakresu".</li>
+<li>Zamówienia z dni bez notowania to te, których daty <strong>nie ma</strong> wśród dat
+  w <code>kursy</code> — <code>~wynik["data"].isin(kursy["data"])</code>.</li>
+<li>Wynik się nie zgadza? <strong>Runtime → Restart and run all</strong> — bardzo często winna
+  jest komórka uruchomiona dwa razy albo wcale.</li>
+</ul>
+<h3 id="punktacja-12-pkt">Punktacja (12 pkt)<a class="headerlink" href="#punktacja-12-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>8 pkt</strong></td>
+<td>jedna z dwóch części zrobiona <strong>na zajęciach</strong> i pokazana prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>4 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>2026-11-21</strong> (dzień przed kolejnymi zajęciami).</p>
+<div class="admonition danger">
+<p class="admonition-title">Serio, róbcie to na zajęciach</p>
+<p>Ta sama godzina pracy jest warta 12 pkt tu i teraz albo 4 pkt w domu. Mamy
+tylko cztery zadania w całym semestrze, więc każde z nich to 12% oceny
+końcowej. Jestem na sali po to, żeby Wam pomagać — korzystajcie z tego,
+zamiast walczyć z tym samym problemem wieczorem w domu.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
