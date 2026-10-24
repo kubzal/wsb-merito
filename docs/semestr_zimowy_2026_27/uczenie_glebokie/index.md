@@ -13,7 +13,7 @@
 
 - **Zajęcia 1 (_2026-09-26_ godz. 16:50 - 18:20 - 2h):** Czym jest Machine Learning; uczenie nadzorowane i nienadzorowane; cechy i zmienna celu; klasyfikacja a regresja; pierwszy model w scikit-learn
 - **Zajęcia 2 (_2026-10-10_ godz. 16:50 - 18:20 - 2h):** Jak ocenić model — model bazowy; macierz pomyłek; precision, recall i F1; metryki regresji (MAE, RMSE, R²); przeuczenie i niedouczenie
-- **Zajęcia 3 (_2026-10-24_ godz. 16:50 - 18:20 - 2h)**
+- **Zajęcia 3 (_2026-10-24_ godz. 16:50 - 18:20 - 2h):** Skalowanie cech (StandardScaler); potoki (Pipeline) i wyciek danych; walidacja krzyżowa; regresja logistyczna; uczciwe porównanie i wybór modelu
 - **Zajęcia 4 (_2026-11-14_ godz. 16:50 - 18:20 - 2h)**
 - **Zajęcia 5 (_2026-11-28_ godz. 16:50 - 18:20 - 2h)**
 - **Zajęcia 6 (_2026-12-12_ godz. 15:10 - 16:40 - 2h)**
