@@ -72,26 +72,25 @@ robi framework.
 Zadanie: policz, ile razy występuje każde słowo w tekście. Tekst jest podzielony
 na dwie maszyny:
 
-```text
-          Maszyna 1                         Maszyna 2
-      "ala ma kota"                     "ala ma psa"
-      "kot ma ale"
-            │                                 │
-            ▼  MAP                            ▼  MAP
-  (ala,1) (ma,1) (kota,1)             (ala,1) (ma,1) (psa,1)
-  (kot,1) (ma,1) (ale,1)
-            │                                 │
-            └──────────────┬──────────────────┘
-                           ▼  SHUFFLE — pary z tym samym kluczem
-                              trafiają na tę samą maszynę
-            ┌──────────────┴──────────────────┐
-            ▼                                 ▼
-     ala: [1, 1]                       kot:  [1]
-     ma:  [1, 1, 1]                    kota: [1]
-     ale: [1]                          psa:  [1]
-            │                                 │
-            ▼  REDUCE (suma)                  ▼  REDUCE (suma)
-     (ala,2) (ma,3) (ale,1)            (kot,1) (kota,1) (psa,1)
+```mermaid
+flowchart TB
+    subgraph M1["Maszyna 1"]
+        T1["„ala ma kota”<br/>„kot ma ale”"]
+        P1["(ala,1) (ma,1) (kota,1)<br/>(kot,1) (ma,1) (ale,1)"]
+        T1 -- MAP --> P1
+    end
+    subgraph M2["Maszyna 2"]
+        T2["„ala ma psa”"]
+        P2["(ala,1) (ma,1) (psa,1)"]
+        T2 -- MAP --> P2
+    end
+    S{{"<b>SHUFFLE</b><br/>pary z tym samym kluczem<br/>trafiają na tę samą maszynę"}}
+    P1 --> S
+    P2 --> S
+    S --> G1["ala: [1, 1]<br/>ma: [1, 1, 1]<br/>ale: [1]"]
+    S --> G2["kot: [1]<br/>kota: [1]<br/>psa: [1]"]
+    G1 -- "REDUCE (suma)" --> R1["(ala,2) (ma,3) (ale,1)"]
+    G2 -- "REDUCE (suma)" --> R2["(kot,1) (kota,1) (psa,1)"]
 ```
 
 Najciekawsza jest środkowa faza, czyli **shuffle**. Żeby zsumować wszystkie
@@ -143,26 +142,15 @@ będziemy pracować od następnych zajęć.
 
 ### Architektura
 
-```text
-                     ┌──────────────────────────┐
-                     │          DRIVER          │
-                     │  Twój program (notatnik) │
-                     │  SparkSession            │
-                     │  planuje i rozdziela     │
-                     │  pracę                   │
-                     └────────────┬─────────────┘
-                                  │
-                     ┌────────────┴─────────────┐
-                     │      CLUSTER MANAGER     │
-                     │ (YARN, Kubernetes, ...)  │
-                     └────────────┬─────────────┘
-              ┌───────────────────┼───────────────────┐
-              ▼                   ▼                   ▼
-     ┌────────────────┐  ┌────────────────┐  ┌────────────────┐
-     │   EXECUTOR 1   │  │   EXECUTOR 2   │  │   EXECUTOR 3   │
-     │  task  task    │  │  task  task    │  │  task  task    │
-     │  [partycje]    │  │  [partycje]    │  │  [partycje]    │
-     └────────────────┘  └────────────────┘  └────────────────┘
+```mermaid
+flowchart TB
+    D["<b>DRIVER</b><br/>Twój program (notatnik)<br/>SparkSession<br/>planuje i rozdziela pracę"]
+    CM["<b>CLUSTER MANAGER</b><br/>YARN, Kubernetes, …"]
+    E1["<b>EXECUTOR 1</b><br/>task · task<br/>[partycje]"]
+    E2["<b>EXECUTOR 2</b><br/>task · task<br/>[partycje]"]
+    E3["<b>EXECUTOR 3</b><br/>task · task<br/>[partycje]"]
+    D --- CM
+    CM --> E1 & E2 & E3
 ```
 
 - **Driver** to proces, w którym działa Twój kod. Buduje plan obliczeń, dzieli go

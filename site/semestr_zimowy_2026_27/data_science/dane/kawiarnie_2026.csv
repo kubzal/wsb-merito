@@ -1,0 +1,181 @@
+data,miasto,lokal,kategoria,produkt,sztuki,cena,koszt
+2026-01-01,Warszawa,Mokotów,Kawa,Latte,73,15.0,3.8
+2026-01-02,Gdańsk,Długi Targ,Kanapki,Bagietka z kurczakiem,60,22.0,14.2
+2026-01-02,Gdańsk,Długi Targ,Kawa,Espresso,131,9.0,2.1
+2026-01-04,Wrocław,Świdnicka,Kawa,Cappuccino,80,14.0,3.4
+2026-01-04,Kraków,Rynek Główny,Ciasta,Szarlotka,51,15.0,10.8
+2026-01-05,Warszawa,Nowy Świat,Ciasta,Muffin,73,9.0,6.4
+2026-01-05,Warszawa,Mokotów,Ciasta,Muffin,68,9.0,6.4
+2026-01-06,Warszawa,Mokotów,Kawa,Americano,100,11.0,2.4
+2026-01-07,Wrocław,Świdnicka,Ciasta,Szarlotka,53,15.0,10.8
+2026-01-10,Wrocław,Świdnicka,Kawa,Espresso,102,9.0,2.1
+2026-01-11,Warszawa,Nowy Świat,Kawa,Espresso,107,9.0,2.1
+2026-01-12,Gdańsk,Długi Targ,Ciasta,Sernik,76,16.0,11.5
+2026-01-14,Kraków,Rynek Główny,Kawa,Americano,81,11.0,2.4
+2026-01-14,Warszawa,Nowy Świat,Kawa,Cappuccino,73,14.0,3.4
+2026-01-17,Gdańsk,Długi Targ,Kawa,Americano,138,11.0,2.4
+2026-01-17,Kraków,Rynek Główny,Ciasta,Muffin,53,9.0,6.4
+2026-01-17,Kraków,Rynek Główny,Kanapki,Kanapka z szynką,57,18.0,11.0
+2026-01-18,Wrocław,Świdnicka,Kanapki,Bagietka z kurczakiem,32,22.0,14.2
+2026-01-18,Wrocław,Świdnicka,Kawa,Cappuccino,66,14.0,3.4
+2026-01-18,Wrocław,Świdnicka,Herbata,Herbata zielona,34,11.0,1.9
+2026-01-20,Kraków,Rynek Główny,Ciasta,Brownie,82,14.0,10.2
+2026-01-21,Warszawa,Nowy Świat,Kanapki,Bagietka z kurczakiem,41,22.0,14.2
+2026-01-23,Kraków,Rynek Główny,Kawa,Cappuccino,76,14.0,3.4
+2026-01-25,Warszawa,Mokotów,Herbata,Herbata zielona,49,11.0,1.9
+2026-01-25,Warszawa,Nowy Świat,Herbata,Herbata czarna,47,10.0,1.6
+2026-01-25,Gdańsk,Długi Targ,Ciasta,Szarlotka,87,15.0,10.8
+2026-01-25,Warszawa,Mokotów,Herbata,Herbata czarna,51,10.0,1.6
+2026-01-25,Warszawa,Mokotów,Kawa,Latte,99,15.0,3.8
+2026-01-26,Gdańsk,Długi Targ,Ciasta,Muffin,77,9.0,6.4
+2026-01-28,Warszawa,Nowy Świat,Ciasta,Muffin,55,9.0,6.4
+2026-02-01,Warszawa,Mokotów,Herbata,Herbata czarna,42,10.0,1.6
+2026-02-01,Gdańsk,Długi Targ,Kanapki,Kanapka z szynką,54,18.0,11.0
+2026-02-01,Wrocław,Świdnicka,Kawa,Latte,78,15.0,3.8
+2026-02-02,Gdańsk,Długi Targ,Ciasta,Sernik,79,16.0,11.5
+2026-02-05,Warszawa,Mokotów,Herbata,Herbata czarna,52,10.0,1.6
+2026-02-05,Gdańsk,Długi Targ,Ciasta,Muffin,93,9.0,6.4
+2026-02-06,Wrocław,Świdnicka,Kawa,Americano,91,11.0,2.4
+2026-02-07,Kraków,Rynek Główny,Kawa,Espresso,99,9.0,2.1
+2026-02-08,Warszawa,Nowy Świat,Kawa,Espresso,100,9.0,2.1
+2026-02-09,Wrocław,Świdnicka,Kawa,Latte,78,15.0,3.8
+2026-02-09,Kraków,Rynek Główny,Herbata,Herbata zielona,46,11.0,1.9
+2026-02-09,Gdańsk,Długi Targ,Ciasta,Muffin,94,9.0,6.4
+2026-02-11,Warszawa,Nowy Świat,Kawa,Latte,110,15.0,3.8
+2026-02-12,Warszawa,Nowy Świat,Kanapki,Panini caprese,44,21.0,13.5
+2026-02-12,Warszawa,Mokotów,Herbata,Herbata zielona,37,11.0,1.9
+2026-02-12,Wrocław,Świdnicka,Ciasta,Szarlotka,73,15.0,10.8
+2026-02-14,Warszawa,Mokotów,Kawa,Espresso,83,9.0,2.1
+2026-02-16,Warszawa,Nowy Świat,Ciasta,Sernik,69,16.0,11.5
+2026-02-17,Wrocław,Świdnicka,Kanapki,Panini caprese,48,21.0,13.5
+2026-02-20,Gdańsk,Długi Targ,Kawa,Americano,129,11.0,2.4
+2026-02-20,Warszawa,Mokotów,Kawa,Cappuccino,102,14.0,3.4
+2026-02-21,Kraków,Rynek Główny,Ciasta,Szarlotka,77,15.0,10.8
+2026-02-22,Wrocław,Świdnicka,Kawa,Cappuccino,87,14.0,3.4
+2026-02-22,Warszawa,Nowy Świat,Herbata,Herbata czarna,47,10.0,1.6
+2026-02-23,Kraków,Rynek Główny,Kawa,Espresso,90,9.0,2.1
+2026-02-25,Gdańsk,Długi Targ,Kanapki,Kanapka z szynką,69,18.0,11.0
+2026-02-26,Warszawa,Mokotów,Herbata,Chai latte,56,16.0,4.2
+2026-02-27,Kraków,Rynek Główny,Ciasta,Sernik,50,16.0,11.5
+2026-02-27,Warszawa,Nowy Świat,Ciasta,Szarlotka,56,15.0,10.8
+2026-02-28,Kraków,Rynek Główny,Ciasta,Sernik,56,16.0,11.5
+2026-03-02,Warszawa,Mokotów,Kawa,Americano,120,11.0,2.4
+2026-03-05,Gdańsk,Długi Targ,Kanapki,Bagietka z kurczakiem,63,22.0,14.2
+2026-03-05,Warszawa,Nowy Świat,Kawa,Cappuccino,105,14.0,3.4
+2026-03-06,Wrocław,Świdnicka,Kanapki,Bagietka z kurczakiem,46,22.0,14.2
+2026-03-07,Warszawa,Nowy Świat,Kawa,Americano,127,11.0,2.4
+2026-03-08,Warszawa,Nowy Świat,Herbata,Herbata czarna,53,10.0,1.6
+2026-03-09,Warszawa,Mokotów,Kawa,Espresso,109,9.0,2.1
+2026-03-10,Gdańsk,Długi Targ,Ciasta,Muffin,93,9.0,6.4
+2026-03-11,Warszawa,Mokotów,Herbata,Herbata czarna,58,10.0,1.6
+2026-03-12,Gdańsk,Długi Targ,Kawa,Americano,150,11.0,2.4
+2026-03-12,Kraków,Rynek Główny,Kawa,Americano,112,11.0,2.4
+2026-03-13,Wrocław,Świdnicka,Kanapki,Panini caprese,37,21.0,13.5
+2026-03-14,Warszawa,Mokotów,Kawa,Latte,95,15.0,3.8
+2026-03-15,Gdańsk,Długi Targ,Ciasta,Sernik,102,16.0,11.5
+2026-03-16,Kraków,Rynek Główny,Kanapki,Kanapka z szynką,44,18.0,11.0
+2026-03-17,Warszawa,Mokotów,Kawa,Americano,95,11.0,2.4
+2026-03-19,Warszawa,Nowy Świat,Kawa,Cappuccino,100,14.0,3.4
+2026-03-19,Wrocław,Świdnicka,Herbata,Chai latte,46,16.0,4.2
+2026-03-19,Kraków,Rynek Główny,Kawa,Espresso,98,9.0,2.1
+2026-03-20,Wrocław,Świdnicka,Kanapki,Panini caprese,32,21.0,13.5
+2026-03-22,Warszawa,Nowy Świat,Ciasta,Sernik,73,16.0,11.5
+2026-03-23,Gdańsk,Długi Targ,Ciasta,Szarlotka,93,15.0,10.8
+2026-03-24,Gdańsk,Długi Targ,Kanapki,Kanapka z szynką,67,18.0,11.0
+2026-03-24,Warszawa,Mokotów,Herbata,Chai latte,39,16.0,4.2
+2026-03-24,Wrocław,Świdnicka,Kawa,Latte,103,15.0,3.8
+2026-03-25,Kraków,Rynek Główny,Kawa,Cappuccino,117,14.0,3.4
+2026-03-25,Kraków,Rynek Główny,Kawa,Espresso,104,9.0,2.1
+2026-03-26,Wrocław,Świdnicka,Kawa,Cappuccino,85,14.0,3.4
+2026-03-27,Kraków,Rynek Główny,Kawa,Americano,99,11.0,2.4
+2026-03-28,Warszawa,Nowy Świat,Kawa,Cappuccino,112,14.0,3.4
+2026-04-01,Warszawa,Nowy Świat,Kawa,Americano,106,11.0,2.4
+2026-04-01,Warszawa,Nowy Świat,Ciasta,Szarlotka,74,15.0,10.8
+2026-04-02,Kraków,Rynek Główny,Kawa,Cappuccino,118,14.0,3.4
+2026-04-04,Wrocław,Świdnicka,Kawa,Latte,121,15.0,3.8
+2026-04-04,Warszawa,Nowy Świat,Kawa,Americano,109,11.0,2.4
+2026-04-05,Warszawa,Mokotów,Kawa,Espresso,114,9.0,2.1
+2026-04-07,Kraków,Rynek Główny,Ciasta,Muffin,78,9.0,6.4
+2026-04-08,Wrocław,Świdnicka,Ciasta,Szarlotka,69,15.0,10.8
+2026-04-09,Warszawa,Mokotów,Kawa,Latte,122,15.0,3.8
+2026-04-09,Warszawa,Nowy Świat,Kawa,Espresso,95,9.0,2.1
+2026-04-10,Warszawa,Nowy Świat,Kanapki,Panini caprese,58,21.0,13.5
+2026-04-10,Wrocław,Świdnicka,Herbata,Herbata czarna,47,10.0,1.6
+2026-04-11,Gdańsk,Długi Targ,Kawa,Espresso,162,9.0,2.1
+2026-04-12,Kraków,Rynek Główny,Herbata,Chai latte,57,16.0,4.2
+2026-04-12,Gdańsk,Długi Targ,Kanapki,Panini caprese,76,21.0,13.5
+2026-04-13,Kraków,Rynek Główny,Herbata,Herbata czarna,60,10.0,1.6
+2026-04-15,Gdańsk,Długi Targ,Kanapki,Panini caprese,80,21.0,13.5
+2026-04-15,Kraków,Rynek Główny,Ciasta,Brownie,69,14.0,10.2
+2026-04-17,Gdańsk,Długi Targ,Kawa,Americano,148,11.0,2.4
+2026-04-18,Wrocław,Świdnicka,Kawa,Latte,105,15.0,3.8
+2026-04-18,Warszawa,Mokotów,Ciasta,Muffin,68,9.0,6.4
+2026-04-19,Gdańsk,Długi Targ,Ciasta,Muffin,106,9.0,6.4
+2026-04-20,Wrocław,Świdnicka,Herbata,Herbata czarna,47,10.0,1.6
+2026-04-20,Warszawa,Nowy Świat,Ciasta,Sernik,72,16.0,11.5
+2026-04-22,Warszawa,Mokotów,Ciasta,Muffin,53,9.0,6.4
+2026-04-25,Warszawa,Mokotów,Kawa,Cappuccino,103,14.0,3.4
+2026-04-26,Wrocław,Świdnicka,Ciasta,Brownie,57,14.0,10.2
+2026-04-26,Gdańsk,Długi Targ,Ciasta,Brownie,94,14.0,10.2
+2026-04-27,Kraków,Rynek Główny,Kawa,Latte,107,15.0,3.8
+2026-04-27,Warszawa,Mokotów,Herbata,Herbata czarna,55,10.0,1.6
+2026-05-02,Warszawa,Mokotów,Kawa,Espresso,100,9.0,2.1
+2026-05-02,Wrocław,Świdnicka,Herbata,Herbata zielona,44,11.0,1.9
+2026-05-02,Kraków,Rynek Główny,Ciasta,Szarlotka,78,15.0,10.8
+2026-05-02,Warszawa,Mokotów,Herbata,Chai latte,60,16.0,4.2
+2026-05-03,Gdańsk,Długi Targ,Kawa,Espresso,166,9.0,2.1
+2026-05-03,Gdańsk,Długi Targ,Kawa,Espresso,164,9.0,2.1
+2026-05-03,Kraków,Rynek Główny,Kawa,Cappuccino,115,14.0,3.4
+2026-05-05,Warszawa,Nowy Świat,Herbata,Herbata zielona,73,11.0,1.9
+2026-05-05,Warszawa,Nowy Świat,Kawa,Americano,110,11.0,2.4
+2026-05-06,Warszawa,Nowy Świat,Ciasta,Szarlotka,72,15.0,10.8
+2026-05-08,Warszawa,Nowy Świat,Ciasta,Szarlotka,86,15.0,10.8
+2026-05-09,Warszawa,Nowy Świat,Herbata,Herbata czarna,55,10.0,1.6
+2026-05-09,Kraków,Rynek Główny,Herbata,Herbata czarna,55,10.0,1.6
+2026-05-09,Kraków,Rynek Główny,Kawa,Cappuccino,118,14.0,3.4
+2026-05-12,Gdańsk,Długi Targ,Kawa,Americano,177,11.0,2.4
+2026-05-13,Wrocław,Świdnicka,Kawa,Espresso,81,9.0,2.1
+2026-05-16,Warszawa,Mokotów,Kawa,Americano,103,11.0,2.4
+2026-05-17,Wrocław,Świdnicka,Kawa,Cappuccino,99,14.0,3.4
+2026-05-17,Warszawa,Mokotów,Herbata,Herbata zielona,63,11.0,1.9
+2026-05-17,Warszawa,Nowy Świat,Herbata,Herbata zielona,51,11.0,1.9
+2026-05-18,Warszawa,Mokotów,Kawa,Cappuccino,100,14.0,3.4
+2026-05-19,Kraków,Rynek Główny,Kawa,Latte,89,15.0,3.8
+2026-05-20,Kraków,Rynek Główny,Ciasta,Muffin,74,9.0,6.4
+2026-05-22,Gdańsk,Długi Targ,Ciasta,Muffin,108,9.0,6.4
+2026-05-23,Gdańsk,Długi Targ,Kawa,Cappuccino,171,14.0,3.4
+2026-05-24,Wrocław,Świdnicka,Kawa,Cappuccino,97,14.0,3.4
+2026-05-24,Gdańsk,Długi Targ,Ciasta,Sernik,101,16.0,11.5
+2026-05-24,Warszawa,Mokotów,Herbata,Herbata zielona,54,11.0,1.9
+2026-05-27,Wrocław,Świdnicka,Kawa,Espresso,99,9.0,2.1
+2026-05-27,Wrocław,Świdnicka,Kawa,Americano,101,11.0,2.4
+2026-06-01,Wrocław,Świdnicka,Kawa,Espresso,115,9.0,2.1
+2026-06-02,Gdańsk,Długi Targ,Ciasta,Brownie,113,14.0,10.2
+2026-06-02,Warszawa,Nowy Świat,Kawa,Americano,125,11.0,2.4
+2026-06-03,Warszawa,Mokotów,Kawa,Espresso,131,9.0,2.1
+2026-06-04,Kraków,Rynek Główny,Kawa,Espresso,120,9.0,2.1
+2026-06-06,Kraków,Rynek Główny,Herbata,Herbata czarna,66,10.0,1.6
+2026-06-06,Warszawa,Nowy Świat,Herbata,Chai latte,42,16.0,4.2
+2026-06-10,Warszawa,Nowy Świat,Kanapki,Bagietka z kurczakiem,53,22.0,14.2
+2026-06-10,Wrocław,Świdnicka,Herbata,Herbata zielona,65,11.0,1.9
+2026-06-11,Gdańsk,Długi Targ,Ciasta,Brownie,119,14.0,10.2
+2026-06-12,Gdańsk,Długi Targ,Ciasta,Muffin,122,9.0,6.4
+2026-06-14,Gdańsk,Długi Targ,Herbata,Chai latte,88,16.0,4.2
+2026-06-14,Gdańsk,Długi Targ,Kanapki,Kanapka z szynką,81,18.0,11.0
+2026-06-15,Warszawa,Mokotów,Kawa,Americano,142,11.0,2.4
+2026-06-15,Kraków,Rynek Główny,Kawa,Cappuccino,123,14.0,3.4
+2026-06-18,Kraków,Rynek Główny,Kanapki,Kanapka z szynką,51,18.0,11.0
+2026-06-19,Warszawa,Mokotów,Kawa,Latte,122,15.0,3.8
+2026-06-19,Kraków,Rynek Główny,Ciasta,Sernik,61,16.0,11.5
+2026-06-20,Warszawa,Nowy Świat,Herbata,Herbata czarna,60,10.0,1.6
+2026-06-21,Warszawa,Mokotów,Kawa,Espresso,129,9.0,2.1
+2026-06-22,Gdańsk,Długi Targ,Kawa,Espresso,151,9.0,2.1
+2026-06-22,Wrocław,Świdnicka,Ciasta,Szarlotka,58,15.0,10.8
+2026-06-23,Warszawa,Mokotów,Kawa,Americano,113,11.0,2.4
+2026-06-23,Warszawa,Nowy Świat,Kawa,Cappuccino,137,14.0,3.4
+2026-06-23,Wrocław,Świdnicka,Kawa,Americano,128,11.0,2.4
+2026-06-23,Kraków,Rynek Główny,Kanapki,Kanapka z szynką,55,18.0,11.0
+2026-06-25,Wrocław,Świdnicka,Kawa,Latte,79,15.0,3.8
+2026-06-26,Warszawa,Nowy Świat,Herbata,Herbata czarna,56,10.0,1.6
+2026-06-27,Warszawa,Mokotów,Kawa,Americano,114,11.0,2.4
+2026-06-27,Wrocław,Świdnicka,Kawa,Latte,97,15.0,3.8

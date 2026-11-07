@@ -149,20 +149,21 @@ To samo zapytanie możesz napisać w SQL albo w API DataFrame. Nie ma tu wyboru
 „szybsze kontra wolniejsze” — oba trafiają do tego samego optymalizatora
 **Catalyst** i kończą jako ten sam plan:
 
-```text
-   SQL: SELECT ... JOIN ...         DataFrame: df.join(...).groupBy(...)
-              │                                     │
-              └──────────────────┬──────────────────┘
-                                 ▼
-                      plan logiczny (co policzyć)
-                                 ▼
-                 optymalizacja: przesunięcie filtrów,
-                 odcięcie zbędnych kolumn, kolejność joinów
-                                 ▼
-                     plan fizyczny (jak policzyć):
-                     broadcast czy shuffle, ile partycji
-                                 ▼
-                          wykonanie na klastrze
+```mermaid
+flowchart TB
+    SQL["<b>Spark SQL</b><br/><code>SELECT … JOIN …</code>"]
+    DF["<b>DataFrame API</b><br/><code>df.join(…).groupBy(…)</code>"]
+    subgraph Catalyst["Optymalizator Catalyst"]
+        direction TB
+        LOG["<b>Plan logiczny</b><br/>co policzyć"]
+        OPT["<b>Optymalizacja</b><br/>przesunięcie filtrów<br/>odcięcie zbędnych kolumn<br/>kolejność joinów"]
+        PHY["<b>Plan fizyczny</b><br/>jak policzyć: broadcast czy shuffle,<br/>ile partycji"]
+        LOG --> OPT --> PHY
+    end
+    EXE["<b>Wykonanie na klastrze</b>"]
+    SQL --> LOG
+    DF --> LOG
+    PHY --> EXE
 ```
 
 W praktyce pisze się mieszanie: SQL tam, gdzie zapytanie jest czytelne jako SQL,
@@ -206,34 +207,42 @@ Ważniejsze z punktu widzenia Big Data jest to, **jak** Spark łączy dwie tabel
 leżące w kawałkach na wielu maszynach. Żeby połączyć dwa wiersze, muszą się one
 znaleźć w tym samym miejscu. Są na to dwa sposoby.
 
-```text
- BROADCAST HASH JOIN — mała tabela jedzie do dużej
+**Broadcast hash join** — mała tabela jedzie do dużej:
 
-              nation (25 wierszy) — pełna kopia dla każdego
-             ┌──────────────┼──────────────┐
-             ▼              ▼              ▼
-     ┌──────────────┐┌──────────────┐┌──────────────┐
-     │ customer p1  ││ customer p2  ││ customer p3  │   duża tabela zostaje
-     │ + nation     ││ + nation     ││ + nation     │   na miejscu, zero shuffle'u
-     └──────────────┘└──────────────┘└──────────────┘
-
-
- SHUFFLE JOIN — obie tabele jadą przez sieć
-
-   lineitem p1  p2  p3                  orders p1  p2  p3
-            │   │   │                          │   │   │
-            └───┼───┘                          └───┼───┘
-                │   shuffle: każdy wiersz trafia   │
-                │   do partycji hash(klucz) % N    │
-                ▼                                  ▼
-     ┌──────────────────┐┌──────────────────┐┌──────────────────┐
-     │ partycja 1′      ││ partycja 2′      ││ partycja 3′      │
-     │ lineitem+orders  ││ lineitem+orders  ││ lineitem+orders  │
-     │ z kluczami A     ││ z kluczami B     ││ z kluczami C     │
-     └──────────────────┘└──────────────────┘└──────────────────┘
-       w każdej partycji pozycje i zamówienia z tym samym kluczem
-       — łączone lokalnie
+```mermaid
+flowchart TB
+    N["<b>nation</b> (25 wierszy)<br/>pełna kopia dla każdego executora"]
+    subgraph BIG["customer — duża tabela zostaje na miejscu, zero shuffle'u"]
+        direction LR
+        C1["customer p1<br/>+ nation"]
+        C2["customer p2<br/>+ nation"]
+        C3["customer p3<br/>+ nation"]
+    end
+    N --> C1 & C2 & C3
 ```
+
+**Shuffle join** — obie tabele jadą przez sieć:
+
+```mermaid
+flowchart TB
+    subgraph L["lineitem"]
+        direction LR
+        L1["p1"] ~~~ L2["p2"] ~~~ L3["p3"]
+    end
+    subgraph O["orders"]
+        direction LR
+        O1["p1"] ~~~ O2["p2"] ~~~ O3["p3"]
+    end
+    S{{"<b>SHUFFLE</b><br/>każdy wiersz trafia do partycji<br/>hash(klucz) % N"}}
+    L --> S
+    O --> S
+    S --> P1["<b>partycja 1′</b><br/>lineitem + orders<br/>z kluczami A"]
+    S --> P2["<b>partycja 2′</b><br/>lineitem + orders<br/>z kluczami B"]
+    S --> P3["<b>partycja 3′</b><br/>lineitem + orders<br/>z kluczami C"]
+```
+
+W każdej partycji lądują pozycje i zamówienia z tym samym kluczem, więc można je
+połączyć lokalnie.
 
 - **Broadcast hash join** — mała tabela jest wysyłana **w całości** do każdego
   executora, a duża zostaje tam, gdzie leży. Każdy executor łączy swój kawałek
@@ -378,15 +387,41 @@ syntetyczna firma hurtowa z klientami, zamówieniami i dostawcami. W Databricksi
 jest gotowy w katalogu `samples`, więc nie trzeba niczego wgrywać. Korzystamy
 z pięciu tabel:
 
-```text
- region          nation             customer             orders              lineitem
- (5)             (25)               (750 tys.)           (7,5 mln)           (30 mln)
- ───────────     ───────────        ───────────          ───────────         ────────────────
- r_regionkey ◄── n_regionkey        c_custkey  ◄──────── o_custkey           l_orderkey ──┐
- r_name          n_nationkey ◄───── c_nationkey          o_orderkey ◄───────────────────────┘
-                 n_name             c_name               o_orderdate         l_extendedprice
-                                    c_mktsegment         o_totalprice        l_discount
-                                                         o_orderpriority     l_quantity
+```mermaid
+erDiagram
+    direction LR
+    region["region (5)"] {
+        bigint r_regionkey PK
+        string r_name
+    }
+    nation["nation (25)"] {
+        bigint n_nationkey PK
+        bigint n_regionkey FK
+        string n_name
+    }
+    customer["customer (750 tys.)"] {
+        bigint c_custkey PK
+        bigint c_nationkey FK
+        string c_name
+        string c_mktsegment
+    }
+    orders["orders (7,5 mln)"] {
+        bigint o_orderkey PK
+        bigint o_custkey FK
+        date o_orderdate
+        decimal o_totalprice
+        string o_orderpriority
+    }
+    lineitem["lineitem (30 mln)"] {
+        bigint l_orderkey FK
+        decimal l_extendedprice
+        decimal l_discount
+        decimal l_quantity
+    }
+    region ||--|{ nation : ""
+    nation ||--o{ customer : ""
+    customer ||--o{ orders : ""
+    orders ||--|{ lineitem : ""
 ```
 
 Jedno zamówienie (`orders`) składa się z kilku pozycji (`lineitem`). Zamówienia
