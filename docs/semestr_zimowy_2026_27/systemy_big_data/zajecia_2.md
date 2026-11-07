@@ -2,12 +2,12 @@
 
 ## Obliczenia rozproszone: od MapReduce do Sparka
 
-Tydzień temu doszliśmy do granicy jednego komputera. Dziś przechodzimy na drugą
-stronę: co zrobić, gdy dane trzeba podzielić między wiele maszyn i jak połączyć
-wyniki ich pracy w jedną odpowiedź. Zaczniemy od pomysłu, który w 2004 roku
-opisał Google — **MapReduce** — i dojdziemy do **Apache Spark**, który jest dziś
-standardem przetwarzania dużych danych. Sparka będziemy używać przez resztę
-semestru, więc dziś poznajemy jego fundamenty.
+Na poprzednich zajęciach doszliśmy do granicy jednego komputera. Dziś
+przechodzimy na drugą stronę: co zrobić, gdy dane trzeba podzielić między wiele
+maszyn i jak połączyć wyniki ich pracy w jedną odpowiedź. Zaczniemy od pomysłu,
+który w 2004 roku opisał Google — **MapReduce** — i dojdziemy do **Apache Spark**,
+który jest dziś standardem przetwarzania dużych danych. Sparka będziemy używać
+przez resztę semestru, więc dziś poznajemy jego fundamenty.
 
 Po dzisiejszych zajęciach będziesz w stanie:
 
@@ -38,7 +38,7 @@ Po dzisiejszych zajęciach będziesz w stanie:
 
 ## Po co dzielić pracę między maszyny
 
-Przypomnienie z zeszłego tygodnia: jeden dysk czyta terabajt w kilka minut albo
+Przypomnienie z poprzednich zajęć: jeden dysk czyta terabajt w kilka minut albo
 kilka godzin. Sto dysków czyta ten sam terabajt sto razy szybciej, o ile każdy
 czyta **swoją** część. Brzmi prosto, ale od razu pojawiają się pytania:
 

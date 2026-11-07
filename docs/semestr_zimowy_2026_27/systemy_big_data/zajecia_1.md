@@ -54,7 +54,8 @@ pipeline'u danych w chmurze:
 
 Wszystkie narzędzia są **darmowe** i nie wymagają karty płatniczej:
 
-- **Google Colab** — notatniki Pythona w przeglądarce. Dziś i za tydzień.
+- **Google Colab** — notatniki Pythona w przeglądarce. Dziś i na następnych
+  zajęciach.
 - **Databricks Free Edition** — Spark, Delta Lake i pipeline'y danych. Główne
   narzędzie od zajęć 3. Konto zakładacie **dziś**, w ramach zadania. Rejestracja
   i potwierdzanie maila potrafią chwilę potrwać, a na zajęciach 3 nie chcę na to
@@ -150,7 +151,8 @@ pomyśle opiera się całe przetwarzanie rozproszone.
     dziesiątki, a nawet setki gigabajtów, jeśli dane są w dobrym formacie. Klaster
     ma sens, gdy dane naprawdę przekraczają możliwości jednej maszyny albo gdy
     potrzebujesz odporności na awarie i pracy wielu zespołów na tych samych danych.
-    Spark poznamy za tydzień. Dziś zobaczymy, jak daleko można zajść bez niego.
+    Spark poznamy na następnych zajęciach. Dziś zobaczymy, jak daleko można zajść
+    bez niego.
 
 ---
 

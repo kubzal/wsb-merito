@@ -10,14 +10,14 @@
 
 ## Plan zajęć
 
-- **Zajęcia 1 (_2026-10-03_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 4h):** Czym jest Big Data i model 5V; kiedy jeden komputer przestaje wystarczać; formaty wierszowe i kolumnowe (CSV kontra Parquet); kompresja; partycjonowanie w stylu Hive; predicate pushdown; DuckDB
-- **Zajęcia 2 (_2026-10-17_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 4h):** Obliczenia rozproszone: od MapReduce do Sparka — architektura Sparka, lazy evaluation, DAG, shuffle, RDD i DataFrame
-- **Zajęcia 3 (_2026-11-07_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 4h):** Spark SQL i DataFrame w praktyce na Databricks — Unity Catalog, joiny, funkcje okienkowe
-- **Zajęcia 4 (_2026-11-21_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 4h):** Delta Lake — Data Lake, Warehouse i Lakehouse; transakcje ACID, time travel, MERGE, ewolucja schematu
-- **Zajęcia 5 (_2026-12-05_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 4h):** Architektura medalionowa (Bronze, Silver, Gold), przetwarzanie inkrementalne i jakość danych
-- **Zajęcia 6 (_2026-12-19_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 4h):** Przetwarzanie strumieniowe — Structured Streaming, okna czasowe, watermarki
-- **Zajęcia 7 (_2027-01-09_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 4h):** Hurtownia danych w chmurze — BigQuery, model kosztowy, partycjonowanie i klastrowanie
-- **Zajęcia 8 (_2027-01-23_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 4h):** Big Data w praktyce: od danych do modelu — cechy na dużych danych, MLflow, bezpieczeństwo danych; **test końcowy**
+- **Zajęcia 1 (_2026-10-03_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 2h):** Czym jest Big Data i model 5V; kiedy jeden komputer przestaje wystarczać; formaty wierszowe i kolumnowe (CSV kontra Parquet); kompresja; partycjonowanie w stylu Hive; predicate pushdown; DuckDB
+- **Zajęcia 2 (_2026-10-17_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 2h):** Obliczenia rozproszone: od MapReduce do Sparka — architektura Sparka, lazy evaluation, DAG, shuffle, RDD i DataFrame
+- **Zajęcia 3 (_2026-11-07_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 2h):** Spark SQL i DataFrame w praktyce na Databricks — Unity Catalog, joiny, funkcje okienkowe
+- **Zajęcia 4 (_2026-11-21_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 2h):** Delta Lake — Data Lake, Warehouse i Lakehouse; transakcje ACID, time travel, MERGE, ewolucja schematu
+- **Zajęcia 5 (_2026-12-05_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 2h):** Architektura medalionowa (Bronze, Silver, Gold), przetwarzanie inkrementalne i jakość danych
+- **Zajęcia 6 (_2026-12-19_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 2h):** Przetwarzanie strumieniowe — Structured Streaming, okna czasowe, watermarki
+- **Zajęcia 7 (_2027-01-09_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 2h):** Hurtownia danych w chmurze — BigQuery, model kosztowy, partycjonowanie i klastrowanie
+- **Zajęcia 8 (_2027-01-23_ godz. 15:10 - 16:40 i 16:50 - 18:20 - 2h):** Big Data w praktyce: od danych do modelu — cechy na dużych danych, MLflow, bezpieczeństwo danych; **test końcowy**
 
 ## Zasady zaliczenia
 
