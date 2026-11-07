@@ -709,9 +709,9 @@ komórki nadpisze tabelę zamiast zgłaszać błąd.
 
 ## Zadanie 3 — Przychody krajów w TPC-H (6 pkt)
 
-**Czas:** maks. 45 minut
-**Środowisko:** Databricks Free Edition (notatnik, compute serverless)
-**Oddanie:** notatnik wyeksportowany jako `.ipynb` na Moodle (*File → Export →
+- **Czas:** maks. 45 minut
+- **Środowisko:** Databricks Free Edition (notatnik, compute serverless)
+- **Oddanie:** notatnik wyeksportowany jako `.ipynb` na Moodle (*File → Export →
 IPython Notebook*)
 
 Zadanie ma dwie części. Rób je po kolei i **pokaż mi wynik każdej części, gdy
