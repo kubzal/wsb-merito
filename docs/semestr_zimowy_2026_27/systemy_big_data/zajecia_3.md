@@ -432,7 +432,8 @@ należy do jednego z pięciu regionów.
 
     TPC-H jest generowany losowo z rozkładu jednostajnego, więc wszystkie kraje,
     lata i segmenty wyglądają bardzo podobnie. Różnice rzędu ułamka procenta to
-    szum, a nie trend. Nie zakładaj na tej podstawie firmy w Indonezji.
+    szum, a nie trend. Jeśli w Twoim rankingu któryś kraj wygrywa o 0,3%, nie
+    otwieraj tam jeszcze filii.
 
 ### Rozglądamy się po katalogu
 
