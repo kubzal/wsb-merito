@@ -14,7 +14,7 @@
 - **Zajęcia 1 (_2026-09-26_ godz. 15:10 - 16:40 - 2h):** Czym jest Data Science i jak wygląda workflow projektu; Jupyter Notebook; przypomnienie podstaw Pythona; numpy; wprowadzenie do pandas
 - **Zajęcia 2 (_2026-10-10_ godz. 15:10 - 16:40 - 2h):** Wczytywanie danych z różnych źródeł — CSV, internet, Excel, JSON; diagnoza zbioru; duplikaty, ujednolicanie tekstu, konwersja typów i dat; braki danych i wartości niemożliwe
 - **Zajęcia 3 (_2026-10-24_ godz. 15:10 - 16:40 - 2h):** Eksploracyjna analiza danych (EDA); matplotlib i seaborn; histogram, wykres pudełkowy, słupkowy i punktowy; porównywanie grup i tabele krzyżowe; korelacja i mapa ciepła
-- **Zajęcia 4 (_2026-11-14_ godz. 15:10 - 16:40 - 2h)**
+- **Zajęcia 4 (_2026-11-14_ godz. 15:10 - 16:40 - 2h):** Grupowanie danych — `groupby`, `agg`, grupowanie po dwóch kolumnach i po przedziałach; łączenie tabel — `merge` i rodzaje złączeń; relacja jeden-do-wielu; jak nie zgubić ani nie rozmnożyć wierszy
 - **Zajęcia 5 (_2026-11-28_ godz. 15:10 - 16:40 - 2h)**
 - **Zajęcia 6 (_2026-12-12_ godz. 13:25 - 14:55 - 2h)**
 - **Zajęcia 7 (_2027-01-02_ godz. 15:10 - 16:40 - 2h)**
