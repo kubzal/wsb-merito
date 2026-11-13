@@ -1,0 +1,4288 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/zarzadzanie_big_data/zajecia_1/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../../archiwum/jakosc_aplikacji/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Zajęcia 1 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-1" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-tabs__dropdown-link">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../systemy_big_data/" class="md-tabs__dropdown-link">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dane-jako-zasob-firmy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dane jako zasób firmy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-przedmiocie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O przedmiocie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#big-data-z-perspektywy-firmy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Big Data z perspektywy firmy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Big Data z perspektywy firmy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dane-jako-aktywo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dane jako aktywo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dark-data-dane-ktorych-nikt-nie-uzywa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dark data — dane, których nikt nie używa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cykl-zycia-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cykl życia danych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kto-jest-kim-w-swiecie-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kto jest kim w świecie danych
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kto jest kim w świecie danych">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dojrzaosc-danych-w-organizacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dojrzałość danych w organizacji
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inwentaryzacja-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inwentaryzacja danych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sownik-biznesowy-i-jedno-zrodo-prawdy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Słownik biznesowy i jedno źródło prawdy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo-freshbox-w-colabie-i-duckdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo: FreshBox w Colabie i DuckDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo: FreshBox w Colabie i DuckDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pobranie-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pobranie danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pierwsze-spojrzenie-describe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pierwsze spojrzenie: DESCRIBE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statystyki-jednym-poleceniem-summarize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statystyki jednym poleceniem: SUMMARIZE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logi-aplikacji-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logi aplikacji: JSON
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel-ktorego-nie-wolno-ruszac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Excel, którego „nie wolno ruszać”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ilu-wasciwie-mamy-klientow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ilu właściwie mamy klientów?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-1-inwentaryzacja-danych-freshboxa-9-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1 — Inwentaryzacja danych FreshBoxa (9 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 1 — Inwentaryzacja danych FreshBoxa (9 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#twoje-miasto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Twoje miasto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-spis-zasobow-ok-30-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — spis zasobów (ok. 30 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-ilu-klientow-ma-twoje-miasto-ok-35-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — ilu klientów ma Twoje miasto (ok. 35 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-9-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (9 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-1">Zajęcia 1<a class="headerlink" href="#zajecia-1" title="Permanent link">#</a></h1>
+<h2 id="dane-jako-zasob-firmy">Dane jako zasób firmy<a class="headerlink" href="#dane-jako-zasob-firmy" title="Permanent link">#</a></h2>
+<p>Poniedziałek, 9:00, zebranie zarządu FreshBoxa. Prezes pyta, ilu firma ma
+klientów. Dyrektor obsługi klienta mówi: „43 tysiące”. Dyrektor sprzedaży:
+„38 tysięcy”. Szef produktu: „21 tysięcy”. Każdy ma rację — i każdy liczy co
+innego. Zebranie kończy się po godzinie bez odpowiedzi, a prezes prosi dział
+danych, żeby „to wreszcie uporządkował”. Tym działem danych jesteś Ty.</p>
+<p>Na tym przedmiocie nie uczymy się analizować danych — uczymy się <strong>zarządzać
+nimi jak zasobem firmy</strong>. Zaczynamy od podstaw: co to znaczy, że dane są
+zasobem, kto za nie odpowiada i jak sprawdzić, co w ogóle mamy.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>wyjaśnić, czym jest Big Data z perspektywy firmy, a nie technologii — jako
+  źródło wartości i źródło ryzyka,</li>
+<li>opisać cykl życia danych i wskazać decyzje zarządcze na każdym jego etapie,</li>
+<li>rozróżnić role w obszarze danych: właściciela, stewarda, inżyniera,
+  analityka, inspektora ochrony danych,</li>
+<li>ocenić dojrzałość organizacji w zarządzaniu danymi,</li>
+<li>przeprowadzić inwentaryzację zasobów danych,</li>
+<li>wyjaśnić, po co firmie słownik biznesowy i jedno źródło prawdy, i napisać
+  definicję wskaźnika.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Przykłady z zajęć w Colabie</p>
+<p>Demo z dzisiejszych zajęć jest też w gotowym notatniku. Otwórz go
+i uruchamiaj komórki po kolei, czytając materiał. Żeby zachować swoje zmiany,
+zapisz kopię: <strong>Plik → Zapisz kopię na Dysku</strong>.</p>
+<p><a href="https://colab.research.google.com/github/kubzal/wsb-merito/blob/main/notebooks/semestr_zimowy_2026_27/zarzadzanie_big_data/zajecia_1.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</div>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O przedmiocie i firmie FreshBox</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Big Data z perspektywy firmy</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>Cykl życia danych</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Kto jest kim w świecie danych; dojrzałość danych</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Inwentaryzacja danych, słownik biznesowy, jedno źródło prawdy</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Demo: FreshBox w Colabie i DuckDB</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>Przerwa</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 1</strong></td>
+<td><strong>65 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="o-przedmiocie">O przedmiocie<a class="headerlink" href="#o-przedmiocie" title="Permanent link">#</a></h2>
+<p>Przez cały semestr pracujesz w dziale danych <strong>FreshBoxa</strong> — fikcyjnej firmy,
+która dowozi zakupy spożywcze w ośmiu polskich miastach. FreshBox ma sklep
+internetowy, aplikację mobilną, infolinię i kurierów. Ma też wszystkie problemy
+z danymi, jakie ma prawdziwa firma tej wielkości: kilka systemów, które nie
+wiedzą o sobie nawzajem, Excela „którego nie wolno ruszać” i zarząd, który
+chciałby podejmować decyzje na podstawie liczb, ale nie wie, którym liczbom
+wierzyć.</p>
+<p>Na każdych zajęciach zarząd zadaje jedno pytanie:</p>
+<table>
+<thead>
+<tr>
+<th>Zajęcia</th>
+<th>Pytanie zarządu</th>
+<th>Temat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>„Ile właściwie mamy klientów?”</td>
+<td>dane jako zasób, inwentaryzacja, definicje</td>
+</tr>
+<tr>
+<td>2</td>
+<td>„Ile nas to kosztuje?”</td>
+<td>architektura i ekonomia Big Data</td>
+</tr>
+<tr>
+<td>3</td>
+<td>„Czy możemy ufać tym liczbom?”</td>
+<td>jakość danych</td>
+</tr>
+<tr>
+<td>4</td>
+<td>„Kto za to odpowiada i kto może to oglądać?”</td>
+<td>data governance</td>
+</tr>
+<tr>
+<td>5</td>
+<td>„Czy wolno nam to trzymać?”</td>
+<td>RODO i prywatność</td>
+</tr>
+<tr>
+<td>6</td>
+<td>„Co dalej?”</td>
+<td>strategia danych + test</td>
+</tr>
+</tbody>
+</table>
+<p>Narzędzia są darmowe i działają w przeglądarce: <strong>Google Colab</strong> z bazą
+<strong>DuckDB</strong> (dziś i na większości zajęć), <strong>BigQuery Sandbox</strong> (zajęcia 2)
+i <strong>Databricks Free Edition</strong> (zajęcia 4). Zasady zaliczenia znajdziesz na
+<a href="../#zasady-zaliczenia">stronie przedmiotu</a>. W skrócie: 50 pkt za sześć
+zadań na zajęciach i 50 pkt za test końcowy.</p>
+<div class="admonition info">
+<p class="admonition-title">Dlaczego DuckDB</p>
+<p>DuckDB to baza danych, która działa wewnątrz notatnika i czyta pliki CSV,
+Parquet, JSON prosto z dysku — bez serwera, bez instalowania czegokolwiek
+i bez ładowania danych. Piszesz zwykły SQL. Kilka milionów wierszy liczy
+w ułamku sekundy.</p>
+</div>
+<hr />
+<h2 id="big-data-z-perspektywy-firmy">Big Data z perspektywy firmy<a class="headerlink" href="#big-data-z-perspektywy-firmy" title="Permanent link">#</a></h2>
+<p>Na zajęciach z technologii Big Data opisuje się zwykle modelem <strong>5V</strong>. Z punktu
+widzenia zarządu każda z tych cech to jednocześnie szansa i koszt:</p>
+<table>
+<thead>
+<tr>
+<th>V</th>
+<th>Co oznacza</th>
+<th>Szansa dla firmy</th>
+<th>Koszt i ryzyko</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Volume</strong> (ilość)</td>
+<td>dużo danych</td>
+<td>więcej szczegółów o klientach i procesach</td>
+<td>przechowywanie, przetwarzanie, kopie zapasowe — rachunek rośnie z każdym miesiącem</td>
+</tr>
+<tr>
+<td><strong>Velocity</strong> (szybkość)</td>
+<td>dane napływają ciągle</td>
+<td>reakcja w czasie rzeczywistym: wykrywanie oszustw, dynamiczne ceny</td>
+<td>systemy działające 24/7, dyżury, bardziej złożona architektura</td>
+</tr>
+<tr>
+<td><strong>Variety</strong> (różnorodność)</td>
+<td>tabele, logi, teksty, obrazy</td>
+<td>pełniejszy obraz klienta</td>
+<td>każdy format to inne narzędzia i inne kompetencje</td>
+</tr>
+<tr>
+<td><strong>Veracity</strong> (wiarygodność)</td>
+<td>dane bywają błędne i sprzeczne</td>
+<td>—</td>
+<td>złe decyzje podjęte na złych danych</td>
+</tr>
+<tr>
+<td><strong>Value</strong> (wartość)</td>
+<td>po co to wszystko</td>
+<td>lepsze decyzje, nowe produkty</td>
+<td>wartość nie pojawia się sama — trzeba za nią zapłacić</td>
+</tr>
+</tbody>
+</table>
+<p>Ostatni wiersz jest najważniejszy. <strong>Dane same w sobie nie mają wartości.</strong>
+Wartość powstaje dopiero wtedy, gdy ktoś na ich podstawie podejmie lepszą
+decyzję. Do tego czasu dane są wyłącznie kosztem: trzeba je przechowywać,
+chronić, utrzymywać i pilnować, żeby nie wyciekły.</p>
+<h3 id="dane-jako-aktywo">Dane jako aktywo<a class="headerlink" href="#dane-jako-aktywo" title="Permanent link">#</a></h3>
+<p>Mówi się, że „dane to nowa ropa”. To porównanie jest prawdziwe tylko
+w połowie. Jak ropa, dane trzeba wydobyć i przetworzyć, zanim będą do czegoś
+przydatne. W odróżnieniu od ropy:</p>
+<ul>
+<li><strong>nie zużywają się</strong> — ten sam zbiór może jednocześnie służyć finansom,
+  marketingowi i logistyce,</li>
+<li><strong>starzeją się</strong> — adres klienta sprzed pięciu lat jest wart mniej niż
+  wczorajszy, a czasem jest wręcz szkodliwy,</li>
+<li><strong>nie ma ich w bilansie</strong> — firma dokładnie wie, ile ma samochodów
+  dostawczych, ale zwykle nie wie, ile ma tabel z danymi klientów i kto z nich
+  korzysta,</li>
+<li><strong>mogą stać się zobowiązaniem</strong> — dane osobowe, których firma nie potrzebuje,
+  nie przynoszą zysku, a w razie wycieku przynoszą karę.</li>
+</ul>
+<h3 id="dark-data-dane-ktorych-nikt-nie-uzywa">Dark data — dane, których nikt nie używa<a class="headerlink" href="#dark-data-dane-ktorych-nikt-nie-uzywa" title="Permanent link">#</a></h3>
+<p>Duża część danych zbieranych przez firmy jest zapisywana „na wszelki wypadek”
+i nigdy więcej nie jest czytana: stare logi, kopie kopii, eksporty do Excela
+sprzed trzech lat, tabele po projektach, które już się skończyły. Nazywa się to
+<strong>dark data</strong>. Szacunki różnią się między źródłami, ale zgodnie mówią o <strong>ponad
+połowie</strong> wszystkich danych w typowej organizacji.</p>
+<p>Dark data kosztuje podwójnie: płacisz za jej przechowywanie i ponosisz ryzyko,
+bo nikt nie wie, co w niej jest. Dlatego pierwszym krokiem zarządzania danymi
+nie jest kupno nowej platformy, tylko <strong>inwentaryzacja</strong>: sprawdzenie, co
+właściwie mamy.</p>
+<hr />
+<h2 id="cykl-zycia-danych">Cykl życia danych<a class="headerlink" href="#cykl-zycia-danych" title="Permanent link">#</a></h2>
+<p>Każdy zbiór danych przechodzi przez te same etapy. Na każdym z nich ktoś
+podejmuje decyzję — świadomie albo nie.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>  POZYSKANIE ──► PRZECHOWYWANIE ──► PRZETWARZANIE ──► UDOSTĘPNIANIE ──► ARCHIWIZACJA ──► USUNIĘCIE
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  skąd i po co?   gdzie i za ile?   kto i jak liczy?  kto może czytać?  jak długo?        kiedy i czy
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                                                                                          naprawdę?
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Etap</th>
+<th>Pytanie zarządcze</th>
+<th>Przykład z FreshBoxa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pozyskanie</td>
+<td>Po co zbieramy te dane? Czy mamy na to zgodę?</td>
+<td>aplikacja zapisuje każde kliknięcie — czy ktoś tego potrzebuje?</td>
+</tr>
+<tr>
+<td>Przechowywanie</td>
+<td>Gdzie leżą, ile to kosztuje, kto ma dostęp?</td>
+<td>CRM, system sprzedażowy, logi aplikacji, Excel na dysku Ani</td>
+</tr>
+<tr>
+<td>Przetwarzanie</td>
+<td>Kto liczy wskaźniki i według jakiej definicji?</td>
+<td>trzy działy liczą „klientów” na trzy sposoby</td>
+</tr>
+<tr>
+<td>Udostępnianie</td>
+<td>Kto może zobaczyć dane i w jakiej postaci?</td>
+<td>czy marketing powinien widzieć numery telefonów?</td>
+</tr>
+<tr>
+<td>Archiwizacja</td>
+<td>Jak długo trzymamy dane i po co?</td>
+<td>logi aplikacji: 3 miesiące, zamówienia: rok, klienci: na zawsze?</td>
+</tr>
+<tr>
+<td>Usunięcie</td>
+<td>Kiedy usuwamy i czy na pewno ze wszystkich miejsc?</td>
+<td>konto „usunięte” w CRM nadal ma pełne dane osobowe</td>
+</tr>
+</tbody>
+</table>
+<p>Najczęściej zaniedbywany jest ostatni etap. Firmy chętnie zbierają dane, ale
+rzadko je usuwają — a od 2018 roku RODO wymaga, żeby dane osobowe były
+przechowywane <strong>nie dłużej, niż to konieczne</strong>. Wrócimy do tego na zajęciach 5.</p>
+<hr />
+<h2 id="kto-jest-kim-w-swiecie-danych">Kto jest kim w świecie danych<a class="headerlink" href="#kto-jest-kim-w-swiecie-danych" title="Permanent link">#</a></h2>
+<p>Dane bez właściciela to dane niczyje: wszyscy z nich korzystają, nikt nie
+odpowiada za ich jakość. Dlatego zarządzanie danymi zaczyna się od ról.</p>
+<table>
+<thead>
+<tr>
+<th>Rola</th>
+<th>Za co odpowiada</th>
+<th>Kto to zwykle jest</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CDO</strong> (<em>Chief Data Officer</em>)</td>
+<td>strategia danych całej firmy, budżet, priorytety</td>
+<td>członek zarządu lub dyrektor podlegający zarządowi</td>
+</tr>
+<tr>
+<td><strong>Właściciel danych</strong> (<em>data owner</em>)</td>
+<td>decyduje, kto ma dostęp, akceptuje definicje, odpowiada za jakość</td>
+<td>kierownik <strong>biznesowy</strong> — np. dyrektor sprzedaży dla danych o zamówieniach</td>
+</tr>
+<tr>
+<td><strong>Steward danych</strong> (<em>data steward</em>)</td>
+<td>pilnuje jakości i definicji na co dzień, odpowiada na pytania „co oznacza ta kolumna?”</td>
+<td>doświadczony pracownik działu, który zna dane od podszewki</td>
+</tr>
+<tr>
+<td><strong>Inżynier danych</strong></td>
+<td>systemy i pipeline'y: żeby dane dotarły na czas i w całości</td>
+<td>dział IT / danych</td>
+</tr>
+<tr>
+<td><strong>Analityk / data scientist</strong></td>
+<td>odpowiada na pytania biznesowe na podstawie danych</td>
+<td>dział danych albo działy biznesowe</td>
+</tr>
+<tr>
+<td><strong>Inspektor ochrony danych</strong> (IOD)</td>
+<td>zgodność z RODO, kontakt z UODO</td>
+<td>wymagany prawem w wielu firmach</td>
+</tr>
+<tr>
+<td><strong>Użytkownik biznesowy</strong></td>
+<td>korzysta z raportów i podejmuje decyzje</td>
+<td>wszyscy pozostali</td>
+</tr>
+</tbody>
+</table>
+<p>Najważniejsza i najczęściej źle rozumiana rola to <strong>właściciel danych</strong>.
+Właścicielem danych o zamówieniach <strong>nie jest</strong> dział IT, choć to on utrzymuje
+system sprzedażowy. IT jest <strong>opiekunem technicznym</strong> (<em>custodian</em>): dba, żeby
+system działał. Właścicielem jest biznes, bo to biznes wie, co dane znaczą, i to
+biznes ponosi skutki ich złej jakości.</p>
+<div class="admonition warning">
+<p class="admonition-title">„Dane należą do IT” — najczęstszy błąd</p>
+<p>Jeśli w firmie na pytanie „kto odpowiada za dane klientów?” wszyscy
+wskazują dział IT, to w praktyce nie odpowiada nikt. IT nie wie, czy
+klient „zablokowany” powinien być liczony jako aktywny. Wie to dział
+obsługi klienta.</p>
+</div>
+<h3 id="dojrzaosc-danych-w-organizacji">Dojrzałość danych w organizacji<a class="headerlink" href="#dojrzaosc-danych-w-organizacji" title="Permanent link">#</a></h3>
+<p>Firmy różnią się tym, jak bardzo dane są u nich uporządkowane. Istnieje wiele
+modeli dojrzałości (m.in. DAMA, Gartner, CMMI) — różnią się szczegółami, ale
+mają podobny szkielet:</p>
+<table>
+<thead>
+<tr>
+<th>Poziom</th>
+<th>Nazwa</th>
+<th>Jak to wygląda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Chaos</strong></td>
+<td>dane w Excelach i skrzynkach mailowych, każdy liczy po swojemu, „raport” to praca ręczna</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Raportowanie</strong></td>
+<td>jest hurtownia i raporty, ale definicje różnią się między działami</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Zarządzanie</strong></td>
+<td>są właściciele danych, słownik biznesowy, wspólne definicje kluczowych wskaźników</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Decyzje oparte na danych</strong></td>
+<td>jakość jest mierzona, dostęp kontrolowany, decyzje zarządu opierają się na wspólnych liczbach</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Dane jako produkt</strong></td>
+<td>zespoły udostępniają dane innym jak produkty: z opisem, gwarancją jakości i właścicielem</td>
+</tr>
+</tbody>
+</table>
+<p>FreshBox jest dziś gdzieś między poziomem 1 a 2. Na koniec semestru
+zaproponujemy, jak dojść do poziomu 3–4.</p>
+<hr />
+<h2 id="inwentaryzacja-danych">Inwentaryzacja danych<a class="headerlink" href="#inwentaryzacja-danych" title="Permanent link">#</a></h2>
+<p>Nie da się zarządzać czymś, o czym się nie wie. <strong>Inwentaryzacja danych</strong> to
+spis wszystkich zbiorów danych w firmie z podstawowymi informacjami o każdym:</p>
+<table>
+<thead>
+<tr>
+<th>Atrybut</th>
+<th>Pytanie</th>
+<th>Po co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nazwa i opis</td>
+<td>co to jest?</td>
+<td>żeby nowa osoba wiedziała, czego szukać</td>
+</tr>
+<tr>
+<td>system źródłowy</td>
+<td>skąd pochodzą?</td>
+<td>żeby wiedzieć, kogo pytać</td>
+</tr>
+<tr>
+<td>właściciel</td>
+<td>kto odpowiada?</td>
+<td>żeby było kogo pytać</td>
+</tr>
+<tr>
+<td>format, wolumen</td>
+<td>jak duże, w jakiej postaci?</td>
+<td>koszty, wybór narzędzi</td>
+</tr>
+<tr>
+<td>zakres dat, częstotliwość zmian</td>
+<td>od kiedy, jak często aktualizowane?</td>
+<td>czy można na tym polegać</td>
+</tr>
+<tr>
+<td>dane osobowe</td>
+<td>czy są, jakie?</td>
+<td>RODO, bezpieczeństwo</td>
+</tr>
+<tr>
+<td>konsumenci</td>
+<td>kto z tego korzysta?</td>
+<td>co się zepsuje, jeśli zbiór zniknie</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Inwentaryzacja a RODO</p>
+<p>RODO wymaga od większości firm prowadzenia <strong>rejestru czynności
+przetwarzania</strong> danych osobowych — w praktyce to inwentaryzacja ograniczona do
+danych osobowych. Firma, która ma inwentaryzację danych, ma też połowę tego
+rejestru za darmo.</p>
+</div>
+<hr />
+<h2 id="sownik-biznesowy-i-jedno-zrodo-prawdy">Słownik biznesowy i jedno źródło prawdy<a class="headerlink" href="#sownik-biznesowy-i-jedno-zrodo-prawdy" title="Permanent link">#</a></h2>
+<p>Wróćmy do zebrania zarządu. Trzy liczby klientów wzięły się stąd, że każdy
+dział liczy w <strong>swoim</strong> systemie i według <strong>swojej</strong> definicji:</p>
+<ul>
+<li>obsługa klienta liczy <strong>konta w CRM</strong>, które nie są usunięte,</li>
+<li>sprzedaż liczy klientów, którzy <strong>coś kupili</strong> w ostatnim czasie,</li>
+<li>produkt liczy klientów, którzy <strong>logowali się do aplikacji</strong>.</li>
+</ul>
+<p>Żadna z tych liczb nie jest błędna. Błędem jest to, że wszystkie nazywają się
+„klienci”. Lekarstwem jest <strong>słownik biznesowy</strong> (<em>business glossary</em>): spis
+pojęć, z których korzysta firma, z jedną, zatwierdzoną definicją każdego.</p>
+<p>Przykładowy wpis:</p>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Wartość</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pojęcie</strong></td>
+<td>Aktywny klient</td>
+</tr>
+<tr>
+<td><strong>Definicja</strong></td>
+<td>klient, który w ciągu ostatnich 90 dni złożył co najmniej jedno nieanulowane zamówienie</td>
+</tr>
+<tr>
+<td><strong>Źródło danych</strong></td>
+<td>system sprzedażowy, tabela zamówień</td>
+</tr>
+<tr>
+<td><strong>Sposób liczenia</strong></td>
+<td>liczba różnych <code>id_klienta</code> w zamówieniach o statusie innym niż anulowane, z ostatnich 90 dni</td>
+</tr>
+<tr>
+<td><strong>Właściciel</strong></td>
+<td>dyrektor sprzedaży</td>
+</tr>
+<tr>
+<td><strong>Częstotliwość</strong></td>
+<td>codziennie, stan na koniec dnia</td>
+</tr>
+<tr>
+<td><strong>Uwagi</strong></td>
+<td>nie obejmuje zamówień gości (bez konta)</td>
+</tr>
+</tbody>
+</table>
+<p>Słownik prowadzi do drugiej zasady: <strong>jedno źródło prawdy</strong> (<em>single source of
+truth</em>). Dla każdego kluczowego wskaźnika istnieje jedno miejsce, z którego się
+go liczy, i wszystkie raporty biorą go stamtąd. Jeśli finanse i sprzedaż
+podają różne przychody, to któryś z raportów nie korzysta ze źródła prawdy.</p>
+<div class="admonition tip">
+<p class="admonition-title">Wskaźnik bez definicji to opinia</p>
+<p>Zanim zaczniesz dyskutować o liczbie, zapytaj: „jak to jest policzone?”.
+W połowie przypadków okaże się, że rozmówcy liczą różne rzeczy.</p>
+</div>
+<hr />
+<h2 id="demo-freshbox-w-colabie-i-duckdb">Demo: FreshBox w Colabie i DuckDB<a class="headerlink" href="#demo-freshbox-w-colabie-i-duckdb" title="Permanent link">#</a></h2>
+<p>Robimy dziś pierwszy krok inwentaryzacji: sprawdzamy, jakie dane FreshBox ma
+w ogóle do dyspozycji. Dział IT przysłał nam pięć plików:</p>
+<table>
+<thead>
+<tr>
+<th>Plik</th>
+<th>Skąd</th>
+<th>Co zawiera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>klienci.csv</code></td>
+<td>CRM (obsługa klienta)</td>
+<td>dane klientów i status konta</td>
+</tr>
+<tr>
+<td><code>zamowienia.parquet</code></td>
+<td>system sprzedażowy</td>
+<td>zamówienia z ostatnich 12 miesięcy</td>
+</tr>
+<tr>
+<td><code>zdarzenia_aplikacji.jsonl.gz</code></td>
+<td>aplikacja mobilna</td>
+<td>logi: logowania, wyświetlenia produktów, koszyk</td>
+</tr>
+<tr>
+<td><code>reklamacje.xlsx</code></td>
+<td>Excel obsługi klienta</td>
+<td>reklamacje wpisywane ręcznie</td>
+</tr>
+<tr>
+<td><code>miasta.csv</code></td>
+<td>słownik</td>
+<td>miasta, w których działa FreshBox</td>
+</tr>
+</tbody>
+</table>
+<p>„Dziś” w FreshBoxie to <strong>31 października 2026</strong> — na ten dzień wygenerowano dane.</p>
+<h3 id="pobranie-danych">Pobranie danych<a class="headerlink" href="#pobranie-danych" title="Permanent link">#</a></h3>
+<p>W Colabie najpierw aktualizujemy DuckDB:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="o">-</span><span class="n">U</span> <span class="n">duckdb</span>
+</span></code></pre></div>
+<p>Pobieramy pliki do folderu <code>freshbox</code> — to nasz mały „data lake”:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">duckdb</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/zarzadzanie_big_data/dane/"</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">PLIKI</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"klienci.csv"</span><span class="p">,</span> <span class="s2">"zamowienia.parquet"</span><span class="p">,</span> <span class="s2">"zdarzenia_aplikacji.jsonl.gz"</span><span class="p">,</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>         <span class="s2">"reklamacje.xlsx"</span><span class="p">,</span> <span class="s2">"miasta.csv"</span><span class="p">]</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">"freshbox"</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="k">for</span> <span class="n">plik</span> <span class="ow">in</span> <span class="n">PLIKI</span><span class="p">:</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">URL</span> <span class="o">+</span> <span class="n">plik</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"freshbox/</span><span class="si">{</span><span class="n">plik</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="k">for</span> <span class="n">plik</span> <span class="ow">in</span> <span class="n">PLIKI</span><span class="p">:</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">plik</span><span class="si">:</span><span class="s2">30</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="s1">'freshbox/'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">plik</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1e6</span><span class="si">:</span><span class="s2">6.1f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>klienci.csv                       6.1 MB
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>zamowienia.parquet                5.9 MB
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>zdarzenia_aplikacji.jsonl.gz     10.0 MB
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>reklamacje.xlsx                   0.1 MB
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>miasta.csv                        0.0 MB
+</span></code></pre></div>
+<p>Zauważ, że zamówienia są w Parquecie — formacie kolumnowym, skompresowanym.
+Tabela zamówień ma ponad 400 tysięcy wierszy, a zajmuje mniej niż CSV
+z 50 tysiącami klientów. Ile to oznacza w pieniądzach, policzymy na zajęciach 2.</p>
+<h3 id="pierwsze-spojrzenie-describe">Pierwsze spojrzenie: <code>DESCRIBE</code><a class="headerlink" href="#pierwsze-spojrzenie-describe" title="Permanent link">#</a></h3>
+<p>DuckDB czyta plik bezpośrednio — wystarczy podać jego nazwę w <code>FROM</code>. Na
+początek: jakie kolumny ma tabela klientów?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"DESCRIBE SELECT * FROM 'freshbox/klienci.csv'"</span><span class="p">)</span><span class="o">.</span><span class="n">project</span><span class="p">(</span><span class="s2">"column_name, column_type"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>┌──────────────────┬─────────────┐
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>│   column_name    │ column_type │
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>├──────────────────┼─────────────┤
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>│ id_klienta       │ BIGINT      │
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>│ imie             │ VARCHAR     │
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>│ nazwisko         │ VARCHAR     │
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>│ email            │ VARCHAR     │
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>│ telefon          │ BIGINT      │
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>│ data_urodzenia   │ DATE        │
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>│ plec             │ VARCHAR     │
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>│ miasto           │ VARCHAR     │
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>│ kod_pocztowy     │ VARCHAR     │
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>│ data_rejestracji │ TIMESTAMP   │
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>│ zgoda_marketing  │ VARCHAR     │
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>│ status_konta     │ VARCHAR     │
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>│ data_usuniecia   │ DATE        │
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>└──────────────────┴─────────────┘
+</span></code></pre></div>
+<p>Już na tym etapie widać dwie rzeczy ważne dla zarządzania:</p>
+<ul>
+<li>to są <strong>dane osobowe</strong> — imię, nazwisko, e-mail, telefon, data urodzenia,</li>
+<li>jest kolumna <code>data_usuniecia</code>. Skoro klient został „usunięty”, to dlaczego
+  jego dane nadal tu są?</li>
+</ul>
+<p>DuckDB sam zgadł typy kolumn. Telefon uznał za liczbę (<code>BIGINT</code>) — dla numeru
+telefonu to zły pomysł, bo na liczbach można liczyć średnią, a na telefonach nie.</p>
+<h3 id="statystyki-jednym-poleceniem-summarize">Statystyki jednym poleceniem: <code>SUMMARIZE</code><a class="headerlink" href="#statystyki-jednym-poleceniem-summarize" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="s2">SELECT column_name, column_type, min, max, approx_unique, null_percentage</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="s2">FROM (SUMMARIZE SELECT * FROM 'freshbox/zamowienia.parquet')</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>┌────────────────┬──────────────┬─────────────────────┬─────────────────────┬───────────────┬─────────────────┐
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>│  column_name   │ column_type  │         min         │         max         │ approx_unique │ null_percentage │
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>├────────────────┼──────────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────┤
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>│ id_zamowienia  │ BIGINT       │ 5000001             │ 5407189             │        434321 │            0.00 │
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>│ ts_zamowienia  │ TIMESTAMP_NS │ 2025-11-01 00:01:52 │ 2026-10-31 23:58:26 │        409992 │            0.00 │
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>│ id_klienta     │ BIGINT       │ 100001              │ 150000              │         36519 │            2.91 │
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>│ miasto         │ VARCHAR      │ Gdańsk              │ Łódź                │             8 │            0.00 │
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>│ kanal          │ VARCHAR      │ aplikacja           │ www                 │             3 │            0.00 │
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>│ wartosc_brutto │ DOUBLE       │ 12.92               │ 2551.18             │         51832 │            0.00 │
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>│ koszt_dostawy  │ DOUBLE       │ 0.0                 │ 9.99                │             2 │            0.00 │
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>│ status         │ VARCHAR      │ ANUL                │ zwrot               │             6 │            0.00 │
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>│ id_kuriera     │ INTEGER      │ 7001                │ 14025               │           196 │            0.00 │
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>└────────────────┴──────────────┴─────────────────────┴─────────────────────┴───────────────┴─────────────────┘
+</span></code></pre></div>
+<p><code>SUMMARIZE</code> to szybka inwentaryzacja jednej tabeli: zakres dat (od 1 listopada
+2025 do 31 października 2026 — dokładnie rok), liczba różnych wartości
+i odsetek braków. Prawie 3% zamówień nie ma <code>id_klienta</code>. Kim są ci klienci?
+<code>approx_unique</code> to liczba <strong>przybliżona</strong> — DuckDB szacuje ją, żeby było szybko.</p>
+<p>Kolumna <code>status</code> ma 6 różnych wartości. Zobaczmy jakie:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="s2">SELECT status, COUNT(*) AS liczba</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="s2">FROM 'freshbox/zamowienia.parquet'</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="s2">GROUP BY status</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="s2">ORDER BY liczba DESC</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>┌──────────────┬────────┐
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>│    status    │ liczba │
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>├──────────────┼────────┤
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>│ dostarczone  │ 375852 │
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>│ cancelled    │  10384 │
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>│ anulowane    │   9518 │
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>│ zwrot        │   7733 │
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>│ ANUL         │   2502 │
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>│ w_realizacji │   1200 │
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>└──────────────┴────────┘
+</span></code></pre></div>
+<p>Anulowane zamówienie zapisano na <strong>trzy sposoby</strong>: <code>anulowane</code>, <code>cancelled</code>
+i <code>ANUL</code> — bo zamówienia spływają z trzech kanałów (www, aplikacja, infolinia),
+a każdy budował inny zespół. Ktoś, kto policzy przychód z wykluczeniem tylko
+statusu <code>anulowane</code>, zawyży wynik i nawet się nie zorientuje.</p>
+<h3 id="logi-aplikacji-json">Logi aplikacji: JSON<a class="headerlink" href="#logi-aplikacji-json" title="Permanent link">#</a></h3>
+<p>Aplikacja zapisuje zdarzenia w formacie <strong>JSON lines</strong> — jeden obiekt JSON na
+linię — spakowanym gzipem. DuckDB czyta go tak samo jak CSV:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"SELECT * FROM 'freshbox/zdarzenia_aplikacji.jsonl.gz' LIMIT 3"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>┌─────────────────────┬─────────┬────────────┬─────────────┬───┬──────────────────┬──────────┬─────────────┬─────────┐
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>│         ts          │   typ   │ id_klienta │    sesja    │ … │ wersja_aplikacji │  miasto  │ id_produktu │  email  │
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>├─────────────────────┼─────────┼────────────┼─────────────┼───┼──────────────────┼──────────┼─────────────┼─────────┤
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>│ 2026-08-01 00:00:15 │ login   │     147167 │ sa98cb3fb07 │ … │ 4.0.3            │ Warszawa │        NULL │ NULL    │
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>│ 2026-08-01 00:00:50 │ login   │     145080 │ s8144800215 │ … │ 4.0.3            │ Katowice │        NULL │ NULL    │
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>│ 2026-08-01 00:01:08 │ login   │     106377 │ s4dc6ad009f │ … │ 4.0.3            │ Wrocław  │        NULL │ NULL    │
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>└─────────────────────┴─────────┴────────────┴─────────────┴───┴──────────────────┴──────────┴─────────────┴─────────┘
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  3 rows                                                                                         9 columns (8 shown)
+</span></code></pre></div>
+<p>Ostatnia kolumna to <code>email</code>. W logach aplikacji, czyli w danych, które czyta
+zespół produktu, analitycy i każdy, kto ma dostęp do logów. W pierwszych wierszach
+jest pusta — jak często nie jest i skąd się tam wzięła, sprawdzimy na zajęciach 5.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="s2">SELECT typ, COUNT(*) AS liczba, MIN(ts) AS od, MAX(ts) AS do</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="s2">FROM 'freshbox/zdarzenia_aplikacji.jsonl.gz'</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="s2">GROUP BY typ</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="s2">ORDER BY liczba DESC</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>┌───────────────────────┬────────┬─────────────────────┬─────────────────────┐
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>│          typ          │ liczba │         od          │         do          │
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>├───────────────────────┼────────┼─────────────────────┼─────────────────────┤
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>│ wyswietlenie_produktu │ 484785 │ 2026-08-01 00:01:17 │ 2026-10-31 23:59:52 │
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>│ login                 │ 200633 │ 2026-08-01 00:00:15 │ 2026-10-31 23:59:32 │
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>│ dodanie_do_koszyka    │  69669 │ 2026-08-01 00:04:09 │ 2026-10-31 23:59:16 │
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>└───────────────────────┴────────┴─────────────────────┴─────────────────────┘
+</span></code></pre></div>
+<p>Logi zaczynają się 1 sierpnia, czyli obejmują <strong>tylko trzy miesiące</strong>.
+Starsze zespół aplikacji kasuje, bo „za dużo miejsca zajmowały”. To też jest
+decyzja zarządcza (retencja), tylko że nikt jej świadomie nie podjął.</p>
+<h3 id="excel-ktorego-nie-wolno-ruszac">Excel, którego „nie wolno ruszać”<a class="headerlink" href="#excel-ktorego-nie-wolno-ruszac" title="Permanent link">#</a></h3>
+<p>Reklamacje obsługa klienta prowadzi w Excelu. Nie ma ich w żadnym systemie —
+to klasyczne <strong>shadow IT</strong>: dane, o których dział IT nie wie i za które nikt
+formalnie nie odpowiada. Excela czytamy przez pandas:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">"freshbox/reklamacje.xlsx"</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>  REKLAMACJE 2026 — plik prowadzi Ania K. (NIE RUSZAĆ, NIE KASOWAĆ!!!)  ... Unnamed: 6
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>0                                                NaN                    ...        NaN
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>1                                    Data zgłoszenia                    ...    Przyjął
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>2                                2026-01-04 00:00:00                    ...         PW
+</span></code></pre></div>
+<p>Nad tabelą jest tytuł i pusty wiersz, więc nagłówek zaczyna się w trzecim
+wierszu. Pomijamy dwa pierwsze:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">reklamacje</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">"freshbox/reklamacje.xlsx"</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">reklamacje</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></code></pre></div>
+<p>DuckDB potrafi pytać także o DataFrame z pandas — wystarczy podać nazwę
+zmiennej w <code>FROM</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="s2">SELECT COUNT(*) AS reklamacje, COUNT(DISTINCT Miasto) AS rozne_miasta</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="s2">FROM reklamacje</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>┌────────────┬──────────────┐
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>│ reklamacje │ rozne_miasta │
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>├────────────┼──────────────┤
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>│       2600 │           28 │
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>└────────────┴──────────────┘
+</span></code></pre></div>
+<p>FreshBox działa w 8 miastach, a w kolumnie <code>Miasto</code> jest 28 różnych wartości.
+Jak zapisano Warszawę?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="s2">SELECT '"' || Miasto || '"' AS miasto, COUNT(*) AS liczba</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="s2">FROM reklamacje</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="s2">WHERE Miasto ILIKE 'w%' AND Miasto NOT ILIKE 'wro%'</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="s2">GROUP BY Miasto</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="s2">ORDER BY liczba DESC</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>┌─────────────┬────────┐
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>│   miasto    │ liczba │
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>├─────────────┼────────┤
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>│ "Warszawa"  │    157 │
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>│ "Warszawa " │    137 │
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>│ "Wwa"       │    136 │
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>│ "WAW"       │    128 │
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>│ "warszawa"  │    125 │
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>└─────────────┴────────┘
+</span></code></pre></div>
+<p>Pięć wariantów, w tym jeden ze spacją na końcu — niewidoczną, dopóki nie
+otoczymy nazwy cudzysłowami. Ręcznie prowadzony plik nie ma słownika ani
+walidacji, więc każdy wpisuje po swojemu.</p>
+<h3 id="ilu-wasciwie-mamy-klientow">Ilu właściwie mamy klientów?<a class="headerlink" href="#ilu-wasciwie-mamy-klientow" title="Permanent link">#</a></h3>
+<p>Teraz pytanie prezesa — na razie dla całej firmy i bez wchodzenia w szczegóły
+definicji:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="s2">SELECT 'CRM — wszystkie konta' AS zrodlo, COUNT(*) AS klienci</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="s2">FROM 'freshbox/klienci.csv'</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="s2">UNION ALL</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="s2">SELECT 'CRM — konta aktywne', COUNT(*)</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="s2">FROM 'freshbox/klienci.csv' WHERE status_konta = 'aktywne'</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="s2">UNION ALL</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="s2">SELECT 'Sprzedaż — zamówili w ciągu roku', COUNT(DISTINCT id_klienta)</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="s2">FROM 'freshbox/zamowienia.parquet'</span>
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="s2">UNION ALL</span>
+</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="s2">SELECT 'Aplikacja — logowali się w 3 mies.', COUNT(DISTINCT id_klienta)</span>
+</span><span id="__span-21-12"><a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="s2">FROM 'freshbox/zdarzenia_aplikacji.jsonl.gz' WHERE typ = 'login'</span>
+</span><span id="__span-21-13"><a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>┌────────────────────────────────────┬─────────┐
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>│               zrodlo               │ klienci │
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>├────────────────────────────────────┼─────────┤
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>│ CRM — wszystkie konta              │   49494 │
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>│ CRM — konta aktywne                │   42936 │
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>│ Sprzedaż — zamówili w ciągu roku   │   38174 │
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>│ Aplikacja — logowali się w 3 mies. │   21522 │
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>└────────────────────────────────────┴─────────┘
+</span></code></pre></div>
+<p>Cztery liczby, od 21 do 49 tysięcy. <code>COUNT(DISTINCT id_klienta)</code> liczy
+<strong>różnych</strong> klientów i pomija puste <code>id_klienta</code>.</p>
+<p>Różnice nie wynikają tylko z definicji. Sprawdźmy, czy wszyscy klienci
+z systemu sprzedażowego są w CRM. <code>ANTI JOIN</code> zwraca wiersze z lewej tabeli,
+które <strong>nie mają</strong> pary w prawej:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="s2">SELECT COUNT(DISTINCT z.id_klienta) AS klienci_spoza_crm, COUNT(*) AS ich_zamowienia</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="s2">FROM 'freshbox/zamowienia.parquet' z</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="s2">ANTI JOIN 'freshbox/klienci.csv' k ON z.id_klienta = k.id_klienta</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="s2">WHERE z.id_klienta IS NOT NULL</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>┌───────────────────┬────────────────┐
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>│ klienci_spoza_crm │ ich_zamowienia │
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>├───────────────────┼────────────────┤
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>│               369 │           3643 │
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>└───────────────────┴────────────────┘
+</span></code></pre></div>
+<p>369 klientów złożyło w tym roku ponad 3,6 tysiąca zamówień, a w CRM ich nie ma.
+Dział IT wyjaśnia, że „coś się zgubiło przy migracji CRM w 2024 roku”. Do tego
+dochodzą zamówienia bez żadnego klienta:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="s2">SELECT kanal, COUNT(*) AS zamowienia_gosci</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="s2">FROM 'freshbox/zamowienia.parquet'</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="s2">WHERE id_klienta IS NULL</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="s2">GROUP BY kanal</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<p>To zakupy <strong>gości</strong> — bez zakładania konta, tylko przez stronę www. Czy gość to
+klient? Dla działu sprzedaży tak (zapłacił), dla CRM nie (nie ma konta). Słownik
+biznesowy musi to rozstrzygnąć.</p>
+<p>I ostatnia ciekawostka: kto zamawiał w październiku?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="s2">SELECT k.status_konta, COUNT(DISTINCT z.id_klienta) AS klienci</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="s2">FROM 'freshbox/zamowienia.parquet' z</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="s2">JOIN 'freshbox/klienci.csv' k ON z.id_klienta = k.id_klienta</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="s2">WHERE z.ts_zamowienia &gt;= DATE '2026-10-01'</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="s2">GROUP BY k.status_konta</span>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="s2">ORDER BY klienci DESC</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="s2">"""</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>┌──────────────┬─────────┐
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>│ status_konta │ klienci │
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>├──────────────┼─────────┤
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>│ aktywne      │   17729 │
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>│ zablokowane  │     533 │
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>│ usuniete     │     288 │
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>└──────────────┴─────────┘
+</span></code></pre></div>
+<p>Ponad 500 klientów, których CRM uważa za <strong>zablokowanych</strong>, normalnie zamawia.
+Okazuje się, że blokada w CRM (np. za nieopłacone zamówienie) nie jest
+przekazywana do systemu sprzedażowego. Systemy nie wiedzą o sobie nawzajem —
+a to już problem procesu, a nie danych.</p>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zapytać o plik CSV / Parquet / JSON</td>
+<td><code>duckdb.sql("SELECT * FROM 'freshbox/plik.csv'")</code></td>
+</tr>
+<tr>
+<td>zapytać o DataFrame z pandas</td>
+<td><code>duckdb.sql("SELECT * FROM nazwa_zmiennej")</code></td>
+</tr>
+<tr>
+<td>kolumny i ich typy</td>
+<td><code>duckdb.sql("DESCRIBE SELECT * FROM 'plik'")</code></td>
+</tr>
+<tr>
+<td>statystyki wszystkich kolumn</td>
+<td><code>duckdb.sql("SUMMARIZE SELECT * FROM 'plik'")</code></td>
+</tr>
+<tr>
+<td>liczba wierszy i kolumn</td>
+<td><code>duckdb.sql("SELECT * FROM 'plik'").shape</code></td>
+</tr>
+<tr>
+<td>nazwy kolumn</td>
+<td><code>duckdb.sql("SELECT * FROM 'plik'").columns</code></td>
+</tr>
+<tr>
+<td>jedna liczba jako zmienna Pythona</td>
+<td><code>duckdb.sql("SELECT COUNT(*) FROM 'plik'").fetchall()[0][0]</code></td>
+</tr>
+<tr>
+<td>wynik jako DataFrame</td>
+<td><code>duckdb.sql("...").df()</code></td>
+</tr>
+<tr>
+<td>najmniejsza i największa data</td>
+<td><code>SELECT MIN(kol), MAX(kol) FROM 'plik'</code></td>
+</tr>
+<tr>
+<td>liczba różnych klientów (bez pustych)</td>
+<td><code>COUNT(DISTINCT id_klienta)</code></td>
+</tr>
+<tr>
+<td>zakres dat</td>
+<td><code>WHERE ts &gt;= TIMESTAMP '2026-08-02'</code></td>
+</tr>
+<tr>
+<td>warunek „jedna z wartości”</td>
+<td><code>WHERE status IN ('a', 'b', 'c')</code> / <code>NOT IN (...)</code></td>
+</tr>
+<tr>
+<td>wiersze bez pary w drugiej tabeli</td>
+<td><code>FROM a ANTI JOIN b ON a.id = b.id</code></td>
+</tr>
+<tr>
+<td>zmienna Pythona w zapytaniu</td>
+<td><code>duckdb.sql(f"... WHERE miasto = '{MIASTO}'")</code></td>
+</tr>
+<tr>
+<td>rozmiar pliku</td>
+<td><code>os.path.getsize("freshbox/plik") / 1e6</code> (MB)</td>
+</tr>
+<tr>
+<td>Excel z tytułem nad tabelą</td>
+<td><code>pd.read_excel("plik.xlsx", skiprows=2)</code></td>
+</tr>
+<tr>
+<td>tabela z listy słowników</td>
+<td><code>pd.DataFrame([{"a": 1, "b": 2}, {"a": 3, "b": 4}])</code></td>
+</tr>
+</tbody>
+</table>
+<p>Zbiory na liczbach w Pythonie — przydadzą się w części 2 zadania:</p>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zbiór <code>id_klienta</code> z wyniku zapytania</td>
+<td><code>zbior = {r[0] for r in duckdb.sql("SELECT DISTINCT id_klienta ...").fetchall()}</code></td>
+</tr>
+<tr>
+<td>elementy w <code>a</code>, których nie ma w <code>b</code></td>
+<td><code>a - b</code></td>
+</tr>
+<tr>
+<td>elementy wspólne</td>
+<td><code>a &amp; b</code></td>
+</tr>
+<tr>
+<td>liczność zbioru</td>
+<td><code>len(a)</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-1-inwentaryzacja-danych-freshboxa-9-pkt">Zadanie 1 — Inwentaryzacja danych FreshBoxa (9 pkt)<a class="headerlink" href="#zadanie-1-inwentaryzacja-danych-freshboxa-9-pkt" title="Permanent link">#</a></h2>
+<p><strong>Czas:</strong> ok. 65 minut
+<strong>Środowisko:</strong> Google Colab (DuckDB)
+<strong>Oddanie:</strong> notatnik <code>.ipynb</code> na Moodle (<em>Plik → Pobierz → Pobierz plik .ipynb</em>)</p>
+<p>Zadanie ma dwie części. Rób je po kolei i <strong>pokaż mi wynik każdej części, gdy
+będzie gotowa</strong> — punktacja zależy od tego, ile zrobisz na zajęciach.</p>
+<h3 id="twoje-miasto">Twoje miasto<a class="headerlink" href="#twoje-miasto" title="Permanent link">#</a></h3>
+<p>Prezes zlecił inwentaryzację całej firmy, a kierownik Twojego miasta chce
+wiedzieć, ilu ma klientów. Miasto wybiera numer albumu. Pierwsze komórki
+notatnika:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="o">-</span><span class="n">U</span> <span class="n">duckdb</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">duckdb</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>                 <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="n">MIASTA</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Warszawa"</span><span class="p">,</span> <span class="s2">"Kraków"</span><span class="p">,</span> <span class="s2">"Wrocław"</span><span class="p">,</span> <span class="s2">"Poznań"</span><span class="p">,</span> <span class="s2">"Gdańsk"</span><span class="p">,</span> <span class="s2">"Łódź"</span><span class="p">,</span> <span class="s2">"Katowice"</span><span class="p">,</span> <span class="s2">"Lublin"</span><span class="p">]</span>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="n">MIASTO</span> <span class="o">=</span> <span class="n">MIASTA</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">8</span><span class="p">]</span>
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Moje miasto: </span><span class="si">{</span><span class="n">MIASTO</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>
+</span><span id="__span-29-13"><a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/zarzadzanie_big_data/dane/"</span>
+</span><span id="__span-29-14"><a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a><span class="n">PLIKI</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"klienci.csv"</span><span class="p">,</span> <span class="s2">"zamowienia.parquet"</span><span class="p">,</span> <span class="s2">"zdarzenia_aplikacji.jsonl.gz"</span><span class="p">,</span>
+</span><span id="__span-29-15"><a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>         <span class="s2">"reklamacje.xlsx"</span><span class="p">,</span> <span class="s2">"miasta.csv"</span><span class="p">]</span>
+</span><span id="__span-29-16"><a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">"freshbox"</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-29-17"><a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a><span class="k">for</span> <span class="n">plik</span> <span class="ow">in</span> <span class="n">PLIKI</span><span class="p">:</span>
+</span><span id="__span-29-18"><a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>    <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">URL</span> <span class="o">+</span> <span class="n">plik</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"freshbox/</span><span class="si">{</span><span class="n">plik</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-29-19"><a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>
+</span><span id="__span-29-20"><a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a><span class="n">DZIS</span> <span class="o">=</span> <span class="s2">"2026-10-31"</span>
+</span><span id="__span-29-21"><a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a><span class="n">OD_SPRZEDAZ</span> <span class="o">=</span> <span class="s2">"2026-08-02"</span>         <span class="c1"># ostatnie 90 dni</span>
+</span><span id="__span-29-22"><a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a><span class="n">OD_APLIKACJA</span> <span class="o">=</span> <span class="s2">"2026-10-02"</span>        <span class="c1"># ostatnie 30 dni</span>
+</span></code></pre></div>
+<p>Rozwiązania z cudzym miastem nie zaliczam.</p>
+<h3 id="czesc-1-spis-zasobow-ok-30-min">Część 1 — spis zasobów (ok. 30 min)<a class="headerlink" href="#czesc-1-spis-zasobow-ok-30-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Dla <strong>każdego z pięciu plików</strong> ustal: format, liczbę wierszy, liczbę kolumn,
+   rozmiar w MB oraz zakres dat (najwcześniejsza i najpóźniejsza data w głównej
+   kolumnie z datą). Zbierz wyniki w jednym DataFrame <code>inwentaryzacja</code> — jeden
+   wiersz na plik.</li>
+<li>Dodaj do niego trzy kolumny uzupełnione <strong>ręcznie</strong>, na podstawie tego, co
+   widzisz w danych: <code>wlasciciel</code> (który dział biznesowy powinien odpowiadać za
+   zbiór), <code>dane_osobowe</code> (jakie kolumny zawierają dane osobowe, albo „brak”),
+   <code>aktualizacja</code> (jak często zbiór się zmienia — zgadnij rozsądnie).</li>
+<li>W komórce Markdown wskaż <strong>dwa najbardziej ryzykowne</strong> zbiory i w 2–4
+   zdaniach uzasadnij dlaczego.</li>
+</ol>
+<h3 id="czesc-2-ilu-klientow-ma-twoje-miasto-ok-35-min">Część 2 — ilu klientów ma Twoje miasto (ok. 35 min)<a class="headerlink" href="#czesc-2-ilu-klientow-ma-twoje-miasto-ok-35-min" title="Permanent link">#</a></h3>
+<p>Trzy działy liczą „aktywnych klientów” w swoich systemach:</p>
+<table>
+<thead>
+<tr>
+<th>Dział</th>
+<th>Definicja</th>
+<th>Źródło</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Obsługa klienta</td>
+<td>konto ze statusem <code>aktywne</code>, miasto w CRM = Twoje miasto</td>
+<td><code>klienci.csv</code></td>
+</tr>
+<tr>
+<td>Sprzedaż</td>
+<td>co najmniej jedno <strong>nieanulowane</strong> zamówienie od <code>OD_SPRZEDAZ</code> do końca danych, dostarczane do Twojego miasta</td>
+<td><code>zamowienia.parquet</code></td>
+</tr>
+<tr>
+<td>Produkt</td>
+<td>co najmniej jedno zdarzenie <code>login</code> od <code>OD_APLIKACJA</code> do końca danych, miasto w aplikacji = Twoje miasto</td>
+<td><code>zdarzenia_aplikacji.jsonl.gz</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Policz liczbę aktywnych klientów w swoim mieście według każdej z trzech
+   definicji (licz różne <code>id_klienta</code>, pomijając puste).</li>
+<li>
+<p>Wyjaśnij liczbami, skąd biorą się różnice. Policz:</p>
+<ul>
+<li>ilu klientów aktywnych według <strong>sprzedaży</strong> nie jest aktywnych według
+  <strong>CRM</strong> — i rozbij ich na grupy: klienta nie ma w CRM, ma w CRM status inny
+  niż <code>aktywne</code>, jest w CRM aktywny, ale zapisany w innym mieście,</li>
+<li>ilu klientów aktywnych według <strong>aplikacji</strong> nie jest aktywnych według
+  <strong>sprzedaży</strong>.</li>
+</ul>
+</li>
+<li>
+<p>W komórce Markdown zaproponuj <strong>jeden wpis do słownika biznesowego</strong> dla
+   pojęcia „aktywny klient” (pojęcie, definicja, źródło, sposób liczenia,
+   właściciel, częstotliwość, uwagi — jak w przykładzie w notatkach). Może to
+   być jedna z trzech definicji albo Twoja własna. W 2–3 zdaniach uzasadnij,
+   dlaczego ta, a nie inne.</p>
+</li>
+</ol>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Ściągawka jest kilka sekcji wyżej — wszystkie potrzebne polecenia tam są.</li>
+<li>Część 1, punkt 1: dla Excela liczbę wierszy i kolumn weź z DataFrame
+  (<code>reklamacje.shape</code>), a nie z DuckDB. Główne kolumny z datą to:
+  <code>data_rejestracji</code>, <code>ts_zamowienia</code>, <code>ts</code>, <code>Data zgłoszenia</code>, <code>data_startu</code>.</li>
+<li>Część 1, punkt 1: nie musisz pisać pętli — pięć osobnych zapytań i ręcznie
+  zbudowana lista słowników to w zupełności dobre rozwiązanie.</li>
+<li>Część 2, punkt 1: zanim policzysz sprzedaż, przypomnij sobie z demo, ile jest
+  wariantów statusu „anulowane”.</li>
+<li>Część 2, punkt 2: najprościej pobrać trzy <strong>zbiory</strong> <code>id_klienta</code> do Pythona
+  i odejmować je od siebie (ściągawka na dole). Do rozbicia na grupy przyda się
+  <code>klienci.csv</code> z kolumnami <code>status_konta</code> i <code>miasto</code>.</li>
+<li>Część 2, punkt 2: sumy w rozbiciu muszą się zgadzać z liczbą klientów, których
+  rozbijasz. Sprawdź to w kodzie.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Na co patrzę przy ocenie</p>
+<p>W części 1 — na kompletność spisu i sensowność ręcznych kolumn (nie ma
+jednej dobrej odpowiedzi, ale „właściciel: IT” to zła odpowiedź). W części
+2 — na zgodność trzech liczb i rozbicia z moimi oraz na to, czy wpis do
+słownika jest na tyle precyzyjny, że dwie osoby policzą z niego tę samą
+liczbę.</p>
+</div>
+<h3 id="punktacja-9-pkt">Punktacja (9 pkt)<a class="headerlink" href="#punktacja-9-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>9 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>6 pkt</strong></td>
+<td>jedna z dwóch części zrobiona na zajęciach</td>
+</tr>
+<tr>
+<td><strong>3 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>2026-11-21</strong> (dzień przed kolejnymi zajęciami).</p>
+<div class="admonition danger">
+<p class="admonition-title">Serio, róbcie to na zajęciach</p>
+<p>Te same 65 minut pracy jest warte 9 pkt tu i teraz albo 3 pkt w domu. Przy
+sześciu zadaniach w semestrze to różnica kilkunastu punktów, czyli całej
+oceny.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
