@@ -192,10 +192,10 @@ Półtorej wizyty w miesiącu to dużo poniżej średniej, a ujemna waga razy uj
 dorzuca kolejne +0.65. Wiek (51 lat, powyżej średniej) trochę ryzyko obniżył.
 Tak model „tłumaczy się" ze swojej decyzji.
 
-### Sigmoida
+### Funkcja sigmoidalna
 
-Funkcja z kroku 2, `1 / (1 + e^(−z))`, nazywa się **sigmoidą** (*sigmoid*,
-od kształtu litery S). Zobaczmy ją:
+Funkcja z kroku 2, `1 / (1 + e^(−z))`, nazywa się **funkcją sigmoidalną**
+(*sigmoid*, od kształtu litery S), w skrócie — sigmoidą. Zobaczmy ją:
 
 ```python
 import matplotlib.pyplot as plt
@@ -204,12 +204,12 @@ z = np.linspace(-6, 6, 200)
 plt.plot(z, 1 / (1 + np.exp(-z)))
 plt.axhline(0.5, color="gray", linestyle="--")
 plt.axvline(0, color="gray", linestyle="--")
-plt.title("Sigmoida — z ważonej sumy robi prawdopodobieństwo")
+plt.title("Funkcja sigmoidalna — z ważonej sumy robi prawdopodobieństwo")
 plt.xlabel("z (ważona suma cech + bias)")
 plt.ylabel("prawdopodobieństwo klasy 1")
 ```
 
-![Wykres sigmoidy](obrazki/zajecia_4_sigmoida.png)
+![Wykres funkcji sigmoidalnej](obrazki/zajecia_4_sigmoida.png)
 
 | z | p | Znaczenie |
 |---|---|---|
@@ -228,15 +228,7 @@ odpowiada dokładnie z = 0.
 
 Narysujmy to, co właśnie policzyliśmy:
 
-```text
-  wejścia            wagi
-
-  wiek        ───  × −0.16  ──┐
-  oplata_mies ───  × +0.35  ──┤
-  staz_mies   ───  × −0.61  ──┼──▶  Σ + bias  ──▶  sigmoida  ──▶  p = 0.531
-  wizyty_mies ───  × −0.85  ──┤       (z)        (aktywacja)
-  zgloszenia  ───  × +0.42  ──┘
-```
+![Schemat sztucznego neuronu](obrazki/zajecia_4_neuron.png)
 
 To jest **sztuczny neuron**. Dostaje kilka liczb na wejściu, każdą mnoży przez
 jej wagę, sumuje, dodaje bias i przepuszcza wynik przez **funkcję aktywacji**.
