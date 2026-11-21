@@ -32,6 +32,7 @@ nav:
       - Metody analizy, przetwarzania i wizualizacji danych:
           - semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/index.md
           - semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_1.md
+          - semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_2.md
       - Systemy BIG DATA:
           - semestr_zimowy_2026_27/systemy_big_data/index.md
           - semestr_zimowy_2026_27/systemy_big_data/zajecia_1.md
@@ -47,6 +48,7 @@ nav:
       - Zarządzanie Big Data:
           - semestr_zimowy_2026_27/zarzadzanie_big_data/index.md
           - semestr_zimowy_2026_27/zarzadzanie_big_data/zajecia_1.md
+          - semestr_zimowy_2026_27/zarzadzanie_big_data/zajecia_2.md
   - Archiwum:
       - Jakość aplikacji:
           - archiwum/jakosc_aplikacji/index.md
