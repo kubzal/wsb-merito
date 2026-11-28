@@ -1,0 +1,3987 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science_w_pythonie/zajecia_6/">
+      
+      
+        <link rel="prev" href="../zajecia_5/">
+      
+      
+        <link rel="next" href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Zajęcia 6 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-6" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-tabs__dropdown-link">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../systemy_big_data/" class="md-tabs__dropdown-link">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mini-projekt-od-pytania-do-raportu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mini-projekt — od pytania do raportu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-wyglada-mini-projekt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak wygląda mini-projekt
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak wygląda mini-projekt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nowa-firma-meritoeats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nowa firma: MeritoEats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notatnik-jako-raport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notatnik jako raport
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytanie-i-diagnoza-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytanie i diagnoza danych
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pytanie i diagnoza danych">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#z-ogolnego-pytania-mierzalne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Z ogólnego pytania — mierzalne
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnoza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnoza
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czyszczenie-i-aczenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czyszczenie i łączenie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Czyszczenie i łączenie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czyszczenie-z-licznikiem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czyszczenie z licznikiem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aczenie-ze-sownikiem-restauracji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Łączenie ze słownikiem restauracji
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cechy-i-analiza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cechy i analiza
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cechy i analiza">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cechy-ktore-odpowiadaja-na-pytanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cechy, które odpowiadają na pytanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#co-wiaze-sie-z-ocena" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co wiąże się z oceną
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skad-sie-biora-spoznienia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skąd się biorą spóźnienia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wnioski-i-raport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wnioski i raport
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wnioski i raport">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#piec-elementow-dobrego-wniosku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pięć elementów dobrego wniosku
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-6-dlaczego-jedzenie-sie-spoznia-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6 — Dlaczego jedzenie się spóźnia (6 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 6 — Dlaczego jedzenie się spóźnia (6 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-dane-z-dwoch-miesiecy-ok-20-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — dane z dwóch miesięcy (ok. 20 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-twoja-kuchnia-ok-25-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — Twoja kuchnia (ok. 25 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (6 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-6">Zajęcia 6<a class="headerlink" href="#zajecia-6" title="Permanent link">#</a></h1>
+<h2 id="mini-projekt-od-pytania-do-raportu">Mini-projekt — od pytania do raportu<a class="headerlink" href="#mini-projekt-od-pytania-do-raportu" title="Permanent link">#</a></h2>
+<p>Przez pięć zajęć poznawałeś narzędzia jedno po drugim: wczytywanie,
+czyszczenie, wykresy, grupowanie, łączenie, budowanie cech. Każde zadanie
+ćwiczyło jedno z nich. W pracy nikt nie powie Ci, którego narzędzia użyć —
+dostaniesz pytanie, kilka plików i termin. Dziś robimy dokładnie to:
+<strong>mini-projekt analityczny</strong> od pytania do raportu, z nowymi danymi, których
+jeszcze nie widziałeś.</p>
+<p>Nowych funkcji prawie nie będzie. Nowe jest to, <strong>w jakiej kolejności</strong> i <strong>po
+co</strong> sięgasz po te, które znasz — i jak na końcu zamienić tabelki w kilka zdań,
+które przeczyta ktoś, kto nie zna Pythona.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>zamienić ogólne pytanie biznesowe na pytanie, na które da się odpowiedzieć
+  liczbami,</li>
+<li>przeprowadzić diagnozę nowego zbioru i zaplanować czyszczenie,</li>
+<li>połączyć kroki z poprzednich zajęć w jeden uporządkowany notatnik,</li>
+<li>odróżnić wynik, który odpowiada na pytanie, od wyniku, który tylko jest
+  ciekawy,</li>
+<li>napisać krótki raport z wnioskami, liczbami, rekomendacją i ograniczeniami.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Przykłady z zajęć w Colabie</p>
+<p>Cały materiał z tej strony jest też w gotowym notatniku — z kodem do
+uruchomienia. Otwórz go i uruchamiaj komórki po kolei, czytając materiał. Żeby zachować
+swoje zmiany, zapisz kopię: <strong>Plik → Zapisz kopię na Dysku</strong>.</p>
+<p><a href="https://colab.research.google.com/github/kubzal/wsb-merito/blob/main/notebooks/semestr_zimowy_2026_27/data_science_w_pythonie/zajecia_6.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Gdzie jesteśmy</p>
+<p>Dziś cały workflow z pierwszych zajęć naraz: pytanie, dane, czyszczenie,
+eksploracja, komunikacja. Pomijamy tylko modelowanie — to za godzinę na
+<a href="../../uczenie_glebokie/zajecia_6/">Uczeniu głębokim</a>, gdzie na tych samych
+danych zbudujesz sieć przewidującą czas dostawy.</p>
+</div>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jak wygląda mini-projekt</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Pytanie i diagnoza danych</td>
+<td>8 min</td>
+</tr>
+<tr>
+<td>Czyszczenie i łączenie</td>
+<td>8 min</td>
+</tr>
+<tr>
+<td>Cechy i analiza</td>
+<td>12 min</td>
+</tr>
+<tr>
+<td>Wnioski i raport</td>
+<td>7 min</td>
+</tr>
+<tr>
+<td>Ściągawka</td>
+<td>3 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 6</strong></td>
+<td><strong>45 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="jak-wyglada-mini-projekt">Jak wygląda mini-projekt<a class="headerlink" href="#jak-wyglada-mini-projekt" title="Permanent link">#</a></h2>
+<h3 id="nowa-firma-meritoeats">Nowa firma: MeritoEats<a class="headerlink" href="#nowa-firma-meritoeats" title="Permanent link">#</a></h3>
+<p><strong>MeritoEats</strong> to platforma dostaw jedzenia w Warszawie. Klient zamawia
+w aplikacji, aplikacja pokazuje mu <strong>obiecany czas dostawy</strong>, restauracja
+gotuje, kurier wiezie. Po wszystkim klient może (ale nie musi) wystawić ocenę
+od 1 do 5. Średnia ocena spada od tygodni i dyrektor operacyjny chce wiedzieć
+dlaczego.</p>
+<p>Mamy dwa pliki z października: dziennik zamówień i słownik restauracji.</p>
+<h3 id="notatnik-jako-raport">Notatnik jako raport<a class="headerlink" href="#notatnik-jako-raport" title="Permanent link">#</a></h3>
+<p>Notatnik z projektu czyta potem ktoś inny — prowadzący, szef, Ty sam za
+miesiąc. Dlatego układasz go w stałe sekcje, każdą z nagłówkiem w komórce
+tekstowej:</p>
+<table>
+<thead>
+<tr>
+<th>Sekcja</th>
+<th>Co w niej jest</th>
+<th>Narzędzia z zajęć</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Pytanie</strong></td>
+<td>jedno–dwa zdania: co chcemy wiedzieć i po co</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2. Dane</strong></td>
+<td>skąd są, ile wierszy, co znaczą kolumny, diagnoza</td>
+<td>1, 2</td>
+</tr>
+<tr>
+<td><strong>3. Czyszczenie</strong></td>
+<td>co poprawiasz i <strong>dlaczego</strong> — z liczbą usuniętych wierszy</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>4. Łączenie i cechy</strong></td>
+<td>jakie tabele, jakie nowe kolumny</td>
+<td>4, 5</td>
+</tr>
+<tr>
+<td><strong>5. Analiza</strong></td>
+<td>tabele i wykresy, które odpowiadają na pytanie</td>
+<td>3, 4</td>
+</tr>
+<tr>
+<td><strong>6. Wnioski</strong></td>
+<td>odpowiedź, liczby, rekomendacja, ograniczenia</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Najważniejsza zasada: <strong>każda komórka z kodem ma służyć odpowiedzi na
+pytanie</strong>. Jeśli nie wiesz, po co liczysz jakąś tabelę, nie liczysz jej.</p>
+<hr />
+<h2 id="pytanie-i-diagnoza-danych">Pytanie i diagnoza danych<a class="headerlink" href="#pytanie-i-diagnoza-danych" title="Permanent link">#</a></h2>
+<h3 id="z-ogolnego-pytania-mierzalne">Z ogólnego pytania — mierzalne<a class="headerlink" href="#z-ogolnego-pytania-mierzalne" title="Permanent link">#</a></h3>
+<p>„Dlaczego klienci są niezadowoleni?" to dobre pytanie dla dyrektora, ale
+złe dla analityka: nie wiadomo, co policzyć. Zamieniamy je na pytanie, na które
+odpowie tabela:</p>
+<blockquote>
+<p><strong>Od czego zależy ocena zamówienia — od długości dostawy, odległości,
+wartości zamówienia czy od tego, czy dotrzymaliśmy obietnicy?</strong></p>
+</blockquote>
+<p>Teraz wiadomo, czego szukać: kolumny <code>ocena</code> i jej związku z kilkoma innymi.</p>
+<h3 id="diagnoza">Diagnoza<a class="headerlink" href="#diagnoza" title="Permanent link">#</a></h3>
+<p>Zanim cokolwiek policzysz, sprawdzasz, co dostałeś — dokładnie tak jak na
+zajęciach 2:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">URL_PAZ</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science_w_pythonie/dane/zamowienia_pazdziernik_2026.csv"</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">URL_REST</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science_w_pythonie/dane/restauracje_2026.csv"</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">zam</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL_PAZ</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">zam</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">zam</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>(1851, 11)
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  zamowienie_id      data_godzina restauracja_id    dzielnica  odleglosc_km  liczba_pozycji  wartosc_zl pogoda  obiecany_czas_min  czas_dostawy_min  ocena
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>0        Z00001  2026-10-01 10:03            R15     Mokotów            2.2               1       39.23  sucho                 35                29    NaN
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>1        Z00002  2026-10-01 10:08            R17  ŚRÓDMIEŚCIE           2.2               4       96.37  sucho                 35                25    NaN
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>2        Z00003  2026-10-01 10:12            R27      Mokotów           2.0               4      174.74  sucho                 30                26    4.0
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"duplikaty:"</span><span class="p">,</span> <span class="n">zam</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">()</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">zam</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>duplikaty: 21
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>zamowienie_id           0
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>data_godzina            0
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>restauracja_id          0
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>dzielnica               0
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>odleglosc_km            0
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>liczba_pozycji          0
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>wartosc_zl              0
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>pogoda                  0
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>obiecany_czas_min       0
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>czas_dostawy_min        0
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>ocena                1035
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>dtype: int64
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"różnych dzielnic:"</span><span class="p">,</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"dzielnica"</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">())</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">zam</span><span class="p">[</span><span class="s2">"czas_dostawy_min"</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>różnych dzielnic: 40
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>count    1851.0
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>mean       39.3
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>std        54.2
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>min       -12.0
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>25%        29.0
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>50%        36.0
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>75%        44.0
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>max      1440.0
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>Name: czas_dostawy_min, dtype: float64
+</span></code></pre></div>
+<p>Trzy problemy i jeden fałszywy alarm:</p>
+<ul>
+<li><strong>duplikaty</strong> — kilkadziesiąt zamówień zapisanych dwa razy,</li>
+<li><strong>dzielnice</strong> — MeritoEats działa w 8 dzielnicach, a różnych wartości jest</li>
+<li>To pisownia: <code>"ŚRÓDMIEŚCIE"</code>, <code>"Mokotów "</code> ze spacją,</li>
+<li><strong>czas dostawy</strong> — minimum ujemne, maksimum 1440 minut, czyli równa doba.
+  To błędy systemu, nie dostawy,</li>
+<li><strong>braki w ocenie</strong> to <strong>nie</strong> błąd. Ponad połowa klientów po prostu nie
+  wystawia ocen. Tych braków nie uzupełniamy — średnia z wymyślonych ocen nic
+  nie znaczy. Liczymy na tych, którzy ocenili, i piszemy o tym w ograniczeniach.</li>
+</ul>
+<hr />
+<h2 id="czyszczenie-i-aczenie">Czyszczenie i łączenie<a class="headerlink" href="#czyszczenie-i-aczenie" title="Permanent link">#</a></h2>
+<h3 id="czyszczenie-z-licznikiem">Czyszczenie z licznikiem<a class="headerlink" href="#czyszczenie-z-licznikiem" title="Permanent link">#</a></h3>
+<p>Przy każdym kroku zapisujesz, ile wierszy ubyło — w raporcie musisz umieć
+powiedzieć, co wyrzuciłeś:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">przed</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">zam</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">zam</span> <span class="o">=</span> <span class="n">zam</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"duplikaty:      "</span><span class="p">,</span> <span class="n">przed</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">zam</span><span class="p">))</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">zam</span><span class="p">[</span><span class="s2">"dzielnica"</span><span class="p">]</span> <span class="o">=</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"dzielnica"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">przed</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">zam</span><span class="p">)</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">zam</span> <span class="o">=</span> <span class="n">zam</span><span class="p">[</span><span class="n">zam</span><span class="p">[</span><span class="s2">"czas_dostawy_min"</span><span class="p">]</span><span class="o">.</span><span class="n">between</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)]</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"błędne czasy:   "</span><span class="p">,</span> <span class="n">przed</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">zam</span><span class="p">))</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">zam</span><span class="p">[</span><span class="s2">"data_godzina"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">zam</span><span class="p">[</span><span class="s2">"data_godzina"</span><span class="p">])</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"zostało:        "</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">zam</span><span class="p">),</span> <span class="s2">"| dzielnic:"</span><span class="p">,</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"dzielnica"</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">())</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>duplikaty:       21
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>błędne czasy:    14
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>zostało:         1816 | dzielnic: 8
+</span></code></pre></div>
+<p>Próg 300 minut to decyzja, nie prawda objawiona — dostawa trwająca 5 godzin
+też byłaby podejrzana, ale żadnej takiej nie ma: wartości są albo do ok. 90
+minut, albo absurdalne (455, 720, 1440). Taką decyzję zapisujesz w komórce
+tekstowej jednym zdaniem.</p>
+<h3 id="aczenie-ze-sownikiem-restauracji">Łączenie ze słownikiem restauracji<a class="headerlink" href="#aczenie-ze-sownikiem-restauracji" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">rest</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL_REST</span><span class="p">)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">rest</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">przed</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">zam</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">zam</span> <span class="o">=</span> <span class="n">zam</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">rest</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">"restauracja_id"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">przed</span><span class="p">,</span> <span class="s2">"→"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">zam</span><span class="p">))</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"bez kuchni:"</span><span class="p">,</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"kuchnia"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span> <span class="s2">"| restauracja:"</span><span class="p">,</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>      <span class="n">zam</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">zam</span><span class="p">[</span><span class="s2">"kuchnia"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">(),</span> <span class="s2">"restauracja_id"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>(34, 4)
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>1816 → 1816
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>bez kuchni: 70 | restauracja: ['R17']
+</span></code></pre></div>
+<p>Liczba wierszy się zgadza, ale jedna restauracja — <code>R17</code> — nie ma wpisu
+w słowniku (dział partnerów wyjaśnia: zakończyła współpracę i ktoś ją
+usunął). Jej zamówienia są prawdziwe, więc ich nie wyrzucamy — oznaczamy
+kuchnię jako nieznaną:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">zam</span><span class="p">[</span><span class="s2">"kuchnia"</span><span class="p">]</span> <span class="o">=</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"kuchnia"</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">"nieznana"</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="cechy-i-analiza">Cechy i analiza<a class="headerlink" href="#cechy-i-analiza" title="Permanent link">#</a></h2>
+<h3 id="cechy-ktore-odpowiadaja-na-pytanie">Cechy, które odpowiadają na pytanie<a class="headerlink" href="#cechy-ktore-odpowiadaja-na-pytanie" title="Permanent link">#</a></h3>
+<p>Pytanie dotyczyło m.in. <strong>dotrzymania obietnicy</strong>, a takiej kolumny nie ma.
+Budujemy ją jak na zajęciach 5:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">zam</span><span class="p">[</span><span class="s2">"godzina"</span><span class="p">]</span> <span class="o">=</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"data_godzina"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">hour</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">zam</span><span class="p">[</span><span class="s2">"spoznienie_min"</span><span class="p">]</span> <span class="o">=</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"czas_dostawy_min"</span><span class="p">]</span> <span class="o">-</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"obiecany_czas_min"</span><span class="p">]</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">zam</span><span class="p">[</span><span class="s2">"spoznione"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">zam</span><span class="p">[</span><span class="s2">"spoznienie_min"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">zam</span><span class="p">[[</span><span class="s2">"obiecany_czas_min"</span><span class="p">,</span> <span class="s2">"czas_dostawy_min"</span><span class="p">,</span> <span class="s2">"spoznienie_min"</span><span class="p">,</span> <span class="s2">"spoznione"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>   obiecany_czas_min  czas_dostawy_min  spoznienie_min  spoznione
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>0                 35                29              -6          0
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>1                 35                25             -10          0
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>2                 30                26              -4          0
+</span></code></pre></div>
+<p><code>spoznienie_min</code> ujemne oznacza, że jedzenie przyjechało <strong>przed</strong> czasem.
+Za spóźnione uznajemy zamówienia ponad 5 minut po obietnicy — kilka minut
+klient wybacza. To znowu decyzja, którą zapisujesz.</p>
+<h3 id="co-wiaze-sie-z-ocena">Co wiąże się z oceną<a class="headerlink" href="#co-wiaze-sie-z-ocena" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"ocenionych zamówień:"</span><span class="p">,</span> <span class="n">zam</span><span class="p">[</span><span class="s2">"ocena"</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span> <span class="s2">"z"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">zam</span><span class="p">))</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">zam</span><span class="p">[[</span><span class="s2">"czas_dostawy_min"</span><span class="p">,</span> <span class="s2">"odleglosc_km"</span><span class="p">,</span> <span class="s2">"wartosc_zl"</span><span class="p">,</span> <span class="s2">"spoznienie_min"</span><span class="p">]]</span><span class="o">.</span><span class="n">corrwith</span><span class="p">(</span><span class="n">zam</span><span class="p">[</span><span class="s2">"ocena"</span><span class="p">])</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>ocenionych zamówień: 797 z 1816
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>czas_dostawy_min   -0.536
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>odleglosc_km       -0.096
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>wartosc_zl         -0.115
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>spoznienie_min     -0.714
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>dtype: float64
+</span></code></pre></div>
+<p><code>corrwith</code> sam pomija braki — liczy tylko na zamówieniach z oceną.
+Najmocniej z oceną wiąże się spóźnienie (−0.71), ale czas dostawy też całkiem
+mocno (−0.54). Czy to dwa różne powody, czy jeden? Spóźnione zamówienia są
+przecież zwykle też długie. Zobaczmy ocenę w przedziałach spóźnienia:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">przedzialy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">zam</span><span class="p">[</span><span class="s2">"spoznienie_min"</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">60</span><span class="p">])</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">zam</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">przedzialy</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">"ocena"</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s2">"count"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">])</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>                count  mean
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>spoznienie_min             
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>(-60, 0]          300  4.49
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>(0, 5]            189  4.16
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>(5, 10]           145  3.54
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>(10, 20]          152  2.93
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>(20, 60]           11  1.64
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">zam</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">przedzialy</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">"ocena"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="n">kind</span><span class="o">=</span><span class="s2">"bar"</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Średnia ocena a spóźnienie względem obietnicy"</span><span class="p">)</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"spóźnienie (min) — ujemne: przed czasem"</span><span class="p">)</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"średnia ocena (1–5)"</span><span class="p">)</span>
+</span></code></pre></div>
+<p><img alt="Średnia ocena według spóźnienia" src="../obrazki/zajecia_6_ocena_spoznienie.png" /></p>
+<p>Dopóki obietnica jest dotrzymana, ocena trzyma się ok. 4.5. Każde kolejne
+minuty spóźnienia kosztują coraz więcej. Ostatni przedział to tylko 11 ocen —
+kierunek jest jasny, ale liczby 1.64 nie warto cytować z dokładnością do
+setnych. A teraz kluczowy test — <strong>zamówienia
+dowiezione na czas</strong>, ale różnej długości:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">na_czas</span> <span class="o">=</span> <span class="n">zam</span><span class="p">[</span><span class="n">zam</span><span class="p">[</span><span class="s2">"spoznienie_min"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">na_czas</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">na_czas</span><span class="p">[</span><span class="s2">"czas_dostawy_min"</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">]),</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>                <span class="n">observed</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">"ocena"</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s2">"count"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">])</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>                  count  mean
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>czas_dostawy_min             
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>(0, 30]             173  4.46
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>(30, 40]            102  4.55
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>(40, 60]             25  4.48
+</span></code></pre></div>
+<p>Ta sama ocena, niezależnie od tego, czy dostawa trwała 25 czy 45 minut. Klienci
+nie karzą za <strong>długą</strong> dostawę, tylko za <strong>niedotrzymaną obietnicę</strong>. Korelacja
+z czasem dostawy była „pożyczona" od spóźnień — długie dostawy częściej się
+spóźniają.</p>
+<h3 id="skad-sie-biora-spoznienia">Skąd się biorą spóźnienia<a class="headerlink" href="#skad-sie-biora-spoznienia" title="Permanent link">#</a></h3>
+<p>Skoro problemem są spóźnienia, naturalne kolejne pytanie — kiedy się
+zdarzają:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">zam</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"godzina"</span><span class="p">)[</span><span class="s2">"spoznione"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="n">kind</span><span class="o">=</span><span class="s2">"bar"</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Odsetek spóźnionych zamówień według godziny"</span><span class="p">)</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"godzina złożenia zamówienia"</span><span class="p">)</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"odsetek spóźnionych"</span><span class="p">)</span>
+</span></code></pre></div>
+<p><img alt="Odsetek spóźnionych zamówień według godziny" src="../obrazki/zajecia_6_spoznienia_godzina.png" /></p>
+<p>W wieczornym szczycie (18–20) spóźnia się 6 zamówień na 10, w pozostałych
+godzinach — najwyżej co trzecie, najczęściej co dziesiąte. Aplikacja obiecuje
+ten sam czas o 15:00 i o 19:00, choć o 19:00 kuchnie i ulice są zapchane.</p>
+<div class="admonition warning">
+<p class="admonition-title">Ciekawe to nie to samo co ważne</p>
+<p>W trakcie analizy znajdziesz mnóstwo rzeczy: że w weekendy zamawia się
+więcej, że sushi jest najdroższe, że Mokotów zamawia najczęściej. Jeśli to
+nie odpowiada na pytanie — nie trafia do wniosków. Raport z dwudziestoma
+ciekawostkami to raport, z którego nikt nic nie zapamięta.</p>
+</div>
+<hr />
+<h2 id="wnioski-i-raport">Wnioski i raport<a class="headerlink" href="#wnioski-i-raport" title="Permanent link">#</a></h2>
+<h3 id="piec-elementow-dobrego-wniosku">Pięć elementów dobrego wniosku<a class="headerlink" href="#piec-elementow-dobrego-wniosku" title="Permanent link">#</a></h3>
+<ol>
+<li><strong>Odpowiedź w pierwszym zdaniu.</strong> Dyrektor może nie doczytać do końca.</li>
+<li><strong>Liczby</strong> — konkretne, zaokrąglone, z liczebnością, gdy grupa jest mała.</li>
+<li><strong>Mechanizm</strong> — co z czego wynika, jeśli to wiadomo.</li>
+<li><strong>Rekomendacja</strong> — co zrobić.</li>
+<li><strong>Ograniczenia</strong> — czego dane nie mówią.</li>
+</ol>
+<p>Zamiast:</p>
+<blockquote>
+<p>Korelacja oceny ze <code>spoznienie_min</code> wynosi −0.714, a z <code>czas_dostawy_min</code>
+−0.536. Groupby po godzinie pokazał max 0.66 dla godziny 20.</p>
+</blockquote>
+<p>piszesz:</p>
+<blockquote>
+<p><strong>Oceny spadają przez niedotrzymane obietnice, a nie przez długie dostawy.</strong>
+Zamówienia dowiezione na czas mają średnią ocenę 4.5 niezależnie od tego,
+czy jechały 25, czy 45 minut. Już 5–10 minut spóźnienia obniża ocenę do 3.5,
+a 10–20 minut — do 2.9. Najwięcej spóźnień jest w wieczornym szczycie
+(18–20), gdy spóźnia się 6 zamówień na 10. <strong>Rekomendacja:</strong> w godzinach
+szczytu aplikacja powinna obiecywać dłuższy czas — klient chętniej poczeka
+45 minut, jeśli tyle mu obiecano, niż 35, gdy obiecano 30.
+<strong>Ograniczenia:</strong> ocenia tylko 44% klientów, a dane obejmują jeden miesiąc.</p>
+</blockquote>
+<p>Bez nazw kolumn, bez kodu, z jedną liczbą na każde twierdzenie.</p>
+<div class="admonition note">
+<p class="admonition-title">Korelacja to nie przyczyna — ale tu mamy mechanizm</p>
+<p>Sam wynik „spóźnione zamówienia mają gorsze oceny" mógłby mieć inne
+wyjaśnienie (np. spóźniają się konkretne restauracje, które gotują gorzej).
+Test z zamówieniami dowiezionymi na czas wzmacnia nasz wniosek, ale go nie
+dowodzi. Pewność dałby dopiero eksperyment: części klientów aplikacja
+obiecuje dłuższy czas, części — krótszy, i porównujemy oceny. Takie testy
+firmy robią na co dzień (<em>testy A/B</em>).</p>
+</div>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Etap</th>
+<th>Pytanie kontrolne</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pytanie</td>
+<td>czy wiem, którą kolumnę i z czym porównać?</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Diagnoza</td>
+<td>ile wierszy, jakie typy, ile braków i duplikatów?</td>
+<td><code>df.shape</code>, <code>df.info()</code>, <code>df.isna().sum()</code>, <code>df.duplicated().sum()</code></td>
+</tr>
+<tr>
+<td></td>
+<td>czy tekst jest spójny?</td>
+<td><code>df["kol"].nunique()</code>, <code>df["kol"].value_counts()</code></td>
+</tr>
+<tr>
+<td></td>
+<td>czy liczby mają sens?</td>
+<td><code>df["kol"].describe()</code></td>
+</tr>
+<tr>
+<td>Czyszczenie</td>
+<td>ile wierszy usunąłem i dlaczego?</td>
+<td><code>przed = len(df)</code> … <code>print(przed - len(df))</code></td>
+</tr>
+<tr>
+<td></td>
+<td>tekst</td>
+<td><code>df["kol"].str.strip().str.title()</code></td>
+</tr>
+<tr>
+<td></td>
+<td>wartości niemożliwe</td>
+<td><code>df[df["kol"].between(a, b)]</code></td>
+</tr>
+<tr>
+<td></td>
+<td>daty</td>
+<td><code>pd.to_datetime(df["data"])</code>, <code>format="%d.%m.%Y %H:%M"</code></td>
+</tr>
+<tr>
+<td>Wczytanie innego formatu</td>
+<td>średniki, przecinki</td>
+<td><code>pd.read_csv(url, sep=";", decimal=",")</code></td>
+</tr>
+<tr>
+<td></td>
+<td>inna nazwa kolumny</td>
+<td><code>df.rename(columns={"stara": "nowa"})</code></td>
+</tr>
+<tr>
+<td></td>
+<td>dwa pliki jeden pod drugim</td>
+<td><code>pd.concat([t1, t2], ignore_index=True)</code></td>
+</tr>
+<tr>
+<td>Łączenie</td>
+<td>czy liczba wierszy się zgadza?</td>
+<td><code>print(przed, "→", len(df))</code></td>
+</tr>
+<tr>
+<td></td>
+<td>czy coś nie znalazło pary?</td>
+<td><code>df["kol_z_prawej"].isna().sum()</code></td>
+</tr>
+<tr>
+<td>Cechy</td>
+<td>czy potrzebuję kolumny, której nie ma?</td>
+<td>różnica, iloraz, flaga, <code>dt.hour</code>, <code>dt.month</code></td>
+</tr>
+<tr>
+<td>Analiza</td>
+<td>czy ta tabela odpowiada na pytanie?</td>
+<td><code>groupby(...).agg(...)</code>, <code>pd.cut</code>, <code>corrwith</code></td>
+</tr>
+<tr>
+<td></td>
+<td>czy grupa nie jest za mała?</td>
+<td><code>agg(["count", "mean"])</code></td>
+</tr>
+<tr>
+<td>Wnioski</td>
+<td>odpowiedź — liczby — mechanizm — rekomendacja — ograniczenia</td>
+<td>komórka tekstowa</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-6-dlaczego-jedzenie-sie-spoznia-6-pkt">Zadanie 6 — Dlaczego jedzenie się spóźnia (6 pkt)<a class="headerlink" href="#zadanie-6-dlaczego-jedzenie-sie-spoznia-6-pkt" title="Permanent link">#</a></h2>
+<p><strong>Czas:</strong> maks. 45 minut
+<strong>Środowisko:</strong> Google Colab
+<strong>Oddanie:</strong> notatnik <code>.ipynb</code> na Moodle</p>
+<p>Dyrektor operacyjny MeritoEats przeczytał raport o ocenach i teraz chce
+wiedzieć, <strong>skąd się biorą spóźnienia</strong>. Każdy opiekun partnerów odpowiada za
+restauracje jednej kuchni — Ty przygotowujesz analizę dla opiekuna <strong>Twojej
+kuchni</strong>. Doszły dane z listopada, ale z nowego systemu, który eksportuje je
+inaczej.</p>
+<p>Na początku notatnika wpisz swój numer albumu — od niego zależy Twoja kuchnia:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>   <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="n">KUCHNIE</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"pizza"</span><span class="p">,</span> <span class="s2">"burgery"</span><span class="p">,</span> <span class="s2">"sushi"</span><span class="p">,</span> <span class="s2">"kebab"</span><span class="p">,</span> <span class="s2">"azjatycka"</span><span class="p">,</span> <span class="s2">"polska"</span><span class="p">]</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="n">MOJA_KUCHNIA</span> <span class="o">=</span> <span class="n">KUCHNIE</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Moja kuchnia:"</span><span class="p">,</span> <span class="n">MOJA_KUCHNIA</span><span class="p">)</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="n">URL_PAZ</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science_w_pythonie/dane/zamowienia_pazdziernik_2026.csv"</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="n">URL_LIS</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science_w_pythonie/dane/zamowienia_listopad_2026.csv"</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="n">URL_REST</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science_w_pythonie/dane/restauracje_2026.csv"</span>
+</span></code></pre></div>
+<p>Układ notatnika: sekcje z nagłówkami jak w notatkach (Pytanie, Dane,
+Czyszczenie, Łączenie i cechy, Analiza, Wnioski). Kod czyszczenia możesz
+wziąć z notatek.</p>
+<p>Rób części po kolei i <strong>pokaż mi wynik każdej części, gdy będzie gotowa</strong>.</p>
+<h3 id="czesc-1-dane-z-dwoch-miesiecy-ok-20-min">Część 1 — dane z dwóch miesięcy (ok. 20 min)<a class="headerlink" href="#czesc-1-dane-z-dwoch-miesiecy-ok-20-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Wczytaj październik i listopad i sprawdź, czym listopad różni się od
+   października (separator, zapis liczb, nazwy kolumn, format daty).
+   Doprowadź listopad do formatu października i sklej oba miesiące w jedną
+   tabelę. Ile zamówień ma każdy miesiąc?</li>
+<li>Wyczyść całość jak w notatkach i dołącz słownik restauracji. Wypisz, ile
+   wierszy usunąłeś na każdym kroku i ile zamówień nie ma kuchni.</li>
+<li>Dodaj kolumny <code>godzina</code>, <code>miesiac</code>, <code>spoznienie_min</code> i <code>spoznione</code> (ponad
+   5 minut po obietnicy). Policz odsetek spóźnionych i średnią ocenę
+   w każdym miesiącu. Czy listopad był gorszy od października?</li>
+</ol>
+<h3 id="czesc-2-twoja-kuchnia-ok-25-min">Część 2 — Twoja kuchnia (ok. 25 min)<a class="headerlink" href="#czesc-2-twoja-kuchnia-ok-25-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Jedną tabelą <code>agg</code> policz dla każdej kuchni: liczbę zamówień, odsetek
+   spóźnionych i średnią ocenę. Posortuj od najczęściej spóźniającej się. Na
+   którym miejscu jest Twoja kuchnia?</li>
+<li>W Twojej kuchni policz odsetek spóźnionych według godziny (z wykresem),
+   według pogody i według restauracji (z liczbą zamówień i nazwą
+   restauracji). Która restauracja odstaje?</li>
+<li>W komórce tekstowej napisz 3–4 zdania do opiekuna partnerów Twojej
+   kuchni — według pięciu elementów z sekcji „Wnioski i raport": skąd się
+   biorą spóźnienia w Twojej kuchni i co rekomendujesz.</li>
+</ol>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Listopad: <code>pd.read_csv(URL_LIS, sep=";", decimal=",")</code>, potem
+  <code>rename(columns={"dystans_km": "odleglosc_km"})</code>. Datę zamień <strong>przed</strong>
+  sklejeniem: <code>pd.to_datetime(lis["data_godzina"], format="%d.%m.%Y %H:%M")</code> —
+  październik zamień zwykłym <code>pd.to_datetime</code>.</li>
+<li>Sklejanie: <code>pd.concat([paz, lis], ignore_index=True)</code>. Zanim skleisz,
+  porównaj <code>paz.columns</code> i <code>lis.columns</code> — muszą być takie same.</li>
+<li>Miesiąc: <code>zam["data_godzina"].dt.month</code>. Odsetek spóźnionych i średnia
+  ocena w jednym <code>agg</code>: <code>spoznione=("spoznione", "mean")</code>,
+  <code>ocena=("ocena", "mean")</code>.</li>
+<li>Analiza dla kuchni: najpierw filtr <code>zam[zam["kuchnia"] == MOJA_KUCHNIA]</code>,
+  potem <code>groupby</code>. Przy restauracjach grupuj po dwóch kolumnach:
+  <code>["restauracja_id", "nazwa"]</code>.</li>
+<li>Pamiętaj o liczebności — restauracja z 20 zamówieniami i odsetkiem 0.6 to
+  słabszy dowód niż restauracja ze 150 i 0.5.</li>
+<li>Raport pisz do człowieka, który nie zna Pythona: bez nazw kolumn, z liczbami.</li>
+</ul>
+<h3 id="punktacja-6-pkt">Punktacja (6 pkt)<a class="headerlink" href="#punktacja-6-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>6 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>4 pkt</strong></td>
+<td>jedna z dwóch części zrobiona na zajęciach</td>
+</tr>
+<tr>
+<td><strong>2 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>dzień przed kolejnymi zajęciami</strong>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Serio, róbcie to na zajęciach</p>
+<p>Te same 45 minut pracy jest warte 6 pkt tu i teraz albo 2 pkt w domu. Przez
+cały semestr robi to różnicę 32 punktów, czyli całej oceny w górę lub w dół.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,4195 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/uczenie_glebokie/zajecia_6/">
+      
+      
+        <link rel="prev" href="../zajecia_5/">
+      
+      
+        <link rel="next" href="../../zarzadzanie_big_data/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Zajęcia 6 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-6" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-tabs__dropdown-link">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../systemy_big_data/" class="md-tabs__dropdown-link">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trening-w-praktyce-optymalizatory-regularyzacja-i-funkcje-straty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trening w praktyce — optymalizatory, regularyzacja i funkcje straty
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przygotowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przygotowanie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Przygotowanie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dane
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nowa-wersja-funkcji-trenuj" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nowa wersja funkcji trenuj
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optymalizatory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optymalizatory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optymalizatory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sgd-momentum-i-adam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SGD, momentum i Adam
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wczesne-zatrzymanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wczesne zatrzymanie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wczesne zatrzymanie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przeuczenie-jeszcze-raz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przeuczenie jeszcze raz
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zatrzymaj-zanim-bedzie-za-pozno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zatrzymaj, zanim będzie za późno
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weight-decay-i-dropout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weight decay i dropout
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Weight decay i dropout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weight-decay-kara-za-duze-wagi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weight decay — kara za duże wagi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropout-losowe-wyaczanie-neuronow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dropout — losowe wyłączanie neuronów
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porownanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Porównanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funkcje-straty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funkcje straty
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funkcje straty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strata-zalezy-od-tego-co-przewidujesz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strata zależy od tego, co przewidujesz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siec-do-regresji-czas-dostawy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sieć do regresji — czas dostawy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sieć do regresji — czas dostawy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dane-meritoeats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dane MeritoEats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skalujemy-takze-cel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skalujemy także cel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-liniowy-i-siec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model liniowy i sieć
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gdzie-myli-sie-model-liniowy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gdzie myli się model liniowy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-6-regularyzacja-i-czas-dostawy-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6 — Regularyzacja i czas dostawy (6 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 6 — Regularyzacja i czas dostawy (6 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-czy-regularyzacja-uratuje-siec-ok-20-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — czy regularyzacja uratuje sieć? (ok. 20 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-czas-dostawy-ok-25-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — czas dostawy (ok. 25 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (6 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-6">Zajęcia 6<a class="headerlink" href="#zajecia-6" title="Permanent link">#</a></h1>
+<h2 id="trening-w-praktyce-optymalizatory-regularyzacja-i-funkcje-straty">Trening w praktyce — optymalizatory, regularyzacja i funkcje straty<a class="headerlink" href="#trening-w-praktyce-optymalizatory-regularyzacja-i-funkcje-straty" title="Permanent link">#</a></h2>
+<p>Na poprzednich zajęciach zostawiliśmy dwa problemy. Pierwszy: duża sieć
+5 → 64 → 64 → 1 nauczyła się danych na pamięć i na teście wypadła gorzej niż
+jeden neuron. Drugi, mniej widoczny: zwykły spadek gradientu (SGD) jest
+powolny i bardzo czuły na współczynnik uczenia. Dziś naprawiamy oba. Poznasz
+trzy pokrętła, które ustawia każdy, kto trenuje sieci: <strong>optymalizator</strong>,
+<strong>regularyzację</strong> i <strong>funkcję straty</strong>.</p>
+<p>Przy funkcji straty wyjdziemy wreszcie poza klasyfikację. Sieć nie musi
+odpowiadać „tak/nie" — może przewidywać <strong>liczbę</strong>. Na danych MeritoEats
+z dzisiejszych zajęć z DS w Pythonie zbudujemy sieć, która przewiduje, ile
+minut potrwa dostawa.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>porównać SGD, SGD z momentum i Adam i wybrać rozsądny punkt startu,</li>
+<li>zatrzymać trening we właściwym momencie i odzyskać najlepsze wagi
+  (wczesne zatrzymanie),</li>
+<li>zastosować weight decay i dropout i wyjaśnić, dlaczego działają,</li>
+<li>pamiętać o <code>model.train()</code> i <code>model.eval()</code>,</li>
+<li>dobrać ostatnią warstwę i funkcję straty do zadania — klasyfikacji albo
+  regresji,</li>
+<li>zbudować sieć do regresji w PyTorch i ocenić ją średnim błędem w minutach.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Przykłady z zajęć w Colabie</p>
+<p>Cały materiał z tej strony jest też w gotowym notatniku — z kodem do
+uruchomienia. Otwórz go i uruchamiaj komórki po kolei, czytając materiał. Żeby zachować
+swoje zmiany, zapisz kopię: <strong>Plik → Zapisz kopię na Dysku</strong>.</p>
+<p><a href="https://colab.research.google.com/github/kubzal/wsb-merito/blob/main/notebooks/semestr_zimowy_2026_27/uczenie_glebokie/zajecia_6.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Godzinę temu na Data Science w Pythonie</p>
+<p>Robiliśmy mini-projekt dla MeritoEats. Wyszło, że oceny spadają nie przez
+długie dostawy, tylko przez <strong>niedotrzymane obietnice</strong>, a aplikacja
+obiecuje ten sam czas o 15:00 i o 19:00. Dziś sprawdzimy, czy sieć
+neuronowa przewidzi czas dostawy lepiej niż wzór, którego używa aplikacja.</p>
+</div>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nowa wersja funkcji <code>trenuj</code></td>
+<td>3 min</td>
+</tr>
+<tr>
+<td>Optymalizatory — SGD, momentum, Adam</td>
+<td>8 min</td>
+</tr>
+<tr>
+<td>Wczesne zatrzymanie</td>
+<td>7 min</td>
+</tr>
+<tr>
+<td>Weight decay i dropout</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Funkcje straty — klasyfikacja i regresja</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Sieć do regresji — czas dostawy</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Ściągawka</td>
+<td>2 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 6</strong></td>
+<td><strong>45 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="przygotowanie">Przygotowanie<a class="headerlink" href="#przygotowanie" title="Permanent link">#</a></h2>
+<h3 id="dane">Dane<a class="headerlink" href="#dane" title="Permanent link">#</a></h3>
+<p>Pierwsza część zajęć to znowu siłownia — te same trzy zbiory co na
+zajęciach 5:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">copy</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">torch</span><span class="w"> </span><span class="kn">import</span> <span class="n">nn</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kn">from</span><span class="w"> </span><span class="nn">torch.utils.data</span><span class="w"> </span><span class="kn">import</span> <span class="n">TensorDataset</span><span class="p">,</span> <span class="n">DataLoader</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">log_loss</span><span class="p">,</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">mean_absolute_error</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/uczenie_glebokie/dane/silownia_czyste.csv"</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">cechy</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"wiek"</span><span class="p">,</span> <span class="s2">"oplata_mies"</span><span class="p">,</span> <span class="s2">"staz_mies"</span><span class="p">,</span> <span class="s2">"wizyty_mies"</span><span class="p">,</span> <span class="s2">"zgloszenia"</span><span class="p">]</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="n">df</span><span class="p">[</span><span class="n">cechy</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">"zrezygnowal"</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"zrezygnowal"</span><span class="p">])</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="n">X_tr</span><span class="p">,</span> <span class="n">X_val</span><span class="p">,</span> <span class="n">y_tr</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y_train</span><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_tr</span><span class="p">)</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="n">X_tr_t</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_tr</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="n">X_val_t</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_val</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="n">X_test_t</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="n">y_tr_t</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">y_tr</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="n">y_val_t</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">y_val</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="n">dane</span> <span class="o">=</span> <span class="p">(</span><span class="n">X_tr_t</span><span class="p">,</span> <span class="n">y_tr_t</span><span class="p">,</span> <span class="n">X_val_t</span><span class="p">,</span> <span class="n">y_val_t</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>dane</code> to po prostu cztery tensory spakowane razem, żeby nie przepisywać ich
+przy każdym wywołaniu.</p>
+<h3 id="nowa-wersja-funkcji-trenuj">Nowa wersja funkcji <code>trenuj</code><a class="headerlink" href="#nowa-wersja-funkcji-trenuj" title="Permanent link">#</a></h3>
+<p>Funkcja z zajęć 5 sama tworzyła optymalizator i stratę. Dziś będziemy je
+zmieniać, więc podajemy je z zewnątrz. Dochodzą też dwie rzeczy, które
+wyjaśnimy za chwilę — oznaczone w komentarzach:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">trenuj</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">dane</span><span class="p">,</span> <span class="n">funkcja_straty</span><span class="p">,</span> <span class="n">optymalizator</span><span class="p">,</span> <span class="n">epoki</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">cierpliwosc</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">X_tr_t</span><span class="p">,</span> <span class="n">y_tr_t</span><span class="p">,</span> <span class="n">X_val_t</span><span class="p">,</span> <span class="n">y_val_t</span> <span class="o">=</span> <span class="n">dane</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">paczki</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">TensorDataset</span><span class="p">(</span><span class="n">X_tr_t</span><span class="p">,</span> <span class="n">y_tr_t</span><span class="p">),</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">historia_tr</span><span class="p">,</span> <span class="n">historia_val</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">najlepsza_strata</span><span class="p">,</span> <span class="n">najlepsze_wagi</span><span class="p">,</span> <span class="n">bez_poprawy</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">"inf"</span><span class="p">),</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="k">for</span> <span class="n">epoka</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epoki</span><span class="p">):</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>                                   <span class="c1"># tryb treningu (dropout)</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="k">for</span> <span class="n">xb</span><span class="p">,</span> <span class="n">yb</span> <span class="ow">in</span> <span class="n">paczki</span><span class="p">:</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>            <span class="n">optymalizator</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>            <span class="n">strata</span> <span class="o">=</span> <span class="n">funkcja_straty</span><span class="p">(</span><span class="n">model</span><span class="p">(</span><span class="n">xb</span><span class="p">),</span> <span class="n">yb</span><span class="p">)</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>            <span class="n">strata</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>            <span class="n">optymalizator</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>            <span class="n">suma</span> <span class="o">+=</span> <span class="n">strata</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        <span class="n">historia_tr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">suma</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">paczki</span><span class="p">))</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>                                    <span class="c1"># tryb oceny (dropout)</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>            <span class="n">strata_val</span> <span class="o">=</span> <span class="n">funkcja_straty</span><span class="p">(</span><span class="n">model</span><span class="p">(</span><span class="n">X_val_t</span><span class="p">),</span> <span class="n">y_val_t</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>        <span class="n">historia_val</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">strata_val</span><span class="p">)</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>        <span class="k">if</span> <span class="n">strata_val</span> <span class="o">&lt;</span> <span class="n">najlepsza_strata</span><span class="p">:</span>               <span class="c1"># wczesne zatrzymanie</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>            <span class="n">najlepsza_strata</span><span class="p">,</span> <span class="n">bez_poprawy</span> <span class="o">=</span> <span class="n">strata_val</span><span class="p">,</span> <span class="mi">0</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>            <span class="n">najlepsze_wagi</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">())</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>            <span class="n">bez_poprawy</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>            <span class="k">if</span> <span class="n">cierpliwosc</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">bez_poprawy</span> <span class="o">&gt;=</span> <span class="n">cierpliwosc</span><span class="p">:</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>                <span class="k">break</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>    <span class="k">if</span> <span class="n">cierpliwosc</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>        <span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">najlepsze_wagi</span><span class="p">)</span>           <span class="c1"># wracamy do najlepszej epoki</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>    <span class="k">return</span> <span class="n">historia_tr</span><span class="p">,</span> <span class="n">historia_val</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="k">def</span><span class="w"> </span><span class="nf">ocen</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>    <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>        <span class="n">p</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">X_t</span><span class="p">)</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">log_loss</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">p</span><span class="p">),</span> <span class="mi">3</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)),</span> <span class="mi">3</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Środek — pięć kroków w pętli po paczkach — jest dokładnie taki jak na
+zajęciach 5.</p>
+<hr />
+<h2 id="optymalizatory">Optymalizatory<a class="headerlink" href="#optymalizatory" title="Permanent link">#</a></h2>
+<h3 id="sgd-momentum-i-adam">SGD, momentum i Adam<a class="headerlink" href="#sgd-momentum-i-adam" title="Permanent link">#</a></h3>
+<p>Optymalizator to „ten, który robi kroki" — decyduje, jak na podstawie
+gradientu zmienić wagi. Do tej pory używaliśmy najprostszego, <strong>SGD</strong>: krok =
+współczynnik uczenia × gradient. Wytrenujmy tę samą sieć 5 → 8 → 1 trzema
+optymalizatorami, z tym samym <code>lr=0.01</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">for</span> <span class="n">nazwa</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"SGD"</span><span class="p">,</span> <span class="s2">"SGD z momentum"</span><span class="p">,</span> <span class="s2">"Adam"</span><span class="p">]:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">siec</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sigmoid</span><span class="p">())</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">if</span> <span class="n">nazwa</span> <span class="o">==</span> <span class="s2">"SGD"</span><span class="p">:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="n">optymalizator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">siec</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">elif</span> <span class="n">nazwa</span> <span class="o">==</span> <span class="s2">"SGD z momentum"</span><span class="p">:</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="n">optymalizator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">siec</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="n">optymalizator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">siec</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="n">historia_tr</span><span class="p">,</span> <span class="n">historia_val</span> <span class="o">=</span> <span class="n">trenuj</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">dane</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">BCELoss</span><span class="p">(),</span> <span class="n">optymalizator</span><span class="p">,</span> <span class="n">epoki</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">historia_tr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">nazwa</span><span class="p">)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">nazwa</span><span class="si">:</span><span class="s2">15</span><span class="si">}</span><span class="s2"> strata po 5 epokach: </span><span class="si">{</span><span class="n">historia_tr</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">   po 50: </span><span class="si">{</span><span class="n">historia_tr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Ta sama sieć, trzy optymalizatory (lr = 0.01)"</span><span class="p">)</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"epoka"</span><span class="p">)</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"strata treningowa (BCE)"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SGD             strata po 5 epokach: 0.571   po 50: 0.494
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>SGD z momentum  strata po 5 epokach: 0.498   po 50: 0.430
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Adam            strata po 5 epokach: 0.473   po 50: 0.418
+</span></code></pre></div>
+<p><img alt="Krzywe uczenia dla SGD, SGD z momentum i Adama" src="../obrazki/zajecia_6_optymalizatory.png" /></p>
+<ul>
+<li><strong>SGD</strong> z <code>lr=0.01</code> ledwo się rusza — po 50 epokach jest tam, gdzie Adam był
+  po kilku. Na zajęciach 5 działał, bo daliśmy mu dziesięć razy większy krok.</li>
+<li><strong>Momentum</strong> („pęd") dodaje do każdego kroku część poprzedniego. Wracamy do
+  schodzenia z góry we mgle: zamiast stawiać każdy krok od zera, toczysz się
+  jak kula — na długim, łagodnym zboczu nabierasz prędkości, a drobne nierówności
+  nie zbijają Cię z kursu. <code>momentum=0.9</code> to wartość, którą prawie wszyscy
+  zostawiają.</li>
+<li><strong>Adam</strong> idzie dalej: oprócz pędu pilnuje <strong>osobnej długości kroku dla każdej
+  wagi</strong>. Waga, której gradient jest zwykle malutki, dostaje większy krok, a ta,
+  której gradient skacze — mniejszy. Dzięki temu jest dużo mniej czuły na wybór
+  <code>lr</code>.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Od czego zacząć</p>
+<p>W praktyce prawie każdy zaczyna od <strong>Adama z <code>lr=0.001</code></strong> — to wartość
+domyślna w PyTorch i zwykle działa od razu. Dopiero gdy krzywa uczenia
+wygląda źle, zmieniasz <code>lr</code> kilkukrotnie w górę albo w dół. SGD z momentum
+wciąż spotkasz przy dużych sieciach do obrazów — bywa tam odrobinę lepszy,
+ale wymaga cierpliwego strojenia.</p>
+</div>
+<hr />
+<h2 id="wczesne-zatrzymanie">Wczesne zatrzymanie<a class="headerlink" href="#wczesne-zatrzymanie" title="Permanent link">#</a></h2>
+<h3 id="przeuczenie-jeszcze-raz">Przeuczenie jeszcze raz<a class="headerlink" href="#przeuczenie-jeszcze-raz" title="Permanent link">#</a></h3>
+<p>Wracamy do dużej sieci z zajęć 5 — tym razem z Adamem i przez 200 epok:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">duza_siec</span><span class="p">():</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">return</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sigmoid</span><span class="p">(),</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">siec</span> <span class="o">=</span> <span class="n">duza_siec</span><span class="p">()</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">optymalizator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">siec</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">historia_tr</span><span class="p">,</span> <span class="n">historia_val</span> <span class="o">=</span> <span class="n">trenuj</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">dane</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">BCELoss</span><span class="p">(),</span> <span class="n">optymalizator</span><span class="p">,</span> <span class="n">epoki</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"najniższa strata walidacyjna w epoce:"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">historia_val</span><span class="p">))</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"bez regularyzacji     strata, F1:"</span><span class="p">,</span> <span class="n">ocen</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">X_test_t</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>najniższa strata walidacyjna w epoce: 9
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>bez regularyzacji     strata, F1: (0.594, 0.491)
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">historia_tr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"trening"</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">historia_val</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"walidacja"</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">historia_val</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">"--"</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"najlepsza epoka"</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Sieć 5 → 64 → 64 → 1 bez regularyzacji"</span><span class="p">)</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"epoka"</span><span class="p">)</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"strata (BCE)"</span><span class="p">)</span>
+</span></code></pre></div>
+<p><img alt="Przeuczenie — strata walidacyjna rośnie po kilku epokach" src="../obrazki/zajecia_6_przeuczenie.png" /></p>
+<p>Ten sam obraz co tydzień temu: po kilku epokach krzywa walidacyjna zawraca.
+Wszystko, co sieć „nauczyła się" po przerywanej linii, to zapamiętywanie szumu.</p>
+<h3 id="zatrzymaj-zanim-bedzie-za-pozno">Zatrzymaj, zanim będzie za późno<a class="headerlink" href="#zatrzymaj-zanim-bedzie-za-pozno" title="Permanent link">#</a></h3>
+<p>Najprostsze lekarstwo widać na wykresie: <strong>przerwać trening, kiedy strata
+walidacyjna przestaje spadać</strong>, i wrócić do wag z najlepszej epoki. To jest
+<strong>wczesne zatrzymanie</strong> (<em>early stopping</em>). W naszej funkcji robi je parametr
+<code>cierpliwosc</code>:</p>
+<ul>
+<li>po każdej epoce sprawdzamy, czy strata walidacyjna jest najniższa
+  z dotychczasowych — jeśli tak, zapamiętujemy kopię wag
+  (<code>copy.deepcopy(model.state_dict())</code>),</li>
+<li>jeśli przez <code>cierpliwosc</code> epok z rzędu nie było poprawy — przerywamy,</li>
+<li>na koniec wczytujemy zapamiętane wagi (<code>model.load_state_dict(...)</code>).</li>
+</ul>
+<p>Cierpliwość jest potrzebna, bo krzywa walidacyjna jest poszarpana — jedna gorsza
+epoka nie znaczy jeszcze, że sieć zaczęła się przeuczać.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">siec</span> <span class="o">=</span> <span class="n">duza_siec</span><span class="p">()</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">optymalizator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">siec</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">historia_tr</span><span class="p">,</span> <span class="n">historia_val</span> <span class="o">=</span> <span class="n">trenuj</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">dane</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">BCELoss</span><span class="p">(),</span> <span class="n">optymalizator</span><span class="p">,</span> <span class="n">epoki</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">cierpliwosc</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"trening trwał epok:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">historia_val</span><span class="p">),</span> <span class="s2">"| najlepsza:"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">historia_val</span><span class="p">))</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"wczesne zatrzymanie   strata, F1:"</span><span class="p">,</span> <span class="n">ocen</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">X_test_t</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>trening trwał epok: 20 | najlepsza: 9
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>wczesne zatrzymanie   strata, F1: (0.431, 0.619)
+</span></code></pre></div>
+<p>Zamiast 200 epok — kilkanaście, a strata na teście spadła z prawie 0.6 do
+ok. 0.43. Darmowa poprawa: krótszy trening i lepszy model.</p>
+<div class="admonition note">
+<p class="admonition-title"><code>state_dict</code> — wagi sieci w słowniku</p>
+<p><code>model.state_dict()</code> zwraca wszystkie wagi i biasy sieci jako słownik
+<code>{nazwa_warstwy: tensor}</code>. <code>copy.deepcopy</code> robi z niego <strong>niezależną
+kopię</strong> — bez tego „zapamiętane" wagi zmieniałyby się razem z siecią. Tym
+samym słownikiem zapisuje się wytrenowaną sieć do pliku:
+<code>torch.save(model.state_dict(), "siec.pt")</code>.</p>
+</div>
+<hr />
+<h2 id="weight-decay-i-dropout">Weight decay i dropout<a class="headerlink" href="#weight-decay-i-dropout" title="Permanent link">#</a></h2>
+<p>Wczesne zatrzymanie przerywa trening, zanim sieć zacznie się uczyć na pamięć.
+Dwie kolejne metody sprawiają, że <strong>w ogóle trudniej jej się uczyć na pamięć</strong>.
+Wszystkie trzy nazywa się wspólnie <strong>regularyzacją</strong>.</p>
+<h3 id="weight-decay-kara-za-duze-wagi">Weight decay — kara za duże wagi<a class="headerlink" href="#weight-decay-kara-za-duze-wagi" title="Permanent link">#</a></h3>
+<p>Sieć, która zapamiętuje pojedynczych klientów, potrzebuje do tego
+<strong>ogromnych wag</strong> — żeby jeden mały szczegół zmieniał wynik o 180 stopni.
+<strong>Weight decay</strong> (dosłownie „zanik wag") w każdym kroku lekko ściąga wszystkie
+wagi w stronę zera. Waga zostaje duża tylko wtedy, gdy naprawdę pomaga na
+wielu przykładach. To ta sama regularyzacja, którą <code>LogisticRegression</code>
+stosowała domyślnie na zajęciach 4.</p>
+<p>W PyTorch to jeden parametr optymalizatora:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">siec</span> <span class="o">=</span> <span class="n">duza_siec</span><span class="p">()</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">optymalizator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">siec</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">weight_decay</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">historia_tr</span><span class="p">,</span> <span class="n">historia_val</span> <span class="o">=</span> <span class="n">trenuj</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">dane</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">BCELoss</span><span class="p">(),</span> <span class="n">optymalizator</span><span class="p">,</span> <span class="n">epoki</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"najniższa strata walidacyjna w epoce:"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">historia_val</span><span class="p">))</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"weight decay 0.01     strata, F1:"</span><span class="p">,</span> <span class="n">ocen</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">X_test_t</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>najniższa strata walidacyjna w epoce: 96
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>weight decay 0.01     strata, F1: (0.414, 0.632)
+</span></code></pre></div>
+<p>Tym razem nie przerywaliśmy treningu, a sieć i tak się nie przeuczyła —
+najlepsza epoka wypadła daleko, a nie po kilku krokach.</p>
+<h3 id="dropout-losowe-wyaczanie-neuronow">Dropout — losowe wyłączanie neuronów<a class="headerlink" href="#dropout-losowe-wyaczanie-neuronow" title="Permanent link">#</a></h3>
+<p><strong>Dropout</strong> działa inaczej: w każdym kroku treningu <strong>losowo wyłącza</strong> część
+neuronów warstwy ukrytej — np. połowę. W kolejnym kroku wyłącza inną połowę.
+Sieć nie może więc polegać na żadnym pojedynczym neuronie i musi rozłożyć
+wiedzę na wiele z nich. Trochę jak drużyna, w której na każdy trening
+przychodzi losowa połowa zawodników — wszyscy muszą umieć grać na kilku
+pozycjach.</p>
+<p>Dropout to osobna warstwa, którą wstawia się za aktywacją:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">duza_siec_dropout</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="k">return</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">p</span><span class="p">),</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>        <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">p</span><span class="p">),</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>        <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sigmoid</span><span class="p">(),</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="p">)</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="n">siec</span> <span class="o">=</span> <span class="n">duza_siec_dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="n">optymalizator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">siec</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="n">historia_tr</span><span class="p">,</span> <span class="n">historia_val</span> <span class="o">=</span> <span class="n">trenuj</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">dane</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">BCELoss</span><span class="p">(),</span> <span class="n">optymalizator</span><span class="p">,</span> <span class="n">epoki</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"dropout 0.5           strata, F1:"</span><span class="p">,</span> <span class="n">ocen</span><span class="p">(</span><span class="n">siec</span><span class="p">,</span> <span class="n">X_test_t</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>dropout 0.5           strata, F1: (0.4, 0.614)
+</span></code></pre></div>
+<p><code>nn.Dropout(0.5)</code> wyłącza w każdym kroku losowe 50% wyjść poprzedniej warstwy.
+Typowe wartości to 0.2–0.5.</p>
+<div class="admonition warning">
+<p class="admonition-title"><code>model.train()</code> i <code>model.eval()</code></p>
+<p>Dropout ma działać <strong>tylko w czasie treningu</strong>. Przy ocenie i przewidywaniu
+chcemy pełnej sieci, z wszystkimi neuronami. Przełącza to
+<code>model.train()</code> (dropout włączony) i <code>model.eval()</code> (wyłączony). Nasze
+funkcje <code>trenuj</code> i <code>ocen</code> robią to same — ale jeśli kiedyś będziesz liczyć
+przewidywania „ręcznie", zacznij od <code>model.eval()</code>. Zapomniane przełączenie
+to jeden z najczęstszych błędów: wyniki są wtedy losowo gorsze i za każdym
+razem inne.</p>
+</div>
+<h3 id="porownanie">Porównanie<a class="headerlink" href="#porownanie" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Duża sieć 5 → 64 → 64 → 1</th>
+<th>Strata na teście</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bez regularyzacji, 200 epok</td>
+<td>ok. 0.59</td>
+</tr>
+<tr>
+<td>wczesne zatrzymanie</td>
+<td>ok. 0.43</td>
+</tr>
+<tr>
+<td>weight decay 0.01</td>
+<td>ok. 0.41</td>
+</tr>
+<tr>
+<td>dropout 0.5</td>
+<td>ok. 0.40</td>
+</tr>
+<tr>
+<td><em>dla porównania: mała sieć 5 → 8 → 1 z zajęć 5</em></td>
+<td><em>ok. 0.42</em></td>
+</tr>
+</tbody>
+</table>
+<p>Każda z trzech metod naprawiła przeuczenie, a duża sieć z regularyzacją
+wyszła tak dobra jak mała — albo minimalnie lepsza. W praktyce stosuje się je
+razem: trochę dropoutu, trochę weight decay i zawsze wczesne zatrzymanie jako
+pas bezpieczeństwa.</p>
+<hr />
+<h2 id="funkcje-straty">Funkcje straty<a class="headerlink" href="#funkcje-straty" title="Permanent link">#</a></h2>
+<h3 id="strata-zalezy-od-tego-co-przewidujesz">Strata zależy od tego, co przewidujesz<a class="headerlink" href="#strata-zalezy-od-tego-co-przewidujesz" title="Permanent link">#</a></h3>
+<p>Do tej pory zawsze przewidywaliśmy <strong>klasę</strong> (odejdzie / nie odejdzie) —
+sigmoida na końcu i strata BCE. Ale sieć może też przewidywać <strong>liczbę</strong>: czas
+dostawy, cenę mieszkania, sprzedaż w przyszłym tygodniu. To <strong>regresja</strong> —
+znasz ją z zajęć 2 razem z metrykami MAE i RMSE. Zmieniają się wtedy dwie
+rzeczy: ostatnia warstwa i funkcja straty.</p>
+<table>
+<thead>
+<tr>
+<th>Zadanie</th>
+<th>Przykład</th>
+<th>Ostatnia warstwa</th>
+<th>Strata</th>
+<th>Metryka dla ludzi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>klasyfikacja binarna</td>
+<td>odejdzie czy nie</td>
+<td><code>Linear(…, 1)</code> + <code>Sigmoid()</code></td>
+<td><code>nn.BCELoss()</code></td>
+<td>F1, precision, recall</td>
+</tr>
+<tr>
+<td>regresja</td>
+<td>ile minut potrwa dostawa</td>
+<td><code>Linear(…, 1)</code> <strong>bez aktywacji</strong></td>
+<td><code>nn.MSELoss()</code> albo <code>nn.L1Loss()</code></td>
+<td>MAE, RMSE</td>
+</tr>
+<tr>
+<td>klasyfikacja wieloklasowa</td>
+<td>która z 10 cyfr</td>
+<td><code>Linear(…, 10)</code></td>
+<td><code>nn.CrossEntropyLoss()</code></td>
+<td>accuracy</td>
+</tr>
+</tbody>
+</table>
+<p>W regresji na końcu nie ma sigmoidy — ona ścisnęłaby wynik do przedziału 0–1,
+a dostawa trwa 35 minut, nie 0.35. Ostatni neuron zwraca po prostu ważoną
+sumę, czyli dowolną liczbę.</p>
+<ul>
+<li><strong><code>MSELoss</code></strong> — średni <strong>kwadrat</strong> błędu. Pomyłka o 10 minut kosztuje 100,
+  o 20 minut — 400. Mocno karze duże pomyłki.</li>
+<li><strong><code>L1Loss</code></strong> — średni błąd <strong>bez kwadratu</strong>, czyli dokładnie MAE. Spokojniej
+  traktuje pojedyncze wartości odstające.</li>
+</ul>
+<p>Klasyfikacją wieloklasową zajmiemy się na zajęciach 7, przy obrazkach.</p>
+<div class="admonition note">
+<p class="admonition-title">A <code>BCEWithLogitsLoss</code>?</p>
+<p>W cudzym kodzie zobaczysz zwykle <code>nn.BCEWithLogitsLoss()</code> i sieć <strong>bez</strong>
+sigmoidy na końcu. To to samo co sigmoida + <code>BCELoss</code>, tylko połączone
+w jedną funkcję, która liczy się dokładniej przy bardzo pewnych
+przewidywaniach (p = 0.99999). Przy takim kodzie prawdopodobieństwo
+dostajesz przez <code>torch.sigmoid(model(X))</code>. My zostajemy przy sigmoidzie
+w modelu, bo tak łatwiej czytać kod.</p>
+</div>
+<hr />
+<h2 id="siec-do-regresji-czas-dostawy">Sieć do regresji — czas dostawy<a class="headerlink" href="#siec-do-regresji-czas-dostawy" title="Permanent link">#</a></h2>
+<h3 id="dane-meritoeats">Dane MeritoEats<a class="headerlink" href="#dane-meritoeats" title="Permanent link">#</a></h3>
+<p><code>dostawy_czyste.csv</code> to oba miesiące z DS w Pythonie, wyczyszczone
+i połączone z restauracjami. Cechy budujemy jak na zajęciach 5 z DS
+— godzina, weekend, pogoda jako flagi, kuchnia jako one-hot:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">URL_DOSTAWY</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/uczenie_glebokie/dane/dostawy_czyste.csv"</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">dost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL_DOSTAWY</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s2">"data_godzina"</span><span class="p">])</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">dost</span><span class="p">[</span><span class="s2">"godzina"</span><span class="p">]</span> <span class="o">=</span> <span class="n">dost</span><span class="p">[</span><span class="s2">"data_godzina"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">hour</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">dost</span><span class="p">[</span><span class="s2">"weekend"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dost</span><span class="p">[</span><span class="s2">"data_godzina"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day_of_week</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="n">dost</span><span class="p">[</span><span class="s2">"deszcz"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dost</span><span class="p">[</span><span class="s2">"pogoda"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"deszcz"</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">dost</span><span class="p">[</span><span class="s2">"snieg"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dost</span><span class="p">[</span><span class="s2">"pogoda"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"śnieg"</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">dost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">dost</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">dost</span><span class="p">[</span><span class="s2">"kuchnia"</span><span class="p">],</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">"kuchnia"</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="n">cechy_d</span> <span class="o">=</span> <span class="p">([</span><span class="s2">"odleglosc_km"</span><span class="p">,</span> <span class="s2">"liczba_pozycji"</span><span class="p">,</span> <span class="s2">"wartosc_zl"</span><span class="p">,</span> <span class="s2">"godzina"</span><span class="p">,</span> <span class="s2">"weekend"</span><span class="p">,</span> <span class="s2">"deszcz"</span><span class="p">,</span> <span class="s2">"snieg"</span><span class="p">]</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>           <span class="o">+</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">dost</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">k</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"kuchnia_"</span><span class="p">)])</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dost</span><span class="p">),</span> <span class="s2">"zamówień,"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cechy_d</span><span class="p">),</span> <span class="s2">"cech"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>3453 zamówień, 13 cech
+</span></code></pre></div>
+<p>Kolumny <code>ocena</code> nie bierzemy — klient wystawia ją <strong>po</strong> dostawie, więc to
+wyciek. Nie bierzemy też <code>obiecany_czas_min</code>: to wynik wzoru aplikacji,
+z którym chcemy się porównać.</p>
+<h3 id="skalujemy-takze-cel">Skalujemy także cel<a class="headerlink" href="#skalujemy-takze-cel" title="Permanent link">#</a></h3>
+<p>Podział robimy jak zawsze, tylko bez <code>stratify</code> — to ma sens przy klasach, a nie
+przy minutach. Nowość: oprócz cech skalujemy też <strong>zmienną celu</strong>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="n">dost</span><span class="p">[</span><span class="n">cechy_d</span><span class="p">],</span> <span class="n">dost</span><span class="p">[</span><span class="s2">"czas_dostawy_min"</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">X_tr</span><span class="p">,</span> <span class="n">X_val</span><span class="p">,</span> <span class="n">y_tr</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">scaler_d</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_tr</span><span class="p">)</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">srednia</span><span class="p">,</span> <span class="n">odchylenie</span> <span class="o">=</span> <span class="n">y_tr</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">y_tr</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"średni czas dostawy:"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">srednia</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="s2">"min, odchylenie:"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">odchylenie</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="s2">"min"</span><span class="p">)</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="k">def</span><span class="w"> </span><span class="nf">X_na_tensor</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">scaler_d</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">y_na_tensor</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(((</span><span class="n">y</span> <span class="o">-</span> <span class="n">srednia</span><span class="p">)</span> <span class="o">/</span> <span class="n">odchylenie</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="n">dane_d</span> <span class="o">=</span> <span class="p">(</span><span class="n">X_na_tensor</span><span class="p">(</span><span class="n">X_tr</span><span class="p">),</span> <span class="n">y_na_tensor</span><span class="p">(</span><span class="n">y_tr</span><span class="p">),</span> <span class="n">X_na_tensor</span><span class="p">(</span><span class="n">X_val</span><span class="p">),</span> <span class="n">y_na_tensor</span><span class="p">(</span><span class="n">y_val</span><span class="p">))</span>
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="n">X_test_d</span> <span class="o">=</span> <span class="n">X_na_tensor</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>średni czas dostawy: 36.9 min, odchylenie: 11.5 min
+</span></code></pre></div>
+<p>Dlaczego? Świeża sieć zwraca liczby bliskie zera, a prawidłowa odpowiedź to
+ok. 37 minut. Zanim sieć zacznie się uczyć czegokolwiek ciekawego, musiałaby
+długo „dojeżdżać" do trzydziestu kilku — Adam robi małe kroki, więc zajęłoby
+to dziesiątki epok, a wynik zależałby od przypadku. Po skalowaniu cel ma
+średnią 0 i odchylenie 1, czyli sieć startuje blisko dobrej odpowiedzi.
+Przewidywania zamieniamy z powrotem na minuty: <code>p * odchylenie + srednia</code>.</p>
+<h3 id="model-liniowy-i-siec">Model liniowy i sieć<a class="headerlink" href="#model-liniowy-i-siec" title="Permanent link">#</a></h3>
+<p>Trenujemy dwa modele: jeden neuron bez aktywacji (czyli zwykła regresja
+liniowa) i sieć z warstwą ukrytą. Funkcja <code>trenuj</code> jest ta sama — zmienia się
+tylko strata:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">przewidz_minuty</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_t</span><span class="p">):</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>        <span class="k">return</span> <span class="n">model</span><span class="p">(</span><span class="n">X_t</span><span class="p">)</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span> <span class="o">*</span> <span class="n">odchylenie</span> <span class="o">+</span> <span class="n">srednia</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="n">liniowy</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cechy_d</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="n">trenuj</span><span class="p">(</span><span class="n">liniowy</span><span class="p">,</span> <span class="n">dane_d</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span><span class="p">(),</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">liniowy</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">),</span> <span class="n">cierpliwosc</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="n">siec_d</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cechy_d</span><span class="p">),</span> <span class="mi">32</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="n">trenuj</span><span class="p">(</span><span class="n">siec_d</span><span class="p">,</span> <span class="n">dane_d</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span><span class="p">(),</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">siec_d</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">),</span> <span class="n">cierpliwosc</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="n">p_liniowy</span> <span class="o">=</span> <span class="n">przewidz_minuty</span><span class="p">(</span><span class="n">liniowy</span><span class="p">,</span> <span class="n">X_test_d</span><span class="p">)</span>
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="n">p_siec</span> <span class="o">=</span> <span class="n">przewidz_minuty</span><span class="p">(</span><span class="n">siec_d</span><span class="p">,</span> <span class="n">X_test_d</span><span class="p">)</span>
+</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>
+</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"średnia dla wszystkich MAE:"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">),</span> <span class="n">srednia</span><span class="p">)),</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">"min"</span><span class="p">)</span>
+</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"model liniowy          MAE:"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">p_liniowy</span><span class="p">),</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">"min"</span><span class="p">)</span>
+</span><span id="__span-17-19"><a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"sieć 13 → 32 → 1       MAE:"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">p_siec</span><span class="p">),</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">"min"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>średnia dla wszystkich MAE: 9.05 min
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>model liniowy          MAE: 5.15 min
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>sieć 13 → 32 → 1       MAE: 4.63 min
+</span></code></pre></div>
+<p>MAE czyta się wprost: <strong>o ile minut średnio myli się model</strong>. Przewidywanie
+„każda dostawa potrwa średnio 37 minut" myli się o 9 minut. Model liniowy —
+o ok. 5. Sieć jest lepsza o mniej więcej pół minuty. Skąd ta różnica?</p>
+<h3 id="gdzie-myli-sie-model-liniowy">Gdzie myli się model liniowy<a class="headerlink" href="#gdzie-myli-sie-model-liniowy" title="Permanent link">#</a></h3>
+<p>Policzmy średni błąd (prawdziwy czas minus przewidziany) osobno dla każdej
+godziny:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">bledy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="s2">"godzina"</span><span class="p">:</span> <span class="n">X_test</span><span class="p">[</span><span class="s2">"godzina"</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    <span class="s2">"liniowy"</span><span class="p">:</span> <span class="n">y_test</span><span class="o">.</span><span class="n">values</span> <span class="o">-</span> <span class="n">p_liniowy</span><span class="p">,</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="s2">"sieć"</span><span class="p">:</span> <span class="n">y_test</span><span class="o">.</span><span class="n">values</span> <span class="o">-</span> <span class="n">p_siec</span><span class="p">,</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="p">})</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="n">bledy</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"godzina"</span><span class="p">)[[</span><span class="s2">"liniowy"</span><span class="p">,</span> <span class="s2">"sieć"</span><span class="p">]]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    <span class="n">kind</span><span class="o">=</span><span class="s2">"bar"</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Średni błąd przewidywania według godziny"</span><span class="p">)</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"godzina złożenia zamówienia"</span><span class="p">)</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"prawdziwy − przewidziany czas (min)"</span><span class="p">)</span>
+</span></code></pre></div>
+<p><img alt="Średni błąd modelu liniowego i sieci według godziny" src="../obrazki/zajecia_6_bledy_godzina.png" /></p>
+<p>Model liniowy ma dla godziny jedną wagę, więc umie powiedzieć tylko „im
+później, tym dłużej" (albo krócej). Wieczorny szczyt 18–20 jest dla niego
+niewidoczny — w szczycie <strong>zaniża</strong> czas o ok. 4 minuty, a po 21:00
+<strong>zawyża</strong> go o 5–7 minut. Sieć zauważyła, że szczyt to szczyt: w godzinach
+18–20 jej błąd jest mniej więcej o połowę mniejszy, a późnym wieczorem prawie
+znika. Idealna nie jest — o 17:00 myli się nawet bardziej niż model liniowy,
+bo zamówień z tej godziny jest mało. Ten sam mechanizm co z wizytami na
+siłowni tydzień temu, tylko teraz w minutach.</p>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adam (dobry start)</td>
+<td><code>torch.optim.Adam(model.parameters(), lr=0.001)</code></td>
+</tr>
+<tr>
+<td>SGD z momentum</td>
+<td><code>torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)</code></td>
+</tr>
+<tr>
+<td>weight decay</td>
+<td><code>torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=0.01)</code></td>
+</tr>
+<tr>
+<td>dropout</td>
+<td><code>nn.Dropout(0.3)</code> za <code>nn.ReLU()</code></td>
+</tr>
+<tr>
+<td>tryb treningu / oceny</td>
+<td><code>model.train()</code> / <code>model.eval()</code></td>
+</tr>
+<tr>
+<td>kopia wag</td>
+<td><code>copy.deepcopy(model.state_dict())</code></td>
+</tr>
+<tr>
+<td>wczytać zapamiętane wagi</td>
+<td><code>model.load_state_dict(wagi)</code></td>
+</tr>
+<tr>
+<td>trening z wczesnym zatrzymaniem</td>
+<td><code>trenuj(model, dane, strata, optymalizator, epoki=200, cierpliwosc=10)</code></td>
+</tr>
+<tr>
+<td>klasyfikacja binarna</td>
+<td><code>Linear(…, 1)</code> + <code>Sigmoid()</code>, <code>nn.BCELoss()</code></td>
+</tr>
+<tr>
+<td>regresja</td>
+<td><code>Linear(…, 1)</code> bez aktywacji, <code>nn.MSELoss()</code> albo <code>nn.L1Loss()</code></td>
+</tr>
+<tr>
+<td>skalowanie celu w regresji</td>
+<td><code>(y - srednia) / odchylenie</code>, z powrotem: <code>p * odchylenie + srednia</code></td>
+</tr>
+<tr>
+<td>błąd w jednostkach celu</td>
+<td><code>mean_absolute_error(y_test, p)</code></td>
+</tr>
+<tr>
+<td>podział bez stratify (regresja)</td>
+<td><code>train_test_split(X, y, test_size=0.2, random_state=42)</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-6-regularyzacja-i-czas-dostawy-6-pkt">Zadanie 6 — Regularyzacja i czas dostawy (6 pkt)<a class="headerlink" href="#zadanie-6-regularyzacja-i-czas-dostawy-6-pkt" title="Permanent link">#</a></h2>
+<p><strong>Czas:</strong> maks. 45 minut
+<strong>Środowisko:</strong> Google Colab
+<strong>Oddanie:</strong> notatnik <code>.ipynb</code> na Moodle</p>
+<p>Dwa krótkie zlecenia. Pierwsze od zespołu IT MeritoBanku: tydzień temu ich
+sieć przegrała z neuronem, ale twierdzą, że to dlatego, że nie znali
+regularyzacji. Drugie od zespołu produktu MeritoEats: czy sieć przewidzi czas
+dostawy lepiej niż wzór, którego dziś używa aplikacja?</p>
+<p>Na początku notatnika wpisz swój numer albumu — od niego zależy siła dropoutu
+w części 1 i kuchnia w części 2 (ta sama co na DS w Pythonie). Do notatnika
+skopiuj też z notatek importy oraz funkcje <code>trenuj</code> i <code>ocen</code>. Komórka startowa
+części 1 przygotowuje dane kredytowe tak jak w zadaniu 5:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>   <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">MOJE_P</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">][</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="n">KUCHNIE</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"pizza"</span><span class="p">,</span> <span class="s2">"burgery"</span><span class="p">,</span> <span class="s2">"sushi"</span><span class="p">,</span> <span class="s2">"kebab"</span><span class="p">,</span> <span class="s2">"azjatycka"</span><span class="p">,</span> <span class="s2">"polska"</span><span class="p">]</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="n">MOJA_KUCHNIA</span> <span class="o">=</span> <span class="n">KUCHNIE</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Mój dropout:"</span><span class="p">,</span> <span class="n">MOJE_P</span><span class="p">,</span> <span class="s2">"| moja kuchnia:"</span><span class="p">,</span> <span class="n">MOJA_KUCHNIA</span><span class="p">)</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="n">URL_KREDYTY</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/data_science_w_pythonie/dane/kredyty_2026.csv"</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="n">kr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL_KREDYTY</span><span class="p">)</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="n">kr</span><span class="p">[</span><span class="s2">"rata"</span><span class="p">]</span> <span class="o">=</span> <span class="n">kr</span><span class="p">[</span><span class="s2">"kwota_kredytu"</span><span class="p">]</span> <span class="o">/</span> <span class="n">kr</span><span class="p">[</span><span class="s2">"okres_mies"</span><span class="p">]</span>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="n">kr</span><span class="p">[</span><span class="s2">"obciazenie"</span><span class="p">]</span> <span class="o">=</span> <span class="n">kr</span><span class="p">[</span><span class="s2">"rata"</span><span class="p">]</span> <span class="o">/</span> <span class="n">kr</span><span class="p">[</span><span class="s2">"dochod_mies"</span><span class="p">]</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="n">kr</span><span class="p">[</span><span class="s2">"mial_opoznienia"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">kr</span><span class="p">[</span><span class="s2">"opoznienia_12m"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="n">kr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">kr</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">kr</span><span class="p">[</span><span class="s2">"cel_kredytu"</span><span class="p">],</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">"cel"</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="n">cechy_kr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"wiek"</span><span class="p">,</span> <span class="s2">"dochod_mies"</span><span class="p">,</span> <span class="s2">"staz_pracy_lat"</span><span class="p">,</span> <span class="s2">"kwota_kredytu"</span><span class="p">,</span> <span class="s2">"okres_mies"</span><span class="p">,</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>            <span class="s2">"inne_kredyty"</span><span class="p">,</span> <span class="s2">"opoznienia_12m"</span><span class="p">,</span> <span class="s2">"rata"</span><span class="p">,</span> <span class="s2">"obciazenie"</span><span class="p">,</span> <span class="s2">"mial_opoznienia"</span><span class="p">,</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>            <span class="s2">"cel_gotówkowy"</span><span class="p">,</span> <span class="s2">"cel_konsolidacyjny"</span><span class="p">,</span> <span class="s2">"cel_remont"</span><span class="p">,</span> <span class="s2">"cel_samochodowy"</span><span class="p">]</span>
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a>
+</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a><span class="n">X_train_k</span><span class="p">,</span> <span class="n">X_test_k</span><span class="p">,</span> <span class="n">y_train_k</span><span class="p">,</span> <span class="n">y_test_k</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a>    <span class="n">kr</span><span class="p">[</span><span class="n">cechy_kr</span><span class="p">],</span> <span class="n">kr</span><span class="p">[</span><span class="s2">"niesplacony"</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">kr</span><span class="p">[</span><span class="s2">"niesplacony"</span><span class="p">])</span>
+</span><span id="__span-20-20"><a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a><span class="n">X_tr_k</span><span class="p">,</span> <span class="n">X_val_k</span><span class="p">,</span> <span class="n">y_tr_k</span><span class="p">,</span> <span class="n">y_val_k</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+</span><span id="__span-20-21"><a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a>    <span class="n">X_train_k</span><span class="p">,</span> <span class="n">y_train_k</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y_train_k</span><span class="p">)</span>
+</span><span id="__span-20-22"><a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a><span class="n">scaler_k</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_tr_k</span><span class="p">)</span>
+</span><span id="__span-20-23"><a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a><span class="n">X_t</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">X</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">scaler_k</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</span><span id="__span-20-24"><a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a><span class="n">y_t</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-20-25"><a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a>
+</span><span id="__span-20-26"><a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a><span class="n">dane_k</span> <span class="o">=</span> <span class="p">(</span><span class="n">X_t</span><span class="p">(</span><span class="n">X_tr_k</span><span class="p">),</span> <span class="n">y_t</span><span class="p">(</span><span class="n">y_tr_k</span><span class="p">),</span> <span class="n">X_t</span><span class="p">(</span><span class="n">X_val_k</span><span class="p">),</span> <span class="n">y_t</span><span class="p">(</span><span class="n">y_val_k</span><span class="p">))</span>
+</span><span id="__span-20-27"><a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a><span class="n">X_test_kt</span> <span class="o">=</span> <span class="n">X_t</span><span class="p">(</span><span class="n">X_test_k</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Rób części po kolei i <strong>pokaż mi wynik każdej części, gdy będzie gotowa</strong>.</p>
+<h3 id="czesc-1-czy-regularyzacja-uratuje-siec-ok-20-min">Część 1 — czy regularyzacja uratuje sieć? (ok. 20 min)<a class="headerlink" href="#czesc-1-czy-regularyzacja-uratuje-siec-ok-20-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Zbuduj sieć 14 → 64 → 1 (ReLU, sigmoida na wyjściu) i wytrenuj ją Adamem
+   (<code>lr=0.001</code>) przez 100 epok <strong>bez</strong> regularyzacji. Narysuj krzywą
+   treningową i walidacyjną i policz wynik na teście funkcją <code>ocen</code>.</li>
+<li>Zbuduj tę samą sieć z <code>nn.Dropout(MOJE_P)</code> za ReLU i wytrenuj ją
+   z <code>weight_decay=0.01</code> i wczesnym zatrzymaniem (<code>cierpliwosc=10</code>, maks.
+   100 epok). Narysuj krzywe, podaj, po ilu epokach trening się zatrzymał,
+   i policz wynik na teście.</li>
+<li>Wytrenuj tak samo (Adam, 100 epok, bez regularyzacji) jeden neuron na tych
+   14 cechach. Zestaw trzy modele w tabeli i odpowiedz w komórce tekstowej
+   zespołowi IT: czy regularyzacja pomogła sieci i czy to wystarczyło, żeby
+   pobiła neuron?</li>
+</ol>
+<h3 id="czesc-2-czas-dostawy-ok-25-min">Część 2 — czas dostawy (ok. 25 min)<a class="headerlink" href="#czesc-2-czas-dostawy-ok-25-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Przygotuj dane MeritoEats dokładnie jak w sekcji „Sieć do regresji" (cechy,
+   podział, skalowanie cech <strong>i</strong> celu) i wytrenuj sieć 13 → 32 → 1 do
+   regresji: <code>nn.MSELoss()</code>, Adam <code>lr=0.001</code>, <code>cierpliwosc=10</code>. Policz MAE na
+   teście w minutach.</li>
+<li>Porównaj sieć na tym samym zbiorze testowym z dwoma punktami odniesienia:
+   przewidywaniem średnią i <strong>obietnicą aplikacji</strong> (<code>obiecany_czas_min</code>).
+   Policz też średni błąd aplikacji ze znakiem (prawdziwy − obiecany): czy
+   aplikacja częściej zaniża, czy zawyża czas?</li>
+<li>Powtórz porównanie MAE sieci i aplikacji tylko dla zamówień z <strong>Twojej
+   kuchni</strong> w zbiorze testowym. W komórce tekstowej napisz 2–3 zdania do
+   zespołu produktu: czy warto zastąpić wzór siecią — w całej aplikacji
+   i w Twojej kuchni?</li>
+</ol>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Sieć z dropoutem:
+  <code>nn.Sequential(nn.Linear(14, 64), nn.ReLU(), nn.Dropout(MOJE_P), nn.Linear(64, 1), nn.Sigmoid())</code>.
+  Przed budową każdego modelu <code>torch.manual_seed(42)</code>.</li>
+<li>Liczba epok, po których zatrzymał się trening, to <code>len(historia_val)</code>.</li>
+<li>W części 1 dane to <code>dane_k</code>, test to <code>X_test_kt</code> i <code>y_test_k</code>, czyli np.
+  <code>ocen(siec, X_test_kt, y_test_k)</code>.</li>
+<li>Wyniki zapisuj w zmiennych, zanim przejdziesz dalej — przydadzą się do
+  tabeli.</li>
+<li>Obietnica aplikacji dla zamówień testowych:
+  <code>dost.loc[X_test.index, "obiecany_czas_min"]</code> — <code>X_test</code> pamięta numery
+  wierszy z <code>dost</code>.</li>
+<li>Zamówienia z Twojej kuchni w teście: maska
+  <code>moje = (dost.loc[X_test.index, "kuchnia"] == MOJA_KUCHNIA).values</code>, potem
+  <code>y_test[moje]</code>, <code>p_siec[moje]</code>.</li>
+<li>Średni błąd ze znakiem: <code>(y_test - obietnica).mean()</code> — dodatni znaczy, że
+  dostawy trwają dłużej, niż obiecano.</li>
+</ul>
+<h3 id="punktacja-6-pkt">Punktacja (6 pkt)<a class="headerlink" href="#punktacja-6-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>6 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>4 pkt</strong></td>
+<td>jedna z dwóch części zrobiona na zajęciach</td>
+</tr>
+<tr>
+<td><strong>2 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>dzień przed kolejnymi zajęciami</strong>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Serio, róbcie to na zajęciach</p>
+<p>Te same 45 minut pracy jest warte 6 pkt tu i teraz albo 2 pkt w domu. Przez
+cały semestr robi to różnicę 32 punktów, czyli całej oceny w górę lub w dół.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

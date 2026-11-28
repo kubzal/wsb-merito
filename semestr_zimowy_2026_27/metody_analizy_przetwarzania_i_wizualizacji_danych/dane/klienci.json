@@ -1,0 +1,4002 @@
+[
+  {
+    "klient_id": 1,
+    "imie": "Zofia",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-10-06"
+  },
+  {
+    "klient_id": 2,
+    "imie": "Sarah",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-02-07"
+  },
+  {
+    "klient_id": 3,
+    "imie": "Tomasz",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-12-27"
+  },
+  {
+    "klient_id": 4,
+    "imie": "Jan",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-02-28"
+  },
+  {
+    "klient_id": 5,
+    "imie": "Katarzyna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-03-21"
+  },
+  {
+    "klient_id": 6,
+    "imie": "Ava",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Manchester",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-08-10"
+  },
+  {
+    "klient_id": 7,
+    "imie": "Jakub",
+    "nazwisko": "Procházka",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-01-25"
+  },
+  {
+    "klient_id": 8,
+    "imie": "Maria",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-01-29"
+  },
+  {
+    "klient_id": 9,
+    "imie": "Jessica",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-09-09"
+  },
+  {
+    "klient_id": 10,
+    "imie": "Zofia",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-09-17"
+  },
+  {
+    "klient_id": 11,
+    "imie": "Jan",
+    "nazwisko": "Novák",
+    "adres": {
+      "miasto": "Praga",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2023-05-10"
+  },
+  {
+    "klient_id": 12,
+    "imie": "Tomáš",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-05-28"
+  },
+  {
+    "klient_id": 13,
+    "imie": "Jessica",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-09-12"
+  },
+  {
+    "klient_id": 14,
+    "imie": "Isla",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-03-06"
+  },
+  {
+    "klient_id": 15,
+    "imie": "Lukas",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-08-22"
+  },
+  {
+    "klient_id": 16,
+    "imie": "Luca",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2022-03-23"
+  },
+  {
+    "klient_id": 17,
+    "imie": "Anna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-17"
+  },
+  {
+    "klient_id": 18,
+    "imie": "Maria",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-06-09"
+  },
+  {
+    "klient_id": 19,
+    "imie": "Zofia",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-27"
+  },
+  {
+    "klient_id": 20,
+    "imie": "Katarzyna",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-03-25"
+  },
+  {
+    "klient_id": 21,
+    "imie": "Jonas",
+    "nazwisko": "Fischer",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-06-02"
+  },
+  {
+    "klient_id": 22,
+    "imie": "Tomasz",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-06-28"
+  },
+  {
+    "klient_id": 23,
+    "imie": "David",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-08-02"
+  },
+  {
+    "klient_id": 24,
+    "imie": "Anna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-08-29"
+  },
+  {
+    "klient_id": 25,
+    "imie": "Zofia",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-21"
+  },
+  {
+    "klient_id": 26,
+    "imie": "Piotr",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-09"
+  },
+  {
+    "klient_id": 27,
+    "imie": "Zofia",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-12-26"
+  },
+  {
+    "klient_id": 28,
+    "imie": "Anna",
+    "nazwisko": "Schmidt",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-05-21"
+  },
+  {
+    "klient_id": 29,
+    "imie": "Tomasz",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-03-11"
+  },
+  {
+    "klient_id": 30,
+    "imie": "Tomasz",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-15"
+  },
+  {
+    "klient_id": 31,
+    "imie": "Katarzyna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-09-17"
+  },
+  {
+    "klient_id": 32,
+    "imie": "Luca",
+    "nazwisko": "Brunner",
+    "adres": {
+      "miasto": "Zurych",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2023-07-21"
+  },
+  {
+    "klient_id": 33,
+    "imie": "George",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-05-27"
+  },
+  {
+    "klient_id": 34,
+    "imie": "Michael",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-01-19"
+  },
+  {
+    "klient_id": 35,
+    "imie": "Katarzyna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-03-09"
+  },
+  {
+    "klient_id": 36,
+    "imie": "Anna",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-01-05"
+  },
+  {
+    "klient_id": 37,
+    "imie": "Felix",
+    "nazwisko": "Müller",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-08-17"
+  },
+  {
+    "klient_id": 38,
+    "imie": "Zofia",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-06-24"
+  },
+  {
+    "klient_id": 39,
+    "imie": "Jakub",
+    "nazwisko": "Procházka",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-08-26"
+  },
+  {
+    "klient_id": 40,
+    "imie": "Michał",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-07-08"
+  },
+  {
+    "klient_id": 41,
+    "imie": "John",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-03-14"
+  },
+  {
+    "klient_id": 42,
+    "imie": "Anna",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-06-15"
+  },
+  {
+    "klient_id": 43,
+    "imie": "Michał",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-11-13"
+  },
+  {
+    "klient_id": 44,
+    "imie": "Ava",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-06-28"
+  },
+  {
+    "klient_id": 45,
+    "imie": "Katarzyna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-05-26"
+  },
+  {
+    "klient_id": 46,
+    "imie": "Anna",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-08-05"
+  },
+  {
+    "klient_id": 47,
+    "imie": "Anna",
+    "nazwisko": "Fischer",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-02-04"
+  },
+  {
+    "klient_id": 48,
+    "imie": "Zofia",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-05-18"
+  },
+  {
+    "klient_id": 49,
+    "imie": "Isla",
+    "nazwisko": "Evans",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-01-19"
+  },
+  {
+    "klient_id": 50,
+    "imie": "Jonas",
+    "nazwisko": "Müller",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-06-29"
+  },
+  {
+    "klient_id": 51,
+    "imie": "Michael",
+    "nazwisko": "Davis",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-10-19"
+  },
+  {
+    "klient_id": 52,
+    "imie": "Tomasz",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-12-02"
+  },
+  {
+    "klient_id": 53,
+    "imie": "Piotr",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-14"
+  },
+  {
+    "klient_id": 54,
+    "imie": "Piotr",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-24"
+  },
+  {
+    "klient_id": 55,
+    "imie": "Tomasz",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-05-23"
+  },
+  {
+    "klient_id": 56,
+    "imie": "Emily",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-06-25"
+  },
+  {
+    "klient_id": 57,
+    "imie": "Lukas",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-08-24"
+  },
+  {
+    "klient_id": 58,
+    "imie": "Katarzyna",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-12-17"
+  },
+  {
+    "klient_id": 59,
+    "imie": "Katarzyna",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-10"
+  },
+  {
+    "klient_id": 60,
+    "imie": "Ava",
+    "nazwisko": "Evans",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-05-07"
+  },
+  {
+    "klient_id": 61,
+    "imie": "Jonas",
+    "nazwisko": "Fischer",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-09-25"
+  },
+  {
+    "klient_id": 62,
+    "imie": "Katarzyna",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-05"
+  },
+  {
+    "klient_id": 63,
+    "imie": "Piotr",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-01-10"
+  },
+  {
+    "klient_id": 64,
+    "imie": "Maria",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-12-07"
+  },
+  {
+    "klient_id": 65,
+    "imie": "Tereza",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-10-21"
+  },
+  {
+    "klient_id": 66,
+    "imie": "Jakub",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-08-12"
+  },
+  {
+    "klient_id": 67,
+    "imie": "Michał",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-12-04"
+  },
+  {
+    "klient_id": 68,
+    "imie": "Jan",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-07-02"
+  },
+  {
+    "klient_id": 69,
+    "imie": "Amelia",
+    "nazwisko": "Evans",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-05-03"
+  },
+  {
+    "klient_id": 70,
+    "imie": "Anna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-14"
+  },
+  {
+    "klient_id": 71,
+    "imie": "Jonas",
+    "nazwisko": "Schneider",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-07-16"
+  },
+  {
+    "klient_id": 72,
+    "imie": "Anna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-11"
+  },
+  {
+    "klient_id": 73,
+    "imie": "Ava",
+    "nazwisko": "Thomas",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-08-16"
+  },
+  {
+    "klient_id": 74,
+    "imie": "Jakub",
+    "nazwisko": "Novák",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2023-01-16"
+  },
+  {
+    "klient_id": 75,
+    "imie": "Lara",
+    "nazwisko": "Huber",
+    "adres": {
+      "miasto": "Genewa",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-07-29"
+  },
+  {
+    "klient_id": 76,
+    "imie": "John",
+    "nazwisko": "Davis",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-04-22"
+  },
+  {
+    "klient_id": 77,
+    "imie": "Anna",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-07-12"
+  },
+  {
+    "klient_id": 78,
+    "imie": "Jakub",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-07-25"
+  },
+  {
+    "klient_id": 79,
+    "imie": "Piotr",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-09-02"
+  },
+  {
+    "klient_id": 80,
+    "imie": "Zofia",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-07-19"
+  },
+  {
+    "klient_id": 81,
+    "imie": "Jan",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-01-25"
+  },
+  {
+    "klient_id": 82,
+    "imie": "Sarah",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-03-30"
+  },
+  {
+    "klient_id": 83,
+    "imie": "Michał",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-06-15"
+  },
+  {
+    "klient_id": 84,
+    "imie": "Anna",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-01-09"
+  },
+  {
+    "klient_id": 85,
+    "imie": "Anna",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-19"
+  },
+  {
+    "klient_id": 86,
+    "imie": "John",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-11-11"
+  },
+  {
+    "klient_id": 87,
+    "imie": "Michał",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-06"
+  },
+  {
+    "klient_id": 88,
+    "imie": "Sarah",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-09-10"
+  },
+  {
+    "klient_id": 89,
+    "imie": "Anna",
+    "nazwisko": "Schneider",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-03-06"
+  },
+  {
+    "klient_id": 90,
+    "imie": "Lara",
+    "nazwisko": "Meier",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-02-15"
+  },
+  {
+    "klient_id": 91,
+    "imie": "Tereza",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-02-01"
+  },
+  {
+    "klient_id": 92,
+    "imie": "Michał",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-11-08"
+  },
+  {
+    "klient_id": 93,
+    "imie": "Tereza",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Praga",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2023-10-07"
+  },
+  {
+    "klient_id": 94,
+    "imie": "Ava",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-08-02"
+  },
+  {
+    "klient_id": 95,
+    "imie": "Emily",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-02-14"
+  },
+  {
+    "klient_id": 96,
+    "imie": "John",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-10-12"
+  },
+  {
+    "klient_id": 97,
+    "imie": "Anna",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-08-18"
+  },
+  {
+    "klient_id": 98,
+    "imie": "Anna",
+    "nazwisko": "Novák",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-06-09"
+  },
+  {
+    "klient_id": 99,
+    "imie": "Jan",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-02-23"
+  },
+  {
+    "klient_id": 100,
+    "imie": "Anna",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-03-14"
+  },
+  {
+    "klient_id": 101,
+    "imie": "Luca",
+    "nazwisko": "Huber",
+    "adres": {
+      "miasto": "Zurych",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-04-09"
+  },
+  {
+    "klient_id": 102,
+    "imie": "Tomasz",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-03-22"
+  },
+  {
+    "klient_id": 103,
+    "imie": "John",
+    "nazwisko": "Davis",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-07-12"
+  },
+  {
+    "klient_id": 104,
+    "imie": "Maria",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-09-19"
+  },
+  {
+    "klient_id": 105,
+    "imie": "George",
+    "nazwisko": "Evans",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-11-26"
+  },
+  {
+    "klient_id": 106,
+    "imie": "Jan",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-13"
+  },
+  {
+    "klient_id": 107,
+    "imie": "Sarah",
+    "nazwisko": "Davis",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-01-19"
+  },
+  {
+    "klient_id": 108,
+    "imie": "Luca",
+    "nazwisko": "Brunner",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2023-10-29"
+  },
+  {
+    "klient_id": 109,
+    "imie": "John",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-05-21"
+  },
+  {
+    "klient_id": 110,
+    "imie": "Piotr",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-03-02"
+  },
+  {
+    "klient_id": 111,
+    "imie": "Emily",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-06-08"
+  },
+  {
+    "klient_id": 112,
+    "imie": "Michał",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-05-06"
+  },
+  {
+    "klient_id": 113,
+    "imie": "Sarah",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-02-21"
+  },
+  {
+    "klient_id": 114,
+    "imie": "Jan",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-04-18"
+  },
+  {
+    "klient_id": 115,
+    "imie": "Anna",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-01-21"
+  },
+  {
+    "klient_id": 116,
+    "imie": "Katarzyna",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-02"
+  },
+  {
+    "klient_id": 117,
+    "imie": "Zofia",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-29"
+  },
+  {
+    "klient_id": 118,
+    "imie": "Lukas",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-10-07"
+  },
+  {
+    "klient_id": 119,
+    "imie": "Tomasz",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-02-14"
+  },
+  {
+    "klient_id": 120,
+    "imie": "Lena",
+    "nazwisko": "Müller",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-01-09"
+  },
+  {
+    "klient_id": 121,
+    "imie": "John",
+    "nazwisko": "Davis",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-03-15"
+  },
+  {
+    "klient_id": 122,
+    "imie": "Mia",
+    "nazwisko": "Keller",
+    "adres": {
+      "miasto": "Berno",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2022-03-11"
+  },
+  {
+    "klient_id": 123,
+    "imie": "Tomasz",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-09-24"
+  },
+  {
+    "klient_id": 124,
+    "imie": "Piotr",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-03-05"
+  },
+  {
+    "klient_id": 125,
+    "imie": "Zofia",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-05-22"
+  },
+  {
+    "klient_id": 126,
+    "imie": "Anna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-12"
+  },
+  {
+    "klient_id": 127,
+    "imie": "Michael",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-05-13"
+  },
+  {
+    "klient_id": 128,
+    "imie": "Emma",
+    "nazwisko": "Brunner",
+    "adres": {
+      "miasto": "Zurych",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2022-09-07"
+  },
+  {
+    "klient_id": 129,
+    "imie": "Zofia",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-01"
+  },
+  {
+    "klient_id": 130,
+    "imie": "Lukas",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-09-02"
+  },
+  {
+    "klient_id": 131,
+    "imie": "Tomáš",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-01-17"
+  },
+  {
+    "klient_id": 132,
+    "imie": "Sarah",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-11-27"
+  },
+  {
+    "klient_id": 133,
+    "imie": "Amelia",
+    "nazwisko": "Roberts",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-01-28"
+  },
+  {
+    "klient_id": 134,
+    "imie": "Emma",
+    "nazwisko": "Keller",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-10-13"
+  },
+  {
+    "klient_id": 135,
+    "imie": "Tomasz",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-02"
+  },
+  {
+    "klient_id": 136,
+    "imie": "Jessica",
+    "nazwisko": "Davis",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-06-08"
+  },
+  {
+    "klient_id": 137,
+    "imie": "George",
+    "nazwisko": "Thomas",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-09-19"
+  },
+  {
+    "klient_id": 138,
+    "imie": "Luca",
+    "nazwisko": "Keller",
+    "adres": {
+      "miasto": "Genewa",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2022-01-11"
+  },
+  {
+    "klient_id": 139,
+    "imie": "Maria",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-02-15"
+  },
+  {
+    "klient_id": 140,
+    "imie": "David",
+    "nazwisko": "Smith",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-04-03"
+  },
+  {
+    "klient_id": 141,
+    "imie": "Michael",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-06-26"
+  },
+  {
+    "klient_id": 142,
+    "imie": "Michał",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-07"
+  },
+  {
+    "klient_id": 143,
+    "imie": "Tomasz",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-05-22"
+  },
+  {
+    "klient_id": 144,
+    "imie": "Maria",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-04-27"
+  },
+  {
+    "klient_id": 145,
+    "imie": "Tomáš",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-10-05"
+  },
+  {
+    "klient_id": 146,
+    "imie": "Anna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-29"
+  },
+  {
+    "klient_id": 147,
+    "imie": "Maria",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-04-13"
+  },
+  {
+    "klient_id": 148,
+    "imie": "Piotr",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-07-08"
+  },
+  {
+    "klient_id": 149,
+    "imie": "Jan",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-08-11"
+  },
+  {
+    "klient_id": 150,
+    "imie": "Zofia",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-02-16"
+  },
+  {
+    "klient_id": 151,
+    "imie": "Tereza",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-01-24"
+  },
+  {
+    "klient_id": 152,
+    "imie": "Zofia",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-05-28"
+  },
+  {
+    "klient_id": 153,
+    "imie": "Felix",
+    "nazwisko": "Schmidt",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-10-02"
+  },
+  {
+    "klient_id": 154,
+    "imie": "Zofia",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-09-25"
+  },
+  {
+    "klient_id": 155,
+    "imie": "Jessica",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-02-23"
+  },
+  {
+    "klient_id": 156,
+    "imie": "Katarzyna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-12-09"
+  },
+  {
+    "klient_id": 157,
+    "imie": "Oliver",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-10-04"
+  },
+  {
+    "klient_id": 158,
+    "imie": "Maria",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-07-08"
+  },
+  {
+    "klient_id": 159,
+    "imie": "Zofia",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-12-28"
+  },
+  {
+    "klient_id": 160,
+    "imie": "Harry",
+    "nazwisko": "Thomas",
+    "adres": {
+      "miasto": "Manchester",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-04-17"
+  },
+  {
+    "klient_id": 161,
+    "imie": "Felix",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-12-13"
+  },
+  {
+    "klient_id": 162,
+    "imie": "Anna",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-12-25"
+  },
+  {
+    "klient_id": 163,
+    "imie": "Jan",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-05-31"
+  },
+  {
+    "klient_id": 164,
+    "imie": "Amelia",
+    "nazwisko": "Roberts",
+    "adres": {
+      "miasto": "Manchester",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-02-27"
+  },
+  {
+    "klient_id": 165,
+    "imie": "Anna",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-08-01"
+  },
+  {
+    "klient_id": 166,
+    "imie": "Katarzyna",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-12-02"
+  },
+  {
+    "klient_id": 167,
+    "imie": "Jan",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-01-02"
+  },
+  {
+    "klient_id": 168,
+    "imie": "Piotr",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-04-02"
+  },
+  {
+    "klient_id": 169,
+    "imie": "Anna",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-01-09"
+  },
+  {
+    "klient_id": 170,
+    "imie": "Maria",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-10-19"
+  },
+  {
+    "klient_id": 171,
+    "imie": "Jan",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-02-11"
+  },
+  {
+    "klient_id": 172,
+    "imie": "Piotr",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-08"
+  },
+  {
+    "klient_id": 173,
+    "imie": "Lena",
+    "nazwisko": "Fischer",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-07-25"
+  },
+  {
+    "klient_id": 174,
+    "imie": "Tereza",
+    "nazwisko": "Procházka",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-05-10"
+  },
+  {
+    "klient_id": 175,
+    "imie": "Tereza",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-08-03"
+  },
+  {
+    "klient_id": 176,
+    "imie": "Zofia",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-06-26"
+  },
+  {
+    "klient_id": 177,
+    "imie": "Luca",
+    "nazwisko": "Brunner",
+    "adres": {
+      "miasto": "Berno",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2022-09-10"
+  },
+  {
+    "klient_id": 178,
+    "imie": "Tomasz",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-03"
+  },
+  {
+    "klient_id": 179,
+    "imie": "Luca",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Genewa",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-07-09"
+  },
+  {
+    "klient_id": 180,
+    "imie": "Anna",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-04-06"
+  },
+  {
+    "klient_id": 181,
+    "imie": "Oliver",
+    "nazwisko": "Roberts",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-10-12"
+  },
+  {
+    "klient_id": 182,
+    "imie": "Amelia",
+    "nazwisko": "Evans",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-11-24"
+  },
+  {
+    "klient_id": 183,
+    "imie": "Emma",
+    "nazwisko": "Brunner",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2023-07-18"
+  },
+  {
+    "klient_id": 184,
+    "imie": "Jakub",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-10-24"
+  },
+  {
+    "klient_id": 185,
+    "imie": "Tomasz",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-01"
+  },
+  {
+    "klient_id": 186,
+    "imie": "John",
+    "nazwisko": "Davis",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-03-26"
+  },
+  {
+    "klient_id": 187,
+    "imie": "Harry",
+    "nazwisko": "Thomas",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-06-17"
+  },
+  {
+    "klient_id": 188,
+    "imie": "Jan",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-09-09"
+  },
+  {
+    "klient_id": 189,
+    "imie": "Jessica",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-09-07"
+  },
+  {
+    "klient_id": 190,
+    "imie": "Maria",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-11-24"
+  },
+  {
+    "klient_id": 191,
+    "imie": "Tomasz",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-02-15"
+  },
+  {
+    "klient_id": 192,
+    "imie": "Jonas",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-08-29"
+  },
+  {
+    "klient_id": 193,
+    "imie": "Michał",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-05-18"
+  },
+  {
+    "klient_id": 194,
+    "imie": "Anna",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-12-08"
+  },
+  {
+    "klient_id": 195,
+    "imie": "John",
+    "nazwisko": "Smith",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-07-10"
+  },
+  {
+    "klient_id": 196,
+    "imie": "Tomasz",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-06-28"
+  },
+  {
+    "klient_id": 197,
+    "imie": "Jan",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-08-29"
+  },
+  {
+    "klient_id": 198,
+    "imie": "Michał",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-03-24"
+  },
+  {
+    "klient_id": 199,
+    "imie": "Anna",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-05-20"
+  },
+  {
+    "klient_id": 200,
+    "imie": "Piotr",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-08"
+  },
+  {
+    "klient_id": 201,
+    "imie": "Amelia",
+    "nazwisko": "Thomas",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-02-01"
+  },
+  {
+    "klient_id": 202,
+    "imie": "Michael",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-03-03"
+  },
+  {
+    "klient_id": 203,
+    "imie": "Jan",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-04-21"
+  },
+  {
+    "klient_id": 204,
+    "imie": "Harry",
+    "nazwisko": "Thomas",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-07-15"
+  },
+  {
+    "klient_id": 205,
+    "imie": "Ava",
+    "nazwisko": "Roberts",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-12-22"
+  },
+  {
+    "klient_id": 206,
+    "imie": "George",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-07-06"
+  },
+  {
+    "klient_id": 207,
+    "imie": "Jan",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-03"
+  },
+  {
+    "klient_id": 208,
+    "imie": "Maria",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-06-06"
+  },
+  {
+    "klient_id": 209,
+    "imie": "Luca",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-05-30"
+  },
+  {
+    "klient_id": 210,
+    "imie": "Noah",
+    "nazwisko": "Keller",
+    "adres": {
+      "miasto": "Berno",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-10-26"
+  },
+  {
+    "klient_id": 211,
+    "imie": "Piotr",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-03-08"
+  },
+  {
+    "klient_id": 212,
+    "imie": "Lena",
+    "nazwisko": "Müller",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-04-09"
+  },
+  {
+    "klient_id": 213,
+    "imie": "Piotr",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-09"
+  },
+  {
+    "klient_id": 214,
+    "imie": "Tomasz",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-12-23"
+  },
+  {
+    "klient_id": 215,
+    "imie": "Zofia",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-12-19"
+  },
+  {
+    "klient_id": 216,
+    "imie": "Maria",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-05-10"
+  },
+  {
+    "klient_id": 217,
+    "imie": "Zofia",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-08-12"
+  },
+  {
+    "klient_id": 218,
+    "imie": "Jan",
+    "nazwisko": "Novák",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-03-08"
+  },
+  {
+    "klient_id": 219,
+    "imie": "Felix",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-01-09"
+  },
+  {
+    "klient_id": 220,
+    "imie": "Zofia",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-30"
+  },
+  {
+    "klient_id": 221,
+    "imie": "Michał",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-05-19"
+  },
+  {
+    "klient_id": 222,
+    "imie": "Anna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-07-30"
+  },
+  {
+    "klient_id": 223,
+    "imie": "John",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-09-02"
+  },
+  {
+    "klient_id": 224,
+    "imie": "Anna",
+    "nazwisko": "Schneider",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-03-04"
+  },
+  {
+    "klient_id": 225,
+    "imie": "Tomasz",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-02-13"
+  },
+  {
+    "klient_id": 226,
+    "imie": "Katarzyna",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-11-29"
+  },
+  {
+    "klient_id": 227,
+    "imie": "Jonas",
+    "nazwisko": "Schneider",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-11-27"
+  },
+  {
+    "klient_id": 228,
+    "imie": "Anna",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2023-09-22"
+  },
+  {
+    "klient_id": 229,
+    "imie": "Felix",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-03-09"
+  },
+  {
+    "klient_id": 230,
+    "imie": "Leon",
+    "nazwisko": "Keller",
+    "adres": {
+      "miasto": "Berno",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2023-02-23"
+  },
+  {
+    "klient_id": 231,
+    "imie": "Jan",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-11-19"
+  },
+  {
+    "klient_id": 232,
+    "imie": "Piotr",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-09-24"
+  },
+  {
+    "klient_id": 233,
+    "imie": "Mia",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Genewa",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2022-05-20"
+  },
+  {
+    "klient_id": 234,
+    "imie": "Lena",
+    "nazwisko": "Fischer",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-06-12"
+  },
+  {
+    "klient_id": 235,
+    "imie": "Michał",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-09-03"
+  },
+  {
+    "klient_id": 236,
+    "imie": "Jan",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-11-06"
+  },
+  {
+    "klient_id": 237,
+    "imie": "Maria",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-12"
+  },
+  {
+    "klient_id": 238,
+    "imie": "John",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-07-18"
+  },
+  {
+    "klient_id": 239,
+    "imie": "Anna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-04-18"
+  },
+  {
+    "klient_id": 240,
+    "imie": "Tomasz",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-05-23"
+  },
+  {
+    "klient_id": 241,
+    "imie": "Oliver",
+    "nazwisko": "Evans",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-01-15"
+  },
+  {
+    "klient_id": 242,
+    "imie": "Tomáš",
+    "nazwisko": "Procházka",
+    "adres": {
+      "miasto": "Praga",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-05-04"
+  },
+  {
+    "klient_id": 243,
+    "imie": "Tomáš",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-09-08"
+  },
+  {
+    "klient_id": 244,
+    "imie": "Piotr",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-02-05"
+  },
+  {
+    "klient_id": 245,
+    "imie": "Michał",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-08-23"
+  },
+  {
+    "klient_id": 246,
+    "imie": "Maria",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-24"
+  },
+  {
+    "klient_id": 247,
+    "imie": "Anna",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-07-28"
+  },
+  {
+    "klient_id": 248,
+    "imie": "Zofia",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-05-21"
+  },
+  {
+    "klient_id": 249,
+    "imie": "Michał",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-01-23"
+  },
+  {
+    "klient_id": 250,
+    "imie": "Piotr",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-04-19"
+  },
+  {
+    "klient_id": 251,
+    "imie": "Jakub",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-11-11"
+  },
+  {
+    "klient_id": 252,
+    "imie": "Zofia",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-02-09"
+  },
+  {
+    "klient_id": 253,
+    "imie": "Anna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-29"
+  },
+  {
+    "klient_id": 254,
+    "imie": "Jan",
+    "nazwisko": "Novák",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-09-23"
+  },
+  {
+    "klient_id": 255,
+    "imie": "David",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-12-21"
+  },
+  {
+    "klient_id": 256,
+    "imie": "George",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-09-22"
+  },
+  {
+    "klient_id": 257,
+    "imie": "Katarzyna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-03-03"
+  },
+  {
+    "klient_id": 258,
+    "imie": "Eliška",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-08-09"
+  },
+  {
+    "klient_id": 259,
+    "imie": "Tomáš",
+    "nazwisko": "Novák",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-07-29"
+  },
+  {
+    "klient_id": 260,
+    "imie": "Lena",
+    "nazwisko": "Schneider",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-05-10"
+  },
+  {
+    "klient_id": 261,
+    "imie": "Jakub",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2023-06-17"
+  },
+  {
+    "klient_id": 262,
+    "imie": "Jonas",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-09-18"
+  },
+  {
+    "klient_id": 263,
+    "imie": "Anna",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-01-17"
+  },
+  {
+    "klient_id": 264,
+    "imie": "Amelia",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-01-12"
+  },
+  {
+    "klient_id": 265,
+    "imie": "Jessica",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-04-29"
+  },
+  {
+    "klient_id": 266,
+    "imie": "Michał",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-02-09"
+  },
+  {
+    "klient_id": 267,
+    "imie": "Anna",
+    "nazwisko": "Schmidt",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-09-23"
+  },
+  {
+    "klient_id": 268,
+    "imie": "Maria",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-02-26"
+  },
+  {
+    "klient_id": 269,
+    "imie": "Emma",
+    "nazwisko": "Huber",
+    "adres": {
+      "miasto": "Zurych",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-03-13"
+  },
+  {
+    "klient_id": 270,
+    "imie": "Lena",
+    "nazwisko": "Schneider",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-01-23"
+  },
+  {
+    "klient_id": 271,
+    "imie": "Jan",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-11-20"
+  },
+  {
+    "klient_id": 272,
+    "imie": "Tereza",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Praga",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-01-18"
+  },
+  {
+    "klient_id": 273,
+    "imie": "Anna",
+    "nazwisko": "Novák",
+    "adres": {
+      "miasto": "Praga",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-08-22"
+  },
+  {
+    "klient_id": 274,
+    "imie": "Oliver",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-06-24"
+  },
+  {
+    "klient_id": 275,
+    "imie": "Zofia",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-10-19"
+  },
+  {
+    "klient_id": 276,
+    "imie": "Lukas",
+    "nazwisko": "Schneider",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-06-04"
+  },
+  {
+    "klient_id": 277,
+    "imie": "Zofia",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-08-21"
+  },
+  {
+    "klient_id": 278,
+    "imie": "Katarzyna",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-08"
+  },
+  {
+    "klient_id": 279,
+    "imie": "Katarzyna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-11-27"
+  },
+  {
+    "klient_id": 280,
+    "imie": "Zofia",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-08-31"
+  },
+  {
+    "klient_id": 281,
+    "imie": "Oliver",
+    "nazwisko": "Thomas",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-05-13"
+  },
+  {
+    "klient_id": 282,
+    "imie": "Zofia",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-02-22"
+  },
+  {
+    "klient_id": 283,
+    "imie": "Katarzyna",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-03-03"
+  },
+  {
+    "klient_id": 284,
+    "imie": "David",
+    "nazwisko": "Brown",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-06-23"
+  },
+  {
+    "klient_id": 285,
+    "imie": "Luca",
+    "nazwisko": "Brunner",
+    "adres": {
+      "miasto": "Genewa",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2023-02-15"
+  },
+  {
+    "klient_id": 286,
+    "imie": "Mia",
+    "nazwisko": "Keller",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-05-15"
+  },
+  {
+    "klient_id": 287,
+    "imie": "Ava",
+    "nazwisko": "Roberts",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-01-22"
+  },
+  {
+    "klient_id": 288,
+    "imie": "Tereza",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2023-01-20"
+  },
+  {
+    "klient_id": 289,
+    "imie": "Lena",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-12-11"
+  },
+  {
+    "klient_id": 290,
+    "imie": "Ava",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-12-22"
+  },
+  {
+    "klient_id": 291,
+    "imie": "Katarzyna",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-12-05"
+  },
+  {
+    "klient_id": 292,
+    "imie": "Zofia",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-05-13"
+  },
+  {
+    "klient_id": 293,
+    "imie": "Jakub",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-05-24"
+  },
+  {
+    "klient_id": 294,
+    "imie": "Katarzyna",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-26"
+  },
+  {
+    "klient_id": 295,
+    "imie": "George",
+    "nazwisko": "Roberts",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-12-01"
+  },
+  {
+    "klient_id": 296,
+    "imie": "Tomasz",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-08"
+  },
+  {
+    "klient_id": 297,
+    "imie": "Michał",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-03-18"
+  },
+  {
+    "klient_id": 298,
+    "imie": "Zofia",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-31"
+  },
+  {
+    "klient_id": 299,
+    "imie": "Jonas",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-09-11"
+  },
+  {
+    "klient_id": 300,
+    "imie": "Harry",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Manchester",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-05-06"
+  },
+  {
+    "klient_id": 301,
+    "imie": "Isla",
+    "nazwisko": "Roberts",
+    "adres": {
+      "miasto": "Manchester",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-04-16"
+  },
+  {
+    "klient_id": 302,
+    "imie": "Katarzyna",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-09-24"
+  },
+  {
+    "klient_id": 303,
+    "imie": "Maria",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-06-18"
+  },
+  {
+    "klient_id": 304,
+    "imie": "Lukas",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-06-20"
+  },
+  {
+    "klient_id": 305,
+    "imie": "Anna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-01-11"
+  },
+  {
+    "klient_id": 306,
+    "imie": "Katarzyna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-30"
+  },
+  {
+    "klient_id": 307,
+    "imie": "Lukas",
+    "nazwisko": "Schmidt",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-08-21"
+  },
+  {
+    "klient_id": 308,
+    "imie": "Jan",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-08-08"
+  },
+  {
+    "klient_id": 309,
+    "imie": "Maria",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-01-13"
+  },
+  {
+    "klient_id": 310,
+    "imie": "Anna",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-11-04"
+  },
+  {
+    "klient_id": 311,
+    "imie": "Tomasz",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-07-11"
+  },
+  {
+    "klient_id": 312,
+    "imie": "Noah",
+    "nazwisko": "Keller",
+    "adres": {
+      "miasto": "Genewa",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2023-08-21"
+  },
+  {
+    "klient_id": 313,
+    "imie": "Lena",
+    "nazwisko": "Schmidt",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-08-16"
+  },
+  {
+    "klient_id": 314,
+    "imie": "Mia",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Zurych",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2022-02-01"
+  },
+  {
+    "klient_id": 315,
+    "imie": "Emma",
+    "nazwisko": "Brunner",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-02-07"
+  },
+  {
+    "klient_id": 316,
+    "imie": "Maria",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-24"
+  },
+  {
+    "klient_id": 317,
+    "imie": "Michał",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-12-29"
+  },
+  {
+    "klient_id": 318,
+    "imie": "Sophie",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Hamburg",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-06-03"
+  },
+  {
+    "klient_id": 319,
+    "imie": "Zofia",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-06-11"
+  },
+  {
+    "klient_id": 320,
+    "imie": "Maria",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-09"
+  },
+  {
+    "klient_id": 321,
+    "imie": "Mia",
+    "nazwisko": "Brunner",
+    "adres": {
+      "miasto": "Zurych",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2023-09-18"
+  },
+  {
+    "klient_id": 322,
+    "imie": "Noah",
+    "nazwisko": "Huber",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-04-11"
+  },
+  {
+    "klient_id": 323,
+    "imie": "Jan",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-05-21"
+  },
+  {
+    "klient_id": 324,
+    "imie": "Ava",
+    "nazwisko": "Evans",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-03-26"
+  },
+  {
+    "klient_id": 325,
+    "imie": "Sophie",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-09-06"
+  },
+  {
+    "klient_id": 326,
+    "imie": "Isla",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-01-20"
+  },
+  {
+    "klient_id": 327,
+    "imie": "Jan",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-05"
+  },
+  {
+    "klient_id": 328,
+    "imie": "Piotr",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-01-22"
+  },
+  {
+    "klient_id": 329,
+    "imie": "Emma",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-01-25"
+  },
+  {
+    "klient_id": 330,
+    "imie": "Luca",
+    "nazwisko": "Meier",
+    "adres": {
+      "miasto": "Zurych",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2023-05-05"
+  },
+  {
+    "klient_id": 331,
+    "imie": "Katarzyna",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-07-01"
+  },
+  {
+    "klient_id": 332,
+    "imie": "Mia",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-06-04"
+  },
+  {
+    "klient_id": 333,
+    "imie": "Anna",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-07-04"
+  },
+  {
+    "klient_id": 334,
+    "imie": "Jessica",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-03-19"
+  },
+  {
+    "klient_id": 335,
+    "imie": "Oliver",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2023-10-12"
+  },
+  {
+    "klient_id": 336,
+    "imie": "Zofia",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-07-09"
+  },
+  {
+    "klient_id": 337,
+    "imie": "Noah",
+    "nazwisko": "Meier",
+    "adres": {
+      "miasto": "Berno",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-06-13"
+  },
+  {
+    "klient_id": 338,
+    "imie": "Michał",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-27"
+  },
+  {
+    "klient_id": 339,
+    "imie": "Anna",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Praga",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-01-10"
+  },
+  {
+    "klient_id": 340,
+    "imie": "Tomáš",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Praga",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-06-10"
+  },
+  {
+    "klient_id": 341,
+    "imie": "Jan",
+    "nazwisko": "Procházka",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2023-04-20"
+  },
+  {
+    "klient_id": 342,
+    "imie": "Eliška",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Praga",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-03-03"
+  },
+  {
+    "klient_id": 343,
+    "imie": "Jan",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-21"
+  },
+  {
+    "klient_id": 344,
+    "imie": "David",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-11-21"
+  },
+  {
+    "klient_id": 345,
+    "imie": "Isla",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Londyn",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-04-10"
+  },
+  {
+    "klient_id": 346,
+    "imie": "Anna",
+    "nazwisko": "Weber",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-02-08"
+  },
+  {
+    "klient_id": 347,
+    "imie": "Felix",
+    "nazwisko": "Schmidt",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-11-16"
+  },
+  {
+    "klient_id": 348,
+    "imie": "Michał",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-12-11"
+  },
+  {
+    "klient_id": 349,
+    "imie": "Maria",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-04-02"
+  },
+  {
+    "klient_id": 350,
+    "imie": "Harry",
+    "nazwisko": "Roberts",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-03-02"
+  },
+  {
+    "klient_id": 351,
+    "imie": "Tomasz",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-04-19"
+  },
+  {
+    "klient_id": 352,
+    "imie": "Oliver",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Manchester",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-08-17"
+  },
+  {
+    "klient_id": 353,
+    "imie": "Zofia",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-12-04"
+  },
+  {
+    "klient_id": 354,
+    "imie": "Katarzyna",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-05-30"
+  },
+  {
+    "klient_id": 355,
+    "imie": "Maria",
+    "nazwisko": "Kamińska",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-08-12"
+  },
+  {
+    "klient_id": 356,
+    "imie": "Sarah",
+    "nazwisko": "Davis",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2024-08-20"
+  },
+  {
+    "klient_id": 357,
+    "imie": "Michał",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-01-26"
+  },
+  {
+    "klient_id": 358,
+    "imie": "Maria",
+    "nazwisko": "Zielińska",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-01-11"
+  },
+  {
+    "klient_id": 359,
+    "imie": "Anna",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-04-15"
+  },
+  {
+    "klient_id": 360,
+    "imie": "Lukas",
+    "nazwisko": "Schneider",
+    "adres": {
+      "miasto": "Kolonia",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2024-01-30"
+  },
+  {
+    "klient_id": 361,
+    "imie": "Jessica",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Chicago",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-03-02"
+  },
+  {
+    "klient_id": 362,
+    "imie": "Michał",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-08-13"
+  },
+  {
+    "klient_id": 363,
+    "imie": "Ava",
+    "nazwisko": "Wilson",
+    "adres": {
+      "miasto": "Bristol",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2022-04-08"
+  },
+  {
+    "klient_id": 364,
+    "imie": "George",
+    "nazwisko": "Evans",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-10-09"
+  },
+  {
+    "klient_id": 365,
+    "imie": "Eliška",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Pilzno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2023-06-23"
+  },
+  {
+    "klient_id": 366,
+    "imie": "Katarzyna",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-11-05"
+  },
+  {
+    "klient_id": 367,
+    "imie": "Lara",
+    "nazwisko": "Huber",
+    "adres": {
+      "miasto": "Bazylea",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-05-18"
+  },
+  {
+    "klient_id": 368,
+    "imie": "Tomasz",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-02-02"
+  },
+  {
+    "klient_id": 369,
+    "imie": "Tereza",
+    "nazwisko": "Dvořák",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-01-24"
+  },
+  {
+    "klient_id": 370,
+    "imie": "Katarzyna",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-29"
+  },
+  {
+    "klient_id": 371,
+    "imie": "Tomasz",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-08-27"
+  },
+  {
+    "klient_id": 372,
+    "imie": "Piotr",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-05-31"
+  },
+  {
+    "klient_id": 373,
+    "imie": "Lara",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Genewa",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-02-05"
+  },
+  {
+    "klient_id": 374,
+    "imie": "Anna",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-03-12"
+  },
+  {
+    "klient_id": 375,
+    "imie": "Tomáš",
+    "nazwisko": "Svoboda",
+    "adres": {
+      "miasto": "Ostrawa",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2024-02-25"
+  },
+  {
+    "klient_id": 376,
+    "imie": "Michał",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-01-13"
+  },
+  {
+    "klient_id": 377,
+    "imie": "Mia",
+    "nazwisko": "Gerber",
+    "adres": {
+      "miasto": "Genewa",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-12-10"
+  },
+  {
+    "klient_id": 378,
+    "imie": "Michał",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-03-28"
+  },
+  {
+    "klient_id": 379,
+    "imie": "Michał",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-07"
+  },
+  {
+    "klient_id": 380,
+    "imie": "Jessica",
+    "nazwisko": "Smith",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-05-12"
+  },
+  {
+    "klient_id": 381,
+    "imie": "Tomasz",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-07-15"
+  },
+  {
+    "klient_id": 382,
+    "imie": "Lukas",
+    "nazwisko": "Müller",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2022-01-19"
+  },
+  {
+    "klient_id": 383,
+    "imie": "Piotr",
+    "nazwisko": "Nowak",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-24"
+  },
+  {
+    "klient_id": 384,
+    "imie": "Zofia",
+    "nazwisko": "Wiśniewska",
+    "adres": {
+      "miasto": "Łódź",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-10-23"
+  },
+  {
+    "klient_id": 385,
+    "imie": "Tomasz",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-10-24"
+  },
+  {
+    "klient_id": 386,
+    "imie": "Tomasz",
+    "nazwisko": "Wójcik",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-11-27"
+  },
+  {
+    "klient_id": 387,
+    "imie": "Piotr",
+    "nazwisko": "Zieliński",
+    "adres": {
+      "miasto": "Poznań",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-03-03"
+  },
+  {
+    "klient_id": 388,
+    "imie": "Tomáš",
+    "nazwisko": "Černý",
+    "adres": {
+      "miasto": "Brno",
+      "kraj": "Czechy"
+    },
+    "data_rejestracji": "2022-08-20"
+  },
+  {
+    "klient_id": 389,
+    "imie": "Anna",
+    "nazwisko": "Fischer",
+    "adres": {
+      "miasto": "Berlin",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-08-09"
+  },
+  {
+    "klient_id": 390,
+    "imie": "Zofia",
+    "nazwisko": "Kowalska",
+    "adres": {
+      "miasto": "Wrocław",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-11-17"
+  },
+  {
+    "klient_id": 391,
+    "imie": "Ava",
+    "nazwisko": "Taylor",
+    "adres": {
+      "miasto": "Edynburg",
+      "kraj": "Wielka Brytania"
+    },
+    "data_rejestracji": "2024-03-26"
+  },
+  {
+    "klient_id": 392,
+    "imie": "Jan",
+    "nazwisko": "Wiśniewski",
+    "adres": {
+      "miasto": "Warszawa",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2023-07-28"
+  },
+  {
+    "klient_id": 393,
+    "imie": "Lukas",
+    "nazwisko": "Fischer",
+    "adres": {
+      "miasto": "Monachium",
+      "kraj": "Niemcy"
+    },
+    "data_rejestracji": "2023-02-13"
+  },
+  {
+    "klient_id": 394,
+    "imie": "Michał",
+    "nazwisko": "Mazur",
+    "adres": {
+      "miasto": "Gdańsk",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2024-04-04"
+  },
+  {
+    "klient_id": 395,
+    "imie": "Michael",
+    "nazwisko": "Miller",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-06-16"
+  },
+  {
+    "klient_id": 396,
+    "imie": "Jessica",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Nowy Jork",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2023-02-20"
+  },
+  {
+    "klient_id": 397,
+    "imie": "Michał",
+    "nazwisko": "Kamiński",
+    "adres": {
+      "miasto": "Kraków",
+      "kraj": "Polska"
+    },
+    "data_rejestracji": "2022-03-31"
+  },
+  {
+    "klient_id": 398,
+    "imie": "Emma",
+    "nazwisko": "Meier",
+    "adres": {
+      "miasto": "Zurych",
+      "kraj": "Szwajcaria"
+    },
+    "data_rejestracji": "2024-05-19"
+  },
+  {
+    "klient_id": 399,
+    "imie": "David",
+    "nazwisko": "Johnson",
+    "adres": {
+      "miasto": "Boston",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-11-24"
+  },
+  {
+    "klient_id": 400,
+    "imie": "Michael",
+    "nazwisko": "Smith",
+    "adres": {
+      "miasto": "Seattle",
+      "kraj": "USA"
+    },
+    "data_rejestracji": "2022-04-03"
+  }
+]

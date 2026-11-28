@@ -1,0 +1,4435 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/zarzadzanie_big_data/zajecia_2/">
+      
+      
+        <link rel="prev" href="../zajecia_1/">
+      
+      
+        <link rel="next" href="../../../archiwum/jakosc_aplikacji/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Zajęcia 2 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-2" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-tabs__dropdown-link">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../systemy_big_data/" class="md-tabs__dropdown-link">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#architektura-i-ekonomia-big-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architektura i ekonomia Big Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#co-juz-wiemy-o-freshboxie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co już wiemy o FreshBoxie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gdzie-trzymac-dane-hurtownia-jezioro-lakehouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gdzie trzymać dane: hurtownia, jezioro, lakehouse
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gdzie trzymać dane: hurtownia, jezioro, lakehouse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hurtownia-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hurtownia danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jezioro-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jezioro danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lakehouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lakehouse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#co-wybrac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co wybrać
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rozdzielenie-przechowywania-i-obliczen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozdzielenie przechowywania i obliczeń
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decyzje-zarzadcze" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decyzje zarządcze
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decyzje zarządcze">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chmura-czy-wasna-serwerownia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chmura czy własna serwerownia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kupic-czy-zbudowac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kupić czy zbudować
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uzaleznienie-od-dostawcy-vendor-lock-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uzależnienie od dostawcy (vendor lock-in)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ekonomia-big-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ekonomia Big Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ekonomia Big Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tco-cakowity-koszt-posiadania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TCO — całkowity koszt posiadania
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-kosztowy-bigquery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model kosztowy BigQuery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finops-kto-paci-za-zapytanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FinOps — kto płaci za zapytanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo-bigquery-sandbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo: BigQuery Sandbox
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo: BigQuery Sandbox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zakadamy-sandbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zakładamy Sandbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publiczne-dane-ile-kosztuje-zapytanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publiczne dane: ile kosztuje zapytanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freshbox-w-bigquery-aczymy-sie-z-colaba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FreshBox w BigQuery: łączymy się z Colaba
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dry-run-z-pythona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dry run z Pythona
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partycjonowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partycjonowanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ile-to-kosztuje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ile to kosztuje
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-2-budzet-dashboardu-9-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2 — Budżet dashboardu (9 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 2 — Budżet dashboardu (9 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#twoje-miasto-i-miesiac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Twoje miasto i miesiąc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-ile-to-kosztuje-ok-30-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — ile to kosztuje (ok. 30 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-jak-to-obnizyc-ok-35-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — jak to obniżyć (ok. 35 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-9-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (9 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-2">Zajęcia 2<a class="headerlink" href="#zajecia-2" title="Permanent link">#</a></h1>
+<h2 id="architektura-i-ekonomia-big-data">Architektura i ekonomia Big Data<a class="headerlink" href="#architektura-i-ekonomia-big-data" title="Permanent link">#</a></h2>
+<p>Poniedziałek, 9:00, kolejne zebranie zarządu FreshBoxa. Tym razem dyrektor
+finansowa kładzie na stole fakturę od Google Cloud: rachunek za dane urósł
+w kwartał o <strong>40%</strong>. „Za co my właściwie płacimy? I czy ten nowy dashboard
+kierowników miast musi tyle kosztować?” Nikt na sali nie umie odpowiedzieć,
+więc pytanie trafia do działu danych. Czyli znowu do Ciebie.</p>
+<p>Na zajęciach 1 sprawdzaliśmy, <strong>co</strong> FreshBox ma. Dziś pytamy, <strong>gdzie</strong> to
+trzymać i <strong>ile to kosztuje</strong>. Zobaczysz, że w chmurze płaci się nie za serwer,
+tylko za każde zapytanie — i że jedno źle napisane zapytanie w dashboardzie
+potrafi kosztować więcej niż przechowywanie wszystkich danych firmy.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>porównać hurtownię danych, jezioro danych i lakehouse i dobrać architekturę do
+  potrzeb firmy,</li>
+<li>omówić decyzje zarządcze: chmura czy własna serwerownia, kupić czy zbudować,
+  jak nie uzależnić się od jednego dostawcy,</li>
+<li>wymienić składniki całkowitego kosztu posiadania (TCO),</li>
+<li>wyjaśnić model kosztowy chmury: osobno przechowywanie, osobno obliczenia,
+  „płacisz za przeskanowane bajty”,</li>
+<li>oszacować miesięczny koszt raportu w BigQuery i zaproponować, jak go obniżyć.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Przykłady z zajęć w Colabie</p>
+<p>Demo z dzisiejszych zajęć jest też w gotowym notatniku. Otwórz go
+i uruchamiaj komórki po kolei, czytając materiał. Żeby zachować swoje zmiany,
+zapisz kopię: <strong>Plik → Zapisz kopię na Dysku</strong>.</p>
+<p><a href="https://colab.research.google.com/github/kubzal/wsb-merito/blob/main/notebooks/semestr_zimowy_2026_27/zarzadzanie_big_data/zajecia_2.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</div>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Co już wiemy o FreshBoxie</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Gdzie trzymać dane: hurtownia, jezioro, lakehouse</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>Decyzje zarządcze: chmura, kupić czy zbudować, uzależnienie od dostawcy</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Ekonomia: TCO, model kosztowy chmury, FinOps</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Demo: BigQuery Sandbox</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>Przerwa</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 2</strong></td>
+<td><strong>65 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="co-juz-wiemy-o-freshboxie">Co już wiemy o FreshBoxie<a class="headerlink" href="#co-juz-wiemy-o-freshboxie" title="Permanent link">#</a></h2>
+<p>Po zajęciach 1 wiemy, że FreshBox ma pięć zbiorów danych w pięciu różnych
+miejscach: CRM, system sprzedażowy, logi aplikacji, Excel obsługi klienta
+i słownik miast. Każdy dział liczy „klientów” po swojemu, a za część danych nikt
+formalnie nie odpowiada.</p>
+<p>Rok temu FreshBox zrobił to, co robi dziś większość firm tej wielkości:
+<strong>przeniósł dane do chmury</strong>. Zamówienia trafiają co kilka minut do hurtowni
+<strong>BigQuery</strong> w Google Cloud, a kierownicy miast patrzą na nie przez dashboard.
+Dashboard ładnie wygląda, wszyscy go lubią — i właśnie przyszła za niego
+faktura.</p>
+<hr />
+<h2 id="gdzie-trzymac-dane-hurtownia-jezioro-lakehouse">Gdzie trzymać dane: hurtownia, jezioro, lakehouse<a class="headerlink" href="#gdzie-trzymac-dane-hurtownia-jezioro-lakehouse" title="Permanent link">#</a></h2>
+<p>Zanim policzymy koszty, trzeba wiedzieć, <strong>za co</strong> się płaci. Firmy trzymają
+dane analityczne w jednej z trzech architektur.</p>
+<h3 id="hurtownia-danych">Hurtownia danych<a class="headerlink" href="#hurtownia-danych" title="Permanent link">#</a></h3>
+<p><strong>Hurtownia danych</strong> (<em>data warehouse</em>) to jedna baza analityczna, do której
+dane z systemów firmy (sprzedaż, CRM, księgowość) są regularnie ładowane,
+czyszczone i układane w tabele o z góry ustalonej strukturze. Pomysł pochodzi
+z przełomu lat 80. i 90.</p>
+<ul>
+<li><strong>Mocne strony:</strong> jedno miejsce z „oficjalnymi” liczbami, szybkie raporty
+  w SQL, uprawnienia, transakcje, dojrzałe narzędzia. Dla zarządu to naturalne
+  <strong>jedno źródło prawdy</strong> z zajęć 1.</li>
+<li><strong>Słabe strony:</strong> drogie przechowywanie, tylko dane tabelaryczne, każde nowe
+  źródło to tygodnie pracy (struktura musi być ustalona <strong>przed</strong> załadowaniem).</li>
+<li><strong>Przykłady:</strong> Teradata, Oracle Exadata, a w chmurze Snowflake, Amazon
+  Redshift, Google BigQuery.</li>
+</ul>
+<h3 id="jezioro-danych">Jezioro danych<a class="headerlink" href="#jezioro-danych" title="Permanent link">#</a></h3>
+<p><strong>Jezioro danych</strong> (<em>data lake</em>) to tani magazyn plików, do którego wrzuca się
+wszystko, jak leci: tabele, logi, JSON-y, zdjęcia, nagrania. Strukturę ustala się
+dopiero przy odczycie. Popularne od lat 2010., najpierw jako Hadoop, dziś jako
+chmurowe magazyny obiektowe: Amazon S3, Azure Data Lake Storage, Google Cloud
+Storage.</p>
+<ul>
+<li><strong>Mocne strony:</strong> bardzo tanie przechowywanie, dowolne formaty, otwarte
+  formaty plików (Parquet, CSV) czytane przez wiele narzędzi, dobre paliwo dla
+  data science i uczenia maszynowego.</li>
+<li><strong>Słabe strony:</strong> brak porządku „z pudełka”. Bez inwentaryzacji, właścicieli
+  i kontroli jakości jezioro po kilku latach zamienia się w <strong>bagno danych</strong>
+  (<em>data swamp</em>): tysiące plików, nie wiadomo, które są aktualne, a które to
+  kopia z błędem sprzed roku. To dark data z zajęć 1 w hurtowej ilości.</li>
+</ul>
+<h3 id="lakehouse">Lakehouse<a class="headerlink" href="#lakehouse" title="Permanent link">#</a></h3>
+<p>Przez lata firmy miały <strong>jedno i drugie</strong>: jezioro jako tanie archiwum i źródło
+dla data science, a wybrane dane kopiowane dalej do hurtowni dla raportów. To
+znaczy dwie kopie danych, dwa rachunki, dodatkowy proces kopiowania i dwie
+różne liczby na to samo pytanie.</p>
+<pre class="mermaid"><code>flowchart LR
+    SRC["Systemy firmy&lt;br/&gt;CRM, sprzedaż, aplikacja"] --&gt; LAKE[("&lt;b&gt;Jezioro danych&lt;/b&gt;&lt;br/&gt;tanie pliki")]
+    LAKE --&gt; ETL["kopiowanie&lt;br/&gt;i czyszczenie"] --&gt; DWH[("&lt;b&gt;Hurtownia&lt;/b&gt;&lt;br/&gt;drogie tabele")]
+    LAKE --&gt; DS["Data science"]
+    DWH --&gt; BI["Raporty dla zarządu"]</code></pre>
+<p><strong>Lakehouse</strong> (<em>lake + warehouse</em>) łączy oba światy: dane leżą raz, w tanim
+magazynie i otwartym formacie, a specjalna warstwa (np. Delta Lake, Apache
+Iceberg) dokłada do nich to, co daje hurtownia — transakcje, kontrolę
+struktury, historię zmian, uprawnienia. Z tych samych danych korzystają i
+raporty, i data science. Najbardziej znana platforma tego typu to Databricks,
+z której skorzystamy na zajęciach 4.</p>
+<h3 id="co-wybrac">Co wybrać<a class="headerlink" href="#co-wybrac" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hurtownia</th>
+<th>Jezioro</th>
+<th>Lakehouse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Typ danych</td>
+<td>tabele</td>
+<td>wszystko</td>
+<td>wszystko</td>
+</tr>
+<tr>
+<td>Koszt przechowywania</td>
+<td>wysoki</td>
+<td>niski</td>
+<td>niski</td>
+</tr>
+<tr>
+<td>Kto korzysta</td>
+<td>analitycy, raporty</td>
+<td>inżynierowie, data science</td>
+<td>wszyscy</td>
+</tr>
+<tr>
+<td>Porządek i jakość</td>
+<td>wymuszone przez system</td>
+<td>zależą od dyscypliny ludzi</td>
+<td>wymuszone przez warstwę tabel</td>
+</tr>
+<tr>
+<td>Ryzyko</td>
+<td>koszt, sztywność</td>
+<td>bagno danych</td>
+<td>złożoność, kompetencje</td>
+</tr>
+<tr>
+<td>Pasuje, gdy…</td>
+<td>głównie raporty z danych tabelarycznych</td>
+<td>dużo danych surowych, ML, niski budżet</td>
+<td>i raporty, i ML na tych samych danych</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Nie każda firma ma Big Data</p>
+<p>Zamówienia FreshBoxa z całego roku to <strong>6 MB</strong> w Parquecie. Zmieściłyby się
+w pamięci telefonu, a DuckDB z zajęć 1 liczył na nich w ułamku sekundy.
+Wybór architektury zaczyna się od pytania, <strong>ile naprawdę mamy danych
+i ile ich będzie za trzy lata</strong> — a nie od tego, czego używa Netflix.
+Przewymiarowana platforma to też koszt.</p>
+</div>
+<h3 id="rozdzielenie-przechowywania-i-obliczen">Rozdzielenie przechowywania i obliczeń<a class="headerlink" href="#rozdzielenie-przechowywania-i-obliczen" title="Permanent link">#</a></h3>
+<p>Najważniejsza zmiana, jaką przyniosła chmura, jest ekonomiczna. W klasycznej
+bazie danych dyski i procesory są w tym samym serwerze. Kupujesz je razem
+i płacisz za nie razem, nawet gdy w nocy nikt nic nie liczy.</p>
+<p>W chmurowych hurtowniach (BigQuery, Snowflake, Databricks) <strong>przechowywanie
+(<em>storage</em>) i obliczenia (<em>compute</em>) są rozdzielone</strong>:</p>
+<ul>
+<li><strong>przechowywanie</strong> — dane leżą w tanim magazynie i płacisz za gigabajty
+  miesięcznie, jak za magazyn na palety,</li>
+<li><strong>obliczenia</strong> — moc obliczeniowa pojawia się na czas zapytania i znika.
+  Płacisz za to, ile jej zużyłeś, jak za taksówkę.</li>
+</ul>
+<p>Dzięki temu można trzymać dużo danych tanio i płacić dużo tylko wtedy, gdy się
+z nich intensywnie korzysta. Ale też: <strong>koszt zależy od zachowania ludzi</strong>,
+a nie od zakupionego sprzętu. Jeden analityk z nawykiem <code>SELECT *</code> potrafi
+wygenerować rachunek, którego nie przewidział żaden budżet.</p>
+<hr />
+<h2 id="decyzje-zarzadcze">Decyzje zarządcze<a class="headerlink" href="#decyzje-zarzadcze" title="Permanent link">#</a></h2>
+<h3 id="chmura-czy-wasna-serwerownia">Chmura czy własna serwerownia<a class="headerlink" href="#chmura-czy-wasna-serwerownia" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Własna serwerownia (<em>on-premise</em>)</th>
+<th>Chmura publiczna</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wydatek</td>
+<td>duży z góry: serwery, licencje (<strong>CAPEX</strong>)</td>
+<td>co miesiąc, w miarę użycia (<strong>OPEX</strong>)</td>
+</tr>
+<tr>
+<td>Skalowanie</td>
+<td>trzeba kupić sprzęt na szczyt zapotrzebowania</td>
+<td>moc dokładana w minuty i oddawana, gdy niepotrzebna</td>
+</tr>
+<tr>
+<td>Przewidywalność kosztów</td>
+<td>wysoka — sprzęt już kupiony</td>
+<td>niska — rachunek zależy od użycia</td>
+</tr>
+<tr>
+<td>Kompetencje</td>
+<td>administratorzy sprzętu, sieci, kopii zapasowych</td>
+<td>inżynierowie chmury, kontrola kosztów</td>
+</tr>
+<tr>
+<td>Kontrola nad danymi</td>
+<td>pełna</td>
+<td>dane u dostawcy — wybór regionu, umowy, audyty</td>
+</tr>
+<tr>
+<td>Start nowego projektu</td>
+<td>tygodnie (zakup, instalacja)</td>
+<td>minuty</td>
+</tr>
+</tbody>
+</table>
+<p>Chmura <strong>nie jest tańsza z definicji</strong>. Jest tańsza, gdy zapotrzebowanie się
+zmienia (sezonowość, nowe projekty, szybki wzrost) i gdy firma pilnuje kosztów.
+Przy stabilnym, dużym i przewidywalnym obciążeniu własny sprzęt bywa tańszy —
+kilka znanych firm, m.in. 37signals (twórcy Basecampa), głośno wyprowadziło się
+z chmury i policzyło oszczędności w milionach dolarów. Coraz częściej wybiera się
+<strong>model hybrydowy</strong>: stałe obciążenie u siebie, szczyty i eksperymenty w chmurze.</p>
+<h3 id="kupic-czy-zbudowac">Kupić czy zbudować<a class="headerlink" href="#kupic-czy-zbudowac" title="Permanent link">#</a></h3>
+<p>Zespół inżynierów zawsze może „napisać to sam” na narzędziach open source. To
+się opłaca, gdy rozwiązanie daje firmie <strong>przewagę konkurencyjną</strong> albo gdy na
+rynku nie ma niczego, co pasuje. Dla rzeczy, które każda firma ma tak samo
+(hurtownia, harmonogram zadań, katalog danych), zwykle taniej jest kupić
+gotową usługę i zapłacić za nią miesięcznie, niż utrzymywać na etacie ludzi,
+którzy budują i łatają własną.</p>
+<p>Open source nie znaczy „za darmo”: licencja nic nie kosztuje, ale instalacja,
+aktualizacje, bezpieczeństwo i dyżury o 3:00 w nocy — już tak.</p>
+<h3 id="uzaleznienie-od-dostawcy-vendor-lock-in">Uzależnienie od dostawcy (<em>vendor lock-in</em>)<a class="headerlink" href="#uzaleznienie-od-dostawcy-vendor-lock-in" title="Permanent link">#</a></h3>
+<p>Im głębiej firma wejdzie w usługi jednego dostawcy, tym drożej jest od niego
+odejść. Źródła uzależnienia:</p>
+<ul>
+<li><strong>zamknięte formaty danych</strong> — dane da się wyciągnąć tylko narzędziami
+  dostawcy,</li>
+<li><strong>opłaty za wyprowadzenie danych</strong> (<em>egress</em>) — wgranie danych do chmury jest
+  darmowe, pobranie ich z powrotem kosztuje,</li>
+<li><strong>specyficzne funkcje</strong> — zapytania i pipeline'y napisane pod jedną
+  platformę trzeba przepisać,</li>
+<li><strong>kompetencje</strong> — zespół zna jedno narzędzie.</li>
+</ul>
+<p>Jak się bronić: przechowywać dane w <strong>otwartych formatach</strong> (Parquet, Iceberg,
+Delta), mieć spisany <strong>plan wyjścia</strong> i co jakiś czas sprawdzać, ile kosztowałaby
+przeprowadzka. Lock-in nie jest zły sam w sobie — to cena za wygodę. Zły jest
+lock-in <strong>nieświadomy</strong>.</p>
+<hr />
+<h2 id="ekonomia-big-data">Ekonomia Big Data<a class="headerlink" href="#ekonomia-big-data" title="Permanent link">#</a></h2>
+<h3 id="tco-cakowity-koszt-posiadania">TCO — całkowity koszt posiadania<a class="headerlink" href="#tco-cakowity-koszt-posiadania" title="Permanent link">#</a></h3>
+<p>Porównując rozwiązania, nie wystarczy zestawić cennika serwera z cennikiem
+chmury. <strong>TCO</strong> (<em>Total Cost of Ownership</em>) to wszystkie koszty przez cały okres
+używania, np. 3–5 lat:</p>
+<table>
+<thead>
+<tr>
+<th>Składnik</th>
+<th>Własna serwerownia</th>
+<th>Chmura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sprzęt</td>
+<td>serwery, dyski, sieć, wymiana co kilka lat</td>
+<td>w cenie usługi</td>
+</tr>
+<tr>
+<td>Licencje</td>
+<td>baza danych, system, narzędzia</td>
+<td>w cenie usługi albo osobno</td>
+</tr>
+<tr>
+<td>Miejsce i energia</td>
+<td>serwerownia, prąd, chłodzenie</td>
+<td>w cenie usługi</td>
+</tr>
+<tr>
+<td>Ludzie</td>
+<td>administratorzy, dyżury</td>
+<td>inżynierowie chmury, kontrola kosztów</td>
+</tr>
+<tr>
+<td>Użycie</td>
+<td>—</td>
+<td>przechowywanie, zapytania, transfer danych</td>
+</tr>
+<tr>
+<td>Wdrożenie i migracja</td>
+<td>instalacja, konfiguracja</td>
+<td>przeniesienie danych, przepisanie procesów</td>
+</tr>
+<tr>
+<td>Ryzyko</td>
+<td>awaria, za mały sprzęt w szczycie</td>
+<td>niekontrolowany wzrost rachunku</td>
+</tr>
+</tbody>
+</table>
+<p>W praktyce <strong>największą pozycją są zwykle ludzie</strong>, a nie sprzęt ani chmura.</p>
+<h3 id="model-kosztowy-bigquery">Model kosztowy BigQuery<a class="headerlink" href="#model-kosztowy-bigquery" title="Permanent link">#</a></h3>
+<p>BigQuery liczy osobno przechowywanie i zapytania. Ceny katalogowe w lokalizacjach
+USA i UE, w dolarach (przed decyzją zawsze sprawdź aktualny cennik):</p>
+<table>
+<thead>
+<tr>
+<th>Za co</th>
+<th>Cena</th>
+<th>Uwagi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>przechowywanie — dane zmieniane w ostatnich 90 dniach</td>
+<td>ok. <strong>0,02 $ za GB miesięcznie</strong></td>
+<td>pierwsze 10 GB miesięcznie gratis</td>
+</tr>
+<tr>
+<td>przechowywanie — dane niezmieniane od 90 dni</td>
+<td>ok. <strong>0,01 $ za GB miesięcznie</strong></td>
+<td>obniżka automatyczna</td>
+</tr>
+<tr>
+<td>zapytania (<em>on-demand</em>)</td>
+<td><strong>6,25 $ za TB przeskanowanych danych</strong></td>
+<td>pierwszy 1 TB miesięcznie gratis</td>
+</tr>
+<tr>
+<td>wczytywanie danych (<em>load</em>)</td>
+<td>gratis</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Najważniejsze są <strong>zapytania</strong>. Płacisz nie za czas ani za wynik, tylko za
+<strong>bajty, które BigQuery musiał przeczytać</strong>. A BigQuery przechowuje dane
+<strong>kolumnowo</strong> — każda kolumna osobno, jak w Parquecie z zajęć 1. Stąd reguły,
+które warto znać na pamięć:</p>
+<table>
+<thead>
+<tr>
+<th>Co robisz</th>
+<th>Czy zmniejsza koszt?</th>
+<th>Dlaczego</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wybierasz tylko potrzebne kolumny zamiast <code>SELECT *</code></td>
+<td><strong>tak</strong></td>
+<td>czytane są tylko te kolumny</td>
+</tr>
+<tr>
+<td>dodajesz <code>LIMIT 10</code></td>
+<td><strong>nie</strong></td>
+<td>BigQuery i tak czyta całe kolumny, a potem obcina wynik</td>
+</tr>
+<tr>
+<td>dodajesz <code>WHERE miasto = 'Kraków'</code></td>
+<td><strong>zwykle nie</strong></td>
+<td>żeby znaleźć Kraków, trzeba przeczytać całą kolumnę</td>
+</tr>
+<tr>
+<td>filtrujesz po kolumnie <strong>partycjonowania</strong></td>
+<td><strong>tak</strong></td>
+<td>czytane są tylko pasujące partycje</td>
+</tr>
+<tr>
+<td>filtrujesz po kolumnie <strong>klastrowania</strong></td>
+<td><strong>często tak</strong></td>
+<td>dane posortowane, BigQuery pomija bloki — ale z góry nie poda dokładnej oszczędności</td>
+</tr>
+<tr>
+<td>uruchamiasz ponownie to samo zapytanie bez zmian w danych</td>
+<td><strong>tak</strong> (0 zł)</td>
+<td>wynik z pamięci podręcznej (<em>cache</em>) przez 24 h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Partycjonowanie</strong> dzieli tabelę na fragmenty według wartości jednej kolumny,
+zwykle daty — jak segregator z przekładkami na każdy miesiąc. Zapytanie
+o październik przegląda tylko przekładkę „październik”. <strong>Klastrowanie</strong>
+dodatkowo sortuje dane wewnątrz partycji (np. po mieście), żeby wiersze jednego
+miasta leżały obok siebie.</p>
+<p>Dwa drobne druki z cennika, o które łatwo się potknąć:</p>
+<ul>
+<li>BigQuery liczy w jednostkach binarnych: <strong>1 MB = 2²⁰ bajtów</strong>, <strong>1 TB =
+  2⁴⁰ bajtów</strong> (formalnie MiB i TiB),</li>
+<li>każde zapytanie kosztuje <strong>co najmniej 10 MB za każdą tabelę</strong>, z której
+  czyta, nawet jeśli naprawdę przeczytało 1 MB.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Dry run — wycena przed zakupem</p>
+<p>BigQuery potrafi <strong>przed</strong> uruchomieniem zapytania powiedzieć, ile bajtów
+przeczyta. Taki próbny przebieg (<em>dry run</em>) jest darmowy. W konsoli widać go
+w prawym górnym rogu edytora: <em>This query will process 30.4 MB when run</em>.
+W Pythonie włącza się go jedną opcją. To podstawowe narzędzie każdego, kto
+płaci za chmurę.</p>
+</div>
+<p>Poza modelem <em>on-demand</em> BigQuery i inne chmury oferują <strong>rezerwację mocy</strong>
+(<em>capacity</em>, <em>slots</em>): płacisz stałą kwotę za określoną moc obliczeniową,
+niezależnie od liczby przeskanowanych bajtów. To jak różnica między taksówką
+a leasingiem samochodu — przy małym i nieregularnym użyciu taniej wychodzi
+taksówka, przy codziennym intensywnym użyciu leasing. Rezerwacje na rok albo
+trzy lata dają zwykle duże rabaty, ale wymagają dobrej prognozy.</p>
+<h3 id="finops-kto-paci-za-zapytanie">FinOps — kto płaci za zapytanie<a class="headerlink" href="#finops-kto-paci-za-zapytanie" title="Permanent link">#</a></h3>
+<p>W serwerowni koszt był ustalony przy zakupie i zatwierdzał go dyrektor. W chmurze
+koszt powstaje <strong>w chwili, gdy ktoś uruchamia zapytanie</strong> — czyli decyduje o nim
+analityk, nie dyrektor. <strong>FinOps</strong> (<em>Financial Operations</em>) to praktyka, która
+łączy finanse, IT i biznes, żeby nad tym panować. Organizacja FinOps Foundation
+opisuje ją jako cykl trzech faz:</p>
+<table>
+<thead>
+<tr>
+<th>Faza</th>
+<th>Co robimy</th>
+<th>Przykład z FreshBoxa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Informowanie</strong> (<em>inform</em>)</td>
+<td>wiemy, kto i na co wydaje</td>
+<td>etykiety projektów i działów, raport kosztów per dashboard</td>
+</tr>
+<tr>
+<td><strong>Optymalizacja</strong> (<em>optimize</em>)</td>
+<td>obniżamy koszt bez utraty wartości</td>
+<td>partycjonowanie, poprawione zapytania, rezerwacje</td>
+</tr>
+<tr>
+<td><strong>Działanie</strong> (<em>operate</em>)</td>
+<td>pilnujemy na bieżąco</td>
+<td>budżety, alerty po przekroczeniu, limity dzienne na projekt</td>
+</tr>
+</tbody>
+</table>
+<p>Dwa pojęcia, które warto znać:</p>
+<ul>
+<li><strong>showback</strong> — działy dostają raport „tyle kosztowały Wasze zapytania”,</li>
+<li><strong>chargeback</strong> — działy dostają za to rachunek ze swojego budżetu.
+  Nic tak nie uczy pisania dobrych zapytań.</li>
+</ul>
+<p>I jedno pojęcie najważniejsze: <strong>ekonomia jednostkowa</strong> (<em>unit economics</em>).
+„Rachunek urósł o 40%” brzmi groźnie. „Koszt danych na jedno zamówienie spadł
+z 4 gr do 3 gr, bo zamówień przybyło dwa razy więcej” — już nie. Koszt danych
+zawsze warto odnieść do tego, co firma z nich ma.</p>
+<hr />
+<h2 id="demo-bigquery-sandbox">Demo: BigQuery Sandbox<a class="headerlink" href="#demo-bigquery-sandbox" title="Permanent link">#</a></h2>
+<p><strong>BigQuery Sandbox</strong> to darmowy tryb BigQuery bez karty płatniczej. Ma
+ograniczenia, które dla nas nie są przeszkodą:</p>
+<table>
+<thead>
+<tr>
+<th>Limit Sandboxa</th>
+<th>Wartość</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>przechowywanie</td>
+<td>10 GB</td>
+</tr>
+<tr>
+<td>zapytania</td>
+<td>1 TB przeskanowanych danych miesięcznie</td>
+</tr>
+<tr>
+<td>ważność tabel i partycji</td>
+<td><strong>60 dni</strong>, potem znikają</td>
+</tr>
+<tr>
+<td>czego nie ma</td>
+<td><code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code> (DML), wczytywanie strumieniowe</td>
+</tr>
+</tbody>
+</table>
+<h3 id="zakadamy-sandbox">Zakładamy Sandbox<a class="headerlink" href="#zakadamy-sandbox" title="Permanent link">#</a></h3>
+<ol>
+<li>Wejdź na <a href="https://console.cloud.google.com/bigquery">console.cloud.google.com/bigquery</a>
+   i zaloguj się kontem Google.</li>
+<li>Zaakceptuj regulamin. Jeśli pojawi się prośba o projekt — <strong>Create project</strong>,
+   nazwij go np. <code>freshbox</code> i zapisz <strong>identyfikator projektu</strong> (<em>Project ID</em>,
+   np. <code>freshbox-478312</code>). Będzie potrzebny w Colabie.</li>
+<li>Nie podawaj karty. W lewym górnym rogu powinien pojawić się napis
+   <strong>SANDBOX</strong>.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Konto uczelniane może nie działać</p>
+<p>Na kontach Google zarządzanych przez organizację administrator często
+blokuje Google Cloud. Jeśli zobaczysz komunikat o braku uprawnień, użyj
+prywatnego konta Gmail.</p>
+</div>
+<h3 id="publiczne-dane-ile-kosztuje-zapytanie">Publiczne dane: ile kosztuje zapytanie<a class="headerlink" href="#publiczne-dane-ile-kosztuje-zapytanie" title="Permanent link">#</a></h3>
+<p>Google udostępnia w BigQuery setki publicznych zbiorów danych. Wklej do edytora
+w konsoli zapytanie o pytania ze Stack Overflow — tabela ma dziesiątki
+gigabajtów — <strong>ale go nie uruchamiaj</strong>. Spójrz tylko na licznik w prawym
+górnym rogu:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="o">`</span><span class="n">bigquery</span><span class="o">-</span><span class="k">public</span><span class="o">-</span><span class="k">data</span><span class="p">.</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">posts_questions</span><span class="o">`</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span>
+</span></code></pre></div>
+<p>Licznik pokaże kilkadziesiąt GB — chociaż chcemy tylko 10 wierszy. Teraz zmień
+zapytanie na:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">title</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">FROM</span><span class="w"> </span><span class="o">`</span><span class="n">bigquery</span><span class="o">-</span><span class="k">public</span><span class="o">-</span><span class="k">data</span><span class="p">.</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">posts_questions</span><span class="o">`</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span>
+</span></code></pre></div>
+<p>Licznik spada do ułamka poprzedniej wartości — czytana jest jedna kolumna
+zamiast kilkunastu. A tak:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">FROM</span><span class="w"> </span><span class="o">`</span><span class="n">bigquery</span><span class="o">-</span><span class="k">public</span><span class="o">-</span><span class="k">data</span><span class="p">.</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">posts_questions</span><span class="o">`</span>
+</span></code></pre></div>
+<p>0 B — liczbę wierszy BigQuery zna z metadanych i nie musi czytać ani jednej
+kolumny. Trzy zapytania, trzy rzędy wielkości kosztu. Żadne z nich nie zostało
+uruchomione, więc nic nie wydaliśmy.</p>
+<h3 id="freshbox-w-bigquery-aczymy-sie-z-colaba">FreshBox w BigQuery: łączymy się z Colaba<a class="headerlink" href="#freshbox-w-bigquery-aczymy-sie-z-colaba" title="Permanent link">#</a></h3>
+<p>Teraz wgrywamy do BigQuery zamówienia FreshBoxa. Wszystko robimy z Colaba —
+pierwsza komórka loguje Cię do Google Cloud (pojawi się okno z prośbą o zgodę):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">auth</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">auth</span><span class="o">.</span><span class="n">authenticate_user</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.cloud</span><span class="w"> </span><span class="kn">import</span> <span class="n">bigquery</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">PROJEKT</span> <span class="o">=</span> <span class="s2">"freshbox-478312"</span>        <span class="c1"># ← identyfikator Twojego projektu z konsoli</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">bigquery</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">PROJEKT</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="s2">"EU"</span><span class="p">)</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">client</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s2">"freshbox"</span><span class="p">,</span> <span class="n">exists_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/zarzadzanie_big_data/dane/"</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">URL</span> <span class="o">+</span> <span class="s2">"zamowienia.parquet"</span><span class="p">,</span> <span class="s2">"zamowienia.parquet"</span><span class="p">)</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">zamowienia</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">"zamowienia.parquet"</span><span class="p">)</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="n">TABELA</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">PROJEKT</span><span class="si">}</span><span class="s2">.freshbox.zamowienia"</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="n">config</span> <span class="o">=</span> <span class="n">bigquery</span><span class="o">.</span><span class="n">LoadJobConfig</span><span class="p">(</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="n">write_disposition</span><span class="o">=</span><span class="s2">"WRITE_TRUNCATE"</span><span class="p">,</span>                                <span class="c1"># nadpisz, jeśli już jest</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="n">schema</span><span class="o">=</span><span class="p">[</span><span class="n">bigquery</span><span class="o">.</span><span class="n">SchemaField</span><span class="p">(</span><span class="s2">"ts_zamowienia"</span><span class="p">,</span> <span class="s2">"DATETIME"</span><span class="p">)],</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="p">)</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="n">client</span><span class="o">.</span><span class="n">load_table_from_dataframe</span><span class="p">(</span><span class="n">zamowienia</span><span class="p">,</span> <span class="n">TABELA</span><span class="p">,</span> <span class="n">job_config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="n">tabela</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_table</span><span class="p">(</span><span class="n">TABELA</span><span class="p">)</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tabela</span><span class="o">.</span><span class="n">num_rows</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> wierszy, </span><span class="si">{</span><span class="n">tabela</span><span class="o">.</span><span class="n">num_bytes</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="o">**</span><span class="mi">20</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> MB w BigQuery"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>407,189 wierszy, 30.4 MB w BigQuery
+</span></code></pre></div>
+<p><code>location="EU"</code> to nie ozdobnik: dane osobowe klientów z Polski wygodniej
+trzymać w Unii Europejskiej, a region wybiera się przy tworzeniu zbioru danych
+i później nie da się go zmienić. To też decyzja zarządcza.</p>
+<p>Plik Parquet miał 6 MB, a w BigQuery tabela ma 30 MB. BigQuery podaje
+<strong>rozmiar logiczny</strong> — ile danych zajmowałyby bez kompresji — i od niego liczy
+cenę zapytań.</p>
+<h3 id="dry-run-z-pythona">Dry run z Pythona<a class="headerlink" href="#dry-run-z-pythona" title="Permanent link">#</a></h3>
+<p>Funkcja, która wycenia zapytanie bez uruchamiania go:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">dry_run</span><span class="p">(</span><span class="n">sql</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="sd">"""Ile MB przeczyta zapytanie — bez uruchamiania i bez kosztów."""</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">config</span> <span class="o">=</span> <span class="n">bigquery</span><span class="o">.</span><span class="n">QueryJobConfig</span><span class="p">(</span><span class="n">dry_run</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">use_query_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="n">client</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">job_config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span><span class="o">.</span><span class="n">total_bytes_processed</span> <span class="o">/</span> <span class="mi">2</span><span class="o">**</span><span class="mi">20</span>
+</span></code></pre></div>
+<p>Porównajmy te same pomysły co w konsoli, tym razem na danych FreshBoxa:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">zapytania</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="s2">"SELECT * LIMIT 10"</span><span class="p">:</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        <span class="sa">f</span><span class="s2">"SELECT * FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">` LIMIT 10"</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="s2">"dwie kolumny"</span><span class="p">:</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        <span class="sa">f</span><span class="s2">"SELECT miasto, wartosc_brutto FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">`"</span><span class="p">,</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="s2">"dwie kolumny + WHERE"</span><span class="p">:</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        <span class="sa">f</span><span class="s2">"SELECT miasto, wartosc_brutto FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">` WHERE miasto = 'Kraków'"</span><span class="p">,</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"MB"</span><span class="p">:</span> <span class="p">{</span><span class="n">nazwa</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">dry_run</span><span class="p">(</span><span class="n">sql</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">nazwa</span><span class="p">,</span> <span class="n">sql</span> <span class="ow">in</span> <span class="n">zapytania</span><span class="o">.</span><span class="n">items</span><span class="p">()}})</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>                         MB
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>SELECT * LIMIT 10     30.39
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>dwie kolumny           6.78
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>dwie kolumny + WHERE   6.78
+</span></code></pre></div>
+<p><code>LIMIT</code> nie pomógł wcale, wybór kolumn — 4,5 raza. <code>WHERE miasto = 'Kraków'</code>
+też nic nie dał: żeby wiedzieć, które wiersze są z Krakowa, BigQuery musi
+przeczytać całą kolumnę <code>miasto</code>.</p>
+<p>Wynik zapytania pobiera się do pandas:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">client</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="s2">SELECT miasto, COUNT(*) AS zamowienia, ROUND(SUM(wartosc_brutto)) AS przychod</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="s2">FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">`</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="s2">GROUP BY miasto</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="s2">ORDER BY przychod DESC</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="s2">"""</span><span class="p">)</span><span class="o">.</span><span class="n">to_dataframe</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="partycjonowanie">Partycjonowanie<a class="headerlink" href="#partycjonowanie" title="Permanent link">#</a></h3>
+<p>Kierownicy miast patrzą zwykle na <strong>jeden miesiąc</strong>, a każde ich zapytanie
+czyta cały rok. Tworzymy kopię tabeli podzieloną na miesiące:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">client</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="s2">CREATE OR REPLACE TABLE `</span><span class="si">{</span><span class="n">PROJEKT</span><span class="si">}</span><span class="s2">.freshbox.zamowienia_miesiace`</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="s2">PARTITION BY RANGE_BUCKET(miesiac, GENERATE_ARRAY(202511, 202611, 1))</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="s2">AS</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="s2">SELECT *, EXTRACT(YEAR FROM ts_zamowienia) * 100 + EXTRACT(MONTH FROM ts_zamowienia) AS miesiac</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="s2">FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">`</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="s2">"""</span><span class="p">)</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Nowa kolumna <code>miesiac</code> to liczba w postaci <code>202610</code> (rok i miesiąc), a
+<code>RANGE_BUCKET</code> robi z każdej jej wartości osobną partycję.</p>
+<div class="admonition warning">
+<p class="admonition-title">Dlaczego nie po prostu <code>PARTITION BY DATE(ts_zamowienia)</code>?</p>
+<p>Normalnie tak właśnie partycjonuje się po dacie. Ale w Sandboxie <strong>każda
+partycja dzienna znika 60 dni po swojej dacie</strong>. Nasze zamówienia sięgają
+listopada 2025, więc większość partycji zostałaby skasowana od razu po
+utworzeniu tabeli. Partycje po liczbie (<code>RANGE_BUCKET</code>) tego ograniczenia
+nie mają. To dobry przykład „drobnego druku” w umowie z dostawcą — warto go
+czytać, zanim się podejmie decyzję.</p>
+</div>
+<p>Porównanie — ten sam przychód za październik 2026, z obu tabel:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">zapytania</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="s2">"bez partycji, filtr po dacie"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="s2">        SELECT SUM(wartosc_brutto) FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">`</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="s2">        WHERE DATE_TRUNC(DATE(ts_zamowienia), MONTH) = '2026-10-01'"""</span><span class="p">,</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="s2">"z partycjami, filtr po miesiac"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="s2">        SELECT SUM(wartosc_brutto) FROM `</span><span class="si">{</span><span class="n">PROJEKT</span><span class="si">}</span><span class="s2">.freshbox.zamowienia_miesiace`</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="s2">        WHERE miesiac = 202610"""</span><span class="p">,</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    <span class="s2">"z partycjami, filtr po dacie"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="s2">        SELECT SUM(wartosc_brutto) FROM `</span><span class="si">{</span><span class="n">PROJEKT</span><span class="si">}</span><span class="s2">.freshbox.zamowienia_miesiace`</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="s2">        WHERE DATE_TRUNC(DATE(ts_zamowienia), MONTH) = '2026-10-01'"""</span><span class="p">,</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="p">}</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"MB"</span><span class="p">:</span> <span class="p">{</span><span class="n">nazwa</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">dry_run</span><span class="p">(</span><span class="n">sql</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">nazwa</span><span class="p">,</span> <span class="n">sql</span> <span class="ow">in</span> <span class="n">zapytania</span><span class="o">.</span><span class="n">items</span><span class="p">()}})</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>                                  MB
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>bez partycji, filtr po dacie    6.21
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>z partycjami, filtr po miesiac  0.60
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>z partycjami, filtr po dacie    6.21
+</span></code></pre></div>
+<p>Dziesięć razy mniej, ale <strong>tylko wtedy, gdy filtr dotyczy kolumny
+partycjonowania</strong>. Trzecie zapytanie pyta o to samo, ale filtruje po
+<code>ts_zamowienia</code> — BigQuery nie wie, że to ten sam miesiąc, i czyta wszystko.
+Sama tabela z partycjami nic nie da, jeśli zapytania dashboardu nie zostaną
+poprawione.</p>
+<h3 id="ile-to-kosztuje">Ile to kosztuje<a class="headerlink" href="#ile-to-kosztuje" title="Permanent link">#</a></h3>
+<p>Funkcja licząca cenę jednego uruchomienia zgodnie z cennikiem — z zaokrągleniem
+w górę do pełnego MB i minimum 10 MB:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">CENA_ZA_TB</span> <span class="o">=</span> <span class="mf">6.25</span>      <span class="c1"># USD, on-demand</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">koszt_usd</span><span class="p">(</span><span class="n">mb</span><span class="p">):</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="sd">"""Koszt jednego uruchomienia zapytania czytającego jedną tabelę."""</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="n">rozliczone_mb</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">mb</span><span class="p">),</span> <span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="k">return</span> <span class="n">rozliczone_mb</span> <span class="o">/</span> <span class="mi">2</span><span class="o">**</span><span class="mi">20</span> <span class="o">*</span> <span class="n">CENA_ZA_TB</span>          <span class="c1"># 1 TB = 2**20 MB</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="k">for</span> <span class="n">mb</span> <span class="ow">in</span> <span class="p">[</span><span class="mf">30.39</span><span class="p">,</span> <span class="mf">6.78</span><span class="p">,</span> <span class="mf">0.60</span><span class="p">]:</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">mb</span><span class="si">:</span><span class="s2">6.2f</span><span class="si">}</span><span class="s2"> MB  →  </span><span class="si">{</span><span class="n">koszt_usd</span><span class="p">(</span><span class="n">mb</span><span class="p">)</span><span class="si">:</span><span class="s2">.7f</span><span class="si">}</span><span class="s2"> USD"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a> 30.39 MB  →  0.0001848 USD
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  6.78 MB  →  0.0000596 USD
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>  0.60 MB  →  0.0000596 USD
+</span></code></pre></div>
+<p>Jedno uruchomienie <code>SELECT *</code> kosztuje dwie setne centa. Brzmi jak nic — dopóki
+nie przemnożymy tego przez liczbę uruchomień, a dashboard uruchamia swoje
+zapytania przy każdym wejściu każdego użytkownika.</p>
+<p>Zwróć też uwagę na dwa ostatnie wiersze: zapytanie czytające 0,6 MB kosztuje
+<strong>tyle samo</strong> co czytające 6,8 MB. Oba rozliczono jako minimalne 10 MB. Przy
+małych tabelach minimum rozliczeniowe zjada część oszczędności z optymalizacji —
+ten efekt zobaczysz w zadaniu.</p>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zalogować Colaba do Google Cloud</td>
+<td><code>from google.colab import auth; auth.authenticate_user()</code></td>
+</tr>
+<tr>
+<td>połączyć się z BigQuery</td>
+<td><code>client = bigquery.Client(project=PROJEKT, location="EU")</code></td>
+</tr>
+<tr>
+<td>uruchomić zapytanie i dostać DataFrame</td>
+<td><code>client.query(sql).to_dataframe()</code></td>
+</tr>
+<tr>
+<td>uruchomić zapytanie bez wyniku (np. <code>CREATE TABLE</code>)</td>
+<td><code>client.query(sql).result()</code></td>
+</tr>
+<tr>
+<td>wycenić zapytanie bez uruchamiania</td>
+<td><code>dry_run(sql)</code> — funkcja z demo, zwraca MB</td>
+</tr>
+<tr>
+<td>liczbę wierszy i rozmiar tabeli</td>
+<td><code>t = client.get_table(TABELA); t.num_rows, t.num_bytes</code></td>
+</tr>
+<tr>
+<td>nazwa tabeli w SQL</td>
+<td><code>`projekt.zbior.tabela`</code> — w odwrotnych apostrofach</td>
+</tr>
+<tr>
+<td>zmienną Pythona w SQL</td>
+<td><code>f"... WHERE miasto = '{MIASTO}'"</code></td>
+</tr>
+<tr>
+<td>tabelę partycjonowaną po liczbie</td>
+<td><code>PARTITION BY RANGE_BUCKET(kol, GENERATE_ARRAY(od, do, krok))</code></td>
+</tr>
+<tr>
+<td>tabelę klastrowaną</td>
+<td><code>CLUSTER BY kol</code> (po <code>PARTITION BY</code>, przed <code>AS</code>)</td>
+</tr>
+<tr>
+<td>kopię tabeli z nową strukturą</td>
+<td><code>CREATE OR REPLACE TABLE ... PARTITION BY ... CLUSTER BY ... AS SELECT ...</code></td>
+</tr>
+<tr>
+<td>rok i miesiąc jako liczbę <code>202610</code></td>
+<td><code>EXTRACT(YEAR FROM ts) * 100 + EXTRACT(MONTH FROM ts)</code></td>
+</tr>
+<tr>
+<td>filtr „cały miesiąc” po dacie</td>
+<td><code>DATE_TRUNC(DATE(ts), MONTH) = '2026-10-01'</code></td>
+</tr>
+<tr>
+<td>dzień z daty i godziny</td>
+<td><code>DATE(ts)</code></td>
+</tr>
+<tr>
+<td>zaokrąglić w górę</td>
+<td><code>math.ceil(x)</code></td>
+</tr>
+<tr>
+<td>tabelę z wyników w Pythonie</td>
+<td><code>pd.DataFrame({"MB": {"nazwa1": 1.0, "nazwa2": 2.0}})</code></td>
+</tr>
+</tbody>
+</table>
+<p>Jednostki: <code>bajty / 2**20</code> → MB, <code>MB / 2**20</code> → TB.</p>
+<hr />
+<h2 id="zadanie-2-budzet-dashboardu-9-pkt">Zadanie 2 — Budżet dashboardu (9 pkt)<a class="headerlink" href="#zadanie-2-budzet-dashboardu-9-pkt" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Czas:</strong> ok. 65 minut</li>
+<li><strong>Środowisko:</strong> Google Colab + BigQuery Sandbox</li>
+<li><strong>Oddanie:</strong> notatnik <code>.ipynb</code> na Moodle (<em>Plik → Pobierz → Pobierz plik .ipynb</em>)</li>
+</ul>
+<p>Zadanie ma dwie części. Rób je po kolei i <strong>pokaż mi wynik każdej części, gdy
+będzie gotowa</strong> — punktacja zależy od tego, ile zrobisz na zajęciach.</p>
+<p>Dyrektor finansowa chce wiedzieć, ile kosztuje dashboard kierowników miast
+i czy da się taniej. Dashboard ma trzy kafelki, a każdy kafelek to jedno
+zapytanie do BigQuery. Napisał je stażysta, który odszedł z firmy.</p>
+<h3 id="twoje-miasto-i-miesiac">Twoje miasto i miesiąc<a class="headerlink" href="#twoje-miasto-i-miesiac" title="Permanent link">#</a></h3>
+<p>Pierwsze komórki notatnika (zanim je uruchomisz, załóż Sandbox i wpisz
+identyfikator projektu):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">auth</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">auth</span><span class="o">.</span><span class="n">authenticate_user</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.cloud</span><span class="w"> </span><span class="kn">import</span> <span class="n">bigquery</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>                 <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="n">PROJEKT</span> <span class="o">=</span> <span class="s2">"freshbox-478312"</span>        <span class="c1"># ← identyfikator Twojego projektu</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="n">MIASTA</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Warszawa"</span><span class="p">,</span> <span class="s2">"Kraków"</span><span class="p">,</span> <span class="s2">"Wrocław"</span><span class="p">,</span> <span class="s2">"Poznań"</span><span class="p">,</span> <span class="s2">"Gdańsk"</span><span class="p">,</span> <span class="s2">"Łódź"</span><span class="p">,</span> <span class="s2">"Katowice"</span><span class="p">,</span> <span class="s2">"Lublin"</span><span class="p">]</span>
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="n">MIASTO</span> <span class="o">=</span> <span class="n">MIASTA</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">8</span><span class="p">]</span>
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="n">MIESIACE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">202511</span><span class="p">,</span> <span class="mi">202512</span><span class="p">,</span> <span class="mi">202601</span><span class="p">,</span> <span class="mi">202602</span><span class="p">,</span> <span class="mi">202603</span><span class="p">,</span> <span class="mi">202604</span><span class="p">,</span>
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>            <span class="mi">202605</span><span class="p">,</span> <span class="mi">202606</span><span class="p">,</span> <span class="mi">202607</span><span class="p">,</span> <span class="mi">202608</span><span class="p">,</span> <span class="mi">202609</span><span class="p">,</span> <span class="mi">202610</span><span class="p">]</span>
+</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="n">MIESIAC</span> <span class="o">=</span> <span class="n">MIESIACE</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">12</span><span class="p">]</span>
+</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="n">MIESIAC_DATA</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">MIESIAC</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="mi">100</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">MIESIAC</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">-01"</span>
+</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Moje miasto: </span><span class="si">{</span><span class="n">MIASTO</span><span class="si">}</span><span class="s2">, mój miesiąc: </span><span class="si">{</span><span class="n">MIESIAC_DATA</span><span class="p">[:</span><span class="mi">7</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>
+</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="n">client</span> <span class="o">=</span> <span class="n">bigquery</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">PROJEKT</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="s2">"EU"</span><span class="p">)</span>
+</span><span id="__span-16-19"><a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="n">client</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s2">"freshbox"</span><span class="p">,</span> <span class="n">exists_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-16-20"><a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a>
+</span><span id="__span-16-21"><a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/zarzadzanie_big_data/dane/"</span>
+</span><span id="__span-16-22"><a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">URL</span> <span class="o">+</span> <span class="s2">"zamowienia.parquet"</span><span class="p">,</span> <span class="s2">"zamowienia.parquet"</span><span class="p">)</span>
+</span><span id="__span-16-23"><a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="n">TABELA</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">PROJEKT</span><span class="si">}</span><span class="s2">.freshbox.zamowienia"</span>
+</span><span id="__span-16-24"><a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a><span class="n">config</span> <span class="o">=</span> <span class="n">bigquery</span><span class="o">.</span><span class="n">LoadJobConfig</span><span class="p">(</span><span class="n">write_disposition</span><span class="o">=</span><span class="s2">"WRITE_TRUNCATE"</span><span class="p">,</span>
+</span><span id="__span-16-25"><a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a>                                <span class="n">schema</span><span class="o">=</span><span class="p">[</span><span class="n">bigquery</span><span class="o">.</span><span class="n">SchemaField</span><span class="p">(</span><span class="s2">"ts_zamowienia"</span><span class="p">,</span> <span class="s2">"DATETIME"</span><span class="p">)])</span>
+</span><span id="__span-16-26"><a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a><span class="n">client</span><span class="o">.</span><span class="n">load_table_from_dataframe</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">"zamowienia.parquet"</span><span class="p">),</span> <span class="n">TABELA</span><span class="p">,</span>
+</span><span id="__span-16-27"><a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a>                                 <span class="n">job_config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
+</span><span id="__span-16-28"><a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a>
+</span><span id="__span-16-29"><a id="__codelineno-16-29" name="__codelineno-16-29" href="#__codelineno-16-29"></a><span class="k">def</span><span class="w"> </span><span class="nf">dry_run</span><span class="p">(</span><span class="n">sql</span><span class="p">):</span>
+</span><span id="__span-16-30"><a id="__codelineno-16-30" name="__codelineno-16-30" href="#__codelineno-16-30"></a><span class="w">    </span><span class="sd">"""Ile MB przeczyta zapytanie — bez uruchamiania i bez kosztów."""</span>
+</span><span id="__span-16-31"><a id="__codelineno-16-31" name="__codelineno-16-31" href="#__codelineno-16-31"></a>    <span class="n">config</span> <span class="o">=</span> <span class="n">bigquery</span><span class="o">.</span><span class="n">QueryJobConfig</span><span class="p">(</span><span class="n">dry_run</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">use_query_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-16-32"><a id="__codelineno-16-32" name="__codelineno-16-32" href="#__codelineno-16-32"></a>    <span class="k">return</span> <span class="n">client</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">job_config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span><span class="o">.</span><span class="n">total_bytes_processed</span> <span class="o">/</span> <span class="mi">2</span><span class="o">**</span><span class="mi">20</span>
+</span><span id="__span-16-33"><a id="__codelineno-16-33" name="__codelineno-16-33" href="#__codelineno-16-33"></a>
+</span><span id="__span-16-34"><a id="__codelineno-16-34" name="__codelineno-16-34" href="#__codelineno-16-34"></a><span class="n">CENA_ZA_TB</span> <span class="o">=</span> <span class="mf">6.25</span>                  <span class="c1"># USD za TB, on-demand</span>
+</span><span id="__span-16-35"><a id="__codelineno-16-35" name="__codelineno-16-35" href="#__codelineno-16-35"></a><span class="n">KURS_USD</span> <span class="o">=</span> <span class="mf">3.65</span>                    <span class="c1"># PLN za 1 USD — przyjmij</span>
+</span><span id="__span-16-36"><a id="__codelineno-16-36" name="__codelineno-16-36" href="#__codelineno-16-36"></a><span class="n">URUCHOMIENIA</span> <span class="o">=</span> <span class="mi">120</span> <span class="o">*</span> <span class="mi">40</span> <span class="o">*</span> <span class="mi">30</span>       <span class="c1"># 120 osób × 40 odsłon dziennie × 30 dni</span>
+</span></code></pre></div>
+<p>Zapytania stażysty — skopiuj je do notatnika:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">KAFELKI</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="s2">"ostatnie zamowienia"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="s2">        SELECT *</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="s2">        FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">`</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="s2">        WHERE miasto = '</span><span class="si">{</span><span class="n">MIASTO</span><span class="si">}</span><span class="s2">'</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="s2">          AND DATE_TRUNC(DATE(ts_zamowienia), MONTH) = '</span><span class="si">{</span><span class="n">MIESIAC_DATA</span><span class="si">}</span><span class="s2">'</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="s2">        ORDER BY ts_zamowienia DESC</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="s2">        LIMIT 20"""</span><span class="p">,</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    <span class="s2">"przychod dzienny"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="s2">        SELECT DATE(ts_zamowienia) AS dzien, ROUND(SUM(wartosc_brutto), 2) AS przychod</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="s2">        FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">`</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="s2">        WHERE miasto = '</span><span class="si">{</span><span class="n">MIASTO</span><span class="si">}</span><span class="s2">'</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="s2">          AND DATE_TRUNC(DATE(ts_zamowienia), MONTH) = '</span><span class="si">{</span><span class="n">MIESIAC_DATA</span><span class="si">}</span><span class="s2">'</span>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="s2">          AND status NOT IN ('anulowane', 'cancelled', 'ANUL')</span>
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="s2">        GROUP BY dzien</span>
+</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="s2">        ORDER BY dzien"""</span><span class="p">,</span>
+</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>    <span class="s2">"klienci wg kanalu"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="s2">        SELECT kanal, COUNT(*) AS zamowienia, COUNT(DISTINCT id_klienta) AS klienci</span>
+</span><span id="__span-17-19"><a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="s2">        FROM `</span><span class="si">{</span><span class="n">TABELA</span><span class="si">}</span><span class="s2">`</span>
+</span><span id="__span-17-20"><a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="s2">        WHERE miasto = '</span><span class="si">{</span><span class="n">MIASTO</span><span class="si">}</span><span class="s2">'</span>
+</span><span id="__span-17-21"><a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a><span class="s2">          AND DATE_TRUNC(DATE(ts_zamowienia), MONTH) = '</span><span class="si">{</span><span class="n">MIESIAC_DATA</span><span class="si">}</span><span class="s2">'</span>
+</span><span id="__span-17-22"><a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="s2">        GROUP BY kanal</span>
+</span><span id="__span-17-23"><a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="s2">        ORDER BY zamowienia DESC"""</span><span class="p">,</span>
+</span><span id="__span-17-24"><a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Rozwiązania z cudzym miastem lub miesiącem nie zaliczam.</p>
+<h3 id="czesc-1-ile-to-kosztuje-ok-30-min">Część 1 — ile to kosztuje (ok. 30 min)<a class="headerlink" href="#czesc-1-ile-to-kosztuje-ok-30-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Uruchom każde z trzech zapytań i pokaż jego wynik. Dla każdego zrób też
+   <strong>dry run</strong> i zbierz wyniki w DataFrame <code>koszty</code> z kolumnami: <code>kafelek</code>,
+   <code>mb</code> (z dry run, 2 miejsca po przecinku).</li>
+<li>Dodaj do <code>koszty</code> kolumny: <code>rozliczone_mb</code> (zaokrąglenie w górę, minimum
+   10 MB), <code>usd_miesiecznie</code> i <code>pln_miesiecznie</code> — koszt <strong>miesięczny</strong>
+   kafelka, jeśli uruchamia się go <code>URUCHOMIENIA</code> razy w miesiącu. Policz
+   łączny koszt dashboardu w PLN miesięcznie i rocznie. Darmowy 1 TB pomiń —
+   FreshBox zużywa go na inne zapytania.</li>
+<li>W komórce Markdown odpowiedz w 2–3 zdaniach: który kafelek jest
+   najdroższy i co dokładnie w jego zapytaniu sprawia, że jest drogi? Dlaczego
+   <code>LIMIT 20</code> i <code>WHERE miasto = ...</code> nic tu nie pomagają?</li>
+</ol>
+<h3 id="czesc-2-jak-to-obnizyc-ok-35-min">Część 2 — jak to obniżyć (ok. 35 min)<a class="headerlink" href="#czesc-2-jak-to-obnizyc-ok-35-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Utwórz tabelę <code>freshbox.zamowienia_opt</code>: kopię zamówień z kolumną
+   <code>miesiac</code>, <strong>partycjonowaną</strong> po <code>miesiac</code> i <strong>klastrowaną</strong> po <code>miasto</code>.
+   Przepisz trzy zapytania tak, żeby czytały z nowej tabeli, filtrowały po
+   kolumnie <code>miesiac</code> i czytały <strong>tylko potrzebne kolumny</strong> (kafelek „ostatnie
+   zamówienia” pokazuje: numer i czas zamówienia, kanał, wartość, status).
+   Sprawdź, że wyniki są takie same jak w części 1.</li>
+<li>Zrób dry run poprawionych zapytań i zbuduj tabelę porównawczą: dla każdego
+   kafelka MB i PLN miesięcznie <strong>przed</strong> i <strong>po</strong> oraz oszczędność w procentach.
+   Policz to samo dla całego dashboardu. Oszczędność w MB i w złotych wyjdzie
+   różna — wyjaśnij w jednym zdaniu dlaczego.</li>
+<li>W komórce Markdown napisz <strong>rekomendację dla zarządu</strong> (maks. 5 zdań, bez
+   żargonu): co zmienić, ile to da w złotych rocznie, co jeszcze można zrobić,
+   żeby było taniej, i czy optymalizacja w ogóle jest warta pracy inżyniera.</li>
+</ol>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Ściągawka jest kilka sekcji wyżej — wszystkie potrzebne polecenia tam są.</li>
+<li><strong>Sandbox nie działa?</strong> Najpierw spróbuj z prywatnego konta Gmail. Jeśli
+  nadal nie, zgłoś się — dry run i wyniki możesz policzyć w parze na koncie
+  kolegi, ale notatnik oddajesz swój, z <strong>własnym</strong> miastem i miesiącem.</li>
+<li>Część 1, punkt 1: zapytanie wykonasz przez <code>client.query(sql).to_dataframe()</code>,
+  a dry run — funkcją <code>dry_run(sql)</code> z pierwszej komórki. Po wszystkich
+  trzech kafelkach przejdziesz pętlą <code>for nazwa, sql in KAFELKI.items():</code>.</li>
+<li>Część 1, punkt 2: kolumnę z funkcji zrobisz przez
+  <code>koszty["mb"].apply(lambda mb: ...)</code>. 1 TB = 2²⁰ MB.</li>
+<li>Część 2, punkt 1: tabelę tworzysz tak jak w demo, z dodatkiem
+  <code>CLUSTER BY miasto</code> między <code>PARTITION BY ...</code> a <code>AS</code>. W poprawionych
+  zapytaniach zamień warunek na datę na <code>miesiac = {MIESIAC}</code>.</li>
+<li>Część 2, punkt 1: wyniki porównasz np. przez
+  <code>przed.equals(po)</code> albo po prostu wyświetl obie tabele obok siebie.</li>
+<li>Część 2, punkt 2: dry run tabeli klastrowanej podaje <strong>górne oszacowanie</strong> —
+  klastrowanie może obniżyć koszt jeszcze bardziej, ale dry run tego nie pokaże.
+  Liczymy na oszacowaniu, tak jak robi to dział finansów.</li>
+<li>Część 2, punkt 3: zastanów się, co się stanie z oszczędnością, gdy tabela
+  zamówień urośnie 100 razy (pełna historia od 2021 roku, pozycje zamówień),
+  i ile godzin pracy inżyniera można opłacić zaoszczędzoną kwotą.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Na co patrzę przy ocenie</p>
+<p>W części 1 — na liczby MB i koszt (wszystkie są deterministyczne, mam je
+dla każdego wariantu) oraz na to, czy wskazujesz prawdziwą przyczynę
+kosztu. W części 2 — na to, czy wyniki po optymalizacji są <strong>takie same</strong>
+jak przed (tańszy, ale błędny dashboard to żadna oszczędność), na tabelę
+przed/po i na to, czy rekomendację zrozumiałby ktoś, kto nie zna SQL.</p>
+</div>
+<h3 id="punktacja-9-pkt">Punktacja (9 pkt)<a class="headerlink" href="#punktacja-9-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>9 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>6 pkt</strong></td>
+<td>jedna z dwóch części zrobiona na zajęciach</td>
+</tr>
+<tr>
+<td><strong>3 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>2026-12-05</strong> (dzień przed kolejnymi zajęciami).</p>
+<div class="admonition danger">
+<p class="admonition-title">Zajęcia też mają model kosztowy</p>
+<p>Te same 65 minut pracy jest warte 9 pkt na zajęciach albo 3 pkt w domu.
+Rabat za „rezerwację” jest tu wyjątkowo wysoki.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

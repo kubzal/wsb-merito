@@ -1,0 +1,4684 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/systemy_big_data/zajecia_4/">
+      
+      
+        <link rel="prev" href="../zajecia_3/">
+      
+      
+        <link rel="next" href="../../uczenie_glebokie/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Zajęcia 4 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-4" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-tabs__dropdown-link">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#delta-lake-jezioro-danych-z-transakcjami" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delta Lake — jezioro danych z transakcjami
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hurtownia-jezioro-i-lakehouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hurtownia, jezioro i lakehouse
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hurtownia, jezioro i lakehouse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#najpierw-co-to-jest-transakcja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Najpierw: co to jest transakcja
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hurtownia-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hurtownia danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jezioro-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jezioro danych
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dwie-warstwy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dwie warstwy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lakehouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lakehouse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#co-psuje-sie-w-jeziorze-bez-transakcji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co psuje się w jeziorze bez transakcji
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delta-lake-pod-maska" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delta Lake pod maską
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Delta Lake pod maską">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pliki-dziennik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pliki + dziennik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlaczego-to-rozwiazuje-problemy-z-jeziora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dlaczego to rozwiązuje problemy z jeziora
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ACID
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-travel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time travel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-delete-i-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UPDATE, DELETE i MERGE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UPDATE, DELETE i MERGE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jak-zmienic-niezmienny-plik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak zmienić niezmienny plik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-wszystko-naraz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MERGE — wszystko naraz
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scd-co-z-historia-klienta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCD — co z historią klienta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemat-pod-kontrola" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schemat pod kontrolą
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schemat pod kontrolą">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-enforcement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema enforcement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema evolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konserwacja-optimize-i-vacuum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konserwacja: OPTIMIZE i VACUUM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konserwacja: OPTIMIZE i VACUUM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-maych-plikow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem małych plików
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liquid-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Liquid clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vacuum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VACUUM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo-cennik-sklepu-w-delcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo: cennik sklepu w Delcie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo: cennik sklepu w Delcie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tworzymy-tabele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tworzymy tabelę
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historia-i-szczegoy-tabeli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historia i szczegóły tabeli
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-i-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UPDATE i DELETE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-przyjmujemy-dostawe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MERGE — przyjmujemy dostawę
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-travel_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time travel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ups-delete-bez-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ups — DELETE bez WHERE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nowa-kolumna-schema-enforcement-i-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nowa kolumna — schema enforcement i evolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprzatanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprzątanie
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-4-kartoteka-klientow-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 4 — Kartoteka klientów (6 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 4 — Kartoteka klientów (6 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#twoje-dane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Twoje dane
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-merge-i-historia-ok-20-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — MERGE i historia (ok. 20 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-wpadka-stazysty-i-nowa-kolumna-ok-25-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — wpadka stażysty i nowa kolumna (ok. 25 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-6-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (6 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-4">Zajęcia 4<a class="headerlink" href="#zajecia-4" title="Permanent link">#</a></h1>
+<h2 id="delta-lake-jezioro-danych-z-transakcjami">Delta Lake — jezioro danych z transakcjami<a class="headerlink" href="#delta-lake-jezioro-danych-z-transakcjami" title="Permanent link">#</a></h2>
+<p>Na zajęciach 1 zapisywaliśmy dane do plików Parquet, a na zajęciach 3 tworzyliśmy
+tabele w Unity Catalog. Wspomniałem wtedy, że tabela w Databricksie to pod spodem
+też pliki Parquet — plus <strong>dziennik transakcji</strong>. Dziś zaglądamy do tego dziennika.
+Zobaczysz, jak kilka małych plików JSON zamienia zwykły katalog z plikami w tabelę,
+którą można bezpiecznie zmieniać, cofnąć do wczorajszego stanu i aktualizować
+pojedynczymi wierszami. W hurtowni danych to oczywistości. W jeziorze danych przez
+lata było to prawie niemożliwe.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>wyjaśnić różnicę między hurtownią danych, jeziorem danych i lakehouse'em,</li>
+<li>opisać, jak Delta Lake dokłada transakcje do plików Parquet (<code>_delta_log</code>)
+  i co dają cztery litery <strong>ACID</strong>,</li>
+<li>przeglądać historię tabeli, czytać jej starsze wersje (<em>time travel</em>)
+  i przywracać je poleceniem <code>RESTORE</code>,</li>
+<li>zmieniać dane poleceniami <code>UPDATE</code>, <code>DELETE</code> i <code>MERGE</code> (<em>upsert</em>),</li>
+<li>rozpoznać błąd <em>schema enforcement</em> i świadomie włączyć ewolucję schematu,</li>
+<li>wyjaśnić, po co są <code>OPTIMIZE</code> i <code>VACUUM</code>.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Przykłady z zajęć w Databricksie</p>
+<p>Cały kod z demo jest też w gotowym notatniku. Databricks nie ma przycisku
+„Open in…” takiego jak Colab, ale import notatnika zajmuje kilka sekund:</p>
+<ol>
+<li>W lewym menu <strong>Workspace</strong> → <strong>Home</strong> (Twój folder).</li>
+<li>Prawy przycisk na folderze albo menu <strong>⋮</strong> w prawym górnym rogu →
+   <strong>Import</strong>.</li>
+<li>
+<p>Wybierz <strong>URL</strong> i wklej adres:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://raw.githubusercontent.com/kubzal/wsb-merito/main/notebooks/semestr_zimowy_2026_27/systemy_big_data/zajecia_4.ipynb
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Import</strong>, otwórz notatnik i <strong>Connect → Serverless</strong>.</p>
+</li>
+</ol>
+<p>Notatnik możesz też
+<a href="https://github.com/kubzal/wsb-merito/blob/main/notebooks/semestr_zimowy_2026_27/systemy_big_data/zajecia_4.ipynb">obejrzeć na GitHubie</a>,
+pobrać (<em>Download raw file</em>) i przeciągnąć do okna importu (opcja <strong>File</strong>).</p>
+</div>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transakcje; hurtownia, jezioro i lakehouse</td>
+<td>8 min</td>
+</tr>
+<tr>
+<td>Delta Lake pod maską i ACID</td>
+<td>8 min</td>
+</tr>
+<tr>
+<td>Time travel</td>
+<td>3 min</td>
+</tr>
+<tr>
+<td><code>UPDATE</code>, <code>DELETE</code> i <code>MERGE</code></td>
+<td>6 min</td>
+</tr>
+<tr>
+<td>Schemat pod kontrolą</td>
+<td>3 min</td>
+</tr>
+<tr>
+<td>Konserwacja: <code>OPTIMIZE</code> i <code>VACUUM</code></td>
+<td>3 min</td>
+</tr>
+<tr>
+<td>Demo: cennik sklepu w Delcie</td>
+<td>12 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 4</strong></td>
+<td><strong>45 min</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="hurtownia-jezioro-i-lakehouse">Hurtownia, jezioro i lakehouse<a class="headerlink" href="#hurtownia-jezioro-i-lakehouse" title="Permanent link">#</a></h2>
+<h3 id="najpierw-co-to-jest-transakcja">Najpierw: co to jest transakcja<a class="headerlink" href="#najpierw-co-to-jest-transakcja" title="Permanent link">#</a></h3>
+<p><strong>Transakcja</strong> to grupa operacji na danych, którą baza traktuje jak <strong>jedną
+całość</strong>: albo wykonają się wszystkie, albo żadna. Klasyczny przykład to przelew
+100 zł z konta A na konto B. To dwie operacje — zdjąć 100 zł z A i dopisać 100 zł
+do B. Jeśli serwer padnie między nimi, bez transakcji 100 zł po prostu znika.
+W transakcji baza albo <strong>zatwierdzi</strong> obie zmiany naraz (<em>commit</em>), albo
+<strong>wycofa</strong> obie (<em>rollback</em>), jakby nic się nie stało. W SQL wygląda to tak:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">BEGIN</span><span class="w"> </span><span class="k">TRANSACTION</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">konta</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'A'</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">konta</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'B'</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">COMMIT</span><span class="p">;</span><span class="w">      </span><span class="c1">-- dopiero teraz obie zmiany stają się widoczne naraz</span>
+</span></code></pre></div>
+<p>Gdyby coś poszło nie tak przed <code>COMMIT</code>, baza wycofa obie zmiany (albo zrobisz to
+sam poleceniem <code>ROLLBACK</code>).</p>
+<p>Transakcja daje też drugą gwarancję: kto w tym czasie czyta dane, widzi stan
+<strong>sprzed</strong> przelewu albo <strong>po</strong> nim, nigdy „w połowie”. Bazy danych, od bankowych
+po hurtownie, mają to od dziesięcioleci. Te gwarancje opisują cztery litery
+<strong>ACID</strong>, do których wrócimy przy Delta Lake. Zwykłe pliki w katalogu nie mają ich
+wcale, i dziś zobaczysz, co z tego wynika.</p>
+<h3 id="hurtownia-danych">Hurtownia danych<a class="headerlink" href="#hurtownia-danych" title="Permanent link">#</a></h3>
+<p><strong>Hurtownia danych</strong> (<em>data warehouse</em>) to pomysł z przełomu lat 80. i 90. Dane
+z systemów firmy — sprzedaży, CRM-u, księgowości — co noc ładuje się procesem
+<strong>ETL</strong> (<em>extract, transform, load</em>) do jednej bazy analitycznej o z góry
+ustalonym schemacie. Analitycy piszą do niej SQL, a raporty liczą się szybko
+i zawsze tak samo.</p>
+<p>Hurtownia ma wszystko, czego oczekujemy od bazy danych: transakcje, schemat,
+uprawnienia, <code>UPDATE</code> i <code>DELETE</code>. Ma też wady:</p>
+<ul>
+<li>jest <strong>droga</strong> — płacisz za dyski, moc obliczeniową i często licencję,</li>
+<li>trzyma tylko <strong>dane tabelaryczne</strong> — logów, zdjęć czy nagrań do niej nie
+  wrzucisz,</li>
+<li>schemat ustala się <strong>przed</strong> załadowaniem danych (<em>schema-on-write</em>) — nowe
+  źródło danych to tygodnie pracy,</li>
+<li>dane siedzą w <strong>zamkniętym formacie</strong> jednego dostawcy i czyta je tylko jego
+  silnik.</li>
+</ul>
+<h3 id="jezioro-danych">Jezioro danych<a class="headerlink" href="#jezioro-danych" title="Permanent link">#</a></h3>
+<p><strong>Jezioro danych</strong> (<em>data lake</em>) to odpowiedź z lat 2010. — najpierw Hadoop
+(HDFS), potem chmurowe magazyny obiektowe: Amazon S3, Azure Data Lake Storage,
+Google Cloud Storage. Wrzucasz wszystko, jak leci: CSV, JSON, logi, obrazki,
+Parquet. Składowanie jest <strong>tanie</strong>, formaty są <strong>otwarte</strong>, a te same pliki czyta
+Spark, DuckDB, Presto i pandas. Schemat ustalasz dopiero przy odczycie
+(<em>schema-on-read</em>).</p>
+<p>Jezioro nie ma za to transakcji ani kontroli jakości. Po kilku latach bez
+porządku zamienia się w <strong>bagno danych</strong> (<em>data swamp</em>): tysiące katalogów, nie
+wiadomo, który plik jest aktualny, a który to kopia z błędem sprzed roku.</p>
+<h3 id="dwie-warstwy">Dwie warstwy<a class="headerlink" href="#dwie-warstwy" title="Permanent link">#</a></h3>
+<p>W praktyce firmy miały oba: jezioro jako tanie archiwum i paliwo dla uczenia
+maszynowego, a wybrane dane kopiowane dalej do hurtowni dla raportów.</p>
+<pre class="mermaid"><code>flowchart LR
+    SRC["Źródła&lt;br/&gt;CRM, sprzedaż, logi"] --&gt; LAKE[("&lt;b&gt;Jezioro danych&lt;/b&gt;&lt;br/&gt;pliki w S3 / ADLS")]
+    LAKE --&gt; ETL["ETL&lt;br/&gt;kolejna kopia"] --&gt; DWH[("&lt;b&gt;Hurtownia&lt;/b&gt;&lt;br/&gt;zamknięty format")]
+    LAKE --&gt; ML["Data science, ML"]
+    DWH --&gt; BI["Raporty BI"]</code></pre>
+<p>To działa, ale te same dane leżą w dwóch miejscach. Płacisz za nie dwa razy,
+utrzymujesz dodatkowy ETL, dane w hurtowni są o jeden proces „starsze” niż
+w jeziorze, a analityk i data scientist co jakiś czas pokazują szefowi dwie różne
+liczby na to samo pytanie.</p>
+<h3 id="lakehouse">Lakehouse<a class="headerlink" href="#lakehouse" title="Permanent link">#</a></h3>
+<p>Pomysł <strong>lakehouse'u</strong> (spopularyzowany przez Databricks około 2020 roku) jest
+prosty: zostawić dane w jeziorze, w otwartym formacie, i dołożyć do nich warstwę,
+która daje to, co hurtownia — transakcje, kontrolę schematu, historię zmian.
+Tą warstwą jest <strong>otwarty format tabel</strong> (<em>open table format</em>). Są trzy
+popularne: <strong>Delta Lake</strong> (Databricks), <strong>Apache Iceberg</strong> (Netflix) i <strong>Apache
+Hudi</strong> (Uber). Działają na tej samej zasadzie, a my poznamy Deltę.</p>
+<pre class="mermaid"><code>flowchart LR
+    SRC["Źródła&lt;br/&gt;CRM, sprzedaż, logi"] --&gt; LH[("&lt;b&gt;Lakehouse&lt;/b&gt;&lt;br/&gt;pliki Parquet&lt;br/&gt;+ dziennik transakcji")]
+    LH --&gt; ML["Data science, ML"]
+    LH --&gt; BI["Raporty BI, SQL"]</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hurtownia danych</th>
+<th>Jezioro danych</th>
+<th>Lakehouse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Co przechowuje</td>
+<td>tabele</td>
+<td>wszystko: tabele, JSON, logi, obrazki</td>
+<td>wszystko + tabele z transakcjami</td>
+</tr>
+<tr>
+<td>Format</td>
+<td>zamknięty, jednego dostawcy</td>
+<td>otwarte pliki (CSV, Parquet…)</td>
+<td>Parquet + dziennik transakcji (Delta, Iceberg)</td>
+</tr>
+<tr>
+<td>Schemat</td>
+<td>przy zapisie</td>
+<td>przy odczycie</td>
+<td>przy zapisie, z możliwością ewolucji</td>
+</tr>
+<tr>
+<td>Transakcje, <code>UPDATE</code>, <code>DELETE</code></td>
+<td>tak</td>
+<td>nie</td>
+<td>tak</td>
+</tr>
+<tr>
+<td>Historia zmian</td>
+<td>zwykle nie</td>
+<td>nie</td>
+<td>tak (<em>time travel</em>)</td>
+</tr>
+<tr>
+<td>Koszt składowania</td>
+<td>wysoki</td>
+<td>niski</td>
+<td>niski</td>
+</tr>
+<tr>
+<td>Przykłady</td>
+<td>Teradata, Oracle, Snowflake, BigQuery</td>
+<td>HDFS, S3 + Hive</td>
+<td>Databricks, Iceberg na S3</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Granice się zacierają</p>
+<p>Snowflake i BigQuery (wrócimy do niego na zajęciach 7) potrafią dziś czytać
+i zapisywać tabele Iceberga, a Delta może udostępniać swoje tabele jako
+Iceberg. Podział z tabeli jest więc bardziej historyczny niż ostry. Pomysł
+„otwarte pliki + dziennik transakcji” wygrał.</p>
+</div>
+<h3 id="co-psuje-sie-w-jeziorze-bez-transakcji">Co psuje się w jeziorze bez transakcji<a class="headerlink" href="#co-psuje-sie-w-jeziorze-bez-transakcji" title="Permanent link">#</a></h3>
+<p>Wyobraź sobie katalog <code>sprzedaz/</code> z plikami Parquet. Co noc dopisuje do niego
+job, w dzień czytają z niego analitycy. Co może pójść źle:</p>
+<ul>
+<li><strong>Job pada w połowie zapisu.</strong> W katalogu zostaje połowa nowych plików.
+  Raporty liczą dzień częściowo i nikt o tym nie wie.</li>
+<li><strong>Analityk czyta w trakcie zapisu.</strong> Widzi część starych i część nowych
+  danych — stan, który nigdy naprawdę nie istniał.</li>
+<li><strong>Klient żąda usunięcia danych (RODO).</strong> Pliki Parquet nie mają <code>DELETE</code>.
+  Trzeba przepisać każdy plik, w którym jest choć jeden wiersz klienta,
+  i podmienić go tak, żeby nikt w tym czasie nie czytał.</li>
+<li><strong>Ktoś dopisuje plik, w którym <code>kwota</code> jest tekstem.</strong> Nic tego nie
+  zatrzymuje. Zapytania wysypią się za tydzień, u kogoś innego.</li>
+<li><strong>Ktoś nadpisuje katalog błędnymi danymi.</strong> Nie ma „Cofnij”.</li>
+</ul>
+<p>Delta Lake rozwiązuje wszystkie pięć problemów jednym pomysłem.</p>
+<hr />
+<h2 id="delta-lake-pod-maska">Delta Lake pod maską<a class="headerlink" href="#delta-lake-pod-maska" title="Permanent link">#</a></h2>
+<h3 id="pliki-dziennik">Pliki + dziennik<a class="headerlink" href="#pliki-dziennik" title="Permanent link">#</a></h3>
+<p>Tabela Delta to katalog z plikami Parquet i podkatalogiem <code>_delta_log</code>:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>produkty/
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── _delta_log/
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>│   ├── 00000000000000000000.json    wersja 0: utwórz tabelę (schemat)
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│   ├── 00000000000000000001.json    wersja 1: dodaj plik A
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>│   ├── 00000000000000000002.json    wersja 2: usuń A, dodaj B
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│   ├── 00000000000000000003.json    wersja 3: dodaj C
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>│   ├── ...
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>│   └── 00000000000000000010.checkpoint.parquet    stan tabeli zebrany w jednym pliku
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>├── part-00000-1f3e….snappy.parquet  A  (usunięty w wersji 2, ale dalej leży na dysku)
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>├── part-00000-8b2c….snappy.parquet  B
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>└── part-00000-c771….snappy.parquet  C
+</span></code></pre></div>
+<p>Całość opiera się na trzech zasadach:</p>
+<ol>
+<li><strong>Pliki z danymi nigdy się nie zmieniają.</strong> Raz zapisany Parquet zostaje
+   taki, jaki był. Zmiana danych to zapis <strong>nowych</strong> plików.</li>
+<li><strong>Każda zmiana tabeli to jeden nowy plik w <code>_delta_log</code></strong> — tzw. <em>commit</em>.
+   Zawiera listę akcji: „dodaj plik B”, „usuń plik A”, czasem „zmień schemat”.
+   „Usuń” jest <strong>logiczne</strong> — plik A dalej leży w katalogu, tylko tabela
+   przestaje go używać.</li>
+<li><strong>Stan tabeli w wersji N to pliki dodane i jeszcze nieusunięte w commitach
+   od 0 do N.</strong> Czytelnik najpierw czyta dziennik, a potem tylko te pliki, które
+   dziennik wskazuje. Pliku, którego nie ma w dzienniku, nie widzi wcale.</li>
+</ol>
+<p>Tak wygląda prawdziwy commit — operacja <code>MERGE</code> z naszego demo, skrócona:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span><span class="nt">"commitInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"operation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MERGE"</span><span class="p">,</span><span class="w"> </span><span class="nt">"readVersion"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">                </span><span class="nt">"operationMetrics"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"numTargetRowsUpdated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">                                     </span><span class="nt">"numTargetRowsInserted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">}}}</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">{</span><span class="nt">"remove"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part-00001-b626….snappy.parquet"</span><span class="p">,</span><span class="w"> </span><span class="nt">"dataChange"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">}}</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">{</span><span class="nt">"add"</span><span class="p">:</span><span class="w">    </span><span class="p">{</span><span class="nt">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part-00000-e6c8….snappy.parquet"</span><span class="p">,</span><span class="w"> </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">1273</span><span class="p">,</span><span class="w"> </span><span class="nt">"dataChange"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">            </span><span class="nt">"stats"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{\"numRecords\": 2,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="s2">                       \"minValues\": {\"id\": 2, \"cena\": 19.90},</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="s2">                       \"maxValues\": {\"id\": 6, \"cena\": 29.90}, ...}"</span><span class="p">}}</span>
+</span></code></pre></div>
+<p>Zwróć uwagę na <code>stats</code>. Dziennik zna <strong>minimum i maksimum</strong> każdej kolumny
+w każdym pliku. Zapytanie <code>WHERE cena &gt; 50</code> pominie ten plik bez otwierania go
+(<em>data skipping</em>). To ten sam pomysł co statystyki w stopce Parquetu z zajęć 1,
+tylko zebrany w jednym miejscu dla całej tabeli.</p>
+<p>Co kilka commitów (w wersji open source domyślnie co 10) Delta zapisuje
+<strong>checkpoint</strong> — plik Parquet z gotowym stanem tabeli. Dzięki temu czytelnik
+nie musi przechodzić przez tysiące plików JSON, tylko bierze ostatni checkpoint
+i kilka commitów po nim.</p>
+<h3 id="dlaczego-to-rozwiazuje-problemy-z-jeziora">Dlaczego to rozwiązuje problemy z jeziora<a class="headerlink" href="#dlaczego-to-rozwiazuje-problemy-z-jeziora" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>Job pada w połowie zapisu</strong> → nowe pliki Parquet leżą w katalogu, ale commit
+  nie powstał. Dla dziennika nie istnieją, więc nikt ich nie przeczyta.</li>
+<li><strong>Czytanie w trakcie zapisu</strong> → czytelnik bierze wersję, która była ostatnia
+  w chwili rozpoczęcia zapytania, i czyta ją do końca. Nowy commit go nie
+  dotyczy.</li>
+<li><strong>Dwóch piszących naraz</strong> → obaj próbują utworzyć ten sam plik, np.
+  <code>…006.json</code>. Magazyn pozwala utworzyć go tylko raz, więc jeden wygrywa.
+  Drugi sprawdza, czy zmiany się wykluczają. Jeśli nie (np. obaj tylko
+  dopisywali), ponawia jako wersja 7. Jeśli tak (obaj zmieniali te same pliki),
+  dostaje błąd <code>ConcurrentModificationException</code>. To <strong>optymistyczna kontrola
+  współbieżności</strong>: nikt niczego nie blokuje, konflikty rozstrzyga się przy
+  commicie.</li>
+<li><strong><code>DELETE</code> i <code>UPDATE</code></strong> → przepisz dotknięte pliki i zapisz commit „usuń
+  stare, dodaj nowe”. Szczegóły za chwilę.</li>
+<li><strong>Kontrola schematu</strong> → schemat jest zapisany w dzienniku (akcja <code>metaData</code>),
+  więc każdy zapis można z nim porównać.</li>
+<li><strong>„Cofnij”</strong> → stare pliki i stare commity wciąż istnieją, więc da się
+  odtworzyć dowolną wcześniejszą wersję.</li>
+</ul>
+<h3 id="acid">ACID<a class="headerlink" href="#acid" title="Permanent link">#</a></h3>
+<p>Cztery litery, które odróżniają bazę danych od katalogu z plikami:</p>
+<table>
+<thead>
+<tr>
+<th>Litera</th>
+<th>Znaczy</th>
+<th>W Delta Lake</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong> — <em>Atomicity</em>, niepodzielność</td>
+<td>zmiana wchodzi cała albo wcale</td>
+<td>jeden commit = jeden plik w dzienniku; bez niego zmiany nie ma</td>
+</tr>
+<tr>
+<td><strong>C</strong> — <em>Consistency</em>, spójność</td>
+<td>dane spełniają reguły tabeli</td>
+<td>kontrola schematu, ograniczenia <code>NOT NULL</code> i <code>CHECK</code></td>
+</tr>
+<tr>
+<td><strong>I</strong> — <em>Isolation</em>, izolacja</td>
+<td>równoczesne operacje sobie nie przeszkadzają</td>
+<td>czytelnik widzi jedną wersję; piszący — kontrola optymistyczna</td>
+</tr>
+<tr>
+<td><strong>D</strong> — <em>Durability</em>, trwałość</td>
+<td>zatwierdzone nie znika</td>
+<td>dziennik i pliki w trwałym magazynie obiektowym</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Gdzie jest <code>_delta_log</code> w Databricksie?</p>
+<p>Do plików <strong>tabeli zarządzanej</strong> w Unity Catalog nie zajrzysz bezpośrednio.
+Katalog pilnuje, żeby nikt nie omijał uprawnień, czytając pliki z pominięciem
+tabeli. Ten sam dziennik czytają jednak dwa polecenia:
+<code>DESCRIBE HISTORY</code> (lista commitów) i <code>DESCRIBE DETAIL</code> (format, położenie,
+liczba i rozmiar plików). Na nich oprzemy się w demo.</p>
+</div>
+<hr />
+<h2 id="time-travel">Time travel<a class="headerlink" href="#time-travel" title="Permanent link">#</a></h2>
+<p>Skoro stare pliki zostają, a dziennik pamięta wszystkie commity, można przeczytać
+tabelę w <strong>dowolnej wcześniejszej wersji</strong>:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">HISTORY</span><span class="w"> </span><span class="n">produkty</span><span class="w">                                  </span><span class="c1">-- lista wersji: kto, kiedy, co</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">produkty</span><span class="w"> </span><span class="k">VERSION</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="mi">3</span><span class="w">                     </span><span class="c1">-- tabela w wersji 3</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">produkty</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="s1">'2026-11-21 15:30'</span><span class="w">  </span><span class="c1">-- tabela o 15:30</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">RESTORE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">produkty</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="k">VERSION</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="mi">3</span><span class="w">                  </span><span class="c1">-- przywróć wersję 3</span>
+</span></code></pre></div>
+<p>W Pythonie: <code>spark.read.option("versionAsOf", 3).table("produkty")</code>.</p>
+<p>Do czego to się przydaje:</p>
+<ul>
+<li><strong>„Cofnij”</strong> — ktoś puścił <code>DELETE</code> bez <code>WHERE</code>? <code>RESTORE</code> i po kłopocie.</li>
+<li><strong>Audyt</strong> — <code>DESCRIBE HISTORY</code> mówi, kto, kiedy i jakim poleceniem zmienił
+  tabelę.</li>
+<li><strong>Odtwarzalność</strong> — model trenowany na wersji 42 da się wytrenować ponownie
+  na dokładnie tych samych danych.</li>
+<li><strong>Debugowanie</strong> — co się zmieniło od wczoraj? <code>EXCEPT</code> między wersjami.</li>
+</ul>
+<p><code>RESTORE</code> nie wymazuje historii. To <strong>nowy commit</strong>, który przywraca pliki ze
+starej wersji. Wersja z błędem dalej jest w historii i dalej można ją przeczytać.
+Da się więc „przywrócić przywrócenie”.</p>
+<div class="admonition warning">
+<p class="admonition-title">Time travel to nie archiwum</p>
+<p>Stare pliki nie leżą wiecznie. <code>VACUUM</code> (zaraz o nim) usuwa pliki, których
+aktualna wersja już nie używa, a które są starsze niż <strong>7 dni</strong>. Wpisy
+w dzienniku są domyślnie trzymane <strong>30 dni</strong>. Time travel służy więc do
+cofania pomyłek z ostatnich dni, a nie do przechowywania historii biznesowej.
+Jeśli chcesz wiedzieć, w jakim segmencie był klient w zeszłym roku, potrzebujesz
+<strong>SCD typu 2</strong> — o nim przy <code>MERGE</code>.</p>
+</div>
+<hr />
+<h2 id="update-delete-i-merge"><code>UPDATE</code>, <code>DELETE</code> i <code>MERGE</code><a class="headerlink" href="#update-delete-i-merge" title="Permanent link">#</a></h2>
+<h3 id="jak-zmienic-niezmienny-plik">Jak zmienić niezmienny plik<a class="headerlink" href="#jak-zmienic-niezmienny-plik" title="Permanent link">#</a></h3>
+<p>Skoro pliki są niezmienne, jak działa <code>UPDATE</code>? Delta:</p>
+<ol>
+<li>szuka plików, w których mogą być pasujące wiersze (statystyki min/max
+   pomagają pominąć resztę),</li>
+<li><strong>przepisuje</strong> każdy taki plik w całości — z poprawionymi wierszami,</li>
+<li>zapisuje commit: „usuń stare pliki, dodaj nowe”.</li>
+</ol>
+<p>To się nazywa <em>copy-on-write</em>. Wada: zmiana jednego wiersza w pliku o rozmiarze
+1 GB oznacza przepisanie gigabajta. Dlatego Databricks na nowych tabelach używa
+domyślnie <strong>wektorów usunięć</strong> (<em>deletion vectors</em>). Zamiast przepisywać plik,
+zapisuje obok mały plik z listą wierszy, które „już nie istnieją”. Przepisanie
+odkłada na później. W historii zobaczysz wtedy liczniki <code>numDeletionVectorsAdded</code>.</p>
+<h3 id="merge-wszystko-naraz"><code>MERGE</code> — wszystko naraz<a class="headerlink" href="#merge-wszystko-naraz" title="Permanent link">#</a></h3>
+<p>Klasyczna sytuacja: co noc z systemu CRM przychodzi <strong>paczka zmian</strong>. Jedni
+klienci są nowi, inni zmienili dane. Trzeba je wprowadzić do kartoteki.
+Osobne <code>UPDATE</code> i <code>INSERT</code> to dwie transakcje, a między nimi coś może się
+wysypać. <code>MERGE</code> robi to w <strong>jednej</strong>:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">MERGE</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">klienci</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">t</span><span class="w">             </span><span class="c1">-- tabela docelowa (target)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">USING</span><span class="w"> </span><span class="n">zmiany</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">s</span><span class="w">                   </span><span class="c1">-- paczka zmian (source)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">ON</span><span class="w"> </span><span class="n">t</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">id</span><span class="w">                      </span><span class="c1">-- jak parować wiersze</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">WHEN</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="o">*</span><span class="w">      </span><span class="c1">-- klient już jest → nadpisz wszystkie kolumny</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">WHEN</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="k">INSERT</span><span class="w"> </span><span class="o">*</span><span class="w">      </span><span class="c1">-- nowy klient → dopisz</span>
+</span></code></pre></div>
+<p>Taką operację nazywa się <strong>upsert</strong> (<em>update + insert</em>):</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a> klienci (przed)          zmiany                    klienci (po)
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a> id  segment              id  segment               id  segment
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a> 1   BUILDING             2   MACHINERY  ── pasuje  1   BUILDING
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a> 2   FURNITURE ─────────► 4   HOUSEHOLD  ── nowy    2   MACHINERY   ← UPDATE
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a> 3   AUTOMOBILE                                     3   AUTOMOBILE
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>                                                    4   HOUSEHOLD   ← INSERT
+</span></code></pre></div>
+<p>Klauzule <code>WHEN</code> można łączyć i dodawać do nich warunki:</p>
+<table>
+<thead>
+<tr>
+<th>Klauzula</th>
+<th>Kiedy się wykonuje</th>
+<th>Przykład</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WHEN MATCHED [AND warunek] THEN UPDATE SET …</code></td>
+<td>wiersz jest w obu tabelach</td>
+<td><code>UPDATE SET t.cena = s.cena</code></td>
+</tr>
+<tr>
+<td><code>WHEN MATCHED [AND warunek] THEN DELETE</code></td>
+<td>wiersz jest w obu tabelach</td>
+<td><code>WHEN MATCHED AND s.usuniety THEN DELETE</code></td>
+</tr>
+<tr>
+<td><code>WHEN NOT MATCHED THEN INSERT …</code></td>
+<td>wiersz jest tylko w paczce</td>
+<td><code>INSERT *</code></td>
+</tr>
+<tr>
+<td><code>WHEN NOT MATCHED BY SOURCE THEN DELETE</code></td>
+<td>wiersz jest tylko w tabeli docelowej</td>
+<td>pełna synchronizacja z paczką</td>
+</tr>
+</tbody>
+</table>
+<p><code>UPDATE SET *</code> i <code>INSERT *</code> działają, gdy paczka ma kolumny o tych samych
+nazwach co tabela. Inaczej wypisz je ręcznie: <code>UPDATE SET t.cena = s.nowa_cena</code>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Klucz w paczce musi być unikalny</p>
+<p>Jeśli w paczce zmian ten sam <code>id</code> występuje dwa razy, Delta nie wie, którą
+wersję wpisać, i przerywa <code>MERGE</code> błędem
+<code>DELTA_MULTIPLE_SOURCE_ROW_MATCHING_TARGET_ROW_IN_MERGE</code>. To ten sam problem
+co mnożenie wierszy przy joinie z zajęć 3. Przed <code>MERGE</code> usuń duplikaty
+z paczki, np. <code>dropDuplicates(["id"])</code> albo zostaw najnowszy wiersz
+<code>row_number()</code>.</p>
+</div>
+<p>To samo w Pythonie, przez obiekt <code>DeltaTable</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">delta.tables</span><span class="w"> </span><span class="kn">import</span> <span class="n">DeltaTable</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">klienci</span> <span class="o">=</span> <span class="n">DeltaTable</span><span class="o">.</span><span class="n">forName</span><span class="p">(</span><span class="n">spark</span><span class="p">,</span> <span class="s2">"workspace.zajecia4.klienci"</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">(</span><span class="n">klienci</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"t"</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">zmiany</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"s"</span><span class="p">),</span> <span class="s2">"t.id = s.id"</span><span class="p">)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="o">.</span><span class="n">whenMatchedUpdateAll</span><span class="p">()</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="o">.</span><span class="n">whenNotMatchedInsertAll</span><span class="p">()</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    <span class="o">.</span><span class="n">execute</span><span class="p">())</span>
+</span></code></pre></div>
+<h3 id="scd-co-z-historia-klienta">SCD — co z historią klienta<a class="headerlink" href="#scd-co-z-historia-klienta" title="Permanent link">#</a></h3>
+<p>Hurtownie danych od dawna nazywają ten problem <em>Slowly Changing Dimensions</em>
+(SCD) — wymiary, które zmieniają się powoli: adres klienta, segment, cena
+produktu. Dwa najczęstsze podejścia:</p>
+<ul>
+<li><strong>SCD typu 1</strong> — nadpisz starą wartość. Nasz <code>MERGE</code> wyżej. Prosto, ale nie
+  wiesz, jaki segment klient miał wcześniej.</li>
+<li><strong>SCD typu 2</strong> — każda zmiana to <strong>nowy wiersz</strong>. Stary wiersz dostaje datę
+  końca ważności:</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a> id  segment     valid_from  valid_to    is_current
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a> 2   FURNITURE   2024-03-01  2026-11-21  false       ← zamknięty
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a> 2   MACHINERY   2026-11-21  NULL        true        ← aktualny
+</span></code></pre></div>
+<p>Raporty sprzedaży mogą wtedy przypisać każde zamówienie do segmentu, w którym
+klient był <strong>w dniu zamówienia</strong>. Time travel tego nie zastąpi: pamięta tylko
+kilka dni wstecz i mówi, kiedy zmieniła się <strong>tabela</strong>, a nie kiedy klient zmienił
+segment.</p>
+<hr />
+<h2 id="schemat-pod-kontrola">Schemat pod kontrolą<a class="headerlink" href="#schemat-pod-kontrola" title="Permanent link">#</a></h2>
+<h3 id="schema-enforcement">Schema enforcement<a class="headerlink" href="#schema-enforcement" title="Permanent link">#</a></h3>
+<p>Delta porównuje <strong>każdy zapis</strong> ze schematem zapisanym w dzienniku:</p>
+<table>
+<thead>
+<tr>
+<th>Dane mają…</th>
+<th>Co robi Delta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dodatkową kolumnę, której nie ma w tabeli</td>
+<td><strong>błąd</strong> — <code>A schema mismatch detected when writing to the Delta table</code></td>
+</tr>
+<tr>
+<td>kolumnę innego typu (<code>cena</code> jako tekst)</td>
+<td><strong>błąd</strong> — <code>Failed to merge fields 'cena' and 'cena'</code></td>
+</tr>
+<tr>
+<td>o jedną kolumnę mniej</td>
+<td>zapisuje, brakującą kolumnę wypełnia <code>NULL</code></td>
+</tr>
+</tbody>
+</table>
+<p>To jest <strong>zaleta</strong>, nie złośliwość. Błąd przy zapisie widzisz od razu i wiesz,
+który job go spowodował. Bez kontroli schematu złe dane wchodzą po cichu i psują
+się dopiero przy odczycie — tydzień później, u kogoś innego.</p>
+<p>Uwaga na typy liczbowe: dla Delty <code>DECIMAL(4,2)</code> i <code>DECIMAL(8,2)</code> to <strong>różne</strong>
+typy. Literał <code>49.00</code> w SQL ma typ <code>DECIMAL(4,2)</code>, więc przy dopisywaniu do
+kolumny <code>DECIMAL(8,2)</code> trzeba go zrzutować: <code>CAST(49.00 AS DECIMAL(8, 2))</code>.</p>
+<h3 id="schema-evolution">Schema evolution<a class="headerlink" href="#schema-evolution" title="Permanent link">#</a></h3>
+<p>Gdy nowa kolumna jest <strong>zamierzona</strong>, mówisz to Delcie wprost:</p>
+<table>
+<thead>
+<tr>
+<th>Sytuacja</th>
+<th>Jak</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dopisuję DataFrame z nową kolumną</td>
+<td><code>df.write.mode("append").option("mergeSchema", "true").saveAsTable(...)</code></td>
+</tr>
+<tr>
+<td>dodaję kolumnę ręcznie</td>
+<td><code>ALTER TABLE t ADD COLUMNS (email STRING)</code></td>
+</tr>
+<tr>
+<td><code>MERGE</code> z nową kolumną w paczce</td>
+<td><code>MERGE WITH SCHEMA EVOLUTION INTO t USING ...</code></td>
+</tr>
+<tr>
+<td>zmieniam typ kolumny</td>
+<td>to nie ewolucja — trzeba przepisać tabelę: <code>mode("overwrite")</code> + <code>option("overwriteSchema", "true")</code></td>
+</tr>
+</tbody>
+</table>
+<p>Stare wiersze dostają w nowej kolumnie <code>NULL</code>. Pliki nie są przepisywane —
+zmienia się tylko schemat w dzienniku.</p>
+<hr />
+<h2 id="konserwacja-optimize-i-vacuum">Konserwacja: <code>OPTIMIZE</code> i <code>VACUUM</code><a class="headerlink" href="#konserwacja-optimize-i-vacuum" title="Permanent link">#</a></h2>
+<h3 id="problem-maych-plikow">Problem małych plików<a class="headerlink" href="#problem-maych-plikow" title="Permanent link">#</a></h3>
+<p>Każdy commit to nowe pliki. Job, który co 5 minut dopisuje kilka wierszy,
+po miesiącu zostawi ponad 8 tysięcy małych plików. Odczyt każdego pliku to osobne
+żądanie do magazynu i osobne metadane, więc tysiąc plików po 100 kB czyta się
+<strong>wielokrotnie</strong> wolniej niż jeden plik 100 MB.</p>
+<p><strong><code>OPTIMIZE</code></strong> skleja małe pliki w duże (<em>compaction</em>). Jak każda zmiana w Delcie
+jest to commit: „usuń 1000 małych, dodaj 1 duży”. Dane się nie zmieniają, a czytelnicy
+w trakcie niczego nie zauważają.</p>
+<h3 id="liquid-clustering">Liquid clustering<a class="headerlink" href="#liquid-clustering" title="Permanent link">#</a></h3>
+<p>Na zajęciach 1 partycjonowaliśmy pliki w stylu Hive (<code>miesiac=1/</code>, <code>miesiac=2/</code>).
+Delta to potrafi, ale Databricks zaleca dziś <strong>liquid clustering</strong>:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">zamowienia</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="k">CLUSTER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">data_zamowienia</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>OPTIMIZE</code> układa wtedy dane tak, żeby podobne wartości kolumny trafiały do tych
+samych plików. Statystyki min/max w dzienniku są wtedy „ciasne”, więc zapytanie
+z filtrem po dacie pomija większość plików. W odróżnieniu od partycjonowania nie
+tworzy tysięcy katalogów przy kolumnie o wielu wartościach i można zmienić
+kolumny klastrowania bez przepisywania tabeli.</p>
+<h3 id="vacuum"><code>VACUUM</code><a class="headerlink" href="#vacuum" title="Permanent link">#</a></h3>
+<p><code>OPTIMIZE</code>, <code>UPDATE</code>, <code>DELETE</code> i <code>MERGE</code> usuwają pliki tylko <strong>logicznie</strong>.
+Fizycznie zostają na dysku — dzięki temu działa time travel, ale płacisz za
+miejsce. <strong><code>VACUUM</code></strong> kasuje pliki, których nie używa aktualna wersja tabeli
+i które są starsze niż okres przechowywania (domyślnie <strong>7 dni</strong>). Po <code>VACUUM</code>
+time travel do starszych wersji przestaje działać — dziennik pamięta, że były,
+ale ich plików już nie ma.</p>
+<div class="admonition info">
+<p class="admonition-title">Databricks sprząta sam</p>
+<p>W Unity Catalog działa <em>predictive optimization</em> — Databricks sam od czasu
+do czasu uruchamia na tabelach zarządzanych <code>OPTIMIZE</code>, <code>VACUUM</code> i <code>ANALYZE</code>.
+Jeśli w <code>DESCRIBE HISTORY</code> zobaczysz operację, której nie wykonywałeś,
+to właśnie to.</p>
+</div>
+<hr />
+<h2 id="demo-cennik-sklepu-w-delcie">Demo: cennik sklepu w Delcie<a class="headerlink" href="#demo-cennik-sklepu-w-delcie" title="Permanent link">#</a></h2>
+<p>Na małej tabeli, którą widać w całości, przejdziemy przez wszystko po kolei:
+utworzenie, zmiany, <code>MERGE</code>, historię, cofnięcie pomyłki i nową kolumnę. Pracujemy
+w schemacie <code>workspace.zajecia4</code>.</p>
+<h3 id="tworzymy-tabele">Tworzymy tabelę<a class="headerlink" href="#tworzymy-tabele" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"CREATE SCHEMA IF NOT EXISTS workspace.zajecia4"</span><span class="p">)</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"DROP TABLE IF EXISTS workspace.zajecia4.produkty"</span><span class="p">)</span>   <span class="c1"># żeby demo dało się powtórzyć</span>
+</span></code></pre></div>
+<p>W Databricksie każda nowa tabela jest domyślnie tabelą Delta — nie trzeba pisać
+<code>USING DELTA</code>.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="n">id</span><span class="w">     </span><span class="nb">INT</span><span class="p">,</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="n">nazwa</span><span class="w">  </span><span class="n">STRING</span><span class="p">,</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="n">cena</span><span class="w">   </span><span class="nb">DECIMAL</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="n">stan</span><span class="w">   </span><span class="nb">INT</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">VALUES</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">'Kawa ziarnista 1 kg'</span><span class="p">,</span><span class="w"> </span><span class="mi">79</span><span class="p">.</span><span class="mi">99</span><span class="p">,</span><span class="w">  </span><span class="mi">40</span><span class="p">),</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">'Herbata zielona'</span><span class="p">,</span><span class="w">     </span><span class="mi">18</span><span class="p">.</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">120</span><span class="p">),</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s1">'Czekolada gorzka'</span><span class="p">,</span><span class="w">     </span><span class="mi">7</span><span class="p">.</span><span class="mi">99</span><span class="p">,</span><span class="w"> </span><span class="mi">300</span><span class="p">),</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="s1">'Miód lipowy'</span><span class="p">,</span><span class="w">         </span><span class="mi">34</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span><span class="w">  </span><span class="mi">25</span><span class="p">),</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s1">'Kakao'</span><span class="p">,</span><span class="w">               </span><span class="mi">15</span><span class="p">.</span><span class="mi">49</span><span class="p">,</span><span class="w">  </span><span class="mi">60</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Tu literały typu <code>DECIMAL(4,2)</code> nie przeszkadzają — <code>INSERT INTO</code> w SQL sam
+rzutuje wartości na typy kolumn. Kontrola schematu dotyczy głównie zapisów
+z DataFrame'ów.</p>
+<h3 id="historia-i-szczegoy-tabeli">Historia i szczegóły tabeli<a class="headerlink" href="#historia-i-szczegoy-tabeli" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">historia</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"DESCRIBE HISTORY workspace.zajecia4.produkty"</span><span class="p">)</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">display</span><span class="p">(</span><span class="n">historia</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">"version"</span><span class="p">,</span> <span class="s2">"timestamp"</span><span class="p">,</span> <span class="s2">"operation"</span><span class="p">,</span> <span class="s2">"operationMetrics"</span><span class="p">))</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>+-------+-------------------+------------+-----------------------------------------+
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>|version|          timestamp|   operation|                         operationMetrics|
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>+-------+-------------------+------------+-----------------------------------------+
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>|      1|2026-11-21 15:42:10|       WRITE| {numFiles -&gt; 1, numOutputRows -&gt; 5, ...}|
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>|      0|2026-11-21 15:42:09|CREATE TABLE|                                       {}|
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>+-------+-------------------+------------+-----------------------------------------+
+</span></code></pre></div>
+<p>Dwie operacje, dwie wersje. Najnowsza jest na górze. W Databricksie zobaczysz
+więcej kolumn — m.in. <code>userName</code>, czyli <strong>kto</strong> wykonał operację.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">DETAIL</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span>
+</span></code></pre></div>
+<p><code>DESCRIBE DETAIL</code> pokazuje m.in. <code>format</code> (<code>delta</code>), <code>location</code> (gdzie w chmurze
+leżą pliki), <code>numFiles</code> i <code>sizeInBytes</code>.</p>
+<h3 id="update-i-delete"><code>UPDATE</code> i <code>DELETE</code><a class="headerlink" href="#update-i-delete" title="Permanent link">#</a></h3>
+<p>Kawa drożeje o 10%, a miód, którego zostało mniej niż 30 słoików, wycofujemy:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">cena</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cena</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1</span><span class="p">.</span><span class="mi">10</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">stan</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">30</span>
+</span></code></pre></div>
+<p>Na zwykłych plikach Parquet żadne z tych poleceń by nie zadziałało.</p>
+<h3 id="merge-przyjmujemy-dostawe"><code>MERGE</code> — przyjmujemy dostawę<a class="headerlink" href="#merge-przyjmujemy-dostawe" title="Permanent link">#</a></h3>
+<p>Przychodzi dostawa: herbaty jest więcej i ma nową cenę, a do oferty wchodzi yerba
+mate. Paczkę zmian przygotowujemy jako widok tymczasowy:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="k">REPLACE</span><span class="w"> </span><span class="n">TEMP</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">dostawa</span><span class="w"> </span><span class="k">AS</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">VALUES</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">    </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">'Herbata zielona'</span><span class="p">,</span><span class="w"> </span><span class="mi">19</span><span class="p">.</span><span class="mi">90</span><span class="p">,</span><span class="w"> </span><span class="mi">150</span><span class="p">),</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="s1">'Yerba mate'</span><span class="p">,</span><span class="w">      </span><span class="mi">29</span><span class="p">.</span><span class="mi">90</span><span class="p">,</span><span class="w">  </span><span class="mi">80</span><span class="p">)</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="k">AS</span><span class="w"> </span><span class="n">d</span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">nazwa</span><span class="p">,</span><span class="w"> </span><span class="n">cena</span><span class="p">,</span><span class="w"> </span><span class="n">stan</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">MERGE</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">t</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">USING</span><span class="w"> </span><span class="n">dostawa</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">s</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="k">ON</span><span class="w"> </span><span class="n">t</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="k">WHEN</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="o">*</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="k">WHEN</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="k">INSERT</span><span class="w"> </span><span class="o">*</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>+-----------------+----------------+----------------+-----------------+
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>|num_affected_rows|num_updated_rows|num_deleted_rows|num_inserted_rows|
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>+-----------------+----------------+----------------+-----------------+
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>|                2|               1|               0|                1|
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>+-----------------+----------------+----------------+-----------------+
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>+---+-------------------+-----+----+
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>| id|              nazwa| cena|stan|
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>+---+-------------------+-----+----+
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>|  1|Kawa ziarnista 1 kg|87.99|  40|
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>|  2|    Herbata zielona|19.90| 150|
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>|  3|   Czekolada gorzka| 7.99| 300|
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>|  5|              Kakao|15.49|  60|
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>|  6|         Yerba mate|29.90|  80|
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>+---+-------------------+-----+----+
+</span></code></pre></div>
+<p>Kawa droższa, miodu nie ma, herbata zaktualizowana, yerba dopisana. Historia:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">historia</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"DESCRIBE HISTORY workspace.zajecia4.produkty"</span><span class="p">)</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">display</span><span class="p">(</span><span class="n">historia</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">"version"</span><span class="p">,</span> <span class="s2">"operation"</span><span class="p">,</span> <span class="s2">"operationParameters"</span><span class="p">,</span> <span class="s2">"operationMetrics"</span><span class="p">))</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>+-------+------------+--------------------------------+------------------------------------------------------------+
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>|version|   operation|             operationParameters|                                            operationMetrics|
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>+-------+------------+--------------------------------+------------------------------------------------------------+
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>|      4|       MERGE|{predicate -&gt; ["(id = id)"], …} |{…, numTargetRowsUpdated -&gt; 1, numTargetRowsInserted -&gt; 1, …}|
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>|      3|      DELETE|{predicate -&gt; ["(stan &lt; 30)"]}  |{…, numDeletedRows -&gt; 1, …}                                 |
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>|      2|      UPDATE|{predicate -&gt; ["(id = 1)"]}     |{…, numUpdatedRows -&gt; 1, …}                                 |
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>|      1|       WRITE|{mode -&gt; Append, …}             |{…, numOutputRows -&gt; 5, …}                                  |
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>|      0|CREATE TABLE|{…}                             |{}                                                          |
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>+-------+------------+--------------------------------+------------------------------------------------------------+
+</span></code></pre></div>
+<p>Z kolumny <code>operationMetrics</code> (to słownik, <em>map</em>) pojedynczą wartość wyciąga się
+tak:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="n">display</span><span class="p">(</span><span class="n">historia</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"operation"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"MERGE"</span><span class="p">)</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>    <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">"version"</span><span class="p">,</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>            <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"operationMetrics"</span><span class="p">)[</span><span class="s2">"numTargetRowsUpdated"</span><span class="p">]</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"zaktualizowane"</span><span class="p">),</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>            <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"operationMetrics"</span><span class="p">)[</span><span class="s2">"numTargetRowsInserted"</span><span class="p">]</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"dopisane"</span><span class="p">)))</span>
+</span></code></pre></div>
+<h3 id="time-travel_1">Time travel<a class="headerlink" href="#time-travel_1" title="Permanent link">#</a></h3>
+<p>Cennik sprzed wszystkich zmian, czyli wersja 1:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">VERSION</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>+---+-------------------+-----+----+
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>| id|              nazwa| cena|stan|
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>+---+-------------------+-----+----+
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>|  1|Kawa ziarnista 1 kg|79.99|  40|
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>|  2|    Herbata zielona|18.50| 120|
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>|  3|   Czekolada gorzka| 7.99| 300|
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>|  4|        Miód lipowy|34.00|  25|
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>|  5|              Kakao|15.49|  60|
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>+---+-------------------+-----+----+
+</span></code></pre></div>
+<p>Co się zmieniło od wersji 1? Wiersze, które są teraz, a nie było ich wtedy:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="k">EXCEPT</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">VERSION</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="mi">1</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>+---+-------------------+-----+----+
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>| id|              nazwa| cena|stan|
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>+---+-------------------+-----+----+
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>|  1|Kawa ziarnista 1 kg|87.99|  40|
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>|  2|    Herbata zielona|19.90| 150|
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>|  6|         Yerba mate|29.90|  80|
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>+---+-------------------+-----+----+
+</span></code></pre></div>
+<p>To samo w Pythonie:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">v1</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">"versionAsOf"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">"workspace.zajecia4.produkty"</span><span class="p">)</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">teraz</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">"workspace.zajecia4.produkty"</span><span class="p">)</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="n">display</span><span class="p">(</span><span class="n">teraz</span><span class="o">.</span><span class="n">exceptAll</span><span class="p">(</span><span class="n">v1</span><span class="p">))</span>
+</span></code></pre></div>
+<h3 id="ups-delete-bez-where">Ups — <code>DELETE</code> bez <code>WHERE</code><a class="headerlink" href="#ups-delete-bez-where" title="Permanent link">#</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>0
+</span></code></pre></div>
+<p>Pusto. W zwykłym jeziorze danych to byłby telefon do administratora kopii
+zapasowych. Tu — jedno polecenie. Ostatnia dobra wersja to 4 (po <code>MERGE</code>):</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="n">RESTORE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="k">VERSION</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="mi">4</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id</span>
+</span></code></pre></div>
+<p>Wszystkie pięć produktów wróciło. W historii są teraz wersje 5 (<code>DELETE</code>) i 6
+(<code>RESTORE</code>) — pomyłka nie zniknęła, tylko została odkręcona.</p>
+<h3 id="nowa-kolumna-schema-enforcement-i-evolution">Nowa kolumna — schema enforcement i evolution<a class="headerlink" href="#nowa-kolumna-schema-enforcement-i-evolution" title="Permanent link">#</a></h3>
+<p>Dział zakupów chce dopisać matchę, tym razem z kategorią produktu. Takiej kolumny
+w tabeli nie ma, więc ta komórka <strong>celowo kończy się błędem</strong> (przy <em>Run all</em>
+notatnik zatrzyma się tutaj — kolejne komórki uruchom ręcznie):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="n">nowe</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="s2">    SELECT 7 AS id, 'Matcha' AS nazwa, CAST(49.00 AS DECIMAL(8, 2)) AS cena,</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="s2">           15 AS stan, 'herbata' AS kategoria</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="s2">"""</span><span class="p">)</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="n">nowe</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="s2">"append"</span><span class="p">)</span><span class="o">.</span><span class="n">saveAsTable</span><span class="p">(</span><span class="s2">"workspace.zajecia4.produkty"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>AnalysisException: [_LEGACY_ERROR_TEMP_DELTA_0007] A schema mismatch detected when
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>writing to the Delta table (Table ID: 4536b168-...).
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>To enable schema migration using DataFrameWriter or DataStreamWriter, please set:
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>'.option("mergeSchema", "true")'.
+</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>...
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>Table schema:
+</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>root
+</span><span id="__span-37-8"><a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a>-- id: integer (nullable = true)
+</span><span id="__span-37-9"><a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a>-- nazwa: string (nullable = true)
+</span><span id="__span-37-10"><a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a>-- cena: decimal(8,2) (nullable = true)
+</span><span id="__span-37-11"><a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a>-- stan: integer (nullable = true)
+</span><span id="__span-37-12"><a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a>
+</span><span id="__span-37-13"><a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a>Data schema:
+</span><span id="__span-37-14"><a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a>root
+</span><span id="__span-37-15"><a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a>-- id: integer (nullable = true)
+</span><span id="__span-37-16"><a id="__codelineno-37-16" name="__codelineno-37-16" href="#__codelineno-37-16"></a>-- nazwa: string (nullable = true)
+</span><span id="__span-37-17"><a id="__codelineno-37-17" name="__codelineno-37-17" href="#__codelineno-37-17"></a>-- cena: decimal(8,2) (nullable = true)
+</span><span id="__span-37-18"><a id="__codelineno-37-18" name="__codelineno-37-18" href="#__codelineno-37-18"></a>-- stan: integer (nullable = true)
+</span><span id="__span-37-19"><a id="__codelineno-37-19" name="__codelineno-37-19" href="#__codelineno-37-19"></a>-- kategoria: string (nullable = true)
+</span></code></pre></div>
+<p>Delta odmówiła i od razu powiedziała, co zrobić. Nowa kolumna jest zamierzona,
+więc włączamy ewolucję schematu:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">nowe</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="s2">"append"</span><span class="p">)</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">"mergeSchema"</span><span class="p">,</span> <span class="s2">"true"</span><span class="p">)</span><span class="o">.</span><span class="n">saveAsTable</span><span class="p">(</span><span class="s2">"workspace.zajecia4.produkty"</span><span class="p">)</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="n">display</span><span class="p">(</span><span class="n">spark</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">"workspace.zajecia4.produkty"</span><span class="p">)</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="s2">"id"</span><span class="p">))</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>+---+-------------------+-----+----+---------+
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>| id|              nazwa| cena|stan|kategoria|
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>+---+-------------------+-----+----+---------+
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>|  1|Kawa ziarnista 1 kg|87.99|  40|     NULL|
+</span><span id="__span-39-5"><a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>|  2|    Herbata zielona|19.90| 150|     NULL|
+</span><span id="__span-39-6"><a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>|  3|   Czekolada gorzka| 7.99| 300|     NULL|
+</span><span id="__span-39-7"><a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a>|  5|              Kakao|15.49|  60|     NULL|
+</span><span id="__span-39-8"><a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a>|  6|         Yerba mate|29.90|  80|     NULL|
+</span><span id="__span-39-9"><a id="__codelineno-39-9" name="__codelineno-39-9" href="#__codelineno-39-9"></a>|  7|             Matcha|49.00|  15|  herbata|
+</span><span id="__span-39-10"><a id="__codelineno-39-10" name="__codelineno-39-10" href="#__codelineno-39-10"></a>+---+-------------------+-----+----+---------+
+</span></code></pre></div>
+<p>Stare produkty mają w <code>kategoria</code> wartość <code>NULL</code>. A co, jeśli ktoś przyśle cenę
+jako tekst? Też błąd — i dobrze:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">zle</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"SELECT 8 AS id, 'Rooibos' AS nazwa, 'dwanaście zł' AS cena, 10 AS stan"</span><span class="p">)</span>
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="n">zle</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="s2">"append"</span><span class="p">)</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">"mergeSchema"</span><span class="p">,</span> <span class="s2">"true"</span><span class="p">)</span><span class="o">.</span><span class="n">saveAsTable</span><span class="p">(</span><span class="s2">"workspace.zajecia4.produkty"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>AnalysisException: [DELTA_FAILED_TO_MERGE_FIELDS] Failed to merge fields 'cena' and 'cena'
+</span></code></pre></div>
+<p><code>mergeSchema</code> dodaje kolumny, ale <strong>typu nie zmieni</strong>. Złe dane nie weszły.</p>
+<h3 id="sprzatanie">Sprzątanie<a class="headerlink" href="#sprzatanie" title="Permanent link">#</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="n">OPTIMIZE</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">DETAIL</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">produkty</span>
+</span></code></pre></div>
+<p>Po <code>OPTIMIZE</code> <code>numFiles</code> spada do 1 — cała tabela mieści się w jednym pliku.
+Stare pliki wciąż leżą w magazynie, bo time travel ich potrzebuje.
+<code>VACUUM workspace.zajecia4.produkty</code> usunąłby tylko te starsze niż 7 dni, więc
+dziś nie skasuje niczego.</p>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>SQL</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zapisać DataFrame jako tabelę Delta</td>
+<td><code>CREATE TABLE t AS SELECT ...</code></td>
+<td><code>df.write.mode("overwrite").saveAsTable("t")</code></td>
+</tr>
+<tr>
+<td>dopisać wiersze</td>
+<td><code>INSERT INTO t VALUES (...)</code> / <code>INSERT INTO t SELECT ...</code></td>
+<td><code>df.write.mode("append").saveAsTable("t")</code></td>
+</tr>
+<tr>
+<td>zmienić wiersze</td>
+<td><code>UPDATE t SET kol = ... WHERE ...</code></td>
+<td></td>
+</tr>
+<tr>
+<td>usunąć wiersze</td>
+<td><code>DELETE FROM t WHERE ...</code></td>
+<td></td>
+</tr>
+<tr>
+<td>upsert</td>
+<td><code>MERGE INTO t USING s ON t.id = s.id WHEN MATCHED THEN UPDATE SET * WHEN NOT MATCHED THEN INSERT *</code></td>
+<td><code>DeltaTable.forName(spark, "t").alias("t").merge(s.alias("s"), "t.id = s.id").whenMatchedUpdateAll().whenNotMatchedInsertAll().execute()</code></td>
+</tr>
+<tr>
+<td>DataFrame jako widok w SQL</td>
+<td></td>
+<td><code>df.createOrReplaceTempView("s")</code></td>
+</tr>
+<tr>
+<td>historia tabeli</td>
+<td><code>DESCRIBE HISTORY t</code></td>
+<td><code>spark.sql("DESCRIBE HISTORY t")</code></td>
+</tr>
+<tr>
+<td>wartość z <code>operationMetrics</code></td>
+<td></td>
+<td><code>F.col("operationMetrics")["numTargetRowsUpdated"]</code></td>
+</tr>
+<tr>
+<td>szczegóły tabeli</td>
+<td><code>DESCRIBE DETAIL t</code></td>
+<td><code>spark.sql("DESCRIBE DETAIL t")</code></td>
+</tr>
+<tr>
+<td>tabela w wersji N</td>
+<td><code>SELECT * FROM t VERSION AS OF N</code></td>
+<td><code>spark.read.option("versionAsOf", N).table("t")</code></td>
+</tr>
+<tr>
+<td>tabela o danej godzinie</td>
+<td><code>SELECT * FROM t TIMESTAMP AS OF '2026-11-21 15:30'</code></td>
+<td><code>spark.read.option("timestampAsOf", "2026-11-21 15:30").table("t")</code></td>
+</tr>
+<tr>
+<td>porównać dwie wersje</td>
+<td><code>SELECT * FROM t EXCEPT SELECT * FROM t VERSION AS OF N</code></td>
+<td><code>a.exceptAll(b)</code></td>
+</tr>
+<tr>
+<td>przywrócić wersję</td>
+<td><code>RESTORE TABLE t TO VERSION AS OF N</code></td>
+<td></td>
+</tr>
+<tr>
+<td>dopisać z nową kolumną</td>
+<td></td>
+<td><code>df.write.mode("append").option("mergeSchema", "true").saveAsTable("t")</code></td>
+</tr>
+<tr>
+<td>dodać kolumnę</td>
+<td><code>ALTER TABLE t ADD COLUMNS (email STRING)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>skleić małe pliki</td>
+<td><code>OPTIMIZE t</code></td>
+<td></td>
+</tr>
+<tr>
+<td>usunąć stare pliki</td>
+<td><code>VACUUM t</code></td>
+<td></td>
+</tr>
+<tr>
+<td>liczyć warunkowo</td>
+<td><code>COUNT_IF(warunek)</code>, <code>COUNT(kol)</code> liczy wartości różne od <code>NULL</code></td>
+<td><code>F.count_if(warunek)</code>, <code>F.count("kol")</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-4-kartoteka-klientow-6-pkt">Zadanie 4 — Kartoteka klientów (6 pkt)<a class="headerlink" href="#zadanie-4-kartoteka-klientow-6-pkt" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Czas:</strong> maks. 45 minut</li>
+<li><strong>Środowisko:</strong> Databricks Free Edition (notatnik, compute serverless)</li>
+<li><strong>Oddanie:</strong> notatnik wyeksportowany jako <code>.ipynb</code> na Moodle (<em>File → Export →
+IPython Notebook</em>)</li>
+</ul>
+<p>Zadanie ma dwie części. Rób je po kolei i <strong>pokaż mi wynik każdej części, gdy
+będzie gotowa</strong> — punktacja zależy od tego, ile zrobisz na zajęciach.</p>
+<p>Prowadzisz kartotekę klientów firmy z TPC-H. Dostajesz stan początkowy i paczkę
+zmian z CRM-u. Wprowadzisz zmiany, a potem posprzątasz po stażyście i przyjmiesz
+klientów z nowego formularza rejestracji.</p>
+<h3 id="twoje-dane">Twoje dane<a class="headerlink" href="#twoje-dane" title="Permanent link">#</a></h3>
+<p>Każdy pracuje na klientach innego kraju — tego samego co w zadaniu 3. Numer
+albumu wybiera też, którzy klienci zmienią segment. Pierwsza komórka notatnika
+(skopiuj ją w całości):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>                 <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="n">MOJ_KRAJ</span>  <span class="o">=</span> <span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">25</span>         <span class="c1"># n_nationkey Twojego kraju</span>
+</span><span id="__span-44-5"><a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="n">RESZTA</span>    <span class="o">=</span> <span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">10</span>         <span class="c1"># którzy klienci zmienią segment</span>
+</span><span id="__span-44-6"><a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>
+</span><span id="__span-44-7"><a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a><span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">"CREATE SCHEMA IF NOT EXISTS workspace.zajecia4"</span><span class="p">)</span>
+</span><span id="__span-44-8"><a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>
+</span><span id="__span-44-9"><a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a><span class="n">kartoteka</span> <span class="o">=</span> <span class="p">(</span><span class="n">spark</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">"samples.tpch.customer"</span><span class="p">)</span>
+</span><span id="__span-44-10"><a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a>    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"c_nationkey"</span><span class="p">)</span> <span class="o">==</span> <span class="n">MOJ_KRAJ</span><span class="p">)</span>
+</span><span id="__span-44-11"><a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a>    <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"c_custkey"</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"id"</span><span class="p">),</span>
+</span><span id="__span-44-12"><a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a>            <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"c_name"</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"nazwa"</span><span class="p">),</span>
+</span><span id="__span-44-13"><a id="__codelineno-44-13" name="__codelineno-44-13" href="#__codelineno-44-13"></a>            <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"c_mktsegment"</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"segment"</span><span class="p">),</span>
+</span><span id="__span-44-14"><a id="__codelineno-44-14" name="__codelineno-44-14" href="#__codelineno-44-14"></a>            <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"c_acctbal"</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">"saldo"</span><span class="p">)))</span>
+</span><span id="__span-44-15"><a id="__codelineno-44-15" name="__codelineno-44-15" href="#__codelineno-44-15"></a>
+</span><span id="__span-44-16"><a id="__codelineno-44-16" name="__codelineno-44-16" href="#__codelineno-44-16"></a><span class="c1"># stan początkowy kartoteki</span>
+</span><span id="__span-44-17"><a id="__codelineno-44-17" name="__codelineno-44-17" href="#__codelineno-44-17"></a><span class="n">klienci_start</span> <span class="o">=</span> <span class="n">kartoteka</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">"id &lt;= 700000"</span><span class="p">)</span>
+</span><span id="__span-44-18"><a id="__codelineno-44-18" name="__codelineno-44-18" href="#__codelineno-44-18"></a>
+</span><span id="__span-44-19"><a id="__codelineno-44-19" name="__codelineno-44-19" href="#__codelineno-44-19"></a><span class="c1"># paczka zmian z CRM: nowi klienci i klienci, którzy przeszli do innego segmentu</span>
+</span><span id="__span-44-20"><a id="__codelineno-44-20" name="__codelineno-44-20" href="#__codelineno-44-20"></a><span class="n">zmiany</span> <span class="o">=</span> <span class="p">(</span><span class="n">kartoteka</span>
+</span><span id="__span-44-21"><a id="__codelineno-44-21" name="__codelineno-44-21" href="#__codelineno-44-21"></a>    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="sa">f</span><span class="s2">"id BETWEEN 700001 AND 725000 OR (id &lt;= 700000 AND id % 10 = </span><span class="si">{</span><span class="n">RESZTA</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+</span><span id="__span-44-22"><a id="__codelineno-44-22" name="__codelineno-44-22" href="#__codelineno-44-22"></a>    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">"segment"</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">expr</span><span class="p">(</span><span class="s2">"""</span>
+</span><span id="__span-44-23"><a id="__codelineno-44-23" name="__codelineno-44-23" href="#__codelineno-44-23"></a><span class="s2">        CASE WHEN id &gt; 700000 THEN segment</span>
+</span><span id="__span-44-24"><a id="__codelineno-44-24" name="__codelineno-44-24" href="#__codelineno-44-24"></a><span class="s2">             ELSE element_at(map('AUTOMOBILE', 'BUILDING',  'BUILDING',  'FURNITURE',</span>
+</span><span id="__span-44-25"><a id="__codelineno-44-25" name="__codelineno-44-25" href="#__codelineno-44-25"></a><span class="s2">                                 'FURNITURE',  'HOUSEHOLD', 'HOUSEHOLD', 'MACHINERY',</span>
+</span><span id="__span-44-26"><a id="__codelineno-44-26" name="__codelineno-44-26" href="#__codelineno-44-26"></a><span class="s2">                                 'MACHINERY',  'AUTOMOBILE'), segment)</span>
+</span><span id="__span-44-27"><a id="__codelineno-44-27" name="__codelineno-44-27" href="#__codelineno-44-27"></a><span class="s2">        END"""</span><span class="p">)))</span>
+</span><span id="__span-44-28"><a id="__codelineno-44-28" name="__codelineno-44-28" href="#__codelineno-44-28"></a><span class="n">zmiany</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">"zmiany"</span><span class="p">)</span>
+</span><span id="__span-44-29"><a id="__codelineno-44-29" name="__codelineno-44-29" href="#__codelineno-44-29"></a>
+</span><span id="__span-44-30"><a id="__codelineno-44-30" name="__codelineno-44-30" href="#__codelineno-44-30"></a><span class="c1"># klienci z nowego formularza rejestracji — z adresem e-mail</span>
+</span><span id="__span-44-31"><a id="__codelineno-44-31" name="__codelineno-44-31" href="#__codelineno-44-31"></a><span class="n">nowi_z_emailem</span> <span class="o">=</span> <span class="p">(</span><span class="n">kartoteka</span>
+</span><span id="__span-44-32"><a id="__codelineno-44-32" name="__codelineno-44-32" href="#__codelineno-44-32"></a>    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">"id &gt; 725000"</span><span class="p">)</span>
+</span><span id="__span-44-33"><a id="__codelineno-44-33" name="__codelineno-44-33" href="#__codelineno-44-33"></a>    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">"email"</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">regexp_replace</span><span class="p">(</span><span class="s2">"nazwa"</span><span class="p">,</span> <span class="s2">"#"</span><span class="p">,</span> <span class="s2">"."</span><span class="p">)),</span>
+</span><span id="__span-44-34"><a id="__codelineno-44-34" name="__codelineno-44-34" href="#__codelineno-44-34"></a>                                  <span class="n">F</span><span class="o">.</span><span class="n">lit</span><span class="p">(</span><span class="s2">"@example.com"</span><span class="p">))))</span>
+</span><span id="__span-44-35"><a id="__codelineno-44-35" name="__codelineno-44-35" href="#__codelineno-44-35"></a>
+</span><span id="__span-44-36"><a id="__codelineno-44-36" name="__codelineno-44-36" href="#__codelineno-44-36"></a><span class="n">KRAJ</span> <span class="o">=</span> <span class="p">(</span><span class="n">spark</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">"samples.tpch.nation"</span><span class="p">)</span>
+</span><span id="__span-44-37"><a id="__codelineno-44-37" name="__codelineno-44-37" href="#__codelineno-44-37"></a>        <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">"n_nationkey"</span><span class="p">)</span> <span class="o">==</span> <span class="n">MOJ_KRAJ</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()[</span><span class="s2">"n_name"</span><span class="p">])</span>
+</span><span id="__span-44-38"><a id="__codelineno-44-38" name="__codelineno-44-38" href="#__codelineno-44-38"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Mój kraj: </span><span class="si">{</span><span class="n">KRAJ</span><span class="si">}</span><span class="s2">, klientów na start: </span><span class="si">{</span><span class="n">klienci_start</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="si">}</span><span class="s2">, "</span>
+</span><span id="__span-44-39"><a id="__codelineno-44-39" name="__codelineno-44-39" href="#__codelineno-44-39"></a>      <span class="sa">f</span><span class="s2">"w paczce zmian: </span><span class="si">{</span><span class="n">zmiany</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Tabelę zapisujesz jako <code>workspace.zajecia4.klienci</code>. Rozwiązania z cudzym krajem
+nie zaliczam.</p>
+<h3 id="czesc-1-merge-i-historia-ok-20-min">Część 1 — <code>MERGE</code> i historia (ok. 20 min)<a class="headerlink" href="#czesc-1-merge-i-historia-ok-20-min" title="Permanent link">#</a></h3>
+<ol>
+<li>Zapisz <code>klienci_start</code> jako tabelę <code>workspace.zajecia4.klienci</code>. Następnie
+   <strong>jednym</strong> poleceniem <code>MERGE</code> wprowadź do niej paczkę <code>zmiany</code>: istniejących
+   klientów zaktualizuj, nowych dopisz. Pokaż liczbę wierszy tabeli przed
+   i po <code>MERGE</code>.</li>
+<li>W <code>DESCRIBE HISTORY</code> znajdź operację <code>MERGE</code> i wyciągnij z <code>operationMetrics</code>,
+   ilu klientów zaktualizowano (<code>numTargetRowsUpdated</code>), a ilu dopisano
+   (<code>numTargetRowsInserted</code>). Sprawdź w kodzie na samej paczce <code>zmiany</code>, że te
+   liczby się zgadzają.</li>
+<li>Za pomocą time travel policz, <strong>ilu klientów ma teraz inny segment niż przed
+   <code>MERGE</code></strong> — złącz po <code>id</code> bieżącą wersję tabeli z wersją sprzed <code>MERGE</code>.
+   Wynik powinien być równy liczbie zaktualizowanych z punktu 2.</li>
+</ol>
+<h3 id="czesc-2-wpadka-stazysty-i-nowa-kolumna-ok-25-min">Część 2 — wpadka stażysty i nowa kolumna (ok. 25 min)<a class="headerlink" href="#czesc-2-wpadka-stazysty-i-nowa-kolumna-ok-25-min" title="Permanent link">#</a></h3>
+<p>Najpierw uruchom komórkę stażysty — tak, celowo:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="o">%</span><span class="k">sql</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="c1">-- miało być: przenieś klienta o id 123 do segmentu MACHINERY</span>
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">workspace</span><span class="p">.</span><span class="n">zajecia4</span><span class="p">.</span><span class="n">klienci</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">segment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'MACHINERY'</span>
+</span></code></pre></div>
+<ol>
+<li>Odkręć szkodę: w historii znajdź ostatnią wersję sprzed wpadki i przywróć ją
+   poleceniem <code>RESTORE</code>. Udowodnij w kodzie, że tabela jest teraz <strong>identyczna</strong>
+   z tą wersją — <code>EXCEPT</code> w obie strony daje 0 wierszy.</li>
+<li>Dopisz do tabeli <code>nowi_z_emailem</code>. Pierwsza próba, bez dodatkowych opcji,
+   skończy się błędem — w komórce Markdown napisz, co odpowiedziała Delta
+   i dlaczego dobrze, że tak się stało. Potem dopisz klientów z ewolucją schematu
+   i policz, ilu klientów ma e-mail, a ilu ma w nim <code>NULL</code>.</li>
+<li>Odczytaj tabelę w wersji <strong>ze stażystą</strong> (<code>VERSION AS OF</code>) i policz, ilu
+   klientów ma tam segment <code>MACHINERY</code>. W komórce Markdown odpowiedz: czy
+   <code>RESTORE</code> usunął tę wersję z historii? Po jakim poleceniu i po ilu dniach
+   nie dałoby się jej już odczytać?</li>
+</ol>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Ściągawka jest kilka sekcji wyżej — wszystkie potrzebne polecenia tam są.</li>
+<li>Część 1, punkt 1: <code>MERGE</code> najwygodniej napisać w komórce <code>%sql</code> — paczka jest
+  już dostępna w SQL jako widok <code>zmiany</code>. Liczbę wierszy sprawdzisz przez
+  <code>spark.table("workspace.zajecia4.klienci").count()</code>.</li>
+<li><strong>Coś poszło nie tak?</strong> (np. <code>MERGE</code> uruchomiony dwa razy) Zapisz
+  <code>klienci_start</code> jeszcze raz z <code>mode("overwrite")</code> i zacznij od <code>MERGE</code>.
+  Historia się nie zeruje — wersją „sprzed <code>MERGE</code>” jest wtedy ta z ostatnim
+  zapisem. Numery wersji zawsze odczytuj z <code>DESCRIBE HISTORY</code>, nie zgaduj.</li>
+<li>Część 1, punkt 2: liczbę klientów, którzy już są w kartotece, policzysz na
+  paczce warunkiem <code>id &lt;= 700000</code>.</li>
+<li>Część 1, punkt 3: tabelę z dwóch wersji złączysz w SQL, nadając im aliasy:
+  <code>FROM t AS teraz JOIN t VERSION AS OF N AS przed ON ...</code>.</li>
+<li>Część 2, punkt 1: w historii szukaj operacji <code>UPDATE</code>. Przywracasz wersję
+  o jeden niższą.</li>
+<li>Część 2, punkt 2: błąd zobaczysz pod komórką — nie trzeba go łapać
+  w <code>try</code>/<code>except</code>. <code>COUNT(email)</code> liczy tylko wartości różne od <code>NULL</code>.</li>
+<li><code>display()</code> pokazuje do 10 000 wierszy. Do liczenia używaj <code>count()</code>
+  i <code>COUNT(*)</code>, a nie oglądania tabeli.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Na co patrzę przy ocenie</p>
+<p>Na liczby — wszystkie są deterministyczne i mam je dla każdego kraju — oraz
+na odpowiedzi w komórkach Markdown. Chcę zobaczyć, że rozumiesz, co dzieje się
+w dzienniku Delty: co robi <code>RESTORE</code>, dlaczego zapis z nową kolumną się nie
+udał i co sprawia, że stara wersja jest wciąż dostępna.</p>
+</div>
+<h3 id="punktacja-6-pkt">Punktacja (6 pkt)<a class="headerlink" href="#punktacja-6-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>6 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>4 pkt</strong></td>
+<td>jedna z dwóch części zrobiona na zajęciach</td>
+</tr>
+<tr>
+<td><strong>2 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>2026-12-04</strong> (dzień przed kolejnymi zajęciami).</p>
+<div class="admonition danger">
+<p class="admonition-title">Delta ma time travel, Ty nie</p>
+<p>Zajęć nie da się przywrócić poleceniem <code>RESTORE</code>. Te same 45 minut pracy jest
+warte 6 pkt tu i teraz albo 2 pkt w domu.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

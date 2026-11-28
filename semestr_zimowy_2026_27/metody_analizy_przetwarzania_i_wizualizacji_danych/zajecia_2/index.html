@@ -1,0 +1,4720 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_2/">
+      
+      
+        <link rel="prev" href="../zajecia_1/">
+      
+      
+        <link rel="next" href="../../systemy_big_data/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Zajęcia 2 - Jakub Zalewski - WSB Merito</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zajecia-2" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-header__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jakub Zalewski - WSB Merito
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zajęcia 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hello world!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active md-tabs__item--nested">
+      <a href="../../data_science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semestr zimowy 2026/27
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science/" class="md-tabs__dropdown-link">
+              Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../data_science_w_pythonie/" class="md-tabs__dropdown-link">
+              Data Science w Pythonie
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+              Metody analizy, przetwarzania i wizualizacji danych
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../systemy_big_data/" class="md-tabs__dropdown-link">
+              Systemy BIG DATA
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../uczenie_glebokie/" class="md-tabs__dropdown-link">
+              Uczenie głębokie
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item md-tabs__item--nested">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Archiwum
+
+      </a>
+      <ul class="md-tabs__dropdown">
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/jakosc_aplikacji/" class="md-tabs__dropdown-link">
+              Jakość aplikacji
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-tabs__dropdown-link">
+              Programowanie stron internetowych 2
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-tabs__dropdown-link">
+              Programowanie wysokopoziomowe
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/programowanie_zaawansowane/" class="md-tabs__dropdown-link">
+              Programowanie zaawansowane
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/python_w_data_science/" class="md-tabs__dropdown-link">
+              Python dla Data Science
+            </a>
+          </li>
+        
+          
+          
+          <li class="md-tabs__dropdown-item">
+            <a href="../../../archiwum/zarzadzanie_big_data/" class="md-tabs__dropdown-link">
+              Zarządzanie Big Data
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Jakub Zalewski - WSB Merito" class="md-nav__button md-logo" aria-label="Jakub Zalewski - WSB Merito" data-md-component="logo">
+      
+  <img src="../../../images/favicon.ico" alt="logo">
+
+    </a>
+    Jakub Zalewski - WSB Merito
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kubzal/wsb-merito" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kubzal/wsb-merito
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello world!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestr zimowy 2026/27
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semestr zimowy 2026/27
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science w Pythonie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science w Pythonie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science_w_pythonie/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metody analizy, przetwarzania i wizualizacji danych
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#czyszczenie-i-przetwarzanie-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czyszczenie i przetwarzanie danych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-na-dzis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan na dziś
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przypomnienie-zajecia-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przypomnienie — zajęcia 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#garbage-in-garbage-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Garbage in, garbage out
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dane-na-ktorych-pracujemy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dane, na których pracujemy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagnoza-co-jest-nie-tak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnoza — co jest nie tak
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagnoza — co jest nie tak">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typy-i-braki-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typy i braki — info()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ile-brakow-isnasum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ile braków — isna().sum()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statystyki-describe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statystyki — describe()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duplikaty-duplicated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duplikaty — duplicated()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warianty-tekstu-value_counts-i-unique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warianty tekstu — value_counts() i unique()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czyszczenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Czyszczenie
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Czyszczenie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#duplikaty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duplikaty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tekst-strstrip-strtitle-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tekst — .str.strip(), .str.title(), replace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liczby-zapisane-jako-tekst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Liczby zapisane jako tekst
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wartosci-niemozliwe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wartości niemożliwe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daty-w-kilku-formatach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Daty w kilku formatach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#braki-usunac-uzupenic-czy-oznaczyc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Braki — usunąć, uzupełnić czy oznaczyć?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raport-przed-po" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raport „przed / po"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przetwarzanie-nowe-kolumny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przetwarzanie — nowe kolumny
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Przetwarzanie — nowe kolumny">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#z-daty-dt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Z daty: .dt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#przedziay-pdcut" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przedziały: pd.cut
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabela-przestawna-pivot_table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabela przestawna: pivot_table
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-szeroki-i-dugi-melt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format szeroki i długi: melt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zapis-wyniku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zapis wyniku
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sciagawka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ściągawka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-2-sprzatanie-po-stazyscie-12-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2 — Sprzątanie po stażyście (12 pkt)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zadanie 2 — Sprzątanie po stażyście (12 pkt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#czesc-1-diagnoza-i-sprzatanie-ok-35-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 1 — Diagnoza i sprzątanie (ok. 35 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#czesc-2-przetwarzanie-ok-25-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Część 2 — Przetwarzanie (ok. 25 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wskazowki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wskazówki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punktacja-12-pkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punktacja (12 pkt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systemy BIG DATA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systemy BIG DATA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systemy_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uczenie głębokie
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uczenie głębokie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uczenie_glebokie/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiwum
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archiwum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jakość aplikacji
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jakość aplikacji
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/jakosc_aplikacji/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie stron internetowych 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie stron internetowych 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projekt końcowy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_stron_internetowych_2/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie wysokopoziomowe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie wysokopoziomowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_wysokopoziomowe/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programowanie zaawansowane
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programowanie zaawansowane
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/programowanie_zaawansowane/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python dla Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python dla Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/python_w_data_science/zajecia_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zarządzanie Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Zarządzanie Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wprowadzenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/projekt_zaliczeniowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praca projektowa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archiwum/zarzadzanie_big_data/zajecia_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zajęcia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zajecia-2">Zajęcia 2<a class="headerlink" href="#zajecia-2" title="Permanent link">#</a></h1>
+<h2 id="czyszczenie-i-przetwarzanie-danych">Czyszczenie i przetwarzanie danych<a class="headerlink" href="#czyszczenie-i-przetwarzanie-danych" title="Permanent link">#</a></h2>
+<p>Na poprzednich zajęciach dane udało się wczytać. Niestety „wczytane" nie znaczy
+„dobre". Prawdziwe dane mają dziury, powtórzone wiersze, miasto zapisane na pięć
+sposobów i daty w trzech formatach — bo wprowadzali je ludzie, eksportowały różne
+systemy, a ktoś po drodze „trochę poprawił w Excelu".</p>
+<p>Analitycy żartują, że 80% pracy to sprzątanie danych, a 20% narzekanie na
+sprzątanie. Coś w tym jest: zanim policzysz pierwszą średnią, musisz mieć
+pewność, że liczysz na tym, na czym myślisz. Dziś robimy drugi krok naszej drogi:
+<strong>pozyskanie → czyszczenie → analiza → wizualizacja</strong>.</p>
+<p>Po dzisiejszych zajęciach będziesz w stanie:</p>
+<ul>
+<li>zdiagnozować zbiór danych: znaleźć braki, duplikaty, złe typy i niespójne
+  kategorie,</li>
+<li>ujednolicić tekst (<code>.str.strip()</code>, <code>.str.title()</code>, <code>replace</code>),</li>
+<li>zamienić na liczby i daty kolumny, które pandas wczytał jako tekst — także
+  wtedy, gdy siedzą w nich śmieci typu „brak" albo daty w kilku formatach,</li>
+<li>świadomie zdecydować, co zrobić z brakiem: usunąć, uzupełnić czy oznaczyć,</li>
+<li>dodać nowe kolumny, pociąć liczby na przedziały (<code>pd.cut</code>), zbudować tabelę
+  przestawną (<code>pivot_table</code>) i przejść między formatem szerokim a długim (<code>melt</code>).</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Przykłady z zajęć w Colabie</p>
+<p>Cały materiał z tej strony jest też w gotowym notatniku — z kodem do
+uruchomienia. Otwórz go i uruchamiaj komórki po kolei, czytając materiał. Żeby zachować
+swoje zmiany, zapisz kopię: <strong>Plik → Zapisz kopię na Dysku</strong>.</p>
+<p><a href="https://colab.research.google.com/github/kubzal/wsb-merito/blob/main/notebooks/semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/zajecia_2.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Gdzie jesteśmy</p>
+<p>W demo wracamy do miejskiej wypożyczalni rowerów z pierwszych zajęć — tym
+razem z eksportem przejazdów z całego września, w którym jest wszystko, co
+może pójść nie tak. W zadaniu wracasz do sklepu „Gadżet24": polskie zamówienia,
+które poznałeś miesiąc temu, przeszły przez ręce stażysty.</p>
+</div>
+<hr />
+<h2 id="plan-na-dzis">Plan na dziś<a class="headerlink" href="#plan-na-dzis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Czas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Przypomnienie zajęć 1</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>„Garbage in, garbage out" — typowe problemy z danymi</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Diagnoza i czyszczenie — braki, duplikaty, tekst, liczby, daty</td>
+<td>25 min</td>
+</tr>
+<tr>
+<td>Przetwarzanie — nowe kolumny, przedziały, tabele przestawne, <code>melt</code></td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>Przerwa</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td><strong>Zadanie 2</strong></td>
+<td><strong>60 min</strong></td>
+</tr>
+<tr>
+<td>Omówienie</td>
+<td>10 min</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="przypomnienie-zajecia-1">Przypomnienie — zajęcia 1<a class="headerlink" href="#przypomnienie-zajecia-1" title="Permanent link">#</a></h2>
+<ul>
+<li>Dane przychodzą z plików, API i baz danych, a cel jest zawsze ten sam:
+  <strong>DataFrame</strong>.</li>
+<li><code>pd.read_csv</code> ma parametry na „polskie" pliki: <code>encoding="cp1250"</code>, <code>sep=";"</code>,
+  <code>decimal=","</code>, <code>skiprows=...</code>.</li>
+<li>Zagnieżdżony JSON spłaszcza <code>pd.json_normalize</code>, a dane z API pobiera
+  <code>requests.get(URL).json()</code>.</li>
+<li>Tabele łączy <code>merge</code> (po kluczu) albo <code>merge_asof</code> (po „ostatniej wartości
+  wcześniej") — i po każdym łączeniu liczymy wiersze.</li>
+</ul>
+<p>Dziś zakładamy, że plik już się wczytał. Problem w tym, że w środku jest bałagan.</p>
+<hr />
+<h2 id="garbage-in-garbage-out">Garbage in, garbage out<a class="headerlink" href="#garbage-in-garbage-out" title="Permanent link">#</a></h2>
+<p>Stara zasada informatyki: <strong>śmieci na wejściu = śmieci na wyjściu</strong>. Najlepszy
+model i najładniejszy wykres nie pomogą, jeśli dane są złe. Co gorsza, złe dane
+rzadko powodują błąd. Najczęściej dostajesz wynik, który <strong>wygląda</strong> poprawnie,
+tylko jest nieprawdziwy.</p>
+<p>Typowe problemy, które spotkasz prawie w każdym zbiorze:</p>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Przykład</th>
+<th>Jak go wykryć</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>braki</strong></td>
+<td>puste pole, <code>NaN</code></td>
+<td><code>df.isna().sum()</code></td>
+</tr>
+<tr>
+<td><strong>ukryte braki</strong></td>
+<td>„brak", „b.d.", „-", „?" w kolumnie liczbowej</td>
+<td>kolumna ma typ <code>str</code> zamiast liczby</td>
+</tr>
+<tr>
+<td><strong>duplikaty</strong></td>
+<td>to samo zamówienie wyeksportowane dwa razy</td>
+<td><code>df.duplicated().sum()</code></td>
+</tr>
+<tr>
+<td><strong>niespójne kategorie</strong></td>
+<td>„Warszawa", „warszawa ", „WAW"</td>
+<td><code>df["kol"].value_counts()</code>, <code>unique()</code></td>
+</tr>
+<tr>
+<td><strong>zły typ</strong></td>
+<td>cena „12,50 zł" jako tekst, data jako tekst</td>
+<td><code>df.info()</code></td>
+</tr>
+<tr>
+<td><strong>kilka formatów</strong></td>
+<td>„2026-09-01" i „01.09.2026" w jednej kolumnie</td>
+<td>podgląd danych, błąd przy konwersji</td>
+</tr>
+<tr>
+<td><strong>wartości niemożliwe</strong></td>
+<td>czas przejazdu −14 min, wiek 230 lat</td>
+<td><code>df.describe()</code>, filtr z warunkiem</td>
+</tr>
+</tbody>
+</table>
+<p>Z brakami można zrobić trzy rzeczy — i każda jest czasem dobra, a czasem zła:</p>
+<table>
+<thead>
+<tr>
+<th>Strategia</th>
+<th>Kiedy</th>
+<th>Ryzyko</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>usuń</strong> wiersz (<code>dropna</code>)</td>
+<td>braków jest mało, a wiersz bez tej wartości jest bezużyteczny</td>
+<td>tracisz dane; jeśli braki nie są losowe, wynik się przekrzywia</td>
+</tr>
+<tr>
+<td><strong>uzupełnij</strong> (<code>fillna</code>)</td>
+<td>wartość da się sensownie oszacować (mediana, wartość z innej tabeli)</td>
+<td>wymyślasz dane; zostawiają ślad na wykresach</td>
+</tr>
+<tr>
+<td><strong>oznacz</strong> (nowa kolumna <code>..._brak</code>)</td>
+<td>sam fakt braku może coś znaczyć</td>
+<td>nic nie tracisz, ale kolumn przybywa</td>
+</tr>
+</tbody>
+</table>
+<p>W praktyce często łączy się dwie ostatnie: uzupełniasz, ale zostawiasz sobie
+kolumnę z informacją, które wartości były wymyślone.</p>
+<hr />
+<h2 id="dane-na-ktorych-pracujemy">Dane, na których pracujemy<a class="headerlink" href="#dane-na-ktorych-pracujemy" title="Permanent link">#</a></h2>
+<p>Wypożyczalnia rowerów wyeksportowała przejazdy z września 2026. Eksport skleił
+ktoś z dwóch systemów, więc spodziewamy się kłopotów:</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8zm1 14-2 4h-3l2-4H9v-5h6zm-2-7V3.5L18.5 9z"/></svg></span> <a href="../dane/przejazdy_wrzesien_2026.csv"><strong>przejazdy_wrzesien_2026.csv</strong></a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Kolumna</th>
+<th>Co oznacza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>numer przejazdu</td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td>data i godzina wypożyczenia</td>
+</tr>
+<tr>
+<td><code>stacja</code></td>
+<td>stacja, na której wypożyczono rower</td>
+</tr>
+<tr>
+<td><code>rower</code></td>
+<td>klasyczny albo elektryczny</td>
+</tr>
+<tr>
+<td><code>czas_min</code></td>
+<td>czas przejazdu w minutach</td>
+</tr>
+<tr>
+<td><code>oplata</code></td>
+<td>ile klient zapłacił (pierwsze 20 minut gratis)</td>
+</tr>
+</tbody>
+</table>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/dane/przejazdy_wrzesien_2026.csv"</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>   id             start            stacja        rower czas_min   oplata
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>0   1  2026-09-01 06:09  pole mokotowskie    klasyczny        6  0,00 zł
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>1   1  2026-09-01 06:09  pole mokotowskie    klasyczny        6  0,00 zł
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>2   2  2026-09-01 06:28  Pole Mokotowskie  elektryczny       35  2,00 zł
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>3   3  2026-09-01 06:53     Metro Centrum   KLASYCZNY        16  0,00 zł
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>4   4  2026-09-01 07:25     Metro Centrum  elektryczny       15  0,00 zł
+</span></code></pre></div>
+<p>Już w pięciu wierszach widać trzy problemy: wiersz 0 i 1 są identyczne,
+„pole mokotowskie" i „Pole Mokotowskie" to ta sama stacja, a „KLASYCZNY" krzyczy
+wielkimi literami. Zobaczmy, co jeszcze się kryje.</p>
+<hr />
+<h2 id="diagnoza-co-jest-nie-tak">Diagnoza — co jest nie tak<a class="headerlink" href="#diagnoza-co-jest-nie-tak" title="Permanent link">#</a></h2>
+<p>Zanim cokolwiek naprawisz, musisz wiedzieć, <strong>co</strong> jest zepsute. Diagnoza to
+zawsze te same kilka poleceń.</p>
+<h3 id="typy-i-braki-info">Typy i braki — <code>info()</code><a class="headerlink" href="#typy-i-braki-info" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&lt;class 'pandas.DataFrame'&gt;
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>RangeIndex: 615 entries, 0 to 614
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Data columns (total 6 columns):
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a> #   Column    Non-Null Count  Dtype
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>---  ------    --------------  -----
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a> 0   id        615 non-null    int64
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a> 1   start     615 non-null    str
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a> 2   stacja    615 non-null    str
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a> 3   rower     615 non-null    str
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a> 4   czas_min  604 non-null    str
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a> 5   oplata    615 non-null    str
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>dtypes: int64(1), str(5)
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>memory usage: 29.0 KB
+</span></code></pre></div>
+<p>Pięć z sześciu kolumn to tekst (<code>str</code>). Dla <code>stacja</code> i <code>rower</code> to w porządku. Ale
+<code>czas_min</code> i <code>oplata</code> powinny być liczbami, a <code>start</code> datą. To pierwszy sygnał
+ostrzegawczy: <strong>liczba wczytana jako tekst oznacza, że w kolumnie siedzi coś,
+co liczbą nie jest.</strong></p>
+<h3 id="ile-brakow-isnasum">Ile braków — <code>isna().sum()</code><a class="headerlink" href="#ile-brakow-isnasum" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>id           0
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>start        0
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>stacja       0
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>rower        0
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>czas_min    11
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>oplata       0
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>dtype: int64
+</span></code></pre></div>
+<p>11 pustych pól w <code>czas_min</code>. Zapamiętaj tę liczbę — za chwilę okaże się, że
+braków jest więcej, tylko część z nich udaje tekst.</p>
+<h3 id="statystyki-describe">Statystyki — <code>describe()</code><a class="headerlink" href="#statystyki-describe" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>               id
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>count  615.000000
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>mean   300.769106
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>std    173.506316
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>min      1.000000
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>25%    151.500000
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>50%    302.000000
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>75%    450.500000
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>max    600.000000
+</span></code></pre></div>
+<p><code>describe()</code> policzył statystyki tylko dla <code>id</code>, bo tylko ta kolumna jest liczbą.
+Tu widać też coś ciekawego: wierszy jest 615, a najwyższy numer przejazdu to 600.
+Skąd 15 nadmiarowych?</p>
+<h3 id="duplikaty-duplicated">Duplikaty — <code>duplicated()</code><a class="headerlink" href="#duplikaty-duplicated" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>np.int64(15)
+</span></code></pre></div>
+<p>Jest 15 wierszy, które są dokładną kopią wcześniejszego wiersza. <code>keep=False</code>
+pokazuje wszystkie egzemplarze, łącznie z oryginałem:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">(</span><span class="n">keep</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>    id             start            stacja        rower czas_min   oplata
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>0    1  2026-09-01 06:09  pole mokotowskie    klasyczny        6  0,00 zł
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>1    1  2026-09-01 06:09  pole mokotowskie    klasyczny        6  0,00 zł
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>24  24  2026-09-02 07:51      politechnika  elektryczny        4  0,00 zł
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>25  24  2026-09-02 07:51      politechnika  elektryczny        4  0,00 zł
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>68  67  04.09.2026 11:27  Stadion Narodowy  elektryczny       16  0,00 zł
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>69  67  04.09.2026 11:27  Stadion Narodowy  elektryczny       16  0,00 zł
+</span></code></pre></div>
+<h3 id="warianty-tekstu-value_counts-i-unique">Warianty tekstu — <code>value_counts()</code> i <code>unique()</code><a class="headerlink" href="#warianty-tekstu-value_counts-i-unique" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"stacja"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>stacja
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>Metro Centrum        118
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>Pole Mokotowskie      79
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Dworzec Zachodni      74
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>Stadion Narodowy      69
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>Politechnika          64
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>Plac Wilsona          62
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>Pl. Wilsona           15
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>plac wilsona          15
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>metro centrum         14
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a> Metro Centrum        13
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>STADION NARODOWY      13
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>Pole Mokotowskie      11
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>Dw. Zachodni          11
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>dworzec zachodni      10
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>Stadion Narod.        10
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>politechnika           9
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>Politechnika           8
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>METRO CENTRUM          7
+</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>POLITECHNIKA           7
+</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>pole mokotowskie       6
+</span><span id="__span-13-22"><a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>Name: count, dtype: int64
+</span></code></pre></div>
+<p>Stacji jest sześć, a pandas widzi dwadzieścia różnych wartości. „Pole Mokotowskie"
+pojawia się dwa razy — w jednym z nich na końcu jest spacja, której
+w <code>value_counts()</code> nie widać. Spacje zdradza <code>unique()</code>, bo pokazuje napisy
+w apostrofach:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"rower"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>&lt;StringArray&gt;
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>['klasyczny', 'elektryczny', 'KLASYCZNY ', 'Elektryczny', 'Klasyczny',
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a> 'e-bike']
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>Length: 6, dtype: str
+</span></code></pre></div>
+<p><code>'KLASYCZNY '</code> ma spację na końcu, a <code>'e-bike'</code> to po prostu inna nazwa roweru
+elektrycznego.</p>
+<div class="admonition note">
+<p class="admonition-title">Wynik diagnozy</p>
+<ul>
+<li>15 zduplikowanych wierszy,</li>
+<li><code>stacja</code>: 20 wariantów zapisu 6 stacji (wielkość liter, spacje, skróty),</li>
+<li><code>rower</code>: 6 wariantów zapisu 2 typów,</li>
+<li><code>czas_min</code>: tekst zamiast liczby, 11 pustych pól,</li>
+<li><code>oplata</code>: tekst „0,00 zł" zamiast liczby,</li>
+<li><code>start</code>: tekst zamiast daty, a w podglądzie widać dwa formaty
+  (<code>2026-09-04</code> i <code>04.09.2026</code>).</li>
+</ul>
+<p>Taka lista to pierwsza rzecz, którą robisz z nowym zbiorem. Teraz naprawiamy
+po kolei.</p>
+</div>
+<hr />
+<h2 id="czyszczenie">Czyszczenie<a class="headerlink" href="#czyszczenie" title="Permanent link">#</a></h2>
+<h3 id="duplikaty">Duplikaty<a class="headerlink" href="#duplikaty" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>(600, 6)
+</span></code></pre></div>
+<p>Zostało 600 wierszy — dokładnie tyle, ile wynosi najwyższy numer przejazdu.
+Pamiętaj o <code>df = ...</code>: metody pandas zwracają <strong>nową</strong> tabelę, a nie zmieniają
+starej. Bez przypisania duplikaty zostaną.</p>
+<div class="admonition warning">
+<p class="admonition-title">Duplikaty, które nie wyglądają na duplikaty</p>
+<p><code>duplicated()</code> szuka wierszy identycznych <strong>co do znaku</strong>. Jeśli to samo
+zamówienie raz ma „Warszawa", a raz „warszawa ", dla pandas to dwa różne
+wiersze. Dlatego duplikaty sprawdza się jeszcze raz <strong>po</strong> ujednoliceniu
+tekstu — albo od razu po kluczu, który musi być unikalny:
+<code>df.duplicated(subset=["id"]).sum()</code>.</p>
+</div>
+<h3 id="tekst-strstrip-strtitle-replace">Tekst — <code>.str.strip()</code>, <code>.str.title()</code>, <code>replace</code><a class="headerlink" href="#tekst-strstrip-strtitle-replace" title="Permanent link">#</a></h3>
+<p>Po <code>.str</code> masz dostęp do metod napisów z Pythona, wykonywanych na każdym
+wierszu naraz. Łączymy je w łańcuch — każda działa na wyniku poprzedniej:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"stacja"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"stacja"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">"stacja"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>stacja
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>Metro Centrum       150
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>Pole Mokotowskie     93
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>Politechnika         85
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>Dworzec Zachodni     83
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>Stadion Narodowy     78
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>Plac Wilsona         76
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>Pl. Wilsona          15
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>Dw. Zachodni         11
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>Stadion Narod.        9
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>Name: count, dtype: int64
+</span></code></pre></div>
+<p><code>strip()</code> usunął spacje z początku i końca, <code>title()</code> zamienił „METRO CENTRUM"
+i „metro centrum" na „Metro Centrum". Z dwudziestu wariantów zostało dziewięć.
+Skrótów żadna metoda tekstowa nie rozpozna — to musimy powiedzieć wprost,
+słownikiem w <code>replace</code> (<code>{"jak jest": "jak ma być"}</code>):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"stacja"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"stacja"</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="s2">"Dw. Zachodni"</span><span class="p">:</span> <span class="s2">"Dworzec Zachodni"</span><span class="p">,</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    <span class="s2">"Pl. Wilsona"</span><span class="p">:</span> <span class="s2">"Plac Wilsona"</span><span class="p">,</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="s2">"Stadion Narod."</span><span class="p">:</span> <span class="s2">"Stadion Narodowy"</span><span class="p">,</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="p">})</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="n">df</span><span class="p">[</span><span class="s2">"stacja"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>stacja
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>Metro Centrum       150
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>Dworzec Zachodni     94
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>Pole Mokotowskie     93
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>Plac Wilsona         91
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>Stadion Narodowy     87
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>Politechnika         85
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>Name: count, dtype: int64
+</span></code></pre></div>
+<p>Sześć stacji. Różnicę dobrze widać na wykresie: każdy kolor to jedna stacja,
+rozsmarowana po kilku wariantach zapisu.</p>
+<p><img alt="Liczba przejazdów według stacji przed i po ujednoliceniu nazw" src="../obrazki/zajecia_2_stacje_przed_po.png" /></p>
+<p>Gdybyś liczył przychód stacji na surowych danych, „Plac Wilsona" straciłby co
+trzeci przejazd na rzecz „Pl. Wilsona" i „plac wilsona". Żadnego błędu, po prostu
+zła liczba.</p>
+<p>Z rowerem robimy to samo, tylko zamiast <code>title()</code> bierzemy <code>lower()</code> — typ roweru
+to zwykłe słowo, a nie nazwa własna:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"rower"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"rower"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s2">"e-bike"</span><span class="p">:</span> <span class="s2">"elektryczny"</span><span class="p">})</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">"rower"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>rower
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>klasyczny      400
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>elektryczny    200
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>Name: count, dtype: int64
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title"><code>replace</code> czy <code>map</code>?</p>
+<p><code>replace(słownik)</code> zamienia <strong>tylko</strong> wartości, które są w słowniku, a resztę
+zostawia. <code>map(słownik)</code> zamienia wszystkie, a tych spoza słownika — na
+<code>NaN</code>. Do poprawiania kilku wariantów używaj <code>replace</code>, do zamiany całej
+kolumny (np. „tak"/„nie" → 1/0) — <code>map</code>.</p>
+</div>
+<h3 id="liczby-zapisane-jako-tekst">Liczby zapisane jako tekst<a class="headerlink" href="#liczby-zapisane-jako-tekst" title="Permanent link">#</a></h3>
+<p>Opłata wygląda tak: <code>"2,00 zł"</code>. Usuwamy to, czego Python nie rozumie, i dopiero
+wtedy zmieniamy typ:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"oplata"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"oplata"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">" zł"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">","</span><span class="p">,</span> <span class="s2">"."</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">"oplata"</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>count    600.000000
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>mean       0.876667
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>std        2.492350
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>min        0.000000
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>25%        0.000000
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>50%        0.000000
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>75%        1.000000
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>max       32.000000
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>Name: oplata, dtype: float64
+</span></code></pre></div>
+<p>Mediana opłaty to 0 zł — ponad połowa przejazdów mieści się w darmowych
+20 minutach.</p>
+<p>Z czasem przejazdu ten sam trik nie zadziała:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>ValueError: could not convert string to float: 'brak'
+</span></code></pre></div>
+<p>W kolumnie, oprócz liczb i pustych pól, ktoś wpisywał słowo „brak". Szukanie
+wszystkich takich słów ręcznie byłoby żmudne. Zamiast tego używamy
+<code>pd.to_numeric</code> z parametrem <code>errors="coerce"</code> (<em>wymuś</em>): co da się zamienić na
+liczbę — zamień, a resztę zastąp <code>NaN</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">czas</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"coerce"</span><span class="p">)</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"braki przed:"</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"braki po:   "</span><span class="p">,</span> <span class="n">czas</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>braki przed: 11
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>braki po:    25
+</span></code></pre></div>
+<p>Przybyło 14 braków. To były <strong>ukryte braki</strong> — tekst, który udawał wartość.
+Zanim je zaakceptujesz, zobacz, co dokładnie zamieniłeś na <code>NaN</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">czas</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">(),</span> <span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>czas_min
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>brak    9
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>b.d.    5
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>Name: count, dtype: int64
+</span></code></pre></div>
+<p>„brak" i „b.d." (<em>brak danych</em>) — wszystko w porządku, to naprawdę braki. Gdyby
+na tej liście była np. liczba z przecinkiem „12,5", trzeba by ją najpierw
+poprawić, a nie wyrzucać.</p>
+<div class="admonition warning">
+<p class="admonition-title"><code>errors="coerce"</code> bez sprawdzenia to zamiatanie pod dywan</p>
+<p><code>coerce</code> nigdy nie rzuci błędem — po cichu zamieni na <code>NaN</code> wszystko, czego
+nie rozumie. Także wartości, które dało się uratować. Dlatego zawsze porównuj
+liczbę braków przed i po, i patrz, co zginęło.</p>
+</div>
+<h3 id="wartosci-niemozliwe">Wartości niemożliwe<a class="headerlink" href="#wartosci-niemozliwe" title="Permanent link">#</a></h3>
+<p>Teraz <code>czas_min</code> jest liczbą, więc możemy zadać pytanie, którego wcześniej nie
+dało się zadać: czy wszystkie czasy mają sens?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span> <span class="o">=</span> <span class="n">czas</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>      id             start            stacja      rower  czas_min  oplata
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>333  328  16.09.2026 12:44  Dworzec Zachodni  klasyczny     -29.0     1.0
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>463  453  2026-09-23 06:06  Pole Mokotowskie  klasyczny     -43.0     1.0
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>489  478  2026-09-24 08:11      Plac Wilsona  klasyczny      -7.0     0.0
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>516  505  2026-09-25 10:28     Metro Centrum  klasyczny     -23.0     1.0
+</span></code></pre></div>
+<p>Przejazd nie może trwać −29 minut. Prawdziwej wartości nie znamy, więc uczciwie
+jest potraktować ją jak brak. <code>df.loc[warunek, "kolumna"] = wartość</code> czytamy:
+„w wierszach spełniających warunek, w tej kolumnie, wpisz tę wartość":</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"czas_min"</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>np.int64(29)
+</span></code></pre></div>
+<p>Z 11 braków widocznych na początku zrobiło się 29. Dobrze, że to wiemy, zanim
+policzyliśmy średni czas przejazdu.</p>
+<h3 id="daty-w-kilku-formatach">Daty w kilku formatach<a class="headerlink" href="#daty-w-kilku-formatach" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">])</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>ValueError: time data "01.09.2026 08:30" doesn't match format "%Y-%m-%d %H:%M". You might want to try:
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>    - passing `format` if your strings have a consistent format;
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>    - passing `format='mixed'`,
+</span></code></pre></div>
+<p>pandas ustalił format na podstawie pierwszego wiersza (<code>2026-09-01 06:09</code>)
+i zatrzymał się na pierwszej dacie zapisanej po polsku. Komunikat podsuwa
+<code>format='mixed'</code> — spróbujmy, a wynik od razu sprawdźmy. Wszystkie przejazdy są
+z września, więc każdy inny miesiąc to błąd:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">proba</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"mixed"</span><span class="p">)</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="n">proba</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>start
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>9     563
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>5       8
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>10      6
+</span><span id="__span-39-5"><a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>8       5
+</span><span id="__span-39-6"><a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>7       4
+</span><span id="__span-39-7"><a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a>3       3
+</span><span id="__span-39-8"><a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a>6       3
+</span><span id="__span-39-9"><a id="__codelineno-39-9" name="__codelineno-39-9" href="#__codelineno-39-9"></a>2       2
+</span><span id="__span-39-10"><a id="__codelineno-39-10" name="__codelineno-39-10" href="#__codelineno-39-10"></a>4       2
+</span><span id="__span-39-11"><a id="__codelineno-39-11" name="__codelineno-39-11" href="#__codelineno-39-11"></a>12      2
+</span><span id="__span-39-12"><a id="__codelineno-39-12" name="__codelineno-39-12" href="#__codelineno-39-12"></a>1       1
+</span><span id="__span-39-13"><a id="__codelineno-39-13" name="__codelineno-39-13" href="#__codelineno-39-13"></a>11      1
+</span><span id="__span-39-14"><a id="__codelineno-39-14" name="__codelineno-39-14" href="#__codelineno-39-14"></a>Name: count, dtype: int64
+</span></code></pre></div>
+<p><img alt="Przejazdy z września rozrzucone po całym roku po użyciu format=&quot;mixed&quot;" src="../obrazki/zajecia_2_format_mixed.png" /></p>
+<p>Wrześniowe przejazdy rozjechały się po całym roku, a pandas nawet nie
+ostrzegł. Które daty ucierpiały?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">proba</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span> <span class="o">!=</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">"start"</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>5     01.09.2026 08:30
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>27    02.09.2026 08:14
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>31    02.09.2026 11:36
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>40    03.09.2026 08:11
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>52    03.09.2026 16:33
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>Name: start, dtype: str
+</span></code></pre></div>
+<p><code>format="mixed"</code> zgaduje format dla każdego wiersza osobno i zakłada amerykański
+zapis „miesiąc.dzień". <code>01.09.2026</code> przeczytał jako 9 stycznia. Daty z dniem
+powyżej 12 (<code>16.09.2026</code>) wyszły dobrze, bo miesiąca 16 nie ma — i właśnie dlatego
+ten błąd tak łatwo przeoczyć.</p>
+<div class="admonition danger">
+<p class="admonition-title">Nie pozwól pandas zgadywać dat</p>
+<p><code>format="mixed"</code> i <code>dayfirst=True</code> to zgadywanie. Z <code>dayfirst=True</code> popsują
+się z kolei daty ISO: <code>2026-09-04</code> stanie się 9 kwietnia. Jeśli w kolumnie
+jest kilka formatów, <strong>każdy z nich podaj wprost</strong>.</p>
+</div>
+<p>Bezpieczny sposób: zamieniamy kolumnę kilka razy, za każdym razem z jednym
+formatem i z <code>errors="coerce"</code>. Każda próba trafia tylko w „swoje" wiersze,
+a pozostałe zostawia jako <code>NaT</code> (brak daty). Potem sklejamy wyniki przez
+<code>fillna</code> — „gdzie pierwsza próba nie trafiła, weź wynik drugiej":</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="n">iso</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M"</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"coerce"</span><span class="p">)</span>
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="n">pl</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"</span><span class="si">%d</span><span class="s2">.%m.%Y %H:%M"</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"coerce"</span><span class="p">)</span>
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">]</span> <span class="o">=</span> <span class="n">iso</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">pl</span><span class="p">)</span>
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span> <span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>0 [9]
+</span></code></pre></div>
+<p>Zero braków i tylko wrzesień. Gdyby został jakiś <code>NaT</code>, znaczyłoby to, że jest
+jeszcze trzeci format — wtedy wypisujesz te wiersze i dokładasz kolejną próbę.</p>
+<table>
+<thead>
+<tr>
+<th>Zapis</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2026-09-01</code></td>
+<td><code>"%Y-%m-%d"</code></td>
+</tr>
+<tr>
+<td><code>01.09.2026</code></td>
+<td><code>"%d.%m.%Y"</code></td>
+</tr>
+<tr>
+<td><code>20260901</code></td>
+<td><code>"%Y%m%d"</code></td>
+</tr>
+<tr>
+<td><code>2026-09-01 08:30</code></td>
+<td><code>"%Y-%m-%d %H:%M"</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="braki-usunac-uzupenic-czy-oznaczyc">Braki — usunąć, uzupełnić czy oznaczyć?<a class="headerlink" href="#braki-usunac-uzupenic-czy-oznaczyc" title="Permanent link">#</a></h3>
+<p>Zostało 29 przejazdów bez czasu. Usunięcie ich wyrzuciłoby też ich opłaty
+i stacje — szkoda. Uzupełnimy je, ale rozsądniej niż jedną medianą dla
+wszystkich: rowery elektryczne jeżdżą dłużej niż klasyczne.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"rower"</span><span class="p">)[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>rower
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>elektryczny    17.0
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>klasyczny      12.0
+</span><span id="__span-45-4"><a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>Name: czas_min, dtype: float64
+</span></code></pre></div>
+<p><code>groupby(...).transform("median")</code> liczy medianę w każdej grupie i „rozkłada" ją
+z powrotem na wszystkie wiersze — wynik ma tyle samo wierszy co <code>df</code>, więc
+pasuje do <code>fillna</code>. Przy okazji <strong>oznaczamy</strong>, które wartości będą wymyślone:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"czas_uzupelniony"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="n">mediany</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"rower"</span><span class="p">)[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">"median"</span><span class="p">)</span>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">mediany</span><span class="p">)</span>
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span> <span class="n">df</span><span class="p">[</span><span class="s2">"czas_uzupelniony"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>0 29
+</span></code></pre></div>
+<p>Uzupełnianie zawsze zostawia ślad. Wszystkie 29 wymyślonych czasów wpadło
+w dwie wartości — 12 i 17 minut — i na histogramie widać to jako dwa
+podejrzanie wysokie słupki:</p>
+<p><img alt="Histogram czasu przejazdu z zaznaczonymi wartościami uzupełnionymi medianą" src="../obrazki/zajecia_2_uzupelnianie.png" /></p>
+<p>Przy 29 z 600 wierszy to akceptowalne. Gdyby uzupełnionych była połowa,
+histogram pokazywałby głównie nasze założenia, a nie dane. Kolumna
+<code>czas_uzupelniony</code> pozwala w każdej chwili sprawdzić, czy wnioski nie zmieniają
+się po wyrzuceniu wymyślonych wartości.</p>
+<p>Sprawdzamy całość:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>&lt;class 'pandas.DataFrame'&gt;
+</span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>Index: 600 entries, 0 to 614
+</span><span id="__span-49-3"><a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>Data columns (total 7 columns):
+</span><span id="__span-49-4"><a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a> #   Column            Non-Null Count  Dtype
+</span><span id="__span-49-5"><a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a>---  ------            --------------  -----
+</span><span id="__span-49-6"><a id="__codelineno-49-6" name="__codelineno-49-6" href="#__codelineno-49-6"></a> 0   id                600 non-null    int64
+</span><span id="__span-49-7"><a id="__codelineno-49-7" name="__codelineno-49-7" href="#__codelineno-49-7"></a> 1   start             600 non-null    datetime64[us]
+</span><span id="__span-49-8"><a id="__codelineno-49-8" name="__codelineno-49-8" href="#__codelineno-49-8"></a> 2   stacja            600 non-null    str
+</span><span id="__span-49-9"><a id="__codelineno-49-9" name="__codelineno-49-9" href="#__codelineno-49-9"></a> 3   rower             600 non-null    str
+</span><span id="__span-49-10"><a id="__codelineno-49-10" name="__codelineno-49-10" href="#__codelineno-49-10"></a> 4   czas_min          600 non-null    float64
+</span><span id="__span-49-11"><a id="__codelineno-49-11" name="__codelineno-49-11" href="#__codelineno-49-11"></a> 5   oplata            600 non-null    float64
+</span><span id="__span-49-12"><a id="__codelineno-49-12" name="__codelineno-49-12" href="#__codelineno-49-12"></a> 6   czas_uzupelniony  600 non-null    bool
+</span><span id="__span-49-13"><a id="__codelineno-49-13" name="__codelineno-49-13" href="#__codelineno-49-13"></a>dtypes: bool(1), datetime64[us](1), float64(2), int64(1), str(2)
+</span><span id="__span-49-14"><a id="__codelineno-49-14" name="__codelineno-49-14" href="#__codelineno-49-14"></a>memory usage: 33.4 KB
+</span></code></pre></div>
+<p>Każda kolumna ma właściwy typ i nie ma braków.</p>
+<h3 id="raport-przed-po">Raport „przed / po"<a class="headerlink" href="#raport-przed-po" title="Permanent link">#</a></h3>
+<p>Czyszczenie to seria decyzji — i ktoś (szef, recenzent, Ty za pół roku) będzie
+chciał wiedzieć, jakie. Dlatego kończymy je krótkim raportem:</p>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Ile wierszy</th>
+<th>Co zrobiłem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>duplikaty</td>
+<td>15</td>
+<td>usunięte (<code>drop_duplicates</code>) → 600 wierszy</td>
+</tr>
+<tr>
+<td><code>stacja</code> — 20 wariantów zapisu 6 stacji</td>
+<td>146</td>
+<td><code>strip</code> + <code>title</code> + <code>replace</code> dla skrótów</td>
+</tr>
+<tr>
+<td><code>rower</code> — 6 wariantów zapisu 2 typów</td>
+<td>162</td>
+<td><code>strip</code> + <code>lower</code> + <code>replace("e-bike")</code></td>
+</tr>
+<tr>
+<td><code>oplata</code> jako tekst „2,00 zł"</td>
+<td>600</td>
+<td>usunięte „ zł", przecinek → kropka, <code>float</code></td>
+</tr>
+<tr>
+<td><code>czas_min</code>: puste pola</td>
+<td>11</td>
+<td>uzupełnione medianą typu roweru</td>
+</tr>
+<tr>
+<td><code>czas_min</code>: „brak", „b.d."</td>
+<td>14</td>
+<td><code>to_numeric(errors="coerce")</code> → uzupełnione jw.</td>
+</tr>
+<tr>
+<td><code>czas_min</code> ujemny</td>
+<td>4</td>
+<td>zamienione na brak → uzupełnione jw.</td>
+</tr>
+<tr>
+<td><code>start</code> w dwóch formatach</td>
+<td>83 (format polski)</td>
+<td>dwie próby <code>to_datetime</code> z formatem + <code>fillna</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="przetwarzanie-nowe-kolumny">Przetwarzanie — nowe kolumny<a class="headerlink" href="#przetwarzanie-nowe-kolumny" title="Permanent link">#</a></h2>
+<p>Czyste dane to dopiero połowa sukcesu. Żeby odpowiadać na pytania biznesowe,
+często trzeba dodać kolumny, których w eksporcie nie było. To też jest przygotowanie
+danych — w uczeniu maszynowym nazywa się je <strong>inżynierią cech</strong>.</p>
+<h3 id="z-daty-dt">Z daty: <code>.dt</code><a class="headerlink" href="#z-daty-dt" title="Permanent link">#</a></h3>
+<p>Kiedy kolumna jest prawdziwą datą, <code>.dt</code> daje dostęp do jej części:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"dzien_tyg"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day_of_week</span>
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a><span class="n">df</span><span class="p">[</span><span class="s2">"godzina"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">hour</span>
+</span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a><span class="n">df</span><span class="p">[</span><span class="s2">"weekend"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"dzien_tyg"</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">5</span>
+</span><span id="__span-50-4"><a id="__codelineno-50-4" name="__codelineno-50-4" href="#__codelineno-50-4"></a><span class="n">df</span><span class="p">[</span><span class="s2">"tydzien"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"start"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">isocalendar</span><span class="p">()</span><span class="o">.</span><span class="n">week</span>
+</span><span id="__span-50-5"><a id="__codelineno-50-5" name="__codelineno-50-5" href="#__codelineno-50-5"></a><span class="n">df</span><span class="p">[[</span><span class="s2">"start"</span><span class="p">,</span> <span class="s2">"dzien_tyg"</span><span class="p">,</span> <span class="s2">"godzina"</span><span class="p">,</span> <span class="s2">"weekend"</span><span class="p">,</span> <span class="s2">"tydzien"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>                start  dzien_tyg  godzina  weekend  tydzien
+</span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>0 2026-09-01 06:09:00          1        6    False       36
+</span><span id="__span-51-3"><a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a>2 2026-09-01 06:28:00          1        6    False       36
+</span><span id="__span-51-4"><a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a>3 2026-09-01 06:53:00          1        6    False       36
+</span><span id="__span-51-5"><a id="__codelineno-51-5" name="__codelineno-51-5" href="#__codelineno-51-5"></a>4 2026-09-01 07:25:00          1        7    False       36
+</span><span id="__span-51-6"><a id="__codelineno-51-6" name="__codelineno-51-6" href="#__codelineno-51-6"></a>5 2026-09-01 08:30:00          1        8    False       36
+</span></code></pre></div>
+<ul>
+<li><code>day_of_week</code> — dzień tygodnia jako liczba: 0 = poniedziałek, 6 = niedziela
+  (1 września 2026 to wtorek),</li>
+<li><code>hour</code>, <code>month</code>, <code>day</code>, <code>year</code> — godzina, miesiąc, dzień, rok,</li>
+<li><code>isocalendar().week</code> — numer tygodnia w roku.</li>
+</ul>
+<p>Nowa kolumna od razu pozwala zadać nowe pytanie. Czy w weekend jeździ się dłużej?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"weekend"</span><span class="p">)[</span><span class="s2">"czas_min"</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>weekend
+</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>False    12.0
+</span><span id="__span-53-3"><a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a>True     24.0
+</span><span id="__span-53-4"><a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a>Name: czas_min, dtype: float64
+</span></code></pre></div>
+<p>Dwa razy dłużej. W tygodniu rower to dojazd do pracy, w weekend — wycieczka.</p>
+<h3 id="przedziay-pdcut">Przedziały: <code>pd.cut</code><a class="headerlink" href="#przedziay-pdcut" title="Permanent link">#</a></h3>
+<p>Czasem liczba jest zbyt szczegółowa. Cennik wypożyczalni nie rozróżnia przejazdu
+13- i 14-minutowego — liczy się tylko, w którym <strong>progu</strong> się mieścisz.
+<code>pd.cut</code> tnie kolumnę liczbową na przedziały:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="n">df</span><span class="p">[</span><span class="s2">"taryfa"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span>
+</span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>    <span class="n">df</span><span class="p">[</span><span class="s2">"czas_min"</span><span class="p">],</span>
+</span><span id="__span-54-3"><a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a>    <span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s2">"inf"</span><span class="p">)],</span>
+</span><span id="__span-54-4"><a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a>    <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s2">"do 20 min"</span><span class="p">,</span> <span class="s2">"20–60 min"</span><span class="p">,</span> <span class="s2">"1–2 h"</span><span class="p">,</span> <span class="s2">"ponad 2 h"</span><span class="p">],</span>
+</span><span id="__span-54-5"><a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a><span class="p">)</span>
+</span><span id="__span-54-6"><a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a><span class="n">df</span><span class="p">[[</span><span class="s2">"czas_min"</span><span class="p">,</span> <span class="s2">"taryfa"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>   czas_min     taryfa
+</span><span id="__span-55-2"><a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a>0       6.0  do 20 min
+</span><span id="__span-55-3"><a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>2      35.0  20–60 min
+</span><span id="__span-55-4"><a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a>3      16.0  do 20 min
+</span><span id="__span-55-5"><a id="__codelineno-55-5" name="__codelineno-55-5" href="#__codelineno-55-5"></a>4      15.0  do 20 min
+</span><span id="__span-55-6"><a id="__codelineno-55-6" name="__codelineno-55-6" href="#__codelineno-55-6"></a>5      30.0  20–60 min
+</span></code></pre></div>
+<ul>
+<li><code>bins</code> — granice przedziałów; <code>float("inf")</code> to nieskończoność, czyli „i więcej",</li>
+<li><code>labels</code> — nazwy przedziałów; musi ich być o jedną mniej niż granic,</li>
+<li>przedziały są domknięte z prawej: <code>(20, 60]</code> — przejazd trwający dokładnie
+  20 minut wpada do „do 20 min" i jest darmowy, zgodnie z cennikiem.</li>
+</ul>
+<p><img alt="Histogram czasu przejazdu podzielony na cztery przedziały taryfowe" src="../obrazki/zajecia_2_przedzialy.png" /></p>
+<p>Po co to wszystko? Bo przedział to kategoria, a po kategorii można grupować:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"taryfa"</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">"oplata"</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s2">"count"</span><span class="p">,</span> <span class="s2">"sum"</span><span class="p">])</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>           count    sum
+</span><span id="__span-57-2"><a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a>taryfa
+</span><span id="__span-57-3"><a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a>do 20 min    406   21.0
+</span><span id="__span-57-4"><a id="__codelineno-57-4" name="__codelineno-57-4" href="#__codelineno-57-4"></a>20–60 min    167  234.0
+</span><span id="__span-57-5"><a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a>1–2 h         18  124.0
+</span><span id="__span-57-6"><a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a>ponad 2 h      9  147.0
+</span></code></pre></div>
+<p>Dwie trzecie przejazdów jest darmowych. A 9 przejazdów dłuższych niż 2 godziny
+przyniosło więcej pieniędzy niż 18 przejazdów godzinnych. Takiego wniosku nie
+wyczytasz z 600 pojedynczych czasów.</p>
+<div class="admonition note">
+<p class="admonition-title">Skąd 21 zł w darmowej taryfie?</p>
+<p>Przejazdy do 20 minut powinny kosztować 0 zł. Te 21 zł to ślad po naszym
+sprzątaniu: część przejazdów z uzupełnionym czasem (12 albo 17 minut)
+w rzeczywistości trwała dłużej — i opłata to zdradza. Dane pamiętają, co im
+zrobiłeś. Gdyby opłata miała być podstawą analizy, lepiej byłoby odtworzyć
+przedział z opłaty, a nie z mediany.</p>
+</div>
+<p><code>observed=True</code> mówi pandas, żeby pokazywał tylko przedziały, które wystąpiły
+w danych. Bez tego parametru dostaniesz ostrzeżenie.</p>
+<h3 id="tabela-przestawna-pivot_table">Tabela przestawna: <code>pivot_table</code><a class="headerlink" href="#tabela-przestawna-pivot_table" title="Permanent link">#</a></h3>
+<p><strong>Tabela przestawna</strong> (<em>pivot table</em>) to znany z Excela sposób na zestawienie
+„coś × coś": wiersze to jedna kategoria, kolumny — druga, a w polach wynik
+funkcji agregującej. Ile przejazdów zaczyna się na każdej stacji w każdy dzień
+tygodnia?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="n">tabela</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">"stacja"</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"dzien_tyg"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"id"</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s2">"count"</span><span class="p">)</span>
+</span><span id="__span-58-2"><a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a><span class="n">tabela</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"pon"</span><span class="p">,</span> <span class="s2">"wt"</span><span class="p">,</span> <span class="s2">"śr"</span><span class="p">,</span> <span class="s2">"czw"</span><span class="p">,</span> <span class="s2">"pt"</span><span class="p">,</span> <span class="s2">"sob"</span><span class="p">,</span> <span class="s2">"nd"</span><span class="p">]</span>
+</span><span id="__span-58-3"><a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a><span class="n">tabela</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>                  pon  wt  śr  czw  pt  sob  nd
+</span><span id="__span-59-2"><a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>stacja
+</span><span id="__span-59-3"><a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>Dworzec Zachodni    7  16  20   20  15   10   6
+</span><span id="__span-59-4"><a id="__codelineno-59-4" name="__codelineno-59-4" href="#__codelineno-59-4"></a>Metro Centrum      28  33  25   21  20   10  13
+</span><span id="__span-59-5"><a id="__codelineno-59-5" name="__codelineno-59-5" href="#__codelineno-59-5"></a>Plac Wilsona       12  16   8   18   5   16  16
+</span><span id="__span-59-6"><a id="__codelineno-59-6" name="__codelineno-59-6" href="#__codelineno-59-6"></a>Pole Mokotowskie    8  13   8   11   4   26  23
+</span><span id="__span-59-7"><a id="__codelineno-59-7" name="__codelineno-59-7" href="#__codelineno-59-7"></a>Politechnika       14  18  17   12  13    6   5
+</span><span id="__span-59-8"><a id="__codelineno-59-8" name="__codelineno-59-8" href="#__codelineno-59-8"></a>Stadion Narodowy    6   8   9    5  11   23  25
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Parametr</th>
+<th>Co oznacza</th>
+<th>Tutaj</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index</code></td>
+<td>co idzie w wiersze</td>
+<td>stacja</td>
+</tr>
+<tr>
+<td><code>columns</code></td>
+<td>co idzie w kolumny</td>
+<td>dzień tygodnia</td>
+</tr>
+<tr>
+<td><code>values</code></td>
+<td>co liczymy</td>
+<td><code>id</code> przejazdu</td>
+</tr>
+<tr>
+<td><code>aggfunc</code></td>
+<td>jak liczymy</td>
+<td><code>"count"</code> — ile; może być <code>"sum"</code>, <code>"mean"</code>, <code>"median"</code></td>
+</tr>
+</tbody>
+</table>
+<p>Dni tygodnia zostawiliśmy jako liczby 0–6, żeby pandas ułożył je po kolei,
+a polskie nazwy nadaliśmy dopiero na końcu. Z polskimi nazwami od początku
+kolumny ułożyłyby się alfabetycznie: czw, nd, pon, pt…</p>
+<p>Liczby w tabeli łatwiej czytać jako kolory. Taki wykres to <strong>mapa ciepła</strong>
+(<em>heatmap</em>) — wykresami zajmiemy się na serio za dwa spotkania, ale ten jeden
+pokazuję już dziś:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-60-2"><a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</span><span id="__span-60-3"><a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a>
+</span><span id="__span-60-4"><a id="__codelineno-60-4" name="__codelineno-60-4" href="#__codelineno-60-4"></a><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">tabela</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">"d"</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">"Blues"</span><span class="p">)</span>
+</span><span id="__span-60-5"><a id="__codelineno-60-5" name="__codelineno-60-5" href="#__codelineno-60-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Przejazdy według stacji i dnia tygodnia"</span><span class="p">)</span>
+</span><span id="__span-60-6"><a id="__codelineno-60-6" name="__codelineno-60-6" href="#__codelineno-60-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p><img alt="Mapa ciepła liczby przejazdów według stacji i dnia tygodnia" src="../obrazki/zajecia_2_heatmapa.png" /></p>
+<p>Od razu widać dwa światy: Metro Centrum, Politechnika i Dworzec Zachodni żyją
+w dni robocze (dojazdy do pracy i na uczelnię), a Pole Mokotowskie i Stadion
+Narodowy — w weekendy (rekreacja). To gotowa wskazówka dla wypożyczalni: rowery
+trzeba w piątek wieczorem przewozić z centrum w stronę parków.</p>
+<p><code>margins=True</code> dokłada wiersz i kolumnę z sumami:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">"stacja"</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"rower"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"oplata"</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s2">"sum"</span><span class="p">,</span>
+</span><span id="__span-61-2"><a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a>               <span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">margins_name</span><span class="o">=</span><span class="s2">"razem"</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>rower             elektryczny  klasyczny  razem
+</span><span id="__span-62-2"><a id="__codelineno-62-2" name="__codelineno-62-2" href="#__codelineno-62-2"></a>stacja
+</span><span id="__span-62-3"><a id="__codelineno-62-3" name="__codelineno-62-3" href="#__codelineno-62-3"></a>Dworzec Zachodni         62.0       16.0   78.0
+</span><span id="__span-62-4"><a id="__codelineno-62-4" name="__codelineno-62-4" href="#__codelineno-62-4"></a>Metro Centrum            52.0       38.0   90.0
+</span><span id="__span-62-5"><a id="__codelineno-62-5" name="__codelineno-62-5" href="#__codelineno-62-5"></a>Plac Wilsona             58.0       44.0  102.0
+</span><span id="__span-62-6"><a id="__codelineno-62-6" name="__codelineno-62-6" href="#__codelineno-62-6"></a>Pole Mokotowskie         66.0       19.0   85.0
+</span><span id="__span-62-7"><a id="__codelineno-62-7" name="__codelineno-62-7" href="#__codelineno-62-7"></a>Politechnika             36.0       17.0   53.0
+</span><span id="__span-62-8"><a id="__codelineno-62-8" name="__codelineno-62-8" href="#__codelineno-62-8"></a>Stadion Narodowy         82.0       36.0  118.0
+</span><span id="__span-62-9"><a id="__codelineno-62-9" name="__codelineno-62-9" href="#__codelineno-62-9"></a>razem                   356.0      170.0  526.0
+</span></code></pre></div>
+<p>Rowery elektryczne to jedna trzecia przejazdów, ale dwie trzecie przychodu.</p>
+<div class="admonition tip">
+<p class="admonition-title">Puste pola w tabeli przestawnej</p>
+<p>Jeśli jakaś kombinacja nie wystąpiła w danych (np. żadnego przejazdu
+elektrykiem z danej stacji w niedzielę), w tabeli pojawi się <code>NaN</code>. Przy
+zliczaniu i sumowaniu brak oznacza po prostu zero — dopisz wtedy
+<code>fill_value=0</code>.</p>
+</div>
+<h3 id="format-szeroki-i-dugi-melt">Format szeroki i długi: <code>melt</code><a class="headerlink" href="#format-szeroki-i-dugi-melt" title="Permanent link">#</a></h3>
+<p>Tabela przestawna produkuje <strong>format szeroki</strong> — każdy tydzień to osobna
+kolumna:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="n">tygodnie</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">"stacja"</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"tydzien"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"id"</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s2">"count"</span><span class="p">)</span>
+</span><span id="__span-63-2"><a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a><span class="n">tygodnie</span> <span class="o">=</span> <span class="n">tygodnie</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</span><span id="__span-63-3"><a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a><span class="n">tygodnie</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>tydzien            stacja  36  37  38  39  40
+</span><span id="__span-64-2"><a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a>0        Dworzec Zachodni  22  23  27  15   7
+</span><span id="__span-64-3"><a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a>1           Metro Centrum  29  42  29  34  16
+</span><span id="__span-64-4"><a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a>2            Plac Wilsona  15  30  21  21   4
+</span><span id="__span-64-5"><a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a>3        Pole Mokotowskie  24  26  17  20   6
+</span><span id="__span-64-6"><a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a>4            Politechnika  16  16  16  32   5
+</span><span id="__span-64-7"><a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a>5        Stadion Narodowy  13  23  21  25   5
+</span></code></pre></div>
+<p>(<code>reset_index()</code> zamienia stację z indeksu z powrotem w zwykłą kolumnę.)</p>
+<p>Taki format jest wygodny dla człowieka — dlatego tak wyglądają raporty
+w Excelu. Ale do dalszej pracy w pandas lepszy jest <strong>format długi</strong>: jeden
+wiersz = jedna obserwacja („na stacji X w tygodniu Y było Z przejazdów"). Ze
+szerokiego robi go <code>melt</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="n">dlugi</span> <span class="o">=</span> <span class="n">tygodnie</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">"stacja"</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">"tydzien"</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">"przejazdy"</span><span class="p">)</span>
+</span><span id="__span-65-2"><a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">dlugi</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span><span id="__span-65-3"><a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a><span class="n">dlugi</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>(30, 3)
+</span><span id="__span-66-2"><a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>             stacja tydzien  przejazdy
+</span><span id="__span-66-3"><a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a>0  Dworzec Zachodni      36         22
+</span><span id="__span-66-4"><a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a>1     Metro Centrum      36         29
+</span><span id="__span-66-5"><a id="__codelineno-66-5" name="__codelineno-66-5" href="#__codelineno-66-5"></a>2      Plac Wilsona      36         15
+</span><span id="__span-66-6"><a id="__codelineno-66-6" name="__codelineno-66-6" href="#__codelineno-66-6"></a>3  Pole Mokotowskie      36         24
+</span><span id="__span-66-7"><a id="__codelineno-66-7" name="__codelineno-66-7" href="#__codelineno-66-7"></a>4      Politechnika      36         16
+</span><span id="__span-66-8"><a id="__codelineno-66-8" name="__codelineno-66-8" href="#__codelineno-66-8"></a>5  Stadion Narodowy      36         13
+</span><span id="__span-66-9"><a id="__codelineno-66-9" name="__codelineno-66-9" href="#__codelineno-66-9"></a>6  Dworzec Zachodni      37         23
+</span><span id="__span-66-10"><a id="__codelineno-66-10" name="__codelineno-66-10" href="#__codelineno-66-10"></a>7     Metro Centrum      37         42
+</span></code></pre></div>
+<ul>
+<li><code>id_vars</code> — kolumny, które zostają bez zmian (identyfikują wiersz),</li>
+<li><code>var_name</code> — nazwa nowej kolumny, do której trafią <strong>nazwy</strong> dawnych kolumn
+  (36, 37, …),</li>
+<li><code>value_name</code> — nazwa kolumny na <strong>wartości</strong>.</li>
+</ul>
+<p>6 stacji × 5 tygodni = 30 wierszy. <code>pivot_table</code> i <code>melt</code> to dwie strony tej
+samej operacji:</p>
+<p><img alt="Format szeroki i długi oraz przejście między nimi przez melt i pivot_table" src="../obrazki/zajecia_2_szeroki_dlugi.png" /></p>
+<p>Po co format długi? Bo na nim działa wszystko, co już znasz — <code>groupby</code>,
+filtrowanie, <code>merge</code> — i wszystkie biblioteki do wykresów (seaborn, Plotly)
+oczekują danych właśnie w tym kształcie. Ile przejazdów było w każdym tygodniu?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="n">dlugi</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"tydzien"</span><span class="p">)[</span><span class="s2">"przejazdy"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>tydzien
+</span><span id="__span-68-2"><a id="__codelineno-68-2" name="__codelineno-68-2" href="#__codelineno-68-2"></a>36    119
+</span><span id="__span-68-3"><a id="__codelineno-68-3" name="__codelineno-68-3" href="#__codelineno-68-3"></a>37    160
+</span><span id="__span-68-4"><a id="__codelineno-68-4" name="__codelineno-68-4" href="#__codelineno-68-4"></a>38    131
+</span><span id="__span-68-5"><a id="__codelineno-68-5" name="__codelineno-68-5" href="#__codelineno-68-5"></a>39    147
+</span><span id="__span-68-6"><a id="__codelineno-68-6" name="__codelineno-68-6" href="#__codelineno-68-6"></a>40     43
+</span><span id="__span-68-7"><a id="__codelineno-68-7" name="__codelineno-68-7" href="#__codelineno-68-7"></a>Name: przejazdy, dtype: int64
+</span></code></pre></div>
+<p>Na formacie szerokim musiałbyś sumować pięć kolumn osobno. (Tydzień 40 jest
+krótki, bo wrzesień kończy się w środę.)</p>
+<div class="admonition tip">
+<p class="admonition-title">Raport z Excela do analizy</p>
+<p>W pracy często dostaniesz plik w formacie szerokim: miesiące, sklepy albo
+produkty w kolumnach. Pierwsze, co z nim robisz po wczytaniu, to <code>melt</code>.</p>
+</div>
+<h3 id="zapis-wyniku">Zapis wyniku<a class="headerlink" href="#zapis-wyniku" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"przejazdy_czyste.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Czyste dane zapisujesz do <strong>nowego</strong> pliku, a surowe zostawiasz w spokoju. Jeśli
+w czyszczeniu był błąd, poprawiasz kod i uruchamiasz go od nowa na surowych
+danych. Na tym polega przewaga notatnika nad ręcznym poprawianiem w Excelu:
+każdą decyzję widać i każdą można cofnąć.</p>
+<hr />
+<h2 id="sciagawka">Ściągawka<a class="headerlink" href="#sciagawka" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chcę…</th>
+<th>Kod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>typy i braki naraz</td>
+<td><code>df.info()</code></td>
+</tr>
+<tr>
+<td>ile braków w kolumnach</td>
+<td><code>df.isna().sum()</code></td>
+</tr>
+<tr>
+<td>ile duplikatów</td>
+<td><code>df.duplicated().sum()</code></td>
+</tr>
+<tr>
+<td>duplikaty po kluczu</td>
+<td><code>df.duplicated(subset=["id"]).sum()</code></td>
+</tr>
+<tr>
+<td>pokazać duplikaty z oryginałami</td>
+<td><code>df[df.duplicated(keep=False)]</code></td>
+</tr>
+<tr>
+<td>usunąć duplikaty</td>
+<td><code>df = df.drop_duplicates()</code></td>
+</tr>
+<tr>
+<td>warianty tekstu (ze spacjami)</td>
+<td><code>df["kol"].unique()</code></td>
+</tr>
+<tr>
+<td>ujednolicić tekst</td>
+<td><code>df["kol"].str.strip().str.title()</code> (albo <code>.str.lower()</code>)</td>
+</tr>
+<tr>
+<td>poprawić wybrane wartości</td>
+<td><code>df["kol"].replace({"stara": "nowa"})</code></td>
+</tr>
+<tr>
+<td>usunąć fragment tekstu</td>
+<td><code>df["kol"].str.replace(" zł", "")</code></td>
+</tr>
+<tr>
+<td>tekst na liczbę (śmieci → <code>NaN</code>)</td>
+<td><code>pd.to_numeric(df["kol"], errors="coerce")</code></td>
+</tr>
+<tr>
+<td>tekst na datę w danym formacie</td>
+<td><code>pd.to_datetime(df["kol"], format="%d.%m.%Y", errors="coerce")</code></td>
+</tr>
+<tr>
+<td>skleić dwie próby</td>
+<td><code>proba1.fillna(proba2)</code></td>
+</tr>
+<tr>
+<td>zamienić wartości spełniające warunek</td>
+<td><code>df.loc[df["kol"] &lt; 0, "kol"] = np.nan</code></td>
+</tr>
+<tr>
+<td>uzupełnić medianą grupy</td>
+<td><code>df["kol"].fillna(df.groupby("grupa")["kol"].transform("median"))</code></td>
+</tr>
+<tr>
+<td>oznaczyć braki</td>
+<td><code>df["kol_brak"] = df["kol"].isna()</code></td>
+</tr>
+<tr>
+<td>część daty</td>
+<td><code>df["data"].dt.month</code>, <code>.dt.day_of_week</code>, <code>.dt.hour</code></td>
+</tr>
+<tr>
+<td>przedziały</td>
+<td><code>pd.cut(df["kol"], bins=[0, 20, 60], labels=["mało", "dużo"])</code></td>
+</tr>
+<tr>
+<td>tabela przestawna</td>
+<td><code>df.pivot_table(index="a", columns="b", values="c", aggfunc="sum", fill_value=0)</code></td>
+</tr>
+<tr>
+<td>sumy w tabeli przestawnej</td>
+<td><code>pivot_table(..., margins=True, margins_name="razem")</code></td>
+</tr>
+<tr>
+<td>szeroki → długi</td>
+<td><code>df.melt(id_vars="a", var_name="b", value_name="c")</code></td>
+</tr>
+<tr>
+<td>indeks z powrotem w kolumnę</td>
+<td><code>df.reset_index()</code></td>
+</tr>
+<tr>
+<td>zapisać wynik</td>
+<td><code>df.to_csv("plik.csv", index=False)</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zadanie-2-sprzatanie-po-stazyscie-12-pkt">Zadanie 2 — Sprzątanie po stażyście (12 pkt)<a class="headerlink" href="#zadanie-2-sprzatanie-po-stazyscie-12-pkt" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Czas:</strong> ok. 60 minut</li>
+<li><strong>Środowisko:</strong> Google Colab</li>
+<li><strong>Oddanie:</strong> notatnik <code>.ipynb</code> na Moodle</li>
+</ul>
+<p>Zarząd „Gadżet24" poprosił o zestawienie polskich zamówień z 2025 roku razem
+z miastem klienta. Stażysta dostał to zadanie na swój pierwszy dzień: skleił
+eksporty z kilku dni, miasta przepisał „z pamięci", a ceny skopiował z faktur.
+Plik działa, tylko liczyć na nim nie można. Twoim zadaniem jest go uratować —
+i zostawić po sobie raport, co z nim zrobiłeś.</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8zm1 14-2 4h-3l2-4H9v-5h6zm-2-7V3.5L18.5 9z"/></svg></span> <a href="../dane/zamowienia_pl_2025.csv"><strong>zamowienia_pl_2025.csv</strong></a> —
+  2062 wiersze</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Kolumna</th>
+<th>Co oznacza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>zamowienie_id</code></td>
+<td>numer zamówienia — w czystych danych każdy występuje <strong>raz</strong></td>
+</tr>
+<tr>
+<td><code>data</code></td>
+<td>data złożenia zamówienia</td>
+</tr>
+<tr>
+<td><code>klient_id</code></td>
+<td>identyfikator klienta</td>
+</tr>
+<tr>
+<td><code>miasto</code></td>
+<td>miasto klienta — w czystych danych jedno z sześciu: Warszawa, Kraków, Gdańsk, Wrocław, Poznań, Łódź</td>
+</tr>
+<tr>
+<td><code>produkt</code>, <code>kategoria</code></td>
+<td>co kupiono</td>
+</tr>
+<tr>
+<td><code>sztuki</code></td>
+<td>ile sztuk</td>
+</tr>
+<tr>
+<td><code>cena</code></td>
+<td>cena jednej sztuki w złotych</td>
+</tr>
+</tbody>
+</table>
+<p>Rób części po kolei i <strong>pokaż mi wynik każdej z nich, gdy będzie gotowa</strong> —
+punktacja zależy od tego, ile zdążysz na zajęciach.</p>
+<h3 id="czesc-1-diagnoza-i-sprzatanie-ok-35-min">Część 1 — Diagnoza i sprzątanie (ok. 35 min)<a class="headerlink" href="#czesc-1-diagnoza-i-sprzatanie-ok-35-min" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://kubzal.github.io/wsb-merito/semestr_zimowy_2026_27/metody_analizy_przetwarzania_i_wizualizacji_danych/dane/zamowienia_pl_2025.csv"</span>
+</span></code></pre></div>
+<ol>
+<li><strong>Diagnoza.</strong> Wczytaj plik do <code>df</code>. Sprawdź i wypisz: braki w każdej kolumnie,
+   liczbę zduplikowanych wierszy <strong>i</strong> zduplikowanych numerów zamówień, wszystkie
+   warianty zapisu miasta, formaty daty oraz wartości w kolumnie <code>cena</code>, które
+   nie są liczbą.</li>
+<li><strong>Sprzątanie.</strong> Doprowadź dane do stanu, w którym:<ul>
+<li>każde zamówienie występuje dokładnie raz,</li>
+<li><code>miasto</code> ma tylko sześć poprawnych nazw (z polskimi znakami),</li>
+<li><code>data</code> jest datą (typ <code>datetime64</code>), a każdy wiersz ma poprawny dzień
+  i miesiąc,</li>
+<li><code>cena</code> jest liczbą, a brakującą cenę uzupełniasz <strong>medianą ceny tego
+  samego produktu</strong>.</li>
+</ul>
+</li>
+<li><strong>Raport.</strong> W komórce tekstowej (Markdown) zrób tabelę „przed / po" taką jak
+   w materiale: każdy problem, ile wierszy dotyczył i co z nim zrobiłeś.</li>
+</ol>
+<p>Komórka sprawdzająca — skopiuj i uruchom:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-71-1"><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"wiersze:     </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="si">}</span><span class="s2">   (powinno być 2012)"</span><span class="p">)</span>
+</span><span id="__span-71-2"><a id="__codelineno-71-2" name="__codelineno-71-2" href="#__codelineno-71-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"unikalne id: </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">'zamowienie_id'</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="si">}</span><span class="s2">   (powinno być 2012)"</span><span class="p">)</span>
+</span><span id="__span-71-3"><a id="__codelineno-71-3" name="__codelineno-71-3" href="#__codelineno-71-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"miasta:      </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'miasto'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-71-4"><a id="__codelineno-71-4" name="__codelineno-71-4" href="#__codelineno-71-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"data:        </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">:</span><span class="s2">%Y-%m-%d</span><span class="si">}</span><span class="s2"> – </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">:</span><span class="s2">%Y-%m-%d</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-71-5"><a id="__codelineno-71-5" name="__codelineno-71-5" href="#__codelineno-71-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"w marcu:     </span><span class="si">{</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">   (powinno być 180)"</span><span class="p">)</span>
+</span><span id="__span-71-6"><a id="__codelineno-71-6" name="__codelineno-71-6" href="#__codelineno-71-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"cena:        </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">'cena'</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">, braki: </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">'cena'</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">   (powinno być float64, 0)"</span><span class="p">)</span>
+</span><span id="__span-71-7"><a id="__codelineno-71-7" name="__codelineno-71-7" href="#__codelineno-71-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"przychód:    </span><span class="si">{</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'sztuki'</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">df</span><span class="p">[</span><span class="s1">'cena'</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">   (powinno być 1,169,058.91)"</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="czesc-2-przetwarzanie-ok-25-min">Część 2 — Przetwarzanie (ok. 25 min)<a class="headerlink" href="#czesc-2-przetwarzanie-ok-25-min" title="Permanent link">#</a></h3>
+<p>Każdy liczy na <strong>swojej kategorii i swoim mieście</strong>. Wpisz swój numer albumu
+i uruchom komórkę:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a><span class="n">NR_ALBUMU</span> <span class="o">=</span> <span class="mi">123456</span>   <span class="c1"># ← wpisz swój numer albumu</span>
+</span><span id="__span-72-2"><a id="__codelineno-72-2" name="__codelineno-72-2" href="#__codelineno-72-2"></a>
+</span><span id="__span-72-3"><a id="__codelineno-72-3" name="__codelineno-72-3" href="#__codelineno-72-3"></a><span class="n">KATEGORIE</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Elektronika"</span><span class="p">,</span> <span class="s2">"AGD"</span><span class="p">,</span> <span class="s2">"Dom"</span><span class="p">,</span> <span class="s2">"Akcesoria"</span><span class="p">]</span>
+</span><span id="__span-72-4"><a id="__codelineno-72-4" name="__codelineno-72-4" href="#__codelineno-72-4"></a><span class="n">MIASTA</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Warszawa"</span><span class="p">,</span> <span class="s2">"Kraków"</span><span class="p">,</span> <span class="s2">"Gdańsk"</span><span class="p">,</span> <span class="s2">"Wrocław"</span><span class="p">,</span> <span class="s2">"Poznań"</span><span class="p">,</span> <span class="s2">"Łódź"</span><span class="p">]</span>
+</span><span id="__span-72-5"><a id="__codelineno-72-5" name="__codelineno-72-5" href="#__codelineno-72-5"></a><span class="n">KATEGORIA</span> <span class="o">=</span> <span class="n">KATEGORIE</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">%</span> <span class="mi">4</span><span class="p">]</span>
+</span><span id="__span-72-6"><a id="__codelineno-72-6" name="__codelineno-72-6" href="#__codelineno-72-6"></a><span class="n">MIASTO</span> <span class="o">=</span> <span class="n">MIASTA</span><span class="p">[</span><span class="n">NR_ALBUMU</span> <span class="o">//</span> <span class="mi">4</span> <span class="o">%</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-72-7"><a id="__codelineno-72-7" name="__codelineno-72-7" href="#__codelineno-72-7"></a>
+</span><span id="__span-72-8"><a id="__codelineno-72-8" name="__codelineno-72-8" href="#__codelineno-72-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">KATEGORIA</span><span class="p">,</span> <span class="n">MIASTO</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-73-1"><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>Elektronika Warszawa
+</span></code></pre></div>
+<ol>
+<li>Dodaj do czystego <code>df</code> trzy kolumny:<ul>
+<li><code>wartosc</code> — wartość zamówienia (sztuki × cena),</li>
+<li><code>miesiac</code> — numer miesiąca (1–12),</li>
+<li><code>przedzial</code> — przedział wartości zamówienia: <code>do 200 zł</code>, <code>200–500 zł</code>,
+  <code>500–1000 zł</code>, <code>ponad 1000 zł</code> (granice: 0, 200, 500, 1000, nieskończoność).</li>
+</ul>
+</li>
+<li>Dla zamówień ze swojej kategorii zbuduj tabelę przestawną <code>tabela</code>:
+   <strong>miasta w wierszach, miesiące w kolumnach, w polach przychód</strong> (suma
+   <code>wartosc</code>), bez <code>NaN</code>, zaokrąglony do pełnych złotych.</li>
+<li>W komórce tekstowej odpowiedz:<ul>
+<li>w którym miesiącu Twoje miasto miało najwyższy przychód z Twojej kategorii
+  i ile on wyniósł,</li>
+<li>który przedział wartości jest w Twojej kategorii <strong>najczęstszy</strong> i jaki
+  procent jej zamówień do niego należy.</li>
+</ul>
+</li>
+</ol>
+<p>Komórka sprawdzająca:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-74-1"><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"wariant:   </span><span class="si">{</span><span class="n">KATEGORIA</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">MIASTO</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-74-2"><a id="__codelineno-74-2" name="__codelineno-74-2" href="#__codelineno-74-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"przedziały (wszystkie kategorie): </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">'przedzial'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span>
+</span><span id="__span-74-3"><a id="__codelineno-74-3" name="__codelineno-74-3" href="#__codelineno-74-3"></a>      <span class="s2">"   (powinno być [643, 734, 308, 327])"</span><span class="p">)</span>
+</span><span id="__span-74-4"><a id="__codelineno-74-4" name="__codelineno-74-4" href="#__codelineno-74-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"tabela:    </span><span class="si">{</span><span class="n">tabela</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">   (powinno być (6, 12))"</span><span class="p">)</span>
+</span><span id="__span-74-5"><a id="__codelineno-74-5" name="__codelineno-74-5" href="#__codelineno-74-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"braki:     </span><span class="si">{</span><span class="n">tabela</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">   (powinno być 0)"</span><span class="p">)</span>
+</span><span id="__span-74-6"><a id="__codelineno-74-6" name="__codelineno-74-6" href="#__codelineno-74-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"przychód kategorii: </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'kategoria'</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">KATEGORIA</span><span class="p">,</span><span class="w"> </span><span class="s1">'wartosc'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="wskazowki">Wskazówki<a class="headerlink" href="#wskazowki" title="Permanent link">#</a></h3>
+<ul>
+<li>Zrób sobie kopię surowych danych (<code>surowe = df.copy()</code>) zaraz po wczytaniu.
+  Przyda się do raportu „przed", a jeśli coś zepsujesz, nie musisz pobierać pliku
+  od nowa.</li>
+<li>Wariantów miasta jest ponad 30. Najpierw <code>strip()</code> + <code>title()</code> (albo
+  <code>lower()</code>), potem <code>unique()</code> — to, co zostanie, poprawiasz słownikiem
+  w <code>replace</code>. Uważaj: <code>"WAW".title()</code> daje <code>"Waw"</code>, a nie <code>"WAW"</code>.</li>
+<li>Daty mają <strong>trzy</strong> formaty. Na ich rozpoznanie wystarczy <code>unique()</code> na kilku
+  wierszach albo <code>df["data"].str.len().value_counts()</code>. Nie używaj
+  <code>format="mixed"</code> — wynik „w marcu" od razu Cię zdradzi.</li>
+<li>Cena: najpierw usuń „ zł", potem <strong>wszystkie</strong> spacje (<code>"1 199,00"</code> → <code>"1199,00"</code>),
+  potem zamień przecinek na kropkę i dopiero wtedy <code>pd.to_numeric(..., errors="coerce")</code>.
+  Policz braki przed i po.</li>
+<li>Duplikatów jest więcej, niż pokazuje <code>duplicated()</code> na surowych danych.
+  Porównaj z <code>duplicated(subset=["zamowienie_id"])</code> i sprawdź jeszcze raz
+  <strong>po</strong> ujednoliceniu miasta i daty.</li>
+<li>Mediana ceny tego samego produktu: <code>df.groupby("produkt")["cena"].transform("median")</code>.</li>
+<li>Część 2, punkt 2: najpierw przefiltruj zamówienia z Twojej kategorii, potem
+  <code>pivot_table(..., aggfunc="sum", fill_value=0)</code> i <code>.round(0)</code>. Miesiąc
+  z maksimum w wierszu znajdziesz przez <code>tabela.loc[MIASTO].idxmax()</code>.</li>
+<li>Procent zamówień w przedziałach: <code>value_counts(normalize=True)</code> zwraca udziały
+  zamiast liczebności.</li>
+<li>Wynik się nie zgadza? <strong>Runtime → Restart and run all</strong> — bardzo często winna
+  jest komórka uruchomiona dwa razy albo wcale.</li>
+</ul>
+<h3 id="punktacja-12-pkt">Punktacja (12 pkt)<a class="headerlink" href="#punktacja-12-pkt" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Punkty</th>
+<th>Za co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12 pkt</strong></td>
+<td>obie części zrobione <strong>na zajęciach</strong> i pokazane prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>8 pkt</strong></td>
+<td>jedna z dwóch części zrobiona <strong>na zajęciach</strong> i pokazana prowadzącemu</td>
+</tr>
+<tr>
+<td><strong>4 pkt</strong></td>
+<td>zadanie dokończone po zajęciach i wysłane na Moodle <strong>w terminie</strong></td>
+</tr>
+<tr>
+<td><strong>0 pkt</strong></td>
+<td>brak rozwiązania albo wysłane po terminie</td>
+</tr>
+</tbody>
+</table>
+<p>Termin przesłania na Moodle: <strong>2026-12-19</strong> (dzień przed kolejnymi zajęciami).</p>
+<div class="admonition danger">
+<p class="admonition-title">Serio, róbcie to na zajęciach</p>
+<p>Ta sama godzina pracy jest warta 12 pkt tu i teraz albo 4 pkt w domu. Mamy
+tylko cztery zadania w całym semestrze, więc każde z nich to 12% oceny
+końcowej. Jestem na sali po to, żeby Wam pomagać — korzystajcie z tego,
+zamiast walczyć z tym samym problemem wieczorem w domu.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

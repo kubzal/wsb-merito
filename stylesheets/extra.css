@@ -1,0 +1,80 @@
+/* Rozwijane menu zakładki w górnej nawigacji (np. "Archiwum"). */
+
+/* Domyślnie pasek zakładek przycina zawartość - menu musi z niego "wystawać". */
+.md-tabs,
+.md-tabs__list {
+  overflow: visible;
+}
+
+.md-tabs__list {
+  contain: none;
+}
+
+.md-tabs__item--nested {
+  position: relative;
+}
+
+.md-tabs__dropdown {
+  background-color: var(--md-default-bg-color);
+  border-radius: 0.1rem;
+  box-shadow: var(--md-shadow-z2);
+  color: var(--md-default-fg-color);
+  left: -0.2rem;
+  list-style: none;
+  margin: 0;
+  min-width: 9rem;
+  opacity: 0;
+  padding: 0.2rem 0;
+  position: absolute;
+  top: 100%;
+  transform: translateY(0.2rem);
+  transition:
+    opacity 0.2s,
+    transform 0.2s,
+    visibility 0.2s;
+  visibility: hidden;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.md-tabs__item--nested:hover > .md-tabs__dropdown,
+.md-tabs__item--nested:focus-within > .md-tabs__dropdown {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.md-tabs__dropdown-link {
+  color: inherit;
+  display: block;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  padding: 0.35rem 0.8rem;
+  transition: background-color 0.2s;
+}
+
+.md-tabs__dropdown-link:focus,
+.md-tabs__dropdown-link:hover {
+  background-color: var(--md-default-fg-color--lightest);
+  color: inherit;
+}
+
+.md-tabs__dropdown-link--active {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}
+
+/*
+  Lewa nawigacja: pokazuj tylko przedmiot, w którym aktualnie jesteśmy.
+  Tylko na szerokich ekranach - poniżej 76.25em zakładki (a więc i menu
+  rozwijane) są ukryte, a szuflada jest jedyną drogą do innych przedmiotów.
+*/
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary
+    .md-nav--primary
+    .md-nav[data-md-level="1"]
+    > .md-nav__list
+    > .md-nav__item--section:not(.md-nav__item--active) {
+    display: none;
+  }
+}
