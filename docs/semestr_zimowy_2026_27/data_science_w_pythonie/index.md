@@ -15,8 +15,8 @@
 - **Zajęcia 2 (_2026-10-10_ godz. 15:10 - 16:40 - 2h):** Wczytywanie danych z różnych źródeł — CSV, internet, Excel, JSON; diagnoza zbioru; duplikaty, ujednolicanie tekstu, konwersja typów i dat; braki danych i wartości niemożliwe
 - **Zajęcia 3 (_2026-10-24_ godz. 15:10 - 16:40 - 2h):** Eksploracyjna analiza danych (EDA); matplotlib i seaborn; histogram, wykres pudełkowy, słupkowy i punktowy; porównywanie grup i tabele krzyżowe; korelacja i mapa ciepła
 - **Zajęcia 4 (_2026-11-14_ godz. 15:10 - 16:40 - 2h):** Grupowanie danych — `groupby`, `agg`, grupowanie po dwóch kolumnach i po przedziałach; łączenie tabel — `merge` i rodzaje złączeń; relacja jeden-do-wielu; jak nie zgubić ani nie rozmnożyć wierszy
-- **Zajęcia 5 (_2026-11-28_ godz. 15:10 - 16:40 - 2h)**
-- **Zajęcia 6 (_2026-12-12_ godz. 13:25 - 14:55 - 2h)**
+- **Zajęcia 5 (_2026-11-28_ godz. 15:10 - 16:40 - 2h):** Feature engineering — jak ocenić cechę (`corrwith`, odsetek w przedziałach); ilorazy i flagi; kategorie na liczby — `map` i one-hot (`get_dummies`); cechy z tabeli zdarzeń i z dat; wyciek danych
+- **Zajęcia 6 (_2026-12-12_ godz. 13:25 - 14:55 - 2h):** Mini-projekt analityczny od pytania do raportu — pytanie mierzalne, diagnoza i czyszczenie nowego zbioru, łączenie danych z dwóch systemów, cechy i analiza, wnioski i raport dla biznesu
 - **Zajęcia 7 (_2027-01-02_ godz. 15:10 - 16:40 - 2h)**
 - **Zajęcia 8 (_2027-01-16_ godz. 13:25 - 14:55 - 2h)**
 

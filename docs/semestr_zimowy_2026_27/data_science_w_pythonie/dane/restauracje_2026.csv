@@ -1,0 +1,35 @@
+restauracja_id,nazwa,kuchnia,dzielnica_restauracji
+R01,Pizzeria Bella,pizza,Śródmieście
+R02,Da Marco,pizza,Wola
+R03,Pizza Nocą,pizza,Wola
+R04,Napoli Express,pizza,Wola
+R05,Forno Verde,pizza,Mokotów
+R06,Pizzeria Kwadrat,pizza,Śródmieście
+R07,Mamma Mia,pizza,Ursynów
+R08,Krowa i Bułka,burgery,Śródmieście
+R09,Smash Bros,burgery,Bielany
+R10,Big Bun,burgery,Mokotów
+R11,Grill Station,burgery,Praga-Południe
+R12,Burger Bar Wola,burgery,Ursynów
+R13,Bułka z Mięsem,burgery,Wola
+R14,Sakura,sushi,Wola
+R15,Koi,sushi,Mokotów
+R16,Umami Sushi,sushi,Praga-Południe
+R18,Sushi Mokotów,sushi,Bemowo
+R19,Kebab u Ahmeda,kebab,Mokotów
+R20,Antalya Kebab,kebab,Mokotów
+R21,Döner Point,kebab,Mokotów
+R22,Kebab King,kebab,Mokotów
+R23,Efes Grill,kebab,Śródmieście
+R24,Stambuł Express,kebab,Praga-Południe
+R25,Pho Hanoi,azjatycka,Śródmieście
+R26,Wok & Go,azjatycka,Targówek
+R27,Bao Bao,azjatycka,Wola
+R28,Thai Orchid,azjatycka,Mokotów
+R29,Ramen-ya,azjatycka,Praga-Południe
+R30,Dim Sum House,azjatycka,Wola
+R31,Pierogarnia Babci Zosi,polska,Bemowo
+R32,Bar Pod Lipą,polska,Wola
+R33,Schabowy & Co,polska,Mokotów
+R34,Gospoda Mazowsze,polska,Praga-Południe
+R35,Kuchnia Mamy,polska,Ursynów

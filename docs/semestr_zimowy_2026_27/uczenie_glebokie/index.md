@@ -15,8 +15,8 @@
 - **Zajęcia 2 (_2026-10-10_ godz. 16:50 - 18:20 - 2h):** Jak ocenić model — model bazowy; macierz pomyłek; precision, recall i F1; metryki regresji (MAE, RMSE, R²); przeuczenie i niedouczenie
 - **Zajęcia 3 (_2026-10-24_ godz. 16:50 - 18:20 - 2h):** Skalowanie cech (StandardScaler); potoki (Pipeline) i wyciek danych; walidacja krzyżowa; regresja logistyczna; uczciwe porównanie i wybór modelu
 - **Zajęcia 4 (_2026-11-14_ godz. 16:50 - 18:20 - 2h):** Regresja logistyczna jako sztuczny neuron — wagi, bias i sigmoida; funkcja straty i spadek gradientu; pierwszy neuron w PyTorch — tensory i pętla treningowa; współczynnik uczenia
-- **Zajęcia 5 (_2026-11-28_ godz. 16:50 - 18:20 - 2h)**
-- **Zajęcia 6 (_2026-12-12_ godz. 15:10 - 16:40 - 2h)**
+- **Zajęcia 5 (_2026-11-28_ godz. 16:50 - 18:20 - 2h):** Czego jeden neuron nie umie; warstwa ukryta i funkcja aktywacji ReLU; sieć gęsta (MLP) w PyTorch i liczba parametrów; trening w paczkach (`DataLoader`) — krok i epoka; krzywa walidacyjna i przeuczenie
+- **Zajęcia 6 (_2026-12-12_ godz. 15:10 - 16:40 - 2h):** Optymalizatory — SGD, momentum, Adam; regularyzacja — wczesne zatrzymanie, weight decay, dropout; funkcje straty dla klasyfikacji i regresji; sieć do regresji w PyTorch
 - **Zajęcia 7 (_2027-01-02_ godz. 16:50 - 18:20 - 2h)**
 - **Zajęcia 8 (_2027-01-16_ godz. 15:10 - 16:40 - 2h)**
 
